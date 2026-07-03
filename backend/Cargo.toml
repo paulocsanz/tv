@@ -1,0 +1,38 @@
+[package]
+name = "tv-backend"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "tv_backend"
+path = "src/lib.rs"
+
+[[bin]]
+name = "server"
+path = "src/main.rs"
+
+[[bin]]
+name = "enrich"
+path = "src/bin/enrich.rs"
+
+[dependencies]
+axum = { version = "0.7", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+tower-http = { version = "0.5", features = ["cors", "trace", "fs"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+dotenvy = "0.15"
+futures = "0.3"
+tokio-stream = "0.1"
+urlencoding = "2"
+slug = "0.1"
+rand = "0.8"
+argon2 = "0.5"
+
+[profile.release]
+opt-level = 3
+lto = true

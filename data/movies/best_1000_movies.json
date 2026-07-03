@@ -1,0 +1,5498 @@
+[
+  {
+    "title": "The General",
+    "year": 1926,
+    "director": "Buster Keaton",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Limite",
+    "year": 1931,
+    "director": "Mário Peixoto",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "City Lights",
+    "year": 1931,
+    "director": "Charles Chaplin",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Modern Times",
+    "year": 1936,
+    "director": "Charles Chaplin",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Gone with the Wind",
+    "year": 1939,
+    "director": "Victor Fleming",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Wizard of Oz",
+    "year": 1939,
+    "director": "Victor Fleming",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Mr. Smith Goes to Washington",
+    "year": 1939,
+    "director": "Frank Capra",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Great Dictator",
+    "year": 1940,
+    "director": "Charles Chaplin",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Philadelphia Story",
+    "year": 1940,
+    "director": "George Cukor",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Rebecca",
+    "year": 1940,
+    "director": "Alfred Hitchcock",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Citizen Kane",
+    "year": 1941,
+    "director": "Orson Welles",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Maltese Falcon",
+    "year": 1941,
+    "director": "John Huston",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Casablanca",
+    "year": 1942,
+    "director": "Michael Curtiz",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Double Indemnity",
+    "year": 1944,
+    "director": "Billy Wilder",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Laura",
+    "year": 1944,
+    "director": "Otto Preminger",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Lost Weekend",
+    "year": 1945,
+    "director": "Billy Wilder",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "It's a Wonderful Life",
+    "year": 1946,
+    "director": "Frank Capra",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "The Best Years of Our Lives",
+    "year": 1946,
+    "director": "William Wyler",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Big Sleep",
+    "year": 1946,
+    "director": "Howard Hawks",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Notorious",
+    "year": 1946,
+    "director": "Alfred Hitchcock",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Out of the Past",
+    "year": 1947,
+    "director": "Jacques Tourneur",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Treasure of the Sierra Madre",
+    "year": 1948,
+    "director": "John Huston",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Third Man",
+    "year": 1949,
+    "director": "Carol Reed",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Sunset Boulevard",
+    "year": 1950,
+    "director": "Billy Wilder",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "All About Eve",
+    "year": 1950,
+    "director": "Joseph L. Mankiewicz",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Rashomon",
+    "year": 1950,
+    "director": "Akira Kurosawa",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "A Streetcar Named Desire",
+    "year": 1951,
+    "director": "Elia Kazan",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The African Queen",
+    "year": 1951,
+    "director": "John Huston",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Singin' in the Rain",
+    "year": 1952,
+    "director": "Stanley Donen, Gene Kelly",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Ikiru",
+    "year": 1952,
+    "director": "Akira Kurosawa",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "High Noon",
+    "year": 1952,
+    "director": "Fred Zinnemann",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "From Here to Eternity",
+    "year": 1953,
+    "director": "Fred Zinnemann",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Shane",
+    "year": 1953,
+    "director": "George Stevens",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Roman Holiday",
+    "year": 1953,
+    "director": "William Wyler",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Stalag 17",
+    "year": 1953,
+    "director": "Billy Wilder",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Seven Samurai",
+    "year": 1954,
+    "director": "Akira Kurosawa",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Rear Window",
+    "year": 1954,
+    "director": "Alfred Hitchcock",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "On the Waterfront",
+    "year": 1954,
+    "director": "Elia Kazan",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Rebel Without a Cause",
+    "year": 1955,
+    "director": "Nicholas Ray",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "East of Eden",
+    "year": 1955,
+    "director": "Elia Kazan",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Night of the Hunter",
+    "year": 1955,
+    "director": "Charles Laughton",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Searchers",
+    "year": 1956,
+    "director": "John Ford",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Giant",
+    "year": 1956,
+    "director": "George Stevens",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Killing",
+    "year": 1956,
+    "director": "Stanley Kubrick",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "12 Angry Men",
+    "year": 1957,
+    "director": "Sidney Lumet",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "Paths of Glory",
+    "year": 1957,
+    "director": "Stanley Kubrick",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Bridge on the River Kwai",
+    "year": 1957,
+    "director": "David Lean",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Sweet Smell of Success",
+    "year": 1957,
+    "director": "Alexander Mackendrick",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Witness for the Prosecution",
+    "year": 1957,
+    "director": "Billy Wilder",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Vertigo",
+    "year": 1958,
+    "director": "Alfred Hitchcock",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Touch of Evil",
+    "year": 1958,
+    "director": "Orson Welles",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Cat on a Hot Tin Roof",
+    "year": 1958,
+    "director": "Richard Brooks",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Black Orpheus",
+    "year": 1959,
+    "director": "Marcel Camus",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "North by Northwest",
+    "year": 1959,
+    "director": "Alfred Hitchcock",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Some Like It Hot",
+    "year": 1959,
+    "director": "Billy Wilder",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Ben-Hur",
+    "year": 1959,
+    "director": "William Wyler",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Rio Bravo",
+    "year": 1959,
+    "director": "Howard Hawks",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Psycho",
+    "year": 1960,
+    "director": "Alfred Hitchcock",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "The Apartment",
+    "year": 1960,
+    "director": "Billy Wilder",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Spartacus",
+    "year": 1960,
+    "director": "Stanley Kubrick",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Magnificent Seven",
+    "year": 1960,
+    "director": "John Sturges",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Hustler",
+    "year": 1961,
+    "director": "Robert Rossen",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Given Word",
+    "year": 1962,
+    "director": "Anselmo Duarte",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Lawrence of Arabia",
+    "year": 1962,
+    "director": "David Lean",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Man Who Shot Liberty Valance",
+    "year": 1962,
+    "director": "John Ford",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "year": 1962,
+    "director": "Robert Mulligan",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Manchurian Candidate",
+    "year": 1962,
+    "director": "John Frankenheimer",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Boca de Ouro",
+    "year": 1963,
+    "director": "Nelson Pereira dos Santos",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Barren Lives",
+    "year": 1963,
+    "director": "Nelson Pereira dos Santos",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Black God, White Devil",
+    "year": 1964,
+    "director": "Glauber Rocha",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Dr. Strangelove",
+    "year": 1964,
+    "director": "Stanley Kubrick",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "São Paulo, Sociedade Anônima",
+    "year": 1965,
+    "director": "Luís Sérgio Person",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Doctor Zhivago",
+    "year": 1965,
+    "director": "David Lean",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Good, the Bad and the Ugly",
+    "year": 1966,
+    "director": "Sergio Leone",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Who's Afraid of Virginia Woolf?",
+    "year": 1966,
+    "director": "Mike Nichols",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Entranced Earth",
+    "year": 1967,
+    "director": "Glauber Rocha",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Bonnie and Clyde",
+    "year": 1967,
+    "director": "Arthur Penn",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Cool Hand Luke",
+    "year": 1967,
+    "director": "Stuart Rosenberg",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Graduate",
+    "year": 1967,
+    "director": "Mike Nichols",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "In the Heat of the Night",
+    "year": 1967,
+    "director": "Norman Jewison",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Guess Who's Coming to Dinner",
+    "year": 1967,
+    "director": "Stanley Kramer",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Dirty Dozen",
+    "year": 1967,
+    "director": "Robert Aldrich",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Wait Until Dark",
+    "year": 1967,
+    "director": "Terence Young",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Red Light Bandit",
+    "year": 1968,
+    "director": "Rogério Sganzerla",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "2001: A Space Odyssey",
+    "year": 1968,
+    "director": "Stanley Kubrick",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Odd Couple",
+    "year": 1968,
+    "director": "Gene Saks",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Bullitt",
+    "year": 1968,
+    "director": "Peter Yates",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Planet of the Apes",
+    "year": 1968,
+    "director": "Franklin J. Schaffner",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Rosemary's Baby",
+    "year": 1968,
+    "director": "Roman Polanski",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Odd Couple",
+    "year": 1968,
+    "director": "Gene Saks",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Funny Girl",
+    "year": 1968,
+    "director": "William Wyler",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Oliver!",
+    "year": 1968,
+    "director": "Carol Reed",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Lion in Winter",
+    "year": 1968,
+    "director": "Anthony Harvey",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Odd Couple",
+    "year": 1968,
+    "director": "Gene Saks",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Antonio das Mortes",
+    "year": 1969,
+    "director": "Glauber Rocha",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Macunaíma",
+    "year": 1969,
+    "director": "Joaquim Pedro de Andrade",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Butch Cassidy and the Sundance Kid",
+    "year": 1969,
+    "director": "George Roy Hill",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Wild Bunch",
+    "year": 1969,
+    "director": "Sam Peckinpah",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Midnight Cowboy",
+    "year": 1969,
+    "director": "John Schlesinger",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Easy Rider",
+    "year": 1969,
+    "director": "Dennis Hopper",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "They Shoot Horses, Don't They?",
+    "year": 1969,
+    "director": "Sydney Pollack",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Hello, Dolly!",
+    "year": 1969,
+    "director": "Gene Kelly",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "True Grit",
+    "year": 1969,
+    "director": "Henry Hathaway",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Five Easy Pieces",
+    "year": 1970,
+    "director": "Bob Rafelson",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Patton",
+    "year": 1970,
+    "director": "Franklin J. Schaffner",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "MASH",
+    "year": 1970,
+    "director": "Robert Altman",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Love Story",
+    "year": 1970,
+    "director": "Arthur Hiller",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Airport",
+    "year": 1970,
+    "director": "George Seaton",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "How Tasty Was My Little Frenchman",
+    "year": 1971,
+    "director": "Nelson Pereira dos Santos",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "A Clockwork Orange",
+    "year": 1971,
+    "director": "Stanley Kubrick",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The French Connection",
+    "year": 1971,
+    "director": "William Friedkin",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Last Picture Show",
+    "year": 1971,
+    "director": "Peter Bogdanovich",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Dirty Harry",
+    "year": 1971,
+    "director": "Don Siegel",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Hospital",
+    "year": 1971,
+    "director": "Arthur Hiller",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Klute",
+    "year": 1971,
+    "director": "Alan J. Pakula",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Summer of '42",
+    "year": 1971,
+    "director": "Robert Mulligan",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Fiddler on the Roof",
+    "year": 1971,
+    "director": "Norman Jewison",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "imdb_rating": 9.2
+  },
+  {
+    "title": "The Sting",
+    "year": 1973,
+    "director": "George Roy Hill",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Exorcist",
+    "year": 1973,
+    "director": "William Friedkin",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Serpico",
+    "year": 1973,
+    "director": "Sidney Lumet",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Mean Streets",
+    "year": 1973,
+    "director": "Martin Scorsese",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Last Detail",
+    "year": 1973,
+    "director": "Hal Ashby",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Paper Moon",
+    "year": 1973,
+    "director": "Peter Bogdanovich",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "American Graffiti",
+    "year": 1973,
+    "director": "George Lucas",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Sleeper",
+    "year": 1973,
+    "director": "Woody Allen",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Way We Were",
+    "year": 1973,
+    "director": "Sydney Pollack",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Godfather Part II",
+    "year": 1974,
+    "director": "Francis Ford Coppola",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "Chinatown",
+    "year": 1974,
+    "director": "Roman Polanski",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Conversation",
+    "year": 1974,
+    "director": "Francis Ford Coppola",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Alice Doesn't Live Here Anymore",
+    "year": 1974,
+    "director": "Martin Scorsese",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Young Frankenstein",
+    "year": 1974,
+    "director": "Mel Brooks",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Towering Inferno",
+    "year": 1974,
+    "director": "John Guillermin",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Murder on the Orient Express",
+    "year": 1974,
+    "director": "Sidney Lumet",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Lenny",
+    "year": 1974,
+    "director": "Bob Fosse",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Parallax View",
+    "year": 1974,
+    "director": "Alan J. Pakula",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Iracema: Uma Transa Amazônica",
+    "year": 1975,
+    "director": "Jorge Bodanzky, Orlando Senna",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "One Flew Over the Cuckoo's Nest",
+    "year": 1975,
+    "director": "Milos Forman",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Jaws",
+    "year": 1975,
+    "director": "Steven Spielberg",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Barry Lyndon",
+    "year": 1975,
+    "director": "Stanley Kubrick",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Dog Day Afternoon",
+    "year": 1975,
+    "director": "Sidney Lumet",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Nashville",
+    "year": 1975,
+    "director": "Robert Altman",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Shampoo",
+    "year": 1975,
+    "director": "Hal Ashby",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "Three Days of the Condor",
+    "year": 1975,
+    "director": "Sydney Pollack",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Sunshine Boys",
+    "year": 1975,
+    "director": "Herbert Ross",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Dona Flor and Her Two Husbands",
+    "year": 1976,
+    "director": "Bruno Barreto",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Xica da Silva",
+    "year": 1976,
+    "director": "Carlos Diegues",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Taxi Driver",
+    "year": 1976,
+    "director": "Martin Scorsese",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Network",
+    "year": 1976,
+    "director": "Sidney Lumet",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "All the President's Men",
+    "year": 1976,
+    "director": "Alan J. Pakula",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "All the President's Men",
+    "year": 1976,
+    "director": "Alan J. Pakula",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Rocky",
+    "year": 1976,
+    "director": "John G. Avildsen",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Front",
+    "year": 1976,
+    "director": "Martin Ritt",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Marathon Man",
+    "year": 1976,
+    "director": "John Schlesinger",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Outlaw Josey Wales",
+    "year": 1976,
+    "director": "Clint Eastwood",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Carrie",
+    "year": 1976,
+    "director": "Brian De Palma",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Bad News Bears",
+    "year": 1976,
+    "director": "Michael Ritchie",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Star Wars",
+    "year": 1977,
+    "director": "George Lucas",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Annie Hall",
+    "year": 1977,
+    "director": "Woody Allen",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Close Encounters of the Third Kind",
+    "year": 1977,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Deer Hunter",
+    "year": 1978,
+    "director": "Michael Cimino",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "La Cage aux Folles",
+    "year": 1978,
+    "director": "Édouard Molinaro",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "An Unmarried Woman",
+    "year": 1978,
+    "director": "Paul Mazursky",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Interiors",
+    "year": 1978,
+    "director": "Woody Allen",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Coming Home",
+    "year": 1978,
+    "director": "Hal Ashby",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Days of Heaven",
+    "year": 1978,
+    "director": "Terrence Malick",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Boys from Brazil",
+    "year": 1978,
+    "director": "Franklin J. Schaffner",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Superman",
+    "year": 1978,
+    "director": "Richard Donner",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Grease",
+    "year": 1978,
+    "director": "Randal Kleiser",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Halloween",
+    "year": 1978,
+    "director": "John Carpenter",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "California Suite",
+    "year": 1978,
+    "director": "Herbert Ross",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Midnight Express",
+    "year": 1978,
+    "director": "Alan Parker",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "National Lampoon's Animal House",
+    "year": 1978,
+    "director": "John Landis",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Wiz",
+    "year": 1978,
+    "director": "Sidney Lumet",
+    "imdb_rating": 5.5
+  },
+  {
+    "title": "Straight Time",
+    "year": 1978,
+    "director": "Ulu Grosbard",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Invasion of the Body Snatchers",
+    "year": 1978,
+    "director": "Philip Kaufman",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Buddy Holly Story",
+    "year": 1978,
+    "director": "Steve Rash",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Movie Movie",
+    "year": 1978,
+    "director": "Stanley Donen",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "Straight Time",
+    "year": 1978,
+    "director": "Ulu Grosbard",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Heaven Can Wait",
+    "year": 1978,
+    "director": "Warren Beatty, Buck Henry",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Blue Collar",
+    "year": 1978,
+    "director": "Paul Schrader",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Fingers",
+    "year": 1978,
+    "director": "James Toback",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Driver",
+    "year": 1978,
+    "director": "Walter Hill",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Pretty Baby",
+    "year": 1978,
+    "director": "Louis Malle",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "House Calls",
+    "year": 1978,
+    "director": "Howard Zieff",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Corvette Summer",
+    "year": 1978,
+    "driver": "Matthew Robbins",
+    "imdb_rating": 5.6
+  },
+  {
+    "title": "Big Wednesday",
+    "year": 1978,
+    "director": "John Milius",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Magic",
+    "year": 1978,
+    "director": "Richard Attenborough",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Slow Dancing in the Big City",
+    "year": 1978,
+    "director": "John G. Avildsen",
+    "imdb_rating": 5.4
+  },
+  {
+    "title": "Remember My Name",
+    "year": 1978,
+    "director": "Alan Rudolph",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "King of the Gypsies",
+    "year": 1978,
+    "director": "Frank Pierson",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Girlfriends",
+    "year": 1978,
+    "director": "Claudia Weill",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Autumn Sonata",
+    "year": 1978,
+    "director": "Ingmar Bergman",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Bloodbrothers",
+    "year": 1978,
+    "director": "Robert Mulligan",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Movie Movie",
+    "year": 1978,
+    "director": "Stanley Donen",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "The End",
+    "year": 1978,
+    "director": "Burt Reynolds",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Same Time, Next Year",
+    "year": 1978,
+    "director": "Robert Mulligan",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Hooper",
+    "year": 1978,
+    "director": "Hal Needham",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "Up in Smoke",
+    "year": 1978,
+    "director": "Lou Adler, Tommy Chong",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "I Wanna Hold Your Hand",
+    "year": 1978,
+    "director": "Robert Zemeckis",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "The Boys in Company C",
+    "year": 1978,
+    "director": "Sidney J. Furie",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Who'll Stop the Rain",
+    "year": 1978,
+    "director": "Karel Reisz",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Foul Play",
+    "year": 1978,
+    "director": "Colin Higgins",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Go Tell the Spartans",
+    "year": 1978,
+    "director": "Ted Post",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Bye Bye Brasil",
+    "year": 1979,
+    "director": "Carlos Diegues",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "director": "Francis Ford Coppola",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Woody Allen's Manhattan",
+    "year": 1979,
+    "director": "Woody Allen",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Kramer vs. Kramer",
+    "year": 1979,
+    "director": "Robert Benton",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Breaking Away",
+    "year": 1979,
+    "director": "Peter Yates",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The China Syndrome",
+    "year": 1979,
+    "director": "James Bridges",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Alien",
+    "year": 1979,
+    "director": "Ridley Scott",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Hair",
+    "year": 1979,
+    "director": "Milos Forman",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Norma Rae",
+    "year": 1979,
+    "director": "Martin Ritt",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Marriage of Maria Braun",
+    "year": 1979,
+    "director": "Rainer Werner Fassbinder",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Pixote",
+    "year": 1980,
+    "director": "Hector Babenco",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Age of the Earth",
+    "year": 1980,
+    "director": "Glauber Rocha",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Raging Bull",
+    "year": 1980,
+    "director": "Martin Scorsese",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Raging Bull",
+    "year": 1980,
+    "director": "Martin Scorsese",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Shining",
+    "year": 1980,
+    "director": "Stanley Kubrick",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Airplane!",
+    "year": 1980,
+    "director": "Jim Abrahams, David Zucker, Jerry Zucker",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Elephant Man",
+    "year": 1980,
+    "director": "David Lynch",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Ordinary People",
+    "year": 1980,
+    "director": "Robert Redford",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "They Don't Wear Black Tie",
+    "year": 1981,
+    "director": "Leon Hirszman",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Raiders of the Lost Ark",
+    "year": 1981,
+    "director": "Steven Spielberg",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "On Golden Pond",
+    "year": 1981,
+    "director": "Mark Rydell",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Gandhi",
+    "year": 1982,
+    "director": "Richard Attenborough",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Blade Runner",
+    "year": 1982,
+    "director": "Ridley Scott",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "E.T. the Extra-Terrestrial",
+    "year": 1982,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Gandhi",
+    "year": 1982,
+    "director": "Richard Attenborough",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Thing",
+    "year": 1982,
+    "director": "John Carpenter",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Tootsie",
+    "year": 1982,
+    "director": "Sydney Pollack",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Scarface",
+    "year": 1983,
+    "director": "Brian De Palma",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Terms of Endearment",
+    "year": 1983,
+    "director": "James L. Brooks",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Right Stuff",
+    "year": 1983,
+    "director": "Philip Kaufman",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "A Christmas Story",
+    "year": 1983,
+    "director": "Bob Clark",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Star Wars: Episode VI - Return of the Jedi",
+    "year": 1983,
+    "director": "Richard Marquand",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Quilombo",
+    "year": 1984,
+    "director": "Carlos Diegues",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Amadeus",
+    "year": 1984,
+    "director": "Milos Forman",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Amadeus",
+    "year": 1984,
+    "director": "Miloš Forman",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Ghostbusters",
+    "year": 1984,
+    "director": "Ivan Reitman",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Terminator",
+    "year": 1984,
+    "director": "James Cameron",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Karate Kid",
+    "year": 1984,
+    "director": "John G. Avildsen",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Hour of the Star",
+    "year": 1985,
+    "director": "Suzana Amaral",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Kiss of the Spider Woman",
+    "year": 1985,
+    "director": "Hector Babenco",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Back to the Future",
+    "year": 1985,
+    "director": "Robert Zemeckis",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Brazil",
+    "year": 1985,
+    "director": "Terry Gilliam",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Goonies",
+    "year": 1985,
+    "director": "Richard Donner",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Witness",
+    "year": 1985,
+    "director": "Peter Weir",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Out of Africa",
+    "year": 1985,
+    "director": "Sydney Pollack",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Breakfast Club",
+    "year": 1985,
+    "director": "John Hughes",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Aliens",
+    "year": 1986,
+    "director": "James Cameron",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Platoon",
+    "year": 1986,
+    "director": "Oliver Stone",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Top Gun",
+    "year": 1986,
+    "director": "Tony Scott",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "The Color of Money",
+    "year": 1986,
+    "director": "Martin Scorsese",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Blue Velvet",
+    "year": 1986,
+    "director": "David Lynch",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Ferris Bueller's Day Off",
+    "year": 1986,
+    "director": "John Hughes",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Dolphin",
+    "year": 1987,
+    "director": "Walter Lima Jr.",
+    "imdb_rating": 6.0
+  },
+  {
+    "title": "Full Metal Jacket",
+    "year": 1987,
+    "director": "Stanley Kubrick",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Fatal Attraction",
+    "year": 1987,
+    "director": "Adrian Lyne",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "The Princess Bride",
+    "year": 1987,
+    "director": "Rob Reiner",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Wall Street",
+    "year": 1987,
+    "director": "Oliver Stone",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Last Emperor",
+    "year": 1987,
+    "director": "Bernardo Bertolucci",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Rain Man",
+    "year": 1988,
+    "director": "Barry Levinson",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Big",
+    "year": 1988,
+    "director": "Penny Marshall",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Die Hard",
+    "year": 1988,
+    "director": "John McTiernan",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "A Fish Called Wanda",
+    "year": 1988,
+    "director": "Charles Crichton",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Who Framed Roger Rabbit",
+    "year": 1988,
+    "director": "Robert Zemeckis",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "My Neighbor Totoro",
+    "year": 1988,
+    "director": "Hayao Miyazaki",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Grave of the Fireflies",
+    "year": 1988,
+    "director": "Isao Takahata",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Cinema Paradiso",
+    "year": 1988,
+    "director": "Giuseppe Tornatore",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Dead Poets Society",
+    "year": 1989,
+    "director": "Peter Weir",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Born on the Fourth of July",
+    "year": 1989,
+    "director": "Oliver Stone",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Batman",
+    "year": 1989,
+    "director": "Tim Burton",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Indiana Jones and the Last Crusade",
+    "year": 1989,
+    "director": "Steven Spielberg",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Field of Dreams",
+    "year": 1989,
+    "director": "Phil Alden Robinson",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Do the Right Thing",
+    "year": 1989,
+    "director": "Spike Lee",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "My Left Foot",
+    "year": 1989,
+    "director": "Jim Sheridan",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Driving Miss Daisy",
+    "year": 1989,
+    "director": "Bruce Beresford",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Cook, the Thief, His Wife & Her Lover",
+    "year": 1989,
+    "director": "Peter Greenaway",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Goodfellas",
+    "year": 1990,
+    "director": "Martin Scorsese",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Dances with Wolves",
+    "year": 1990,
+    "director": "Kevin Costner",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Ghost",
+    "year": 1990,
+    "director": "Jerry Zucker",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Pretty Woman",
+    "year": 1990,
+    "director": "Garry Marshall",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Home Alone",
+    "year": 1990,
+    "director": "Chris Columbus",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Miller's Crossing",
+    "year": 1990,
+    "director": "Joel Coen, Ethan Coen",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Awakenings",
+    "year": 1990,
+    "director": "Penny Marshall",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Misery",
+    "year": 1990,
+    "director": "Rob Reiner",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Total Recall",
+    "year": 1990,
+    "director": "Paul Verhoeven",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Edward Scissorhands",
+    "year": 1990,
+    "director": "Tim Burton",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "At Play in the Fields of the Lord",
+    "year": 1991,
+    "director": "Hector Babenco",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "director": "Jonathan Demme",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Terminator 2: Judgment Day",
+    "year": 1991,
+    "director": "James Cameron",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Beauty and the Beast",
+    "year": 1991,
+    "director": "Gary Trousdale, Kirk Wise",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "JFK",
+    "year": 1991,
+    "director": "Oliver Stone",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Fisher King",
+    "year": 1991,
+    "director": "Terry Gilliam",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Point Break",
+    "year": 1991,
+    "director": "Kathryn Bigelow",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Boyz n the Hood",
+    "year": 1991,
+    "director": "John Singleton",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Addams Family",
+    "year": 1991,
+    "director": "Barry Sonnenfeld",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Barton Fink",
+    "year": 1991,
+    "director": "Joel Coen, Ethan Coen",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Thelma & Louise",
+    "year": 1991,
+    "director": "Ridley Scott",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Unforgiven",
+    "year": 1992,
+    "director": "Clint Eastwood",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Player",
+    "year": 1992,
+    "director": "Robert Altman",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "A Few Good Men",
+    "year": 1992,
+    "director": "Rob Reiner",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Reservoir Dogs",
+    "year": 1992,
+    "director": "Quentin Tarantino",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Malcolm X",
+    "year": 1992,
+    "director": "Spike Lee",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Basic Instinct",
+    "year": 1992,
+    "director": "Paul Verhoeven",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Wayne's World",
+    "year": 1992,
+    "director": "Penelope Spheeris",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Aladdin",
+    "year": 1992,
+    "director": "Ron Clements, John Musker",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Scent of a Woman",
+    "year": 1992,
+    "director": "Martin Brest",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Crying Game",
+    "year": 1992,
+    "director": "Neil Jordan",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "director": "Steven Spielberg",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "director": "Steven Spielberg",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "Jurassic Park",
+    "year": 1993,
+    "director": "Steven Spielberg",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Fugitive",
+    "year": 1993,
+    "director": "Andrew Davis",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Groundhog Day",
+    "year": 1993,
+    "director": "Harold Ramis",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "In the Name of the Father",
+    "year": 1993,
+    "director": "Jim Sheridan",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "What's Eating Gilbert Grape",
+    "year": 1993,
+    "director": "Lasse Hallström",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Piano",
+    "year": 1993,
+    "director": "Jane Campion",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Philadelphia",
+    "year": 1993,
+    "director": "Jonathan Demme",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Sleepless in Seattle",
+    "year": 1993,
+    "director": "Nora Ephron",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Rudy",
+    "year": 1993,
+    "director": "David Anspaugh",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "director": "Quentin Tarantino",
+    "imdb_rating": 8.9
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "director": "Roger Allers, Rob Minkoff",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "director": "Robert Zemeckis",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "director": "Frank Darabont",
+    "imdb_rating": 9.3
+  },
+  {
+    "title": "Speed",
+    "year": 1994,
+    "director": "Jan de Bont",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Interview with the Vampire",
+    "year": 1994,
+    "director": "Neil Jordan",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Mask",
+    "year": 1994,
+    "director": "Chuck Russell",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Natural Born Killers",
+    "year": 1994,
+    "director": "Oliver Stone",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Four Weddings and a Funeral",
+    "year": 1994,
+    "director": "Mike Newell",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Professional",
+    "year": 1994,
+    "director": "Luc Besson",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Braveheart",
+    "year": 1995,
+    "director": "Mel Gibson",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Se7en",
+    "year": 1995,
+    "director": "David Fincher",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Toy Story",
+    "year": 1995,
+    "director": "John Lasseter",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Apollo 13",
+    "year": 1995,
+    "director": "Ron Howard",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Heat",
+    "year": 1995,
+    "director": "Michael Mann",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Casper",
+    "year": 1995,
+    "director": "Brad Silberling",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "The Usual Suspects",
+    "year": 1995,
+    "director": "Bryan Singer",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Clueless",
+    "year": 1995,
+    "director": "Amy Heckerling",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Seven",
+    "year": 1995,
+    "director": "David Fincher",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "12 Monkeys",
+    "year": 1995,
+    "director": "Terry Gilliam",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Foreign Land",
+    "year": 1996,
+    "director": "Walter Salles, Daniela Thomas",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Fargo",
+    "year": 1996,
+    "director": "Joel Coen, Ethan Coen",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The English Patient",
+    "year": 1996,
+    "director": "Anthony Minghella",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Jerry Maguire",
+    "year": 1996,
+    "director": "Cameron Crowe",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Independence Day",
+    "year": 1996,
+    "director": "Roland Emmerich",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "The Rock",
+    "year": 1996,
+    "director": "Michael Bay",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Mission: Impossible",
+    "year": 1996,
+    "director": "Brian De Palma",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Twister",
+    "year": 1996,
+    "director": "Jan de Bont",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Scream",
+    "year": 1996,
+    "director": "Wes Craven",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Birdcage",
+    "year": 1996,
+    "director": "Mike Nichols",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Trainspotting",
+    "year": 1996,
+    "director": "Danny Boyle",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The People vs. Larry Flynt",
+    "year": 1996,
+    "director": "Miloš Forman",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Secrets & Lies",
+    "year": 1996,
+    "director": "Mike Leigh",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Sling Blade",
+    "year": 1996,
+    "director": "Billy Bob Thornton",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Evita",
+    "year": 1996,
+    "director": "Alan Parker",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Shine",
+    "year": 1996,
+    "director": "Scott Hicks",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Four Days in September",
+    "year": 1997,
+    "director": "Bruno Barreto",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Oyster and the Wind",
+    "year": 1997,
+    "director": "Walter Lima Jr.",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Titanic",
+    "year": 1997,
+    "director": "James Cameron",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "L.A. Confidential",
+    "year": 1997,
+    "director": "Curtis Hanson",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Good Will Hunting",
+    "year": 1997,
+    "director": "Gus Van Sant",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Full Monty",
+    "year": 1997,
+    "director": "Peter Cattaneo",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "As Good as It Gets",
+    "year": 1997,
+    "director": "James L. Brooks",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Ice Storm",
+    "year": 1997,
+    "director": "Ang Lee",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Boogie Nights",
+    "year": 1997,
+    "director": "Paul Thomas Anderson",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Jackie Brown",
+    "year": 1997,
+    "director": "Quentin Tarantino",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Contact",
+    "year": 1997,
+    "director": "Robert Zemeckis",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Game",
+    "year": 1997,
+    "director": "David Fincher",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Donnie Brasco",
+    "year": 1997,
+    "director": "Mike Newell",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Face/Off",
+    "year": 1997,
+    "director": "John Woo",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Men in Black",
+    "year": 1997,
+    "director": "Barry Sonnenfeld",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Fifth Element",
+    "year": 1997,
+    "director": "Luc Besson",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Conspiracy Theory",
+    "year": 1997,
+    "director": "Richard Donner",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Life Is Beautiful",
+    "year": 1997,
+    "director": "Roberto Benigni",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Central Station",
+    "year": 1998,
+    "director": "Walter Salles",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Midnight",
+    "year": 1998,
+    "director": "Walter Salles, Daniela Thomas",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "director": "Steven Spielberg",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Shakespeare in Love",
+    "year": 1998,
+    "director": "John Madden",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Truman Show",
+    "year": 1998,
+    "director": "Peter Weir",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "American History X",
+    "year": 1998,
+    "director": "Tony Kaye",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "There's Something About Mary",
+    "year": 1998,
+    "director": "Bobby Farrelly, Peter Farrelly",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Rushmore",
+    "year": 1998,
+    "director": "Wes Anderson",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Big Lebowski",
+    "year": 1998,
+    "director": "Joel Coen, Ethan Coen",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Run Lola Run",
+    "year": 1998,
+    "director": "Tom Tykwer",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Thin Red Line",
+    "year": 1998,
+    "director": "Terrence Malick",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "You've Got Mail",
+    "year": 1998,
+    "director": "Nora Ephron",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Armageddon",
+    "year": 1998,
+    "director": "Michael Bay",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "The Waterboy",
+    "year": 1998,
+    "director": "Frank Coraci",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Mulan",
+    "year": 1998,
+    "director": "Tony Bancroft, Barry Cook",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "A Bug's Life",
+    "year": 1998,
+    "director": "John Lasseter, Andrew Stanton",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Prince of Egypt",
+    "year": 1998,
+    "director": "Brenda Chapman, Steve Hickner, Simon Wells",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "American Beauty",
+    "year": 1999,
+    "director": "Sam Mendes",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "director": "David Fincher",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "The Sixth Sense",
+    "year": 1999,
+    "director": "M. Night Shyamalan",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Green Mile",
+    "year": 1999,
+    "director": "Frank Darabont",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Being John Malkovich",
+    "year": 1999,
+    "director": "Spike Jonze",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Magnolia",
+    "year": 1999,
+    "director": "Paul Thomas Anderson",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Three Kings",
+    "year": 1999,
+    "director": "David O. Russell",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Insider",
+    "year": 1999,
+    "director": "Michael Mann",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Toy Story 2",
+    "year": 1999,
+    "director": "John Lasseter, Ash Brannon, Lee Unkrich",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Eyes Wide Shut",
+    "year": 1999,
+    "director": "Stanley Kubrick",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Election",
+    "year": 1999,
+    "director": "Alexander Payne",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Galaxy Quest",
+    "year": 1999,
+    "director": "Dean Parisot",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "American Pie",
+    "year": 1999,
+    "director": "Paul Weitz",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Austin Powers: The Spy Who Shagged Me",
+    "year": 1999,
+    "director": "Jay Roach",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "The Mummy",
+    "year": 1999,
+    "director": "Stephen Sommers",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Notting Hill",
+    "year": 1999,
+    "director": "Roger Michell",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Blair Witch Project",
+    "year": 1999,
+    "director": "Daniel Myrick, Eduardo Sánchez",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Star Wars: Episode I - The Phantom Menace",
+    "year": 1999,
+    "director": "George Lucas",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "The Iron Giant",
+    "year": 1999,
+    "director": "Brad Bird",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Double Jeopardy",
+    "year": 1999,
+    "director": "Bruce Beresford",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "The Talented Mr. Ripley",
+    "year": 1999,
+    "director": "Anthony Minghella",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Sleepy Hollow",
+    "year": 1999,
+    "director": "Tim Burton",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Girl, Interrupted",
+    "year": 1999,
+    "director": "James Mangold",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Any Given Sunday",
+    "year": 1999,
+    "director": "Oliver Stone",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "The Cider House Rules",
+    "year": 1999,
+    "director": "Lasse Hallström",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Boys Don't Cry",
+    "year": 1999,
+    "director": "Kimberly Peirce",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Brainstorm",
+    "year": 2000,
+    "director": "Laís Bodanzky",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Me You Them",
+    "year": 2000,
+    "director": "Andrucha Waddington",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "A Dog's Will",
+    "year": 2000,
+    "director": "Guel Arraes",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "The Little Prince's Rap Against the Wicked Souls",
+    "year": 2000,
+    "director": "Paulo Caldas, Marcelo Luna",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "director": "Ridley Scott",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Almost Famous",
+    "year": 2000,
+    "director": "Cameron Crowe",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Traffic",
+    "year": 2000,
+    "director": "Steven Soderbergh",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Crouching Tiger, Hidden Dragon",
+    "year": 2000,
+    "director": "Ang Lee",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Cast Away",
+    "year": 2000,
+    "director": "Robert Zemeckis",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Erin Brockovich",
+    "year": 2000,
+    "director": "Steven Soderbergh",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Requiem for a Dream",
+    "year": 2000,
+    "director": "Darren Aronofsky",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Memento",
+    "year": 2000,
+    "director": "Christopher Nolan",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "X-Men",
+    "year": 2000,
+    "director": "Bryan Singer",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Meet the Parents",
+    "year": 2000,
+    "director": "Jay Roach",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Behind the Sun",
+    "year": 2001,
+    "director": "Walter Salles",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Trespasser",
+    "year": 2001,
+    "director": "Beto Brant",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "To the Left of the Father",
+    "year": 2001,
+    "director": "Luiz Fernando Carvalho",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "director": "Peter Jackson",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "A Beautiful Mind",
+    "year": 2001,
+    "director": "Ron Howard",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Shrek",
+    "year": 2001,
+    "director": "Andrew Adamson, Vicky Jenson",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Monsters, Inc.",
+    "year": 2001,
+    "director": "Pete Docter, David Silverman, Lee Unkrich",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Ocean's Eleven",
+    "year": 2001,
+    "director": "Steven Soderbergh",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Moulin Rouge!",
+    "year": 2001,
+    "director": "Baz Luhrmann",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Royal Tenenbaums",
+    "year": 2001,
+    "director": "Wes Anderson",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Mulholland Drive",
+    "year": 2001,
+    "director": "David Lynch",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Amelie",
+    "year": 2001,
+    "director": "Jean-Pierre Jeunet",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Training Day",
+    "year": 2001,
+    "director": "Antoine Fuqua",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "City of God",
+    "year": 2002,
+    "director": "Fernando Meirelles, Kátia Lund",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Bus 174",
+    "year": 2002,
+    "director": "José Padilha",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Madame Satã",
+    "year": 2002,
+    "director": "Karim Aïnouz",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Amarelo Manga",
+    "year": 2002,
+    "director": "Cláudio Assis",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": 2002,
+    "director": "Peter Jackson",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Chicago",
+    "year": 2002,
+    "director": "Rob Marshall",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Catch Me If You Can",
+    "year": 2002,
+    "director": "Steven Spielberg",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Road to Perdition",
+    "year": 2002,
+    "director": "Sam Mendes",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Minority Report",
+    "year": 2002,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Spider-Man",
+    "year": 2002,
+    "director": "Sam Raimi",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Signs",
+    "year": 2002,
+    "director": "M. Night Shyamalan",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "My Big Fat Greek Wedding",
+    "year": 2002,
+    "director": "Joel Zwick",
+    "imdb_rating": 6.0
+  },
+  {
+    "title": "The Pianist",
+    "year": 2002,
+    "director": "Roman Polanski",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Adaptation.",
+    "year": 2002,
+    "director": "Spike Jonze",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Man Who Copied",
+    "year": 2003,
+    "director": "Jorge Furtado",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Carandiru",
+    "year": 2003,
+    "director": "Hector Babenco",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Man of the Year",
+    "year": 2003,
+    "director": "José Henrique Fonseca",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Storytellers",
+    "year": 2003,
+    "director": "Eliane Caffé",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "director": "Peter Jackson",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "Finding Nemo",
+    "year": 2003,
+    "director": "Andrew Stanton, Lee Unkrich",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Lost in Translation",
+    "year": 2003,
+    "director": "Sofia Coppola",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Kill Bill: Vol. 1",
+    "year": 2003,
+    "director": "Quentin Tarantino",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Mystic River",
+    "year": 2003,
+    "director": "Clint Eastwood",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "year": 2003,
+    "director": "Gore Verbinski",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "X2",
+    "year": 2003,
+    "director": "Bryan Singer",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Elf",
+    "year": 2003,
+    "director": "Jon Favreau",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "School of Rock",
+    "year": 2003,
+    "director": "Richard Linklater",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Love Actually",
+    "year": 2003,
+    "director": "Richard Curtis",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Araguaya - A Conspiracy of Silence",
+    "year": 2004,
+    "director": "Ronaldo Duque",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "year": 2004,
+    "director": "Michel Gondry",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Million Dollar Baby",
+    "year": 2004,
+    "director": "Clint Eastwood",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Crash",
+    "year": 2004,
+    "director": "Paul Haggis",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Incredibles",
+    "year": 2004,
+    "director": "Brad Bird",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Sideways",
+    "year": 2004,
+    "director": "Alexander Payne",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Shrek 2",
+    "year": 2004,
+    "director": "Andrew Adamson, Kelly Asbury, Conrad Vernon",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Spider-Man 2",
+    "year": 2004,
+    "director": "Sam Raimi",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Kill Bill: Vol. 2",
+    "year": 2004,
+    "director": "Quentin Tarantino",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Collateral",
+    "year": 2004,
+    "director": "Michael Mann",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Mean Girls",
+    "year": 2004,
+    "director": "Mark Waters",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Lower City",
+    "year": 2005,
+    "director": "Sérgio Machado",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Cinema, Aspirins and Vultures",
+    "year": 2005,
+    "director": "Marcelo Gomes",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Two Sons of Francisco",
+    "year": 2005,
+    "director": "Breno Silveira",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Crash",
+    "year": 2005,
+    "director": "David Cronenberg",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Brokeback Mountain",
+    "year": 2005,
+    "director": "Ang Lee",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Good Night, and Good Luck",
+    "year": 2005,
+    "director": "George Clooney",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Munich",
+    "year": 2005,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Capote",
+    "year": 2005,
+    "director": "Bennett Miller",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Batman Begins",
+    "year": 2005,
+    "director": "Christopher Nolan",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Sin City",
+    "year": 2005,
+    "director": "Frank Miller, Robert Rodriguez",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Wedding Crashers",
+    "year": 2005,
+    "director": "David Dobkin",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Walk the Line",
+    "year": 2005,
+    "director": "James Mangold",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The 40-Year-Old Virgin",
+    "year": 2005,
+    "director": "Judd Apatow",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Love for Sale",
+    "year": 2006,
+    "director": "Karim Aïnouz",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "The Bog of Beasts",
+    "year": 2006,
+    "director": "Cláudio Assis",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "The Departed",
+    "year": 2006,
+    "director": "Martin Scorsese",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Little Miss Sunshine",
+    "year": 2006,
+    "director": "Jonathan Dayton, Valerie Faris",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Pursuit of Happyness",
+    "year": 2006,
+    "director": "Gabriele Muccino",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Letters from Iwo Jima",
+    "year": 2006,
+    "director": "Clint Eastwood",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "director": "Christopher Nolan",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Pan's Labyrinth",
+    "year": 2006,
+    "director": "Guillermo del Toro",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Cars",
+    "year": 2006,
+    "director": "John Lasseter, Joe Ranft",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Borat",
+    "year": 2006,
+    "director": "Larry Charles",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Casino Royale",
+    "year": 2006,
+    "director": "Martin Campbell",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Devil Wears Prada",
+    "year": 2006,
+    "director": "David Frankel",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Elite Squad",
+    "year": 2007,
+    "director": "José Padilha",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Stomachache",
+    "year": 2007,
+    "director": "Marcos Jorge",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "No Country for Old Men",
+    "year": 2007,
+    "director": "Joel Coen, Ethan Coen",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "There Will Be Blood",
+    "year": 2007,
+    "director": "Paul Thomas Anderson",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Juno",
+    "year": 2007,
+    "director": "Jason Reitman",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Atonement",
+    "year": 2007,
+    "director": "Joe Wright",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Michael Clayton",
+    "year": 2007,
+    "director": "Tony Gilroy",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Ratatouille",
+    "year": 2007,
+    "director": "Brad Bird, Jan Pinkava",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Bourne Ultimatum",
+    "year": 2007,
+    "director": "Paul Greengrass",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Zodiac",
+    "year": 2007,
+    "director": "David Fincher",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Superbad",
+    "year": 2007,
+    "director": "Greg Mottola",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Transformers",
+    "year": 2007,
+    "director": "Michael Bay",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "My Name Ain't Johnny",
+    "year": 2008,
+    "director": "Mauro Lima",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Dead Girl's Feast",
+    "year": 2008,
+    "director": "Matheus Nachtergaele",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Slumdog Millionaire",
+    "year": 2008,
+    "director": "Danny Boyle",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "director": "Christopher Nolan",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "WALL-E",
+    "year": 2008,
+    "director": "Andrew Stanton",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Curious Case of Benjamin Button",
+    "year": 2008,
+    "director": "David Fincher",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Milk",
+    "year": 2008,
+    "director": "Gus Van Sant",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Frost/Nixon",
+    "year": 2008,
+    "director": "Ron Howard",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Reader",
+    "year": 2008,
+    "director": "Stephen Daldry",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Gran Torino",
+    "year": 2008,
+    "director": "Clint Eastwood",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Iron Man",
+    "year": 2008,
+    "director": "Jon Favreau",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "In Bruges",
+    "year": 2008,
+    "director": "Martin McDonagh",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Wrestler",
+    "year": 2008,
+    "director": "Darren Aronofsky",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Tropic Thunder",
+    "year": 2008,
+    "director": "Ben Stiller",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Pineapple Express",
+    "year": 2008,
+    "director": "David Gordon Green",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Quantum of Solace",
+    "year": 2008,
+    "director": "Marc Forster",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "The Duchess",
+    "year": 2008,
+    "director": "Saul Dibb",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Smoke Gets in Your Eyes",
+    "year": 2009,
+    "director": "Anna Muylaert",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "The Invisible Woman",
+    "year": 2009,
+    "director": "Cláudio Torres",
+    "imdb_rating": 5.1
+  },
+  {
+    "title": "Lula, the Son of Brazil",
+    "year": 2009,
+    "director": "Fábio Barreto, Marcelo Santiago",
+    "imdb_rating": 5.5
+  },
+  {
+    "title": "The Assailant",
+    "year": 2009,
+    "director": "Beto Brant",
+    "imdb_rating": 5.7
+  },
+  {
+    "title": "I Travel Because I Have To, I Come Back Because I Love You",
+    "year": 2009,
+    "director": "Karim Aïnouz, Marcelo Gomes",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Avatar",
+    "year": 2009,
+    "director": "James Cameron",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Hurt Locker",
+    "year": 2009,
+    "director": "Kathryn Bigelow",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Inglourious Basterds",
+    "year": 2009,
+    "director": "Quentin Tarantino",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Up",
+    "year": 2009,
+    "director": "Pete Docter, Bob Peterson",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "District 9",
+    "year": 2009,
+    "director": "Neill Blomkamp",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Blind Side",
+    "year": 2009,
+    "director": "John Lee Hancock",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "An Education",
+    "year": 2009,
+    "director": "Lone Scherfig",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Precious",
+    "year": 2009,
+    "director": "Lee Daniels",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "A Serious Man",
+    "year": 2009,
+    "director": "Joel Coen, Ethan Coen",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Up in the Air",
+    "year": 2009,
+    "director": "Jason Reitman",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Sherlock Holmes",
+    "year": 2009,
+    "director": "Guy Ritchie",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Star Trek",
+    "year": 2009,
+    "director": "J.J. Abrams",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Hangover",
+    "year": 2009,
+    "director": "Todd Phillips",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Zombieland",
+    "year": 2009,
+    "director": "Ruben Fleischer",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "500 Days of Summer",
+    "year": 2009,
+    "director": "Marc Webb",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Drag Me to Hell",
+    "year": 2009,
+    "director": "Sam Raimi",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "The Princess and the Frog",
+    "year": 2009,
+    "director": "Ron Clements, John Musker",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Fantastic Mr. Fox",
+    "year": 2009,
+    "director": "Wes Anderson",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Coraline",
+    "year": 2009,
+    "director": "Henry Selick",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Cove",
+    "year": 2009,
+    "director": "Louie Psihoyos",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Where the Wild Things Are",
+    "year": 2009,
+    "director": "Spike Jonze",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "The Girl Who Kicked the Hornet's Nest",
+    "year": 2009,
+    "director": "Daniel Alfredson",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Fish Tank",
+    "year": 2009,
+    "director": "Andrea Arnold",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "A Prophet",
+    "year": 2009,
+    "director": "Jacques Audiard",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The White Ribbon",
+    "year": 2009,
+    "director": "Michael Haneke",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Dogtooth",
+    "year": 2009,
+    "director": "Yorgos Lanthimos",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "I Am Love",
+    "year": 2009,
+    "director": "Luca Guadagnino",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Coco avant Chanel",
+    "year": 2009,
+    "director": "Anne Fontaine",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "The Secret in Their Eyes",
+    "year": 2009,
+    "director": "Juan José Campanella",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Elite Squad: The Enemy Within",
+    "year": 2010,
+    "director": "José Padilha",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "De Pernas pro Ar",
+    "year": 2010,
+    "director": "Roberto Santucci",
+    "imdb_rating": 5.6
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "director": "Christopher Nolan",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "The King's Speech",
+    "year": 2010,
+    "director": "Tom Hooper",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Social Network",
+    "year": 2010,
+    "director": "David Fincher",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Black Swan",
+    "year": 2010,
+    "director": "Darren Aronofsky",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "True Grit",
+    "year": 2010,
+    "director": "Joel Coen, Ethan Coen",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Fighter",
+    "year": 2010,
+    "director": "David O. Russell",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "127 Hours",
+    "year": 2010,
+    "director": "Danny Boyle",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Winter's Bone",
+    "year": 2010,
+    "director": "Debra Granik",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Kids Are All Right",
+    "year": 2010,
+    "director": "Lisa Cholodenko",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Toy Story 3",
+    "year": 2010,
+    "director": "Lee Unkrich",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Shutter Island",
+    "year": 2010,
+    "director": "Martin Scorsese",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Iron Man 2",
+    "year": 2010,
+    "director": "Jon Favreau",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Kick-Ass",
+    "year": 2010,
+    "director": "Matthew Vaughn",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Scott Pilgrim vs. The World",
+    "year": 2010,
+    "director": "Edgar Wright",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Tangled",
+    "year": 2010,
+    "director": "Nathan Greno, Byron Howard",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "How to Train Your Dragon",
+    "year": 2010,
+    "director": "Dean DeBlois, Chris Sanders",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Town",
+    "year": 2010,
+    "director": "Ben Affleck",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Easy A",
+    "year": 2010,
+    "director": "Will Gluck",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Despicable Me",
+    "year": 2010,
+    "director": "Pierre Coffin, Chris Renaud",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Alice in Wonderland",
+    "year": 2010,
+    "director": "Tim Burton",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "The Other Guys",
+    "year": 2010,
+    "director": "Adam McKay",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Insidious",
+    "year": 2010,
+    "director": "James Wan",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Next Three Days",
+    "year": 2010,
+    "director": "Paul Haggis",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Fair Game",
+    "year": 2010,
+    "director": "Doug Liman",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Biutiful",
+    "year": 2010,
+    "director": "Alejandro González Iñárritu",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Way Back",
+    "year": 2010,
+    "director": "Peter Weir",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Rabbit Hole",
+    "year": 2010,
+    "director": "John Cameron Mitchell",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Blue Valentine",
+    "year": 2010,
+    "director": "Derek Cianfrance",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Company Men",
+    "year": 2010,
+    "director": "John Wells",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Barney's Version",
+    "year": 2010,
+    "director": "Richard J. Lewis",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Somewhere",
+    "year": 2010,
+    "director": "Sofia Coppola",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Another Year",
+    "year": 2010,
+    "director": "Mike Leigh",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Ghost Writer",
+    "year": 2010,
+    "director": "Roman Polanski",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Uncle Boonmee Who Can Recall His Past Lives",
+    "year": 2010,
+    "director": "Apichatpong Weerasethakul",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Poetry",
+    "year": 2010,
+    "director": "Lee Chang-dong",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Certified Copy",
+    "year": 2010,
+    "director": "Abbas Kiarostami",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Of Gods and Men",
+    "year": 2010,
+    "director": "Xavier Beauvois",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "In a Better World",
+    "year": 2010,
+    "director": "Susanne Bier",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Incendies",
+    "year": 2010,
+    "director": "Denis Villeneuve",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Carlos",
+    "year": 2010,
+    "director": "Olivier Assayas",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Winter's Bone",
+    "year": 2010,
+    "director": "Debra Granik",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Animal Kingdom",
+    "year": 2010,
+    "director": "David Michôd",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Clown",
+    "year": 2011,
+    "director": "Selton Mello",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Hard Labor",
+    "year": 2011,
+    "director": "Marco Dutra, Juliana Rojas",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Southwest",
+    "year": 2011,
+    "director": "Eduardo Nunes",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Rat Fever",
+    "year": 2011,
+    "director": "Cláudio Assis",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Silver Cliff",
+    "year": 2011,
+    "director": "Karim Aïnouz",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "The Artist",
+    "year": 2011,
+    "director": "Michel Hazanavicius",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Hugo",
+    "year": 2011,
+    "director": "Martin Scorsese",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Descendants",
+    "year": 2011,
+    "director": "Alexander Payne",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Midnight in Paris",
+    "year": 2011,
+    "director": "Woody Allen",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Help",
+    "year": 2011,
+    "director": "Tate Taylor",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Moneyball",
+    "year": 2011,
+    "director": "Bennett Miller",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "War Horse",
+    "year": 2011,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Tree of Life",
+    "year": 2011,
+    "director": "Terrence Malick",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Extremely Loud & Incredibly Close",
+    "year": 2011,
+    "director": "Stephen Daldry",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Drive",
+    "year": 2011,
+    "director": "Nicolas Winding Refn",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Rango",
+    "year": 2011,
+    "director": "Gore Verbinski",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Rise of the Planet of the Apes",
+    "year": 2011,
+    "director": "Rupert Wyatt",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Super 8",
+    "year": 2011,
+    "director": "J.J. Abrams",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "X-Men: First Class",
+    "year": 2011,
+    "director": "Matthew Vaughn",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Mission: Impossible - Ghost Protocol",
+    "year": 2011,
+    "director": "Brad Bird",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Bridesmaids",
+    "year": 2011,
+    "director": "Paul Feig",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Thor",
+    "year": 2011,
+    "director": "Kenneth Branagh",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Captain America: The First Avenger",
+    "year": 2011,
+    "director": "Joe Johnston",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows: Part 2",
+    "year": 2011,
+    "director": "David Yates",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Fast Five",
+    "year": 2011,
+    "director": "Justin Lin",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Hangover Part II",
+    "year": 2011,
+    "director": "Todd Phillips",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "Transformers: Dark of the Moon",
+    "year": 2011,
+    "director": "Michael Bay",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Pirates of the Caribbean: On Stranger Tides",
+    "year": 2011,
+    "director": "Rob Marshall",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Rio",
+    "year": 2011,
+    "director": "Carlos Saldanha",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Cars 2",
+    "year": 2011,
+    "director": "John Lasseter, Bradford Lewis",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Green Lantern",
+    "year": 2011,
+    "director": "Martin Campbell",
+    "imdb_rating": 5.5
+  },
+  {
+    "title": "Source Code",
+    "year": 2011,
+    "director": "Duncan Jones",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Limitless",
+    "year": 2011,
+    "director": "Neil Burger",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Hanna",
+    "year": 2011,
+    "director": "Joe Wright",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Paul",
+    "year": 2011,
+    "director": "Greg Mottola",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Contagion",
+    "year": 2011,
+    "director": "Steven Soderbergh",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "year": 2011,
+    "director": "David Fincher",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Sherlock Holmes: A Game of Shadows",
+    "year": 2011,
+    "director": "Guy Ritchie",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Adventures of Tintin",
+    "year": 2011,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "We Need to Talk About Kevin",
+    "year": 2011,
+    "director": "Lynne Ramsay",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Melancholia",
+    "year": 2011,
+    "director": "Lars von Trier",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Tinker Tailor Soldier Spy",
+    "year": 2011,
+    "director": "Tomas Alfredson",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "A Separation",
+    "year": 2011,
+    "director": "Asghar Farhadi",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Iron Lady",
+    "year": 2011,
+    "director": "Phyllida Lloyd",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "My Week with Marilyn",
+    "year": 2011,
+    "director": "Simon Curtis",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Young Adult",
+    "year": 2011,
+    "director": "Jason Reitman",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "50/50",
+    "year": 2011,
+    "director": "Jonathan Levine",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Crazy, Stupid, Love",
+    "year": 2011,
+    "director": "Glenn Ficarra, John Requa",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Adjustment Bureau",
+    "year": 2011,
+    "director": "George Nolfi",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Sucker Punch",
+    "year": 2011,
+    "director": "Zack Snyder",
+    "imdb_rating": 6.0
+  },
+  {
+    "title": "Battle: Los Angeles",
+    "year": 2011,
+    "director": "Jonathan Liebesman",
+    "imdb_rating": 5.7
+  },
+  {
+    "title": "The Lincoln Lawyer",
+    "year": 2011,
+    "director": "Brad Furman",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Neighboring Sounds",
+    "year": 2012,
+    "director": "Kleber Mendonça Filho",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Invisible Collection",
+    "year": 2012,
+    "director": "Bernard Attal",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Once Upon a Time Veronica",
+    "year": 2012,
+    "director": "Marcelo Gomes",
+    "imdb_rating": 6.0
+  },
+  {
+    "title": "The Sound Around",
+    "year": 2012,
+    "director": "Kleber Mendonça Filho",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Patience Stone",
+    "year": 2012,
+    "director": "Atiq Rahimi",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Gonzaga: From Father to Son",
+    "year": 2012,
+    "director": "Breno Silveira",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "The Man of the Crowd",
+    "year": 2012,
+    "director": "Cao Guimarães, Marcelo Gomes",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Once Upon a Time Was I, Verônica",
+    "year": 2012,
+    "director": "Marcelo Gomes",
+    "imdb_rating": 6.0
+  },
+  {
+    "title": "Elena",
+    "year": 2012,
+    "director": "Petra Costa",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Till Luck Do Us Part",
+    "year": 2012,
+    "director": "Roberto Santucci",
+    "imdb_rating": 5.8
+  },
+  {
+    "title": "Argo",
+    "year": 2012,
+    "director": "Ben Affleck",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Life of Pi",
+    "year": 2012,
+    "director": "Ang Lee",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Lincoln",
+    "year": 2012,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Silver Linings Playbook",
+    "year": 2012,
+    "director": "David O. Russell",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Zero Dark Thirty",
+    "year": 2012,
+    "director": "Kathryn Bigelow",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Django Unchained",
+    "year": 2012,
+    "director": "Quentin Tarantino",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Les Misérables",
+    "year": 2012,
+    "director": "Tom Hooper",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Amour",
+    "year": 2012,
+    "director": "Michael Haneke",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Beasts of the Southern Wild",
+    "year": 2012,
+    "director": "Benh Zeitlin",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Avengers",
+    "year": 2012,
+    "director": "Joss Whedon",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Frances Ha",
+    "year": 2012,
+    "director": "Noah Baumbach",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Hunt",
+    "year": 2012,
+    "director": "Thomas Vinterberg",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Act of Killing",
+    "year": 2012,
+    "director": "Joshua Oppenheimer",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Stories We Tell",
+    "year": 2012,
+    "director": "Sarah Polley",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Mud",
+    "year": 2012,
+    "director": "Jeff Nichols",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Place Beyond the Pines",
+    "year": 2012,
+    "director": "Derek Cianfrance",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "My Mom Is a Character",
+    "year": 2013,
+    "director": "André Pellenz",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "12 Years a Slave",
+    "year": 2013,
+    "director": "Steve McQueen",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Gravity",
+    "year": 2013,
+    "director": "Alfonso Cuarón",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "American Hustle",
+    "year": 2013,
+    "director": "David O. Russell",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Her",
+    "year": 2013,
+    "director": "Spike Jonze",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Dallas Buyers Club",
+    "year": 2013,
+    "director": "Jean-Marc Vallée",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Captain Phillips",
+    "year": 2013,
+    "director": "Paul Greengrass",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Wolf of Wall Street",
+    "year": 2013,
+    "director": "Martin Scorsese",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Nebraska",
+    "year": 2013,
+    "director": "Alexander Payne",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Philomena",
+    "year": 2013,
+    "director": "Stephen Frears",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Frozen",
+    "year": 2013,
+    "director": "Chris Buck, Jennifer Lee",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Blue Is the Warmest Color",
+    "year": 2013,
+    "director": "Abdellatif Kechiche",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Inside Llewyn Davis",
+    "year": 2013,
+    "director": "Joel Coen, Ethan Coen",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Before Midnight",
+    "year": 2013,
+    "director": "Richard Linklater",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Short Term 12",
+    "year": 2013,
+    "director": "Destin Daniel Cretton",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Upstream Color",
+    "year": 2013,
+    "director": "Shane Carruth",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Only God Forgives",
+    "year": 2013,
+    "director": "Nicolas Winding Refn",
+    "imdb_rating": 5.7
+  },
+  {
+    "title": "Under the Skin",
+    "year": 2013,
+    "director": "Jonathan Glazer",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "The Past",
+    "year": 2013,
+    "director": "Asghar Farhadi",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Blue Jasmine",
+    "year": 2013,
+    "director": "Woody Allen",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Only Lovers Left Alive",
+    "year": 2013,
+    "director": "Jim Jarmusch",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Wind Rises",
+    "year": 2013,
+    "director": "Hayao Miyazaki",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Computer Chess",
+    "year": 2013,
+    "director": "Andrew Bujalski",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "All Is Lost",
+    "year": 2013,
+    "director": "J.C. Chandor",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "The Way He Looks",
+    "year": 2014,
+    "director": "Daniel Ribeiro",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Trash",
+    "year": 2014,
+    "director": "Stephen Daldry, Christian Duurvoort",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "S.O.S. Women to the Sea",
+    "year": 2014,
+    "director": "Cris D'Amato",
+    "imdb_rating": 5.8
+  },
+  {
+    "title": "Futuro Beach",
+    "year": 2014,
+    "director": "Karim Aïnouz",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Birdman",
+    "year": 2014,
+    "director": "Alejandro G. Iñárritu",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Boyhood",
+    "year": 2014,
+    "director": "Richard Linklater",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "director": "Wes Anderson",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "director": "Damien Chazelle",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "The Theory of Everything",
+    "year": 2014,
+    "director": "James Marsh",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Imitation Game",
+    "year": 2014,
+    "director": "Morten Tyldum",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "American Sniper",
+    "year": 2014,
+    "director": "Clint Eastwood",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Selma",
+    "year": 2014,
+    "director": "Ava DuVernay",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Guardians of the Galaxy",
+    "year": 2014,
+    "director": "James Gunn",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "director": "Christopher Nolan",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Second Mother",
+    "year": 2015,
+    "director": "Anna Muylaert",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Neon Bull",
+    "year": 2015,
+    "director": "Gabriel Mascaro",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Big Jet",
+    "year": 2015,
+    "director": "Cláudio Assis",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Seashore",
+    "year": 2015,
+    "director": "Filipe Matzembacher, Marcio Reolon",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "Kill Me Please",
+    "year": 2015,
+    "director": "Anita Rocha da Silveira",
+    "imdb_rating": 5.9
+  },
+  {
+    "title": "My Hindu Friend",
+    "year": 2015,
+    "director": "Hector Babenco",
+    "imdb_rating": 5.9
+  },
+  {
+    "title": "Spotlight",
+    "year": 2015,
+    "director": "Tom McCarthy",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Revenant",
+    "year": 2015,
+    "director": "Alejandro G. Iñárritu",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "director": "George Miller",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Big Short",
+    "year": 2015,
+    "director": "Adam McKay",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Room",
+    "year": 2015,
+    "director": "Lenny Abrahamson",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Brooklyn",
+    "year": 2015,
+    "director": "John Crowley",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Bridge of Spies",
+    "year": 2015,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Martian",
+    "year": 2015,
+    "director": "Ridley Scott",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Star Wars: The Force Awakens",
+    "year": 2015,
+    "director": "J.J. Abrams",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Inside Out",
+    "year": 2015,
+    "director": "Pete Docter, Ronnie Del Carmen",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Aquarius",
+    "year": 2016,
+    "director": "Kleber Mendonça Filho",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "My Mom Is a Character 2",
+    "year": 2016,
+    "director": "César Rodrigues",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Moonlight",
+    "year": 2016,
+    "director": "Barry Jenkins",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "La La Land",
+    "year": 2016,
+    "director": "Damien Chazelle",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Manchester by the Sea",
+    "year": 2016,
+    "director": "Kenneth Lonergan",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Arrival",
+    "year": 2016,
+    "director": "Denis Villeneuve",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Hell or High Water",
+    "year": 2016,
+    "director": "David Mackenzie",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Fences",
+    "year": 2016,
+    "director": "Denzel Washington",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Hidden Figures",
+    "year": 2016,
+    "director": "Theodore Melfi",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Lion",
+    "year": 2016,
+    "director": "Garth Davis",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Hacksaw Ridge",
+    "year": 2016,
+    "director": "Mel Gibson",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Captain America: Civil War",
+    "year": 2016,
+    "director": "Anthony Russo, Joe Russo",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Good Manners",
+    "year": 2017,
+    "director": "Marco Dutra, Juliana Rojas",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Movie of My Life",
+    "year": 2017,
+    "director": "Selton Mello",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Shape of Water",
+    "year": 2017,
+    "director": "Guillermo del Toro",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Three Billboards Outside Ebbing, Missouri",
+    "year": 2017,
+    "director": "Martin McDonagh",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Lady Bird",
+    "year": 2017,
+    "director": "Greta Gerwig",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Get Out",
+    "year": 2017,
+    "director": "Jordan Peele",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Call Me by Your Name",
+    "year": 2017,
+    "director": "Luca Guadagnino",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Phantom Thread",
+    "year": 2017,
+    "director": "Paul Thomas Anderson",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Darkest Hour",
+    "year": 2017,
+    "director": "Joe Wright",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Dunkirk",
+    "year": 2017,
+    "director": "Christopher Nolan",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Post",
+    "year": 2017,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Wonder Woman",
+    "year": 2017,
+    "director": "Patty Jenkins",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Hard Paint",
+    "year": 2018,
+    "director": "Filipe Matzembacher, Marcio Reolon",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Benzinho",
+    "year": 2018,
+    "director": "Gustavo Pizzi",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Green Book",
+    "year": 2018,
+    "director": "Peter Farrelly",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Roma",
+    "year": 2018,
+    "director": "Alfonso Cuarón",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "A Star Is Born",
+    "year": 2018,
+    "director": "Bradley Cooper",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Black Panther",
+    "year": 2018,
+    "director": "Ryan Coogler",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "BlacKkKlansman",
+    "year": 2018,
+    "director": "Spike Lee",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Bohemian Rhapsody",
+    "year": 2018,
+    "director": "Bryan Singer",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Favourite",
+    "year": 2018,
+    "director": "Yorgos Lanthimos",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Vice",
+    "year": 2018,
+    "director": "Adam McKay",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "director": "Anthony Russo, Joe Russo",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Mission: Impossible - Fallout",
+    "year": 2018,
+    "director": "Christopher McQuarrie",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Bacurau",
+    "year": 2019,
+    "director": "Kleber Mendonça Filho, Juliano Dornelles",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Divine Love",
+    "year": 2019,
+    "director": "Gabriel Mascaro",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "The Edge of Democracy",
+    "year": 2019,
+    "director": "Petra Costa",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "My Mom Is a Character 3",
+    "year": 2019,
+    "director": "Susana Garcia",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Invisible Life of Eurídice Gusmão",
+    "year": 2019,
+    "director": "Karim Aïnouz",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Parasite",
+    "year": 2019,
+    "director": "Bong Joon-ho",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "1917",
+    "year": 2019,
+    "director": "Sam Mendes",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "director": "Todd Phillips",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Once Upon a Time in Hollywood",
+    "year": 2019,
+    "director": "Quentin Tarantino",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Irishman",
+    "year": 2019,
+    "director": "Martin Scorsese",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "director": "Anthony Russo, Joe Russo",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Knives Out",
+    "year": 2019,
+    "director": "Rian Johnson",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Ford v Ferrari",
+    "year": 2019,
+    "director": "James Mangold",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Jojo Rabbit",
+    "year": 2019,
+    "director": "Taika Waititi",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Little Women",
+    "year": 2019,
+    "director": "Greta Gerwig",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Sound of Metal",
+    "year": 2019,
+    "director": "Darius Marder",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Nomadland",
+    "year": 2020,
+    "director": "Chloé Zhao",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Minari",
+    "year": 2020,
+    "director": "Lee Isaac Chung",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Father",
+    "year": 2020,
+    "director": "Florian Zeller",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Promising Young Woman",
+    "year": 2020,
+    "director": "Emerald Fennell",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Mank",
+    "year": 2020,
+    "director": "David Fincher",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Trial of the Chicago 7",
+    "year": 2020,
+    "director": "Aaron Sorkin",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Soul",
+    "year": 2020,
+    "director": "Pete Docter, Kemp Powers",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Another Round",
+    "year": 2020,
+    "director": "Thomas Vinterberg",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Medusa",
+    "year": 2021,
+    "director": "Anita Rocha da Silveira",
+    "imdb_rating": 5.8
+  },
+  {
+    "title": "Judas and the Black Messiah",
+    "year": 2021,
+    "director": "Shaka King",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "CODA",
+    "year": 2021,
+    "director": "Sian Heder",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Power of the Dog",
+    "year": 2021,
+    "director": "Jane Campion",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Belfast",
+    "year": 2021,
+    "director": "Kenneth Branagh",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "King Richard",
+    "year": 2021,
+    "director": "Reinaldo Marcus Green",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Licorice Pizza",
+    "year": 2021,
+    "director": "Paul Thomas Anderson",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "West Side Story",
+    "year": 2021,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Don't Look Up",
+    "year": 2021,
+    "director": "Adam McKay",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Nightmare Alley",
+    "year": 2021,
+    "director": "Guillermo del Toro",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Drive My Car",
+    "year": 2021,
+    "director": "Ryusuke Hamaguchi",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The French Dispatch",
+    "year": 2021,
+    "director": "Wes Anderson",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Dune",
+    "year": 2021,
+    "director": "Denis Villeneuve",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "No Time to Die",
+    "year": 2021,
+    "director": "Cary Joji Fukunaga",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Spider-Man: No Way Home",
+    "year": 2021,
+    "director": "Jon Watts",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Matrix Resurrections",
+    "year": 2021,
+    "director": "Lana Wachowski",
+    "imdb_rating": 5.7
+  },
+  {
+    "title": "Encanto",
+    "year": 2021,
+    "director": "Jared Bush, Byron Howard, Charise Castro Smith",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Luca",
+    "year": 2021,
+    "director": "Enrico Casarosa",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Raya and the Last Dragon",
+    "year": 2021,
+    "director": "Don Hall, Carlos López Estrada",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Suicide Squad",
+    "year": 2021,
+    "director": "James Gunn",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Black Widow",
+    "year": 2021,
+    "director": "Cate Shortland",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Eternals",
+    "year": 2021,
+    "director": "Chloé Zhao",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Shang-Chi and the Legend of the Ten Rings",
+    "year": 2021,
+    "director": "Destin Daniel Cretton",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Green Knight",
+    "year": 2021,
+    "director": "David Lowery",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Last Night in Soho",
+    "year": 2021,
+    "director": "Edgar Wright",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Everything Everywhere All at Once",
+    "year": 2022,
+    "director": "Daniels",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Banshees of Inisherin",
+    "year": 2022,
+    "director": "Martin McDonagh",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Tár",
+    "year": 2022,
+    "director": "Todd Field",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Fabelmans",
+    "year": 2022,
+    "director": "Steven Spielberg",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "year": 2022,
+    "director": "Joseph Kosinski",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Elvis",
+    "year": 2022,
+    "director": "Baz Luhrmann",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Women Talking",
+    "year": 2022,
+    "director": "Sarah Polley",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Triangle of Sadness",
+    "year": 2022,
+    "director": "Ruben Östlund",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "All Quiet on the Western Front",
+    "year": 2022,
+    "director": "Edward Berger",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Avatar: The Way of Water",
+    "year": 2022,
+    "director": "James Cameron",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Batman",
+    "year": 2022,
+    "director": "Matt Reeves",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "year": 2022,
+    "director": "Sam Raimi",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Thor: Love and Thunder",
+    "year": 2022,
+    "director": "Taika Waititi",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Black Panther: Wakanda Forever",
+    "year": 2022,
+    "director": "Ryan Coogler",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "The Northman",
+    "year": 2022,
+    "director": "Robert Eggers",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Nope",
+    "year": 2022,
+    "director": "Jordan Peele",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "X",
+    "year": 2022,
+    "director": "Ti West",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Turning Red",
+    "year": 2022,
+    "director": "Domee Shi",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "M3GAN",
+    "year": 2022,
+    "director": "Gerard Johnstone",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Babylon",
+    "year": 2022,
+    "director": "Damien Chazelle",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Glass Onion: A Knives Out Mystery",
+    "year": 2022,
+    "director": "Rian Johnson",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "She Said",
+    "year": 2022,
+    "director": "Maria Schrader",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Menu",
+    "year": 2022,
+    "director": "Mark Mylod",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Barbarian",
+    "year": 2022,
+    "director": "Zach Cregger",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Pearl",
+    "year": 2022,
+    "director": "Ti West",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "RRR",
+    "year": 2022,
+    "director": "S.S. Rajamouli",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Decision to Leave",
+    "year": 2022,
+    "director": "Park Chan-wook",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Aftersun",
+    "year": 2022,
+    "director": "Charlotte Wells",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Whale",
+    "year": 2022,
+    "director": "Darren Aronofsky",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Blonde",
+    "year": 2022,
+    "director": "Andrew Dominik",
+    "imdb_rating": 5.5
+  },
+  {
+    "title": "Amsterdam",
+    "year": 2022,
+    "director": "David O. Russell",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Ticket to Paradise",
+    "year": 2022,
+    "director": "Ol Parker",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "The Woman King",
+    "year": 2022,
+    "director": "Gina Prince-Bythewood",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Smile",
+    "year": 2022,
+    "director": "Parker Finn",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Terrifier 2",
+    "year": 2022,
+    "director": "Damien Leone",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Halloween Ends",
+    "year": 2022,
+    "director": "David Gordon Green",
+    "imdb_rating": 5.0
+  },
+  {
+    "title": "Black Adam",
+    "year": 2022,
+    "director": "Jaume Collet-Serra",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Scream",
+    "year": 2022,
+    "director": "Matt Bettinelli-Olpin, Tyler Gillett",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "The Bad Guys",
+    "year": 2022,
+    "director": "Pierre Perifel",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Sonic the Hedgehog 2",
+    "year": 2022,
+    "director": "Jeff Fowler",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Lightyear",
+    "year": 2022,
+    "director": "Angus MacLane",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Minions: The Rise of Gru",
+    "year": 2022,
+    "director": "Kyle Balda, Brad Ableson, Jonathan del Val",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "DC League of Super-Pets",
+    "year": 2022,
+    "director": "Jared Stern, Sam Levine",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Strange World",
+    "year": 2022,
+    "director": "Don Hall, Qui Nguyen",
+    "imdb_rating": 5.7
+  },
+  {
+    "title": "Puss in Boots: The Last Wish",
+    "year": 2022,
+    "director": "Joel Crawford, Januel Mercado",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Sea Beast",
+    "year": 2022,
+    "director": "Chris Williams",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Wendell & Wild",
+    "year": 2022,
+    "director": "Henry Selick",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "Guillermo del Toro's Pinocchio",
+    "year": 2022,
+    "director": "Guillermo del Toro, Mark Gustafson",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Avatar: The Way of Water",
+    "year": 2022,
+    "director": "James Cameron",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Oppenheimer",
+    "year": 2023,
+    "director": "Christopher Nolan",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Barbie",
+    "year": 2023,
+    "director": "Greta Gerwig",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Killers of the Flower Moon",
+    "year": 2023,
+    "director": "Martin Scorsese",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Past Lives",
+    "year": 2023,
+    "director": "Celine Sciamma",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Zone of Interest",
+    "year": 2023,
+    "director": "Jonathan Glazer",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "American Fiction",
+    "year": 2023,
+    "director": "Cord Jefferson",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "May December",
+    "year": 2023,
+    "director": "Todd Haynes",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "The Holdovers",
+    "year": 2023,
+    "director": "Alexander Payne",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Anatomy of a Fall",
+    "year": 2023,
+    "director": "Justine Triet",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Poor Things",
+    "year": 2023,
+    "director": "Yorgos Lanthimos",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Fast X",
+    "year": 2023,
+    "director": "Louis Leterrier",
+    "imdb_rating": 5.8
+  },
+  {
+    "title": "Guardians of the Galaxy Vol. 3",
+    "year": 2023,
+    "director": "James Gunn",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Indiana Jones and the Dial of Destiny",
+    "year": 2023,
+    "director": "James Mangold",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Mission: Impossible – Dead Reckoning Part One",
+    "year": 2023,
+    "director": "Christopher McQuarrie",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "John Wick: Chapter 4",
+    "year": 2023,
+    "director": "Chad Stahelski",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Scream VI",
+    "year": 2023,
+    "director": "Matt Bettinelli-Olpin, Tyler Gillett",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Cocaine Bear",
+    "year": 2023,
+    "director": "Elizabeth Banks",
+    "imdb_rating": 5.9
+  },
+  {
+    "title": "The Little Mermaid",
+    "year": 2023,
+    "director": "Rob Marshall",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Flash",
+    "year": 2023,
+    "director": "Andy Muschietti",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Transformers: Rise of the Beasts",
+    "year": 2023,
+    "director": "Steven Caple Jr.",
+    "imdb_rating": 6.0
+  },
+  {
+    "title": "Spider-Man: Across the Spider-Verse",
+    "year": 2023,
+    "director": "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Super Mario Bros. Movie",
+    "year": 2023,
+    "director": "Aaron Horvath, Michael Jelenic",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "year": 2023,
+    "director": "Peyton Reed",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Elemental",
+    "year": 2023,
+    "director": "Peter Sohn",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Ruby Gillman, Teenage Kraken",
+    "year": 2023,
+    "director": "Kirk DeMicco, Faryn Pearl",
+    "imdb_rating": 5.7
+  },
+  {
+    "title": "The Nun II",
+    "year": 2023,
+    "director": "Michael Chaves",
+    "imdb_rating": 5.6
+  },
+  {
+    "title": "Evil Dead Rise",
+    "year": 2023,
+    "director": "Lee Cronin",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Insidious: The Red Door",
+    "year": 2023,
+    "director": "Patrick Wilson",
+    "imdb_rating": 5.5
+  },
+  {
+    "title": "Air",
+    "year": 2023,
+    "director": "Ben Affleck",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "65",
+    "year": 2023,
+    "director": "Scott Beck, Bryan Woods",
+    "imdb_rating": 5.4
+  },
+  {
+    "title": "Knock at the Cabin",
+    "year": 2023,
+    "director": "M. Night Shyamalan",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Plane",
+    "year": 2023,
+    "director": "Jean-François Richet",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Dune: Part Two",
+    "year": 2024,
+    "director": "Denis Villeneuve",
+    "imdb_rating": 8.5
+  }
+]

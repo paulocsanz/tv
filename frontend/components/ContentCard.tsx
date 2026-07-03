@@ -1,0 +1,56 @@
+import Link from "next/link";
+import { ContentItem } from "@/lib/types";
+import { RatingRow } from "./RatingBadges";
+
+export function PosterPlaceholder({ title }: { title: string }) {
+  return (
+    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-zinc-800 to-zinc-950 p-3 text-center">
+      <span className="text-sm font-medium leading-snug text-zinc-400">{title}</span>
+    </div>
+  );
+}
+
+export function ContentCard({ item, fluid = false }: { item: ContentItem; fluid?: boolean }) {
+  return (
+    <Link
+      href={`/title/${item.id}`}
+      className={`group block ${fluid ? "w-full" : "w-40 shrink-0 sm:w-44"}`}
+    >
+      <div className="relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-zinc-900 ring-1 ring-white/5 transition-transform duration-200 ease-out group-hover:-translate-y-1 group-hover:ring-white/20">
+        {item.poster_url ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={item.poster_url}
+            alt={item.title}
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          <PosterPlaceholder title={item.title} />
+        )}
+        <div className="absolute left-1.5 top-1.5 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide text-zinc-200 backdrop-blur-sm">
+          {item.content_type === "movie" ? "Movie" : "TV"}
+        </div>
+        {item.origin === "Brazilian" && (
+          <div className="absolute right-1.5 top-1.5 rounded bg-emerald-600/90 px-1.5 py-0.5 text-[10px] font-semibold text-white">
+            BR
+          </div>
+        )}
+        {item.torrent_file && (
+          <div className="absolute bottom-1.5 right-1.5 rounded bg-amber-600/90 px-1.5 py-0.5 text-[10px] font-semibold text-white">
+            📥
+          </div>
+        )}
+      </div>
+      <div className="mt-2 space-y-1">
+        <h3 className="line-clamp-1 text-sm font-medium text-zinc-100 group-hover:text-white">
+          {item.title}
+        </h3>
+        <div className="flex items-center justify-between">
+          <span className="text-xs text-zinc-500">{item.year}</span>
+          <RatingRow item={item} />
+        </div>
+      </div>
+    </Link>
+  );
+}

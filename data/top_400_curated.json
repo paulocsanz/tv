@@ -1,0 +1,2815 @@
+{
+  "metadata": {
+    "totalItems": 400,
+    "createdAt": "2026-07-03T16:32:28.412Z",
+    "categories": {
+      "movies": {
+        "total": 195,
+        "brazilian": 99,
+        "international": 96
+      },
+      "tvSeries": {
+        "total": 205,
+        "brazilian": 109,
+        "international": 96
+      }
+    }
+  },
+  "movies": [
+    {
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "director": "Frank Darabont",
+      "imdb_rating": 9.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Godfather",
+      "year": 1972,
+      "director": "Francis Ford Coppola",
+      "imdb_rating": 9.2,
+      "origin": "International"
+    },
+    {
+      "title": "12 Angry Men",
+      "year": 1957,
+      "director": "Sidney Lumet",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "The Godfather Part II",
+      "year": 1974,
+      "director": "Francis Ford Coppola",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "Schindler's List",
+      "year": 1993,
+      "director": "Steven Spielberg",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": 2003,
+      "director": "Peter Jackson",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "The Dark Knight",
+      "year": 2008,
+      "director": "Christopher Nolan",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "director": "Quentin Tarantino",
+      "imdb_rating": 8.9,
+      "origin": "International"
+    },
+    {
+      "title": "The Good, the Bad and the Ugly",
+      "year": 1966,
+      "director": "Sergio Leone",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Forrest Gump",
+      "year": 1994,
+      "director": "Robert Zemeckis",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Fight Club",
+      "year": 1999,
+      "director": "David Fincher",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": 2001,
+      "director": "Peter Jackson",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Inception",
+      "year": 2010,
+      "director": "Christopher Nolan",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Goodfellas",
+      "year": 1990,
+      "director": "Martin Scorsese",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Matrix",
+      "year": 1999,
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "One Flew Over the Cuckoo's Nest",
+      "year": 1975,
+      "director": "Milos Forman",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Lord of the Rings: The Two Towers",
+      "year": 2002,
+      "director": "Peter Jackson",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Interstellar",
+      "year": 2014,
+      "director": "Christopher Nolan",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Spider-Man: Across the Spider-Verse",
+      "year": 2023,
+      "director": "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "City of God",
+      "year": 2002,
+      "director": "Fernando Meirelles, Kátia Lund",
+      "imdb_rating": 8.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "A Dog's Will",
+      "year": 2000,
+      "director": "Guel Arraes",
+      "imdb_rating": 8.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "It's a Wonderful Life",
+      "year": 1946,
+      "director": "Frank Capra",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Seven Samurai",
+      "year": 1954,
+      "director": "Akira Kurosawa",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Star Wars",
+      "year": 1977,
+      "director": "George Lucas",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "director": "Jonathan Demme",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Terminator 2: Judgment Day",
+      "year": 1991,
+      "director": "James Cameron",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Se7en",
+      "year": 1995,
+      "director": "David Fincher",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Seven",
+      "year": 1995,
+      "director": "David Fincher",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Life Is Beautiful",
+      "year": 1997,
+      "director": "Roberto Benigni",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Saving Private Ryan",
+      "year": 1998,
+      "director": "Steven Spielberg",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "The Green Mile",
+      "year": 1999,
+      "director": "Frank Darabont",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "City Lights",
+      "year": 1931,
+      "director": "Charles Chaplin",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Modern Times",
+      "year": 1936,
+      "director": "Charles Chaplin",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Casablanca",
+      "year": 1942,
+      "director": "Michael Curtiz",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Rear Window",
+      "year": 1954,
+      "director": "Alfred Hitchcock",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Psycho",
+      "year": 1960,
+      "director": "Alfred Hitchcock",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Apocalypse Now",
+      "year": 1979,
+      "director": "Francis Ford Coppola",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Alien",
+      "year": 1979,
+      "director": "Ridley Scott",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Back to the Future",
+      "year": 1985,
+      "director": "Robert Zemeckis",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Grave of the Fireflies",
+      "year": 1988,
+      "director": "Isao Takahata",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Cinema Paradiso",
+      "year": 1988,
+      "director": "Giuseppe Tornatore",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The Lion King",
+      "year": 1994,
+      "director": "Roger Allers, Rob Minkoff",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The Professional",
+      "year": 1994,
+      "director": "Luc Besson",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The Usual Suspects",
+      "year": 1995,
+      "director": "Bryan Singer",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "American History X",
+      "year": 1998,
+      "director": "Tony Kaye",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Gladiator",
+      "year": 2000,
+      "director": "Ridley Scott",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The Pianist",
+      "year": 2002,
+      "director": "Roman Polanski",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The Departed",
+      "year": 2006,
+      "director": "Martin Scorsese",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The Prestige",
+      "year": 2006,
+      "director": "Christopher Nolan",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Django Unchained",
+      "year": 2012,
+      "director": "Quentin Tarantino",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Whiplash",
+      "year": 2014,
+      "director": "Damien Chazelle",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Parasite",
+      "year": 2019,
+      "director": "Bong Joon-ho",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Dune: Part Two",
+      "year": 2024,
+      "director": "Denis Villeneuve",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The Great Dictator",
+      "year": 1940,
+      "director": "Charles Chaplin",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Sunset Boulevard",
+      "year": 1950,
+      "director": "Billy Wilder",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Paths of Glory",
+      "year": 1957,
+      "director": "Stanley Kubrick",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Witness for the Prosecution",
+      "year": 1957,
+      "director": "Billy Wilder",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Dr. Strangelove",
+      "year": 1964,
+      "director": "Stanley Kubrick",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "The Shining",
+      "year": 1980,
+      "director": "Stanley Kubrick",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Raiders of the Lost Ark",
+      "year": 1981,
+      "director": "Steven Spielberg",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Amadeus",
+      "year": 1984,
+      "director": "Miloš Forman",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Memento",
+      "year": 2000,
+      "director": "Christopher Nolan",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "WALL-E",
+      "year": 2008,
+      "director": "Andrew Stanton",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "The Cove",
+      "year": 2009,
+      "director": "Louie Psihoyos",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Avengers: Infinity War",
+      "year": 2018,
+      "director": "Anthony Russo, Joe Russo",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Joker",
+      "year": 2019,
+      "director": "Todd Phillips",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "director": "Anthony Russo, Joe Russo",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "The Given Word",
+      "year": 1962,
+      "director": "Anselmo Duarte",
+      "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Citizen Kane",
+      "year": 1941,
+      "director": "Orson Welles",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Double Indemnity",
+      "year": 1944,
+      "director": "Billy Wilder",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Singin' in the Rain",
+      "year": 1952,
+      "director": "Stanley Donen, Gene Kelly",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Ikiru",
+      "year": 1952,
+      "director": "Akira Kurosawa",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Vertigo",
+      "year": 1958,
+      "director": "Alfred Hitchcock",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "North by Northwest",
+      "year": 1959,
+      "director": "Alfred Hitchcock",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Apartment",
+      "year": 1960,
+      "director": "Billy Wilder",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Lawrence of Arabia",
+      "year": 1962,
+      "director": "David Lean",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "year": 1962,
+      "director": "Robert Mulligan",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "2001: A Space Odyssey",
+      "year": 1968,
+      "director": "Stanley Kubrick",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "A Clockwork Orange",
+      "year": 1971,
+      "director": "Stanley Kubrick",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Sting",
+      "year": 1973,
+      "director": "George Roy Hill",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Scarface",
+      "year": 1983,
+      "director": "Brian De Palma",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Star Wars: Episode VI - Return of the Jedi",
+      "year": 1983,
+      "director": "Richard Marquand",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Aliens",
+      "year": 1986,
+      "director": "James Cameron",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Full Metal Jacket",
+      "year": 1987,
+      "director": "Stanley Kubrick",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Reservoir Dogs",
+      "year": 1992,
+      "director": "Quentin Tarantino",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Braveheart",
+      "year": 1995,
+      "director": "Mel Gibson",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Toy Story",
+      "year": 1995,
+      "director": "John Lasseter",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Heat",
+      "year": 1995,
+      "director": "Michael Mann",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Good Will Hunting",
+      "year": 1997,
+      "director": "Gus Van Sant",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "American Beauty",
+      "year": 1999,
+      "director": "Sam Mendes",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Requiem for a Dream",
+      "year": 2000,
+      "director": "Darren Aronofsky",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Eternal Sunshine of the Spotless Mind",
+      "year": 2004,
+      "director": "Michel Gondry",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Inglourious Basterds",
+      "year": 2009,
+      "director": "Quentin Tarantino",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Up",
+      "year": 2009,
+      "director": "Pete Docter, Bob Peterson",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Toy Story 3",
+      "year": 2010,
+      "director": "Lee Unkrich",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Amelie",
+      "year": 2001,
+      "director": "Jean-Pierre Jeunet",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Incendies",
+      "year": 2010,
+      "director": "Denis Villeneuve",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "A Separation",
+      "year": 2011,
+      "director": "Asghar Farhadi",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Hunt",
+      "year": 2012,
+      "director": "Thomas Vinterberg",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "They Don't Wear Black Tie",
+      "year": 1981,
+      "director": "Leon Hirszman",
+      "imdb_rating": 8.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Elite Squad",
+      "year": 2007,
+      "director": "José Padilha",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Central Station",
+      "year": 1998,
+      "director": "Walter Salles",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Elite Squad: The Enemy Within",
+      "year": 2010,
+      "director": "José Padilha",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Pixote",
+      "year": 1980,
+      "director": "Hector Babenco",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "São Paulo, Sociedade Anônima",
+      "year": 1965,
+      "director": "Luís Sérgio Person",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Way He Looks",
+      "year": 2014,
+      "director": "Daniel Ribeiro",
+      "imdb_rating": 7.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Second Mother",
+      "year": 2015,
+      "director": "Anna Muylaert",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Bus 174",
+      "year": 2002,
+      "director": "José Padilha",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Stomachache",
+      "year": 2007,
+      "director": "Marcos Jorge",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Man Who Copied",
+      "year": 2003,
+      "director": "Jorge Furtado",
+      "imdb_rating": 7.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Brainstorm",
+      "year": 2000,
+      "director": "Laís Bodanzky",
+      "imdb_rating": 7.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Invisible Life of Eurídice Gusmão",
+      "year": 2019,
+      "director": "Karim Aïnouz",
+      "imdb_rating": 7.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Carandiru",
+      "year": 2003,
+      "director": "Hector Babenco",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Behind the Sun",
+      "year": 2001,
+      "director": "Walter Salles",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Boca de Ouro",
+      "year": 1963,
+      "director": "Nelson Pereira dos Santos",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "To the Left of the Father",
+      "year": 2001,
+      "director": "Luiz Fernando Carvalho",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Elena",
+      "year": 2012,
+      "director": "Petra Costa",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Black Orpheus",
+      "year": 1959,
+      "director": "Marcel Camus",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Aquarius",
+      "year": 2016,
+      "director": "Kleber Mendonça Filho",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Barren Lives",
+      "year": 1963,
+      "director": "Nelson Pereira dos Santos",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Red Light Bandit",
+      "year": 1968,
+      "director": "Rogério Sganzerla",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Foreign Land",
+      "year": 1996,
+      "director": "Walter Salles, Daniela Thomas",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Four Days in September",
+      "year": 1997,
+      "director": "Bruno Barreto",
+      "imdb_rating": 7.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Bye Bye Brasil",
+      "year": 1979,
+      "director": "Carlos Diegues",
+      "imdb_rating": 7.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Hour of the Star",
+      "year": 1985,
+      "director": "Suzana Amaral",
+      "imdb_rating": 7.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Bacurau",
+      "year": 2019,
+      "director": "Kleber Mendonça Filho, Juliano Dornelles",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Invisible Collection",
+      "year": 2012,
+      "director": "Bernard Attal",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Clown",
+      "year": 2011,
+      "director": "Selton Mello",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Cinema, Aspirins and Vultures",
+      "year": 2005,
+      "director": "Marcelo Gomes",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Entranced Earth",
+      "year": 1967,
+      "director": "Glauber Rocha",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Kiss of the Spider Woman",
+      "year": 1985,
+      "director": "Hector Babenco",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "I Travel Because I Have To, I Come Back Because I Love You",
+      "year": 2009,
+      "director": "Karim Aïnouz, Marcelo Gomes",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Amarelo Manga",
+      "year": 2002,
+      "director": "Cláudio Assis",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Black God, White Devil",
+      "year": 1964,
+      "director": "Glauber Rocha",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Man of the Year",
+      "year": 2003,
+      "director": "José Henrique Fonseca",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "My Name Ain't Johnny",
+      "year": 2008,
+      "director": "Mauro Lima",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Limite",
+      "year": 1931,
+      "director": "Mário Peixoto",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Iracema: Uma Transa Amazônica",
+      "year": 1975,
+      "director": "Jorge Bodanzky, Orlando Senna",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Oyster and the Wind",
+      "year": 1997,
+      "director": "Walter Lima Jr.",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Movie of My Life",
+      "year": 2017,
+      "director": "Selton Mello",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Edge of Democracy",
+      "year": 2019,
+      "director": "Petra Costa",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Trash",
+      "year": 2014,
+      "director": "Stephen Daldry, Christian Duurvoort",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Benzinho",
+      "year": 2018,
+      "director": "Gustavo Pizzi",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Neighboring Sounds",
+      "year": 2012,
+      "director": "Kleber Mendonça Filho",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Antonio das Mortes",
+      "year": 1969,
+      "director": "Glauber Rocha",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Madame Satã",
+      "year": 2002,
+      "director": "Karim Aïnouz",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Sound Around",
+      "year": 2012,
+      "director": "Kleber Mendonça Filho",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Patience Stone",
+      "year": 2012,
+      "director": "Atiq Rahimi",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Rat Fever",
+      "year": 2011,
+      "director": "Cláudio Assis",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Macunaíma",
+      "year": 1969,
+      "director": "Joaquim Pedro de Andrade",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Dona Flor and Her Two Husbands",
+      "year": 1976,
+      "director": "Bruno Barreto",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Trespasser",
+      "year": 2001,
+      "director": "Beto Brant",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Storytellers",
+      "year": 2003,
+      "director": "Eliane Caffé",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Gonzaga: From Father to Son",
+      "year": 2012,
+      "director": "Breno Silveira",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Little Prince's Rap Against the Wicked Souls",
+      "year": 2000,
+      "director": "Paulo Caldas, Marcelo Luna",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "At Play in the Fields of the Lord",
+      "year": 1991,
+      "director": "Hector Babenco",
+      "imdb_rating": 6.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Two Sons of Francisco",
+      "year": 2005,
+      "director": "Breno Silveira",
+      "imdb_rating": 6.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "How Tasty Was My Little Frenchman",
+      "year": 1971,
+      "director": "Nelson Pereira dos Santos",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Hard Labor",
+      "year": 2011,
+      "director": "Marco Dutra, Juliana Rojas",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Good Manners",
+      "year": 2017,
+      "director": "Marco Dutra, Juliana Rojas",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Neon Bull",
+      "year": 2015,
+      "director": "Gabriel Mascaro",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "My Mom Is a Character 3",
+      "year": 2019,
+      "director": "Susana Garcia",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Xica da Silva",
+      "year": 1976,
+      "director": "Carlos Diegues",
+      "imdb_rating": 6.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "My Mom Is a Character",
+      "year": 2013,
+      "director": "André Pellenz",
+      "imdb_rating": 6.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "My Mom Is a Character 2",
+      "year": 2016,
+      "director": "César Rodrigues",
+      "imdb_rating": 6.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Quilombo",
+      "year": 1984,
+      "director": "Carlos Diegues",
+      "imdb_rating": 6.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Araguaya - A Conspiracy of Silence",
+      "year": 2004,
+      "director": "Ronaldo Duque",
+      "imdb_rating": 6.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Hard Paint",
+      "year": 2018,
+      "director": "Filipe Matzembacher, Marcio Reolon",
+      "imdb_rating": 6.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Lower City",
+      "year": 2005,
+      "director": "Sérgio Machado",
+      "imdb_rating": 6.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Smoke Gets in Your Eyes",
+      "year": 2009,
+      "director": "Anna Muylaert",
+      "imdb_rating": 6.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Dead Girl's Feast",
+      "year": 2008,
+      "director": "Matheus Nachtergaele",
+      "imdb_rating": 6.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Big Jet",
+      "year": 2015,
+      "director": "Cláudio Assis",
+      "imdb_rating": 6.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Bog of Beasts",
+      "year": 2006,
+      "director": "Cláudio Assis",
+      "imdb_rating": 6.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Man of the Crowd",
+      "year": 2012,
+      "director": "Cao Guimarães, Marcelo Gomes",
+      "imdb_rating": 6.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Seashore",
+      "year": 2015,
+      "director": "Filipe Matzembacher, Marcio Reolon",
+      "imdb_rating": 6.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Age of the Earth",
+      "year": 1980,
+      "director": "Glauber Rocha",
+      "imdb_rating": 6.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Midnight",
+      "year": 1998,
+      "director": "Walter Salles, Daniela Thomas",
+      "imdb_rating": 6.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Divine Love",
+      "year": 2019,
+      "director": "Gabriel Mascaro",
+      "imdb_rating": 6.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Southwest",
+      "year": 2011,
+      "director": "Eduardo Nunes",
+      "imdb_rating": 6.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Futuro Beach",
+      "year": 2014,
+      "director": "Karim Aïnouz",
+      "imdb_rating": 6.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Silver Cliff",
+      "year": 2011,
+      "director": "Karim Aïnouz",
+      "imdb_rating": 6.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Me You Them",
+      "year": 2000,
+      "director": "Andrucha Waddington",
+      "imdb_rating": 6.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Love for Sale",
+      "year": 2006,
+      "director": "Karim Aïnouz",
+      "imdb_rating": 6.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Dolphin",
+      "year": 1987,
+      "director": "Walter Lima Jr.",
+      "imdb_rating": 6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Once Upon a Time Veronica",
+      "year": 2012,
+      "director": "Marcelo Gomes",
+      "imdb_rating": 6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Once Upon a Time Was I, Verônica",
+      "year": 2012,
+      "director": "Marcelo Gomes",
+      "imdb_rating": 6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Kill Me Please",
+      "year": 2015,
+      "director": "Anita Rocha da Silveira",
+      "imdb_rating": 5.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "My Hindu Friend",
+      "year": 2015,
+      "director": "Hector Babenco",
+      "imdb_rating": 5.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Till Luck Do Us Part",
+      "year": 2012,
+      "director": "Roberto Santucci",
+      "imdb_rating": 5.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "S.O.S. Women to the Sea",
+      "year": 2014,
+      "director": "Cris D'Amato",
+      "imdb_rating": 5.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Medusa",
+      "year": 2021,
+      "director": "Anita Rocha da Silveira",
+      "imdb_rating": 5.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Assailant",
+      "year": 2009,
+      "director": "Beto Brant",
+      "imdb_rating": 5.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "De Pernas pro Ar",
+      "year": 2010,
+      "director": "Roberto Santucci",
+      "imdb_rating": 5.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Lula, the Son of Brazil",
+      "year": 2009,
+      "director": "Fábio Barreto, Marcelo Santiago",
+      "imdb_rating": 5.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Invisible Woman",
+      "year": 2009,
+      "director": "Cláudio Torres",
+      "imdb_rating": 5.1,
+      "origin": "Brazilian"
+    }
+  ],
+  "tvSeries": [
+    {
+      "title": "Life on Earth",
+      "year": 1979,
+      "creator": "David Attenborough",
+      "imdb_rating": 9.5,
+      "origin": "International"
+    },
+    {
+      "title": "Breaking Bad",
+      "year": 2008,
+      "creator": "Vince Gilligan",
+      "imdb_rating": 9.5,
+      "origin": "International"
+    },
+    {
+      "title": "Band of Brothers",
+      "year": 2001,
+      "creator": "Steven Spielberg, Tom Hanks",
+      "imdb_rating": 9.4,
+      "origin": "International"
+    },
+    {
+      "title": "Chernobyl",
+      "year": 2019,
+      "creator": "Craig Mazin",
+      "imdb_rating": 9.4,
+      "origin": "International"
+    },
+    {
+      "title": "The Wire",
+      "year": 2002,
+      "creator": "David Simon",
+      "imdb_rating": 9.3,
+      "origin": "International"
+    },
+    {
+      "title": "Avatar: The Last Airbender",
+      "year": 2005,
+      "creator": "Michael Dante DiMartino, Bryan Konietzko",
+      "imdb_rating": 9.3,
+      "origin": "International"
+    },
+    {
+      "title": "The World at War",
+      "year": 1973,
+      "creator": "Jeremy Isaacs",
+      "imdb_rating": 9.2,
+      "origin": "International"
+    },
+    {
+      "title": "The Sopranos",
+      "year": 1999,
+      "creator": "David Chase",
+      "imdb_rating": 9.2,
+      "origin": "International"
+    },
+    {
+      "title": "Game of Thrones",
+      "year": 2011,
+      "creator": "David Benioff, D.B. Weiss",
+      "imdb_rating": 9.2,
+      "origin": "International"
+    },
+    {
+      "title": "The Ascent of Man",
+      "year": 1973,
+      "creator": "Jacob Bronowski",
+      "imdb_rating": 9.1,
+      "origin": "International"
+    },
+    {
+      "title": "Sherlock",
+      "year": 2010,
+      "creator": "Mark Gatiss, Steven Moffat",
+      "imdb_rating": 9.1,
+      "origin": "International"
+    },
+    {
+      "title": "Rick and Morty",
+      "year": 2013,
+      "creator": "Dan Harmon, Justin Roiland",
+      "imdb_rating": 9.1,
+      "origin": "International"
+    },
+    {
+      "title": "Hospital Playlist",
+      "year": 2020,
+      "creator": "Lee Woo-jung",
+      "imdb_rating": 9.1,
+      "origin": "International"
+    },
+    {
+      "title": "The Twilight Zone",
+      "year": 1959,
+      "creator": "Rod Serling",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "Civilisation",
+      "year": 1969,
+      "creator": "Kenneth Clark",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "I, Claudius",
+      "year": 1976,
+      "creator": "Jack Pulman",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "Firefly",
+      "year": 2002,
+      "creator": "Joss Whedon",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "The Office",
+      "year": 2005,
+      "creator": "Greg Daniels",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "Fargo",
+      "year": 2014,
+      "creator": "Noah Hawley",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "Arcane",
+      "year": 2021,
+      "creator": "Christian Linke, Alex Yee",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "Sítio do Picapau Amarelo",
+      "year": 1977,
+      "creator": "Monteiro Lobato",
+      "imdb_rating": 8.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Friends",
+      "year": 1994,
+      "creator": "David Crane, Marta Kauffman",
+      "imdb_rating": 8.9,
+      "origin": "International"
+    },
+    {
+      "title": "Gravity Falls",
+      "year": 2012,
+      "creator": "Alex Hirsch",
+      "imdb_rating": 8.9,
+      "origin": "International"
+    },
+    {
+      "title": "True Detective",
+      "year": 2014,
+      "creator": "Nic Pizzolatto",
+      "imdb_rating": 8.9,
+      "origin": "International"
+    },
+    {
+      "title": "When They See Us",
+      "year": 2019,
+      "creator": "Ava DuVernay",
+      "imdb_rating": 8.9,
+      "origin": "International"
+    },
+    {
+      "title": "It's Okay to Not Be Okay",
+      "year": 2020,
+      "creator": "Park Shin-woo",
+      "imdb_rating": 8.9,
+      "origin": "International"
+    },
+    {
+      "title": "Chaves",
+      "year": 1971,
+      "creator": "Roberto Gómez Bolaños",
+      "imdb_rating": 8.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "BoJack Horseman",
+      "year": 2014,
+      "creator": "Raphael Bob-Waksberg",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Black Mirror",
+      "year": 2011,
+      "creator": "Charlie Brooker",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Peaky Blinders",
+      "year": 2013,
+      "creator": "Steven Knight",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Over the Garden Wall",
+      "year": 2014,
+      "creator": "Patrick McHale",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Better Call Saul",
+      "year": 2015,
+      "creator": "Vince Gilligan, Peter Gould",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Narcos",
+      "year": 2015,
+      "creator": "Carlo Bernard, Chris Brancato, Doug Miro",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Dark",
+      "year": 2017,
+      "creator": "Baran bo Odar, Jantje Friese",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Succession",
+      "year": 2018,
+      "creator": "Jesse Armstrong",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Ted Lasso",
+      "year": 2020,
+      "creator": "Bill Lawrence, Jason Sudeikis, Joe Kelly, Brendan Hunt",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "The Six Wives of Henry VIII",
+      "year": 1970,
+      "creator": "Maurice Cowan",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Curb Your Enthusiasm",
+      "year": 2000,
+      "creator": "Larry David",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Justice League Unlimited",
+      "year": 2004,
+      "creator": "Bruce Timm",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "It's Always Sunny in Philadelphia",
+      "year": 2005,
+      "creator": "Rob McElhenney",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Os Normais",
+      "year": 2001,
+      "creator": "Jorge Furtado",
+      "imdb_rating": 8.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Pantanal",
+      "year": 2022,
+      "creator": "Bruno Luperi",
+      "imdb_rating": 8.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Upstairs, Downstairs",
+      "year": 1971,
+      "creator": "Jean Marsh, Eileen Atkins",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Elizabeth R",
+      "year": 1971,
+      "creator": "John Hale",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Simpsons",
+      "year": 1989,
+      "creator": "Matt Groening",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Phoenix",
+      "year": 1992,
+      "creator": "Alison Nisselle, Tony McDonald",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Adventures of Pete & Pete",
+      "year": 1993,
+      "creator": "Will McRobb, Chris Viscardi",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Frontline",
+      "year": 1994,
+      "creator": "Rob Sitch, Tom Gleisner, Jane Kennedy, Santo Cilauro",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Daily Show",
+      "year": 1996,
+      "creator": "Lizz Winstead, Madeleine Smithberg",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "South Park",
+      "year": 1997,
+      "creator": "Trey Parker, Matt Stone",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Six Feet Under",
+      "year": 2001,
+      "creator": "Alan Ball",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Justice League",
+      "year": 2001,
+      "creator": "Bruce Timm",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Shield",
+      "year": 2002,
+      "creator": "Shawn Ryan",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Arrested Development",
+      "year": 2003,
+      "creator": "Mitchell Hurwitz",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Battlestar Galactica",
+      "year": 2004,
+      "creator": "Glen A. Larson, Ronald D. Moore",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "House",
+      "year": 2004,
+      "creator": "David Shore",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Rome",
+      "year": 2005,
+      "creator": "John Milius, William J. MacDonald, Bruno Heller",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Colbert Report",
+      "year": 2005,
+      "creator": "Stephen Colbert, Jon Stewart, Ben Karlin",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "House of Cards",
+      "year": 2013,
+      "creator": "Beau Willimon",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Skam",
+      "year": 2015,
+      "creator": "Julie Andem",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Trollhunters",
+      "year": 2016,
+      "creator": "Guillermo del Toro",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Trollhunters: Tales of Arcadia",
+      "year": 2016,
+      "creator": "Guillermo del Toro",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Mandalorian",
+      "year": 2019,
+      "creator": "Jon Favreau",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "This Is Us",
+      "year": 2016,
+      "creator": "Dan Fogelman",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Marvelous Mrs. Maisel",
+      "year": 2017,
+      "creator": "Amy Sherman-Palladino",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Primal",
+      "year": 2019,
+      "creator": "Genndy Tartakovsky",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Crash Landing on You",
+      "year": 2019,
+      "creator": "Lee Jeong-hyo",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Invincible",
+      "year": 2021,
+      "creator": "Robert Kirkman",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Bear",
+      "year": 2022,
+      "creator": "Christopher Storer",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Severance",
+      "year": 2022,
+      "creator": "Dan Erickson",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Last of Us",
+      "year": 2023,
+      "creator": "Craig Mazin, Neil Druckmann",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Avenida Brasil",
+      "year": 2012,
+      "creator": "João Emanuel Carneiro",
+      "imdb_rating": 8.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Honeymooners",
+      "year": 1955,
+      "creator": "Jackie Gleason",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "The Prisoner",
+      "year": 1967,
+      "outer": "Patrick McGoohan",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "The Venture Bros.",
+      "year": 2003,
+      "creator": "Jackson Publick",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Deadwood",
+      "year": 2004,
+      "creator": "David Milch",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "The Chaser's War on Everything",
+      "year": 2006,
+      "creator": "The Chaser",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Dexter",
+      "year": 2006,
+      "creator": "James Manos Jr.",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Mad Men",
+      "year": 2007,
+      "creator": "Matthew Weiner",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Parks and Recreation",
+      "year": 2009,
+      "creator": "Greg Daniels, Michael Schur",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "What We Do in the Shadows",
+      "year": 2019,
+      "creator": "Jemaine Clement",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "City of Men",
+      "year": 2002,
+      "creator": "Kátia Lund, Fernando Meirelles",
+      "imdb_rating": 8.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Cidade dos Homens",
+      "year": 2002,
+      "creator": "Kátia Lund, Fernando Meirelles",
+      "imdb_rating": 8.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Éramos Seis",
+      "year": 2019,
+      "creator": "Ângela Chaves",
+      "imdb_rating": 8.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Samurai Jack",
+      "year": 2001,
+      "creator": "Genndy Tartakovsky",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The Forsyte Saga",
+      "year": 1967,
+      "creator": "John Galsworthy",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Entourage",
+      "year": 2004,
+      "creator": "Doug Ellin",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "John Adams",
+      "year": 2008,
+      "creator": "Kirk Ellis",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Community",
+      "year": 2009,
+      "creator": "Dan Harmon",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "A Grande Família",
+      "year": 2001,
+      "creator": "Oduvaldo Vianna Filho",
+      "imdb_rating": 8.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Lado a Lado",
+      "year": 2012,
+      "creator": "João Ximenes Braga, Claudia Lage",
+      "imdb_rating": 8.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Andy Griffith Show",
+      "year": 1960,
+      "creator": "Sheldon Leonard",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "The Dick Van Dyke Show",
+      "year": 1961,
+      "creator": "Carl Reiner",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Doctor Who",
+      "year": 1963,
+      "creator": "Sydney Newman, C. E. Webber, Donald Wilson",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "M*A*S*H",
+      "year": 1972,
+      "creator": "Larry Gelbart",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Taxi",
+      "year": 1978,
+      "creator": "James L. Brooks, Stan Daniels, David Davis, Ed. Weinberger",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "St. Elsewhere",
+      "year": 1982,
+      "creator": "Joshua Brand, John Falsey",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Generation Kill",
+      "year": 2008,
+      "creator": "Evan Wright, David Simon",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Star Wars: The Clone Wars",
+      "year": 2008,
+      "creator": "George Lucas",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Chapolin",
+      "year": 1973,
+      "creator": "Roberto Gómez Bolaños",
+      "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "A Vida da Gente",
+      "year": 2011,
+      "creator": "Lícia Manzo",
+      "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Verdades Secretas",
+      "year": 2015,
+      "creator": "Walcyr Carrasco",
+      "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Renascer",
+      "year": 2024,
+      "creator": "Bruno Luperi",
+      "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Profissão Repórter",
+      "year": 2008,
+      "creator": "Caco Barcellos",
+      "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "I Love Lucy",
+      "year": 1951,
+      "creator": "Jess Oppenheimer",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Avengers",
+      "year": 1961,
+      "creator": "Sydney Newman",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Thunderbirds",
+      "year": 1965,
+      "creator": "Gerry Anderson, Sylvia Anderson",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Star Trek",
+      "year": 1966,
+      "creator": "Gene Roddenberry",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Poldark",
+      "year": 1975,
+      "creator": "Winston Graham",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Prisoner",
+      "year": 1979,
+      "creator": "Reg Watson",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Mechanism",
+      "year": 2018,
+      "creator": "José Padilha",
+      "imdb_rating": 8.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Senhora do Destino",
+      "year": 2004,
+      "creator": "Aguinaldo Silva",
+      "imdb_rating": 8.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Império",
+      "year": 2014,
+      "creator": "Aguinaldo Silva",
+      "imdb_rating": 8.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Velho Chico",
+      "year": 2016,
+      "creator": "Luiz Fernando Carvalho",
+      "imdb_rating": 8.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Amor de Mãe",
+      "year": 2019,
+      "creator": "Manuela Dias",
+      "imdb_rating": 8.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Casseta & Planeta",
+      "year": 1992,
+      "creator": "Casseta & Planeta",
+      "imdb_rating": 8.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Mandrake",
+      "year": 2005,
+      "creator": "Rubem Fonseca",
+      "imdb_rating": 8.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Fina Estampa",
+      "year": 2011,
+      "creator": "Aguinaldo Silva",
+      "imdb_rating": 8.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "A Regra do Jogo",
+      "year": 2015,
+      "creator": "João Emanuel Carneiro",
+      "imdb_rating": 8.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "A Força do Querer",
+      "year": 2017,
+      "creator": "Gloria Perez",
+      "imdb_rating": 8.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Fina Estampa",
+      "year": 2020,
+      "creator": "Aguinaldo Silva",
+      "imdb_rating": 8.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Globo Repórter",
+      "year": 1973,
+      "creator": "Paulo Gil Soares",
+      "imdb_rating": 8.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Carandiru: Outras Histórias",
+      "year": 2005,
+      "creator": "Hector Babenco",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Amor à Vida",
+      "year": 2013,
+      "creator": "Walcyr Carrasco",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Liberdade, Liberdade",
+      "year": 2016,
+      "creator": "João Emanuel Carneiro",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Um Lugar ao Sol",
+      "year": 2021,
+      "creator": "Lícia Manzo",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Cheias de Charme",
+      "year": 2012,
+      "creator": "Filipe Miguez, Izabel de Oliveira",
+      "imdb_rating": 7.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Novo Mundo",
+      "year": 2017,
+      "creator": "Teresa Lampreia",
+      "imdb_rating": 7.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Da Cor do Pecado",
+      "year": 2004,
+      "creator": "João Emanuel Carneiro",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Salve Jorge",
+      "year": 2012,
+      "creator": "Gloria Perez",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Saramandaia",
+      "year": 2013,
+      "creator": "Dias Gomes",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "O Outro Lado do Paraíso",
+      "year": 2017,
+      "creator": "Walcyr Carrasco",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Nos Tempos do Imperador",
+      "year": 2021,
+      "creator": "Alessandro Marson",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Mania de Você",
+      "year": 2024,
+      "creator": "João Emanuel Carneiro",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Fantástico",
+      "year": 1973,
+      "creator": "José Bonifácio de Oliveira Sobrinho",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Dom",
+      "year": 2021,
+      "creator": "Breno Silveira",
+      "imdb_rating": 7.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Caminho das Índias",
+      "year": 2009,
+      "creator": "Gloria Perez",
+      "imdb_rating": 7.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "A Dona do Pedaço",
+      "year": 2019,
+      "creator": "Walcyr Carrasco",
+      "imdb_rating": 7.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Joia Rara",
+      "year": 2013,
+      "creator": "Duca Rachid, Thelma Guedes",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Segundo Sol",
+      "year": 2018,
+      "creator": "João Emanuel Carneiro",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Jornal Nacional",
+      "year": 1969,
+      "creator": "Armando Nogueira",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Paraíso Tropical",
+      "year": 2007,
+      "creator": "Gilberto Braga",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Em Família",
+      "year": 2014,
+      "creator": "Manoel Carlos",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Garota do Momento",
+      "year": 2024,
+      "creator": "Alessandra Poggi",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "3%",
+      "year": 2016,
+      "creator": "Pedro Aguilera",
+      "imdb_rating": 7.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Good Morning, Verônica",
+      "year": 2020,
+      "creator": "Tiago Rezende",
+      "imdb_rating": 7.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Aquele Beijo",
+      "year": 2011,
+      "creator": "Miguel Falabella",
+      "imdb_rating": 7.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "A Terra Prometida",
+      "year": 2016,
+      "creator": "Walcyr Carrasco",
+      "imdb_rating": 7.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Terra e Paixão",
+      "year": 2023,
+      "creator": "Walcyr Carrasco",
+      "imdb_rating": 7.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Esquenta!",
+      "year": 2011,
+      "creator": "Regina Casé",
+      "imdb_rating": 7.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Sintonia",
+      "year": 2019,
+      "creator": "KondZilla",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Viver a Vida",
+      "year": 2009,
+      "creator": "Manoel Carlos",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Totalmente Demais",
+      "year": 2015,
+      "creator": "Rosane Svartman, Paulo Halm",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Verão 90",
+      "year": 2019,
+      "creator": "Izabel de Oliveira",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Programa Silvio Santos",
+      "year": 1963,
+      "creator": "Silvio Santos",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Sandy & Junior",
+      "year": 1999,
+      "creator": "Xuxa Meneghel",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Amor Eterno Amor",
+      "year": 2012,
+      "creator": "Elizabeth Jhin",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Pega Pega",
+      "year": 2017,
+      "creator": "Claudia Souto",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Além da Ilusão",
+      "year": 2022,
+      "creator": "Daphne Bozaski",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "MasterChef Brasil",
+      "year": 2014,
+      "creator": "Franc Roddam",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Invisible City",
+      "year": 2021,
+      "creator": "Carlos Saldanha",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Coisa Mais Linda",
+      "year": 2019,
+      "creator": "Giuliano Cedroni, Heather Roth",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Girls from Ipanema",
+      "year": 2019,
+      "creator": "Giuliano Cedroni, Heather Roth",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Passione",
+      "year": 2010,
+      "creator": "Silvio de Abreu",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Babilônia",
+      "year": 2015,
+      "creator": "Gilberto Braga",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Orgulho e Paixão",
+      "year": 2018,
+      "creator": "Marcos Bernstein",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Travessia",
+      "year": 2022,
+      "creator": "Gloria Perez",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Rancho Fundo",
+      "year": 2024,
+      "creator": "Mário Teixeira",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "A Praça É Nossa",
+      "year": 1987,
+      "creator": "Carlos Massa",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Xuxa",
+      "year": 1986,
+      "creator": "Xuxa Meneghel",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Insensato Coração",
+      "year": 2011,
+      "creator": "Gilberto Braga",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Haja Coração",
+      "year": 2016,
+      "creator": "Daniel Ortiz",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "No Rancho Fundo",
+      "year": 2024,
+      "creator": "Mário Teixeira",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Voice Brasil",
+      "year": 2012,
+      "creator": "John de Mol",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Conversa com Bial",
+      "year": 2017,
+      "creator": "Pedro Bial",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Alto Astral",
+      "year": 2014,
+      "creator": "Daniel Adjafre, Marília Garcia",
+      "imdb_rating": 6.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Deus Salve o Rei",
+      "year": 2018,
+      "creator": "Daniel Adjafre",
+      "imdb_rating": 6.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Cara e Coragem",
+      "year": 2022,
+      "creator": "Claudia Souto",
+      "imdb_rating": 6.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Família é Tudo",
+      "year": 2024,
+      "creator": "Daniel Ortiz",
+      "imdb_rating": 6.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Domingão do Faustão",
+      "year": 1989,
+      "creator": "Fausto Silva",
+      "imdb_rating": 6.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Mais Você",
+      "year": 1999,
+      "creator": "Ana Maria Braga",
+      "imdb_rating": 6.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Malhação",
+      "year": 1995,
+      "creator": "Emanuel Jacobina",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "A Lei do Amor",
+      "year": 2016,
+      "creator": "Maria Adelaide Amaral",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "O Sétimo Guardião",
+      "year": 2018,
+      "creator": "Aguinaldo Silva",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Bom Sucesso",
+      "year": 2019,
+      "creator": "Rosane Svartman, Paulo Halm",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Fuzuê",
+      "year": 2023,
+      "creator": "Gustavo Reiz",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Zorra Total",
+      "year": 1999,
+      "creator": "Jorge Fernando",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Altas Horas",
+      "year": 2000,
+      "creator": "Serginho Groisman",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "No Limite",
+      "year": 2000,
+      "creator": "Charlie Parsons",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Eliana",
+      "year": 1991,
+      "creator": "Eliana Michaelichen",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Rock Story",
+      "year": 2016,
+      "creator": "Suzana Pires",
+      "imdb_rating": 6.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Vai na Fé",
+      "year": 2023,
+      "creator": "Rosane Svartman",
+      "imdb_rating": 6.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Caldeirão do Huck",
+      "year": 2000,
+      "creator": "Luciano Huck",
+      "imdb_rating": 6.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Raul Gil",
+      "year": 1961,
+      "creator": "Raul Gil",
+      "imdb_rating": 6.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Divine Love",
+      "year": 2019,
+      "creator": "Gabriel Mascaro",
+      "imdb_rating": 6.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "O Tempo Não Para",
+      "year": 2018,
+      "creator": "Mário Teixeira",
+      "imdb_rating": 6.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Dancing Brasil",
+      "year": 2013,
+      "creator": "BBC",
+      "imdb_rating": 6.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Faustão na Band",
+      "year": 2022,
+      "creator": "Fausto Silva",
+      "imdb_rating": 6.4,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Popstar",
+      "year": 2002,
+      "creator": "Marlene Mattos",
+      "imdb_rating": 6.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Reality Z",
+      "year": 2020,
+      "creator": "Cláudio Torres",
+      "imdb_rating": 6.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Programa do Ratinho",
+      "year": 1998,
+      "creator": "Carlos Massa",
+      "imdb_rating": 6.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Encontro com Fátima Bernardes",
+      "year": 2012,
+      "creator": "Fátima Bernardes",
+      "imdb_rating": 6.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Big Brother Brasil",
+      "year": 2002,
+      "creator": "John de Mol",
+      "imdb_rating": 6.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "A Fazenda",
+      "year": 2009,
+      "creator": "Strix Television",
+      "imdb_rating": 5.9,
+      "origin": "Brazilian"
+    }
+  ]
+}

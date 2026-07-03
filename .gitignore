@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+/backend/target/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+/frontend/.next/
+/frontend/out/
+dist/
+
+# Local data (torrents stay local only)
+downloads/
+temp/
+*.torrent
+backend/data/
+torrent-*.ts
+*torrent*.js
+*torrent*.sh
+*.log
+
+# Cache
+.cache/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+nohup.out
+
+# Railway
+.railway-config-pull-*

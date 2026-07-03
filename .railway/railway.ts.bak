@@ -1,0 +1,31 @@
+import { Railway } from "@railway/app";
+
+export default function (railway: Railway) {
+  // Create an S3 bucket for TV data
+  const bucket = railway.resource("s3", {
+    name: "tv-bucket",
+    region: "us-east-1",
+    // Add lifecycle rules to automatically delete old files if needed
+    lifecycleRules: [
+      {
+        id: "delete-old-files",
+        status: "Enabled",
+        expirationInDays: 30,
+      }
+    ],
+    // Enable versioning for data safety
+    versioning: true,
+  });
+
+  // Export the bucket name and endpoint for use in other services
+  railway.export("bucketName", bucket.name);
+  railway.export("bucketEndpoint", bucket.endpoint);
+  
+  // Create a secret to store S3 credentials (if needed)
+  const s3Secret = railway.resource("secret", {
+    name: "s3-credentials",
+    value: "{}",
+  });
+  
+  railway.export("s3SecretName", s3Secret.name);
+}
