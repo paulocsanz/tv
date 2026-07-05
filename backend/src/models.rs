@@ -64,6 +64,10 @@ pub struct EnrichedItem {
     pub tmdb_id: Option<i64>,
     pub trailer_key: Option<String>,
     pub enrichment_status: EnrichmentStatus,
+    #[serde(default)]
+    pub torrent_file: Option<String>,
+    #[serde(default)]
+    pub s3_key: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]

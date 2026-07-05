@@ -28,6 +28,7 @@ export interface ContentItem {
   trailer_key: string | null;
   enrichment_status: EnrichmentStatus;
   torrent_file: string | null;
+  s3_key: string | null;
 }
 
 export interface Section {

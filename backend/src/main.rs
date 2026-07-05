@@ -2,20 +2,51 @@ use axum::{
     extract::{Path, Query, Request, State},
     http::{header, HeaderMap, Method, StatusCode},
     middleware::{self, Next},
-    response::{IntoResponse, Json, Response},
+    response::{IntoResponse, Json, Redirect, Response},
     routing::{get, post},
     Router,
 };
 use serde::{Deserialize, Serialize};
 use std::sync::Arc;
+use std::path::PathBuf;
+use std::time::Duration;
 use tower_http::cors::{Any, CorsLayer};
 use tower_http::trace::TraceLayer;
 use tv_backend::auth::AuthState;
 use tv_backend::models::{ContentType, EnrichedCache, EnrichedItem};
 
+struct S3Config {
+    client: aws_sdk_s3::Client,
+    bucket: String,
+}
+
 struct AppState {
     items: Vec<EnrichedItem>,
     auth: AuthState,
+    s3: Option<S3Config>,
+}
+
+fn load_s3_config() -> Option<S3Config> {
+    let access_key = std::env::var("AWS_ACCESS_KEY_ID").ok()?;
+    let secret_key = std::env::var("AWS_SECRET_ACCESS_KEY").ok()?;
+    let endpoint = std::env::var("AWS_ENDPOINT_URL").ok()?;
+    let bucket = std::env::var("AWS_S3_BUCKET_NAME").ok()?;
+    let region = std::env::var("AWS_DEFAULT_REGION").unwrap_or_else(|_| "auto".to_string());
+
+    let credentials =
+        aws_sdk_s3::config::Credentials::new(access_key, secret_key, None, None, "railway-bucket");
+    let config = aws_sdk_s3::Config::builder()
+        .behavior_version(aws_sdk_s3::config::BehaviorVersion::latest())
+        .region(aws_sdk_s3::config::Region::new(region))
+        .endpoint_url(endpoint)
+        .credentials_provider(credentials)
+        .force_path_style(false)
+        .build();
+
+    Some(S3Config {
+        client: aws_sdk_s3::Client::from_conf(config),
+        bucket,
+    })
 }
 
 fn effective_rating(item: &EnrichedItem) -> f64 {
@@ -43,9 +74,17 @@ async fn main() {
         std::env::var("AUTH_DATA_PATH").unwrap_or_else(|_| "data/auth_credentials.json".to_string());
     let auth = AuthState::load_or_generate(std::path::Path::new(&auth_path));
 
+    let s3 = load_s3_config();
+    if s3.is_none() {
+        tracing::warn!(
+            "S3 bucket credentials not set (AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY/AWS_ENDPOINT_URL/AWS_S3_BUCKET_NAME) - /stream endpoint disabled"
+        );
+    }
+
     let state = Arc::new(AppState {
         items: cache.items,
         auth,
+        s3,
     });
 
     let cors = CorsLayer::new()
@@ -62,6 +101,8 @@ async fn main() {
         .route("/api/sections", get(get_sections))
         .route("/api/content", get(get_content))
         .route("/api/content/:id", get(get_content_by_id))
+        .route("/api/content/:id/torrent", get(get_torrent_file))
+        .route("/api/content/:id/stream", get(get_stream_url))
         .route("/api/logout", post(logout))
         .route_layer(middleware::from_fn_with_state(state.clone(), require_auth));
 
@@ -407,5 +448,78 @@ async fn get_content_by_id(
     match state.items.iter().find(|i| i.id == id) {
         Some(item) => Json(item.clone()).into_response(),
         None => (StatusCode::NOT_FOUND, "content not found").into_response(),
+    }
+}
+
+async fn get_torrent_file(
+    State(state): State<Arc<AppState>>,
+    Path(id): Path<String>,
+) -> impl IntoResponse {
+    match state.items.iter().find(|i| i.id == id) {
+        Some(item) => {
+            match &item.torrent_file {
+                Some(torrent_filename) => {
+                    let full_filename = format!("{}.torrent", torrent_filename);
+                    let torrent_path = PathBuf::from("downloads").join(&full_filename);
+                    match std::fs::read(&torrent_path) {
+                        Ok(content) => {
+                            let headers = [
+                                (header::CONTENT_TYPE, "application/x-torrent"),
+                                (
+                                    header::CONTENT_DISPOSITION,
+                                    &format!("attachment; filename=\"{}\"", full_filename),
+                                ),
+                            ];
+                            (StatusCode::OK, headers, content).into_response()
+                        }
+                        Err(_) => (StatusCode::NOT_FOUND, "torrent file not found").into_response(),
+                    }
+                }
+                None => (StatusCode::BAD_REQUEST, "no torrent file for this content").into_response(),
+            }
+        }
+        None => (StatusCode::NOT_FOUND, "content not found").into_response(),
+    }
+}
+
+async fn get_stream_url(
+    State(state): State<Arc<AppState>>,
+    Path(id): Path<String>,
+) -> impl IntoResponse {
+    let Some(s3) = &state.s3 else {
+        return (StatusCode::SERVICE_UNAVAILABLE, "video storage not configured").into_response();
+    };
+
+    let Some(item) = state.items.iter().find(|i| i.id == id) else {
+        return (StatusCode::NOT_FOUND, "content not found").into_response();
+    };
+
+    let Some(key) = &item.s3_key else {
+        return (StatusCode::NOT_FOUND, "no video available for this content").into_response();
+    };
+
+    let presign_config =
+        match aws_sdk_s3::presigning::PresigningConfig::expires_in(Duration::from_secs(4 * 3600)) {
+            Ok(c) => c,
+            Err(e) => {
+                tracing::error!("failed to build presigning config: {e}");
+                return (StatusCode::INTERNAL_SERVER_ERROR, "failed to build stream url")
+                    .into_response();
+            }
+        };
+
+    match s3
+        .client
+        .get_object()
+        .bucket(&s3.bucket)
+        .key(key)
+        .presigned(presign_config)
+        .await
+    {
+        Ok(presigned) => Redirect::temporary(presigned.uri()).into_response(),
+        Err(e) => {
+            tracing::error!("failed to presign stream url: {e}");
+            (StatusCode::INTERNAL_SERVER_ERROR, "failed to build stream url").into_response()
+        }
     }
 }

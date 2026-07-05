@@ -418,5 +418,7 @@ pub async fn enrich_one(
         tmdb_id,
         trailer_key,
         enrichment_status: status,
+        torrent_file: None,
+        s3_key: None,
     }
 }
