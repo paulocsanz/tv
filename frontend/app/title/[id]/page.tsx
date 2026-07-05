@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { getContentById } from "@/lib/api";
 import { ImdbBadge, RottenTomatoesBadge } from "@/components/RatingBadges";
 import { PosterPlaceholder } from "@/components/ContentCard";
-import { WebTorrentPlayer } from "@/components/WebTorrentPlayer";
 
 export async function generateMetadata({
   params,
@@ -133,10 +132,9 @@ export default async function TitlePage({
             </div>
           </div>
         ) : item.torrent_file ? (
-          <div id="webtorrent-player" className="mt-10 scroll-mt-24">
-            <h2 className="mb-3 text-lg font-semibold text-white">Stream with WebTorrent</h2>
-            <WebTorrentPlayer itemId={item.id} />
-          </div>
+          <p className="mt-4 inline-block rounded-lg bg-amber-600/20 px-3 py-1.5 text-sm text-amber-300">
+            📥 Available locally: <code className="text-xs font-mono">{item.torrent_file}</code>
+          </p>
         ) : null}
 
         {item.trailer_key && (
