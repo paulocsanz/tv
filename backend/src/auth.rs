@@ -20,6 +20,16 @@ pub struct AuthState {
 }
 
 impl AuthState {
+    /// Uses a fixed username/password (e.g. from environment variables).
+    /// Nothing is persisted to disk — the hash lives only in memory.
+    pub fn from_credentials(username: String, password: &str) -> Self {
+        Self {
+            username,
+            password_hash: hash_password(password),
+            sessions: RwLock::new(HashSet::new()),
+        }
+    }
+
     /// Loads credentials from `path` if present, otherwise generates a fresh
     /// admin username/password and logs the plaintext password once — only
     /// the argon2 hash is ever persisted to disk.

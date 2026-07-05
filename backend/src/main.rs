@@ -70,9 +70,19 @@ async fn main() {
 
     tracing::info!("Loaded {} items from {}", cache.items.len(), data_path);
 
-    let auth_path =
-        std::env::var("AUTH_DATA_PATH").unwrap_or_else(|_| "data/auth_credentials.json".to_string());
-    let auth = AuthState::load_or_generate(std::path::Path::new(&auth_path));
+    let admin_username = std::env::var("ADMIN_USERNAME").ok();
+    let admin_password = std::env::var("ADMIN_PASSWORD").ok();
+    let auth = match (admin_username, admin_password) {
+        (Some(username), Some(password)) => {
+            tracing::info!(username = %username, "Using admin credentials from ADMIN_USERNAME/ADMIN_PASSWORD");
+            AuthState::from_credentials(username, &password)
+        }
+        _ => {
+            let auth_path = std::env::var("AUTH_DATA_PATH")
+                .unwrap_or_else(|_| "data/auth_credentials.json".to_string());
+            AuthState::load_or_generate(std::path::Path::new(&auth_path))
+        }
+    };
 
     let s3 = load_s3_config();
     if s3.is_none() {
