@@ -15,7 +15,7 @@ async function apiFetch<T>(path: string, revalidate = 3600): Promise<T> {
     headers: await authHeaders(),
     next: { revalidate },
   });
-  if (res.status === 401) redirect("/login");
+  if (res.status === 401) redirect("/api/logout");
   if (!res.ok) {
     throw new Error(`API request failed: ${path} (${res.status})`);
   }
@@ -57,7 +57,7 @@ export async function getContentById(id: string): Promise<ContentItem | null> {
     next: { revalidate: 3600 },
   });
   if (res.status === 404) return null;
-  if (res.status === 401) redirect("/login");
+  if (res.status === 401) redirect("/api/logout");
   if (!res.ok) throw new Error(`API request failed: /api/content/${id} (${res.status})`);
   return res.json();
 }
