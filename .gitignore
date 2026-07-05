@@ -16,7 +16,6 @@ dist/
 downloads/
 temp/
 *.torrent
-backend/data/
 torrent-*.ts
 *torrent*.js
 *torrent*.sh
