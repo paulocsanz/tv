@@ -19,6 +19,9 @@ temp/
 torrent-*.ts
 *torrent*.js
 *torrent*.sh
+transcode.js
+monitor.js
+pipeline-events.jsonl
 *.log
 
 # Cache

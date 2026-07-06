@@ -1,0 +1,696 @@
+Loading enriched data...
+Status:
+  Already on S3: 0
+  Ready to download: 221
+  Total with torrents: 221
+
+Started at: 05/07/2026, 00:49:55
+
+
+[download 1/221] Breaking Bad
+  Option 1/5: Breaking Bad S05 Complete (2012-2013) 1080p ENG-ITA x264 BluRay
+  Seeders: 150 | Size: 51.4 GB
+  [Breaking Bad] Downloading... ......... ✓ (16s)
+
+[download 2/221] Life on Earth
+  Option 1/1: Life on Our Planet S01E07 Chapter 7 Inheriting the Earth 1080p NF WEB-DL DDP5 1 
+  Seeders: 12 | Size: 1.9 GB
+  [Life on Earth] Downloading... [0% | 1/221 | 0.3m elapsed]
+[upload 1/221] Breaking Bad
+  Uploading 3001.40MB... ................................✓
+  Uploading 3001.16MB... .....................................✓
+  Uploading 3001.88MB... ....................................✓
+  Uploading 3002.65MB... .......................................✓
+  Uploading 3003.54MB... ....................................✗ (write EPIPE)
+  Uploading 3002.67MB... ...............✗ (write EPIPE)
+  Uploading 3003.06MB... ....✗ (write EPIPE)
+  Uploading 3001.72MB... .✗ (write EPIPE)
+  Uploading 3001.04MB... .✗ (write EPIPE)
+  Uploading 3001.77MB... .✗ (write EPIPE)
+  Uploading 3004.68MB... ..✗ (write EPIPE)
+  Uploading 3002.13MB... ...✗ (write EPIPE)
+  Uploading 3003.44MB... ...✗ (write EPIPE)
+  Uploading 3002.12MB... .........................................................................................................................................................Loading enriched data...
+Status:
+  Already on S3: 0
+  Ready to download: 221
+  Total with torrents: 221
+
+Started at: 05/07/2026, 14:22:14
+
+
+[download 1/221] Breaking Bad
+  Option 1/5: Breaking Bad S05 Complete (2012-2013) 1080p ENG-ITA x264 BluRay
+  Seeders: 150 | Size: 51.4 GB
+  [Breaking Bad] Downloading... ........ ✓ (13s)
+
+[download 2/221] Life on Earth
+  Option 1/1: Life on Our Planet S01E07 Chapter 7 Inheriting the Earth 1080p NF WEB-DL DDP5 1 
+  Seeders: 12 | Size: 1.9 GB
+  [Life on Earth] Downloading... [0% | 1/221 | 0.2m elapsed]
+[upload 1/221] Breaking Bad
+  Uploading 3003.54MB... .............✓
+  Uploading 3002.67MB... ........✓
+  Uploading 3003.06MB... .........✓
+  Uploading 3001.72MB... ........✓
+  Uploading 3001.04MB... .........✓
+  Uploading 3001.77MB... .........✓
+  Uploading 3004.68MB... .........✓
+  Uploading 3002.13MB... ..............✓
+  Uploading 3003.44MB... .............✓
+  Uploading 3002.12MB... ......✗ (write EPIPE)
+  Uploading 3502.60MB... ............................................................✓
+  Uploading 3500.68MB... .................................................✓
+  🗑 [Breaking Bad] Cleaned up 11/12 video(s)
+...........................................................................................................................................................................................................................Loading enriched data...
+Status:
+  Already on S3: 0
+  Ready to download: 221
+  Total with torrents: 221
+
+Started at: 05/07/2026, 23:30:32
+
+
+[download 1/221] Breaking Bad
+  Option 1/5: Breaking Bad S05 Complete (2012-2013) 1080p ENG-ITA x264 BluRay
+  Seeders: 150 | Size: 51.4 GB
+  [Breaking Bad] Downloading... ........ ✓ (13s)
+
+[download 2/221] Life on Earth
+  Option 1/1: Life on Our Planet S01E07 Chapter 7 Inheriting the Earth 1080p NF WEB-DL DDP5 1 
+  Seeders: 12 | Size: 1.9 GB
+  [Life on Earth] Downloading... [0% | 1/221 | 0.2m elapsed]
+[upload 1/221] Breaking Bad
+  Uploading 3002.12MB... ......Loading enriched data...
+Status:
+  Already on S3: 1
+  Ready to download: 220
+  Total with torrents: 221
+
+Started at: 06/07/2026, 00:12:41
+
+
+[download 1/220] Life on Earth
+  Option 1/1: Life on Our Planet S01E07 Chapter 7 Inheriting the Earth 1080p NF WEB-DL DDP5 1 
+  Seeders: 12 | Size: 1.9 GB
+  [Life on Earth] Downloading... ..................Loading enriched data...
+Status:
+  Already on S3: 1
+  Ready to download: 220
+  Total with torrents: 221
+
+Started at: 06/07/2026, 00:28:11
+
+
+[download 1/220] The Shawshank Redemption
+  Option 1/5: The Shawshank Redemption (1994) 1080p BrRip - 1.6GB - YIFY
+  Seeders: 641 | Size: 1.7 GB
+  [The Shawshank Redemption] Downloading... ........... ✓ (229s)
+
+[download 2/220] The Godfather
+  Option 1/5: The Godfather (1972) 1080p BrRip x264 - YIFY
+  Seeders: 880 | Size: 2.6 GB
+  [The Godfather] Downloading... [0% | 1/220 | 3.8m elapsed]
+[upload 1/220] The Shawshank Redemption
+  Uploading 1802.20MB... ............ ✓ (262s)
+
+[download 3/220] The Lord of the Rings: The Return of the King
+  Option 1/5: The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264
+  Seeders: 130 | Size: 8.6 GB
+  [The Lord of the Rings: The Return of the King] Downloading... .................. ✓ (560s)
+
+[download 4/220] The Godfather Part II
+  Option 1/5: The Godfather Part II 1974 1080p BluRay x264 AAC - Ozlem
+  Seeders: 119 | Size: 3.2 GB
+  [The Godfather Part II] Downloading... ................ ✓ (423s)
+
+[download 5/220] The Dark Knight
+  Option 1/5: The Dark Knight (2008) 1080p BluRay x264 - 1.7GB - YIFY
+  Seeders: 668 | Size: 1.8 GB
+  [The Dark Knight] Downloading... ........... ✓ (177s)
+
+[download 6/220] 12 Angry Men
+  Option 1/5: 12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem
+  Seeders: 88 | Size: 1.5 GB
+  [12 Angry Men] Downloading... ............ ✓ (181s)
+
+[download 7/220] Pulp Fiction
+  Option 1/5: Pulp Fiction (1994) 1080p BrRip x264 - 1.4GB - YIFY
+  Seeders: 576 | Size: 1.5 GB
+  [Pulp Fiction] Downloading... ............ ✓ (144s)
+
+[download 8/220] The Good, the Bad and the Ugly
+  Option 1/5: The Good the Bad and the Ugly 1966 EXTENDED REMASTERED 1080p (DUAL) BluRay HEVC 
+  Seeders: 123 | Size: 3.2 GB
+  [The Good, the Bad and the Ugly] Downloading... ..........✓
+  Uploading 1642.24MB... ........ ✓ (531s)
+
+[download 9/220] Inception
+  Option 1/5: Inception (2010) 1080p BrRip x264 - 1.85GB - YIFY
+  Seeders: 657 | Size: 2.0 GB
+  [Inception] Downloading... ............ ✓ (161s)
+
+[download 10/220] Forrest Gump
+  Option 1/5: Forrest Gump (1994) 1080p BrRip x264 - 1.90GB - YIFY
+  Seeders: 379 | Size: 2.0 GB
+  [Forrest Gump] Downloading... .............. ✓ (271s)
+
+[download 11/220] The Lord of the Rings: The Fellowship of the Ring
+  Option 1/5: Lord.of.the.Rings.Fellowship.of.Ring.2001.EXTENDED.1080p.BluRay.
+  Seeders: 795 | Size: 5.8 GB
+  [The Lord of the Rings: The Fellowship of the Ring] Downloading... ............... ✓ (353s)
+
+[download 12/220] Fight Club
+  Option 1/5: Fight Club (1999) 1080p BrRip x264 - YIFY
+  Seeders: 704 | Size: 2.0 GB
+  [Fight Club] Downloading... .................. ✓ (488s)
+
+[download 13/220] Spider-Man: Across the Spider-Verse
+  Option 1/5: Spider-Man Across the Spider-Verse (2023) [1080p] [WEBRip]
+  Seeders: 326 | Size: 2.8 GB
+  [Spider-Man: Across the Spider-Verse] Downloading... ............ ✓ (210s)
+
+[download 14/220] Goodfellas
+  Option 1/5: Goodfellas 1990 Remastered 1080p BluRay HEVC x265 5.1 BONE
+  Seeders: 435 | Size: 2.2 GB
+  [Goodfellas] Downloading... ...........✓
+  🗑 [The Shawshank Redemption] Cleaned up, 2 video(s) on S3
+  [Saved: 1/13 uploaded]
+
+[1% | 2/220 | 70.9m elapsed]
+[upload 2/220] The Godfather
+Fatal error: Error: ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/Life.on.Our.Planet.S01E07.Chapter.7.Inheriting.the.Earth.1080p.NF.WEB-DL.DDP5.1.Atmos.HDR.DV.HEVC-CMRG[eztv.re].mkv'
+    at Object.statSync (node:fs:1725:25)
+    at uploadPhase (file:///Users/paulo/software/tv/download-picked-torrents.js:325:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 1)
+    at async processPickedTorrents (file:///Users/paulo/software/tv/download-picked-torrents.js:390:3) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/Users/paulo/software/tv/downloads/Life.on.Our.Planet.S01E07.Chapter.7.Inheriting.the.Earth.1080p.NF.WEB-DL.DDP5.1.Atmos.HDR.DV.HEVC-CMRG[eztv.re].mkv'
+}
+Loading enriched data...
+Status:
+  Already on S3: 0
+  Ready to download: 221
+  Total with torrents: 221
+
+Started at: 06/07/2026, 01:58:30
+
+
+[download 1/221] Breaking Bad
+  Option 1/5: Breaking Bad S05 Complete (2012-2013) 1080p ENG-ITA x264 BluRay
+  Seeders: 150 | Size: 51.4 GB
+  [Breaking Bad] Downloading... ..................................... ✓ (1805s)
+
+[download 2/221] The Shawshank Redemption
+  Option 1/5: The Shawshank Redemption (1994) 1080p BrRip - 1.6GB - YIFY
+  Seeders: 641 | Size: 1.7 GB
+  [The Shawshank Redemption] Downloading... [0% | 1/221 | 30.1m elapsed]
+[upload 1/221] Breaking Bad
+  [Breaking Bad] Transcoding (primary, 1080p)... ...✓
+  Uploading 2655.88MB... ........ ✓ (336s)
+
+[download 3/221] The Godfather
+  Option 1/5: The Godfather (1972) 1080p BrRip x264 - YIFY
+  Seeders: 880 | Size: 2.6 GB
+  [The Godfather] Downloading... ............. ✓ (240s)
+
+[download 4/221] The Lord of the Rings: The Return of the King
+  Option 1/5: The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264
+  Seeders: 130 | Size: 8.6 GB
+  [The Lord of the Rings: The Return of the King] Downloading... .................. ✓ (598s)
+
+[download 5/221] The Godfather Part II
+  Option 1/5: The Godfather Part II 1974 1080p BluRay x264 AAC - Ozlem
+  Seeders: 119 | Size: 3.2 GB
+  [The Godfather Part II] Downloading... ............. ✓ (248s)
+
+[download 6/221] The Dark Knight
+  Option 1/5: The Dark Knight (2008) 1080p BluRay x264 - 1.7GB - YIFY
+  Seeders: 668 | Size: 1.8 GB
+  [The Dark Knight] Downloading... ............ ✓ (201s)
+
+[download 7/221] 12 Angry Men
+  Option 1/5: 12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem
+  Seeders: 88 | Size: 1.5 GB
+  [12 Angry Men] Downloading... ............... ✓ (308s)
+
+[download 8/221] Pulp Fiction
+  Option 1/5: Pulp Fiction (1994) 1080p BrRip x264 - 1.4GB - YIFY
+  Seeders: 576 | Size: 1.5 GB
+  [Pulp Fiction] Downloading... ............ ✓ (167s)
+
+[download 9/221] The Good, the Bad and the Ugly
+  Option 1/5: The Good the Bad and the Ugly 1966 EXTENDED REMASTERED 1080p (DUAL) BluRay HEVC 
+  Seeders: 123 | Size: 3.2 GB
+  [The Good, the Bad and the Ugly] Downloading... .............. ✓ (256s)
+
+[download 10/221] Inception
+  Option 1/5: Inception (2010) 1080p BrRip x264 - 1.85GB - YIFY
+  Seeders: 657 | Size: 2.0 GB
+  [Inception] Downloading... ........... ✓ (157s)
+
+[download 11/221] Forrest Gump
+  Option 1/5: Forrest Gump (1994) 1080p BrRip x264 - 1.90GB - YIFY
+  Seeders: 379 | Size: 2.0 GB
+  [Forrest Gump] Downloading... .........✓
+  [Breaking Bad] Transcoding (720p)... Loading enriched data...
+Status:
+  Already on S3: 0
+  Ready to download: 221
+  Total with torrents: 221
+
+Started at: 06/07/2026, 03:19:28
+
+
+[download 1/221] Breaking Bad
+  Option 1/5: Breaking Bad S05 Complete (2012-2013) 1080p ENG-ITA x264 BluRay
+  Seeders: 150 | Size: 51.4 GB
+  [Breaking Bad] Downloading... ....................................... ✓ (1890s)
+  ⚠ [Breaking Bad] No new video files found
+
+[download 2/221] The Shawshank Redemption
+  Option 1/5: The Shawshank Redemption (1994) 1080p BrRip - 1.6GB - YIFY
+  Seeders: 641 | Size: 1.7 GB
+  [The Shawshank Redemption] Downloading... ......... ✓ (177s)
+  ⚠ [The Shawshank Redemption] No new video files found
+
+[download 3/221] The Godfather
+  Option 1/5: The Godfather (1972) 1080p BrRip x264 - YIFY
+  Seeders: 880 | Size: 2.6 GB
+  [The Godfather] Downloading... ............ ✓ (252s)
+  ⚠ [The Godfather] No new video files found
+
+[download 4/221] The Lord of the Rings: The Return of the King
+  Option 1/5: The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264
+  Seeders: 130 | Size: 8.6 GB
+  [The Lord of the Rings: The Return of the King] Downloading... ................... ✓ (693s)
+  ⚠ [The Lord of the Rings: The Return of the King] No new video files found
+
+[download 5/221] The Godfather Part II
+  Option 1/5: The Godfather Part II 1974 1080p BluRay x264 AAC - Ozlem
+  Seeders: 119 | Size: 3.2 GB
+  [The Godfather Part II] Downloading... ........... ✓ (207s)
+  ⚠ [The Godfather Part II] No new video files found
+
+[download 6/221] The Dark Knight
+  Option 1/5: The Dark Knight (2008) 1080p BluRay x264 - 1.7GB - YIFY
+  Seeders: 668 | Size: 1.8 GB
+  [The Dark Knight] Downloading... ............ ✓ (287s)
+  ⚠ [The Dark Knight] No new video files found
+
+[download 7/221] 12 Angry Men
+  Option 1/5: 12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem
+  Seeders: 88 | Size: 1.5 GB
+  [12 Angry Men] Downloading... ......... ✓ (150s)
+  ⚠ [12 Angry Men] No new video files found
+
+[download 8/221] Pulp Fiction
+  Option 1/5: Pulp Fiction (1994) 1080p BrRip x264 - 1.4GB - YIFY
+  Seeders: 576 | Size: 1.5 GB
+  [Pulp Fiction] Downloading... .............. ✓ (394s)
+  ⚠ [Pulp Fiction] No new video files found
+
+[download 9/221] The Good, the Bad and the Ugly
+  Option 1/5: The Good the Bad and the Ugly 1966 EXTENDED REMASTERED 1080p (DUAL) BluRay HEVC 
+  Seeders: 123 | Size: 3.2 GB
+  [The Good, the Bad and the Ugly] Downloading... .................. ✓ (594s)
+  ⚠ [The Good, the Bad and the Ugly] No new video files found
+
+[download 10/221] Inception
+  Option 1/5: Inception (2010) 1080p BrRip x264 - 1.85GB - YIFY
+  Seeders: 657 | Size: 2.0 GB
+  [Inception] Downloading... .......... ✓ (218s)
+  ⚠ [Inception] No new video files found
+
+[download 11/221] Forrest Gump
+  Option 1/5: Forrest Gump (1994) 1080p BrRip x264 - 1.90GB - YIFY
+  Seeders: 379 | Size: 2.0 GB
+  [Forrest Gump] Downloading... ............ ✓ (263s)
+  ⚠ [Forrest Gump] No new video files found
+
+[download 12/221] The Lord of the Rings: The Fellowship of the Ring
+  Option 1/5: Lord.of.the.Rings.Fellowship.of.Ring.2001.EXTENDED.1080p.BluRay.
+  Seeders: 795 | Size: 5.8 GB
+  [The Lord of the Rings: The Fellowship of the Ring] Downloading... .............. ✓ (351s)
+
+[download 13/221] Fight Club
+  Option 1/5: Fight Club (1999) 1080p BrRip x264 - YIFY
+  Seeders: 704 | Size: 2.0 GB
+  [Fight Club] Downloading... [0% | 1/221 | 91.3m elapsed]
+[upload 1/221] The Lord of the Rings: The Fellowship of the Ring
+  [The Lord of the Rings: The Fellowship of the Ring] Transcoding (primary, 800p)... [DEBUG ffmpeg args] ["-y","-i","/Users/paulo/software/tv/downloads/The.Lord.of.the.Rings.The.Fellowship.of.the.Ring.2001.EXTENDED.1080p.BluRay.10bit.HEVC.6CH.MkvCage.ws.mkv","-map","0:0","-map","0:1","-c:v","h264_videotoolbox","-b:v","5000k","-c:a","aac","-ac","2","-b:a","160k","-movflags","+faststart","-sn","/Users/paulo/software/tv/downloads/.transcoded/primary_The.Lord.of.the.Rings.The.Fellowship.of.the.Ring.2001.EXTENDED.1080p.BluRay.10bit.HEVC.6CH.MkvCage.ws.mp4"]
+....Loading enriched data...
+Status:
+  Already on S3: 0
+  Ready to download: 221
+  Total with torrents: 221
+
+Started at: 06/07/2026, 04:57:57
+
+
+[download 1/221] Breaking Bad
+  Option 1/5: Breaking Bad S05 Complete (2012-2013) 1080p ENG-ITA x264 BluRay
+  Seeders: 150 | Size: 51.4 GB
+  [Breaking Bad] Downloading... ...................................... ✓ (1798s)
+
+[download 2/221] The Shawshank Redemption
+  Option 1/5: The Shawshank Redemption (1994) 1080p BrRip - 1.6GB - YIFY
+  Seeders: 641 | Size: 1.7 GB
+  [The Shawshank Redemption] Downloading... [0% | 1/221 | 30.0m elapsed]
+[upload 1/221] Breaking Bad
+  [Breaking Bad] Transcoding (primary, 1080p)... ...✓
+  Uploading 2655.88MB... ....... ✓ (199s)
+
+[download 3/221] The Godfather
+  Option 1/5: The Godfather (1972) 1080p BrRip x264 - YIFY
+  Seeders: 880 | Size: 2.6 GB
+  [The Godfather] Downloading... .............. ✓ (251s)
+
+[download 4/221] The Lord of the Rings: The Return of the King
+  Option 1/5: The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264
+  Seeders: 130 | Size: 8.6 GB
+  [The Lord of the Rings: The Return of the King] Downloading... ................ ✓ (457s)
+
+[download 5/221] The Godfather Part II
+  Option 1/5: The Godfather Part II 1974 1080p BluRay x264 AAC - Ozlem
+  Seeders: 119 | Size: 3.2 GB
+  [The Godfather Part II] Downloading... ............. ✓ (260s)
+
+[download 6/221] The Dark Knight
+  Option 1/5: The Dark Knight (2008) 1080p BluRay x264 - 1.7GB - YIFY
+  Seeders: 668 | Size: 1.8 GB
+  [The Dark Knight] Downloading... ............ ✓ (215s)
+
+[download 7/221] 12 Angry Men
+  Option 1/5: 12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem
+  Seeders: 88 | Size: 1.5 GB
+  [12 Angry Men] Downloading... ............. ✓ (213s)
+
+[download 8/221] Pulp Fiction
+  Option 1/5: Pulp Fiction (1994) 1080p BrRip x264 - 1.4GB - YIFY
+  Seeders: 576 | Size: 1.5 GB
+  [Pulp Fiction] Downloading... ..........................✓
+  [Breaking Bad] Transcoding (720p)... ...✓
+  Uploading 751.69MB... .......Loading enriched data...
+Status:
+  Already on S3: 0
+  Ready to download: 221
+  Total with torrents: 221
+  Upload concurrency: 4 files at once
+
+Started at: 06/07/2026, 06:27:50
+
+
+[download 1/221] Breaking Bad
+  Option 1/5: Breaking Bad S05 Complete (2012-2013) 1080p ENG-ITA x264 BluRay
+  Seeders: 150 | Size: 51.4 GB
+  [Breaking Bad] Downloading... ........................................ ✓ (1941s)
+
+[download 2/221] The Shawshank Redemption
+  Option 1/5: The Shawshank Redemption (1994) 1080p BrRip - 1.6GB - YIFY
+  Seeders: 641 | Size: 1.7 GB
+  [The Shawshank Redemption] Downloading...   [Breaking Bad - Ep 01 - Live Free or Die - Vivi Libero o Muori] Transcoding...   [Breaking Bad - Ep 02 - Madrigal - L'Affare Tedesco] Transcoding...   [Breaking Bad - Ep 03 - Hazard Pay - Indennità di Rischio] Transcoding...   [Breaking Bad - Ep 04 - Fifty-One - Un Ambiente Migliore] Transcoding... ....... ✓ (144s)
+
+[download 3/221] The Godfather
+  Option 1/5: The Godfather (1972) 1080p BrRip x264 - YIFY
+  Seeders: 880 | Size: 2.6 GB
+  [The Godfather] Downloading... ........... ✓ (230s)
+
+[download 4/221] The Lord of the Rings: The Return of the King
+  Option 1/5: The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264
+  Seeders: 130 | Size: 8.6 GB
+  [The Lord of the Rings: The Return of the King] Downloading... ......Loading enriched data...
+Status:
+  Already on S3: 0
+  Ready to download: 221
+  Total with torrents: 221
+  Upload concurrency: 4 files at once
+
+Started at: 06/07/2026, 07:08:42
+
+
+[download 1/221] Breaking Bad
+  Option 1/5: Breaking Bad S05 Complete (2012-2013) 1080p ENG-ITA x264 BluRay
+  Seeders: 150 | Size: 51.4 GB
+  [Breaking Bad] Downloading... ....................................... ✓ (1951s)
+
+[download 2/221] The Shawshank Redemption
+  Option 1/5: The Shawshank Redemption (1994) 1080p BrRip - 1.6GB - YIFY
+  Seeders: 641 | Size: 1.7 GB
+  [The Shawshank Redemption] Downloading...   [Breaking Bad - Ep 01 - Live Free or Die - Vivi Libero o Muori] Transcoding...   [Breaking Bad - Ep 02 - Madrigal - L'Affare Tedesco] Transcoding...   [Breaking Bad - Ep 03 - Hazard Pay - Indennità di Rischio] Transcoding...   [Breaking Bad - Ep 04 - Fifty-One - Un Ambiente Migliore] Transcoding... ......... ✓ (266s)
+
+[download 3/221] The Godfather
+  Option 1/5: The Godfather (1972) 1080p BrRip x264 - YIFY
+  Seeders: 880 | Size: 2.6 GB
+  [The Godfather] Downloading... .........[Breaking Bad - Ep 01 - Live Free or Die - Vivi Libero o Muori] ✓
+  [Breaking Bad - Ep 01 - Live Free or Die - Vivi Libero o Muori] Uploading 751.69MB... ... ✓ (269s)
+
+[download 4/221] The Lord of the Rings: The Return of the King
+  Option 1/5: The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264
+  Seeders: 130 | Size: 8.6 GB
+  [The Lord of the Rings: The Return of the King] Downloading... ....[Breaking Bad - Ep 03 - Hazard Pay - Indennità di Rischio] ✓
+  [Breaking Bad - Ep 03 - Hazard Pay - Indennità di Rischio] Uploading 828.49MB... [Breaking Bad - Ep 02 - Madrigal - L'Affare Tedesco] ✓
+  [Breaking Bad - Ep 02 - Madrigal - L'Affare Tedesco] Uploading 824.75MB... [Breaking Bad - Ep 04 - Fifty-One - Un Ambiente Migliore] ✓
+  [Breaking Bad - Ep 04 - Fifty-One - Un Ambiente Migliore] Uploading 829.83MB... ...........[Breaking Bad - Ep 01 - Live Free or Die - Vivi Libero o Muori] ✓
+  [Breaking Bad - Ep 05 - Dead Freight - Rapina al Treno] Transcoding... .[Breaking Bad - Ep 03 - Hazard Pay - Indennità di Rischio] ✓
+  [Breaking Bad - Ep 06 - Buyout - Buonuscita] Transcoding... [Breaking Bad - Ep 02 - Madrigal - L'Affare Tedesco] ✓
+  [Breaking Bad - Ep 07 - Say My Name - Dì Il Mio Nome] Transcoding... [Breaking Bad - Ep 04 - Fifty-One - Un Ambiente Migliore] ✓
+  [Breaking Bad - Ep 08 - Gliding Over All - Volare Alto] Transcoding... .... ✓ (772s)
+
+[download 5/221] The Godfather Part II
+  Option 1/5: The Godfather Part II 1974 1080p BluRay x264 AAC - Ozlem
+  Seeders: 119 | Size: 3.2 GB
+  [The Godfather Part II] Downloading... .......[Breaking Bad - Ep 05 - Dead Freight - Rapina al Treno] ✓
+  [Breaking Bad - Ep 05 - Dead Freight - Rapina al Treno] Uploading 837.53MB... .... ✓ (221s)
+
+[download 6/221] The Dark Knight
+  Option 1/5: The Dark Knight (2008) 1080p BluRay x264 - 1.7GB - YIFY
+  Seeders: 668 | Size: 1.8 GB
+  [The Dark Knight] Downloading... ....[Breaking Bad - Ep 06 - Buyout - Buonuscita] ✓
+  [Breaking Bad - Ep 06 - Buyout - Buonuscita] Uploading 828.76MB... .[Breaking Bad - Ep 07 - Say My Name - Dì Il Mio Nome] ✓
+  [Breaking Bad - Ep 07 - Say My Name - Dì Il Mio Nome] Uploading 827.76MB... [Breaking Bad - Ep 08 - Gliding Over All - Volare Alto] ✓
+  [Breaking Bad - Ep 08 - Gliding Over All - Volare Alto] Uploading 828.19MB... ...... ✓ (197s)
+
+[download 7/221] 12 Angry Men
+  Option 1/5: 12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem
+  Seeders: 88 | Size: 1.5 GB
+  [12 Angry Men] Downloading... ............ ✓ (193s)
+
+[download 8/221] Pulp Fiction
+  Option 1/5: Pulp Fiction (1994) 1080p BrRip x264 - 1.4GB - YIFY
+  Seeders: 576 | Size: 1.5 GB
+  [Pulp Fiction] Downloading... .....[Breaking Bad - Ep 05 - Dead Freight - Rapina al Treno] ✓
+  [Breaking Bad - Ep 09 - Blood Money - Denaro Insanguinato] Transcoding... ...... ✓ (122s)
+
+[download 9/221] The Good, the Bad and the Ugly
+  Option 1/5: The Good the Bad and the Ugly 1966 EXTENDED REMASTERED 1080p (DUAL) BluRay HEVC 
+  Seeders: 123 | Size: 3.2 GB
+  [The Good, the Bad and the Ugly] Downloading... ...[Breaking Bad - Ep 09 - Blood Money - Denaro Insanguinato] ✓
+  [Breaking Bad - Ep 09 - Blood Money - Denaro Insanguinato] Uploading 832.51MB... ...[Breaking Bad - Ep 08 - Gliding Over All - Volare Alto] ✓
+  [Breaking Bad - Ep 10 - Buried - Questioni di Famiglia] Transcoding... [Breaking Bad - Ep 06 - Buyout - Buonuscita] ✓
+  [Breaking Bad - Ep 11 - Confessions - Confessioni] Transcoding... [Breaking Bad - Ep 07 - Say My Name - Dì Il Mio Nome] ✓
+  [Breaking Bad - Ep 12 - Rabid Dog - Cane Rabbioso] Transcoding... ...... ✓ (251s)
+
+[download 10/221] Inception
+  Option 1/5: Inception (2010) 1080p BrRip x264 - 1.85GB - YIFY
+  Seeders: 657 | Size: 2.0 GB
+  [Inception] Downloading... .......[Breaking Bad - Ep 09 - Blood Money - Denaro Insanguinato] ✓
+  [Breaking Bad - Ep 13 - To'hajiilee - Riseva Indiana] Transcoding... .... ✓ (212s)
+
+[download 11/221] Forrest Gump
+  Option 1/5: Forrest Gump (1994) 1080p BrRip x264 - 1.90GB - YIFY
+  Seeders: 379 | Size: 2.0 GB
+  [Forrest Gump] Downloading... ....[Breaking Bad - Ep 10 - Buried - Questioni di Famiglia] ✓
+  [Breaking Bad - Ep 10 - Buried - Questioni di Famiglia] Uploading 830.96MB... ...[Breaking Bad - Ep 11 - Confessions - Confessioni] ✓
+  [Breaking Bad - Ep 11 - Confessions - Confessioni] Uploading 827.72MB... [Breaking Bad - Ep 12 - Rabid Dog - Cane Rabbioso] ✓
+  [Breaking Bad - Ep 12 - Rabid Dog - Cane Rabbioso] Uploading 827.14MB... ..[Breaking Bad - Ep 13 - To'hajiilee - Riseva Indiana] ✓
+  [Breaking Bad - Ep 13 - To'hajiilee - Riseva Indiana] Uploading 813.46MB... ... ✓ (235s)
+
+[download 12/221] The Lord of the Rings: The Fellowship of the Ring
+  Option 1/5: Lord.of.the.Rings.Fellowship.of.Ring.2001.EXTENDED.1080p.BluRay.
+  Seeders: 795 | Size: 5.8 GB
+  [The Lord of the Rings: The Fellowship of the Ring] Downloading... .........[Breaking Bad - Ep 10 - Buried - Questioni di Famiglia] ✓
+  [Breaking Bad - Ep 14 - Ozymandias - Declino] Transcoding... ...[Breaking Bad - Ep 11 - Confessions - Confessioni] ✓
+  [Breaking Bad - Ep 15 - Granite State - Tutto Torna] Transcoding... .. ✓ (323s)
+
+[download 13/221] Fight Club
+  Option 1/5: Fight Club (1999) 1080p BrRip x264 - YIFY
+  Seeders: 704 | Size: 2.0 GB
+  [Fight Club] Downloading... ....[Breaking Bad - Ep 12 - Rabid Dog - Cane Rabbioso] ✓
+  [Breaking Bad - Ep 16 - Felina] Transcoding... ..[Breaking Bad - Ep 13 - To'hajiilee - Riseva Indiana] ✓
+  [The Shawshank Redemption - The.Shawshank.Redemption.1994.1080p.x264.YIFY] Transcoding... ...[Breaking Bad - Ep 14 - Ozymandias - Declino] ✓
+  [Breaking Bad - Ep 14 - Ozymandias - Declino] Uploading 825.81MB... ... ✓ (231s)
+
+[download 14/221] Spider-Man: Across the Spider-Verse
+  Option 1/5: Spider-Man Across the Spider-Verse (2023) [1080p] [WEBRip]
+  Seeders: 326 | Size: 2.8 GB
+  [Spider-Man: Across the Spider-Verse] Downloading... .........[Breaking Bad - Ep 14 - Ozymandias - Declino] ✓
+  [The Godfather - The.Godfather.1972.1080p.BrRip.x264.BOKUTOX.YIFY] Transcoding... [Breaking Bad - Ep 15 - Granite State - Tutto Torna] ✓
+  [Breaking Bad - Ep 15 - Granite State - Tutto Torna] Uploading 941.50MB... [Breaking Bad - Ep 16 - Felina] ✓
+  [Breaking Bad - Ep 16 - Felina] Uploading 964.13MB... ...... ✓ (359s)
+
+[download 15/221] Goodfellas
+  Option 1/5: Goodfellas 1990 Remastered 1080p BluRay HEVC x265 5.1 BONE
+  Seeders: 435 | Size: 2.2 GB
+  [Goodfellas] Downloading... ............ ✓ (214s)
+
+[download 16/221] The Lord of the Rings: The Two Towers
+  Option 1/5: The Lord of the Rings: The Two Towers {Extended} (2002) 1080p Br
+  Seeders: 722 | Size: 3.2 GB
+  [The Lord of the Rings: The Two Towers] Downloading... .....[Breaking Bad - Ep 15 - Granite State - Tutto Torna] ✓
+  [The Lord of the Rings: The Return of the King - The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264 DUAL EAC3 -TSRG] Transcoding... [The Shawshank Redemption - The.Shawshank.Redemption.1994.1080p.x264.YIFY] ✓
+  [The Shawshank Redemption - The.Shawshank.Redemption.1994.1080p.x264.YIFY] Uploading 2495.36MB... .[Breaking Bad - Ep 16 - Felina] ✓
+  🗑 [Breaking Bad] Cleaned up, 16 video(s) on S3
+  [1 item(s) fully done, 1 uploaded, 99.3m elapsed]
+
+  [The Godfather Part II - The Godfather Part II 1974 The Coppola Restoration 1080p BluRay x264 AAC - Ozlem] Transcoding... ..... ✓ (252s)
+
+[download 17/221] The Matrix
+  Option 1/5: The Matrix (1999) 1080p BrRip x264 - 1.85GB - YIFY
+  Seeders: 857 | Size: 2.0 GB
+  [The Matrix] Downloading... ............ ✓ (248s)
+
+[download 18/221] Interstellar
+  Option 1/5: Interstellar (2014) (2014) 1080p BrRip x264 - YIFY
+  Seeders: 915 | Size: 2.4 GB
+  [Interstellar] Downloading... ........[The Godfather - The.Godfather.1972.1080p.BrRip.x264.BOKUTOX.YIFY] ✓
+  [The Godfather - The.Godfather.1972.1080p.BrRip.x264.BOKUTOX.YIFY] Uploading 3101.73MB... ..... ✓ (205s)
+
+[download 19/221] Se7en
+  Option 1/5: Se7en ( 1995 ) 1080p BrRip x264 - 1GB - YIFY
+  Seeders: 295 | Size: 1.1 GB
+  [Se7en] Downloading... ............ ✓ (192s)
+
+[download 20/221] City of God
+  Option 1/5: City Of God 2002 1080p BluRay x264-CiNEFiLE
+  Seeders: 75 | Size: 9.4 GB
+  [City of God] Downloading... .........[The Lord of the Rings: The Return of the King - The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264 DUAL EAC3 -TSRG] ✓
+  [The Lord of the Rings: The Return of the King - The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264 DUAL EAC3 -TSRG] Uploading 3516.85MB... .[The Godfather Part II - The Godfather Part II 1974 The Coppola Restoration 1080p BluRay x264 AAC - Ozlem] ✓
+  [The Godfather Part II - The Godfather Part II 1974 The Coppola Restoration 1080p BluRay x264 AAC - Ozlem] Uploading 3548.74MB... ....... ✓ (429s)
+
+[download 21/221] Seven Samurai
+  Option 1/5: Seven.Samurai.1954.CRITERION.1080p.BluRay.x264.anoXmous
+  Seeders: 131 | Size: 3.0 GB
+  [Seven Samurai] Downloading... ......[The Shawshank Redemption - The.Shawshank.Redemption.1994.1080p.x264.YIFY] ✓
+  🗑 [The Shawshank Redemption] Cleaned up, 1 video(s) on S3
+  [2 item(s) fully done, 2 uploaded, 119.8m elapsed]
+
+  [The Dark Knight - Batman.The.Dark.Knight.2008.1080p.BluRay.x264.YIFY] Transcoding... ......... ✓ (323s)
+
+[download 22/221] Saving Private Ryan
+  Option 1/5: Saving Private Ryan (1998) 1080p BrRip x264 - YIFY
+  Seeders: 314 | Size: 2.4 GB
+  [Saving Private Ryan] Downloading... .......[The Dark Knight - Batman.The.Dark.Knight.2008.1080p.BluRay.x264.YIFY] ✓
+  [The Dark Knight - Batman.The.Dark.Knight.2008.1080p.BluRay.x264.YIFY] Uploading 2660.13MB... ..... ✓ (209s)
+
+[download 23/221] The Green Mile
+  Option 1/5: The Green Mile (1999) 1080p BrRip x264 - 2.50GB - YIFY
+  Seeders: 256 | Size: 2.7 GB
+  [The Green Mile] Downloading... ............... ✓ (307s)
+
+[download 24/221] Seven
+  Option 1/5: Seven Snipers (2026) [1080p] [WEBRip] [5.1] 
+  Seeders: 536 | Size: 1.7 GB
+  [Seven] Downloading... ................ ✓ (374s)
+
+[download 25/221] Terminator 2: Judgment Day
+  Option 1/5: Terminator 2: Judgment Day DC (1991) 1080p BrRip x264 - YIFY
+  Seeders: 488 | Size: 2.4 GB
+  [Terminator 2: Judgment Day] Downloading... ........... ✓ (175s)
+
+[download 26/221] The Silence of the Lambs
+  Option 1/5: The Silence of the Lambs 1991.1080p.Criterion.Collection.Blu-ray
+  Seeders: 19 | Size: 10.9 GB
+  [The Silence of the Lambs] Downloading... ...[The Godfather - The.Godfather.1972.1080p.BrRip.x264.BOKUTOX.YIFY] ✓
+  🗑 [The Godfather] Cleaned up, 1 video(s) on S3
+  [3 item(s) fully done, 3 uploaded, 142.3m elapsed]
+
+  [12 Angry Men - 12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem] Transcoding... ......[12 Angry Men - 12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem] ✓
+  [12 Angry Men - 12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem] Uploading 1682.22MB... ...................[The Godfather Part II - The Godfather Part II 1974 The Coppola Restoration 1080p BluRay x264 AAC - Ozlem] ✓
+  🗑 [The Godfather Part II] Cleaned up, 1 video(s) on S3
+  [4 item(s) fully done, 4 uploaded, 165.6m elapsed]
+
+  [Pulp Fiction - Pulp.Fiction.1994.1080p.BrRip.x264.YIFY] Transcoding... [The Lord of the Rings: The Return of the King - The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264 DUAL EAC3 -TSRG] ✓
+  🗑 [The Lord of the Rings: The Return of the King] Cleaned up, 1 video(s) on S3
+  [5 item(s) fully done, 5 uploaded, 166.0m elapsed]
+
+  [The Good, the Bad and the Ugly - The Good the Bad and the Ugly 1966 EXTENDED REMASTERED 1080p (DUAL) BluRay HEVC x265 5.1 BONE] Transcoding... .[The Dark Knight - Batman.The.Dark.Knight.2008.1080p.BluRay.x264.YIFY] ✓
+  🗑 [The Dark Knight] Cleaned up, 1 video(s) on S3
+  [6 item(s) fully done, 6 uploaded, 167.4m elapsed]
+
+  [Inception - Inception.2010.1080p.BrRip.x264.YIFY] Transcoding... .....[12 Angry Men - 12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem] ✓
+  🗑 [12 Angry Men] Cleaned up, 1 video(s) on S3
+  [7 item(s) fully done, 7 uploaded, 171.5m elapsed]
+
+  [Forrest Gump - Forrest.Gump.1994.1080p.BrRip.x264.YIFY] Transcoding... ................[Pulp Fiction - Pulp.Fiction.1994.1080p.BrRip.x264.YIFY] ✓
+  [Pulp Fiction - Pulp.Fiction.1994.1080p.BrRip.x264.YIFY] Uploading 2663.01MB... ..[Inception - Inception.2010.1080p.BrRip.x264.YIFY] ✓
+  [Inception - Inception.2010.1080p.BrRip.x264.YIFY] Uploading 2599.32MB... ...[The Good, the Bad and the Ugly - The Good the Bad and the Ugly 1966 EXTENDED REMASTERED 1080p (DUAL) BluRay HEVC x265 5.1 BONE] ✓
+  [The Good, the Bad and the Ugly - The Good the Bad and the Ugly 1966 EXTENDED REMASTERED 1080p (DUAL) BluRay HEVC x265 5.1 BONE] Uploading 3146.48MB... .[Forrest Gump - Forrest.Gump.1994.1080p.BrRip.x264.YIFY] ✓
+  [Forrest Gump - Forrest.Gump.1994.1080p.BrRip.x264.YIFY] Uploading 2490.03MB... ...........................[Pulp Fiction - Pulp.Fiction.1994.1080p.BrRip.x264.YIFY] ✓
+  🗑 [Pulp Fiction] Cleaned up, 1 video(s) on S3
+  [8 item(s) fully done, 8 uploaded, 221.5m elapsed]
+
+  [The Lord of the Rings: The Fellowship of the Ring - The.Lord.of.the.Rings.The.Fellowship.of.the.Ring.2001.EXTENDED.1080p.BluRay.10bit.HEVC.6CH.MkvCage.ws] Transcoding... ..[Inception - Inception.2010.1080p.BrRip.x264.YIFY] ✓
+  🗑 [Inception] Cleaned up, 1 video(s) on S3
+  [9 item(s) fully done, 9 uploaded, 223.2m elapsed]
+
+  [Fight Club - Fight.Club.10th.Anniversary.Edition.1999.1080p.BrRip.x264.YIFY] Transcoding... ..[Forrest Gump - Forrest.Gump.1994.1080p.BrRip.x264.YIFY] ✓
+  🗑 [Forrest Gump] Cleaned up, 1 video(s) on S3
+  [10 item(s) fully done, 10 uploaded, 225.6m elapsed]
+
+  [Spider-Man: Across the Spider-Verse - Spider-Man.Across.The.Spider-Verse.2023.1080p.WEBRip.x264.AAC5.1-[YTS.MX]] Transcoding... ....[The Good, the Bad and the Ugly - The Good the Bad and the Ugly 1966 EXTENDED REMASTERED 1080p (DUAL) BluRay HEVC x265 5.1 BONE] ✓
+  🗑 [The Good, the Bad and the Ugly] Cleaned up, 1 video(s) on S3
+  [11 item(s) fully done, 11 uploaded, 229.8m elapsed]
+
+  [Goodfellas - Goodfellas 1990 Remastered 1080p BluRay HEVC x265 5.1 BONE] Transcoding... ........................[Fight Club - Fight.Club.10th.Anniversary.Edition.1999.1080p.BrRip.x264.YIFY] ✓
+  [Fight Club - Fight.Club.10th.Anniversary.Edition.1999.1080p.BrRip.x264.YIFY] Uploading 2454.41MB... ....[Spider-Man: Across the Spider-Verse - Spider-Man.Across.The.Spider-Verse.2023.1080p.WEBRip.x264.AAC5.1-[YTS.MX]] ✓
+  [Spider-Man: Across the Spider-Verse - Spider-Man.Across.The.Spider-Verse.2023.1080p.WEBRip.x264.AAC5.1-[YTS.MX]] Uploading 2489.11MB... .......[Goodfellas - Goodfellas 1990 Remastered 1080p BluRay HEVC x265 5.1 BONE] ✓
+  [Goodfellas - Goodfellas 1990 Remastered 1080p BluRay HEVC x265 5.1 BONE] Uploading 2551.34MB... ..[The Lord of the Rings: The Fellowship of the Ring - The.Lord.of.the.Rings.The.Fellowship.of.the.Ring.2001.EXTENDED.1080p.BluRay.10bit.HEVC.6CH.MkvCage.ws] ✓
+  [The Lord of the Rings: The Fellowship of the Ring - The.Lord.of.the.Rings.The.Fellowship.of.the.Ring.2001.EXTENDED.1080p.BluRay.10bit.HEVC.6CH.MkvCage.ws] Uploading 3986.22MB... ........................................[Fight Club - Fight.Club.10th.Anniversary.Edition.1999.1080p.BrRip.x264.YIFY] ✓
+  🗑 [Fight Club] Cleaned up, 1 video(s) on S3
+  [12 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+  ✗ [The Lord of the Rings: The Two Towers - The.Lord.of.the.Rings.The.Two.Towers.2002.ExD.1080p.BrRip.x264.YIFY] ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/the-lord-of-the-rings-the-two-towers-2002-movie/The Lord of the Rings The Two Towers (2002) [1080p]/The.Lord.of.the.Rings.The.Two.Towers.2002.ExD.1080p.BrRip.x264.YIFY.mp4'
+  ⚠ [The Lord of the Rings: The Two Towers] 0 video(s) on S3, some still failed — will retry next run
+  [13 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+  ✗ [The Matrix - The.Matrix.1999.1080p.BrRip.x264.YIFY] ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/the-matrix-1999-movie/The Matrix (1999) [1080p]/The.Matrix.1999.1080p.BrRip.x264.YIFY.mp4'
+  ⚠ [The Matrix] 0 video(s) on S3, some still failed — will retry next run
+  [14 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+  ✗ [Interstellar - Interstellar.2014.2014.1080p.BluRay.x264.YIFY] ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/interstellar-2014-movie/Interstellar (2014) (2014) [1080p]/Interstellar.2014.2014.1080p.BluRay.x264.YIFY.mp4'
+  ⚠ [Interstellar] 0 video(s) on S3, some still failed — will retry next run
+  [15 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+  ✗ [Se7en - Se7en(1995)1080p.BrRip.x264.YIFY] ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/se7en-1995-movie/Se7en ( 1995 )/Se7en(1995)1080p.BrRip.x264.YIFY.mp4'
+  ⚠ [Se7en] 0 video(s) on S3, some still failed — will retry next run
+  [16 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+  ✗ [City of God - City.Of.God.2002.1080p.BluRay.x264-CiNEFiLE] ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/city-of-god-2002-movie/City.Of.God.2002.1080p.BluRay.x264-CiNEFiLE[hotpena]/City.Of.God.2002.1080p.BluRay.x264-CiNEFiLE.mkv'
+  ⚠ [City of God] 0 video(s) on S3, some still failed — will retry next run
+  [17 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+  ✗ [Seven Samurai - Seven.Samurai.1954.CRITERION.1080p.BluRay.x264.anoXmous_] ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/seven-samurai-1954-movie/Seven.Samurai.1954.CRITERION.1080p.BluRay.x264.anoXmous/Seven.Samurai.1954.CRITERION.1080p.BluRay.x264.anoXmous_.mp4'
+  ⚠ [Seven Samurai] 0 video(s) on S3, some still failed — will retry next run
+  [18 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+  ✗ [Saving Private Ryan - Saving.Private.Ryan.1998.1080p.BrRip.x264.YIFY] ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/saving-private-ryan-1998-movie/Saving Private Ryan (1998) [1080p]/Saving.Private.Ryan.1998.1080p.BrRip.x264.YIFY.mp4'
+  ⚠ [Saving Private Ryan] 0 video(s) on S3, some still failed — will retry next run
+  [19 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+  ✗ [The Green Mile - The.Green.Mile.1999.1080p.BrRip.x264.YIFY] ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/the-green-mile-1999-movie/The Green Mile (1999) [1080p]/The.Green.Mile.1999.1080p.BrRip.x264.YIFY.mp4'
+  ⚠ [The Green Mile] 0 video(s) on S3, some still failed — will retry next run
+  [20 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+  ✗ [Seven - Seven.Snipers.2026.1080p.WEBRip.x264.AAC5.1-[YTS.BZ]] ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/seven-1995-movie/Seven Snipers (2026) [1080p] [WEBRip] [5.1] [YTS.BZ]/Seven.Snipers.2026.1080p.WEBRip.x264.AAC5.1-[YTS.BZ].mp4'
+  ⚠ [Seven] 0 video(s) on S3, some still failed — will retry next run
+  [21 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+  ✗ [Terminator 2: Judgment Day - Terminator.2.Judgment.Day.1991.DC.1080p.BRrip.x264.GAZ.YIFY] ENOENT: no such file or directory, stat '/Users/paulo/software/tv/downloads/terminator-2-judgment-day-1991-movie/Terminator 2 Judgment Day DC (1991) [1080p]/Terminator.2.Judgment.Day.1991.DC.1080p.BRrip.x264.GAZ.YIFY.mp4'
+  ⚠ [Terminator 2: Judgment Day] 0 video(s) on S3, some still failed — will retry next run
+  [22 item(s) fully done, 12 uploaded, 290.3m elapsed]
+
+.......

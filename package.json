@@ -1,0 +1,35 @@
+{
+  "name": "tv-torrent-analyzer",
+  "version": "1.0.0",
+  "description": "A tool to analyze torrent files and find the best torrents for TV shows",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "find-torrent": "node find-torrent.js",
+    "torrent-finder": "node torrent-finder.ts",
+    "test": "node test-torrent-finder.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "torrent",
+    "tv",
+    "finder",
+    "analysis"
+  ],
+  "author": "TV Torrent Analyzer Team",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.500.0",
+    "@aws-sdk/credential-providers": "^3.500.0",
+    "@aws-sdk/lib-storage": "^3.1079.0",
+    "@types/node": "^20.19.43",
+    "node-fetch": "^2.7.0",
+    "parse-torrent": "^11.0.21",
+    "railway": "^3.4.1",
+    "torrent-search-api": "^2.1.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

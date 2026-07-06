@@ -1,0 +1,2533 @@
+Loading enriched data...
+Processing 404 items
+
+Qualities: 720p
+
+[1/404] Breaking Bad (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Breaking Bad Season 1 Complete 720p.BRrip.Sujaidr (pimprg) 
+       Score: 1000 | Seeders: 179 | Size: 2.9 GB
+    2. Breaking Bad Season 2 Complete 720p.BRrip.Sujaidr
+       Score: 1000 | Seeders: 151 | Size: 5.2 GB
+    3. Breaking Bad Season 3 Complete 720p.BRrip.Sujaidr
+       Score: 1000 | Seeders: 106 | Size: 5.1 GB
+    4. Breaking Bad Season 5 Complete 720p.BRrip.Sujaidr
+       Score: 1000 | Seeders: 85 | Size: 6.4 GB
+    5. Breaking Bad Season 4 Complete 720p.BRrip.Sujaidr
+       Score: 1000 | Seeders: 82 | Size: 5.1 GB
+
+[2/404] Life on Earth (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[3/404] Chernobyl (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Chernobyl.S01.COMPLETE.720p.AMZN.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 83 | Size: 2.0 GB
+    2. Chernobyl Season 1 Complete 720p WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 24 | Size: 3.8 GB
+    3. Chernobyl Inside the Meltdown S01E02 Cover-Up 720p DSNP WEB-DL AAC2 0 H 264-playWEB
+       Score: 10 | Seeders: 27 | Size: 1.2 GB
+
+[4/404] Band of Brothers (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Band of Brothers (TV Mini Series 2001) 720p BluRay HEVC x265 BON
+       Score: 800 | Seeders: 30 | Size: 6.4 GB
+
+[5/404] The Shawshank Redemption (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The Shawshank Redemption (1994) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 98 | Size: 890.5 MB
+
+[6/404] Avatar: The Last Airbender (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Avatar The Last Airbender 2024 S02E03 City of Walls and Secrets 720p NF WEB-DL DDP5 1 Atmos H 264-playWEB
+       Score: 10 | Seeders: 395 | Size: 841.4 MB
+    2. Avatar The Last Airbender 2024 S02E06 The Parable of the Two Dragons 720p NF WEB-DL DDP5 1 Atmos H 264-pl
+       Score: 10 | Seeders: 182 | Size: 595.8 MB
+
+[7/404] The Wire (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The Wire 2002 Season 1 Complete 720p WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 31 | Size: 12.2 GB
+    2. The Wire 2002 Season 2 Complete 720p WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 24 | Size: 13.8 GB
+
+[8/404] The Godfather (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. The Godfather Part II (1974) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 119 | Size: 1.4 GB
+    2. The Godfather (1972) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 80 | Size: 1.3 GB
+    3. The Godfather: Part III (1990) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 74 | Size: 1.2 GB
+
+[9/404] Game of Thrones (720p)
+  Searching...
+  ✓ Found 4 options:
+    1. Game.of.Thrones.Complete.Series.Season.1.2.3.4.5.6.7.8.x264.720p
+       Score: 1000 | Seeders: 91 | Size: 43.9 GB
+    2. Game Of Thrones S08 Complete Season 8 720p x264 AC3 5.1 [MKV]
+       Score: 1000 | Seeders: 82 | Size: 4.5 GB
+    3. Game of Thrones - Season 1 - 720p BluRay - x264 - ShAaNiG
+       Score: 800 | Seeders: 216 | Size: 4.8 GB
+    4. Game of Thrones - Season 5 - 720p BluRay - x264 - ShAaNiG
+       Score: 800 | Seeders: 127 | Size: 4.9 GB
+
+[10/404] The Sopranos (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. The Sopranos Season 6 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 87 | Size: 15.2 GB
+    2. The Sopranos Season 3 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 72 | Size: 10.4 GB
+    3. The Sopranos Season 5 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 58 | Size: 9.7 GB
+    4. The Sopranos Season 1 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 53 | Size: 10.6 GB
+    5. The Sopranos Season 4 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 47 | Size: 9.8 GB
+
+[Progress saved: 9 items, 26 total torrents]
+
+[11/404] The World at War (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. The.World.At.War.1973.Complete.Series.720p.BluRay.x264-CtrlHD
+       Score: 1000 | Seeders: 15 | Size: 66.7 GB
+    2. The.World.At.War.1973.Complete.Series.720p.Bluray.x264.anoXmous
+       Score: 1000 | Seeders: 10 | Size: 11.8 GB
+    3. World War II With Tom Hanks S01E05 The War At Sea 720p NOW WEB-DL AAC2 0 H 
+       Score: 10 | Seeders: 13 | Size: 1.6 GB
+    4. World War II With Tom Hanks S01E05 The War At Sea 720p NOW WEB-DL AAC2 0 H 264-RAWR
+       Score: 10 | Seeders: 12 | Size: 1.6 GB
+    5. World War II with Tom Hanks S01E05 The War at Sea 720p AMZN WEB-DL DDP5 1 H
+       Score: 10 | Seeders: 7 | Size: 1.4 GB
+
+[12/404] Sherlock (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Sherlock 2010 S01-S04 Complete 720p WEB-DL HEVC x265 BONE
+       Score: 1000 | Seeders: 73 | Size: 9.5 GB
+    2. Young Sherlock 2026 S01 720p WEB-DL HEVC x265 BONE
+       Score: 200 | Seeders: 85 | Size: 3.3 GB
+
+[13/404] Hospital Playlist (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[14/404] Rick and Morty (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[15/404] The Ascent of Man (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[16/404] The Lord of the Rings: The Return of the King (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[17/404] The Godfather Part II (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The Godfather Part II (1974) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 119 | Size: 1.4 GB
+
+[18/404] Arcane (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Arcane.S01.COMPLETE.720p.NF.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 96 | Size: 2.0 GB
+    2. Arcane.S02.COMPLETE.720p.NF.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 86 | Size: 2.2 GB
+
+[19/404] Civilisation (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. BBC Civilisation (1969) [COMPLETE] 720p BrRip x264 - YIFY
+       Score: 1000 | Seeders: 30 | Size: 4.1 GB
+
+[20/404] The Dark Knight (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The Dark Knight Rises (2012) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 107 | Size: 1.2 GB
+    2. The Dark Knight (2008) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 49 | Size: 996.4 MB
+
+[Progress saved: 15 items, 39 total torrents]
+
+[21/404] Schindler's List (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[22/404] Fargo (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[23/404] Firefly (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Firefly Complete Series - Sci-Fi 2002-2003 Eng Subs 720p
+       Score: 1000 | Seeders: 41 | Size: 9.2 GB
+    2. Firefly.Lane.S01.COMPLETE.720p.NF.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 19 | Size: 3.5 GB
+
+[24/404] The Twilight Zone (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. The.Twilight.Zone.2019.S01.COMPLETE.720p.AMZN.WEBRip.x264-Galaxy
+       Score: 1000 | Seeders: 59 | Size: 2.9 GB
+    2. The.Twilight.Zone.2019.S02.COMPLETE.720p.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 31 | Size: 2.2 GB
+    3. The Twilight Zone - Season 1 to 5 - Mp4 x264 AC3 720p
+       Score: 800 | Seeders: 10 | Size: 58.5 GB
+
+[25/404] The Office (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The Office UK Complete S01-S02+Xmas 720p WEB-DL H264 BONE
+       Score: 1000 | Seeders: 108 | Size: 3.8 GB
+    2. The.Office.US.S09E12.Customer.Loyalty.720p.HEVC.x265-MeGusta
+       Score: 10 | Seeders: 125 | Size: 337.8 MB
+
+[26/404] 12 Angry Men (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. 12 Angry Men (1957) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 22 | Size: 734.4 MB
+    2. 12.Angry.Men.1957.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 5 | Size: 1.0 GB
+    3. Family Guy S11E16 12 and a Half Angry Men 720p DSNP WEB-DL DD 5 1 H 264-pla
+       Score: 10 | Seeders: 26 | Size: 296.7 MB
+
+[27/404] I, Claudius (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. I Claudius 1976 Season 1 Complete 720p x264 [i_c]
+       Score: 1000 | Seeders: 38 | Size: 12.5 GB
+    2. I, Claudius (complete) (BBC, 1976) (1280x720p HD, 50fps, soft Eng subs)
+       Score: 1000 | Seeders: 14 | Size: 25.7 GB
+    3. I Claudius 1976 Season 1 Complete UPDATED 720p x264 [i_c]
+       Score: 1000 | Seeders: 14 | Size: 13.2 GB
+
+[28/404] True Detective (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. True.Detective.S03.COMPLETE.720p.AMZN.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 103 | Size: 3.2 GB
+    2. True Detective - Season 1 - 720p BluRay - x264 - ShAaNiG
+       Score: 800 | Seeders: 117 | Size: 4.2 GB
+    3. True Detective S01E06 Haunted Houses 720p AMZN WEB-DL DDP5 1 H 264-playWEB
+       Score: 10 | Seeders: 91 | Size: 2.0 GB
+
+[29/404] Pulp Fiction (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Pulp Fiction (1994) 720p BrRip x264 - 750MB - YIFY
+       Score: 800 | Seeders: 136 | Size: 788.1 MB
+    2. Pulp Fiction 1994 720p TUBI WEB-DL AAC 2 0 H 264-PiRaTeS
+       Score: 800 | Seeders: 6 | Size: 2.1 GB
+
+[30/404] Friends (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 22 items, 57 total torrents]
+
+[31/404] When They See Us (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. When.They.See.Us.S01.COMPLETE.720p.WEB.x264-GalaxyTV
+       Score: 1000 | Seeders: 12 | Size: 1.3 GB
+
+[32/404] Sítio do Picapau Amarelo (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[33/404] Gravity Falls (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Gravity Falls 2012  Season 1 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 101 | Size: 5.4 GB
+    2. Gravity Falls 2012  Season 2 Complete + EXTRAS 720p BluRay x264 
+       Score: 1000 | Seeders: 88 | Size: 16.5 GB
+    3. Gravity.Falls.S02.720p.BluRay.x264-TAXES
+       Score: 200 | Seeders: 33 | Size: 14.7 GB
+    4. Gravity Falls S02E16 Roadside Attraction 720p DSNP WEB-DL AAC2 0 H 264-play
+       Score: 10 | Seeders: 25 | Size: 393.8 MB
+    5. Gravity Falls S01E09 The Time Travelers Pig 720p DSNP WEB-DL AAC2 0 H 264-p
+       Score: 10 | Seeders: 22 | Size: 425.4 MB
+
+[34/404] It's Okay to Not Be Okay (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[35/404] Narcos (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. TabooHeat 26 03 31 Cory Chase XXX 720p MP4-Narcos [XC]
+       Score: 800 | Seeders: 51 | Size: 740.3 MB
+
+[36/404] BoJack Horseman (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. BoJack.Horseman.S06.COMPLETE.720p.NF.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 18 | Size: 2.7 GB
+
+[37/404] The Good, the Bad and the Ugly (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The.Good.the.Bad.and.the.Ugly.1966.EXTENDED.REMASTERED.720p.BluR
+       Score: 800 | Seeders: 30 | Size: 1.0 GB
+    2. The Rookie S01E03 The Good the Bad and the Ugly 720p AMZN WEB-DL DDP5 1 H 2
+       Score: 10 | Seeders: 8 | Size: 936.1 MB
+
+[38/404] The Six Wives of Henry VIII (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[39/404] Inception (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Inception (2010) 720p - mkv - 1.0GB - YIFY
+       Score: 800 | Seeders: 95 | Size: 1.2 GB
+    2. Inception.2010.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 18 | Size: 1.0 GB
+
+[40/404] Succession (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Succession Season 1 Complete 720p WEB x264 [i_c]
+       Score: 1000 | Seeders: 107 | Size: 7.4 GB
+    2. Succession.S04.COMPLETE.720p.HMAX.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 105 | Size: 4.5 GB
+
+[Progress saved: 29 items, 71 total torrents]
+
+[41/404] Chaves (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Chaves_e_Chapolin.Completo.720p.MSW.WEB-DL.DualAudio.x264-KBL
+       Score: 800 | Seeders: 6 | Size: 280.5 GB
+    2. Boxing 2026.04.25 Alan Chaves vs. Miguel Madueno (2026) [WEB 720p] {DAZN}
+       Score: 800 | Seeders: 5 | Size: 1.0 GB
+
+[42/404] Peaky Blinders (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Peaky Blinders Season 2 Complete 720p x264 [i_c]
+       Score: 1000 | Seeders: 95 | Size: 3.1 GB
+    2. Peaky.Blinders.S01.COMPLETE.720p.BluRay.x264-GalaxyTV
+       Score: 1000 | Seeders: 91 | Size: 2.2 GB
+    3. Peaky Blinders Season 3 Complete 720p HDTV x264 [i_c]
+       Score: 1000 | Seeders: 86 | Size: 3.6 GB
+    4. Peaky Blinders Season 1 Complete 720p HDTV x264 [i_c]
+       Score: 1000 | Seeders: 82 | Size: 4.5 GB
+    5. Peaky.Blinders.S04.COMPLETE.720p.BluRay.x264-GalaxyTV
+       Score: 1000 | Seeders: 76 | Size: 2.0 GB
+
+[43/404] Over the Garden Wall (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Over the Garden Wall 720p complete 10 Episodes
+       Score: 1000 | Seeders: 27 | Size: 1.1 GB
+    2. Over The Garden Wall - Complete 720p
+       Score: 1000 | Seeders: 5 | Size: 1.1 GB
+
+[44/404] Ted Lasso (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Ted.Lasso.S03.COMPLETE.720p.ATVP.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 376 | Size: 4.1 GB
+    2. Ted.Lasso.S02.COMPLETE.720p.ATVP.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 375 | Size: 3.1 GB
+    3. Ted.Lasso.S01.COMPLETE.REPACK.720p.ATVP.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 336 | Size: 2.0 GB
+
+[45/404] Forrest Gump (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Forrest Gump (1994) 720p BrRip x264 - 850MB - YIFY
+       Score: 800 | Seeders: 63 | Size: 893.7 MB
+    2. Forrest Gump: O Contador De Historias (1994) 720p Dublado Pt Br
+       Score: 800 | Seeders: 12 | Size: 929.1 MB
+
+[46/404] Black Mirror (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Black.Mirror.S01.COMPLETE.720p.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 79 | Size: 1.4 GB
+
+[47/404] It's Always Sunny in Philadelphia (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[48/404] Curb Your Enthusiasm (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[49/404] Better Call Saul (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Better Call Saul Season 3 Complete 720p HDTV x264 [i_c]
+       Score: 1000 | Seeders: 116 | Size: 5.8 GB
+    2. Better.Call.Saul.S06.COMPLETE.REPACK.720p.AMZN.WEBRip.x264-Galax
+       Score: 1000 | Seeders: 100 | Size: 3.6 GB
+    3. Better Call Saul Season 5 Complete 720p NF WEBRip x264 [i_c]
+       Score: 1000 | Seeders: 94 | Size: 5.1 GB
+
+[50/404] Justice League Unlimited (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. JUSTICE LEAGUE Series: JL, JL: UNLIMITED, + YOUNG Justice - 720p
+       Score: 800 | Seeders: 41 | Size: 38.4 GB
+
+[Progress saved: 37 items, 90 total torrents]
+
+[51/404] The Lord of the Rings: The Fellowship of the Ring (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Lord of the Rings Fellowship of the Ring [EXTENDED ]720p - YIFY
+       Score: 800 | Seeders: 5 | Size: 1.6 GB
+
+[52/404] Dark (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[53/404] Fight Club (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Fight Club (1999) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 26 | Size: 1.1 GB
+    2. Fight.Club.1999.REMASTERED.REPACK.720p.BluRay.999MB.x265.10bi
+       Score: 800 | Seeders: 22 | Size: 1.0 GB
+
+[54/404] Upstairs, Downstairs (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[55/404] The Colbert Report (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[56/404] Os Normais (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[57/404] One Flew Over the Cuckoo's Nest (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[58/404] The Shield (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The Rising of the Shield Hero S04E09 720p HEVC x265-MeGusta
+       Score: 10 | Seeders: 22 | Size: 133.6 MB
+    2. The.Rising.Of.The.Shield.Hero.S03E09.DUBBED.720p.WEB.H264-SKYANiME
+       Score: 10 | Seeders: 10 | Size: 741.8 MB
+
+[59/404] Primal (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Primal.S01.COMPLETE.720p.AMZN.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 120 | Size: 1.2 GB
+    2. Primal.S02.COMPLETE.720p.HMAX.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 96 | Size: 1.1 GB
+    3. Primal S03E07 720p HDTV H264-JFF
+       Score: 10 | Seeders: 90 | Size: 368.7 MB
+
+[60/404] Trollhunters (720p)
+  Searching...
+  ✓ Found 4 options:
+    1. Trollhunters.S02.COMPLETE.720p.10bit.WEBRip.2CH.x265.HEVC-PSA
+       Score: 1000 | Seeders: 12 | Size: 2.1 GB
+    2. Trollhunters.S03.COMPLETE.720p.NF.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 5 | Size: 2.6 GB
+    3. Trollhunters.S02.COMPLETE.720p.NF.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 5 | Size: 2.6 GB
+    4. Trollhunters Rise of the Titans (2021) [720p] [WEBRip] 
+       Score: 800 | Seeders: 11 | Size: 1.0 GB
+
+[Progress saved: 42 items, 102 total torrents]
+
+[61/404] Arrested Development (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Arrested Development S02E10 Ready Aim Marry Me 720p WEB-DL AAC2 0 h 264-NTb
+       Score: 10 | Seeders: 85 | Size: 676.9 MB
+    2. Arrested Development S02E05 Sad Sack 720p WEB-DL AAC2 0 h 264-NTb
+       Score: 10 | Seeders: 77 | Size: 693.8 MB
+
+[62/404] The Mandalorian (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The.Mandalorian.S03.COMPLETE.720p.DSNP.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 72 | Size: 2.1 GB
+
+[63/404] Frontline (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Frontline S2026E06 The President vs the Fed 2026 720p AMZN WEB-DL DDP2 0 H 
+       Score: 800 | Seeders: 35 | Size: 1.4 GB
+    2. Frontline S2025E10 Remaking The Middle East Israel Vs Iran 2025 720p WEB H264-JFF
+       Score: 800 | Seeders: 29 | Size: 3.6 GB
+    3. Frontline S2026E03 The Deal Trump Bukele and the Gangs of El Salvador 720p AMZN WEB-DL DDP2 0 H 264-RAWR
+       Score: 800 | Seeders: 23 | Size: 2.0 GB
+    4. Frontline S42E14 American Voices 2024 720p WEBRip x264-BAE
+       Score: 10 | Seeders: 24 | Size: 2.1 GB
+    5. Frontline S44E08 The Crown Prince and the President 720p HEVC x265-MeGusta
+       Score: 10 | Seeders: 21 | Size: 545.5 MB
+
+[64/404] Pantanal (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[65/404] The Marvelous Mrs. Maisel (720p)
+  Searching...
+  ✓ Found 4 options:
+    1. The.Marvelous.Mrs.Maisel.S05.COMPLETE.720p.AMZN.WEBRip.x264-Gala
+       Score: 1000 | Seeders: 58 | Size: 3.7 GB
+    2. The.Marvelous.Mrs.Maisel.S04.COMPLETE.720p.AMZN.WEBRip.x264-Gala
+       Score: 1000 | Seeders: 43 | Size: 3.3 GB
+    3. The.Marvelous.Mrs.Maisel.S01.COMPLETE.720p.AMZN.WEBRip.x264-Gala
+       Score: 1000 | Seeders: 23 | Size: 2.6 GB
+    4. The.Marvelous.Mrs.Maisel.S02.COMPLETE.720p.AMZN.WEBRip.x264-Gala
+       Score: 1000 | Seeders: 18 | Size: 3.5 GB
+
+[66/404] House of Cards (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. House of Cards 2013 Season 1 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 59 | Size: 5.6 GB
+    2. House of Cards 2013 Season 5 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 47 | Size: 5.4 GB
+    3. House of Cards 2013 Season 2 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 34 | Size: 5.5 GB
+    4. House of Cards 2013 Season 6 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 33 | Size: 3.8 GB
+    5. House of Cards 2013 Season 4 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 30 | Size: 4.9 GB
+
+[67/404] Spider-Man: Across the Spider-Verse (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Spider-Man Across the Spider-Verse (2023) [720p] [WEBRip]
+       Score: 800 | Seeders: 41 | Size: 1.4 GB
+    2. Spider-Man.Across.The.Spider-Verse.2023.720p.BluRay.900MB.x264-G
+       Score: 800 | Seeders: 10 | Size: 1.3 GB
+
+[68/404] Crash Landing on You (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[69/404] Goodfellas (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Goodfellas (1990) 720p BrRip x264 - 700mb - YIFY
+       Score: 800 | Seeders: 85 | Size: 733.3 MB
+    2. Goodfellas.1990.REMASTERED.720p.BluRay.999MB.x265.10bit-Galax
+       Score: 800 | Seeders: 7 | Size: 1.0 GB
+
+[70/404] The Last of Us (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 49 items, 123 total torrents]
+
+[71/404] This Is Us (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. This Is Us S01 Complete Season 1 WEB-DL 720p x265 HEVC-PSA
+       Score: 1000 | Seeders: 56 | Size: 3.7 GB
+    2. This.Is.Us.S05.COMPLETE.720p.AMZN.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 33 | Size: 4.3 GB
+    3. This.Is.Us.S03.COMPLETE.720p.AMZN.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 33 | Size: 6.1 GB
+    4. This Is Us S04E17 After The Fire 720p DSNP WEB-DL DD 5 1 H 264-playWEB
+       Score: 10 | Seeders: 75 | Size: 864.2 MB
+    5. This Is Us S01E12 The Big Day 720p DSNP WEB-DL DD 5 1 H 264-playWEB
+       Score: 10 | Seeders: 67 | Size: 941.3 MB
+
+[72/404] Phoenix (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. MissaX 26 05 11 Daisy Phoenix Ejaculation Training XXX 720p MP4
+       Score: 800 | Seeders: 92 | Size: 736.6 MB
+    2. Dark.Phoenix.2019.720p.BRRip.x264-MP4
+       Score: 800 | Seeders: 57 | Size: 1.1 GB
+
+[73/404] Trollhunters: Tales of Arcadia (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[74/404] Elizabeth R (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[75/404] The Lord of the Rings: The Two Towers (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Lord of the Rings Two Towers (2002) [EXTENDED ]720p - YIFY
+       Score: 800 | Seeders: 34 | Size: 1.5 GB
+    2. The Lord of the Rings: The Two Towers (2002) 720p BrRip x264 - Y
+       Score: 800 | Seeders: 32 | Size: 1.6 GB
+
+[76/404] The Matrix (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The Matrix (1999) 720p BrRip x264 - 700mb - YIFY
+       Score: 800 | Seeders: 71 | Size: 738.1 MB
+    2. The Matrix Resurrections (2021) [720p] [WEBRip]
+       Score: 800 | Seeders: 49 | Size: 1.4 GB
+
+[77/404] House (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. House of the Dragon S03E01 720p HMAX WEB-DL DDP5 1 H 264-NTb
+       Score: 10 | Seeders: 896 | Size: 1.6 GB
+    2. House of the Dragon S03E02 720p HEVC x265-MeGusta
+       Score: 10 | Seeders: 647 | Size: 563.9 MB
+
+[78/404] South Park (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. South Park S28E03 720p HDTV H264-JFF
+       Score: 10 | Seeders: 134 | Size: 362.3 MB
+
+[79/404] The Bear (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The.Bear.S05E04.720p.HEVC.x265-MeGusta
+       Score: 10 | Seeders: 481 | Size: 157.5 MB
+    2. The.Bear.S05E07.720p.HEVC.x265-MeGusta
+       Score: 10 | Seeders: 366 | Size: 231.3 MB
+
+[80/404] The Adventures of Pete & Pete (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 56 items, 139 total torrents]
+
+[81/404] The Daily Show (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[82/404] Interstellar (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Interstellar (2014) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 70 | Size: 1.1 GB
+
+[83/404] The Simpsons (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The Simpsons S37E05 720p HEVC x265-MeGusta
+       Score: 10 | Seeders: 111 | Size: 237.3 MB
+
+[84/404] Skam (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. SKAM - Season 2 (720p)
+       Score: 800 | Seeders: 9 | Size: 6.8 GB
+    2. SKAM - Season 3 (720p)
+       Score: 800 | Seeders: 8 | Size: 4.4 GB
+    3. SKAM - Season 4 (720p)
+       Score: 800 | Seeders: 7 | Size: 6.2 GB
+    4. SKAM - Season 1 (720p)
+       Score: 800 | Seeders: 7 | Size: 4.1 GB
+    5. Skam.S01-S04.REPACK.720p.WEBRip.AAC.x264-sXe
+       Score: 650 | Seeders: 23 | Size: 21.5 GB
+
+[85/404] Six Feet Under (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Six Feet Under 2001 Seasons 1 to 5 Complete 720p AMZN WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 19 | Size: 55.9 GB
+    2. Miss Scarlet S04E02 Six Feet Under 720p AMZN WEB-DL DD 5 1 H 264-playWEB
+       Score: 10 | Seeders: 5 | Size: 1.2 GB
+
+[86/404] Battlestar Galactica (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[87/404] Severance (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Severance.S01.COMPLETE.720p.ATVP.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 313 | Size: 1.7 GB
+
+[88/404] Justice League (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Zack Snyder's Justice League (2021) [720p] [WEBRip]
+       Score: 800 | Seeders: 35 | Size: 2.3 GB
+    2. Justice.League.Crisis.on.Infinite.Earths.Part.Two.2024.720p.BluR
+       Score: 800 | Seeders: 23 | Size: 921.9 MB
+    3. Justice.League.Dark.Apokolips.War.2020.720p.WEBRip.800MB.x264-Ga
+       Score: 800 | Seeders: 22 | Size: 836.0 MB
+
+[89/404] Rome (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Rome S01-S02 2005-2007 720p BluRay HEVC H265 BONE
+       Score: 550 | Seeders: 41 | Size: 10.1 GB
+
+[90/404] Invincible (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 63 items, 153 total torrents]
+
+[91/404] Avenida Brasil (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[92/404] Se7en (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Se7en (1995) 720p BrRip x264 - 700MB - YIFY
+       Score: 800 | Seeders: 74 | Size: 729.6 MB
+    2. Se7en.1995.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 7 | Size: 1.0 GB
+    3. Se7en.1995.720p.BluRay.x264-NeZu
+       Score: 800 | Seeders: 5 | Size: 1.5 GB
+
+[93/404] City of God (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. City Of God-720p MP4 AAC x264 BRRip 2002-CC
+       Score: 800 | Seeders: 15 | Size: 2.4 GB
+    2. City.of.God.2002.PROPER.720p.BluRay.x264-PHOBOS [Cidade de Deus]
+       Score: 800 | Seeders: 10 | Size: 7.0 GB
+    3. City.Of.God.The.Fight.Rages.On.S01E01.DUBBED.720p.WEB.H264-SKYFiRE
+       Score: 10 | Seeders: 6 | Size: 985.4 MB
+    4. City.Of.God.The.Fight.Rages.On.S01E03.DUBBED.720p.WEB.H264-SKYFiRE
+       Score: 10 | Seeders: 5 | Size: 878.6 MB
+    5. City of God The Fight Rages On S01E02 720p AMZN WEB-DL DUAL DDP5 1 Atmos H 264-K
+       Score: 10 | Seeders: 5 | Size: 2.0 GB
+
+[94/404] Seven Samurai (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Seven Samurai aka Shichinin no samurai (1954) 720p BRRiP x264 AA
+       Score: 800 | Seeders: 48 | Size: 1.5 GB
+    2. Snow.White.and.the.Seven.Samurai.2024.720p.WEB.h264-DiRT
+       Score: 800 | Seeders: 6 | Size: 900.6 MB
+
+[95/404] The Venture Bros. (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. The Venture Bros. 2004 Season 4 Complete 720p WEB x264 [i_c]
+       Score: 1000 | Seeders: 30 | Size: 4.9 GB
+    2. The Venture Bros. 2004 Season 5 Complete 720p WEB x264 [i_c]
+       Score: 1000 | Seeders: 24 | Size: 2.7 GB
+    3. The Venture Bros. 2004 Season 3 Complete 720p WEB x264 [i_c]
+       Score: 1000 | Seeders: 24 | Size: 3.6 GB
+    4. The Venture Bros. 2004 Season 6 Complete 720p WEB x264 [i_c]
+       Score: 1000 | Seeders: 23 | Size: 2.2 GB
+    5. The Venture Bros S04E12 720p HDTV x264-CTU
+       Score: 10 | Seeders: 13 | Size: 585.9 MB
+
+[96/404] A Dog's Will (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[97/404] Saving Private Ryan (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Saving Private Ryan (1998) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 70 | Size: 1.0 GB
+
+[98/404] The Green Mile (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The Green Mile (1999) 720p BrRip x264 - 1.25GB - YIFY
+       Score: 800 | Seeders: 61 | Size: 1.3 GB
+    2. The Green Mile (1999) 720p BRRiP x264 AAC [Team Nanban]
+       Score: 800 | Seeders: 7 | Size: 1.0 GB
+
+[99/404] Seven (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[100/404] Parks and Recreation (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Parks and Recreation COMPLETE 720p 10bit WEBRip x265 budgetbits
+       Score: 1000 | Seeders: 32 | Size: 13.5 GB
+
+[Progress saved: 70 items, 172 total torrents]
+
+[101/404] Mad Men (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Mad.Men.S01.Season.1.Complete.720p.BluRay.2CH.x264-PSA
+       Score: 1000 | Seeders: 53 | Size: 5.5 GB
+
+[102/404] It's a Wonderful Life (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[103/404] Terminator 2: Judgment Day (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Terminator 2: Judgment Day (1991)[DC] 720p BrRip 750MB - YIFY
+       Score: 800 | Seeders: 21 | Size: 794.0 MB
+
+[104/404] The Silence of the Lambs (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The Silence Of The Lambs 1991 720p BDrip X264 - 752MB -  YIFY
+       Score: 800 | Seeders: 25 | Size: 788.6 MB
+    2. The.Silence.of.the.Lambs.1991.REMASTERED.720p.BluRay.999MB.x2
+       Score: 800 | Seeders: 6 | Size: 1.0 GB
+
+[105/404] The Chaser's War on Everything (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[106/404] What We Do in the Shadows (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. What.We.Do.in.the.Shadows.S06.COMPLETE.720p.DSNP.WEBRip.x264-Gal
+       Score: 1000 | Seeders: 53 | Size: 2.2 GB
+
+[107/404] Deadwood (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Deadwood.S02E11.The.Whores.Can.Come.720p.HEVC.x265-MeGusta
+       Score: 10 | Seeders: 27 | Size: 447.9 MB
+
+[108/404] The Honeymooners (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The Honeymooners 2005 720p WEB h264-NoRBiT
+       Score: 800 | Seeders: 5 | Size: 3.0 GB
+    2. Chuck.S03E14.CHUCK.VS.THE.HONEYMOONERS.720p.HEVC.x265-MeGusta
+       Score: 10 | Seeders: 7 | Size: 512.8 MB
+
+[109/404] The Prisoner (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. The Prisoner 1967 Season 1 Complete UPDATED 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 9 | Size: 16.3 GB
+    2. The Prisoner (2009) Series Complete 720p
+       Score: 1000 | Seeders: 9 | Size: 7.0 GB
+    3. Harry Potter and the Prisoner of Azkaban (2004) 720p 550MB- YIFY
+       Score: 800 | Seeders: 61 | Size: 576.1 MB
+    4. The.Spanish.Prisoner.1997.720p.WEB-DL.H264-WEBiOS [PublicHD]
+       Score: 800 | Seeders: 19 | Size: 3.5 GB
+    5. What We Do in the Shadows S03E01 The Prisoner 720p DSNP WEB-DL DD 5 1 H 264
+       Score: 10 | Seeders: 16 | Size: 495.0 MB
+
+[110/404] Life Is Beautiful (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 77 items, 185 total torrents]
+
+[111/404] Star Wars (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[112/404] Dexter (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[113/404] Samurai Jack (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Samurai.Jack.S05E04.720p.HDTV.x264-W4F[ettv]
+       Score: 10 | Seeders: 10 | Size: 325.4 MB
+    2. Samurai.Jack.S05E06.720p.WEB-DL.H264-FUM[ettv]
+       Score: 10 | Seeders: 8 | Size: 744.1 MB
+
+[114/404] Apocalypse Now (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Now.Apocalypse.S01.COMPLETE.720p.WEB.x264-GalaxyTV
+       Score: 1000 | Seeders: 6 | Size: 2.7 GB
+    2. Apocalypse.Now.1979.FINAL.CUT.720p.BluRay.999MB.x265.10bit-Ga
+       Score: 800 | Seeders: 43 | Size: 1.0 GB
+
+[115/404] Community (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[116/404] Psycho (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[117/404] The Forsyte Saga (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The Forsyte Saga 2002 S01-S02 720p WEB-DL HEVC x265 BONE
+       Score: 550 | Seeders: 17 | Size: 5.4 GB
+
+[118/404] Cidade dos Homens (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[119/404] Cinema Paradiso (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Cinema Paradiso 1988 720p BRRip x264 ogg mkv-anoXmous
+       Score: 800 | Seeders: 6 | Size: 731.0 MB
+
+[120/404] The Pianist (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. SexAndSubmission - Kink - Lyra Law - The Pianist - Anal, Hardcore, BDSM 720p  
+       Score: 800 | Seeders: 63 | Size: 2.3 GB
+
+[Progress saved: 82 items, 192 total torrents]
+
+[121/404] City Lights (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Charlie Chaplin - City Lights (1931) 720p BrRip x264 -500MB- YIF
+       Score: 800 | Seeders: 22 | Size: 525.4 MB
+
+[122/404] Django Unchained (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Django Unchained (2012) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 34 | Size: 1.2 GB
+
+[123/404] Grave of the Fireflies (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Grave.of.the.Fireflies.1988.720p.BluRay.x264.English
+       Score: 800 | Seeders: 44 | Size: 2.0 GB
+    2. Grave of the Fireflies (1988) 720p BRRiP x264 AAC [Team Nanban]
+       Score: 800 | Seeders: 20 | Size: 705.8 MB
+    3. Grave of the Fireflies (1988) 720p hevc x265 [WD-13].mkv
+       Score: 800 | Seeders: 5 | Size: 409.3 MB
+
+[124/404] Modern Times (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Charlie Chaplin - Modern Times (1936) 720p BrRip -500MB- YIFY
+       Score: 800 | Seeders: 24 | Size: 525.4 MB
+
+[125/404] Dune: Part Two (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Dune Part Two (2024) [720p] [WEBRip]
+       Score: 800 | Seeders: 104 | Size: 1.6 GB
+    2. Dune Part Two (2024) [720p] [BluRay]
+       Score: 800 | Seeders: 101 | Size: 1.6 GB
+    3. Dune Part Two (2024) [REPACK] [720p] [WEBRip] 
+       Score: 800 | Seeders: 51 | Size: 1.6 GB
+
+[126/404] American History X (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. American History X (1998) 720p BRRiP x264 AAC [Team Nanban](pimp
+       Score: 800 | Seeders: 10 | Size: 984.3 MB
+    2. Expedition Files S04E01 Mysteries of American History 720p AMZN WEB-DL DDP2 0 H 264-RAWR
+       Score: 10 | Seeders: 13 | Size: 1.4 GB
+    3. American Historia The Untold History of Latinos S01E03 720p HEVC x265-MeGusta
+       Score: 10 | Seeders: 8 | Size: 315.6 MB
+
+[127/404] The Professional (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Leon The Professional Extended (1994) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 59 | Size: 898.7 MB
+    2. Leon.The.Professional.1994.REMASTERED.EXTENDED.720p.BluRay.999MB
+       Score: 800 | Seeders: 20 | Size: 1.0 GB
+
+[128/404] The Departed (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The Departed (2006) 720p BrRip x264 - 750MB - YIFY
+       Score: 800 | Seeders: 57 | Size: 792.4 MB
+
+[129/404] The Prestige (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The Prestige (2006) m720p - x264 - 600MB - YIFY
+       Score: 800 | Seeders: 84 | Size: 623.8 MB
+    2. The.Prestige.2006.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 5 | Size: 1.0 GB
+
+[130/404] Éramos Seis (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 91 items, 209 total torrents]
+
+[131/404] The Lion King (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. The Lion King (1994) 720p BluRay x264 - 500MB - YIFY
+       Score: 800 | Seeders: 106 | Size: 525.5 MB
+    2. The.Lion.King.2019.720p.BRRip.x264-MP4
+       Score: 800 | Seeders: 76 | Size: 1.1 GB
+    3. The Lion King 2 Simba\'s Pride (1998) 720p Bluray - 500MB - YIFY
+       Score: 800 | Seeders: 50 | Size: 525.4 MB
+
+[132/404] Gladiator (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Gladiator II (2024) [720p] [WEBRip]
+       Score: 800 | Seeders: 129 | Size: 1.5 GB
+    2. Gladiator.II.2024.720p.WEBRip.900MB.x264-GalaxyRG
+       Score: 800 | Seeders: 45 | Size: 940.1 MB
+    3. Gladiator (2000) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 30 | Size: 1.2 GB
+
+[133/404] Alien (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[134/404] Parasite (720p)
+  Searching...
+  ✓ Found 4 options:
+    1. Parasite.2019.720p.BRRip.x264.AAC2.0-MP4
+       Score: 800 | Seeders: 43 | Size: 1.2 GB
+    2. The Amazing World of Gumball S04E25E26 The Parasite The Love 720p WEB-DL AA
+       Score: 10 | Seeders: 32 | Size: 719.2 MB
+    3. Infinity Train S02E05 The Parasite Car 720p AMZN WEB-DL DD 2 0 H 264-CtrlHD
+       Score: 10 | Seeders: 18 | Size: 269.3 MB
+    4. Supergirl S04E05 Parasite Lost 720p WEBRip 2CH x265 HEVC-PSA
+       Score: 10 | Seeders: 16 | Size: 248.4 MB
+
+[135/404] The Usual Suspects (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. The Usual Suspects (1995) mkv m720p - 500MB - YIFY
+       Score: 800 | Seeders: 65 | Size: 523.9 MB
+    2. The.Usual.Suspects.1995.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 6 | Size: 1.1 GB
+
+[136/404] Casablanca (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Casablanca (1942) 720p BrRip mkv - 600MB - YIFY
+       Score: 800 | Seeders: 42 | Size: 631.2 MB
+    2. Casablanca (1942) 720p Rifftrax 2ch v2
+       Score: 800 | Seeders: 8 | Size: 2.2 GB
+
+[137/404] City of Men (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Two and a Half Men S05E04 City of Great Racks 720p BluRay FLAC2 0 H 264-NTb
+       Score: 10 | Seeders: 14 | Size: 1.0 GB
+
+[138/404] Back to the Future (720p)
+  Searching...
+  ✓ Found 4 options:
+    1. Back to the Future III (1990) 720p BrRip x264 - 700MB - YIFY
+       Score: 800 | Seeders: 55 | Size: 733.2 MB
+    2. Back to the Future (1985) 720p BrRip x264 - 700MB - YIFY
+       Score: 800 | Seeders: 39 | Size: 733.9 MB
+    3. Back to the Future II (1989) 720p BrRip x264 - 700MB - YIFY
+       Score: 800 | Seeders: 34 | Size: 733.4 MB
+    4. Back.to.the.Future.1985.REMASTERED.720p.BluRay.999MB.x265.10b
+       Score: 800 | Seeders: 19 | Size: 1.0 GB
+
+[139/404] Rear Window (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Rear.Window.1954.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 44 | Size: 1.0 GB
+    2. Rear.Window.1954.by_Hitchcock.720p.x264.AAC.MULTISUB.mkv-Zen_Bud
+       Score: 800 | Seeders: 7 | Size: 1.2 GB
+
+[140/404] Entourage (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Entourage (2015) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 8 | Size: 848.4 MB
+
+[Progress saved: 100 items, 231 total torrents]
+
+[141/404] Whiplash (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Whiplash (2014) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 65 | Size: 852.0 MB
+
+[142/404] John Adams (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. John Adams Series Complete 720p - HBO Film
+       Score: 1000 | Seeders: 10 | Size: 12.3 GB
+
+[143/404] Doctor Who (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Doctor.Who.2005.S02.COMPLETE.720p.BluRay.x264-GalaxyTV
+       Score: 1000 | Seeders: 123 | Size: 5.5 GB
+    2. Doctor.Who.2005.S03.COMPLETE.720p.BluRay.x264-GalaxyTV
+       Score: 1000 | Seeders: 122 | Size: 5.6 GB
+    3. Doctor.Who.2005.S05.COMPLETE.720p.BluRay.x264-GalaxyTV
+       Score: 1000 | Seeders: 116 | Size: 5.8 GB
+    4. Doctor.Who.2005.S07.COMPLETE.720p.BluRay.x264-GalaxyTV
+       Score: 1000 | Seeders: 110 | Size: 5.6 GB
+    5. Doctor.Who.2005.S04.COMPLETE.720p.BluRay.x264-GalaxyTV
+       Score: 1000 | Seeders: 100 | Size: 6.1 GB
+
+[144/404] Avengers: Infinity War (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Avengers.Infinity.War.2018.720p.DSNP.WEBRip.900MB.x264-GalaxyRG
+       Score: 800 | Seeders: 9 | Size: 940.7 MB
+    2. Avengers.Infinity.War.2018.PROPER.720p.BluRay.x264-Replica
+       Score: 800 | Seeders: 8 | Size: 7.1 GB
+
+[145/404] Memento (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Memento (2000) 720p BrRip x264 - 700MB - YIFY
+       Score: 800 | Seeders: 67 | Size: 735.3 MB
+    2. Game.of.Thrones.S08E03.720p.WEB.H264-MEMENTO
+       Score: 10 | Seeders: 16 | Size: 2.5 GB
+
+[146/404] Avengers: Endgame (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Avengers.Endgame.2019.720p.WEBRip.x264-MP4
+       Score: 800 | Seeders: 70 | Size: 1.5 GB
+    2. Avengers Endgame (2019) [BluRay] [720p]
+       Score: 800 | Seeders: 47 | Size: 1.5 GB
+
+[147/404] St. Elsewhere (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[148/404] The Andy Griffith Show (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[149/404] Dr. Strangelove (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Dr. Strangelove (1964) 720p BrRip x264 - 600MB - YIFY
+       Score: 800 | Seeders: 45 | Size: 629.5 MB
+    2. National Theatre Live Dr. Strangelove (2025) [720p] [WEBRip] [YTS.MX]
+       Score: 800 | Seeders: 7 | Size: 1.2 GB
+
+[150/404] Lado a Lado (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Del Otro Lado Del Jardin (2024) 720p WEBRip-WORLD
+       Score: 800 | Seeders: 5 | Size: 1.1 GB
+
+[Progress saved: 108 items, 247 total torrents]
+
+[151/404] Sunset Boulevard (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[152/404] Joker (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Joker.Folie.a.Deux.2024.720p.WEBRip.900MB.x264-GalaxyRG
+       Score: 800 | Seeders: 41 | Size: 941.5 MB
+
+[153/404] M*A*S*H (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[154/404] The Great Dictator (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Charlie Chaplin The Great Dictator (1940)720p BrRip 650MB YIFY
+       Score: 800 | Seeders: 85 | Size: 683.2 MB
+    2. The Great Dictator 1940 720p PLEX WEB-DL AAC 2 0 H 264-PiRaTeS
+       Score: 800 | Seeders: 14 | Size: 2.5 GB
+
+[155/404] Amadeus (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Amadeus (1984) Directors Cut 720p BrRip x264 - 1.1GB - YIFY
+       Score: 800 | Seeders: 79 | Size: 1.2 GB
+    2. Amadeus 2025 S01 720p WEB-DL HEVC x265 BONE
+       Score: 200 | Seeders: 47 | Size: 2.1 GB
+
+[156/404] Taxi (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Taxi Driver (1976) 720p - BRRip - YIFY
+       Score: 800 | Seeders: 72 | Size: 838.0 MB
+    2. A Taxi Driver (2017) 720p HDRip 950MB Ganool
+       Score: 800 | Seeders: 29 | Size: 996.9 MB
+    3. Taxi.2.2000.720p.BluRay.H264.AAC-RARBG
+       Score: 800 | Seeders: 28 | Size: 1.1 GB
+
+[157/404] A Grande Família (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[158/404] The Shining (720p)
+  Searching...
+  ✓ Found 4 options:
+    1. The Shining (1980) Dir Cut - 720p -  650mb - YIFY
+       Score: 800 | Seeders: 34 | Size: 681.6 MB
+    2. The Shining (TV Mini Series 1997) 720p BluRay HEVC x265 BONE
+       Score: 800 | Seeders: 15 | Size: 2.3 GB
+    3. NOVA S44E13 Secrets of the Shining Knight 720p PBS WEB-DL AAC2 0 H 264-NTb
+       Score: 10 | Seeders: 35 | Size: 1.2 GB
+    4. The Amazing Race S37E11 My Knight in Shining Armor 720p AMZN WEB-DL H264-RAWR
+       Score: 10 | Seeders: 9 | Size: 2.8 GB
+
+[159/404] Generation Kill (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[160/404] The Dick Van Dyke Show (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 113 items, 259 total torrents]
+
+[161/404] Paths of Glory (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Paths of Glory (1957) 720p BrRip x264 - 550MB - YIFY
+       Score: 800 | Seeders: 22 | Size: 578.7 MB
+
+[162/404] WALL-E (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[163/404] Witness for the Prosecution (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Witness for the Prosecution (1957) 720p.Web.Dl.Sujaidr (pimprg)
+       Score: 800 | Seeders: 37 | Size: 1.2 GB
+    2. The.Witness.for.the.Prosecution-S01-Series.1--2016-BBC-720p-w.subs-x265-HEVC
+       Score: 800 | Seeders: 13 | Size: 646.7 MB
+
+[164/404] Raiders of the Lost Ark (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Indiana Jones and the Raiders of the Lost Ark (1981) 720p BrRip 
+       Score: 800 | Seeders: 40 | Size: 787.8 MB
+
+[165/404] Star Wars: The Clone Wars (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Star Wars The Clone Wars Season 2 Complete 720p BluRay x264 [i_c
+       Score: 1000 | Seeders: 131 | Size: 6.3 GB
+    2. Star Wars The Clone Wars Season 6 Complete 720p BluRay x264 [i_c
+       Score: 1000 | Seeders: 117 | Size: 3.8 GB
+    3. Star Wars The Clone Wars Season 1 Complete 720p BluRay x264 [i_c
+       Score: 1000 | Seeders: 116 | Size: 6.9 GB
+    4. Star Wars The Clone Wars Season 7 Complete 720p WEB x264 [i_c]
+       Score: 1000 | Seeders: 114 | Size: 3.4 GB
+    5. Star Wars The Clone Wars Season 3 Complete 720p BluRay x264 [i_c
+       Score: 1000 | Seeders: 103 | Size: 6.2 GB
+
+[166/404] The Cove (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Bob.Ross.The.Joy.of.Painting.S25E01.Hide.a.Way.Cove.720p.WEB.h264-BOBROSS
+       Score: 10 | Seeders: 5 | Size: 623.4 MB
+
+[167/404] Heat (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Heat Of The Moment 2 (SexArt and MetArt Films) 2025 WEB-DL 720p 
+       Score: 800 | Seeders: 126 | Size: 2.5 GB
+    2. New Step Mom A Halloween Story (Taboo Heat) 2023 WEB-DL 720p  
+       Score: 800 | Seeders: 124 | Size: 1.6 GB
+    3. Lisbon Female Sluts (Iberian Heat) 2025 WEB-DL 720p 
+       Score: 800 | Seeders: 106 | Size: 4.4 GB
+    4. Heat (1995) 720p BrRip x264 - 850MB - YIFY 
+       Score: 800 | Seeders: 85 | Size: 891.2 MB
+    5. Elana Bunnz In Free Use Step Aunt Christmas [Taboo Heat 2025] XXX WEB-DL 720p MP
+       Score: 800 | Seeders: 68 | Size: 1.5 GB
+
+[168/404] I Love Lucy (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. I Love Lucy S04E30 The Tour 720p BluRay FLAC2 0 H 264-NTb
+       Score: 10 | Seeders: 17 | Size: 1.5 GB
+    2. I Love Lucy S04E22 Don Juan is Shelved 720p BluRay FLAC2 0 H 264-NTb
+       Score: 10 | Seeders: 9 | Size: 1.1 GB
+    3. I Love Lucy S04E11 Getting Ready 720p BluRay FLAC2 0 H 264-NTb
+       Score: 10 | Seeders: 8 | Size: 1.5 GB
+    4. I Love Lucy S04E03 Lucy Cries Wolf 720p BluRay FLAC2 0 H 264-NTb
+       Score: 10 | Seeders: 8 | Size: 1.5 GB
+    5. I Love Lucy S04E01 The Business Manager 720p BluRay FLAC2 0 H 264-NTb
+       Score: 10 | Seeders: 8 | Size: 1.5 GB
+
+[169/404] Vertigo (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Vertigo (1958) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 14 | Size: 968.4 MB
+    2. Arrow S01E12 Vertigo 720p AMZN WEB-DL DD 5 1 H 264-playWEB
+       Score: 10 | Seeders: 7 | Size: 1.4 GB
+
+[170/404] Citizen Kane (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Citizen Kane (1941) 720p BRRiP x264 AAC [Team Nanban]
+       Score: 800 | Seeders: 26 | Size: 669.0 MB
+    2. Citizen Kane 1941 720p BluRay x264-GeneMige
+       Score: 800 | Seeders: 21 | Size: 5.3 GB
+    3. Citizen.Kane.1941.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 6 | Size: 1.0 GB
+
+[Progress saved: 122 items, 284 total torrents]
+
+[171/404] The Thunderbirds (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[172/404] North by Northwest (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. North.By.Northwest.1959.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 6 | Size: 1.0 GB
+    2. BBC Himalaya with Michael Palin 1of6 North by Northwest 720p x26
+       Score: 800 | Seeders: 5 | Size: 1.8 GB
+
+[173/404] Aliens (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Ancient.Aliens.S22E08.720p.HEVC.x265-MeGusta
+       Score: 10 | Seeders: 61 | Size: 517.8 MB
+
+[174/404] Requiem for a Dream (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Requiem for a Dream DIRECTORS CUT (2000) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 21 | Size: 734.4 MB
+    2. Requiem.for.a.Dream.2000.720p.BluRay.999MB.x265.10bit-GalaxyR
+       Score: 800 | Seeders: 5 | Size: 1.1 GB
+    3. Requiem for a Dream 2000 720p PLEX WEB-DL AAC 2 0 H 264-PiRaTeS
+       Score: 800 | Seeders: 5 | Size: 1.9 GB
+
+[175/404] Toy Story 3 (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Toy.Story.4.2019.720p.WEBRip.800MB.x264-GalaxyRG
+       Score: 800 | Seeders: 56 | Size: 829.7 MB
+
+[176/404] Good Will Hunting (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Good Will Hunting (1997) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 88 | Size: 892.4 MB
+    2. Good Will Hunting 1997 720p PTV WEB-DL H264-PiRaTeS
+       Score: 800 | Seeders: 5 | Size: 2.0 GB
+
+[177/404] A Clockwork Orange (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. A Clockwork Orange 1971 720p BluRay x264 AC3 - Ozlem Hotpena
+       Score: 800 | Seeders: 32 | Size: 1.1 GB
+    2. A.Clockwork.Orange.1971.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 7 | Size: 1.0 GB
+    3. A Clockwork Orange 1971 720p MAX WEB-DL DDP5 1 H 264 DUAL-NeX
+       Score: 800 | Seeders: 7 | Size: 2.6 GB
+
+[178/404] Star Trek (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[179/404] Scarface (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Scarface (1983) 720p mkv - 700mb - YIFY
+       Score: 800 | Seeders: 56 | Size: 733.9 MB
+
+[180/404] A Vida da Gente (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 129 items, 297 total torrents]
+
+[181/404] Poldark (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Poldark Season 1 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 20 | Size: 7.0 GB
+    2. Poldark 2015 Season 5 Complete 720p BluRay x264 [i_c]
+       Score: 1000 | Seeders: 15 | Size: 5.8 GB
+    3. Poldark Season 4 Complete 720p HDTV x264 [i_c]
+       Score: 1000 | Seeders: 14 | Size: 5.6 GB
+    4. Poldark Season 3 Complete 720p HDTV x264 [i_c]
+       Score: 1000 | Seeders: 14 | Size: 6.5 GB
+    5. Poldark Season 2 Complete 720p HDTV x264 [i_c]
+       Score: 1000 | Seeders: 14 | Size: 7.3 GB
+
+[182/404] Full Metal Jacket (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Full Metal Jacket (1987) 720p BrRip x264 - 750mb - YIFY
+       Score: 800 | Seeders: 30 | Size: 787.4 MB
+
+[183/404] The Hunt (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. The Hunt 2012 720p BluRay x264-x0r
+       Score: 800 | Seeders: 78 | Size: 2.1 GB
+    2. Adventure Time S10E01 The Wild Hunt 720p AMZN WEB-DL DD 2 0 H 264-CtrlHD
+       Score: 10 | Seeders: 40 | Size: 107.6 MB
+    3. Star Wars The Clone Wars S03E22 Wookiee Hunt 720p DSNP WEB-DL DD 5 1 H 264-
+       Score: 10 | Seeders: 30 | Size: 543.1 MB
+
+[184/404] Ikiru (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Ikiru (1952) 720p BluRay Criterion.x264 SUJAIDR
+       Score: 800 | Seeders: 81 | Size: 1.3 GB
+
+[185/404] Singin' in the Rain (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[186/404] Lawrence of Arabia (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Lawrence of Arabia (1962) 720p HDTV mkv - 700MB - YIFY
+       Score: 800 | Seeders: 20 | Size: 728.4 MB
+    2. Lawrence.of.Arabia.1962.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 5 | Size: 1.0 GB
+
+[187/404] 2001: A Space Odyssey (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. 2001 A Space Odyssey (1968) 720p BrRip x264 - 850MB - YIFY
+       Score: 800 | Seeders: 48 | Size: 895.2 MB
+
+[188/404] Double Indemnity (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Double.Indemnity.1944.720p.HDTV.x264-x0r
+       Score: 800 | Seeders: 7 | Size: 1.7 GB
+
+[189/404] Inglourious Basterds (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Inglourious.Basterds.2009.720p.BluRay.999MB.x265.10bit-Galaxy
+       Score: 800 | Seeders: 46 | Size: 1.0 GB
+
+[190/404] The Avengers (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The Avengers 2012 720p BRrip X264 - 1GB - YIFY
+       Score: 800 | Seeders: 91 | Size: 1.1 GB
+
+[Progress saved: 138 items, 313 total torrents]
+
+[191/404] Up (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Up Close And Personal 3 (Zero Tolerance Films) 2026 WEB-DL 720p 
+       Score: 800 | Seeders: 108 | Size: 3.4 GB
+    2. Wake Up Dead Man A Knives Out Mystery 2025 720p NF WEB-DL DDP5 1 Atmos H 26
+       Score: 800 | Seeders: 92 | Size: 2.7 GB
+
+[192/404] Star Wars: Episode VI - Return of the Jedi (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[193/404] To Kill a Mockingbird (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. To Kill a Mockingbird (1962) 720p BrRip x264 - 800MB - YIFY
+       Score: 800 | Seeders: 49 | Size: 838.3 MB
+
+[194/404] Reservoir Dogs (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Reservoir Dogs (1992) 720p BrRip x264 - 60MB - YIFY
+       Score: 800 | Seeders: 34 | Size: 670.5 MB
+
+[195/404] Prisoner (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Harry Potter and the Prisoner of Azkaban (2004) 720p 550MB- YIFY
+       Score: 800 | Seeders: 61 | Size: 576.1 MB
+    2. Prisoner S01E02 720p WEB H264-AFO
+       Score: 10 | Seeders: 35 | Size: 1.7 GB
+
+[196/404] Incendies (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Incendies (2010) 720p.BRrip.scOrp.sujaidr (pimprg)
+       Score: 800 | Seeders: 21 | Size: 889.1 MB
+    2. Incendies-The.Woman.who.Sings--2010-720p-w.subs-x265-HEVC.mp4
+       Score: 800 | Seeders: 12 | Size: 776.7 MB
+
+[197/404] Profissão Repórter (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[198/404] The Sting (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The.Sting.1973.720p.BluRay.999MB.x265.10bit-GalaxyRG
+       Score: 800 | Seeders: 18 | Size: 1.0 GB
+
+[199/404] Braveheart (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Braveheart (1995) 720p BrRip x264 - 1.1GB - YIFY
+       Score: 800 | Seeders: 33 | Size: 1.2 GB
+    2. Braveheart 1995 720p BluRay x264 DuaL-TURKO
+       Score: 800 | Seeders: 7 | Size: 1.8 GB
+    3. Braveheart 1995 720p TUBI WEB-DL H264-PiRaTeS
+       Score: 800 | Seeders: 5 | Size: 3.3 GB
+
+[200/404] Chapolin (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Chaves_e_Chapolin.Completo.720p.MSW.WEB-DL.DualAudio.x264-KBL
+       Score: 800 | Seeders: 6 | Size: 280.5 GB
+
+[Progress saved: 146 items, 326 total torrents]
+
+[201/404] The Given Word (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[202/404] Renascer (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[203/404] A Separation (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. A Separation (2011) 720p BRrip_sujaidr
+       Score: 800 | Seeders: 11 | Size: 791.4 MB
+
+[204/404] Toy Story (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Toy.Story.4.2019.720p.WEBRip.800MB.x264-GalaxyRG
+       Score: 800 | Seeders: 56 | Size: 829.7 MB
+
+[205/404] Eternal Sunshine of the Spotless Mind (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Eternal Sunshine of the Spotless Mind (2004) 720p BrRip x264 - Y
+       Score: 800 | Seeders: 56 | Size: 734.4 MB
+
+[206/404] Amelie (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Amelie (2001) 720p BRrip_sujaidr
+       Score: 800 | Seeders: 15 | Size: 751.6 MB
+    2. Amelie 2001 720p BluRay x264-GeneMige
+       Score: 800 | Seeders: 7 | Size: 7.6 GB
+    3. Amelie.2001.720p.BluRay.x264-PublicHD Le Fabuleux Destin Poulain
+       Score: 800 | Seeders: 6 | Size: 4.4 GB
+    4. Little Amelie Or The Character Of Rain (2025) 720p BluRay-WORLD
+       Score: 800 | Seeders: 5 | Size: 744.9 MB
+    5. Amelie.rennt.2017.720p.BluRay.DD5.1.x264-TayTO
+       Score: 800 | Seeders: 5 | Size: 4.1 GB
+
+[207/404] Verdades Secretas (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[208/404] The Apartment (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. The Apartment 1960 720p BRRip x264-x0r
+       Score: 800 | Seeders: 16 | Size: 2.1 GB
+    2. The.Apartment.1960.REMASTERED.720p.BluRay.999MB.x265.10bit-Ga
+       Score: 800 | Seeders: 11 | Size: 1.0 GB
+    3. The Apartment (1996) BLURAY 720p BluRay-WORLD
+       Score: 800 | Seeders: 8 | Size: 1.1 GB
+
+[209/404] American Beauty (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. American Beauty (1999) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 25 | Size: 841.7 MB
+
+[210/404] Império (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Imp&eacute;rio do Sol (1987) BDRip Bluray 720p dublado - derew
+       Score: 800 | Seeders: 5 | Size: 1.3 GB
+
+[Progress saved: 153 items, 339 total torrents]
+
+[211/404] They Don't Wear Black Tie (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[212/404] Casseta & Planeta (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[213/404] Senhora do Destino (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[214/404] The Mechanism (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[215/404] Velho Chico (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[216/404] Amor de Mãe (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Locos De Amor 3 (2020) 720p WEBRip-WORLD
+       Score: 800 | Seeders: 5 | Size: 963.1 MB
+
+[217/404] Fina Estampa (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[218/404] Mandrake (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[219/404] Fina Estampa (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[220/404] A Regra do Jogo (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 154 items, 340 total torrents]
+
+[221/404] Globo Repórter (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[222/404] A Força do Querer (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[223/404] Pixote (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[224/404] Elite Squad: The Enemy Within (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[225/404] Carandiru: Outras Histórias (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[226/404] Elite Squad (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Tropa de Elite (Elite Squad) 2007 720p BRRip H264 (multisubs) - 
+       Score: 800 | Seeders: 33 | Size: 1.7 GB
+    2. Escort Squad (Jacquie et Michel ELITE) 2017 WEB-DL 720p
+       Score: 800 | Seeders: 7 | Size: 949.0 MB
+
+[227/404] Um Lugar ao Sol (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[228/404] São Paulo, Sociedade Anônima (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[229/404] Amor à Vida (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[230/404] Liberdade, Liberdade (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Um sonho de liberdade (1994) BDRip bluray HD 720p dublado - dere
+       Score: 800 | Seeders: 6 | Size: 959.3 MB
+
+[Progress saved: 156 items, 343 total torrents]
+
+[231/404] Central Station (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[232/404] Cheias de Charme (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[233/404] The Way He Looks (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[234/404] Novo Mundo (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[235/404] Fantástico (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Quarteto Fant&aacute;stico (2005) - Dublado - Blu Ray 720p
+       Score: 800 | Seeders: 8 | Size: 729.5 MB
+
+[236/404] O Outro Lado do Paraíso (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[237/404] Da Cor do Pecado (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[238/404] Stomachache (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[239/404] Bus 174 (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[240/404] Nos Tempos do Imperador (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 157 items, 344 total torrents]
+
+[241/404] Saramandaia (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[242/404] Salve Jorge (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[243/404] The Second Mother (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[244/404] Mania de Você (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[245/404] The Man Who Copied (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The Man Who Copied (2003) 720p WEBRip-WORLD
+       Score: 800 | Seeders: 6 | Size: 1.2 GB
+
+[246/404] A Dona do Pedaço (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[247/404] Dom (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[248/404] Caminho das Índias (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[249/404] Brainstorm (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Brainstorm.1983.720p.BluRay.x264-HD4U [PublicHD]
+       Score: 800 | Seeders: 5 | Size: 4.7 GB
+
+[250/404] The Invisible Life of Eurídice Gusmão (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 159 items, 346 total torrents]
+
+[251/404] Joia Rara (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[252/404] Elena (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. FamilyTherapyXXX 21 02 16 Elena Koshka Love Me XXX 720p MP4-GAY
+       Score: 800 | Seeders: 20 | Size: 602.6 MB
+
+[253/404] Boca de Ouro (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[254/404] Carandiru (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[255/404] Segundo Sol (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[256/404] Behind the Sun (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Men Behind The Sun 3 A Narrow Escape (1994) 720p BluRay-WORLD
+       Score: 800 | Seeders: 5 | Size: 899.0 MB
+
+[257/404] To the Left of the Father (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[258/404] Jornal Nacional (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[259/404] Black Orpheus (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[260/404] Foreign Land (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 161 items, 348 total torrents]
+
+[261/404] Em Família (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[262/404] Aquarius (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Aquarius 2015 Season 2 Complete 720p WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 6 | Size: 5.9 GB
+    2. Aquarius 2016 720p BluRay HEVC x265-RMTeam 
+       Score: 800 | Seeders: 5 | Size: 754.3 MB
+
+[263/404] Paraíso Tropical (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[264/404] Garota do Momento (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[265/404] Barren Lives (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[266/404] The Red Light Bandit (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[267/404] 3% (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[268/404] Good Morning, Verônica (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[269/404] Four Days in September (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[270/404] Terra e Paixão (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 162 items, 350 total torrents]
+
+[271/404] The Hour of the Star (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[272/404] Aquele Beijo (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[273/404] Bye Bye Brasil (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[274/404] Esquenta! (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[275/404] A Terra Prometida (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[276/404] Viver a Vida (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[277/404] Bacurau (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[278/404] Amarelo Manga (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[279/404] Totalmente Demais (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[280/404] I Travel Because I Have To, I Come Back Because I Love You (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 162 items, 350 total torrents]
+
+[281/404] Verão 90 (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[282/404] The Invisible Collection (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[283/404] Cinema, Aspirins and Vultures (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[284/404] Entranced Earth (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[285/404] Sintonia (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[286/404] Programa Silvio Santos (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[287/404] The Clown (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. The Simpsons S06E15 Homie the Clown 720p DSNP WEB-DL DD 5 1 H 264-playWEB
+       Score: 10 | Seeders: 11 | Size: 645.8 MB
+    2. The Simpsons S30E08 Krusty The Clown 720p AMZN WEB-DL DD 5 1 H 2
+       Score: 10 | Seeders: 10 | Size: 376.3 MB
+    3. The.Simpsons.S06E15.Homie.the.Clown.720p.HEVC.x265-MeGusta
+       Score: 10 | Seeders: 9 | Size: 309.9 MB
+    4. The Simpsons S26E01 Clown in the Dumps 720p DSNP WEB-DL DD 5 1 H 264-playWE
+       Score: 10 | Seeders: 9 | Size: 374.1 MB
+    5. The.Simpsons.S30E14.The.Clown.Stays.in.the.Picture.720p.HEVC.x265-MeGusta
+       Score: 10 | Seeders: 7 | Size: 222.9 MB
+
+[288/404] Kiss of the Spider Woman (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Kiss.of.the.Spider.Woman.2025.720p.BluRay.x264-PiGNUS
+       Score: 800 | Seeders: 6 | Size: 8.7 GB
+    2. Kiss of the Spider Woman 2025 720p BluRay x264-GeneMige
+       Score: 800 | Seeders: 5 | Size: 5.5 GB
+
+[289/404] Sandy & Junior (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[290/404] Pega Pega (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 164 items, 357 total torrents]
+
+[291/404] The Edge of Democracy (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[292/404] Limite (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Luxure Mon Epouse Sans Limite (DORCEL) 2025 WEB-DL 720p, 1080p
+       Score: 800 | Seeders: 9 | Size: 6.8 GB
+
+[293/404] The Oyster and the Wind (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[294/404] The Man of the Year (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Man of the Year 2006 720p PLEX WEB-DL AAC 2 0 H 264-PiRaTeS
+       Score: 800 | Seeders: 5 | Size: 1.9 GB
+    2. The.Red.Green.Show.S10E05.Man.Of.The.Year.720p.HEVC.x265-MeGusta
+       Score: 10 | Seeders: 10 | Size: 177.2 MB
+
+[295/404] The Movie of My Life (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[296/404] MasterChef Brasil (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[297/404] Amor Eterno Amor (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Acapulco 2021 S03E08 Amor Eterno 720p ATVP WEB-DL DDP5 1 Atmos H
+       Score: 10 | Seeders: 6 | Size: 930.4 MB
+
+[298/404] My Name Ain't Johnny (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[299/404] Black God, White Devil (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[300/404] Benzinho (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 167 items, 361 total torrents]
+
+[301/404] Iracema: Uma Transa Amazônica (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[302/404] Trash (720p)
+  Searching...
+  ✓ Found 3 options:
+    1. Glen.or.Glenda.1953.(Ed.Wood-Trash-Cult).720p.x264-Classics
+       Score: 800 | Seeders: 17 | Size: 1.2 GB
+    2. The Weakest Tamer Began A Journey To Pick Up Trash S01E01 DUBBED 720p WEB H264-S
+       Score: 10 | Seeders: 18 | Size: 732.5 MB
+    3. Butchers of LA S01E01 Trash Bags 720p HEVC x265-MeGusta
+       Score: 10 | Seeders: 18 | Size: 278.4 MB
+
+[303/404] Além da Ilusão (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[304/404] Coisa Mais Linda (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[305/404] Rat Fever (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[306/404] Passione (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[307/404] Neighboring Sounds (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[308/404] Rancho Fundo (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[309/404] Travessia (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[310/404] Madame Satã (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 168 items, 364 total torrents]
+
+[311/404] Orgulho e Paixão (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[312/404] Babilônia (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[313/404] A Praça É Nossa (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[314/404] The Sound Around (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[315/404] The Patience Stone (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[316/404] Antonio das Mortes (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[317/404] Xuxa (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[318/404] Girls from Ipanema (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[319/404] Invisible City (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Abominable.and.the.Invisible.City.S02.COMPLETE.720p.PCOK.WEBRip.
+       Score: 1000 | Seeders: 6 | Size: 2.0 GB
+    2. Abominable.and.the.Invisible.City.S01.COMPLETE.720p.PCOK.WEBRip.
+       Score: 1000 | Seeders: 6 | Size: 1.8 GB
+
+[320/404] The Storytellers (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 169 items, 366 total torrents]
+
+[321/404] The Voice Brasil (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[322/404] Gonzaga: From Father to Son (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[323/404] The Trespasser (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[324/404] The Little Prince's Rap Against the Wicked Souls (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[325/404] Dona Flor and Her Two Husbands (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[326/404] Haja Coração (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[327/404] Conversa com Bial (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[328/404] Insensato Coração (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[329/404] No Rancho Fundo (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[330/404] Macunaíma (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 169 items, 366 total torrents]
+
+[331/404] Domingão do Faustão (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[332/404] Mais Você (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[333/404] Família é Tudo (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[334/404] Two Sons of Francisco (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[335/404] Alto Astral (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[336/404] Deus Salve o Rei (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[337/404] At Play in the Fields of the Lord (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[338/404] Cara e Coragem (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[339/404] Eliana (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Pegasproductions 25 05 20 Ariana Skyy and Eliana Powers Milf XXX 720p-XLeech.mp4
+       Score: 800 | Seeders: 10 | Size: 294.2 MB
+    2. FTVGirls.24.02.16.Eliana.Shocking.Squirter.REMASTERED.XXX.720p.H
+       Score: 800 | Seeders: 7 | Size: 514.6 MB
+
+[340/404] No Limite (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 170 items, 368 total torrents]
+
+[341/404] Hard Labor (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[342/404] Good Manners (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[343/404] O Sétimo Guardião (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[344/404] Neon Bull (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[345/404] Zorra Total (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[346/404] Altas Horas (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[347/404] How Tasty Was My Little Frenchman (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[348/404] Fuzuê (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[349/404] A Lei do Amor (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[350/404] My Mom Is a Character 3 (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 170 items, 368 total torrents]
+
+[351/404] Malhação (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[352/404] Bom Sucesso (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[353/404] Caldeirão do Huck (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[354/404] Rock Story (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The Flintstones S02E06 The Rock Quarry Story 720p HMAX WEB-DL DD2 0 H 264-BTW
+       Score: 10 | Seeders: 10 | Size: 727.2 MB
+
+[355/404] My Mom Is a Character (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[356/404] Vai na Fé (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[357/404] My Mom Is a Character 2 (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[358/404] Xica da Silva (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[359/404] Raul Gil (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[360/404] Hard Paint (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 171 items, 369 total torrents]
+
+[361/404] Araguaya - A Conspiracy of Silence (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[362/404] Quilombo (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[363/404] Divine Love (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Divine.Love.2019.720p.BluRay.x264-RUSTED
+       Score: 800 | Seeders: 5 | Size: 6.9 GB
+    2. Divine Love (2019) 720p BluRay-WORLD
+       Score: 800 | Seeders: 5 | Size: 963.0 MB
+
+[364/404] The Man of the Crowd (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[365/404] The Dead Girl's Feast (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[366/404] Smoke Gets in Your Eyes (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[367/404] O Tempo Não Para (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[368/404] The Bog of Beasts (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[369/404] Big Jet (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[370/404] Dancing Brasil (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 172 items, 371 total torrents]
+
+[371/404] Lower City (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[372/404] Seashore (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[373/404] Faustão na Band (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[374/404] The Silver Cliff (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[375/404] The Age of the Earth (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[376/404] Futuro Beach (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[377/404] Popstar (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Popstar.Never.Stop.Never.Stopping.2016.720p.WEBRip.x264.AAC-ETRG
+       Score: 800 | Seeders: 16 | Size: 680.5 MB
+    2. Dirty Laundry 2022 S05E09 Who Won a Stand-Off with a Popstar 720p HEVC x265-MeGusta
+       Score: 10 | Seeders: 6 | Size: 266.2 MB
+
+[378/404] Divine Love (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Divine.Love.2019.720p.BluRay.x264-RUSTED
+       Score: 800 | Seeders: 5 | Size: 6.9 GB
+    2. Divine Love (2019) 720p BluRay-WORLD
+       Score: 800 | Seeders: 5 | Size: 963.0 MB
+
+[379/404] Southwest (720p)
+  Searching...
+  ✓ Found 2 options:
+    1. Ugliest House in America S07E05 The Southwest Ugly Quest 720p AMZN WEB-DL D
+       Score: 10 | Seeders: 7 | Size: 879.6 MB
+    2. Bob Ross The Joy of Painting S18E12 Southwest Serenity 720p WEB h264-BOBROSS
+       Score: 10 | Seeders: 6 | Size: 654.9 MB
+
+[380/404] Midnight (720p)
+  Searching...
+  ✓ Found 4 options:
+    1. Midnight.Mass.2021.S01.COMPLETE.720p.NF.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 81 | Size: 2.1 GB
+    2. Midnight.Cowboy.1969.REMASTERED.720p.BluRay.999MB.x265.10bit-
+       Score: 800 | Seeders: 48 | Size: 1.0 GB
+    3. Midnight in Paris (2011) 720p BrRip x264 - 600MB - YIFY
+       Score: 800 | Seeders: 46 | Size: 630.0 MB
+    4. The Brokenwood Mysteries S12E03 Midnight in the Garden 720p AMZN WEB-DL DDP2 0 H 264-RAWR
+       Score: 10 | Seeders: 42 | Size: 3.7 GB
+
+[Progress saved: 176 items, 381 total torrents]
+
+[381/404] Love for Sale (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[382/404] Reality Z (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Family Fun 2 (Mile High Media, Reality Junkies) 2024 WEB-DL 720p  
+       Score: 800 | Seeders: 115 | Size: 2.7 GB
+    2. Double Dip 7 (Reality Kings) 2026 WEB-DL 720p  
+       Score: 800 | Seeders: 111 | Size: 3.6 GB
+    3. Monster Curves 53 [Reality Kings 2025] XXX WEB-DL 720p MP4-P2P [XC]
+       Score: 800 | Seeders: 83 | Size: 3.9 GB
+    4. Double Dip 6 [Reality Kings 2026] XXX WEB-DL 720p MP4-P2P [XC]
+       Score: 800 | Seeders: 77 | Size: 3.9 GB
+    5. Crazy College GFs Vol. 24 [Reality Kings 2026] XXX WEB-DL 720p MP4-P2P [XC]
+       Score: 800 | Seeders: 57 | Size: 3.4 GB
+
+[383/404] Encontro com Fátima Bernardes (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[384/404] Programa do Ratinho (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[385/404] Me You Them (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. Tell Them You Love Me (2023) 720p WEBRip-LAMA
+       Score: 800 | Seeders: 20 | Size: 985.8 MB
+
+[386/404] Big Brother Brasil (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[387/404] Once Upon a Time Was I, Verônica (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[388/404] Once Upon a Time Veronica (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[389/404] The Dolphin (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[390/404] A Fazenda (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[Progress saved: 178 items, 387 total torrents]
+
+[391/404] Kill Me Please (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[392/404] My Hindu Friend (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[393/404] Till Luck Do Us Part (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[394/404] S.O.S. Women to the Sea (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[395/404] Medusa (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The Medusa Touch (1978) 720p BrRip x264 - YIFY
+       Score: 800 | Seeders: 12 | Size: 848.0 MB
+
+[396/404] The Assailant (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[397/404] De Pernas pro Ar (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[398/404] Lula, the Son of Brazil (720p)
+  Searching...
+  ⚠ No 720p torrents found
+
+[399/404] The Invisible Woman (720p)
+  Searching...
+  ✓ Found 1 options:
+    1. The Invisible Woman (1940) 720p Ita eng MIRCrew
+       Score: 800 | Seeders: 6 | Size: 1.2 GB
+
+[400/404] Weeds (720p)
+  Searching...
+  ✓ Found 4 options:
+    1. Weeds.2005.Season.1-8.S01-S08.720p.BluRay.x265.HEVC.10bit.AAC.7.
+       Score: 850 | Seeders: 9 | Size: 25.3 GB
+    2. Yellowstone.2018.S04E10.Grass.on.the.Streets.and.Weeds.on.the.Rooftops.720p
+       Score: 10 | Seeders: 15 | Size: 736.3 MB
+    3. Weeds S06E13 720p HDTV x264-CTU
+       Score: 10 | Seeders: 9 | Size: 781.8 MB
+    4. Wicked Game Devil in the Desert S01E03 Weeds and Bananas 720p DSNP WEB-DL A
+       Score: 10 | Seeders: 5 | Size: 882.1 MB
+
+[Progress saved: 181 items, 393 total torrents]
+
+[401/404] The Blacklist (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. The Blacklist Season 1 Complete 720P Bluray x264 [i_c]
+       Score: 1000 | Seeders: 92 | Size: 11.0 GB
+    2. The Blacklist Season 2 Complete 720P Bluray x264 [i_c]
+       Score: 1000 | Seeders: 89 | Size: 10.9 GB
+    3. The Blacklist Season 4 Complete 720p HDTV x264 [i_c]
+       Score: 1000 | Seeders: 80 | Size: 12.1 GB
+    4. The Blacklist 2013 Season 10 Complete 720p WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 80 | Size: 11.3 GB
+    5. The Blacklist Season 3 Complete 720P Bluray x264 [i_c]
+       Score: 1000 | Seeders: 75 | Size: 12.0 GB
+
+[402/404] Scandal (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Scandal US Season 1 Complete 720p WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 45 | Size: 3.5 GB
+    2. Scandal US Season 3 Complete 720p WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 44 | Size: 8.4 GB
+    3. Scandal US Season 5 Complete 720p WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 34 | Size: 10.2 GB
+    4. Scandal US Season 2 Complete 720p WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 29 | Size: 10.9 GB
+    5. Scandal US Season 7 Complete 720p HDTV x264 [i_c]
+       Score: 1000 | Seeders: 28 | Size: 10.6 GB
+
+[403/404] Billions (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Billions.S01.COMPLETE.720p.AMZN.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 85 | Size: 3.9 GB
+    2. Billions.S07.COMPLETE.720p.AMZN.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 56 | Size: 3.0 GB
+    3. Billions.S02.COMPLETE.720p.AMZN.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 53 | Size: 3.5 GB
+    4. Billions.S03.COMPLETE.720p.AMZN.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 50 | Size: 3.1 GB
+    5. Billions.S04.COMPLETE.720p.AMZN.WEBRip.x264-GalaxyTV
+       Score: 1000 | Seeders: 48 | Size: 3.6 GB
+
+[404/404] Psych (720p)
+  Searching...
+  ✓ Found 5 options:
+    1. Psych 2006 Season 7 Complete 720p AMZN WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 43 | Size: 10.2 GB
+    2. Psych 2006 Season 3 Complete 720p AMZN WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 43 | Size: 23.7 GB
+    3. Psych 2006 Season 5 Complete 720p AMZN WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 38 | Size: 11.8 GB
+    4. Psych 2006 Season 1 Complete 720p AMZN WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 32 | Size: 20.9 GB
+    5. Psych 2006 Season 6 Complete 720p AMZN WEB-DL x264 [i_c]
+       Score: 1000 | Seeders: 30 | Size: 10.2 GB
+
+
+✅ Done!
+  Items with torrents: 185/404
+  Total torrent options: 413
+
+Next: node download-picked-torrents.js

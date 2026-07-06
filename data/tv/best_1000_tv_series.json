@@ -1,0 +1,4712 @@
+[
+  {
+    "title": "I Love Lucy",
+    "year": 1951,
+    "creator": "Jess Oppenheimer",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Dragnet",
+    "year": 1951,
+    "creator": "Jack Webb",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Panorama",
+    "year": 1953,
+    "creator": "BBC",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Father Knows Best",
+    "year": 1954,
+    "creator": "Ed James",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Gunsmoke",
+    "year": 1955,
+    "creator": "Charles Marquis Warren",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Honeymooners",
+    "year": 1955,
+    "creator": "Jackie Gleason",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Dixon of Dock Green",
+    "year": 1955,
+    "creator": "Ted Willis",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "This Week",
+    "year": 1956,
+    "creator": "Associated-Rediffusion",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Leave It to Beaver",
+    "year": 1957,
+    "creator": "Joe Connelly, Bob Mosher",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Perry Mason",
+    "year": 1957,
+    "creator": "Erle Stanley Gardner",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Donna Reed Show",
+    "year": 1958,
+    "creator": "William Roberts",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Twilight Zone",
+    "year": 1959,
+    "creator": "Rod Serling",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "Bonanza",
+    "year": 1959,
+    "creator": "David Dortort",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Andy Griffith Show",
+    "year": 1960,
+    "creator": "Sheldon Leonard",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "My Three Sons",
+    "year": 1960,
+    "creator": "George Tibbles",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Coronation Street",
+    "year": 1960,
+    "creator": "Tony Warren",
+    "imdb_rating": 5.7
+  },
+  {
+    "title": "Raul Gil",
+    "year": 1961,
+    "creator": "Raul Gil",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "The Dick Van Dyke Show",
+    "year": 1961,
+    "creator": "Carl Reiner",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Avengers",
+    "year": 1961,
+    "creator": "Sydney Newman",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Supercar",
+    "year": 1961,
+    "creator": "Gerry Anderson",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Beverly Hillbillies",
+    "year": 1962,
+    "creator": "Paul Henning",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Saint",
+    "year": 1962,
+    "creator": "Leslie Charteris",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Fireball XL5",
+    "year": 1962,
+    "creator": "Gerry Anderson, Sylvia Anderson",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Z-Cars",
+    "year": 1962,
+    "creator": "Troy Kennedy Martin, Allan Prior",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Programa Silvio Santos",
+    "year": 1963,
+    "creator": "Silvio Santos",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Petticoat Junction",
+    "year": 1963,
+    "creator": "Paul Henning",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Fugitive",
+    "year": 1963,
+    "creator": "Roy Huggins",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Outer Limits",
+    "year": 1963,
+    "creator": "Leslie Stevens",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Doctor Who",
+    "year": 1963,
+    "creator": "Sydney Newman, C. E. Webber, Donald Wilson",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "World in Action",
+    "year": 1963,
+    "creator": "Granada Television",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Bewitched",
+    "year": 1964,
+    "creator": "Sol Saks",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Addams Family",
+    "year": 1964,
+    "creator": "David Levy",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Gilligan's Island",
+    "year": 1964,
+    "creator": "Sherwood Schwartz",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "The Munsters",
+    "year": 1964,
+    "creator": "Allan Burns, Chris Hayward",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Man from U.N.C.L.E.",
+    "year": 1964,
+    "creator": "Sam Rolfe",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Secret Agent",
+    "year": 1964,
+    "creator": "Ralph Smart",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Stingray",
+    "year": 1964,
+    "creator": "Gerry Anderson",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Crossroads",
+    "year": 1964,
+    "creator": "Hazel Adair, Peter Ling",
+    "imdb_rating": 4.2
+  },
+  {
+    "title": "Homicide",
+    "year": 1964,
+    "creator": "Hector Crawford",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "I Dream of Jeannie",
+    "year": 1965,
+    "creator": "Sidney Sheldon",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Get Smart",
+    "year": 1965,
+    "creator": "Mel Brooks, Buck Henry",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Green Acres",
+    "year": 1965,
+    "creator": "Paul Henning",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Lost in Space",
+    "year": 1965,
+    "creator": "Irwin Allen",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Wild Wild West",
+    "year": 1965,
+    "creator": "Michael Garrison",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Hogan's Heroes",
+    "year": 1965,
+    "creator": "Bernard Fein, Albert S. Ruddy",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The FBI",
+    "year": 1965,
+    "creator": "Quinn Martin",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Thunderbirds",
+    "year": 1965,
+    "creator": "Gerry Anderson, Sylvia Anderson",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Star Trek",
+    "year": 1966,
+    "creator": "Gene Roddenberry",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Monkees",
+    "year": 1966,
+    "creator": "Bob Rafelson, Bert Schneider",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Mission: Impossible",
+    "year": 1966,
+    "creator": "Bruce Geller",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Batman",
+    "year": 1966,
+    "creator": "William Dozier",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Softly, Softly",
+    "year": 1966,
+    "creator": "Elwyn Jones, Allan Prior",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Skippy the Bush Kangaroo",
+    "year": 1966,
+    "creator": "Lee Robinson",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Ironside",
+    "year": 1967,
+    "creator": "Collier Young",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Mannix",
+    "year": 1967,
+    "creator": "Richard Levinson, William Link",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "The Prisoner",
+    "year": 1967,
+    "outer": "Patrick McGoohan",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Captain Scarlet and the Mysterons",
+    "year": 1967,
+    "creator": "Gerry Anderson",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Forsyte Saga",
+    "year": 1967,
+    "creator": "John Galsworthy",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Adam-12",
+    "year": 1968,
+    "creator": "R.A. Cinader, Jack Webb",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Columbo",
+    "year": 1968,
+    "creator": "Richard Levinson, William Link",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Mod Squad",
+    "year": 1968,
+    "creator": "Buddy Ruskin",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Hawaii Five-O",
+    "year": 1968,
+    "creator": "Leonard Freeman",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "It Takes a Thief",
+    "year": 1968,
+    "creator": "Roland Kibbee",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Joe 90",
+    "year": 1968,
+    "creator": "Gerry Anderson",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Jornal Nacional",
+    "year": 1969,
+    "creator": "Armando Nogueira",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Civilisation",
+    "year": 1969,
+    "creator": "Kenneth Clark",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "Division 4",
+    "year": 1969,
+    "creator": "Hector Crawford",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Mary Tyler Moore Show",
+    "year": 1970,
+    "creator": "James L. Brooks, Allan Burns",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "McCloud",
+    "year": 1970,
+    "creator": "Herman Miller",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "UFO",
+    "year": 1970,
+    "creator": "Gerry Anderson, Sylvia Anderson",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Six Wives of Henry VIII",
+    "year": 1970,
+    "creator": "Maurice Cowan",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Chaves",
+    "year": 1971,
+    "creator": "Roberto Gómez Bolaños",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "All in the Family",
+    "year": 1971,
+    "creator": "Norman Lear",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "McMillan & Wife",
+    "year": 1971,
+    "creator": "Leonard Stern",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Cannon",
+    "year": 1971,
+    "creator": "Edward Hume",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Persuaders!",
+    "year": 1971,
+    "creator": "Robert S. Baker",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Onedin Line",
+    "year": 1971,
+    "creator": "Cyril Abraham",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Upstairs, Downstairs",
+    "year": 1971,
+    "creator": "Jean Marsh, Eileen Atkins",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Elizabeth R",
+    "year": 1971,
+    "creator": "John Hale",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Matlock Police",
+    "year": 1971,
+    "creator": "Hector Crawford",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Boney",
+    "year": 1971,
+    "creator": "Arthur Upfield",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Hey Hey It's Saturday",
+    "year": 1971,
+    "creator": "Daryl Somers",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "The Bob Newhart Show",
+    "year": 1972,
+    "creator": "David Davis, Lorenzo Music",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "M*A*S*H",
+    "year": 1972,
+    "creator": "Larry Gelbart",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Sanford and Son",
+    "year": 1972,
+    "creator": "Bud Yorkin, Ray Galton, Alan Simpson",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Emergency!",
+    "year": 1972,
+    "creator": "Harold Jack Bloom, R.A. Cinader",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Streets of San Francisco",
+    "year": 1972,
+    "creator": "Edward Hume",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Emmerdale Farm",
+    "year": 1972,
+    "creator": "Kevin Laffan",
+    "imdb_rating": 4.8
+  },
+  {
+    "title": "Number 96",
+    "year": 1972,
+    "creator": "Don Cash",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Chapolin",
+    "year": 1973,
+    "creator": "Roberto Gómez Bolaños",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Fantástico",
+    "year": 1973,
+    "creator": "José Bonifácio de Oliveira Sobrinho",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Globo Repórter",
+    "year": 1973,
+    "creator": "Paulo Gil Soares",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Barnaby Jones",
+    "year": 1973,
+    "creator": "Edward Hume",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Kojak",
+    "year": 1973,
+    "creator": "Abby Mann",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Tomorrow People",
+    "year": 1973,
+    "creator": "Roger Price",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Ascent of Man",
+    "year": 1973,
+    "creator": "Jacob Bronowski",
+    "imdb_rating": 9.1
+  },
+  {
+    "title": "The World at War",
+    "year": 1973,
+    "creator": "Jeremy Isaacs",
+    "imdb_rating": 9.2
+  },
+  {
+    "title": "Happy Days",
+    "year": 1974,
+    "creator": "Garry Marshall",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Six Million Dollar Man",
+    "year": 1974,
+    "creator": "Kenneth Johnson",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Rockford Files",
+    "year": 1974,
+    "creator": "Roy Huggins, Stephen J. Cannell",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Police Woman",
+    "year": 1974,
+    "creator": "Robert Collins",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Rush",
+    "year": 1974,
+    "creator": "Cliff Green",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Jeffersons",
+    "year": 1975,
+    "creator": "Norman Lear",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Wonder Woman",
+    "year": 1975,
+    "creator": "William Moulton Marston",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Starsky & Hutch",
+    "year": 1975,
+    "creator": "William Blinn",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "S.W.A.T.",
+    "year": 1975,
+    "creator": "Robert Hamner",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Space: 1999",
+    "year": 1975,
+    "creator": "Gerry Anderson, Sylvia Anderson",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Sweeney",
+    "year": 1975,
+    "creator": "Ian Kennedy Martin",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Poldark",
+    "year": 1975,
+    "creator": "Winston Graham",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Edward VII",
+    "year": 1975,
+    "creator": "David Butler",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Saturday Night Live",
+    "year": 1975,
+    "creator": "Lorne Michaels",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Laverne & Shirley",
+    "year": 1976,
+    "creator": "Garry Marshall",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Charlie's Angels",
+    "year": 1976,
+    "creator": "Ivan Goff, Ben Roberts",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "The Bionic Woman",
+    "year": 1976,
+    "creator": "Kenneth Johnson",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Quincy M.E.",
+    "year": 1976,
+    "creator": "Glen A. Larson",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The New Avengers",
+    "year": 1976,
+    "creator": "Albert Fennell, Brian Clemens",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "I, Claudius",
+    "year": 1976,
+    "creator": "Jack Pulman",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "The Duchess of Duke Street",
+    "year": 1976,
+    "creator": "John Hawkesworth",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Sullivans",
+    "year": 1976,
+    "creator": "Crawford Productions",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Young Doctors",
+    "year": 1976,
+    "creator": "Reg Watson",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Power Without Glory",
+    "year": 1976,
+    "creator": "Frank Hardy",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Sítio do Picapau Amarelo",
+    "year": 1977,
+    "creator": "Monteiro Lobato",
+    "imdb_rating": 8.9
+  },
+  {
+    "title": "Three's Company",
+    "year": 1977,
+    "creator": "Don Nicholl, Michael Ross, Bernie West",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Love Boat",
+    "year": 1977,
+    "creator": "Wilford Lloyd Baumes",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Fantasy Island",
+    "year": 1977,
+    "creator": "Gene Levitt",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Incredible Hulk",
+    "year": 1977,
+    "creator": "Kenneth Johnson",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "CHiPs",
+    "year": 1977,
+    "creator": "Rick Rosner",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "The Professionals",
+    "year": 1977,
+    "creator": "Brian Clemens",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Taxi",
+    "year": 1978,
+    "creator": "James L. Brooks, Stan Daniels, David Davis, Ed. Weinberger",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "WKRP in Cincinnati",
+    "year": 1978,
+    "creator": "Hugh Wilson",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Mork & Mindy",
+    "year": 1978,
+    "creator": "Garry Marshall, Joe Glauberg",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Dallas",
+    "year": 1978,
+    "creator": "David Jacobs",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Battlestar Galactica",
+    "year": 1978,
+    "creator": "Glen A. Larson",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Return of the Saint",
+    "year": 1978,
+    "creator": "Leslie Charteris",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Blake's 7",
+    "year": 1978,
+    "creator": "Terry Nation",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Against the Wind",
+    "year": 1978,
+    "creator": "Bronwyn Binns",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Knots Landing",
+    "year": 1979,
+    "creator": "David Jacobs",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Dukes of Hazzard",
+    "year": 1979,
+    "creator": "Gy Waldron",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Buck Rogers in the 25th Century",
+    "year": 1979,
+    "creator": "Glen A. Larson",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Sapphire & Steel",
+    "year": 1979,
+    "creator": "P.J. Hammond",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Minder",
+    "year": 1979,
+    "creator": "Leon Griffiths",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Life on Earth",
+    "year": 1979,
+    "creator": "David Attenborough",
+    "imdb_rating": 9.5
+  },
+  {
+    "title": "Prisoner",
+    "year": 1979,
+    "creator": "Reg Watson",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Magnum P.I.",
+    "year": 1980,
+    "creator": "Donald P. Bellisario",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Juliet Bravo",
+    "year": 1980,
+    "creator": "Ian Kennedy Martin",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Dynasty",
+    "year": 1981,
+    "creator": "Richard Shapiro, Esther Shapiro",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Greatest American Hero",
+    "year": 1981,
+    "creator": "Stephen J. Cannell",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Simon & Simon",
+    "year": 1981,
+    "creator": "Philip DeGuere Jr.",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Hill Street Blues",
+    "year": 1981,
+    "creator": "Steven Bochco, Michael Kozoll",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Cagney & Lacey",
+    "year": 1981,
+    "creator": "Barbara Avedon, Barbara Corday",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Bergerac",
+    "year": 1981,
+    "creator": "Robert Banks Stewart",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "A Country Practice",
+    "year": 1981,
+    "creator": "James Davern",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Sons and Daughters",
+    "year": 1981,
+    "creator": "John Holmes",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The People's Court",
+    "year": 1981,
+    "creator": "Stu Billett",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Knight Rider",
+    "year": 1982,
+    "creator": "Glen A. Larson",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Matt Houston",
+    "year": 1982,
+    "creator": "Lawrence Gordon",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Remington Steele",
+    "year": 1982,
+    "creator": "Robert Butler, Michael Gleason",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "St. Elsewhere",
+    "year": 1982,
+    "creator": "Joshua Brand, John Falsey",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "T.J. Hooker",
+    "year": 1982,
+    "creator": "Rick Husky",
+    "imdb_rating": 5.7
+  },
+  {
+    "title": "The A-Team",
+    "year": 1983,
+    "creator": "Frank Lupo, Stephen J. Cannell",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Scarecrow and Mrs. King",
+    "year": 1983,
+    "creator": "Brad Buckner, Eugenie Ross-Leming",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Murder, She Wrote",
+    "year": 1984,
+    "creator": "Peter S. Fischer, Richard Levinson, William Link",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Miami Vice",
+    "year": 1984,
+    "creator": "Anthony Yerkovich",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Hunter",
+    "year": 1984,
+    "creator": "Frank Lupo",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Moonlighting",
+    "year": 1985,
+    "creator": "Glenn Gordon Caron",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "MacGyver",
+    "year": 1985,
+    "creator": "Lee David Zlotoff",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Dempsey and Makepeace",
+    "year": 1985,
+    "creator": "Ranald Graham",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Neighbours",
+    "year": 1985,
+    "creator": "Reg Watson",
+    "imdb_rating": 5.2
+  },
+  {
+    "title": "Xuxa",
+    "year": 1986,
+    "creator": "Xuxa Meneghel",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The D-Generation",
+    "year": 1986,
+    "creator": "Rob Sitch, Tom Gleisner, Jane Kennedy, Santo Cilauro",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Oprah Winfrey Show",
+    "year": 1986,
+    "creator": "Oprah Winfrey",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "A Praça É Nossa",
+    "year": 1987,
+    "creator": "Carlos Massa",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "21 Jump Street",
+    "year": 1987,
+    "creator": "Stephen J. Cannell, Patrick Hasburgh",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Wiseguy",
+    "year": 1987,
+    "creator": "Stephen J. Cannell, Frank Lupo",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Home and Away",
+    "year": 1988,
+    "creator": "Alan Bateman",
+    "imdb_rating": 5.2
+  },
+  {
+    "title": "The Comedy Company",
+    "year": 1988,
+    "creator": "Ian McFadyen",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Domingão do Faustão",
+    "year": 1989,
+    "creator": "Fausto Silva",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Fast Forward",
+    "year": 1989,
+    "creator": "Steve Vizard",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Simpsons",
+    "year": 1989,
+    "creator": "Matt Groening",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Eliana",
+    "year": 1991,
+    "creator": "Eliana Michaelichen",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Maury",
+    "year": 1991,
+    "creator": "Maury Povich",
+    "imdb_rating": 4.4
+  },
+  {
+    "title": "The Jerry Springer Show",
+    "year": 1991,
+    "creator": "Jerry Springer",
+    "imdb_rating": 4.2
+  },
+  {
+    "title": "Rugrats",
+    "year": 1991,
+    "creator": "Arlene Klasky, Gábor Csupó, Paul Germain",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Doug",
+    "year": 1991,
+    "creator": "Jim Jinkins",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Ren & Stimpy",
+    "year": 1991,
+    "creator": "John Kricfalusi",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Casseta & Planeta",
+    "year": 1992,
+    "creator": "Casseta & Planeta",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Phoenix",
+    "year": 1992,
+    "creator": "Alison Nisselle, Tony McDonald",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Tonight Show with Jay Leno",
+    "year": 1992,
+    "creator": "NBC",
+    "imdb_rating": 5.8
+  },
+  {
+    "title": "Full Frontal",
+    "year": 1993,
+    "creator": "Eric Bana, Rob Sitch",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Late Show with David Letterman",
+    "year": 1993,
+    "creator": "David Letterman",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Adventures of Pete & Pete",
+    "year": 1993,
+    "creator": "Will McRobb, Chris Viscardi",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Rocko's Modern Life",
+    "year": 1993,
+    "creator": "Joe Murray",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Blue Heelers",
+    "year": 1994,
+    "creator": "Hal McElroy, Tony Morphett",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Janus",
+    "year": 1994,
+    "creator": "Bevan Lee",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Halifax f.p.",
+    "year": 1994,
+    "creator": "Roger Simpson",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Frontline",
+    "year": 1994,
+    "creator": "Rob Sitch, Tom Gleisner, Jane Kennedy, Santo Cilauro",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Footy Show",
+    "year": 1994,
+    "creator": "Eddie McGuire",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Friends",
+    "year": 1994,
+    "creator": "David Crane, Marta Kauffman",
+    "imdb_rating": 8.9
+  },
+  {
+    "title": "All That",
+    "year": 1994,
+    "creator": "Brian Robbins, Mike Tollin",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Friends",
+    "year": 1994,
+    "creator": "David Crane, Marta Kauffman",
+    "imdb_rating": 8.9
+  },
+  {
+    "title": "Malhação",
+    "year": 1995,
+    "creator": "Emanuel Jacobina",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Water Rats",
+    "year": 1996,
+    "creator": "Hal McElroy",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Good News Week",
+    "year": 1996,
+    "creator": "Paul McDermott",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Everybody Loves Raymond",
+    "year": 1996,
+    "creator": "Philip Rosenthal",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Daily Show",
+    "year": 1996,
+    "creator": "Lizz Winstead, Madeleine Smithberg",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Judge Judy",
+    "year": 1996,
+    "creator": "Judy Sheindlin",
+    "imdb_rating": 5.6
+  },
+  {
+    "title": "Dexter's Laboratory",
+    "year": 1996,
+    "creator": "Genndy Tartakovsky",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Kenan & Kel",
+    "year": 1996,
+    "creator": "Kim Bass",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Hey Arnold!",
+    "year": 1996,
+    "creator": "Craig Bartlett",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Buffy the Vampire Slayer",
+    "year": 1997,
+    "creator": "Joss Whedon",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The View",
+    "year": 1997,
+    "creator": "Barbara Walters",
+    "imdb_rating": 4.0
+  },
+  {
+    "title": "South Park",
+    "year": 1997,
+    "creator": "Trey Parker, Matt Stone",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "King of the Hill",
+    "year": 1997,
+    "creator": "Mike Judge, Greg Daniels",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Johnny Bravo",
+    "year": 1997,
+    "creator": "Van Partible",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Cow and Chicken",
+    "year": 1997,
+    "creator": "David Feiss",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "I Am Weasel",
+    "year": 1997,
+    "creator": "David Feiss",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Programa do Ratinho",
+    "year": 1998,
+    "creator": "Carlos Massa",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "SeaChange",
+    "year": 1998,
+    "creator": "Andrew Knight, Deb Cox",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Games",
+    "year": 1998,
+    "creator": "John Clarke, Ross Stevenson",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Panel",
+    "year": 1998,
+    "creator": "Working Dog Productions",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Sex and the City",
+    "year": 1998,
+    "creator": "Darren Star",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Powerpuff Girls",
+    "year": 1998,
+    "creator": "Craig McCracken",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "CatDog",
+    "year": 1998,
+    "creator": "Peter Hannan",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "The Wild Thornberrys",
+    "year": 1998,
+    "creator": "Arlene Klasky, Gábor Csupó",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Sandy & Junior",
+    "year": 1999,
+    "creator": "Xuxa Meneghel",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Zorra Total",
+    "year": 1999,
+    "creator": "Jorge Fernando",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Mais Você",
+    "year": 1999,
+    "creator": "Ana Maria Braga",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "The Sopranos",
+    "year": 1999,
+    "creator": "David Chase",
+    "imdb_rating": 9.2
+  },
+  {
+    "title": "Law & Order: Special Victims Unit",
+    "year": 1999,
+    "creator": "Dick Wolf",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Angel",
+    "year": 1999,
+    "creator": "Joss Whedon, David Greenwalt",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Family Guy",
+    "year": 1999,
+    "creator": "Seth MacFarlane",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Futurama",
+    "year": 1999,
+    "creator": "Matt Groening",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "SpongeBob SquarePants",
+    "year": 1999,
+    "creator": "Stephen Hillenburg",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Ed, Edd n Eddy",
+    "year": 1999,
+    "creator": "Danny Antonucci",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Courage the Cowardly Dog",
+    "year": 1999,
+    "creator": "John R. Dilworth",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Batman Beyond",
+    "year": 1999,
+    "creator": "Bruce Timm, Paul Dini",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Amanda Show",
+    "year": 1999,
+    "creator": "Dan Schneider",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Rocket Power",
+    "year": 1999,
+    "creator": "Arlene Klasky, Gábor Csupó",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Caldeirão do Huck",
+    "year": 2000,
+    "creator": "Luciano Huck",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Altas Horas",
+    "year": 2000,
+    "creator": "Serginho Groisman",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "No Limite",
+    "year": 2000,
+    "creator": "Charlie Parsons",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "CSI: Crime Scene Investigation",
+    "year": 2000,
+    "creator": "Anthony E. Zuiker",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Curb Your Enthusiasm",
+    "year": 2000,
+    "creator": "Larry David",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Survivor",
+    "year": 2000,
+    "creator": "Charlie Parsons",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Big Brother",
+    "year": 2000,
+    "creator": "John de Mol",
+    "imdb_rating": 5.4
+  },
+  {
+    "title": "Aqua Teen Hunger Force",
+    "year": 2000,
+    "creator": "Dave Willis, Matt Maiellaro",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Static Shock",
+    "year": 2000,
+    "creator": "Dwayne McDuffie",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Jackie Chan Adventures",
+    "year": 2000,
+    "creator": "John Rogers",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Even Stevens",
+    "year": 2000,
+    "creator": "Matt Dearborn",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "As Told by Ginger",
+    "year": 2000,
+    "creator": "Emily Kapnek",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Os Normais",
+    "year": 2001,
+    "creator": "Jorge Furtado",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "A Grande Família",
+    "year": 2001,
+    "creator": "Oduvaldo Vianna Filho",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Secret Life of Us",
+    "year": 2001,
+    "creator": "John Edwards",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Glass House",
+    "year": 2001,
+    "creator": "Wil Anderson",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "24",
+    "year": 2001,
+    "creator": "Joel Surnow, Robert Cochran",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Scrubs",
+    "year": 2001,
+    "creator": "Bill Lawrence",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Smallville",
+    "year": 2001,
+    "creator": "Alfred Gough, Miles Millar",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Six Feet Under",
+    "year": 2001,
+    "creator": "Alan Ball",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Amazing Race",
+    "year": 2001,
+    "creator": "Bertram van Munster, Elise Doganieri",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Fairly OddParents",
+    "year": 2001,
+    "creator": "Butch Hartman",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Samurai Jack",
+    "year": 2001,
+    "creator": "Genndy Tartakovsky",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Justice League",
+    "year": 2001,
+    "creator": "Bruce Timm",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Zeta Project",
+    "year": 2001,
+    "creator": "Robert Goodman, Alan Burnett",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Proud Family",
+    "year": 2001,
+    "creator": "Bruce W. Smith",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Lizzie McGuire",
+    "year": 2001,
+    "creator": "Terri Minsky",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Band of Brothers",
+    "year": 2001,
+    "creator": "Steven Spielberg, Tom Hanks",
+    "imdb_rating": 9.4
+  },
+  {
+    "title": "City of Men",
+    "year": 2002,
+    "creator": "Kátia Lund, Fernando Meirelles",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Cidade dos Homens",
+    "year": 2002,
+    "creator": "Kátia Lund, Fernando Meirelles",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Big Brother Brasil",
+    "year": 2002,
+    "creator": "John de Mol",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Popstar",
+    "year": 2002,
+    "creator": "Marlene Mattos",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "MDA",
+    "year": 2002,
+    "creator": "Tony McNamara",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Kath & Kim",
+    "year": 2002,
+    "creator": "Gina Riley, Jane Turner",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "CNNNN",
+    "year": 2002,
+    "creator": "The Chaser",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Wire",
+    "year": 2002,
+    "creator": "David Simon",
+    "imdb_rating": 9.3
+  },
+  {
+    "title": "Firefly",
+    "year": 2002,
+    "creator": "Joss Whedon",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "The Shield",
+    "year": 2002,
+    "creator": "Shawn Ryan",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "American Idol",
+    "year": 2002,
+    "creator": "Simon Fuller",
+    "imdb_rating": 4.1
+  },
+  {
+    "title": "Dr. Phil",
+    "year": 2002,
+    "creator": "Phillip McGraw",
+    "imdb_rating": 3.9
+  },
+  {
+    "title": "Kim Possible",
+    "year": 2002,
+    "creator": "Bob Schooley, Mark McCorkle",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Adventures of Jimmy Neutron: Boy Genius",
+    "year": 2002,
+    "creator": "John A. Davis",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "ChalkZone",
+    "year": 2002,
+    "creator": "Bill Burnett, Larry Huber",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "CSI: Miami",
+    "year": 2002,
+    "creator": "Ann Donahue, Carol Mendelsohn, Anthony E. Zuiker",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "Arrested Development",
+    "year": 2003,
+    "creator": "Mitchell Hurwitz",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Two and a Half Men",
+    "year": 2003,
+    "creator": "Chuck Lorre, Lee Aronsohn",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "NCIS",
+    "year": 2003,
+    "creator": "Donald P. Bellisario, Don McGill",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Nip/Tuck",
+    "year": 2003,
+    "creator": "Ryan Murphy",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "America's Next Top Model",
+    "year": 2003,
+    "creator": "Tyra Banks",
+    "imdb_rating": 5.2
+  },
+  {
+    "title": "Jimmy Kimmel Live!",
+    "year": 2003,
+    "creator": "Jimmy Kimmel, Adam Carolla",
+    "imdb_rating": 5.8
+  },
+  {
+    "title": "The Ellen DeGeneres Show",
+    "year": 2003,
+    "creator": "Ellen DeGeneres",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "The Venture Bros.",
+    "year": 2003,
+    "creator": "Jackson Publick",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Teen Titans",
+    "year": 2003,
+    "creator": "Glen Murakami",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Xiaolin Showdown",
+    "year": 2003,
+    "creator": "Christy Hui",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "That's So Raven",
+    "year": 2003,
+    "creator": "Michael Poryes, Susan Sherman",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "My Life as a Teenage Robot",
+    "year": 2003,
+    "creator": "Rob Renzetti",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Senhora do Destino",
+    "year": 2004,
+    "creator": "Aguinaldo Silva",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Da Cor do Pecado",
+    "year": 2004,
+    "creator": "João Emanuel Carneiro",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Lost",
+    "year": 2004,
+    "creator": "J.J. Abrams, Jeffrey Lieber, Damon Lindelof",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "House",
+    "year": 2004,
+    "creator": "David Shore",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Battlestar Galactica",
+    "year": 2004,
+    "creator": "Glen A. Larson, Ronald D. Moore",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Deadwood",
+    "year": 2004,
+    "creator": "David Milch",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Entourage",
+    "year": 2004,
+    "creator": "Doug Ellin",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Desperate Housewives",
+    "year": 2004,
+    "creator": "Marc Cherry",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Apprentice",
+    "year": 2004,
+    "creator": "Mark Burnett",
+    "imdb_rating": 5.7
+  },
+  {
+    "title": "Project Runway",
+    "year": 2004,
+    "creator": "Eli Holzman",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Danny Phantom",
+    "year": 2004,
+    "creator": "Butch Hartman",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Justice League Unlimited",
+    "year": 2004,
+    "creator": "Bruce Timm",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Phil of the Future",
+    "year": 2004,
+    "creator": "Tim Maile, Douglas Tuber",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Drake & Josh",
+    "year": 2004,
+    "creator": "Dan Schneider",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Ned's Declassified School Survival Guide",
+    "year": 2004,
+    "creator": "Scott Fellows",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "CSI: NY",
+    "year": 2004,
+    "creator": "Ann Donahue, Carol Mendelsohn, Anthony E. Zuiker",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Mandrake",
+    "year": 2005,
+    "creator": "Rubem Fonseca",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Carandiru: Outras Histórias",
+    "year": 2005,
+    "creator": "Hector Babenco",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Spicks and Specks",
+    "year": 2005,
+    "creator": "Adam Hills",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Prison Break",
+    "year": 2005,
+    "creator": "Paul Scheuring",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Office",
+    "year": 2005,
+    "creator": "Greg Daniels",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "It's Always Sunny in Philadelphia",
+    "year": 2005,
+    "creator": "Rob McElhenney",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "How I Met Your Mother",
+    "year": 2005,
+    "creator": "Carter Bays, Craig Thomas",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Criminal Minds",
+    "year": 2005,
+    "creator": "Jeff Davis",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Supernatural",
+    "year": 2005,
+    "creator": "Eric Kripke",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Rome",
+    "year": 2005,
+    "creator": "John Milius, William J. MacDonald, Bruno Heller",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Weeds",
+    "year": 2005,
+    "creator": "Jenji Kohan",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Grey's Anatomy",
+    "year": 2005,
+    "creator": "Shonda Rhimes",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Dancing with the Stars",
+    "year": 2005,
+    "creator": "BBC",
+    "imdb_rating": 4.6
+  },
+  {
+    "title": "So You Think You Can Dance",
+    "year": 2005,
+    "creator": "Nigel Lythgoe, Simon Fuller",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Colbert Report",
+    "year": 2005,
+    "creator": "Stephen Colbert, Jon Stewart, Ben Karlin",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Late Late Show with Craig Ferguson",
+    "year": 2005,
+    "creator": "Craig Ferguson",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Tyra Banks Show",
+    "year": 2005,
+    "creator": "Tyra Banks",
+    "imdb_rating": 3.6
+  },
+  {
+    "title": "American Dad!",
+    "year": 2005,
+    "creator": "Seth MacFarlane",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Robot Chicken",
+    "year": 2005,
+    "creator": "Seth Green, Matthew Senreich",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Moral Orel",
+    "year": 2005,
+    "creator": "Dino Stamatopoulos",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Avatar: The Last Airbender",
+    "year": 2005,
+    "creator": "Michael Dante DiMartino, Bryan Konietzko",
+    "imdb_rating": 9.3
+  },
+  {
+    "title": "The Suite Life of Zack & Cody",
+    "year": 2005,
+    "creator": "Danny Kallis, Jim Geoghan",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Zoey 101",
+    "year": 2005,
+    "creator": "Dan Schneider",
+    "imdb_rating": 6.0
+  },
+  {
+    "title": "The X's",
+    "year": 2005,
+    "creator": "Carlos Ramos",
+    "imdb_rating": 5.9
+  },
+  {
+    "title": "Bones",
+    "year": 2005,
+    "creator": "Hart Hanson",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Grey's Anatomy",
+    "year": 2005,
+    "creator": "Shonda Rhimes",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "How I Met Your Mother",
+    "year": 2005,
+    "creator": "Carter Bays, Craig Thomas",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Office",
+    "year": 2005,
+    "creator": "Greg Daniels",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "Thank God You're Here",
+    "year": 2006,
+    "creator": "Working Dog Productions",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Chaser's War on Everything",
+    "year": 2006,
+    "creator": "The Chaser",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Dexter",
+    "year": 2006,
+    "creator": "James Manos Jr.",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Heroes",
+    "year": 2006,
+    "creator": "Tim Kring",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "30 Rock",
+    "year": 2006,
+    "creator": "Tina Fey",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Top Chef",
+    "year": 2006,
+    "creator": "Dan Cutforth, Jane Lipsitz",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Metalocalypse",
+    "year": 2006,
+    "creator": "Brendon Small, Tommy Blacha",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Hannah Montana",
+    "year": 2006,
+    "creator": "Michael Poryes, Rich Correll, Barry O'Brien",
+    "imdb_rating": 5.2
+  },
+  {
+    "title": "Paraíso Tropical",
+    "year": 2007,
+    "creator": "Gilberto Braga",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Mad Men",
+    "year": 2007,
+    "creator": "Matthew Weiner",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "The Big Bang Theory",
+    "year": 2007,
+    "creator": "Chuck Lorre, Bill Prady",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Wizards of Waverly Place",
+    "year": 2007,
+    "creator": "Todd J. Greenwald",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "iCarly",
+    "year": 2007,
+    "creator": "Dan Schneider",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Back at the Barnyard",
+    "year": 2007,
+    "creator": "Steve Oedekerk",
+    "imdb_rating": 4.5
+  },
+  {
+    "title": "El Tigre: The Adventures of Manny Rivera",
+    "year": 2007,
+    "creator": "Jorge R. Gutierrez, Sandra Equihua",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "The Big Bang Theory",
+    "year": 2007,
+    "creator": "Chuck Lorre, Bill Prady",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Profissão Repórter",
+    "year": 2008,
+    "creator": "Caco Barcellos",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Mighty B!",
+    "year": 2008,
+    "creator": "Amy Poehler, Cynthia True, Erik Wiese",
+    "imdb_rating": 5.8
+  },
+  {
+    "title": "The Penguins of Madagascar",
+    "year": 2008,
+    "creator": "Tom McGrath, Eric Darnell",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Breaking Bad",
+    "year": 2008,
+    "creator": "Vince Gilligan",
+    "imdb_rating": 9.5
+  },
+  {
+    "title": "John Adams",
+    "year": 2008,
+    "creator": "Kirk Ellis",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Generation Kill",
+    "year": 2008,
+    "creator": "Evan Wright, David Simon",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Mentalist",
+    "year": 2008,
+    "creator": "Bruno Heller",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Star Wars: The Clone Wars",
+    "year": 2008,
+    "creator": "George Lucas",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Caminho das Índias",
+    "year": 2009,
+    "creator": "Gloria Perez",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Viver a Vida",
+    "year": 2009,
+    "creator": "Manoel Carlos",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "A Fazenda",
+    "year": 2009,
+    "creator": "Strix Television",
+    "imdb_rating": 5.9
+  },
+  {
+    "title": "Fanboy & Chum Chum",
+    "year": 2009,
+    "creator": "Eric Robles",
+    "imdb_rating": 3.6
+  },
+  {
+    "title": "Parks and Recreation",
+    "year": 2009,
+    "creator": "Greg Daniels, Michael Schur",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Community",
+    "year": 2009,
+    "creator": "Dan Harmon",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Archer",
+    "year": 2009,
+    "creator": "Adam Reed",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Lie to Me",
+    "year": 2009,
+    "creator": "Samuel Baum",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Castle",
+    "year": 2009,
+    "creator": "Andrew W. Marlowe",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "NCIS: Los Angeles",
+    "year": 2009,
+    "creator": "Shane Brennan",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Community",
+    "year": 2009,
+    "creator": "Dan Harmon",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Parks and Recreation",
+    "year": 2009,
+    "creator": "Greg Daniels, Michael Schur",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "The Vampire Diaries",
+    "year": 2009,
+    "creator": "Kevin Williamson, Julie Plec",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Passione",
+    "year": 2010,
+    "creator": "Silvio de Abreu",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Conan",
+    "year": 2010,
+    "creator": "Conan O'Brien",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Planet Sheen",
+    "year": 2010,
+    "creator": "John A. Davis, Keith Alcorn",
+    "imdb_rating": 3.1
+  },
+  {
+    "title": "T.U.F.F. Puppy",
+    "year": 2010,
+    "creator": "Butch Hartman",
+    "imdb_rating": 5.8
+  },
+  {
+    "title": "The Walking Dead",
+    "year": 2010,
+    "creator": "Frank Darabont",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Sherlock",
+    "year": 2010,
+    "creator": "Mark Gatiss, Steven Moffat",
+    "imdb_rating": 9.1
+  },
+  {
+    "title": "Adventure Time",
+    "year": 2010,
+    "creator": "Pendleton Ward",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Regular Show",
+    "year": 2010,
+    "creator": "J.G. Quintel",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Pacific",
+    "year": 2010,
+    "creator": "Bruce C. McKenna",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Hawaii Five-0",
+    "year": 2010,
+    "creator": "Peter M. Lenkov",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Blue Bloods",
+    "year": 2010,
+    "creator": "Robin Green, Mitchell Burgess",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Insensato Coração",
+    "year": 2011,
+    "creator": "Gilberto Braga",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Fina Estampa",
+    "year": 2011,
+    "creator": "Aguinaldo Silva",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Aquele Beijo",
+    "year": 2011,
+    "creator": "Miguel Falabella",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "A Vida da Gente",
+    "year": 2011,
+    "creator": "Lícia Manzo",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Esquenta!",
+    "year": 2011,
+    "creator": "Regina Casé",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Kung Fu Panda: Legends of Awesomeness",
+    "year": 2011,
+    "creator": "Peter Hastings",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Game of Thrones",
+    "year": 2011,
+    "creator": "David Benioff, D.B. Weiss",
+    "imdb_rating": 9.2
+  },
+  {
+    "title": "Black Mirror",
+    "year": 2011,
+    "creator": "Charlie Brooker",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Homeland",
+    "year": 2011,
+    "creator": "Howard Gordon, Alex Gansa",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Amazing World of Gumball",
+    "year": 2011,
+    "creator": "Ben Bocquelet",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Person of Interest",
+    "year": 2011,
+    "creator": "Jonathan Nolan",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Criminal Minds: Suspect Behavior",
+    "year": 2011,
+    "creator": "Erica Messer",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Avenida Brasil",
+    "year": 2012,
+    "creator": "João Emanuel Carneiro",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Cheias de Charme",
+    "year": 2012,
+    "creator": "Filipe Miguez, Izabel de Oliveira",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Amor Eterno Amor",
+    "year": 2012,
+    "creator": "Elizabeth Jhin",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Salve Jorge",
+    "year": 2012,
+    "creator": "Gloria Perez",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Lado a Lado",
+    "year": 2012,
+    "creator": "João Ximenes Braga, Claudia Lage",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Voice Brasil",
+    "year": 2012,
+    "creator": "John de Mol",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Encontro com Fátima Bernardes",
+    "year": 2012,
+    "creator": "Fátima Bernardes",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "How to Train Your Dragon",
+    "year": 2012,
+    "creator": "Art Brown",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Veep",
+    "year": 2012,
+    "creator": "Armando Iannucci",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Gravity Falls",
+    "year": 2012,
+    "creator": "Alex Hirsch",
+    "imdb_rating": 8.9
+  },
+  {
+    "title": "Chicago Fire",
+    "year": 2012,
+    "creator": "Michael Brandt, Derek Haas",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Elementary",
+    "year": 2012,
+    "creator": "Robert Doherty",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Arrow",
+    "year": 2012,
+    "creator": "Greg Berlanti, Marc Guggenheim, Andrew Kreisberg",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Chicago Fire",
+    "year": 2012,
+    "creator": "Michael Brandt, Derek Haas",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Amor à Vida",
+    "year": 2013,
+    "creator": "Walcyr Carrasco",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Joia Rara",
+    "year": 2013,
+    "creator": "Duca Rachid, Thelma Guedes",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Saramandaia",
+    "year": 2013,
+    "creator": "Dias Gomes",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Dancing Brasil",
+    "year": 2013,
+    "creator": "BBC",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Monsters vs. Aliens",
+    "year": 2013,
+    "creator": "Scott Kreamer, Tom McGrath",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "House of Cards",
+    "year": 2013,
+    "creator": "Beau Willimon",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Orange Is the New Black",
+    "year": 2013,
+    "creator": "Jenji Kohan",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Peaky Blinders",
+    "year": 2013,
+    "creator": "Steven Knight",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Vikings",
+    "year": 2013,
+    "creator": "Michael Hirst",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "The Americans",
+    "year": 2013,
+    "creator": "Joe Weisberg",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Brooklyn Nine-Nine",
+    "year": 2013,
+    "creator": "Dan Goor, Michael Schur",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Rick and Morty",
+    "year": 2013,
+    "creator": "Dan Harmon, Justin Roiland",
+    "imdb_rating": 9.1
+  },
+  {
+    "title": "Steven Universe",
+    "year": 2013,
+    "creator": "Rebecca Sugar",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Blacklist",
+    "year": 2013,
+    "creator": "Jon Bokenkamp",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Agents of S.H.I.E.L.D.",
+    "year": 2013,
+    "creator": "Joss Whedon, Jed Whedon, Maurissa Tancharoen",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Brooklyn Nine-Nine",
+    "year": 2013,
+    "creator": "Dan Goor, Michael Schur",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Rick and Morty",
+    "year": 2013,
+    "creator": "Dan Harmon, Justin Roiland",
+    "imdb_rating": 9.1
+  },
+  {
+    "title": "The Originals",
+    "year": 2013,
+    "creator": "Julie Plec",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Em Família",
+    "year": 2014,
+    "creator": "Manoel Carlos",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Império",
+    "year": 2014,
+    "creator": "Aguinaldo Silva",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Alto Astral",
+    "year": 2014,
+    "creator": "Daniel Adjafre, Marília Garcia",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "MasterChef Brasil",
+    "year": 2014,
+    "creator": "Franc Roddam",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "BoJack Horseman",
+    "year": 2014,
+    "creator": "Raphael Bob-Waksberg",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "True Detective",
+    "year": 2014,
+    "creator": "Nic Pizzolatto",
+    "imdb_rating": 8.9
+  },
+  {
+    "title": "Fargo",
+    "year": 2014,
+    "creator": "Noah Hawley",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "Outlander",
+    "year": 2014,
+    "creator": "Ronald D. Moore",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Silicon Valley",
+    "year": 2014,
+    "creator": "Mike Judge",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Bojack Horseman",
+    "year": 2014,
+    "creator": "Raphael Bob-Waksberg",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Over the Garden Wall",
+    "year": 2014,
+    "creator": "Patrick McHale",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "The Leftovers",
+    "year": 2014,
+    "creator": "Damon Lindelof, Tom Perrotta",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Fargo",
+    "year": 2014,
+    "creator": "Noah Hawley",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "True Detective",
+    "year": 2014,
+    "creator": "Nic Pizzolatto",
+    "imdb_rating": 8.9
+  },
+  {
+    "title": "Chicago P.D.",
+    "year": 2014,
+    "creator": "Matt Olmstead, Dick Wolf",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Scorpion",
+    "year": 2014,
+    "creator": "Nick Santora",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "NCIS: New Orleans",
+    "year": 2014,
+    "creator": "Gary Glasberg",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Flash",
+    "year": 2014,
+    "creator": "Greg Berlanti, Geoff Johns, Andrew Kreisberg",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Star Wars Rebels",
+    "year": 2014,
+    "creator": "Dave Filoni",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "BoJack Horseman",
+    "year": 2014,
+    "creator": "Raphael Bob-Waksberg",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Chicago P.D.",
+    "year": 2014,
+    "creator": "Matt Olmstead, Dick Wolf",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Babilônia",
+    "year": 2015,
+    "creator": "Gilberto Braga",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Totalmente Demais",
+    "year": 2015,
+    "creator": "Rosane Svartman, Paulo Halm",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "A Regra do Jogo",
+    "year": 2015,
+    "creator": "João Emanuel Carneiro",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Verdades Secretas",
+    "year": 2015,
+    "creator": "Walcyr Carrasco",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Croods",
+    "year": 2015,
+    "creator": "Chris Sanders, Kirk De Micco",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Dragons: Race to the Edge",
+    "year": 2015,
+    "creator": "Art Brown",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "F is for Family",
+    "year": 2015,
+    "creator": "Bill Burr, Michael Price",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Better Call Saul",
+    "year": 2015,
+    "creator": "Vince Gilligan, Peter Gould",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Narcos",
+    "year": 2015,
+    "creator": "Carlo Bernard, Chris Brancato, Doug Miro",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "The Last Kingdom",
+    "year": 2015,
+    "creator": "Stephen Butchard",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Man in the High Castle",
+    "year": 2015,
+    "creator": "Frank Spotnitz",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Mr. Robot",
+    "year": 2015,
+    "creator": "Sam Esmail",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "We Bare Bears",
+    "year": 2015,
+    "creator": "Daniel Chong",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Star vs. the Forces of Evil",
+    "year": 2015,
+    "creator": "Daron Nefcy",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Sense8",
+    "year": 2015,
+    "creator": "Lana Wachowski, Lilly Wachowski, J. Michael Straczynski",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Expanse",
+    "year": 2015,
+    "creator": "Mark Fergus, Hawk Ostby",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Killjoys",
+    "year": 2015,
+    "creator": "Michelle Lovretta",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Magicians",
+    "year": 2015,
+    "creator": "Sera Gamble, John McNamara",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Chicago Med",
+    "year": 2015,
+    "creator": "Dick Wolf, Matt Olmstead",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Blindspot",
+    "year": 2015,
+    "creator": "Martin Gero",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Quantico",
+    "year": 2015,
+    "creator": "Joshua Safran",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "CSI: Cyber",
+    "year": 2015,
+    "creator": "Ann Donahue, Carol Mendelsohn, Anthony E. Zuiker",
+    "imdb_rating": 5.8
+  },
+  {
+    "title": "Supergirl",
+    "year": 2015,
+    "creator": "Ali Adler, Greg Berlanti, Andrew Kreisberg",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Jessica Jones",
+    "year": 2015,
+    "creator": "Melissa Rosenberg",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Agent Carter",
+    "year": 2015,
+    "creator": "Christopher Markus, Stephen McFeely",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Schitt's Creek",
+    "year": 2015,
+    "creator": "Eugene Levy, Dan Levy",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "F is for Family",
+    "year": 2015,
+    "creator": "Bill Burr, Michael Price",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Chicago Med",
+    "year": 2015,
+    "creator": "Dick Wolf, Matt Olmstead",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Skam",
+    "year": 2015,
+    "creator": "Julie Andem",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "3%",
+    "year": 2016,
+    "creator": "Pedro Aguilera",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Liberdade, Liberdade",
+    "year": 2016,
+    "creator": "João Emanuel Carneiro",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Velho Chico",
+    "year": 2016,
+    "creator": "Luiz Fernando Carvalho",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "A Terra Prometida",
+    "year": 2016,
+    "creator": "Walcyr Carrasco",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Haja Coração",
+    "year": 2016,
+    "creator": "Daniel Ortiz",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "A Lei do Amor",
+    "year": 2016,
+    "creator": "Maria Adelaide Amaral",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Rock Story",
+    "year": 2016,
+    "creator": "Suzana Pires",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Trollhunters",
+    "year": 2016,
+    "creator": "Guillermo del Toro",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Voltron: Legendary Defender",
+    "year": 2016,
+    "creator": "Joaquim Dos Santos, Lauren Montgomery",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Westworld",
+    "year": 2016,
+    "creator": "Jonathan Nolan, Lisa Joy",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Stranger Things",
+    "year": 2016,
+    "creator": "The Duffer Brothers",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Crown",
+    "year": 2016,
+    "creator": "Peter Morgan",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Atlanta",
+    "year": 2016,
+    "creator": "Donald Glover",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Fleabag",
+    "year": 2016,
+    "creator": "Phoebe Waller-Bridge",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Good Place",
+    "year": 2016,
+    "creator": "Michael Schur",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Loud House",
+    "year": 2016,
+    "creator": "Chris Savino",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "This Is Us",
+    "year": 2016,
+    "creator": "Dan Fogelman",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Night Of",
+    "year": 2016,
+    "creator": "Richard Price, Steven Zaillian",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The People v. O.J. Simpson",
+    "year": 2016,
+    "creator": "Scott Alexander, Larry Karaszewski",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The OA",
+    "year": 2016,
+    "creator": "Brit Marling, Zal Batmanglij",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "MacGyver",
+    "year": 2016,
+    "creator": "Peter M. Lenkov",
+    "imdb_rating": 5.2
+  },
+  {
+    "title": "Bull",
+    "year": 2016,
+    "creator": "Paul Attanasio, Phil McGraw",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Criminal Minds: Beyond Borders",
+    "year": 2016,
+    "creator": "Erica Messer",
+    "imdb_rating": 6.0
+  },
+  {
+    "title": "DC's Legends of Tomorrow",
+    "year": 2016,
+    "creator": "Greg Berlanti, Marc Guggenheim, Andrew Kreisberg, Phil Klemmer",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Luke Cage",
+    "year": 2016,
+    "creator": "Cheo Hodari Coker",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Stranger Things",
+    "year": 2016,
+    "creator": "The Duffer Brothers",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Crown",
+    "year": 2016,
+    "creator": "Peter Morgan",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Atlanta",
+    "year": 2016,
+    "creator": "Donald Glover",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Fleabag",
+    "year": 2016,
+    "creator": "Phoebe Waller-Bridge",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Good Place",
+    "year": 2016,
+    "creator": "Michael Schur",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Crown",
+    "year": 2016,
+    "creator": "Peter Morgan",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Lucifer",
+    "year": 2016,
+    "creator": "Tom Kapinos",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "This Is Us",
+    "year": 2016,
+    "creator": "Dan Fogelman",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Voltron: Legendary Defender",
+    "year": 2016,
+    "creator": "Joaquim Dos Santos, Lauren Montgomery",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Trollhunters: Tales of Arcadia",
+    "year": 2016,
+    "creator": "Guillermo del Toro",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "A Força do Querer",
+    "year": 2017,
+    "creator": "Gloria Perez",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Novo Mundo",
+    "year": 2017,
+    "creator": "Teresa Lampreia",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Pega Pega",
+    "year": 2017,
+    "creator": "Claudia Souto",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "O Outro Lado do Paraíso",
+    "year": 2017,
+    "creator": "Walcyr Carrasco",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Conversa com Bial",
+    "year": 2017,
+    "creator": "Pedro Bial",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Big Mouth",
+    "year": 2017,
+    "creator": "Andrew Goldberg, Nick Kroll, Mark Levin, Jennifer Flackett",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Dark",
+    "year": 2017,
+    "creator": "Baran bo Odar, Jantje Friese",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Mindhunter",
+    "year": 2017,
+    "creator": "Joe Penhall",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "The Handmaid's Tale",
+    "year": 2017,
+    "creator": "Bruce Miller",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Legion",
+    "year": 2017,
+    "creator": "Noah Hawley",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "OK K.O.! Let's Be Heroes",
+    "year": 2017,
+    "creator": "Ian Jones-Quartey",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Marvelous Mrs. Maisel",
+    "year": 2017,
+    "creator": "Amy Sherman-Palladino",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "13 Reasons Why",
+    "year": 2017,
+    "creator": "Brian Yorkey",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Money Heist",
+    "year": 2017,
+    "creator": "Álex Pina",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Good Fight",
+    "year": 2017,
+    "creator": "Robert King, Michelle King, Phil Alden Robinson",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Big Little Lies",
+    "year": 2017,
+    "creator": "David E. Kelley",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Godless",
+    "year": 2017,
+    "creator": "Scott Frank",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Counterpart",
+    "year": 2017,
+    "creator": "Justin Marks",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "American Gods",
+    "year": 2017,
+    "creator": "Bryan Fuller, Michael Green",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The End of the F***ing World",
+    "year": 2017,
+    "creator": "Charlie Covell",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Good Doctor",
+    "year": 2017,
+    "creator": "David Shore",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "S.W.A.T.",
+    "year": 2017,
+    "creator": "Aaron Rahsaan Thomas, Shawn Ryan",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "SEAL Team",
+    "year": 2017,
+    "creator": "Benjamin Cavell",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Gifted",
+    "year": 2017,
+    "creator": "Matt Nix",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Legion",
+    "year": 2017,
+    "creator": "Noah Hawley",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Iron Fist",
+    "year": 2017,
+    "creator": "Scott Buck",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "The Defenders",
+    "year": 2017,
+    "creator": "Douglas Petrie, Marco Ramirez",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Punisher",
+    "year": 2017,
+    "creator": "Steve Lightfoot",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Inhumans",
+    "year": 2017,
+    "creator": "Scott Buck",
+    "imdb_rating": 5.0
+  },
+  {
+    "title": "Runaways",
+    "year": 2017,
+    "creator": "Josh Schwartz, Stephanie Savage",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Orville",
+    "year": 2017,
+    "creator": "Seth MacFarlane",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Star Trek: Discovery",
+    "year": 2017,
+    "creator": "Bryan Fuller, Alex Kurtzman",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Ozark",
+    "year": 2017,
+    "creator": "Bill Dubuque, Mark Williams",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Money Heist",
+    "year": 2017,
+    "creator": "Álex Pina",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Dark",
+    "year": 2017,
+    "creator": "Baran bo Odar, Jantje Friese",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "The Handmaid's Tale",
+    "year": 2017,
+    "creator": "Bruce Miller",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Marvelous Mrs. Maisel",
+    "year": 2017,
+    "creator": "Amy Sherman-Palladino",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Good Fight",
+    "year": 2017,
+    "creator": "Robert King, Michelle King, Phil Alden Robinson",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Big Mouth",
+    "year": 2017,
+    "creator": "Andrew Goldberg, Nick Kroll, Mark Levin, Jennifer Flackett",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The End of the F***ing World",
+    "year": 2017,
+    "creator": "Charlie Covell",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Anne with an E",
+    "year": 2017,
+    "creator": "Moira Walley-Beckett",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "The Good Doctor",
+    "year": 2017,
+    "creator": "David Shore",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Young Sheldon",
+    "year": 2017,
+    "creator": "Chuck Lorre, Steven Molaro",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "13 Reasons Why",
+    "year": 2017,
+    "creator": "Brian Yorkey",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Riverdale",
+    "year": 2017,
+    "creator": "Roberto Aguirre-Sacasa",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Castlevania",
+    "year": 2017,
+    "creator": "Warren Ellis",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Mechanism",
+    "year": 2018,
+    "creator": "José Padilha",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Deus Salve o Rei",
+    "year": 2018,
+    "creator": "Daniel Adjafre",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "O Tempo Não Para",
+    "year": 2018,
+    "creator": "Mário Teixeira",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Segundo Sol",
+    "year": 2018,
+    "creator": "João Emanuel Carneiro",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Orgulho e Paixão",
+    "year": 2018,
+    "creator": "Marcos Bernstein",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "O Sétimo Guardião",
+    "year": 2018,
+    "creator": "Aguinaldo Silva",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "3Below: Tales of Arcadia",
+    "year": 2018,
+    "creator": "Guillermo del Toro",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "She-Ra and the Princesses of Power",
+    "year": 2018,
+    "creator": "Noelle Stevenson",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Disenchantment",
+    "year": 2018,
+    "creator": "Matt Groening",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Paradise PD",
+    "year": 2018,
+    "creator": "Waco O'Guin, Roger Black",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Haunting of Hill House",
+    "year": 2018,
+    "creator": "Mike Flanagan",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Barry",
+    "year": 2018,
+    "creator": "Alec Berg, Bill Hader",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Craig of the Creek",
+    "year": 2018,
+    "creator": "Matt Burnett, Ben Levin",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Succession",
+    "year": 2018,
+    "creator": "Jesse Armstrong",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Elite",
+    "year": 2018,
+    "creator": "Carlos Montero, Darío Madrona",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Sharp Objects",
+    "year": 2018,
+    "creator": "Marti Noxon",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Assassination of Gianni Versace",
+    "year": 2018,
+    "creator": "Tom Rob Smith",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Maniac",
+    "year": 2018,
+    "creator": "Patrick Somerville",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Altered Carbon",
+    "year": 2018,
+    "creator": "Laeta Kalogridis",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Lost in Space",
+    "year": 2018,
+    "creator": "Matt Sazama, Burk Sharpless",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "New Amsterdam",
+    "year": 2018,
+    "creator": "David Schulner",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Resident",
+    "year": 2018,
+    "creator": "Amy Holden Jones, Hayley Schore, Roshan Sethi",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "FBI",
+    "year": 2018,
+    "creator": "Dick Wolf, Craig Turk",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "911",
+    "year": 2018,
+    "creator": "Ryan Murphy, Brad Falchuk",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Rookie",
+    "year": 2018,
+    "creator": "Alexi Hawley",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Magnum P.I.",
+    "year": 2018,
+    "creator": "Peter M. Lenkov, Eric Guggenheim",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Black Lightning",
+    "year": 2018,
+    "creator": "Salim Akil",
+    "imdb_rating": 5.8
+  },
+  {
+    "title": "Cloak & Dagger",
+    "year": 2018,
+    "creator": "Joe Pokaski",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Star Wars Resistance",
+    "year": 2018,
+    "creator": "Dave Filoni",
+    "imdb_rating": 5.1
+  },
+  {
+    "title": "Succession",
+    "year": 2018,
+    "creator": "Jesse Armstrong",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Barry",
+    "year": 2018,
+    "creator": "Alec Berg, Bill Hader",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Killing Eve",
+    "year": 2018,
+    "creator": "Phoebe Waller-Bridge",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Disenchantment",
+    "year": 2018,
+    "creator": "Matt Groening",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Haunting of Hill House",
+    "year": 2018,
+    "creator": "Mike Flanagan",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Elite",
+    "year": 2018,
+    "creator": "Carlos Montero, Darío Madrona",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "You",
+    "year": 2018,
+    "creator": "Greg Berlanti, Sera Gamble",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "911",
+    "year": 2018,
+    "creator": "Ryan Murphy, Brad Falchuk",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "The Rookie",
+    "year": 2018,
+    "creator": "Alexi Hawley",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "New Amsterdam",
+    "year": 2018,
+    "creator": "David Schulner",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Resident",
+    "year": 2018,
+    "creator": "Amy Holden Jones, Hayley Schore, Roshan Sethi",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Cobra Kai",
+    "year": 2018,
+    "creator": "Josh Heald, Jon Hurwitz, Hayden Schlossberg",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "The Karate Kid",
+    "year": 2018,
+    "creator": "Josh Heald, Jon Hurwitz, Hayden Schlossberg",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Elite",
+    "year": 2018,
+    "creator": "Carlos Montero, Darío Madrona",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Chilling Adventures of Sabrina",
+    "year": 2018,
+    "creator": "Roberto Aguirre-Sacasa",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Legacies",
+    "year": 2018,
+    "creator": "Julie Plec",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "She-Ra and the Princesses of Power",
+    "year": 2018,
+    "creator": "Noelle Stevenson",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "The Dragon Prince",
+    "year": 2018,
+    "creator": "Aaron Ehasz, Justin Richmond",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "3Below: Tales of Arcadia",
+    "year": 2018,
+    "creator": "Guillermo del Toro",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Divine Love",
+    "year": 2019,
+    "creator": "Gabriel Mascaro",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "Coisa Mais Linda",
+    "year": 2019,
+    "creator": "Giuliano Cedroni, Heather Roth",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Girls from Ipanema",
+    "year": 2019,
+    "creator": "Giuliano Cedroni, Heather Roth",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Sintonia",
+    "year": 2019,
+    "creator": "KondZilla",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "A Dona do Pedaço",
+    "year": 2019,
+    "creator": "Walcyr Carrasco",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Verão 90",
+    "year": 2019,
+    "creator": "Izabel de Oliveira",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Éramos Seis",
+    "year": 2019,
+    "creator": "Ângela Chaves",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Bom Sucesso",
+    "year": 2019,
+    "creator": "Rosane Svartman, Paulo Halm",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Amor de Mãe",
+    "year": 2019,
+    "creator": "Manuela Dias",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Witcher",
+    "year": 2019,
+    "creator": "Lauren Schmidt Hissrich",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Boys",
+    "year": 2019,
+    "creator": "Eric Kripke",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Watchmen",
+    "year": 2019,
+    "creator": "Damon Lindelof",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Euphoria",
+    "year": 2019,
+    "creator": "Sam Levinson",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Umbrella Academy",
+    "year": 2019,
+    "creator": "Steve Blackman",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Russian Doll",
+    "year": 2019,
+    "creator": "Natasha Lyonne, Leslye Headland, Amy Poehler",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Chernobyl",
+    "year": 2019,
+    "creator": "Craig Mazin",
+    "imdb_rating": 9.4
+  },
+  {
+    "title": "When They See Us",
+    "year": 2019,
+    "creator": "Ava DuVernay",
+    "imdb_rating": 8.9
+  },
+  {
+    "title": "Unbelievable",
+    "year": 2019,
+    "creator": "Susannah Grant, Ayelet Waldman, Michael Chabon",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "The Umbrella Academy",
+    "year": 2019,
+    "creator": "Steve Blackman",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Witcher",
+    "year": 2019,
+    "creator": "Lauren Schmidt Hissrich",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The Politician",
+    "year": 2019,
+    "creator": "Ryan Murphy, Brad Falchuk, Ian Brennan",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Sex Education",
+    "year": 2019,
+    "creator": "Laurie Nunn",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "After Life",
+    "year": 2019,
+    "creator": "Ricky Gervais",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Batwoman",
+    "year": 2019,
+    "creator": "Caroline Dries",
+    "imdb_rating": 3.4
+  },
+  {
+    "title": "The Mandalorian",
+    "year": 2019,
+    "creator": "Jon Favreau",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Mandalorian",
+    "year": 2019,
+    "creator": "Jon Favreau",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Boys",
+    "year": 2019,
+    "creator": "Eric Kripke",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Umbrella Academy",
+    "year": 2019,
+    "creator": "Steve Blackman",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Witcher",
+    "year": 2019,
+    "creator": "Lauren Schmidt Hissrich",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Euphoria",
+    "year": 2019,
+    "creator": "Sam Levinson",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "What We Do in the Shadows",
+    "year": 2019,
+    "creator": "Jemaine Clement",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "Russian Doll",
+    "year": 2019,
+    "creator": "Natasha Lyonne, Leslye Headland, Amy Poehler",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Primal",
+    "year": 2019,
+    "creator": "Genndy Tartakovsky",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Undone",
+    "year": 2019,
+    "creator": "Raphael Bob-Waksberg, Kate Purdy",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Love, Death & Robots",
+    "year": 2019,
+    "creator": "Tim Miller",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "His Dark Materials",
+    "year": 2019,
+    "creator": "Jack Thorne",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Carnival Row",
+    "year": 2019,
+    "creator": "René Echevarria, Travis Beacham",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Dark Crystal: Age of Resistance",
+    "year": 2019,
+    "creator": "Jeffrey Addiss, Will Matthews",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Umbrella Academy",
+    "year": 2019,
+    "creator": "Steve Blackman",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Kingdom",
+    "year": 2019,
+    "creator": "Kim Eun-hee",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Crash Landing on You",
+    "year": 2019,
+    "creator": "Lee Jeong-hyo",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Sex Education",
+    "year": 2019,
+    "creator": "Laurie Nunn",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "After Life",
+    "year": 2019,
+    "creator": "Ricky Gervais",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Virgin River",
+    "year": 2019,
+    "creator": "Sue Tenney",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "The Politician",
+    "year": 2019,
+    "creator": "Ryan Murphy, Brad Falchuk, Ian Brennan",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Good Morning, Verônica",
+    "year": 2020,
+    "creator": "Tiago Rezende",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Reality Z",
+    "year": 2020,
+    "creator": "Cláudio Torres",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "Fina Estampa",
+    "year": 2020,
+    "creator": "Aguinaldo Silva",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Wizards: Tales of Arcadia",
+    "year": 2020,
+    "creator": "Guillermo del Toro",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Hoops",
+    "year": 2020,
+    "creator": "Ben Hoffman",
+    "imdb_rating": 5.6
+  },
+  {
+    "title": "The Queen's Gambit",
+    "year": 2020,
+    "creator": "Scott Frank, Allan Scott",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Locke & Key",
+    "year": 2020,
+    "creator": "Carlton Cuse, Meredith Averill, Aron Eli Coleite",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Haunting of Bly Manor",
+    "year": 2020,
+    "creator": "Mike Flanagan",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Ratched",
+    "year": 2020,
+    "creator": "Ryan Murphy",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Bridgerton",
+    "year": 2020,
+    "creator": "Chris Van Dusen",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Emily in Paris",
+    "year": 2020,
+    "creator": "Darren Star",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Hollywood",
+    "year": 2020,
+    "creator": "Ryan Murphy, Ian Brennan",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "I Am Not Okay with This",
+    "year": 2020,
+    "creator": "Jonathan Entwistle",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Never Have I Ever",
+    "year": 2020,
+    "creator": "Mindy Kaling, Lang Fisher",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Star Trek: Picard",
+    "year": 2020,
+    "creator": "Akiva Goldsman, Michael Chabon, Kirsten Beyer, Alex Kurtzman",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Queen's Gambit",
+    "year": 2020,
+    "creator": "Scott Frank, Allan Scott",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Ted Lasso",
+    "year": 2020,
+    "creator": "Bill Lawrence, Jason Sudeikis, Joe Kelly, Brendan Hunt",
+    "imdb_rating": 8.8
+  },
+  {
+    "title": "Bridgerton",
+    "year": 2020,
+    "creator": "Chris Van Dusen",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Midnight Gospel",
+    "year": 2020,
+    "creator": "Pendleton Ward, Duncan Trussell",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "The Haunting of Bly Manor",
+    "year": 2020,
+    "creator": "Mike Flanagan",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Raised by Wolves",
+    "year": 2020,
+    "creator": "Aaron Guzikowski",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Lovecraft Country",
+    "year": 2020,
+    "creator": "Misha Green",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Locke & Key",
+    "year": 2020,
+    "creator": "Carlton Cuse, Meredith Averill, Aron Eli Coleite",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Sweet Home",
+    "year": 2020,
+    "creator": "Lee Eung-bok, Jang Young-woo, Park So-hyun",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Hospital Playlist",
+    "year": 2020,
+    "creator": "Lee Woo-jung",
+    "imdb_rating": 9.1
+  },
+  {
+    "title": "Itaewon Class",
+    "year": 2020,
+    "creator": "Kim Seong-yoon",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "The King: Eternal Monarch",
+    "year": 2020,
+    "creator": "Baek Sang-hoon",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "It's Okay to Not Be Okay",
+    "year": 2020,
+    "creator": "Park Shin-woo",
+    "imdb_rating": 8.9
+  },
+  {
+    "title": "Start-Up",
+    "year": 2020,
+    "creator": "Oh Choong-hwan",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "True Beauty",
+    "year": 2020,
+    "creator": "Kim Sang-hyeop",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Sweet Home",
+    "year": 2020,
+    "creator": "Lee Eung-bok, Jang Young-woo, Park So-hyun",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Bridgerton",
+    "year": 2020,
+    "creator": "Chris Van Dusen",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Queen's Gambit",
+    "year": 2020,
+    "creator": "Scott Frank, Allan Scott",
+    "imdb_rating": 8.5
+  },
+  {
+    "title": "Emily in Paris",
+    "year": 2020,
+    "creator": "Darren Star",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Never Have I Ever",
+    "year": 2020,
+    "creator": "Mindy Kaling, Lang Fisher",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "I Am Not Okay with This",
+    "year": 2020,
+    "creator": "Jonathan Entwistle",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Hollywood",
+    "year": 2020,
+    "creator": "Ryan Murphy, Ian Brennan",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Ratched",
+    "year": 2020,
+    "creator": "Ryan Murphy",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Prom",
+    "year": 2020,
+    "creator": "Ryan Murphy",
+    "imdb_rating": 5.9
+  },
+  {
+    "title": "Outer Banks",
+    "year": 2020,
+    "creator": "Josh Pate, Jonas Pate, Shannon Burke",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Blood of Zeus",
+    "year": 2020,
+    "creator": "Charley Parlapanides, Vlas Parlapanides",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Dragon's Dogma",
+    "year": 2020,
+    "creator": "Shin Itagaki",
+    "imdb_rating": 6.3
+  },
+  {
+    "title": "Kipo and the Age of Wonderbeasts",
+    "year": 2020,
+    "creator": "Radford Sechrist",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Wizards: Tales of Arcadia",
+    "year": 2020,
+    "creator": "Guillermo del Toro",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Invisible City",
+    "year": 2021,
+    "creator": "Carlos Saldanha",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Dom",
+    "year": 2021,
+    "creator": "Breno Silveira",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "Nos Tempos do Imperador",
+    "year": 2021,
+    "creator": "Alessandro Marson",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Um Lugar ao Sol",
+    "year": 2021,
+    "creator": "Lícia Manzo",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Q-Force",
+    "year": 2021,
+    "creator": "Gabe Liedman",
+    "imdb_rating": 5.4
+  },
+  {
+    "title": "Inside Job",
+    "year": 2021,
+    "creator": "Shion Takeuchi",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Mare of Easttown",
+    "year": 2021,
+    "creator": "Brad Ingelsby",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Lupin",
+    "year": 2021,
+    "creator": "George Kay, François Uzan",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Ginny & Georgia",
+    "year": 2021,
+    "creator": "Sarah Lampert",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Book of Boba Fett",
+    "year": 2021,
+    "creator": "Jon Favreau",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "The Bad Batch",
+    "year": 2021,
+    "creator": "Dave Filoni",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Squid Game",
+    "year": 2021,
+    "creator": "Hwang Dong-hyuk",
+    "imdb_rating": 8.0
+  },
+  {
+    "title": "Mare of Easttown",
+    "year": 2021,
+    "creator": "Brad Ingelsby",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The White Lotus",
+    "year": 2021,
+    "creator": "Mike White",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "WandaVision",
+    "year": 2021,
+    "creator": "Jac Schaeffer",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "The Falcon and the Winter Soldier",
+    "year": 2021,
+    "creator": "Malcolm Spellman",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Loki",
+    "year": 2021,
+    "creator": "Michael Waldron",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Hawkeye",
+    "year": 2021,
+    "creator": "Jonathan Igla",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Book of Boba Fett",
+    "year": 2021,
+    "creator": "Jon Favreau",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Invincible",
+    "year": 2021,
+    "creator": "Robert Kirkman",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Lupin",
+    "year": 2021,
+    "creator": "George Kay, François Uzan",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Yellowjackets",
+    "year": 2021,
+    "creator": "Ashley Lyle, Bart Nickerson",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Only Murders in the Building",
+    "year": 2021,
+    "creator": "Steve Martin, John Hoffman",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Hacks",
+    "year": 2021,
+    "creator": "Lucia Aniello, Paul W. Downs, Jen Statsky",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Inside Job",
+    "year": 2021,
+    "creator": "Shion Takeuchi",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Midnight Mass",
+    "year": 2021,
+    "creator": "Mike Flanagan",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Wheel of Time",
+    "year": 2021,
+    "creator": "Rafe Judkins",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Foundation",
+    "year": 2021,
+    "creator": "David S. Goyer, Josh Friedman",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Nevers",
+    "year": 2021,
+    "creator": "Joss Whedon",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Hellbound",
+    "year": 2021,
+    "creator": "Yeon Sang-ho",
+    "imdb_rating": 6.6
+  },
+  {
+    "title": "My Name",
+    "year": 2021,
+    "creator": "Kim Jin-min",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "D.P.",
+    "year": 2021,
+    "creator": "Han Jun-hee",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Hometown's Embrace",
+    "year": 2021,
+    "creator": "Lee Man-hee",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Vincenzo",
+    "year": 2021,
+    "creator": "Kim Hee-won",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Ginny & Georgia",
+    "year": 2021,
+    "creator": "Sarah Lampert",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "Halston",
+    "year": 2021,
+    "creator": "Ian Brennan, Ryan Murphy",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Chair",
+    "year": 2021,
+    "creator": "Amanda Peet",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Maid",
+    "year": 2021,
+    "creator": "Molly Smith Metzler",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Young Royals",
+    "year": 2021,
+    "creator": "Lisa Ambjörn, Lars Beckung, Camilla Holter",
+    "imdb_rating": 8.2
+  },
+  {
+    "title": "Fate: The Winx Saga",
+    "year": 2021,
+    "creator": "Brian Young",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "Shadow and Bone",
+    "year": 2021,
+    "creator": "Eric Heisserer",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "The Witcher: Nightmare of the Wolf",
+    "year": 2021,
+    "creator": "Beau DeMayo, Lauren Schmidt Hissrich",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Arcane",
+    "year": 2021,
+    "creator": "Christian Linke, Alex Yee",
+    "imdb_rating": 9.0
+  },
+  {
+    "title": "Yasuke",
+    "year": 2021,
+    "creator": "LeSean Thomas",
+    "imdb_rating": 6.1
+  },
+  {
+    "title": "Trese",
+    "year": 2021,
+    "creator": "Budjette Tan, Kajo Baldisimo",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Maya and the Three",
+    "year": 2021,
+    "creator": "Jorge R. Gutierrez",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Além da Ilusão",
+    "year": 2022,
+    "creator": "Daphne Bozaski",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "Pantanal",
+    "year": 2022,
+    "creator": "Bruno Luperi",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Cara e Coragem",
+    "year": 2022,
+    "creator": "Claudia Souto",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Travessia",
+    "year": 2022,
+    "creator": "Gloria Perez",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Faustão na Band",
+    "year": 2022,
+    "creator": "Fausto Silva",
+    "imdb_rating": 6.4
+  },
+  {
+    "title": "Human Resources",
+    "year": 2022,
+    "creator": "Kelly Galuska, Nick Kroll, Andrew Goldberg, Jennifer Flackett, Mark Levin",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Obi-Wan Kenobi",
+    "year": 2022,
+    "creator": "Joby Harold",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "Andor",
+    "year": 2022,
+    "creator": "Tony Gilroy",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "House of the Dragon",
+    "year": 2022,
+    "creator": "Ryan J. Condal, George R.R. Martin",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "The Bear",
+    "year": 2022,
+    "creator": "Christopher Storer",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "Wednesday",
+    "year": 2022,
+    "creator": "Alfred Gough, Miles Millar",
+    "imdb_rating": 8.1
+  },
+  {
+    "title": "Moon Knight",
+    "year": 2022,
+    "creator": "Jeremy Slater",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "Ms. Marvel",
+    "year": 2022,
+    "creator": "Bisha K. Ali",
+    "imdb_rating": 6.2
+  },
+  {
+    "title": "She-Hulk: Attorney at Law",
+    "year": 2022,
+    "creator": "Jessica Gao",
+    "imdb_rating": 5.2
+  },
+  {
+    "title": "Andor",
+    "year": 2022,
+    "creator": "Tony Gilroy",
+    "imdb_rating": 8.4
+  },
+  {
+    "title": "Obi-Wan Kenobi",
+    "year": 2022,
+    "creator": "Joby Harold",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "The Midnight Club",
+    "year": 2022,
+    "creator": "Mike Flanagan, Leah Fong",
+    "imdb_rating": 6.5
+  },
+  {
+    "title": "Cabinet of Curiosities",
+    "year": 2022,
+    "creator": "Guillermo del Toro",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Archive 81",
+    "year": 2022,
+    "creator": "Rebecca Sonnenshine",
+    "imdb_rating": 7.2
+  },
+  {
+    "title": "1899",
+    "year": 2022,
+    "creator": "Jantje Friese, Baran bo Odar",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Severance",
+    "year": 2022,
+    "creator": "Dan Erickson",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Peripheral",
+    "year": 2022,
+    "creator": "Scott B. Smith",
+    "imdb_rating": 7.6
+  },
+  {
+    "title": "Paper Girls",
+    "year": 2022,
+    "creator": "Stephany Folsom",
+    "imdb_rating": 7.3
+  },
+  {
+    "title": "The Sandman",
+    "year": 2022,
+    "creator": "Neil Gaiman, David S. Goyer, Allan Heinberg",
+    "imdb_rating": 7.7
+  },
+  {
+    "title": "The Rings of Power",
+    "year": 2022,
+    "creator": "Patrick McKay, J.D. Payne",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "She-Hulk: Attorney at Law",
+    "year": 2022,
+    "creator": "Jessica Gao",
+    "imdb_rating": 5.2
+  },
+  {
+    "title": "All of Us Are Dead",
+    "year": 2022,
+    "creator": "Lee JQ, Kim Dae-jin, Hwang Do-seok",
+    "imdb_rating": 7.5
+  },
+  {
+    "title": "The Summer I Turned Pretty",
+    "year": 2022,
+    "creator": "Jenny Han",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Heartstopper",
+    "year": 2022,
+    "creator": "Alice Oseman",
+    "imdb_rating": 8.6
+  },
+  {
+    "title": "The Witcher: Blood Origin",
+    "year": 2022,
+    "creator": "Declan de Barra, Lauren Schmidt Hissrich",
+    "imdb_rating": 5.4
+  },
+  {
+    "title": "Vai na Fé",
+    "year": 2023,
+    "creator": "Rosane Svartman",
+    "imdb_rating": 6.7
+  },
+  {
+    "title": "Terra e Paixão",
+    "year": 2023,
+    "creator": "Walcyr Carrasco",
+    "imdb_rating": 7.4
+  },
+  {
+    "title": "Fuzuê",
+    "year": 2023,
+    "creator": "Gustavo Reiz",
+    "imdb_rating": 6.8
+  },
+  {
+    "title": "The Last of Us",
+    "year": 2023,
+    "creator": "Craig Mazin, Neil Druckmann",
+    "imdb_rating": 8.7
+  },
+  {
+    "title": "The Fall of the House of Usher",
+    "year": 2023,
+    "creator": "Mike Flanagan",
+    "imdb_rating": 7.9
+  },
+  {
+    "title": "Rancho Fundo",
+    "year": 2024,
+    "creator": "Mário Teixeira",
+    "imdb_rating": 7.1
+  },
+  {
+    "title": "No Rancho Fundo",
+    "year": 2024,
+    "creator": "Mário Teixeira",
+    "imdb_rating": 7.0
+  },
+  {
+    "title": "Família é Tudo",
+    "year": 2024,
+    "creator": "Daniel Ortiz",
+    "imdb_rating": 6.9
+  },
+  {
+    "title": "Renascer",
+    "year": 2024,
+    "creator": "Bruno Luperi",
+    "imdb_rating": 8.3
+  },
+  {
+    "title": "Mania de Você",
+    "year": 2024,
+    "creator": "João Emanuel Carneiro",
+    "imdb_rating": 7.8
+  },
+  {
+    "title": "Garota do Momento",
+    "year": 2024,
+    "creator": "Alessandra Poggi",
+    "imdb_rating": 7.5
+  }
+]
