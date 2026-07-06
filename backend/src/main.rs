@@ -145,6 +145,7 @@ async fn main() {
         .route("/api/content/:id/torrent", get(get_torrent_file))
         .route("/api/content/:id/stream", get(get_stream_url))
         .route("/api/content/:id/progress", get(get_progress_handler).post(post_progress_handler))
+        .route("/api/continue-watching", get(get_continue_watching))
         .route("/api/logout", post(logout))
         .route("/api/me", get(get_me))
         .route("/api/admin/users", get(list_users_handler).post(create_user_handler))
@@ -692,6 +693,47 @@ async fn post_progress_handler(
         Ok(()) => StatusCode::NO_CONTENT.into_response(),
         Err(e) => {
             tracing::error!("failed to save progress: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+#[derive(Serialize)]
+struct ContinueWatchingItem {
+    #[serde(flatten)]
+    item: EnrichedItem,
+    episode: i32,
+    progress_fraction: f64,
+}
+
+async fn get_continue_watching(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+) -> impl IntoResponse {
+    match progress::continue_watching(&state.db, user.id).await {
+        Ok(rows) => {
+            let items: Vec<ContinueWatchingItem> = rows
+                .into_iter()
+                .filter_map(|r| {
+                    // Skip rows whose title fell out of the catalog (e.g. a
+                    // regenerated enriched_400.json) rather than erroring.
+                    let item = state.items.iter().find(|i| i.id == r.content_id)?.clone();
+                    let progress_fraction = r
+                        .duration_seconds
+                        .filter(|d| *d > 0.0)
+                        .map(|d| (r.position_seconds / d).clamp(0.0, 1.0))
+                        .unwrap_or(0.0);
+                    Some(ContinueWatchingItem {
+                        item,
+                        episode: r.episode,
+                        progress_fraction,
+                    })
+                })
+                .collect();
+            Json(items).into_response()
+        }
+        Err(e) => {
+            tracing::error!("failed to fetch continue watching: {e}");
             StatusCode::INTERNAL_SERVER_ERROR.into_response()
         }
     }

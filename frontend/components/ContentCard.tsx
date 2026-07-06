@@ -10,7 +10,15 @@ export function PosterPlaceholder({ title }: { title: string }) {
   );
 }
 
-export function ContentCard({ item, fluid = false }: { item: ContentItem; fluid?: boolean }) {
+export function ContentCard({
+  item,
+  fluid = false,
+  progressFraction,
+}: {
+  item: ContentItem;
+  fluid?: boolean;
+  progressFraction?: number;
+}) {
   return (
     <Link
       href={`/title/${item.id}`}
@@ -39,6 +47,14 @@ export function ContentCard({ item, fluid = false }: { item: ContentItem; fluid?
         {item.torrent_file && (
           <div className="absolute bottom-1.5 right-1.5 rounded bg-amber-600/90 px-1.5 py-0.5 text-[10px] font-semibold text-white">
             📥
+          </div>
+        )}
+        {typeof progressFraction === "number" && (
+          <div className="absolute inset-x-0 bottom-0 h-1 bg-black/60">
+            <div
+              className="h-full bg-[#f5c518]"
+              style={{ width: `${Math.round(progressFraction * 100)}%` }}
+            />
           </div>
         )}
       </div>

@@ -24,6 +24,33 @@ pub async fn get_progress(
     .await
 }
 
+#[derive(sqlx::FromRow)]
+pub struct ContinueWatchingRow {
+    pub content_id: String,
+    pub episode: i32,
+    pub position_seconds: f64,
+    pub duration_seconds: Option<f64>,
+}
+
+/// Ordered by recency (most recently watched first) - the query does the
+/// ordering rather than exposing updated_at to callers, since nothing on
+/// the frontend needs the raw timestamp, just an already-sorted list.
+pub async fn continue_watching(
+    pool: &PgPool,
+    user_id: i64,
+) -> Result<Vec<ContinueWatchingRow>, sqlx::Error> {
+    sqlx::query_as(
+        "SELECT content_id, episode, position_seconds, duration_seconds \
+         FROM watch_progress \
+         WHERE user_id = $1 AND finished = false AND position_seconds > 0 \
+         ORDER BY updated_at DESC \
+         LIMIT 20",
+    )
+    .bind(user_id)
+    .fetch_all(pool)
+    .await
+}
+
 /// Upserts one episode's progress. The update is monotonic (GREATEST /
 /// OR-in-finished) rather than a blind overwrite, because three independent
 /// write paths - a ~10s throttle, a pause/ended flush, and a best-effort

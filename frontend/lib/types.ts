@@ -64,6 +64,11 @@ export interface UserSummary {
   is_admin: boolean;
 }
 
+export interface ContinueWatchingItem extends ContentItem {
+  episode: number;
+  progress_fraction: number;
+}
+
 export interface MetaResponse {
   total: number;
   movies: number;

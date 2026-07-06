@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import {
   ContentItem,
   ContentResponse,
+  ContinueWatchingItem,
   MeResponse,
   MetaResponse,
   ProgressEntry,
@@ -99,5 +100,15 @@ export async function getUsersOrNull(): Promise<UserSummary[] | null> {
     cache: "no-store",
   });
   if (!res.ok) return null;
+  return res.json();
+}
+
+// Must reflect the latest save immediately, like getProgress above.
+export async function getContinueWatching(): Promise<ContinueWatchingItem[]> {
+  const res = await fetch(`${API_URL}/api/continue-watching`, {
+    headers: await authHeaders(),
+    cache: "no-store",
+  });
+  if (!res.ok) return [];
   return res.json();
 }

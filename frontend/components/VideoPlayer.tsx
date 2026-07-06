@@ -139,6 +139,51 @@ export function VideoPlayer({
     setSeeked(true);
   }
 
+  function skip(deltaSeconds: number) {
+    const video = videoRef.current;
+    if (!video) return;
+    const duration = video.duration || Infinity;
+    video.currentTime = Math.min(duration, Math.max(0, video.currentTime + deltaSeconds));
+  }
+
+  // Left/Right skip ±10s, Space toggles play/pause - but only when the
+  // video element itself doesn't already have focus. Browsers bind their
+  // own versions of these same shortcuts to a focused <video>, and we can't
+  // reliably suppress that native handling, so deferring to it there avoids
+  // double-seeking; this still covers the common case of the page (not the
+  // video specifically) having focus.
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      const target = e.target as HTMLElement | null;
+      if (target && ["INPUT", "TEXTAREA"].includes(target.tagName)) return;
+      if (document.activeElement === videoRef.current) return;
+
+      if (e.key === "ArrowLeft") {
+        skip(-10);
+        e.preventDefault();
+      } else if (e.key === "ArrowRight") {
+        skip(10);
+        e.preventDefault();
+      } else if (e.key === " ") {
+        const video = videoRef.current;
+        if (!video) return;
+        if (video.paused) video.play();
+        else video.pause();
+        e.preventDefault();
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  function progressFractionFor(originalIndex: number): number {
+    const p = initialProgress.find((entry) => entry.episode === originalIndex + 1);
+    if (!p) return 0;
+    if (p.finished) return 1;
+    if (!p.duration_seconds || p.duration_seconds <= 0) return 0;
+    return Math.min(1, p.position_seconds / p.duration_seconds);
+  }
+
   return (
     <div className="flex flex-col gap-4 lg:flex-row">
       <div className="relative overflow-hidden rounded-lg bg-black lg:min-w-0 lg:flex-1">
@@ -190,6 +235,27 @@ export function VideoPlayer({
             </button>
           </div>
         )}
+
+        {status === "ready" && (
+          <div className="pointer-events-none absolute left-2 top-2 flex gap-1.5">
+            <button
+              type="button"
+              onClick={() => skip(-10)}
+              aria-label="Skip back 10 seconds"
+              className="pointer-events-auto rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-zinc-200 backdrop-blur-sm hover:bg-black/80"
+            >
+              ◀ 10
+            </button>
+            <button
+              type="button"
+              onClick={() => skip(10)}
+              aria-label="Skip forward 10 seconds"
+              className="pointer-events-auto rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-zinc-200 backdrop-blur-sm hover:bg-black/80"
+            >
+              10 ▶
+            </button>
+          </div>
+        )}
       </div>
 
       {hasEpisodes && (
@@ -200,11 +266,12 @@ export function VideoPlayer({
           <div className="overflow-y-auto">
             {episodes.map((ep) => {
               const isActive = selectedIndex === ep.originalIndex;
+              const fraction = progressFractionFor(ep.originalIndex);
               return (
                 <button
                   key={ep.key}
                   onClick={() => setSelectedIndex(ep.originalIndex)}
-                  className={`flex w-full items-center gap-3 border-b border-white/5 px-4 py-2.5 text-left last:border-b-0 ${
+                  className={`relative flex w-full items-center gap-3 border-b border-white/5 px-4 py-2.5 text-left last:border-b-0 ${
                     isActive ? "bg-white/10" : "hover:bg-white/5"
                   }`}
                 >
@@ -222,6 +289,14 @@ export function VideoPlayer({
                   >
                     {ep.title}
                   </span>
+                  {fraction > 0 && (
+                    <div className="absolute inset-x-0 bottom-0 h-0.5 bg-white/10">
+                      <div
+                        className="h-full bg-[#f5c518]"
+                        style={{ width: `${Math.round(fraction * 100)}%` }}
+                      />
+                    </div>
+                  )}
                 </button>
               );
             })}
