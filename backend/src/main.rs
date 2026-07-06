@@ -492,9 +492,15 @@ async fn get_torrent_file(
     }
 }
 
+#[derive(Deserialize)]
+struct StreamQuery {
+    episode: Option<usize>,
+}
+
 async fn get_stream_url(
     State(state): State<Arc<AppState>>,
     Path(id): Path<String>,
+    Query(q): Query<StreamQuery>,
 ) -> impl IntoResponse {
     let Some(s3) = &state.s3 else {
         return (StatusCode::SERVICE_UNAVAILABLE, "video storage not configured").into_response();
@@ -504,8 +510,20 @@ async fn get_stream_url(
         return (StatusCode::NOT_FOUND, "content not found").into_response();
     };
 
-    let Some(key) = &item.s3_key else {
-        return (StatusCode::NOT_FOUND, "no video available for this content").into_response();
+    let key = if !item.s3_keys.is_empty() {
+        let episode = q.episode.unwrap_or(1);
+        match episode.checked_sub(1).and_then(|i| item.s3_keys.get(i)) {
+            Some(key) => key,
+            None => return (StatusCode::NOT_FOUND, "episode not found").into_response(),
+        }
+    } else {
+        match &item.s3_key {
+            Some(key) => key,
+            None => {
+                return (StatusCode::NOT_FOUND, "no video available for this content")
+                    .into_response()
+            }
+        }
     };
 
     let presign_config =

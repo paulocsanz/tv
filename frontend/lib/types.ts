@@ -29,6 +29,7 @@ export interface ContentItem {
   enrichment_status: EnrichmentStatus;
   torrent_file: string | null;
   s3_key: string | null;
+  s3_keys: string[];
 }
 
 export interface Section {

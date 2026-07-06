@@ -420,5 +420,6 @@ pub async fn enrich_one(
         enrichment_status: status,
         torrent_file: None,
         s3_key: None,
+        s3_keys: Vec::new(),
     }
 }

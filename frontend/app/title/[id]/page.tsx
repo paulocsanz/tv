@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getContentById } from "@/lib/api";
 import { ImdbBadge, RottenTomatoesBadge } from "@/components/RatingBadges";
 import { PosterPlaceholder } from "@/components/ContentCard";
+import { VideoPlayer } from "@/components/VideoPlayer";
 
 export async function generateMetadata({
   params,
@@ -117,19 +118,13 @@ export default async function TitlePage({
           </p>
         )}
 
-        {item.s3_key ? (
+        {item.s3_key || item.s3_keys.length > 0 ? (
           <div id="video-player" className="mt-10 scroll-mt-24">
             <h2 className="mb-3 text-lg font-semibold text-white">Watch</h2>
-            <div className="relative w-full bg-black rounded-lg overflow-hidden">
-              <video
-                className="w-full aspect-video"
-                controls
-                crossOrigin="anonymous"
-              >
-                <source src={`/api/stream/${item.id}`} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+            <VideoPlayer
+              id={item.id}
+              s3Keys={item.s3_keys.length > 0 ? item.s3_keys : [item.s3_key!]}
+            />
           </div>
         ) : item.torrent_file ? (
           <p className="mt-4 inline-block rounded-lg bg-amber-600/20 px-3 py-1.5 text-sm text-amber-300">

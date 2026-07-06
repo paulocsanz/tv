@@ -68,6 +68,10 @@ pub struct EnrichedItem {
     pub torrent_file: Option<String>,
     #[serde(default)]
     pub s3_key: Option<String>,
+    /// Per-episode object keys for TV series with more than one file uploaded;
+    /// empty for movies and single-file series, which use `s3_key` instead.
+    #[serde(default)]
+    pub s3_keys: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]

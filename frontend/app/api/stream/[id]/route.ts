@@ -15,8 +15,12 @@ export async function GET(
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  const episode = new URL(request.url).searchParams.get("episode");
+  const backendUrl = new URL(`${API_URL}/api/content/${id}/stream`);
+  if (episode) backendUrl.searchParams.set("episode", episode);
+
   try {
-    const backendRes = await fetch(`${API_URL}/api/content/${id}/stream`, {
+    const backendRes = await fetch(backendUrl, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
