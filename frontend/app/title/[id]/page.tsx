@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getContentById } from "@/lib/api";
+import { getContentById, getProgress } from "@/lib/api";
 import { ImdbBadge, RottenTomatoesBadge } from "@/components/RatingBadges";
 import { PosterPlaceholder } from "@/components/ContentCard";
 import { VideoPlayer } from "@/components/VideoPlayer";
@@ -124,6 +124,7 @@ export default async function TitlePage({
             <VideoPlayer
               id={item.id}
               s3Keys={item.s3_keys.length > 0 ? item.s3_keys : [item.s3_key!]}
+              initialProgress={await getProgress(item.id)}
             />
           </div>
         ) : item.torrent_file ? (

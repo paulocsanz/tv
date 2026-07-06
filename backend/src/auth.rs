@@ -2,104 +2,141 @@ use argon2::password_hash::rand_core::OsRng;
 use argon2::password_hash::{PasswordHash, PasswordHasher, PasswordVerifier, SaltString};
 use argon2::Argon2;
 use rand::Rng;
-use serde::{Deserialize, Serialize};
-use std::collections::HashSet;
-use std::path::Path;
-use std::sync::RwLock;
+use serde::Serialize;
+use sha2::{Digest, Sha256};
+use sqlx::PgPool;
 
-#[derive(Serialize, Deserialize)]
-struct StoredCredentials {
-    username: String,
-    password_hash: String,
+#[derive(Debug, Clone, Serialize)]
+pub struct UserRecord {
+    pub id: i64,
+    pub username: String,
+    pub is_admin: bool,
 }
 
-pub struct AuthState {
+#[derive(sqlx::FromRow)]
+struct UserRow {
+    id: i64,
     username: String,
     password_hash: String,
-    sessions: RwLock<HashSet<String>>,
+    is_admin: bool,
 }
 
-impl AuthState {
-    /// Uses a fixed username/password (e.g. from environment variables).
-    /// Nothing is persisted to disk — the hash lives only in memory.
-    pub fn from_credentials(username: String, password: &str) -> Self {
+impl From<UserRow> for UserRecord {
+    fn from(row: UserRow) -> Self {
         Self {
-            username,
-            password_hash: hash_password(password),
-            sessions: RwLock::new(HashSet::new()),
+            id: row.id,
+            username: row.username,
+            is_admin: row.is_admin,
         }
     }
+}
 
-    /// Loads credentials from `path` if present, otherwise generates a fresh
-    /// admin username/password and logs the plaintext password once — only
-    /// the argon2 hash is ever persisted to disk.
-    pub fn load_or_generate(path: &Path) -> Self {
-        if let Some(stored) = std::fs::read_to_string(path)
-            .ok()
-            .and_then(|raw| serde_json::from_str::<StoredCredentials>(&raw).ok())
-        {
-            tracing::info!(username = %stored.username, "Loaded existing admin credentials");
-            return Self {
-                username: stored.username,
-                password_hash: stored.password_hash,
-                sessions: RwLock::new(HashSet::new()),
-            };
+#[derive(sqlx::FromRow, Serialize)]
+pub struct UserSummary {
+    pub id: i64,
+    pub username: String,
+    pub is_admin: bool,
+}
+
+pub enum CreateUserError {
+    UsernameTaken,
+    Database(sqlx::Error),
+}
+
+/// Seeds the fixed admin account from ADMIN_USERNAME/ADMIN_PASSWORD on first
+/// boot, if no user with that username exists yet - keeps the pre-existing
+/// login working now that users/sessions live in Postgres instead of
+/// in-memory state.
+pub async fn seed_admin(pool: &PgPool, username: &str, password: &str) -> Result<(), sqlx::Error> {
+    let password_hash = hash_password(password);
+    sqlx::query(
+        "INSERT INTO users (username, password_hash, is_admin) VALUES ($1, $2, TRUE) \
+         ON CONFLICT (username) DO NOTHING",
+    )
+    .bind(username)
+    .bind(password_hash)
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+pub async fn verify_login(pool: &PgPool, username: &str, password: &str) -> Option<UserRecord> {
+    let row: UserRow = sqlx::query_as(
+        "SELECT id, username, password_hash, is_admin FROM users WHERE username = $1",
+    )
+    .bind(username)
+    .fetch_optional(pool)
+    .await
+    .ok()??;
+
+    let parsed = PasswordHash::new(&row.password_hash).ok()?;
+    Argon2::default()
+        .verify_password(password.as_bytes(), &parsed)
+        .ok()?;
+    Some(row.into())
+}
+
+pub async fn create_session(pool: &PgPool, user_id: i64) -> Result<String, sqlx::Error> {
+    let token = generate_token();
+    sqlx::query("INSERT INTO sessions (token_hash, user_id) VALUES ($1, $2)")
+        .bind(hash_token(&token))
+        .bind(user_id)
+        .execute(pool)
+        .await?;
+    Ok(token)
+}
+
+pub async fn session_user(pool: &PgPool, token: &str) -> Option<UserRecord> {
+    let row: UserRow = sqlx::query_as(
+        "SELECT u.id, u.username, u.password_hash, u.is_admin \
+         FROM sessions s JOIN users u ON u.id = s.user_id \
+         WHERE s.token_hash = $1",
+    )
+    .bind(hash_token(token))
+    .fetch_optional(pool)
+    .await
+    .ok()??;
+
+    Some(row.into())
+}
+
+pub async fn revoke_session(pool: &PgPool, token: &str) {
+    let _ = sqlx::query("DELETE FROM sessions WHERE token_hash = $1")
+        .bind(hash_token(token))
+        .execute(pool)
+        .await;
+}
+
+pub async fn create_user(
+    pool: &PgPool,
+    username: &str,
+    password: &str,
+    is_admin: bool,
+) -> Result<UserRecord, CreateUserError> {
+    let password_hash = hash_password(password);
+    let result: Result<UserRow, sqlx::Error> = sqlx::query_as(
+        "INSERT INTO users (username, password_hash, is_admin) VALUES ($1, $2, $3) \
+         RETURNING id, username, password_hash, is_admin",
+    )
+    .bind(username)
+    .bind(password_hash)
+    .bind(is_admin)
+    .fetch_one(pool)
+    .await;
+
+    match result {
+        Ok(row) => Ok(row.into()),
+        Err(sqlx::Error::Database(e)) if e.is_unique_violation() => {
+            Err(CreateUserError::UsernameTaken)
         }
-
-        let username = "admin".to_string();
-        let password = generate_password();
-        let password_hash = hash_password(&password);
-
-        if let Some(parent) = path.parent() {
-            std::fs::create_dir_all(parent).expect("failed to create auth data directory");
-        }
-        let stored = StoredCredentials {
-            username: username.clone(),
-            password_hash: password_hash.clone(),
-        };
-        std::fs::write(path, serde_json::to_string_pretty(&stored).unwrap())
-            .expect("failed to persist generated credentials");
-
-        tracing::info!(
-            "\n==================== ADMIN LOGIN CREDENTIALS ====================\n\
-             username: {username}\n\
-             password: {password}\n\
-             Shown once — only the hash is stored on disk from now on.\n\
-             ==================================================================="
-        );
-
-        Self {
-            username,
-            password_hash,
-            sessions: RwLock::new(HashSet::new()),
-        }
+        Err(e) => Err(CreateUserError::Database(e)),
     }
+}
 
-    pub fn verify(&self, username: &str, password: &str) -> bool {
-        if username != self.username {
-            return false;
-        }
-        let Ok(parsed) = PasswordHash::new(&self.password_hash) else {
-            return false;
-        };
-        Argon2::default()
-            .verify_password(password.as_bytes(), &parsed)
-            .is_ok()
-    }
-
-    pub fn create_session(&self) -> String {
-        let token = generate_token();
-        self.sessions.write().unwrap().insert(token.clone());
-        token
-    }
-
-    pub fn is_valid(&self, token: &str) -> bool {
-        self.sessions.read().unwrap().contains(token)
-    }
-
-    pub fn revoke(&self, token: &str) {
-        self.sessions.write().unwrap().remove(token);
-    }
+pub async fn list_users(pool: &PgPool) -> Result<Vec<UserSummary>, sqlx::Error> {
+    sqlx::query_as("SELECT id, username, is_admin FROM users ORDER BY id")
+        .fetch_all(pool)
+        .await
 }
 
 fn hash_password(password: &str) -> String {
@@ -110,12 +147,12 @@ fn hash_password(password: &str) -> String {
         .to_string()
 }
 
-fn generate_password() -> String {
-    const CHARS: &[u8] = b"ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789";
-    let mut rng = rand::thread_rng();
-    (0..20)
-        .map(|_| CHARS[rng.gen_range(0..CHARS.len())] as char)
-        .collect()
+/// Sessions store only this hash, never the raw token - mirrors never
+/// storing raw passwords, so a DB leak alone can't hand out live sessions.
+fn hash_token(token: &str) -> String {
+    let mut hasher = Sha256::new();
+    hasher.update(token.as_bytes());
+    format!("{:x}", hasher.finalize())
 }
 
 fn generate_token() -> String {

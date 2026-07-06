@@ -46,6 +46,24 @@ export interface ContentResponse {
   total_pages: number;
 }
 
+export interface ProgressEntry {
+  episode: number;
+  position_seconds: number;
+  duration_seconds: number | null;
+  finished: boolean;
+}
+
+export interface MeResponse {
+  username: string;
+  is_admin: boolean;
+}
+
+export interface UserSummary {
+  id: number;
+  username: string;
+  is_admin: boolean;
+}
+
 export interface MetaResponse {
   total: number;
   movies: number;

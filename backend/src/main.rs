@@ -1,5 +1,5 @@
 use axum::{
-    extract::{Path, Query, Request, State},
+    extract::{Extension, Path, Query, Request, State},
     http::{header, HeaderMap, Method, StatusCode},
     middleware::{self, Next},
     response::{IntoResponse, Json, Redirect, Response},
@@ -7,13 +7,16 @@ use axum::{
     Router,
 };
 use serde::{Deserialize, Serialize};
+use sqlx::postgres::PgPoolOptions;
+use sqlx::PgPool;
 use std::sync::Arc;
 use std::path::PathBuf;
 use std::time::Duration;
 use tower_http::cors::{Any, CorsLayer};
 use tower_http::trace::TraceLayer;
-use tv_backend::auth::AuthState;
+use tv_backend::auth::{self, UserRecord};
 use tv_backend::models::{ContentType, EnrichedCache, EnrichedItem};
+use tv_backend::progress;
 
 struct S3Config {
     client: aws_sdk_s3::Client,
@@ -22,8 +25,30 @@ struct S3Config {
 
 struct AppState {
     items: Vec<EnrichedItem>,
-    auth: AuthState,
+    db: PgPool,
     s3: Option<S3Config>,
+}
+
+async fn connect_db(database_url: &str) -> PgPool {
+    let mut attempt = 0;
+    loop {
+        attempt += 1;
+        match PgPoolOptions::new()
+            .max_connections(10)
+            .acquire_timeout(Duration::from_secs(10))
+            .connect(database_url)
+            .await
+        {
+            Ok(pool) => return pool,
+            Err(e) if attempt < 10 => {
+                tracing::warn!(
+                    "database connection attempt {attempt} failed: {e} - retrying in 2s"
+                );
+                tokio::time::sleep(Duration::from_secs(2)).await;
+            }
+            Err(e) => panic!("failed to connect to database after {attempt} attempts: {e}"),
+        }
+    }
 }
 
 fn load_s3_config() -> Option<S3Config> {
@@ -70,19 +95,25 @@ async fn main() {
 
     tracing::info!("Loaded {} items from {}", cache.items.len(), data_path);
 
-    let admin_username = std::env::var("ADMIN_USERNAME").ok();
-    let admin_password = std::env::var("ADMIN_PASSWORD").ok();
-    let auth = match (admin_username, admin_password) {
-        (Some(username), Some(password)) => {
-            tracing::info!(username = %username, "Using admin credentials from ADMIN_USERNAME/ADMIN_PASSWORD");
-            AuthState::from_credentials(username, &password)
-        }
-        _ => {
-            let auth_path = std::env::var("AUTH_DATA_PATH")
-                .unwrap_or_else(|_| "data/auth_credentials.json".to_string());
-            AuthState::load_or_generate(std::path::Path::new(&auth_path))
-        }
-    };
+    let database_url = std::env::var("DATABASE_URL").expect(
+        "DATABASE_URL must be set - the account system and watch progress require Postgres",
+    );
+
+    let db = connect_db(&database_url).await;
+    sqlx::migrate!("./migrations")
+        .run(&db)
+        .await
+        .expect("failed to run database migrations");
+
+    if let (Ok(username), Ok(password)) = (
+        std::env::var("ADMIN_USERNAME"),
+        std::env::var("ADMIN_PASSWORD"),
+    ) {
+        auth::seed_admin(&db, &username, &password)
+            .await
+            .expect("failed to seed admin account");
+        tracing::info!(username = %username, "Seeded admin account from ADMIN_USERNAME/ADMIN_PASSWORD (no-op if it already exists)");
+    }
 
     let s3 = load_s3_config();
     if s3.is_none() {
@@ -93,7 +124,7 @@ async fn main() {
 
     let state = Arc::new(AppState {
         items: cache.items,
-        auth,
+        db,
         s3,
     });
 
@@ -113,7 +144,10 @@ async fn main() {
         .route("/api/content/:id", get(get_content_by_id))
         .route("/api/content/:id/torrent", get(get_torrent_file))
         .route("/api/content/:id/stream", get(get_stream_url))
+        .route("/api/content/:id/progress", get(get_progress_handler).post(post_progress_handler))
         .route("/api/logout", post(logout))
+        .route("/api/me", get(get_me))
+        .route("/api/admin/users", get(list_users_handler).post(create_user_handler))
         .route_layer(middleware::from_fn_with_state(state.clone(), require_auth));
 
     let app = Router::new()
@@ -146,21 +180,26 @@ struct LoginResponse {
 }
 
 async fn login(State(state): State<Arc<AppState>>, Json(body): Json<LoginRequest>) -> impl IntoResponse {
-    if state.auth.verify(&body.username, &body.password) {
-        let token = state.auth.create_session();
-        Json(LoginResponse { token }).into_response()
-    } else {
-        (
+    let Some(user) = auth::verify_login(&state.db, &body.username, &body.password).await else {
+        return (
             StatusCode::UNAUTHORIZED,
             Json(serde_json::json!({ "error": "invalid username or password" })),
         )
-            .into_response()
+            .into_response();
+    };
+
+    match auth::create_session(&state.db, user.id).await {
+        Ok(token) => Json(LoginResponse { token }).into_response(),
+        Err(e) => {
+            tracing::error!("failed to create session: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
     }
 }
 
 async fn logout(State(state): State<Arc<AppState>>, headers: HeaderMap) -> impl IntoResponse {
     if let Some(token) = bearer_token(&headers) {
-        state.auth.revoke(token);
+        auth::revoke_session(&state.db, token).await;
     }
     StatusCode::NO_CONTENT
 }
@@ -175,17 +214,20 @@ fn bearer_token(headers: &HeaderMap) -> Option<&str> {
 
 async fn require_auth(
     State(state): State<Arc<AppState>>,
-    req: Request,
+    mut req: Request,
     next: Next,
 ) -> Result<Response, StatusCode> {
-    let authorized = bearer_token(req.headers())
-        .map(|token| state.auth.is_valid(token))
-        .unwrap_or(false);
+    let user = match bearer_token(req.headers()) {
+        Some(token) => auth::session_user(&state.db, token).await,
+        None => None,
+    };
 
-    if authorized {
-        Ok(next.run(req).await)
-    } else {
-        Err(StatusCode::UNAUTHORIZED)
+    match user {
+        Some(user) => {
+            req.extensions_mut().insert(user);
+            Ok(next.run(req).await)
+        }
+        None => Err(StatusCode::UNAUTHORIZED),
     }
 }
 
@@ -548,6 +590,109 @@ async fn get_stream_url(
         Err(e) => {
             tracing::error!("failed to presign stream url: {e}");
             (StatusCode::INTERNAL_SERVER_ERROR, "failed to build stream url").into_response()
+        }
+    }
+}
+
+#[derive(Serialize)]
+struct MeResponse {
+    username: String,
+    is_admin: bool,
+}
+
+async fn get_me(Extension(user): Extension<UserRecord>) -> Json<MeResponse> {
+    Json(MeResponse {
+        username: user.username,
+        is_admin: user.is_admin,
+    })
+}
+
+async fn list_users_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+) -> impl IntoResponse {
+    if !user.is_admin {
+        return StatusCode::FORBIDDEN.into_response();
+    }
+    match auth::list_users(&state.db).await {
+        Ok(users) => Json(users).into_response(),
+        Err(e) => {
+            tracing::error!("failed to list users: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+#[derive(Deserialize)]
+struct CreateUserRequest {
+    username: String,
+    password: String,
+}
+
+async fn create_user_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+    Json(body): Json<CreateUserRequest>,
+) -> impl IntoResponse {
+    if !user.is_admin {
+        return StatusCode::FORBIDDEN.into_response();
+    }
+
+    match auth::create_user(&state.db, &body.username, &body.password, false).await {
+        Ok(created) => (StatusCode::CREATED, Json(created)).into_response(),
+        Err(auth::CreateUserError::UsernameTaken) => (
+            StatusCode::CONFLICT,
+            Json(serde_json::json!({ "error": "username already taken" })),
+        )
+            .into_response(),
+        Err(auth::CreateUserError::Database(e)) => {
+            tracing::error!("failed to create user: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+#[derive(Deserialize)]
+struct ProgressUpdateRequest {
+    episode: i32,
+    position_seconds: f64,
+    duration_seconds: Option<f64>,
+}
+
+async fn get_progress_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+    Path(id): Path<String>,
+) -> impl IntoResponse {
+    match progress::get_progress(&state.db, user.id, &id).await {
+        Ok(rows) => Json(rows).into_response(),
+        Err(e) => {
+            tracing::error!("failed to fetch progress: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+async fn post_progress_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+    Path(id): Path<String>,
+    Json(body): Json<ProgressUpdateRequest>,
+) -> impl IntoResponse {
+    match progress::upsert_progress(
+        &state.db,
+        user.id,
+        &id,
+        body.episode,
+        body.position_seconds,
+        body.duration_seconds,
+    )
+    .await
+    {
+        Ok(()) => StatusCode::NO_CONTENT.into_response(),
+        Err(e) => {
+            tracing::error!("failed to save progress: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
         }
     }
 }

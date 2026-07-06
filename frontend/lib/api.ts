@@ -1,6 +1,14 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { ContentItem, ContentResponse, MetaResponse, Section } from "./types";
+import {
+  ContentItem,
+  ContentResponse,
+  MeResponse,
+  MetaResponse,
+  ProgressEntry,
+  Section,
+  UserSummary,
+} from "./types";
 import { SESSION_COOKIE } from "./session";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8080";
@@ -59,5 +67,37 @@ export async function getContentById(id: string): Promise<ContentItem | null> {
   if (res.status === 404) return null;
   if (res.status === 401) redirect("/api/logout");
   if (!res.ok) throw new Error(`API request failed: /api/content/${id} (${res.status})`);
+  return res.json();
+}
+
+// Unlike apiFetch, never redirects on 401 - safe to call from places that
+// also render while logged out (an admin-gate check, not a page that
+// requires a session to make sense at all).
+export async function getMeOrNull(): Promise<MeResponse | null> {
+  const res = await fetch(`${API_URL}/api/me`, {
+    headers: await authHeaders(),
+    cache: "no-store",
+  });
+  if (!res.ok) return null;
+  return res.json();
+}
+
+// Progress must reflect the latest save immediately on reload, unlike the
+// hour-long cache on catalog data above.
+export async function getProgress(id: string): Promise<ProgressEntry[]> {
+  const res = await fetch(`${API_URL}/api/content/${id}/progress`, {
+    headers: await authHeaders(),
+    cache: "no-store",
+  });
+  if (!res.ok) return [];
+  return res.json();
+}
+
+export async function getUsersOrNull(): Promise<UserSummary[] | null> {
+  const res = await fetch(`${API_URL}/api/admin/users`, {
+    headers: await authHeaders(),
+    cache: "no-store",
+  });
+  if (!res.ok) return null;
   return res.json();
 }
