@@ -83,25 +83,26 @@
         }
       ],
       "current_torrent_index": 0,
+      "force_priority": true,
       "s3_keys": [
-        "videos/breaking-bad-2008-tv/Ep 01 - Live Free or Die - Vivi Libero o Muori.mkv",
-        "videos/breaking-bad-2008-tv/Ep 02 - Madrigal - L'Affare Tedesco.mkv",
-        "videos/breaking-bad-2008-tv/Ep 03 - Hazard Pay - Indennit\u00e0 di Rischio.mkv",
-        "videos/breaking-bad-2008-tv/Ep 04 - Fifty-One - Un Ambiente Migliore.mkv",
-        "videos/breaking-bad-2008-tv/Ep 05 - Dead Freight - Rapina al Treno.mkv",
-        "videos/breaking-bad-2008-tv/Ep 06 - Buyout - Buonuscita.mkv",
-        "videos/breaking-bad-2008-tv/Ep 07 - Say My Name - D\u00ec Il Mio Nome.mkv",
-        "videos/breaking-bad-2008-tv/Ep 08 - Gliding Over All - Volare Alto.mkv",
-        "videos/breaking-bad-2008-tv/Ep 09 - Blood Money - Denaro Insanguinato.mkv",
-        "videos/breaking-bad-2008-tv/Ep 10 - Buried - Questioni di Famiglia.mkv",
-        "videos/breaking-bad-2008-tv/Ep 11 - Confessions - Confessioni.mkv",
-        "videos/breaking-bad-2008-tv/Ep 12 - Rabid Dog - Cane Rabbioso.mkv",
-        "videos/breaking-bad-2008-tv/Ep 13 - To'hajiilee - Riseva Indiana.mkv",
-        "videos/breaking-bad-2008-tv/Ep 14 - Ozymandias - Declino.mkv",
-        "videos/breaking-bad-2008-tv/Ep 15 - Granite State - Tutto Torna.mkv",
-        "videos/breaking-bad-2008-tv/Ep 16 - Felina.mkv"
+        "videos/breaking-bad-2008-tv/Ep 01 - Live Free or Die - Vivi Libero o Muori.mp4",
+        "videos/breaking-bad-2008-tv/Ep 03 - Hazard Pay - Indennità di Rischio.mp4",
+        "videos/breaking-bad-2008-tv/Ep 02 - Madrigal - L'Affare Tedesco.mp4",
+        "videos/breaking-bad-2008-tv/Ep 04 - Fifty-One - Un Ambiente Migliore.mp4",
+        "videos/breaking-bad-2008-tv/Ep 05 - Dead Freight - Rapina al Treno.mp4",
+        "videos/breaking-bad-2008-tv/Ep 08 - Gliding Over All - Volare Alto.mp4",
+        "videos/breaking-bad-2008-tv/Ep 06 - Buyout - Buonuscita.mp4",
+        "videos/breaking-bad-2008-tv/Ep 07 - Say My Name - Dì Il Mio Nome.mp4",
+        "videos/breaking-bad-2008-tv/Ep 09 - Blood Money - Denaro Insanguinato.mp4",
+        "videos/breaking-bad-2008-tv/Ep 10 - Buried - Questioni di Famiglia.mp4",
+        "videos/breaking-bad-2008-tv/Ep 11 - Confessions - Confessioni.mp4",
+        "videos/breaking-bad-2008-tv/Ep 12 - Rabid Dog - Cane Rabbioso.mp4",
+        "videos/breaking-bad-2008-tv/Ep 13 - To'hajiilee - Riseva Indiana.mp4",
+        "videos/breaking-bad-2008-tv/Ep 14 - Ozymandias - Declino.mp4",
+        "videos/breaking-bad-2008-tv/Ep 15 - Granite State - Tutto Torna.mp4",
+        "videos/breaking-bad-2008-tv/Ep 16 - Felina.mp4"
       ],
-      "s3_key": "videos/breaking-bad-2008-tv/Ep 15 - Granite State - Tutto Torna.mkv"
+      "s3_key": "videos/breaking-bad-2008-tv/Ep 01 - Live Free or Die - Vivi Libero o Muori.mp4"
     },
     {
       "actors": [
@@ -155,7 +156,7 @@
       "actors": [
         "Jared Harris",
         "Jessie Buckley",
-        "Stellan Skarsg\u00e5rd"
+        "Stellan Skarsgård"
       ],
       "awards": "Won 10 Primetime Emmys. 87 wins & 60 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/3URK0z9PzpVNJrGE7XOuyy6KFzk.jpg",
@@ -399,7 +400,11 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_keys": [
+        "videos/the-shawshank-redemption-1994-movie/The.Shawshank.Redemption.1994.1080p.x264.YIFY.mp4"
+      ],
+      "s3_key": "videos/the-shawshank-redemption-1994-movie/The.Shawshank.Redemption.1994.1080p.x264.YIFY.mp4"
     },
     {
       "actors": [
@@ -650,7 +655,11 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_keys": [
+        "videos/the-godfather-1972-movie/The.Godfather.1972.1080p.BrRip.x264.BOKUTOX.YIFY.mp4"
+      ],
+      "s3_key": "videos/the-godfather-1972-movie/The.Godfather.1972.1080p.BrRip.x264.BOKUTOX.YIFY.mp4"
     },
     {
       "actors": [
@@ -1011,7 +1020,7 @@
       "imdb_votes": "10,562",
       "metacritic": null,
       "origin": "International",
-      "original_title": "\uc2ac\uae30\ub85c\uc6b4 \uc758\uc0ac\uc0dd\ud65c",
+      "original_title": "슬기로운 의사생활",
       "plot": "Hospital Playlist tells the story of five doctors who have been friends since they entered medical school in 1999.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZmZlMWY5MjktNDljMC00YmE1LTg0M2EtNDdhMjk0NGFiMDhhXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "TV-14",
@@ -1245,7 +1254,11 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_keys": [
+        "videos/the-lord-of-the-rings-the-return-of-the-king-2003-movie/The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264 DUAL EAC3 -TSRG.mp4"
+      ],
+      "s3_key": "videos/the-lord-of-the-rings-the-return-of-the-king-2003-movie/The Lord of the Rings The Return of the King 2003 1080p HBO Max WEB-DL H264 DUAL EAC3 -TSRG.mp4"
     },
     {
       "actors": [
@@ -1328,7 +1341,11 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_keys": [
+        "videos/the-godfather-part-ii-1974-movie/The Godfather Part II 1974 The Coppola Restoration 1080p BluRay x264 AAC - Ozlem.mp4"
+      ],
+      "s3_key": "videos/the-godfather-part-ii-1974-movie/The Godfather Part II 1974 The Coppola Restoration 1080p BluRay x264 AAC - Ozlem.mp4"
     },
     {
       "actors": [
@@ -1564,7 +1581,11 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_keys": [
+        "videos/the-dark-knight-2008-movie/Batman.The.Dark.Knight.2008.1080p.BluRay.x264.YIFY.mp4"
+      ],
+      "s3_key": "videos/the-dark-knight-2008-movie/Batman.The.Dark.Knight.2008.1080p.BluRay.x264.YIFY.mp4"
     },
     {
       "actors": [
@@ -2016,13 +2037,17 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_keys": [
+        "videos/12-angry-men-1957-movie/12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem.mp4"
+      ],
+      "s3_key": "videos/12-angry-men-1957-movie/12 Angry Men 1957 1080p BluRay x264 AAC - Ozlem.mp4"
     },
     {
       "actors": [
         "Derek Jacobi",
         "John Hurt",
-        "Si\u00e2n Phillips"
+        "Siân Phillips"
       ],
       "awards": "Won 1 Primetime Emmy. 7 wins & 5 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/ep6X0ekrWS0go3UXPRXmtN6AfNs.jpg",
@@ -2407,7 +2432,7 @@
     {
       "actors": [
         "Zilka Salaberry",
-        "Andr\u00e9 Valli",
+        "André Valli",
         "Jacyra Sampaio"
       ],
       "awards": "3 nominations",
@@ -2429,14 +2454,14 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": null,
-      "plot": "At a small house, there at the Yellow Woodpecker Ranch, live an intelligent and tender granny, Miss Benta, the cook Aunt Nast\u00e1cia, the two cousins Lucia \"Little Nose\" and Pete. With them, a wise living toy made of maize named Visc...",
+      "plot": "At a small house, there at the Yellow Woodpecker Ranch, live an intelligent and tender granny, Miss Benta, the cook Aunt Nastácia, the two cousins Lucia \"Little Nose\" and Pete. With them, a wise living toy made of maize named Visc...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMDM5NDVjYTQtMWMxZC00Mzc2LTkyZjctMjAxM2U5YTJhNDFhXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "S\u00edtio do Picapau Amarelo",
+      "title": "Sítio do Picapau Amarelo",
       "tmdb_id": 154018,
-      "torrent_file": "S\u00edtio_do_Picapau_Amarelo_x",
+      "torrent_file": "Sítio_do_Picapau_Amarelo_x",
       "trailer_key": null,
       "year": 1977
     },
@@ -2516,7 +2541,7 @@
       "imdb_votes": "43,569",
       "metacritic": null,
       "origin": "International",
-      "original_title": "\uc0ac\uc774\ucf54\uc9c0\ub9cc \uad1c\ucc2e\uc544",
+      "original_title": "사이코지만 괜찮아",
       "plot": "An extraordinary road to emotional healing opens up for an selfish antisocial children's-book writer and a selfless psych-ward caretaker when they cross paths.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNzZmOWMwNjktNzdkOC00MDcxLWE3YTItNzIwOTRjOGFlYWZlXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "TV-MA",
@@ -3004,7 +3029,7 @@
       "awards": null,
       "backdrop_url": null,
       "content_type": "tv",
-      "creator": "Roberto G\u00f3mez Bola\u00f1os",
+      "creator": "Roberto Gómez Bolaños",
       "curated_imdb_rating": 8.8,
       "director": null,
       "enrichment_status": "partial",
@@ -4063,7 +4088,7 @@
     {
       "actors": [
         "Fernanda Torres",
-        "Luiz Fernando Guimar\u00e3es",
+        "Luiz Fernando Guimarães",
         "Selton Mello"
       ],
       "awards": "19 wins & 4 nominations",
@@ -4215,7 +4240,7 @@
     {
       "actors": [
         "Aaron LaPlante",
-        "La\u00ebtitia E\u00efdo",
+        "Laëtitia Eïdo",
         "Fred Tatasciore"
       ],
       "awards": "Won 5 Primetime Emmys. 7 wins & 4 nominations total",
@@ -4528,7 +4553,7 @@
           "contentScore": 800
         },
         {
-          "title": "The.Mandalorian.and.Grogu.2026.1080p.HDTS.h264.Dual.YG\u2b50",
+          "title": "The.Mandalorian.and.Grogu.2026.1080p.HDTS.h264.Dual.YG⭐",
           "magnet": "magnet:?xt=urn:btih:43F72E44DDA3AA2DEBE157E22CC4D20C5646F0C6&dn=The.Mandalorian.and.Grogu.2026.1080p.HDTS.h264.Dual.YG%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
           "seeders": 786,
           "size": "4.2 GB",
@@ -4633,7 +4658,7 @@
       "actors": [
         "Dira Paes",
         "Marcos Palmeira",
-        "Jesu\u00edta Barbosa"
+        "Jesuíta Barbosa"
       ],
       "awards": "5 wins & 11 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/g5LkJJCBXxULsY7s48U5VAeWg2I.jpg",
@@ -4939,7 +4964,7 @@
       "imdb_votes": "57,192",
       "metacritic": null,
       "origin": "International",
-      "original_title": "\uc0ac\ub791\uc758 \ubd88\uc2dc\ucc29",
+      "original_title": "사랑의 불시착",
       "plot": "The absolute top secret love story of a chaebol heiress who made an emergency landing in North Korea because of a paragliding accident and a North Korean special officer who falls in love with her and who is hiding and protecting ...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZjM3ZGQ4ZTMtOTNjMS00NmJlLTljMWUtNWExMzJhMGJlMWNiXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "TV-14",
@@ -5160,13 +5185,13 @@
       "trailer_key": "ViBgNO0FpmE",
       "year": 2016,
       "magnet_link": "magnet:?xt=urn:btih:4FB2ACEC42E10055B1D2A0D8936E3515206AF7CB&dn=This.Is.Us.2016.S03.1080p.WEB-DL.H.265.Dual.YG%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-      "torrent_title": "This.Is.Us.2016.S03.1080p.WEB-DL.H.265.Dual.YG\u2b50",
+      "torrent_title": "This.Is.Us.2016.S03.1080p.WEB-DL.H.265.Dual.YG⭐",
       "torrent_seeders": 38,
       "torrent_size": "18.2 GB",
       "torrent_provider": "ThePirateBay",
       "torrent_options": [
         {
-          "title": "This.Is.Us.2016.S03.1080p.WEB-DL.H.265.Dual.YG\u2b50",
+          "title": "This.Is.Us.2016.S03.1080p.WEB-DL.H.265.Dual.YG⭐",
           "magnet": "magnet:?xt=urn:btih:4FB2ACEC42E10055B1D2A0D8936E3515206AF7CB&dn=This.Is.Us.2016.S03.1080p.WEB-DL.H.265.Dual.YG%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
           "seeders": 38,
           "size": "18.2 GB",
@@ -5174,7 +5199,7 @@
           "contentScore": 200
         },
         {
-          "title": "This.Is.Us.2016.S02.1080p.WEB-DL.H.265.Dual.YG\u2b50",
+          "title": "This.Is.Us.2016.S02.1080p.WEB-DL.H.265.Dual.YG⭐",
           "magnet": "magnet:?xt=urn:btih:8D15DDBEF3FFF7DA0A0C0FA0CBA921A181510DE8&dn=This.Is.Us.2016.S02.1080p.WEB-DL.H.265.Dual.YG%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
           "seeders": 35,
           "size": "17.7 GB",
@@ -5182,7 +5207,7 @@
           "contentScore": 200
         },
         {
-          "title": "This.Is.Us.2016.S04.1080p.WEB-DL.H.265.Dual.YG\u2b50",
+          "title": "This.Is.Us.2016.S04.1080p.WEB-DL.H.265.Dual.YG⭐",
           "magnet": "magnet:?xt=urn:btih:849951CE4BCE07B5A29C3A5930E5FB62B61F58F7&dn=This.Is.Us.2016.S04.1080p.WEB-DL.H.265.Dual.YG%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
           "seeders": 34,
           "size": "19.3 GB",
@@ -5190,7 +5215,7 @@
           "contentScore": 200
         },
         {
-          "title": "This.Is.Us.2016.S01.1080p.WEB-DL.H.265.Dual.YG\u2b50",
+          "title": "This.Is.Us.2016.S01.1080p.WEB-DL.H.265.Dual.YG⭐",
           "magnet": "magnet:?xt=urn:btih:1D4B3684FF2FA1B541E357A8A7D11C613FA4F7AD&dn=This.Is.Us.2016.S01.1080p.WEB-DL.H.265.Dual.YG%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
           "seeders": 32,
           "size": "20.7 GB",
@@ -6665,13 +6690,13 @@
     {
       "actors": [
         "Adriana Esteves",
-        "D\u00e9bora Falabella",
-        "Murilo Ben\u00edcio"
+        "Débora Falabella",
+        "Murilo Benício"
       ],
       "awards": "27 wins & 42 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/5ssgDp28z1Nif6hR8OFrNQUspd4.jpg",
       "content_type": "tv",
-      "creator": "Jo\u00e3o Emanuel Carneiro",
+      "creator": "João Emanuel Carneiro",
       "curated_imdb_rating": 8.6,
       "director": null,
       "enrichment_status": "partial",
@@ -6793,7 +6818,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 8.6,
-      "director": "Fernando Meirelles, K\u00e1tia Lund",
+      "director": "Fernando Meirelles, Kátia Lund",
       "enrichment_status": "ok",
       "genres": [
         "Crime",
@@ -6867,7 +6892,7 @@
     },
     {
       "actors": [
-        "Toshir\u00f4 Mifune",
+        "Toshirô Mifune",
         "Takashi Shimura",
         "Keiko Tsushima"
       ],
@@ -6888,7 +6913,7 @@
       "imdb_votes": "397,770",
       "metacritic": "98/100",
       "origin": "International",
-      "original_title": "\u4e03\u4eba\u306e\u4f8d",
+      "original_title": "七人の侍",
       "plot": "Farmers from a village exploited by bandits hire a veteran samurai for protection, and he gathers six other samurai to join him.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZjliMWExOTMtZDQ3ZS00NWU3LWIyN2EtMjllNzk3ZTNlYzg4XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "Not Rated",
@@ -7036,7 +7061,7 @@
       "actors": [
         "Matheus Nachtergaele",
         "Selton Mello",
-        "Rog\u00e9rio Cardoso"
+        "Rogério Cardoso"
       ],
       "awards": "10 wins & 10 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/alQqTpmEkxSLgajfEYTsTH6nAKB.jpg",
@@ -7057,7 +7082,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": "O Auto da Compadecida",
-      "plot": "The lively Jo\u00e3o Grilo and the sly Chic\u00f3 are poor guys living in the hinterland who cheat a bunch of people to survive, but their plans are halted when a bandit comes to town.",
+      "plot": "The lively João Grilo and the sly Chicó are poor guys living in the hinterland who cheat a bunch of people to survive, but their plans are halted when a bandit comes to town.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BYzE4YzlmNjctNGFmOC00Nzg3LWFlOWQtMDU4YTA0MTJhODY3XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -8080,7 +8105,7 @@
       "imdb_votes": "811,130",
       "metacritic": "58/100",
       "origin": "International",
-      "original_title": "La vita \u00e8 bella",
+      "original_title": "La vita è bella",
       "plot": "When an open-minded Jewish waiter and his son become victims of the Holocaust, he uses a perfect mixture of will, humor and imagination to protect his son from the dangers around their camp.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZTBhOGYzZjQtYzE0Mi00MGIwLWE0MWYtNzMxNTM2OTFkM2NjXkEyXkFqcGc@._V1_QL75_UX380_CR0,2,380,562_.jpg",
       "rated": "PG-13",
@@ -8691,7 +8716,7 @@
       "awards": "3 wins & 3 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/eiLAEO2XSCwyDL7yOzVieMxrvhy.jpg",
       "content_type": "tv",
-      "creator": "K\u00e1tia Lund, Fernando Meirelles",
+      "creator": "Kátia Lund, Fernando Meirelles",
       "curated_imdb_rating": 8.5,
       "director": null,
       "enrichment_status": "partial",
@@ -9076,7 +9101,7 @@
       "imdb_votes": "383,582",
       "metacritic": "94/100",
       "origin": "International",
-      "original_title": "\u706b\u5782\u308b\u306e\u5893",
+      "original_title": "火垂るの墓",
       "plot": "A young boy and his little sister struggle to survive in Japan during World War II.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNTY5MmE2OGMtN2IxNC00MDY4LTkwMGEtZDUzOTYyNWE0ZTNjXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
       "rated": "Not Rated",
@@ -9214,7 +9239,7 @@
     },
     {
       "actors": [
-        "Timoth\u00e9e Chalamet",
+        "Timothée Chalamet",
         "Zendaya",
         "Rebecca Ferguson"
       ],
@@ -9403,7 +9428,7 @@
       "imdb_votes": "1,348,574",
       "metacritic": "64/100",
       "origin": "International",
-      "original_title": "L\u00e9on",
+      "original_title": "Léon",
       "plot": "When her family is murdered by a group of corrupt officers led by the tyrannical Norman Stansfield, a young 12-year-old girl enlists the help of an Italian-American hitman to seek revenge.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNGRkYTNhOWQtYmI0Ni00MjZhLWJmMzAtMTA2Mjg4NGNiNDU0XkEyXkFqcGc@._V1_QL75_UX380_CR0,2,380,562_.jpg",
       "rated": "R",
@@ -9633,14 +9658,14 @@
     },
     {
       "actors": [
-        "Gl\u00f3ria Pires",
+        "Glória Pires",
         "Ricardo Pereira",
         "Joana de Verona"
       ],
       "awards": "3 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/7rZrn5jqgLZ0ZwS9iPdO94K6QUn.jpg",
       "content_type": "tv",
-      "creator": "\u00c2ngela Chaves",
+      "creator": "Ângela Chaves",
       "curated_imdb_rating": 8.5,
       "director": null,
       "enrichment_status": "partial",
@@ -9654,15 +9679,15 @@
       "imdb_votes": "68",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "\u00c9ramos Seis",
+      "original_title": "Éramos Seis",
       "plot": "During the first half of the 20th century, Miss Lola struggles to keep her family members together in the face of financial difficulties. Married to Julio and mother of four, Lola is a strong woman and ahead of her time.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BYWIzNDM5ODUtMGI4Mi00N2IyLTllNmQtYjQ1NTM3YzgxNWZiXkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "50 min",
-      "title": "\u00c9ramos Seis",
+      "title": "Éramos Seis",
       "tmdb_id": 105733,
-      "torrent_file": "\u00c9ramos_Seis_x",
+      "torrent_file": "Éramos_Seis_x",
       "trailer_key": null,
       "year": 2019
     },
@@ -9940,7 +9965,7 @@
       "imdb_votes": "1,148,210",
       "metacritic": "97/100",
       "origin": "International",
-      "original_title": "\uae30\uc0dd\ucda9",
+      "original_title": "기생충",
       "plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "R",
@@ -10177,7 +10202,7 @@
       "awards": "3 wins & 3 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/eiLAEO2XSCwyDL7yOzVieMxrvhy.jpg",
       "content_type": "tv",
-      "creator": "K\u00e1tia Lund, Fernando Meirelles",
+      "creator": "Kátia Lund, Fernando Meirelles",
       "curated_imdb_rating": 8.5,
       "director": null,
       "enrichment_status": "partial",
@@ -11181,7 +11206,7 @@
       "awards": "2 wins & 11 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/fXC10vd7wzBxFAMEItv7xOuEJvm.jpg",
       "content_type": "tv",
-      "creator": "Jo\u00e3o Ximenes Braga, Claudia Lage",
+      "creator": "João Ximenes Braga, Claudia Lage",
       "curated_imdb_rating": 8.4,
       "director": null,
       "enrichment_status": "ok",
@@ -11490,7 +11515,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 8.4,
-      "director": "Milo\u0161 Forman",
+      "director": "Miloš Forman",
       "enrichment_status": "ok",
       "genres": [
         "Biography",
@@ -11647,7 +11672,7 @@
     },
     {
       "actors": [
-        "L\u00facio Mauro Filho",
+        "Lúcio Mauro Filho",
         "Guta Stresser",
         "Marieta Severo"
       ],
@@ -11673,9 +11698,9 @@
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "30 min",
-      "title": "A Grande Fam\u00edlia",
+      "title": "A Grande Família",
       "tmdb_id": 16183,
-      "torrent_file": "A_Grande_Fam\u00edlia_x",
+      "torrent_file": "A_Grande_Família_x",
       "trailer_key": null,
       "year": 2001
     },
@@ -11764,7 +11789,7 @@
     },
     {
       "actors": [
-        "Alexander Skarsg\u00e5rd",
+        "Alexander Skarsgård",
         "James Ransone",
         "Lee Tergesen"
       ],
@@ -13005,7 +13030,7 @@
       "trailer_key": "6c3K7LhA9Yc",
       "year": 2010,
       "magnet_link": "magnet:?xt=urn:btih:822E3419833FAF52831BEBA06F63F7BF297287D9&dn=Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-      "torrent_title": "Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG\u2b50",
+      "torrent_title": "Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG⭐",
       "torrent_seeders": 1108,
       "torrent_size": "9.2 GB",
       "torrent_provider": "ThePirateBay",
@@ -13019,7 +13044,7 @@
           "contentScore": 1000
         },
         {
-          "title": "Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG\u2b50",
+          "title": "Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG⭐",
           "magnet": "magnet:?xt=urn:btih:822E3419833FAF52831BEBA06F63F7BF297287D9&dn=Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
           "seeders": 1108,
           "size": "9.2 GB",
@@ -13395,7 +13420,7 @@
       "awards": "3 wins & 10 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/hmiNiC3rdE0yZlYwiLMBSCRUXnO.jpg",
       "content_type": "tv",
-      "creator": "L\u00edcia Manzo",
+      "creator": "Lícia Manzo",
       "curated_imdb_rating": 8.3,
       "director": null,
       "enrichment_status": "partial",
@@ -13692,7 +13717,7 @@
       "imdb_votes": "100,520",
       "metacritic": "92/100",
       "origin": "International",
-      "original_title": "\u751f\u304d\u308b",
+      "original_title": "生きる",
       "plot": "A bureaucrat tries to find meaning in his life after he discovers he has terminal cancer.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BYWI2MzBhMzItYzQ3OS00N2Q4LTkyZDUtMjM1YTk0NjhkOWRiXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "Not Rated",
@@ -14547,7 +14572,7 @@
     {
       "actors": [
         "Lubna Azabal",
-        "M\u00e9lissa D\u00e9sormeaux-Poulin",
+        "Mélissa Désormeaux-Poulin",
         "Maxim Gaudette"
       ],
       "awards": "Nominated for 1 Oscar. 41 wins & 20 nominations total",
@@ -14654,9 +14679,9 @@
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Profiss\u00e3o Rep\u00f3rter",
+      "title": "Profissão Repórter",
       "tmdb_id": 61153,
-      "torrent_file": "Profiss\u00e3o_Rep\u00f3rter_x",
+      "torrent_file": "Profissão_Repórter_x",
       "trailer_key": null,
       "year": 2008
     },
@@ -14830,14 +14855,14 @@
     },
     {
       "actors": [
-        "Roberto G\u00f3mez Bola\u00f1os",
-        "Carlos Villagr\u00e1n",
-        "Ram\u00f3n Vald\u00e9s"
+        "Roberto Gómez Bolaños",
+        "Carlos Villagrán",
+        "Ramón Valdés"
       ],
       "awards": null,
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/7x55rlAGe3mrzusRter1SyLAYjd.jpg",
       "content_type": "tv",
-      "creator": "Roberto G\u00f3mez Bola\u00f1os",
+      "creator": "Roberto Gómez Bolaños",
       "curated_imdb_rating": 8.3,
       "director": null,
       "enrichment_status": "partial",
@@ -14872,8 +14897,8 @@
     {
       "actors": [
         "Leonardo Villar",
-        "Gl\u00f3ria Menezes",
-        "Dion\u00edsio Azevedo"
+        "Glória Menezes",
+        "Dionísio Azevedo"
       ],
       "awards": "Nominated for 1 Oscar. 4 wins & 1 nomination total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/k13mFZr51lcOxvLrHHCk9Llevcf.jpg",
@@ -14964,7 +14989,7 @@
       "imdb_votes": "276,307",
       "metacritic": "95/100",
       "origin": "International",
-      "original_title": "\u062c\u062f\u0627\u06cc\u06cc \u0646\u0627\u062f\u0631 \u0627\u0632 \u0633\u06cc\u0645\u06cc\u0646",
+      "original_title": "جدایی نادر از سیمین",
       "plot": "A married couple are faced with a difficult decision - to improve the life of their child by moving to another country or to stay in Iran and look after a deteriorating parent who has Alzheimer's disease.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMDM0ZWRmMzctM2M5ZS00ZjU0LWIxN2MtNWNlNGY1ZDhjMDVhXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "PG-13",
@@ -15060,7 +15085,7 @@
       "trailer_key": "CxwTLktovTU",
       "year": 1995,
       "magnet_link": "magnet:?xt=urn:btih:822E3419833FAF52831BEBA06F63F7BF297287D9&dn=Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-      "torrent_title": "Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG\u2b50",
+      "torrent_title": "Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG⭐",
       "torrent_seeders": 1108,
       "torrent_size": "9.2 GB",
       "torrent_provider": "ThePirateBay",
@@ -15074,7 +15099,7 @@
           "contentScore": 1000
         },
         {
-          "title": "Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG\u2b50",
+          "title": "Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG⭐",
           "magnet": "magnet:?xt=urn:btih:822E3419833FAF52831BEBA06F63F7BF297287D9&dn=Toy.Story.5.2026.1080p.Telesync.h264.Dual.YG%E2%AD%90&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
           "seeders": 1108,
           "size": "9.2 GB",
@@ -15215,7 +15240,7 @@
       "imdb_votes": "839,094",
       "metacritic": "70/100",
       "origin": "International",
-      "original_title": "Le Fabuleux Destin d'Am\u00e9lie Poulain",
+      "original_title": "Le Fabuleux Destin d'Amélie Poulain",
       "plot": "Despite being caught in her imaginative world, young waitress Amelie decides to help people find happiness. Her quest to spread joy leads her on a journey during which she finds true love.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOTNmYzY0MWQtZGZmNy00Y2Y4LWFmMDQtMTZjYTdiYzEwZGQ2XkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
       "rated": "R",
@@ -15497,7 +15522,7 @@
       "actors": [
         "Wayne LeGette",
         "Alexandre Nero",
-        "L\u00edlia Cabral"
+        "Lília Cabral"
       ],
       "awards": "17 wins & 16 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/25FyyCt02iTG77q7qeH6ecsPb0v.jpg",
@@ -15517,15 +15542,15 @@
       "imdb_votes": "631",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Imp\u00e9rio",
+      "original_title": "Império",
       "plot": "A man's journey from his humble origins to his life as a millionaire patriarch. his dedicated first daughter, and the unscrupulous efforts of a woman who is obsessed with him.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BODk1MTQyMzA5MF5BMl5BanBnXkFtZTgwNTkwNTQ4OTE@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Imp\u00e9rio",
+      "title": "Império",
       "tmdb_id": 64500,
-      "torrent_file": "Imp\u00e9rio_x",
+      "torrent_file": "Império_x",
       "trailer_key": null,
       "year": 2014
     },
@@ -15551,7 +15576,7 @@
       "imdb_votes": "1,890",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Eles N\u00e3o Usam Black-Tie",
+      "original_title": "Eles Não Usam Black-Tie",
       "plot": "Union leader's son doesn't want to engage in a strike, because his wife is pregnant, thus disregarding his father's tradition of political activism.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOGQ5Mjc5NDYtNzY3MS00Y2IyLWFhNGMtYmZhODA0OTQ4ZDVjXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
@@ -15565,7 +15590,7 @@
     },
     {
       "actors": [
-        "H\u00e9lio de la Pe\u00f1a",
+        "Hélio de la Peña",
         "Beto Silva",
         "Marcelo Madureira"
       ],
@@ -15642,7 +15667,7 @@
       "awards": "2 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/8tv3QAZrR94nfLkhsezPcc3bza5.jpg",
       "content_type": "tv",
-      "creator": "Jos\u00e9 Padilha",
+      "creator": "José Padilha",
       "curated_imdb_rating": 8.2,
       "director": null,
       "enrichment_status": "ok",
@@ -15672,7 +15697,7 @@
     {
       "actors": [
         "Camila Pitanga",
-        "Ant\u00f4nio Fagundes",
+        "Antônio Fagundes",
         "Christiane Torloni"
       ],
       "awards": "7 wins & 7 nominations",
@@ -15694,7 +15719,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": "Velho Chico",
-      "plot": "In a Brazilian countryside region bathed by the S\u00e3o Francisco river, two lovers separated by destiny, their families in conflict and different social classes return to each other, unsure of their feelings.",
+      "plot": "In a Brazilian countryside region bathed by the São Francisco river, two lovers separated by destiny, their families in conflict and different social classes return to each other, unsure of their feelings.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMmQ3YjJlMTQtNjdjZi00ZTNkLWI1ZjEtOTA4ZGNiZTUwMjYzXkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -15708,8 +15733,8 @@
     {
       "actors": [
         "Adriana Esteves",
-        "Humberto Carr\u00e3o",
-        "Regina Cas\u00e9"
+        "Humberto Carrão",
+        "Regina Casé"
       ],
       "awards": "6 wins & 16 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/muD2Q2bRGhSiC7tRJ3F8o7jeoq6.jpg",
@@ -15728,15 +15753,15 @@
       "imdb_votes": "309",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Amor de M\u00e3e",
+      "original_title": "Amor de Mãe",
       "plot": "A mother leaves her small hometown in the countryside for Rio de Janeiro to search for a son that was stolen from her.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOTYwYWUwMzgtM2MzMy00NTE1LWE5ZGQtYzBjNWRiZjMwN2JlXkEyXkFqcGdeQXVyNjI0NDkwNjE@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "60 min",
-      "title": "Amor de M\u00e3e",
+      "title": "Amor de Mãe",
       "tmdb_id": 95885,
-      "torrent_file": "Amor_de_M\u00e3e_x",
+      "torrent_file": "Amor_de_Mãe_x",
       "trailer_key": null,
       "year": 2019,
       "magnet_link": "magnet:?xt=urn:btih:54C6A16E31C5046A3789E60BDF295249AEBF6E6B&dn=Locos%20de%20Amor%202016%201080p%20AMZN%20WEB-DL%20DDP5%201%20H%20264-FLUX&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
@@ -15774,7 +15799,7 @@
     },
     {
       "actors": [
-        "L\u00edlia Cabral",
+        "Lília Cabral",
         "Christiane Torloni",
         "Caio Castro"
       ],
@@ -15812,7 +15837,7 @@
       "actors": [
         "Marcos Palmeira",
         "Marcelo Serrado",
-        "Lu\u00eds Carlos Miele"
+        "Luís Carlos Miele"
       ],
       "awards": "2 wins & 3 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/bBJU94OhUXLwGEWIvASyyCEvgF2.jpg",
@@ -15844,7 +15869,7 @@
     },
     {
       "actors": [
-        "L\u00edlia Cabral",
+        "Lília Cabral",
         "Christiane Torloni",
         "Caio Castro"
       ],
@@ -15880,13 +15905,13 @@
     {
       "actors": [
         "Giovanna Antonelli",
-        "Cau\u00e3 Reymond",
+        "Cauã Reymond",
         "Tony Ramos"
       ],
       "awards": "2 wins & 14 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/9D8aJO1j5lm7auUAzACkf6gL0fX.jpg",
       "content_type": "tv",
-      "creator": "Jo\u00e3o Emanuel Carneiro",
+      "creator": "João Emanuel Carneiro",
       "curated_imdb_rating": 8.1,
       "director": null,
       "enrichment_status": "partial",
@@ -15915,7 +15940,7 @@
     },
     {
       "actors": [
-        "S\u00e9rgio Chapelin",
+        "Sérgio Chapelin",
         "Ayrton Senna",
         "Sandra Annenberg"
       ],
@@ -15941,17 +15966,17 @@
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "60 min",
-      "title": "Globo Rep\u00f3rter",
+      "title": "Globo Repórter",
       "tmdb_id": 17112,
-      "torrent_file": "Globo_Rep\u00f3rter_x",
+      "torrent_file": "Globo_Repórter_x",
       "trailer_key": null,
       "year": 1973
     },
     {
       "actors": [
-        "Maria Fernanda C\u00e2ndido",
+        "Maria Fernanda Cândido",
         "Juliana Paes",
-        "L\u00edlia Cabral"
+        "Lília Cabral"
       ],
       "awards": "21 wins & 19 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/axPMFFUvLdmuAEjzInJA9dbvU5L.jpg",
@@ -15971,22 +15996,22 @@
       "imdb_votes": "362",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "A For\u00e7a do Querer",
+      "original_title": "A Força do Querer",
       "plot": "A young man falls for a seductive, confident woman who performs as a mermaid and actually believes that she is one.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMzVmMjkxNWEtZTkzZi00MjdlLWE2NzYtM2UyMjlhYWEzNDI3XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "60 min",
-      "title": "A For\u00e7a do Querer",
+      "title": "A Força do Querer",
       "tmdb_id": 73752,
-      "torrent_file": "A_For\u00e7a_do_Querer_x",
+      "torrent_file": "A_Força_do_Querer_x",
       "trailer_key": null,
       "year": 2017
     },
     {
       "actors": [
         "Fernando Ramos da Silva",
-        "Jorge Juli\u00e3o",
+        "Jorge Julião",
         "Gilberto Moura"
       ],
       "awards": "10 wins & 4 nominations total",
@@ -16038,14 +16063,14 @@
       "actors": [
         "Wagner Moura",
         "Irandhir Santos",
-        "Andr\u00e9 Ramiro"
+        "André Ramiro"
       ],
       "awards": "45 wins & 19 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/tmowA51oykuOdiyqRCP0jGYU1mB.jpg",
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 8,
-      "director": "Jos\u00e9 Padilha",
+      "director": "José Padilha",
       "enrichment_status": "ok",
       "genres": [
         "Crime",
@@ -16110,22 +16135,22 @@
       "imdb_votes": null,
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Carandiru Outras Hist\u00f3rias",
+      "original_title": "Carandiru Outras Histórias",
       "plot": null,
       "poster_url": null,
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Carandiru: Outras Hist\u00f3rias",
+      "title": "Carandiru: Outras Histórias",
       "tmdb_id": 88560,
-      "torrent_file": "Carandiru:_Outras_Hist\u00f3rias_x",
+      "torrent_file": "Carandiru:_Outras_Histórias_x",
       "trailer_key": null,
       "year": 2005
     },
     {
       "actors": [
         "Wagner Moura",
-        "Andr\u00e9 Ramiro",
+        "André Ramiro",
         "Caio Junqueira"
       ],
       "awards": "47 wins & 17 nominations total",
@@ -16133,7 +16158,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 8,
-      "director": "Jos\u00e9 Padilha",
+      "director": "José Padilha",
       "enrichment_status": "ok",
       "genres": [
         "Action",
@@ -16215,7 +16240,7 @@
       "awards": "4 wins & 5 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/8lBlBItnehgOAwFt0ezxlXuWeIO.jpg",
       "content_type": "tv",
-      "creator": "L\u00edcia Manzo",
+      "creator": "Lícia Manzo",
       "curated_imdb_rating": 8,
       "director": null,
       "enrichment_status": "partial",
@@ -16251,7 +16276,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 8,
-      "director": "Lu\u00eds S\u00e9rgio Person",
+      "director": "Luís Sérgio Person",
       "enrichment_status": "partial",
       "genres": [
         "Drama"
@@ -16262,15 +16287,15 @@
       "imdb_votes": "969",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "S\u00e3o Paulo, Sociedade An\u00f4nima",
-      "plot": "A man lives in conflict as he deals with his friends and love interests against the backdrop of S\u00e3o Paulo.",
+      "original_title": "São Paulo, Sociedade Anônima",
+      "plot": "A man lives in conflict as he deals with his friends and love interests against the backdrop of São Paulo.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMGZmODYzOGUtYzczNi00YTI4LWJlMWYtOTAwYzA0ODcyYzgwXkEyXkFqcGdeQXVyMTY2MzYyNzA@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "107 min",
-      "title": "S\u00e3o Paulo, Sociedade An\u00f4nima",
+      "title": "São Paulo, Sociedade Anônima",
       "tmdb_id": 74360,
-      "torrent_file": "S\u00e3o_Paulo,_Sociedade_An\u00f4nima_x",
+      "torrent_file": "São_Paulo,_Sociedade_Anônima_x",
       "trailer_key": null,
       "year": 1965
     },
@@ -16298,28 +16323,28 @@
       "imdb_votes": "782",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Amor \u00e0 Vida",
+      "original_title": "Amor à Vida",
       "plot": "Jealous of his adoptive sister, an unscrupulous man separates her from her newborn daughter, who is found and adopted by a lovable man.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BYzk2ZWRhZDYtYWFjZC00YTg5LTk0NzMtYzM2YWE0ZjA3Y2ZlXkEyXkFqcGdeQXVyNjI0NDkwNjE@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Amor \u00e0 Vida",
+      "title": "Amor à Vida",
       "tmdb_id": 59599,
-      "torrent_file": "Amor_\u00e0_Vida_x",
+      "torrent_file": "Amor_à_Vida_x",
       "trailer_key": null,
       "year": 2013
     },
     {
       "actors": [
-        "Andr\u00e9ia Horta",
+        "Andréia Horta",
         "Mateus Solano",
         "Nathalia Dill"
       ],
       "awards": "2 wins & 4 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/k9LUT69h5Mrp57qTJlAWlblmzUz.jpg",
       "content_type": "tv",
-      "creator": "Jo\u00e3o Emanuel Carneiro",
+      "creator": "João Emanuel Carneiro",
       "curated_imdb_rating": 8,
       "director": null,
       "enrichment_status": "partial",
@@ -16381,8 +16406,8 @@
     {
       "actors": [
         "Fernanda Montenegro",
-        "Vin\u00edcius de Oliveira",
-        "Mar\u00edlia P\u00eara"
+        "Vinícius de Oliveira",
+        "Marília Pêra"
       ],
       "awards": "Nominated for 2 Oscars. 44 wins & 26 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/lrLIy9OFRQg4VkhrCyolfNXJEUH.jpg",
@@ -16438,7 +16463,7 @@
     },
     {
       "actors": [
-        "Ta\u00eds Ara\u00fajo",
+        "Taís Araújo",
         "Leandra Leal",
         "Isabelle Drummond"
       ],
@@ -16543,7 +16568,7 @@
       "actors": [
         "Isabelle Drummond",
         "Chay Suede",
-        "Let\u00edcia Colin"
+        "Letícia Colin"
       ],
       "awards": "15 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/4FhybaBiQi8VA0VEzBvqtxyp6CF.jpg",
@@ -16584,7 +16609,7 @@
       "awards": "1 win & 2 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/ddheao5imCoTaKAzOtNCTyCFjIL.jpg",
       "content_type": "tv",
-      "creator": "Jos\u00e9 Bonif\u00e1cio de Oliveira Sobrinho",
+      "creator": "José Bonifácio de Oliveira Sobrinho",
       "curated_imdb_rating": 7.8,
       "director": null,
       "enrichment_status": "partial",
@@ -16605,9 +16630,9 @@
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "180 min",
-      "title": "Fant\u00e1stico",
+      "title": "Fantástico",
       "tmdb_id": 19538,
-      "torrent_file": "Fant\u00e1stico_x",
+      "torrent_file": "Fantástico_x",
       "trailer_key": null,
       "year": 1973
     },
@@ -16615,7 +16640,7 @@
       "actors": [
         "Bianca Bin",
         "Grazi Massafera",
-        "Gl\u00f3ria Pires"
+        "Glória Pires"
       ],
       "awards": "3 wins & 10 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/3Xq8xuaUxgvLaKw9Xv1uAVJR0Eb.jpg",
@@ -16635,15 +16660,15 @@
       "imdb_votes": "285",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "O Outro Lado do Para\u00edso",
+      "original_title": "O Outro Lado do Paraíso",
       "plot": "A vengeful young woman returns for the greedy people who deceived and tried to kill her, for the reckoning.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BM2M5ODA5ODItNmRlMy00OGFhLTg5MTQtOGI2YmUxMDE4ZjcxXkEyXkFqcGdeQXVyNjI0NDkwNjE@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "2 min",
-      "title": "O Outro Lado do Para\u00edso",
+      "title": "O Outro Lado do Paraíso",
       "tmdb_id": 74615,
-      "torrent_file": "O_Outro_Lado_do_Para\u00edso_x",
+      "torrent_file": "O_Outro_Lado_do_Paraíso_x",
       "trailer_key": null,
       "year": 2017
     },
@@ -16656,7 +16681,7 @@
       "awards": "7 wins & 19 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/cLftreXClWhlJnZxgoRiXYB8vaC.jpg",
       "content_type": "tv",
-      "creator": "Jo\u00e3o Emanuel Carneiro",
+      "creator": "João Emanuel Carneiro",
       "curated_imdb_rating": 7.8,
       "director": null,
       "enrichment_status": "partial",
@@ -16729,7 +16754,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.8,
-      "director": "Jos\u00e9 Padilha",
+      "director": "José Padilha",
       "enrichment_status": "partial",
       "genres": [
         "Documentary",
@@ -16741,7 +16766,7 @@
       "imdb_votes": "8,714",
       "metacritic": "83/100",
       "origin": "Brazilian",
-      "original_title": "\u00d4nibus 174",
+      "original_title": "Ônibus 174",
       "plot": "On June 12, 2000, a young man with a gun took the passengers aboard Bus 174 in Rio de Janeiro, Brazil hostage. This documentary examines the event itself, the resulting media frenzy, the police response, and the perpetrator's back...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMTI4OTM5ODkwMl5BMl5BanBnXkFtZTcwNjQyMTQyMQ@@._V1_SX300.jpg",
       "rated": "R",
@@ -16794,9 +16819,9 @@
     },
     {
       "actors": [
-        "L\u00edlia Cabral",
-        "Jos\u00e9 Mayer",
-        "D\u00e9bora Bloch"
+        "Lília Cabral",
+        "José Mayer",
+        "Débora Bloch"
       ],
       "awards": "1 win & 3 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/wUy12xR74yd88FUJ0r1CHfNeB0H.jpg",
@@ -16865,7 +16890,7 @@
     },
     {
       "actors": [
-        "Regina Cas\u00e9",
+        "Regina Casé",
         "Helena Albergaria",
         "Michel Joelsas"
       ],
@@ -16923,7 +16948,7 @@
       "awards": null,
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/xeJJZE8yC09lRbiV2f2hqURJmhd.jpg",
       "content_type": "tv",
-      "creator": "Jo\u00e3o Emanuel Carneiro",
+      "creator": "João Emanuel Carneiro",
       "curated_imdb_rating": 7.8,
       "director": null,
       "enrichment_status": "partial",
@@ -16936,21 +16961,21 @@
       "imdb_votes": "80",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Mania de Voc\u00ea",
+      "original_title": "Mania de Você",
       "plot": "Two young women develop a strong friendship after a series of coincidences puts them together. Intrigue and murder eventually sever their ties.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMTJhYThmZDMtMTEyZC00NzIzLWEwMzItZjhmYTA4MmMxY2Q1XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Mania de Voc\u00ea",
+      "title": "Mania de Você",
       "tmdb_id": 237478,
-      "torrent_file": "Mania_de_Voc\u00ea_x",
+      "torrent_file": "Mania_de_Você_x",
       "trailer_key": null,
       "year": 2024
     },
     {
       "actors": [
-        "L\u00e1zaro Ramos",
+        "Lázaro Ramos",
         "Leandra Leal",
         "Luana Piovani"
       ],
@@ -17008,22 +17033,22 @@
       "imdb_votes": "243",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "A Dona do Peda\u00e7o",
+      "original_title": "A Dona do Pedaço",
       "plot": "Maria da Paz comes from a family of professional vigilantes, the Ramirez, and falls in love with Amadeu, a trained lawyer and member of the rival business clan, the Matheus.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNDE4MTVlMDItYTg1MC00MmM0LTkzZGMtMGRiYzIxMGRhOGEwXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "60 min",
-      "title": "A Dona do Peda\u00e7o",
+      "title": "A Dona do Pedaço",
       "tmdb_id": 90234,
-      "torrent_file": "A_Dona_do_Peda\u00e7o_x",
+      "torrent_file": "A_Dona_do_Pedaço_x",
       "trailer_key": null,
       "year": 2019
     },
     {
       "actors": [
         "Gabriel Leone",
-        "Fl\u00e1vio Tolezani",
+        "Flávio Tolezani",
         "Raquel Villar"
       ],
       "awards": "1 win & 6 nominations total",
@@ -17127,15 +17152,15 @@
       "imdb_votes": "896",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Caminho das \u00cdndias",
+      "original_title": "Caminho das Índias",
       "plot": "The daughter of a traditional, rich Indian family falls in love for a Dalit, an \"untouchable\" man.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZDQyZjkyMjgtYjU3Yi00NWFmLWExMzItMTczMzA4M2VkNjExXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Caminho das \u00cdndias",
+      "title": "Caminho das Índias",
       "tmdb_id": 7979,
-      "torrent_file": "Caminho_das_\u00cdndias_x",
+      "torrent_file": "Caminho_das_Índias_x",
       "trailer_key": null,
       "year": 2009
     },
@@ -17143,14 +17168,14 @@
       "actors": [
         "Rodrigo Santoro",
         "Othon Bastos",
-        "C\u00e1ssia Kis"
+        "Cássia Kis"
       ],
       "awards": "45 wins & 20 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/nwPHdJp7bwFCFwcxUTuqHvtcESi.jpg",
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.7,
-      "director": "La\u00eds Bodanzky",
+      "director": "Laís Bodanzky",
       "enrichment_status": "partial",
       "genres": [
         "Drama"
@@ -17161,7 +17186,7 @@
       "imdb_votes": "6,447",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Bicho de Sete Cabe\u00e7as",
+      "original_title": "Bicho de Sete Cabeças",
       "plot": "A trip to the mental institution hell. This odyssey is lived by Neto, a middle class teenager, who lives a normal life until his father sends him to a mental institution after finding drugs on his pocket. The marijuana cigarette i...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BN2Y2MGE3OTUtMDhkZC00MmU1LTg5NTktYjExNGZmNjgzNjJiXkEyXkFqcGdeQXVyMTY2MzYyNzA@._V1_SX300.jpg",
       "rated": null,
@@ -17209,14 +17234,14 @@
       "actors": [
         "Julia Stockler",
         "Carol Duarte",
-        "Fl\u00e1via Gusm\u00e3o"
+        "Flávia Gusmão"
       ],
       "awards": "38 wins & 53 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/u2Av6NyDeLkwYTBXxIGousLNzz.jpg",
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.7,
-      "director": "Karim A\u00efnouz",
+      "director": "Karim Aïnouz",
       "enrichment_status": "ok",
       "genres": [
         "Drama"
@@ -17227,15 +17252,15 @@
       "imdb_votes": "10,483",
       "metacritic": "81/100",
       "origin": "Brazilian",
-      "original_title": "A Vida Invis\u00edvel",
+      "original_title": "A Vida Invisível",
       "plot": "In 1950s Rio de Janeiro, two sisters live restricted lives with their conservative parents. After they are separated and forced to live apart, they try to take control of their destinies and hold on to the hope of finding one anot...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZTBmZDYwYmUtMGFjNi00NDA3LTk1MTYtYjhlYzhkZDQ2NDA1XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "R",
       "rotten_tomatoes": "94%",
       "runtime": "139 min",
-      "title": "The Invisible Life of Eur\u00eddice Gusm\u00e3o",
+      "title": "The Invisible Life of Eurídice Gusmão",
       "tmdb_id": 548544,
-      "torrent_file": "The_Invisible_Life_of_Eur\u00eddice_Gusm\u00e3o_x",
+      "torrent_file": "The_Invisible_Life_of_Eurídice_Gusmão_x",
       "trailer_key": "NRF-Pba3QrE",
       "year": 2019
     },
@@ -17299,7 +17324,7 @@
       "imdb_votes": "15,808",
       "metacritic": "87/100",
       "origin": "Brazilian",
-      "original_title": "\u0415\u043b\u0435\u043d\u0430",
+      "original_title": "Елена",
       "plot": "When a sudden illness and an unexpected reunion threaten dutiful housewife Elena's potential inheritance, she must hatch a desperate plan ...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BN2I3M2Q2MmEtOTRkNy00YzU4LWJmYmItMTAxYTMxNWMwMmE0XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "Not Rated",
@@ -17361,7 +17386,7 @@
     },
     {
       "actors": [
-        "Jece Valad\u00e3o",
+        "Jece Valadão",
         "Odete Lara",
         "Daniel Filho"
       ],
@@ -17453,7 +17478,7 @@
       "awards": "9 wins & 34 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/tHBG0n0FDb8a4JM9gLiT6v1sM2g.jpg",
       "content_type": "tv",
-      "creator": "Jo\u00e3o Emanuel Carneiro",
+      "creator": "João Emanuel Carneiro",
       "curated_imdb_rating": 7.6,
       "director": null,
       "enrichment_status": "partial",
@@ -17583,8 +17608,8 @@
     {
       "actors": [
         "William Bonner",
-        "Patr\u00edcia Poeta",
-        "F\u00e1tima Bernardes"
+        "Patrícia Poeta",
+        "Fátima Bernardes"
       ],
       "awards": "2 wins",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/ngmekOxfGjiTtNbWM5T5U4WvzlS.jpg",
@@ -17738,8 +17763,8 @@
     {
       "actors": [
         "Bruna Marquezine",
-        "T\u00e2nia T\u00f4ko",
-        "J\u00falia Lemmertz"
+        "Tânia Tôko",
+        "Júlia Lemmertz"
       ],
       "awards": "1 win & 15 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/A6nvYyacvBLcQYGlC9w0P3nYVe0.jpg",
@@ -17759,15 +17784,15 @@
       "imdb_votes": "394",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Em Fam\u00edlia",
+      "original_title": "Em Família",
       "plot": "An impulsive, warm-blooded young man leaves the girl he loves with the man he hates most. Two decades later, he returns and develops a romance with their young daughter.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZmVlYmJiOGMtMjAxYS00OGI0LTkzNTUtODJhZDVmN2Y5N2FmXkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Em Fam\u00edlia",
+      "title": "Em Família",
       "tmdb_id": 79006,
-      "torrent_file": "Em_Fam\u00edlia_x",
+      "torrent_file": "Em_Família_x",
       "trailer_key": null,
       "year": 2014,
       "magnet_link": "magnet:?xt=urn:btih:0C41DD9ADCB992B1F98A7B180C1DEB5C18088766&dn=Plano%20em%20Fam%26iacute%3Blia%202023%20The%20Family%20Plan%201080p%20x264%20DUAL%20AlienVolt&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
@@ -17798,7 +17823,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.5,
-      "director": "Kleber Mendon\u00e7a Filho",
+      "director": "Kleber Mendonça Filho",
       "enrichment_status": "ok",
       "genres": [
         "Drama"
@@ -17848,7 +17873,7 @@
     {
       "actors": [
         "Alessandra Negrini",
-        "F\u00e1bio Assun\u00e7\u00e3o",
+        "Fábio Assunção",
         "Tony Ramos"
       ],
       "awards": "32 wins & 25 nominations",
@@ -17869,15 +17894,15 @@
       "imdb_votes": "451",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Para\u00edso Tropical",
+      "original_title": "Paraíso Tropical",
       "plot": "Set in Copacabana, the urban plot is punctuated by passion, humor, and accentuated social criticism.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMWZmNjFmNTAtY2RjNC00ZTY4LTkzNzgtMGQ0YTY2ZjE0ZWYxXkEyXkFqcGdeQXVyNjI0NDkwNjE@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "45 min",
-      "title": "Para\u00edso Tropical",
+      "title": "Paraíso Tropical",
       "tmdb_id": 42883,
-      "torrent_file": "Para\u00edso_Tropical_x",
+      "torrent_file": "Paraíso_Tropical_x",
       "trailer_key": null,
       "year": 2007
     },
@@ -17904,7 +17929,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": "Garota do Momento",
-      "plot": "Raised by her grandmother since she was four years old in Petr\u00f3polis, Beatriz decides to travel to Rio de Janeiro when she comes across a photo of her missing mother, Clarice, in a magazine.",
+      "plot": "Raised by her grandmother since she was four years old in Petrópolis, Beatriz decides to travel to Rio de Janeiro when she comes across a photo of her missing mother, Clarice, in a magazine.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNjIwY2E5M2EtY2UwZi00MjE2LTgwMjEtYjFjYjVhZTY3MjJjXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -17917,7 +17942,7 @@
     },
     {
       "actors": [
-        "\u00c1tila I\u00f3rio",
+        "Átila Iório",
         "Maria Ribeiro",
         "Orlando Macedo"
       ],
@@ -17938,7 +17963,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": "Vidas Secas",
-      "plot": "A poor family in the Northeast of Brazil (Fabiano, the father; Sinh\u00e1 Vit\u00f3ria, the mother; their 2 children and a dog called Baleia) wander about the barren land searching for a better place to live, with food and work. But the dro...",
+      "plot": "A poor family in the Northeast of Brazil (Fabiano, the father; Sinhá Vitória, the mother; their 2 children and a dog called Baleia) wander about the barren land searching for a better place to live, with food and work. But the dro...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZTkzY2FjODEtM2IyMi00NTc3LTgwYTItMDIyYzU3OThiNWY1XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "Not Rated",
       "rotten_tomatoes": null,
@@ -17952,7 +17977,7 @@
     {
       "actors": [
         "Helena Ignez",
-        "Paulo Villa\u00e7a",
+        "Paulo Villaça",
         "Pagano Sobrinho"
       ],
       "awards": "4 wins",
@@ -17960,7 +17985,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.5,
-      "director": "Rog\u00e9rio Sganzerla",
+      "director": "Rogério Sganzerla",
       "enrichment_status": "ok",
       "genres": [
         "Crime",
@@ -18075,7 +18100,7 @@
     },
     {
       "actors": [
-        "Tain\u00e1 M\u00fcller",
+        "Tainá Müller",
         "Adriano Garib",
         "Silvio Guindane"
       ],
@@ -18097,15 +18122,15 @@
       "imdb_votes": "7,066",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Bom Dia, Ver\u00f4nica",
+      "original_title": "Bom Dia, Verônica",
       "plot": "After witnessing a suicide, an unobtrusive police clerk decides to investigate two neglected cases on her own, both involving abused women.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMzcyNjFjNjQtNTYxMS00N2YzLWI5YjQtNGE0M2U0ZGRkOGMwXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "TV-MA",
       "rotten_tomatoes": null,
       "runtime": "49 min",
-      "title": "Good Morning, Ver\u00f4nica",
+      "title": "Good Morning, Verônica",
       "tmdb_id": 110115,
-      "torrent_file": "Good_Morning,_Ver\u00f4nica_x",
+      "torrent_file": "Good_Morning,_Verônica_x",
       "trailer_key": "SGZeMAYM_QI",
       "year": 2020
     },
@@ -18133,7 +18158,7 @@
       "imdb_votes": "6,049",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "O Que \u00e9 Isso, Companheiro?",
+      "original_title": "O Que é Isso, Companheiro?",
       "plot": "Brazillian urban guerrilla fighters kidnap the American Ambassador. Now, the diplomat's life hangs in the balance - helplessly caught between a government unwilling to cooperate - and his fear of the captors themselves.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNGYwOWZiZTctODgxYS00MWE5LWJmODQtYmY0NDA5MmI4OTY4XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "R",
@@ -18148,7 +18173,7 @@
     {
       "actors": [
         "Natalia Dal Molin",
-        "Camilla Dami\u00e3o",
+        "Camilla Damião",
         "Alexandra Richter"
       ],
       "awards": null,
@@ -18167,15 +18192,15 @@
       "imdb_votes": "121",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Terra e Paix\u00e3o",
+      "original_title": "Terra e Paixão",
       "plot": "The saga of a woman, guided by the power of love and moved by the desire for justice, intersects with that of a family divided by ambition and many secrets.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZmQ3ZDgwZjgtYTgxZS00MjM1LWFjY2UtYTkyMTYyYjlmNTBhXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Terra e Paix\u00e3o",
+      "title": "Terra e Paixão",
       "tmdb_id": 209265,
-      "torrent_file": "Terra_e_Paix\u00e3o_x",
+      "torrent_file": "Terra_e_Paixão_x",
       "trailer_key": null,
       "year": 2023
     },
@@ -18202,7 +18227,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": "A Hora da Estrela",
-      "plot": "Tells the tale of the naive Macab\u00e9a, a 19-year-old lonely and poor woman from the Northeast of Brazil who moves to S\u00e3o Paulo in hopes of a better future after losing the aunt who raised her.",
+      "plot": "Tells the tale of the naive Macabéa, a 19-year-old lonely and poor woman from the Northeast of Brazil who moves to São Paulo in hopes of a better future after losing the aunt who raised her.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOTE3MWEwYTAtMDM2OS00OWNlLTgzNjctYmYzYWVhZWU4Y2I3XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "Not Rated",
       "rotten_tomatoes": "80%",
@@ -18250,9 +18275,9 @@
     },
     {
       "actors": [
-        "Jos\u00e9 Wilker",
+        "José Wilker",
         "Betty Faria",
-        "F\u00e1bio Jr."
+        "Fábio Jr."
       ],
       "awards": "1 win & 1 nomination",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/1LvhLEd6lHg7wQth03qIn731nE6.jpg",
@@ -18271,7 +18296,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": "Bye Bye Brasil",
-      "plot": "The Caravana Rolidei rolls into town with the Gypsy Lord at the mike: he does magic tricks, the erotic Salom\u00e9 dances, and the mute Swallow performs feats of strength. A young accordion player is completely enamored of Salom\u00e9, and ...",
+      "plot": "The Caravana Rolidei rolls into town with the Gypsy Lord at the mike: he does magic tricks, the erotic Salomé dances, and the mute Swallow performs feats of strength. A young accordion player is completely enamored of Salomé, and ...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZDI4NTQ4ZjktMjU1Yi00NzdkLTk0Y2UtYTI5MDYzOWI3YmE3XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "R",
       "rotten_tomatoes": null,
@@ -18284,14 +18309,14 @@
     },
     {
       "actors": [
-        "Regina Cas\u00e9",
+        "Regina Casé",
         "Arlindo Cruz",
         "Mumuzinho"
       ],
       "awards": null,
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/tXgnSjNrln6oJU5dPIVj22bbqXk.jpg",
       "content_type": "tv",
-      "creator": "Regina Cas\u00e9",
+      "creator": "Regina Casé",
       "curated_imdb_rating": 7.4,
       "director": null,
       "enrichment_status": "partial",
@@ -18354,8 +18379,8 @@
     {
       "actors": [
         "Josh Meyer",
-        "B\u00e1rbara Paz",
-        "L\u00edlia Cabral"
+        "Bárbara Paz",
+        "Lília Cabral"
       ],
       "awards": null,
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/8j7pkswHOur1vmRJsd0HnxBcwfL.jpg",
@@ -18385,8 +18410,8 @@
     },
     {
       "actors": [
-        "B\u00e1rbara Colen",
-        "Thom\u00e1s Aquino",
+        "Bárbara Colen",
+        "Thomás Aquino",
         "Silvero Pereira"
       ],
       "awards": "52 wins & 71 nominations total",
@@ -18394,7 +18419,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.3,
-      "director": "Kleber Mendon\u00e7a Filho, Juliano Dornelles",
+      "director": "Kleber Mendonça Filho, Juliano Dornelles",
       "enrichment_status": "ok",
       "genres": [
         "Action",
@@ -18446,7 +18471,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.3,
-      "director": "Cl\u00e1udio Assis",
+      "director": "Cláudio Assis",
       "enrichment_status": "partial",
       "genres": [
         "Drama"
@@ -18477,7 +18502,7 @@
     {
       "actors": [
         "Marina Ruy Barbosa",
-        "F\u00e1bio Assun\u00e7\u00e3o",
+        "Fábio Assunção",
         "Juliana Paes"
       ],
       "awards": "3 wins & 7 nominations",
@@ -18519,7 +18544,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.3,
-      "director": "Karim A\u00efnouz, Marcelo Gomes",
+      "director": "Karim Aïnouz, Marcelo Gomes",
       "enrichment_status": "partial",
       "genres": [
         "Drama"
@@ -18545,7 +18570,7 @@
     {
       "actors": [
         "Isabelle Drummond",
-        "D\u00e9bora Nascimento",
+        "Débora Nascimento",
         "Dira Paes"
       ],
       "awards": "2 wins & 4 nominations total",
@@ -18565,21 +18590,21 @@
       "imdb_votes": "94",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Ver\u00e3o 90",
-      "plot": "With the end of their children's musical group, Manuzita and brothers Jo\u00e3o and Jer\u00f4nimo follow different paths. Fate brings them together in 1990.",
+      "original_title": "Verão 90",
+      "plot": "With the end of their children's musical group, Manuzita and brothers João and Jerônimo follow different paths. Fate brings them together in 1990.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BM2I0ZTUyNjAtMWMwMi00NmM5LWJlOGMtODYxN2U0MGJiMTNlXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "41 min",
-      "title": "Ver\u00e3o 90",
+      "title": "Verão 90",
       "tmdb_id": 92077,
-      "torrent_file": "Ver\u00e3o_90_x",
+      "torrent_file": "Verão_90_x",
       "trailer_key": null,
       "year": 2019
     },
     {
       "actors": [
-        "Concei\u00e7\u00e3o Senna",
+        "Conceição Senna",
         "Luisa Proserpio",
         "Ricardo Luedy"
       ],
@@ -18599,7 +18624,7 @@
       "imdb_votes": "175",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "A Cole\u00e7\u00e3o Invis\u00edvel",
+      "original_title": "A Coleção Invisível",
       "plot": "The young Beto ventures to the Brazilian countryside in search of a collection of rare drawings. There he meets Samir, the collector, and his family ruined by the demise of the cocoa plantations. The journey and the encounter will...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMzNiYTkyMDUtNWNkOS00MDhmLTlhMjMtNDNmNTlkZTBlMWExXkEyXkFqcGdeQXVyNjU3Njc5Mjk@._V1_SX300.jpg",
       "rated": null,
@@ -18613,7 +18638,7 @@
     },
     {
       "actors": [
-        "Jo\u00e3o Miguel",
+        "João Miguel",
         "Peter Ketnath",
         "Madalena Accioly"
       ],
@@ -18650,7 +18675,7 @@
       "actors": [
         "Jardel Filho",
         "Paulo Autran",
-        "Jos\u00e9 Lewgoy"
+        "José Lewgoy"
       ],
       "awards": "2 wins & 1 nomination",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/xCSzJsUmgd61nXjxoslbWOgOlbY.jpg",
@@ -18705,7 +18730,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": null,
-      "plot": "Three teens living in the same S\u00e3o Paulo shanty town pursue their dreams while maintaining their friendship, amid a world of music, drugs and religion.",
+      "plot": "Three teens living in the same São Paulo shanty town pursue their dreams while maintaining their friendship, amid a world of music, drugs and religion.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOWVjYTlhZGEtMGRmNS00NWU1LWE4NzQtYjE5OTdjNzBmZDI4XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "TV-MA",
       "rotten_tomatoes": null,
@@ -18755,7 +18780,7 @@
     {
       "actors": [
         "Selton Mello",
-        "Paulo Jos\u00e9",
+        "Paulo José",
         "Larissa Manoela"
       ],
       "awards": "50 wins & 11 nominations",
@@ -18775,7 +18800,7 @@
       "imdb_votes": "5,634",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "O Palha\u00e7o",
+      "original_title": "O Palhaço",
       "plot": "Father and son work as clowns Puro Sangue/Valdemar and Pangare/Benjamin in a circus in the Brazilian countryside. Benjamin decides to follow a different path and meets several people on the way.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMTAxODk4NzQyODleQTJeQWpwZ15BbWU3MDkwNzIzNjg@._V1_SX300.jpg",
       "rated": null,
@@ -18956,7 +18981,7 @@
     {
       "actors": [
         "Guilherme Cabral",
-        "Vanessa Gi\u00e1como",
+        "Vanessa Giácomo",
         "Camila Queiroz"
       ],
       "awards": "6 nominations",
@@ -18992,8 +19017,8 @@
     {
       "actors": [
         "Dilma Rousseff",
-        "Luiz In\u00e1cio Lula da Silva",
-        "Marisa Let\u00edcia Lula da Silva"
+        "Luiz Inácio Lula da Silva",
+        "Marisa Letícia Lula da Silva"
       ],
       "awards": "Nominated for 1 Oscar. 6 wins & 16 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/b8LjR8NjRjrWs6uIfGfrDn0OeI6.jpg",
@@ -19059,7 +19084,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.2,
-      "director": "M\u00e1rio Peixoto",
+      "director": "Mário Peixoto",
       "enrichment_status": "ok",
       "genres": [
         "Drama",
@@ -19144,16 +19169,16 @@
     },
     {
       "actors": [
-        "Murilo Ben\u00edcio",
-        "Cl\u00e1udia Abreu",
-        "Nat\u00e1lia Lage"
+        "Murilo Benício",
+        "Cláudia Abreu",
+        "Natália Lage"
       ],
       "awards": "8 wins & 17 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/zveQBQ7lPGkxtQGY1JMualMGrwF.jpg",
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.2,
-      "director": "Jos\u00e9 Henrique Fonseca",
+      "director": "José Henrique Fonseca",
       "enrichment_status": "ok",
       "genres": [
         "Action",
@@ -19220,7 +19245,7 @@
     },
     {
       "actors": [
-        "Vit\u00f3ria Strada",
+        "Vitória Strada",
         "Vincent Cassel",
         "Selton Mello"
       ],
@@ -19254,8 +19279,8 @@
     },
     {
       "actors": [
-        "Ana Paula Padr\u00e3o",
-        "Henrique Foga\u00e7a",
+        "Ana Paula Padrão",
+        "Henrique Fogaça",
         "Erick Jacquin"
       ],
       "awards": "1 nomination",
@@ -19276,7 +19301,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": "MasterChef",
-      "plot": "Amateur chefs compete to become the best amateur home cook in Brazil through challenges issued by judges Erick Jacquin, Helena Rizzo and Henrique Foga\u00e7a.",
+      "plot": "Amateur chefs compete to become the best amateur home cook in Brazil through challenges issued by judges Erick Jacquin, Helena Rizzo and Henrique Fogaça.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BYzk2YTE3ZWEtMTMzYy00ZGY0LWI5ZDAtNjVmYmJlMGUyOGMxXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -19290,7 +19315,7 @@
     {
       "actors": [
         "Gabriel Braga Nunes",
-        "Let\u00edcia Persiles",
+        "Letícia Persiles",
         "Carmo Dalla Vecchia"
       ],
       "awards": "6 nominations",
@@ -19350,7 +19375,7 @@
       "actors": [
         "Selton Mello",
         "Giulio Lopes",
-        "J\u00falia Lemmertz"
+        "Júlia Lemmertz"
       ],
       "awards": "17 wins & 29 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/uAX6NW8kFFrGmc0nJTWL7ajymQf.jpg",
@@ -19370,8 +19395,8 @@
       "imdb_votes": "8,408",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Meu Nome n\u00e3o \u00e9 Johnny",
-      "plot": "The true story of Jo\u00e3o Guilherme Estrella (\"Johnny\"), a young middle-class bon vivant who became a big-time cocaine dealer in Rio de Janeiro in the early 1990s.",
+      "original_title": "Meu Nome não é Johnny",
+      "plot": "The true story of João Guilherme Estrella (\"Johnny\"), a young middle-class bon vivant who became a big-time cocaine dealer in Rio de Janeiro in the early 1990s.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMjMzNTAxNjk4NF5BMl5BanBnXkFtZTcwNjQ3NDQ2OA@@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -19385,7 +19410,7 @@
     {
       "actors": [
         "Geraldo Del Rey",
-        "Yon\u00e1 Magalh\u00e3es",
+        "Yoná Magalhães",
         "Othon Bastos"
       ],
       "awards": "1 nomination",
@@ -19426,7 +19451,7 @@
     {
       "actors": [
         "Karine Teles",
-        "Ot\u00e1vio M\u00fcller",
+        "Otávio Müller",
         "Adriana Esteves"
       ],
       "awards": "23 wins & 17 nominations",
@@ -19460,9 +19485,9 @@
     },
     {
       "actors": [
-        "Paulo C\u00e9sar Per\u00e9io",
-        "Edna de C\u00e1ssia",
-        "L\u00facio Dos Santos"
+        "Paulo César Peréio",
+        "Edna de Cássia",
+        "Lúcio Dos Santos"
       ],
       "awards": "4 wins & 1 nomination",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/buRgaBPSFptj5xCUNyDc5MNTHa1.jpg",
@@ -19480,15 +19505,15 @@
       "imdb_votes": "500",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Iracema: Uma Transa Amaz\u00f4nica",
+      "original_title": "Iracema: Uma Transa Amazônica",
       "plot": "Truck driver travelling along the Transamazonic Road, a huge highway in Brazil that crosses the Amazon forest, meets a prostitute and slowly becomes aware of the problems in that region.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BN2JkY2JmMDQtNjk2MS00NWQzLTk4YmYtNDhiOTVhNmMxNjM1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
       "rated": "Not Rated",
       "rotten_tomatoes": null,
       "runtime": "90 min",
-      "title": "Iracema: Uma Transa Amaz\u00f4nica",
+      "title": "Iracema: Uma Transa Amazônica",
       "tmdb_id": 116146,
-      "torrent_file": "Iracema:_Uma_Transa_Amaz\u00f4nica_x",
+      "torrent_file": "Iracema:_Uma_Transa_Amazônica_x",
       "trailer_key": null,
       "year": 1975
     },
@@ -19598,15 +19623,15 @@
       "imdb_votes": "99",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Al\u00e9m da Ilus\u00e3o",
+      "original_title": "Além da Ilusão",
       "plot": "The love story of Davi and Isadora on a trip to Brazil in the 1930s and 1940s, marked by times of profound changes.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNjBmOTE1MTItNzVlMS00NGE3LThhZDEtZGU5YmI0ZmIwMTM2XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Al\u00e9m da Ilus\u00e3o",
+      "title": "Além da Ilusão",
       "tmdb_id": 154911,
-      "torrent_file": "Al\u00e9m_da_Ilus\u00e3o_x",
+      "torrent_file": "Além_da_Ilusão_x",
       "trailer_key": null,
       "year": 2022
     },
@@ -19656,7 +19681,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.1,
-      "director": "Cl\u00e1udio Assis",
+      "director": "Cláudio Assis",
       "enrichment_status": "ok",
       "genres": [
         "Horror",
@@ -19732,7 +19757,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.1,
-      "director": "Kleber Mendon\u00e7a Filho",
+      "director": "Kleber Mendonça Filho",
       "enrichment_status": "ok",
       "genres": [
         "Drama",
@@ -19759,13 +19784,13 @@
     {
       "actors": [
         "Luisa Arraes",
-        "Andrea Beltr\u00e3o",
+        "Andrea Beltrão",
         "Eduardo Moscovis"
       ],
       "awards": "1 nomination",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/9hJqDmWGZLUCZHl0FulvkI6f6qz.jpg",
       "content_type": "tv",
-      "creator": "M\u00e1rio Teixeira",
+      "creator": "Mário Teixeira",
       "curated_imdb_rating": 7.1,
       "director": null,
       "enrichment_status": "partial",
@@ -19780,7 +19805,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": null,
-      "plot": "Quinota \u00e9 do tipo que acredita no amor a primeira vista, ainda que passe por uma grande decep\u00e7\u00e3o: apesar de se comprometer com a uni\u00e3o, Marcelo n\u00e3o quer saber de casamento, abandona a noiva e foge para a cidade grande.",
+      "plot": "Quinota é do tipo que acredita no amor a primeira vista, ainda que passe por uma grande decepção: apesar de se comprometer com a união, Marcelo não quer saber de casamento, abandona a noiva e foge para a cidade grande.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOTIwMDliMjQtNjFjNS00Y2M5LWJkMzItM2M0NmUwZTg5NWJiXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -19816,7 +19841,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": "Travessia",
-      "plot": "A young woman from Maranh\u00e3o has her life turned upside down after she is targeted by a deepfake.",
+      "plot": "A young woman from Maranhão has her life turned upside down after she is targeted by a deepfake.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZDM1MjU1ZDMtMzhmYS00Njc4LTg0OGEtMjI4Y2UyNmIyYWM4XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -19829,8 +19854,8 @@
     },
     {
       "actors": [
-        "L\u00e1zaro Ramos",
-        "Marc\u00e9lia Cartaxo",
+        "Lázaro Ramos",
+        "Marcélia Cartaxo",
         "Flavio Bauraqui"
       ],
       "awards": "27 wins & 26 nominations total",
@@ -19838,7 +19863,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.1,
-      "director": "Karim A\u00efnouz",
+      "director": "Karim Aïnouz",
       "enrichment_status": "partial",
       "genres": [
         "Biography",
@@ -19852,14 +19877,14 @@
       "metacritic": "59/100",
       "origin": "Brazilian",
       "original_title": null,
-      "plot": "Loose portrait of Jo\u00e3o Francisco dos Santos, also known as Madame Sat\u00e3, a sometime chef, transvestite, lover, father, hero and convict from Rio de Janeiro.",
+      "plot": "Loose portrait of João Francisco dos Santos, also known as Madame Satã, a sometime chef, transvestite, lover, father, hero and convict from Rio de Janeiro.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMTU3MzU3NTI1Nl5BMl5BanBnXkFtZTcwOTE3MzAwMQ@@._V1_SX300.jpg",
       "rated": "Unrated",
       "rotten_tomatoes": "60%",
       "runtime": "105 min",
-      "title": "Madame Sat\u00e3",
+      "title": "Madame Satã",
       "tmdb_id": 46993,
-      "torrent_file": "Madame_Sat\u00e3_x",
+      "torrent_file": "Madame_Satã_x",
       "trailer_key": null,
       "year": 2002
     },
@@ -19887,15 +19912,15 @@
       "imdb_votes": "134",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Orgulho e Paix\u00e3o",
-      "plot": "With characters freely inspired in the universe of the English writer Jane Austen, the series is a romantic story that takes place in the fictional locality of Vale do Caf\u00e9, in the early twentieth century.",
+      "original_title": "Orgulho e Paixão",
+      "plot": "With characters freely inspired in the universe of the English writer Jane Austen, the series is a romantic story that takes place in the fictional locality of Vale do Café, in the early twentieth century.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BYzI1Mzg1NTEtYzhjNS00MzY3LTliNDUtMTQ1NmFkODRiNDg4XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "40 min",
-      "title": "Orgulho e Paix\u00e3o",
+      "title": "Orgulho e Paixão",
       "tmdb_id": 78701,
-      "torrent_file": "Orgulho_e_Paix\u00e3o_x",
+      "torrent_file": "Orgulho_e_Paixão_x",
       "trailer_key": null,
       "year": 2018
     },
@@ -19915,22 +19940,22 @@
       "imdb_votes": null,
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Babil\u00f4nia",
+      "original_title": "Babilônia",
       "plot": null,
       "poster_url": null,
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Babil\u00f4nia",
+      "title": "Babilônia",
       "tmdb_id": 62916,
-      "torrent_file": "Babil\u00f4nia_x",
+      "torrent_file": "Babilônia_x",
       "trailer_key": null,
       "year": 2015
     },
     {
       "actors": [
-        "Carlos Alberto de N\u00f3brega",
-        "Matheus Cear\u00e1",
+        "Carlos Alberto de Nóbrega",
+        "Matheus Ceará",
         "Luna Alves"
       ],
       "awards": "15 wins & 16 nominations",
@@ -19950,14 +19975,14 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": null,
-      "plot": "A sketch featuring the tales and misadventures of passersby in a fictional public square. It has immortalized characters such as Bator\u00e9, Velha Surda, Vera Ver\u00e3o, Ultrafarma, among many others.",
+      "plot": "A sketch featuring the tales and misadventures of passersby in a fictional public square. It has immortalized characters such as Batoré, Velha Surda, Vera Verão, Ultrafarma, among many others.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BODkyYmY0MzItMjlmMS00ZmU1LTlkOGYtN2FkZDJiNmFiYjQ0XkEyXkFqcGdeQXVyMzQ4NTE1MTg@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "60 min",
-      "title": "A Pra\u00e7a \u00c9 Nossa",
+      "title": "A Praça É Nossa",
       "tmdb_id": 34352,
-      "torrent_file": "A_Pra\u00e7a_\u00c9_Nossa_x",
+      "torrent_file": "A_Praça_É_Nossa_x",
       "trailer_key": null,
       "year": 1987
     },
@@ -19970,7 +19995,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7.1,
-      "director": "Kleber Mendon\u00e7a Filho",
+      "director": "Kleber Mendonça Filho",
       "enrichment_status": "partial",
       "genres": [
         "Documentary"
@@ -20016,7 +20041,7 @@
       "imdb_votes": "5,689",
       "metacritic": "64/100",
       "origin": "Brazilian",
-      "original_title": "Syngu\u00e9 Sabour - Pierre de patience",
+      "original_title": "Syngué Sabour - Pierre de patience",
       "plot": "In a war ridden country a woman watches over the husband reduced to a vegetable state by a bullet in the neck, abandoned by Jihad companions and brothers. One day, the woman decides to say things to him she could never have done b...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNTkwMDkxNzcwOF5BMl5BanBnXkFtZTcwNDMwMTQ5OQ@@._V1_SX300.jpg",
       "rated": "R",
@@ -20030,7 +20055,7 @@
     },
     {
       "actors": [
-        "Maur\u00edcio do Valle",
+        "Maurício do Valle",
         "Odete Lara",
         "Othon Bastos"
       ],
@@ -20052,7 +20077,7 @@
       "imdb_votes": "2,584",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "O Drag\u00e3o da Maldade contra o Santo Guerreiro",
+      "original_title": "O Dragão da Maldade contra o Santo Guerreiro",
       "plot": "In this sequel to \"Black God, White Devil\", Antonio das Mortes must return back to action after killing the last of the Cangaceiros 29 years ago, when a new outlaw appears, who will eventually reveal as an idealist and mark him pr...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNzljMzllOWEtZGMwZC00OTkwLWI2ZTEtZjgzZmIzMTZhMWM4XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
@@ -20158,7 +20183,7 @@
       "imdb_votes": "8,088",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Cidade Invis\u00edvel",
+      "original_title": "Cidade Invisível",
       "plot": "After a family tragedy, a man discovers mythical creatures living among humans - and soon realizes they hold the key to his mysterious past.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMDE3ZGYyZTctY2FkOS00NmZkLTk0MzAtNmJkZTk2MGEwZTViXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "TV-MA",
@@ -20212,7 +20237,7 @@
     },
     {
       "actors": [
-        "Jos\u00e9 Dumont",
+        "José Dumont",
         "Nelson Xavier",
         "Matheus Nachtergaele"
       ],
@@ -20221,7 +20246,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 7,
-      "director": "Eliane Caff\u00e9",
+      "director": "Eliane Caffé",
       "enrichment_status": "partial",
       "genres": [
         "Drama"
@@ -20232,8 +20257,8 @@
       "imdb_votes": "854",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Narradores de Jav\u00e9",
-      "plot": "The illiterate population of the small town of Jav\u00e9 charge Ant\u00f4nio Bi\u00e1 with the mission of writing the story of the town, in an attempt to stop the construction of a hydropower dam that would destroy the village. They start rememb...",
+      "original_title": "Narradores de Javé",
+      "plot": "The illiterate population of the small town of Javé charge Antônio Biá with the mission of writing the story of the town, in an attempt to stop the construction of a hydropower dam that would destroy the village. They start rememb...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZGNlY2QwZTktZTgzOS00MDA3LTllYjUtMTYxMzY3NjAyMjYyXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -20298,7 +20323,7 @@
     },
     {
       "actors": [
-        "Ad\u00e9lio Lima",
+        "Adélio Lima",
         "Chambinho do Acordeon",
         "Land Vieira"
       ],
@@ -20374,7 +20399,7 @@
     },
     {
       "actors": [
-        "H\u00e9lio Jos\u00e9 Muniz",
+        "Hélio José Muniz",
         "Alexandre Garnize"
       ],
       "awards": "2 wins",
@@ -20393,7 +20418,7 @@
       "imdb_votes": "74",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "O Rap do Pequeno Pr\u00edncipe Contra as Almas Sebosas",
+      "original_title": "O Rap do Pequeno Príncipe Contra as Almas Sebosas",
       "plot": "Two young men coming from the same social background - the poor outskirts of Recife, one of the biggest cities in Brazil - become two opposite kind of citizens. One is a dangerous hit man, the other, a peaceful musician.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNWFjYWZmYWYtYjg4NC00MGI5LWE5YjUtNjQ3NjYxNjhjMTg3XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
@@ -20408,8 +20433,8 @@
     {
       "actors": [
         "Sonia Braga",
-        "Jos\u00e9 Wilker",
-        "Mauro Mendon\u00e7a"
+        "José Wilker",
+        "Mauro Mendonça"
       ],
       "awards": "Nominated for 1 BAFTA Award3 wins & 4 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/7XCcDFRa06ZTvujXIPUyC8L70re.jpg",
@@ -20481,15 +20506,15 @@
       "imdb_votes": "124",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Haja Cora\u00e7\u00e3o",
+      "original_title": "Haja Coração",
       "plot": "The hardworking Di Marino and the rich Abdala families have been at war for years, but things are shaken when rumours spread that the Abdalas were responsible for the death of the Di Marino patriarch.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNDVmMDUwNTItNjMwNS00MjM4LWJkNWEtMTAxNGI5MzgyN2Q2XkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "45 min",
-      "title": "Haja Cora\u00e7\u00e3o",
+      "title": "Haja Coração",
       "tmdb_id": 86200,
-      "torrent_file": "Haja_Cora\u00e7\u00e3o_x",
+      "torrent_file": "Haja_Coração_x",
       "trailer_key": null,
       "year": 2016
     },
@@ -20530,7 +20555,7 @@
     {
       "actors": [
         "Gabriel Braga Nunes",
-        "Eriberto Le\u00e3o",
+        "Eriberto Leão",
         "Paolla Oliveira"
       ],
       "awards": "9 wins & 28 nominations",
@@ -20551,28 +20576,28 @@
       "imdb_votes": "203",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Insensato Cora\u00e7\u00e3o",
+      "original_title": "Insensato Coração",
       "plot": "The story of a honest, incorrupt airplane pilot and his ambitious, unscrupulous, and ill-disposed older brother.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BODk5YWUwMmEtNTA0YS00ZjYxLThlNjAtY2NiMzkzNzI4MWNiXkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Insensato Cora\u00e7\u00e3o",
+      "title": "Insensato Coração",
       "tmdb_id": 40811,
-      "torrent_file": "Insensato_Cora\u00e7\u00e3o_x",
+      "torrent_file": "Insensato_Coração_x",
       "trailer_key": null,
       "year": 2011
     },
     {
       "actors": [
         "Luisa Arraes",
-        "Andrea Beltr\u00e3o",
+        "Andrea Beltrão",
         "Eduardo Moscovis"
       ],
       "awards": "1 nomination",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/9hJqDmWGZLUCZHl0FulvkI6f6qz.jpg",
       "content_type": "tv",
-      "creator": "M\u00e1rio Teixeira",
+      "creator": "Mário Teixeira",
       "curated_imdb_rating": 7,
       "director": null,
       "enrichment_status": "partial",
@@ -20587,7 +20612,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": null,
-      "plot": "Quinota \u00e9 do tipo que acredita no amor a primeira vista, ainda que passe por uma grande decep\u00e7\u00e3o: apesar de se comprometer com a uni\u00e3o, Marcelo n\u00e3o quer saber de casamento, abandona a noiva e foge para a cidade grande.",
+      "plot": "Quinota é do tipo que acredita no amor a primeira vista, ainda que passe por uma grande decepção: apesar de se comprometer com a união, Marcelo não quer saber de casamento, abandona a noiva e foge para a cidade grande.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOTIwMDliMjQtNjFjNS00Y2M5LWJkMzItM2M0NmUwZTg5NWJiXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -20601,7 +20626,7 @@
     {
       "actors": [
         "Grande Otelo",
-        "Paulo Jos\u00e9",
+        "Paulo José",
         "Jardel Filho"
       ],
       "awards": "5 wins total",
@@ -20621,15 +20646,15 @@
       "imdb_votes": "2,222",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Macuna\u00edma",
+      "original_title": "Macunaíma",
       "plot": "Our story begins with Macunaima's miraculous birth to an old woman in a tiny jungle settlement. Born fully grown, he discovers his life's purpose which leads him and his family and followers on a journey to the Big City. More mira...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZTM0YWQ0OGQtZjU0YS00YjFhLTk4MDUtZDg1Zjk4MTQwM2MxXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "Not Rated",
       "rotten_tomatoes": null,
       "runtime": "95 min",
-      "title": "Macuna\u00edma",
+      "title": "Macunaíma",
       "tmdb_id": 68173,
-      "torrent_file": "Macuna\u00edma_x",
+      "torrent_file": "Macunaíma_x",
       "trailer_key": null,
       "year": 1969
     },
@@ -20637,7 +20662,7 @@
       "actors": [
         "Fausto Silva",
         "Angela Sousa",
-        "Cl\u00e1udia Raia"
+        "Cláudia Raia"
       ],
       "awards": null,
       "backdrop_url": null,
@@ -20661,9 +20686,9 @@
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Doming\u00e3o do Faust\u00e3o",
+      "title": "Domingão do Faustão",
       "tmdb_id": 17107,
-      "torrent_file": "Doming\u00e3o_do_Faust\u00e3o_x",
+      "torrent_file": "Domingão_do_Faustão_x",
       "trailer_key": null,
       "year": 1989
     },
@@ -20696,9 +20721,9 @@
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "90 min",
-      "title": "Mais Voc\u00ea",
+      "title": "Mais Você",
       "tmdb_id": 45768,
-      "torrent_file": "Mais_Voc\u00ea_x",
+      "torrent_file": "Mais_Você_x",
       "trailer_key": null,
       "year": 1999
     },
@@ -20726,23 +20751,23 @@
       "imdb_votes": "67",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Fam\u00edlia \u00e9 Tudo",
+      "original_title": "Família é Tudo",
       "plot": "Five half-siblings reluctantly reunite to run their grandmother's company for a year after she goes missing in order to inherit her fortune, but must outmaneuver their greedy cousin Hans who will stop at nothing to claim it.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNjhhYjg0NTgtOGFmNS00NTY3LWJmMGEtOTUwMTM5ZTkyYTg4XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Fam\u00edlia \u00e9 Tudo",
+      "title": "Família é Tudo",
       "tmdb_id": 222289,
-      "torrent_file": "Fam\u00edlia_\u00e9_Tudo_x",
+      "torrent_file": "Família_é_Tudo_x",
       "trailer_key": "sIW84WbMzbA",
       "year": 2024
     },
     {
       "actors": [
-        "\u00c2ngelo Ant\u00f4nio",
+        "Ângelo Antônio",
         "Dira Paes",
-        "M\u00e1rcio Kieling"
+        "Márcio Kieling"
       ],
       "awards": "31 wins & 38 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/fzGvBBXOKmSCMTvaUdRkrf9A5kk.jpg",
@@ -20777,13 +20802,13 @@
     {
       "actors": [
         "Marcos Reis",
-        "D\u00e9bora Rebecchi",
+        "Débora Rebecchi",
         "Guilherme Nasraui"
       ],
       "awards": "1 win & 11 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/pOX2W0LQUpVabijGD6rhaHmFXyQ.jpg",
       "content_type": "tv",
-      "creator": "Daniel Adjafre, Mar\u00edlia Garcia",
+      "creator": "Daniel Adjafre, Marília Garcia",
       "curated_imdb_rating": 6.9,
       "director": null,
       "enrichment_status": "partial",
@@ -20813,7 +20838,7 @@
     {
       "actors": [
         "Marina Ruy Barbosa",
-        "R\u00f4mulo Estrela",
+        "Rômulo Estrela",
         "Johnny Massaro"
       ],
       "awards": "1 win & 4 nominations",
@@ -20909,7 +20934,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": null,
-      "plot": "The Gusm\u00e3o company develops a secret formula that becomes the target of greed. Pat and Moa are hired to find the formula, but they must investigate who is behind a mysterious crime.",
+      "plot": "The Gusmão company develops a secret formula that becomes the target of greed. Pat and Moa are hired to find the formula, but they must investigate who is behind a mysterious crime.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMDZhNmI2NzctMDExOC00YTg2LTg5NzQtZWVjNWZkYTIxMTM0XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -21053,7 +21078,7 @@
     },
     {
       "actors": [
-        "Isab\u00e9l Zuaa",
+        "Isabél Zuaa",
         "Marjorie Estiano",
         "Miguel Lobo"
       ],
@@ -21075,7 +21100,7 @@
       "metacritic": "73/100",
       "origin": "Brazilian",
       "original_title": "As Boas Maneiras",
-      "plot": "Clara, a lonely nurse from the outskirts of S\u00e3o Paulo, is hired by mysterious and wealthy Ana as the nanny for her unborn child. The two women develop a strong bond, but a fateful night changes their plans.",
+      "plot": "Clara, a lonely nurse from the outskirts of São Paulo, is hired by mysterious and wealthy Ana as the nanny for her unborn child. The two women develop a strong bond, but a fateful night changes their plans.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BYmY0ZTZlYTktOGJjOS00M2NlLWE4OTYtNDBhZjY3NjY4MGJkXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": "PG",
       "rotten_tomatoes": "96%",
@@ -21095,7 +21120,7 @@
       "actors": [
         "Bruno Gagliasso",
         "Marina Ruy Barbosa",
-        "L\u00edlia Cabral"
+        "Lília Cabral"
       ],
       "awards": null,
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/yNNFFAVtfrMO8nGhi1AIuMDrw4b.jpg",
@@ -21119,15 +21144,15 @@
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "60 min",
-      "title": "O S\u00e9timo Guardi\u00e3o",
+      "title": "O Sétimo Guardião",
       "tmdb_id": 83379,
-      "torrent_file": "O_S\u00e9timo_Guardi\u00e3o_x",
+      "torrent_file": "O_Sétimo_Guardião_x",
       "trailer_key": null,
       "year": 2018
     },
     {
       "actors": [
-        "Juliano Cazarr\u00e9",
+        "Juliano Cazarré",
         "Maeve Jinkings",
         "Josinaldo Alves"
       ],
@@ -21197,7 +21222,7 @@
       "actors": [
         "Serginho Groisman",
         "Marco Luque",
-        "Laura M\u00fcller"
+        "Laura Müller"
       ],
       "awards": null,
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/xk4XYFRkNFgu8PSe3slWvXQv0Zr.jpg",
@@ -21230,8 +21255,8 @@
     },
     {
       "actors": [
-        "Ardu\u00edno Colassanti",
-        "Ana Maria Magalh\u00e3es",
+        "Arduíno Colassanti",
+        "Ana Maria Magalhães",
         "Eduardo Imbassahy Filho"
       ],
       "awards": "1 win & 1 nomination",
@@ -21251,8 +21276,8 @@
       "imdb_votes": "1,156",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Como Era Gostoso o Meu Franc\u00eas",
-      "plot": "In 1594 in Brazil, the Tupinamb\u00e1s Indians are friends of the French and their enemies are the Tupiniquins, friends of the Portuguese. A Frenchman (Ardu\u00edno Colassanti) is captured by the Tupinamb\u00e1s and, in spite of his trial to con...",
+      "original_title": "Como Era Gostoso o Meu Francês",
+      "plot": "In 1594 in Brazil, the Tupinambás Indians are friends of the French and their enemies are the Tupiniquins, friends of the Portuguese. A Frenchman (Arduíno Colassanti) is captured by the Tupinambás and, in spite of his trial to con...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMjA2NDQ0ODI4Nl5BMl5BanBnXkFtZTcwODMzODU0MQ@@._V1_SX300.jpg",
       "rated": "Not Rated",
       "rotten_tomatoes": null,
@@ -21285,23 +21310,23 @@
       "imdb_votes": "58",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Fuzu\u00ea",
+      "original_title": "Fuzuê",
       "plot": null,
       "poster_url": "https://m.media-amazon.com/images/M/MV5BYTc1ZGZkZDktZDc0YS00NzU3LTk1NGYtMGY4NWM3MTQ3MjJjXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Fuzu\u00ea",
+      "title": "Fuzuê",
       "tmdb_id": 213026,
-      "torrent_file": "Fuzu\u00ea_x",
+      "torrent_file": "Fuzuê_x",
       "trailer_key": null,
       "year": 2023
     },
     {
       "actors": [
-        "Cl\u00e1udia Abreu",
+        "Cláudia Abreu",
         "Reynaldo Gianecchini",
-        "Jos\u00e9 Mayer"
+        "José Mayer"
       ],
       "awards": "1 win & 4 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/iAYIs1Ada6jzmzPYDVY7wYnSpMZ.jpg",
@@ -21354,8 +21379,8 @@
       "imdb_votes": "3,349",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Minha M\u00e3e \u00e9 uma Pe\u00e7a 3: O Filme",
-      "plot": "Dona Herm\u00ednia now has to deal with her gay son getting married and her daughter being pregnant.",
+      "original_title": "Minha Mãe é uma Peça 3: O Filme",
+      "plot": "Dona Hermínia now has to deal with her gay son getting married and her daughter being pregnant.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOTRiMDgxY2EtOTk5OS00MThjLTlkNWYtMGFlMmY1MWU1NGE4XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -21370,7 +21395,7 @@
       "actors": [
         "Edvana Carvalho",
         "Leo Jaime",
-        "J\u00e9ssica Lobo"
+        "Jéssica Lobo"
       ],
       "awards": "10 wins & 61 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/7Vpk75SxS86Ai7o2iilJUz5rx4x.jpg",
@@ -21390,15 +21415,15 @@
       "imdb_votes": "708",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Malha\u00e7\u00e3o",
+      "original_title": "Malhação",
       "plot": "Long-running soap that depicts the lives of a group of teens as they struggle in the midst of life choices, love, ambition, disappointment, and family and relationship issues.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BY2UyMjE5NzctNzU0ZS00NGZmLTk5NzgtNGNiNWYzNTE1ZTliXkEyXkFqcGdeQXVyNjI0NDkwNjE@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "30 min",
-      "title": "Malha\u00e7\u00e3o",
+      "title": "Malhação",
       "tmdb_id": 14424,
-      "torrent_file": "Malha\u00e7\u00e3o_x",
+      "torrent_file": "Malhação_x",
       "trailer_key": null,
       "year": 1995
     },
@@ -21468,9 +21493,9 @@
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": "120 min",
-      "title": "Caldeir\u00e3o do Huck",
+      "title": "Caldeirão do Huck",
       "tmdb_id": 123045,
-      "torrent_file": "Caldeir\u00e3o_do_Huck_x",
+      "torrent_file": "Caldeirão_do_Huck_x",
       "trailer_key": null,
       "year": 2000
     },
@@ -21536,7 +21561,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 6.7,
-      "director": "Andr\u00e9 Pellenz",
+      "director": "André Pellenz",
       "enrichment_status": "ok",
       "genres": [
         "Comedy"
@@ -21547,8 +21572,8 @@
       "imdb_votes": "6,148",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Minha M\u00e3e \u00e9 uma Pe\u00e7a: O Filme",
-      "plot": "After another spat with her kids, Dona Herm\u00ednia decides to take some time off from them and hides away in her aunt's house, where she reminisces about her kids in an age when they still needed her.",
+      "original_title": "Minha Mãe é uma Peça: O Filme",
+      "plot": "After another spat with her kids, Dona Hermínia decides to take some time off from them and hides away in her aunt's house, where she reminisces about her kids in an age when they still needed her.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BYmVjZTQzNGUtMzZjYi00ZGY2LTg1ZmItNDIwYjY0YjcwNDJjXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -21583,15 +21608,15 @@
       "imdb_votes": "150",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Vai na F\u00e9",
+      "original_title": "Vai na Fé",
       "plot": "The story of Sol, a woman of faith, dedicated to her family, who finds herself in debt. One day an unimaginable opportunity to earn money arises. She is invited by an old friend to work and the invitation causes great confusion.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BODE4OWZiMzAtYzE5ZS00M2Q0LTk1YjctNGRhZDkyODJhNWYzXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Vai na F\u00e9",
+      "title": "Vai na Fé",
       "tmdb_id": 209117,
-      "torrent_file": "Vai_na_F\u00e9_x",
+      "torrent_file": "Vai_na_Fé_x",
       "trailer_key": null,
       "year": 2023
     },
@@ -21606,7 +21631,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 6.7,
-      "director": "C\u00e9sar Rodrigues",
+      "director": "César Rodrigues",
       "enrichment_status": "partial",
       "genres": [
         "Comedy"
@@ -21617,8 +21642,8 @@
       "imdb_votes": "3,474",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "Minha M\u00e3e \u00e9 uma Pe\u00e7a 2: O Filme",
-      "plot": "After triumphing with her new TV show, Dona Herm\u00ednia must deal with the problems of her adult offspring as she realizes that they are leaving home. She must face the struggles of being a grandmother and welcoming her sister back t...",
+      "original_title": "Minha Mãe é uma Peça 2: O Filme",
+      "plot": "After triumphing with her new TV show, Dona Hermínia must deal with the problems of her adult offspring as she realizes that they are leaving home. She must face the struggles of being a grandmother and welcoming her sister back t...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BODkwNTUzOTktOGE4OS00OGFhLThmMzEtNTM4ZjBlZjRjYzI2XkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -21631,7 +21656,7 @@
     },
     {
       "actors": [
-        "Zez\u00e9 Motta",
+        "Zezé Motta",
         "Walmor Chagas",
         "Altair Lima"
       ],
@@ -21653,7 +21678,7 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": "Xica da Silva",
-      "plot": "In18th-century Minas Gerais, the Portuguese mined diamonds and gold. Jo\u00e3o Fernandes de Oliveira arrives from Lisbon with the Crown's exclusive contract for mining diamonds. He quickly asserts control, letting the attendant and oth...",
+      "plot": "In18th-century Minas Gerais, the Portuguese mined diamonds and gold. João Fernandes de Oliveira arrives from Lisbon with the Crown's exclusive contract for mining diamonds. He quickly asserts control, letting the attendant and oth...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZmIzNmU1MjItMDQ2My00YjlhLWJjMjMtYzYyODU5MDg4OWM0XkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -21764,9 +21789,9 @@
     },
     {
       "actors": [
-        "Ben\u00e9 Batista",
+        "Bené Batista",
         "Jonas Bloch",
-        "Z\u00f3zimo Bulbul"
+        "Zózimo Bulbul"
       ],
       "awards": "1 nomination",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/dWGmDpUbw74pQC0v180NcQ8WlmG.jpg",
@@ -21820,7 +21845,7 @@
       "imdb_votes": "163",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "\u4ed9\u53f0\u6709\u6811",
+      "original_title": "仙台有树",
       "plot": "The leader of the Xishan Sect seals a demonic spring to protect people, but is attacked. Her disciple learns the truth, helps her reincarnate, and falls in love with her new self as they defeat the demonic cultivator seeking the s...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOTIxYjFmMjAtOTRlYy00ZTg4LWJlNjctMjJhNDVjNTI0YjZkXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
@@ -21850,8 +21875,8 @@
     },
     {
       "actors": [
-        "Paulo Andr\u00e9",
-        "S\u00edlvia Louren\u00e7o",
+        "Paulo André",
+        "Sílvia Lourenço",
         "Jean-Claude Bernardet"
       ],
       "awards": "4 wins & 2 nominations",
@@ -21859,7 +21884,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 6.5,
-      "director": "Cao Guimar\u00e3es, Marcelo Gomes",
+      "director": "Cao Guimarães, Marcelo Gomes",
       "enrichment_status": "partial",
       "genres": [
         "Drama"
@@ -21885,7 +21910,7 @@
     {
       "actors": [
         "Daniel de Oliveira",
-        "Juliano Cazarr\u00e9",
+        "Juliano Cazarré",
         "Jackson Antunes"
       ],
       "awards": "32 wins & 14 nominations",
@@ -21918,7 +21943,7 @@
     },
     {
       "actors": [
-        "Gl\u00f3ria Pires",
+        "Glória Pires",
         "Paulo Miklos",
         "Alessandra Colassanti"
       ],
@@ -21940,8 +21965,8 @@
       "imdb_votes": "627",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "\u00c9 Proibido Fumar",
-      "plot": "In S\u00e3o Paulo, the lonely forty and something year-old guitar teacher Baby lives a tedious life in a low middle-class apartment and is addicted in her only companion, the cigarettes. She has a constant friction with her two sisters...",
+      "original_title": "É Proibido Fumar",
+      "plot": "In São Paulo, the lonely forty and something year-old guitar teacher Baby lives a tedious life in a low middle-class apartment and is addicted in her only companion, the cigarettes. She has a constant friction with her two sisters...",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOTI4MzY2ODgtMmI3MC00NDI2LWEyMmEtODRhZTE4MzliNTQxXkEyXkFqcGdeQXVyMjY2NDA2MzM@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
@@ -21993,7 +22018,7 @@
       "awards": "1 win & 6 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/jvEs27KAcm1rWbC3WhgKowz5fsw.jpg",
       "content_type": "tv",
-      "creator": "M\u00e1rio Teixeira",
+      "creator": "Mário Teixeira",
       "curated_imdb_rating": 6.5,
       "director": null,
       "enrichment_status": "partial",
@@ -22008,15 +22033,15 @@
       "imdb_votes": "114",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "O Tempo N\u00e3o Para",
-      "plot": "A family and household are frozen after a shipwreck in 1886. They wake up in today's S\u00e3o Paulo, and must deal with temporal and cultural shocks.",
+      "original_title": "O Tempo Não Para",
+      "plot": "A family and household are frozen after a shipwreck in 1886. They wake up in today's São Paulo, and must deal with temporal and cultural shocks.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BOWQ2Mjk4MTYtZjY2My00OTkzLTk2N2ItYWUwYzg4ZTM1M2MyXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "O Tempo N\u00e3o Para",
+      "title": "O Tempo Não Para",
       "tmdb_id": 81372,
-      "torrent_file": "O_Tempo_N\u00e3o_Para_x",
+      "torrent_file": "O_Tempo_Não_Para_x",
       "trailer_key": null,
       "year": 2018
     },
@@ -22027,7 +22052,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 6.5,
-      "director": "Cl\u00e1udio Assis",
+      "director": "Cláudio Assis",
       "enrichment_status": "failed",
       "genres": [],
       "id": "the-bog-of-beasts-2006-movie",
@@ -22050,7 +22075,7 @@
     },
     {
       "actors": [
-        "Marc\u00e9lia Cartaxo",
+        "Marcélia Cartaxo",
         "Maya de Paiva",
         "Clarice Fantini"
       ],
@@ -22059,7 +22084,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 6.5,
-      "director": "Cl\u00e1udio Assis",
+      "director": "Cláudio Assis",
       "enrichment_status": "partial",
       "genres": [
         "Drama"
@@ -22122,14 +22147,14 @@
       "actors": [
         "Alice Braga",
         "Wagner Moura",
-        "L\u00e1zaro Ramos"
+        "Lázaro Ramos"
       ],
       "awards": "28 wins & 34 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/3he9tOMisKv5tEpZMl2sIyaVtVy.jpg",
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 6.5,
-      "director": "S\u00e9rgio Machado",
+      "director": "Sérgio Machado",
       "enrichment_status": "ok",
       "genres": [
         "Drama"
@@ -22171,7 +22196,7 @@
     {
       "actors": [
         "Mateus Almada",
-        "Maur\u00edcio Barcellos",
+        "Maurício Barcellos",
         "Elisa Brites"
       ],
       "awards": "3 wins & 5 nominations",
@@ -22247,7 +22272,7 @@
       "actors": [
         "Fausto Silva",
         "Anne Lottermann",
-        "Jo\u00e3o Guilherme Silva"
+        "João Guilherme Silva"
       ],
       "awards": null,
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/jG2DObytE3A27GWIg0umr3QPpWw.jpg",
@@ -22272,9 +22297,9 @@
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Faust\u00e3o na Band",
+      "title": "Faustão na Band",
       "tmdb_id": 138615,
-      "torrent_file": "Faust\u00e3o_na_Band_x",
+      "torrent_file": "Faustão_na_Band_x",
       "trailer_key": null,
       "year": 2022
     },
@@ -22282,14 +22307,14 @@
       "actors": [
         "Camila Amado",
         "Luisa Arraes",
-        "Milton Gon\u00e7alves"
+        "Milton Gonçalves"
       ],
       "awards": "6 wins & 6 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/gfOyMPoczUZ0Gx8RBnwj05QQXfh.jpg",
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 6.3,
-      "director": "Karim A\u00efnouz",
+      "director": "Karim Aïnouz",
       "enrichment_status": "partial",
       "genres": [
         "Drama"
@@ -22314,8 +22339,8 @@
     },
     {
       "actors": [
-        "Maur\u00edcio do Valle",
-        "Jece Valad\u00e3o",
+        "Maurício do Valle",
+        "Jece Valadão",
         "Antonio Pitanga"
       ],
       "awards": "1 nomination",
@@ -22359,7 +22384,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 6.3,
-      "director": "Karim A\u00efnouz",
+      "director": "Karim Aïnouz",
       "enrichment_status": "ok",
       "genres": [
         "Drama",
@@ -22518,7 +22543,7 @@
     },
     {
       "actors": [
-        "Julio Adri\u00e3o",
+        "Julio Adrião",
         "Regina Bastos",
         "Raquel Bonfante"
       ],
@@ -22677,7 +22702,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 6.2,
-      "director": "Karim A\u00efnouz",
+      "director": "Karim Aïnouz",
       "enrichment_status": "partial",
       "genres": [
         "Drama"
@@ -22688,7 +22713,7 @@
       "imdb_votes": "2,162",
       "metacritic": "62/100",
       "origin": "Brazilian",
-      "original_title": "O C\u00e9u de Suely",
+      "original_title": "O Céu de Suely",
       "plot": "In order to get funds, a young woman living in the Northeast of Brazil decides to raffle her own body.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMDA4ZmM4MjgtMmI2OS00MzBlLWE5YTEtMWUwZDYyNmYxNzVmXkEyXkFqcGdeQXVyNDc2MTA2NDg@._V1_SX300.jpg",
       "rated": "Not Rated",
@@ -22725,7 +22750,7 @@
       "awards": null,
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/yH9dFBELD5SqsibdnSBGp6ERftS.jpg",
       "content_type": "tv",
-      "creator": "Cl\u00e1udio Torres",
+      "creator": "Cláudio Torres",
       "curated_imdb_rating": 6.2,
       "director": null,
       "enrichment_status": "partial",
@@ -22801,14 +22826,14 @@
     },
     {
       "actors": [
-        "F\u00e1tima Bernardes",
-        "Lair Renn\u00f3",
+        "Fátima Bernardes",
+        "Lair Rennó",
         "Marcos Veras"
       ],
       "awards": null,
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/jjjpfle7xOazz39Bb2rDctvhza0.jpg",
       "content_type": "tv",
-      "creator": "F\u00e1tima Bernardes",
+      "creator": "Fátima Bernardes",
       "curated_imdb_rating": 6.2,
       "director": null,
       "enrichment_status": "partial",
@@ -22824,14 +22849,14 @@
       "metacritic": null,
       "origin": "Brazilian",
       "original_title": null,
-      "plot": "Patr\u00edcia Poeta mixes information, poetry, behavior, humor and music in an informal tone that privileges the daily morning conversation.",
+      "plot": "Patrícia Poeta mixes information, poetry, behavior, humor and music in an informal tone that privileges the daily morning conversation.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BZTE5MGY1ZjYtYjllOC00MjZkLWIwODctMjhlNjU1MmRlMzZkXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Encontro com F\u00e1tima Bernardes",
+      "title": "Encontro com Fátima Bernardes",
       "tmdb_id": 111479,
-      "torrent_file": "Encontro_com_F\u00e1tima_Bernardes_x",
+      "torrent_file": "Encontro_com_Fátima_Bernardes_x",
       "trailer_key": null,
       "year": 2012
     },
@@ -22874,9 +22899,9 @@
     },
     {
       "actors": [
-        "Regina Cas\u00e9",
+        "Regina Casé",
         "Lima Duarte",
-        "St\u00eanio Garcia"
+        "Stênio Garcia"
       ],
       "awards": "27 wins & 12 nominations",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/v1mAmK4OM8uM2nYTnfKfGiUaj5B.jpg",
@@ -22988,9 +23013,9 @@
       "rated": null,
       "rotten_tomatoes": null,
       "runtime": null,
-      "title": "Once Upon a Time Was I, Ver\u00f4nica",
+      "title": "Once Upon a Time Was I, Verônica",
       "tmdb_id": null,
-      "torrent_file": "Once_Upon_a_Time_Was_I,_Ver\u00f4nica_x",
+      "torrent_file": "Once_Upon_a_Time_Was_I,_Verônica_x",
       "trailer_key": null,
       "year": 2012
     },
@@ -22998,7 +23023,7 @@
       "actors": [
         "Hermila Guedes",
         "W.J. Solha",
-        "Jo\u00e3o Miguel"
+        "João Miguel"
       ],
       "awards": "10 wins & 5 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/yRyjicao4PHvUjd2UcxW8HmZ6rT.jpg",
@@ -23016,7 +23041,7 @@
       "imdb_votes": "784",
       "metacritic": "73/100",
       "origin": "Brazilian",
-      "original_title": "Era uma vez eu, Ver\u00f4nica",
+      "original_title": "Era uma vez eu, Verônica",
       "plot": "A woman tries to make a life for herself in a violent Brazilian city.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMjA2MjYwOTMwMV5BMl5BanBnXkFtZTgwMDE1NTYwMjE@._V1_QL75_UY562_CR8,0,380,562_.jpg",
       "rated": "Unrated",
@@ -23031,7 +23056,7 @@
     {
       "actors": [
         "Carlos Alberto Riccelli",
-        "C\u00e1ssia Kis",
+        "Cássia Kis",
         "Ney Latorraca"
       ],
       "awards": "1 win",
@@ -23096,7 +23121,7 @@
     },
     {
       "actors": [
-        "Britto J\u00fanior",
+        "Britto Júnior",
         "Marcos Mion",
         "Roberto Justus"
       ],
@@ -23168,7 +23193,7 @@
     {
       "actors": [
         "Willem Dafoe",
-        "Maria Fernanda C\u00e2ndido",
+        "Maria Fernanda Cândido",
         "Reynaldo Gianecchini"
       ],
       "awards": "1 win & 8 nominations",
@@ -23221,7 +23246,7 @@
       "imdb_votes": "3,018",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "At\u00e9 que a Sorte nos Separe",
+      "original_title": "Até que a Sorte nos Separe",
       "plot": "Tino and Jane, a couple from Rio, suddenly become millionaires after winning the lottery. 16 years later they have two children, but Tino is trying to hide from Jane that they face bankruptcy.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BMTk1Mjc2OTk0M15BMl5BanBnXkFtZTgwMzEzNTE4MTE@._V1_SX300.jpg",
       "rated": null,
@@ -23353,9 +23378,9 @@
     },
     {
       "actors": [
-        "A\u00edlton Carmo",
-        "J\u00e9ssica Barbosa",
-        "Fl\u00e1vio Rocha"
+        "Aílton Carmo",
+        "Jéssica Barbosa",
+        "Flávio Rocha"
       ],
       "awards": "11 wins & 22 nominations total",
       "backdrop_url": "https://image.tmdb.org/t/p/w1280/vBxyAfGXC5k05vMSJwwMTfW6iU6.jpg",
@@ -23389,7 +23414,7 @@
     },
     {
       "actors": [
-        "Ingrid Guimar\u00e3es",
+        "Ingrid Guimarães",
         "Maria Paula",
         "Bruno Garcia"
       ],
@@ -23424,7 +23449,7 @@
     {
       "actors": [
         "Rui Ricardo Diaz",
-        "Gl\u00f3ria Pires",
+        "Glória Pires",
         "Juliana Baroni"
       ],
       "awards": "4 wins & 8 nominations",
@@ -23432,7 +23457,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 5.5,
-      "director": "F\u00e1bio Barreto, Marcelo Santiago",
+      "director": "Fábio Barreto, Marcelo Santiago",
       "enrichment_status": "partial",
       "genres": [
         "Biography",
@@ -23468,7 +23493,7 @@
       "content_type": "movie",
       "creator": null,
       "curated_imdb_rating": 5.1,
-      "director": "Cl\u00e1udio Torres",
+      "director": "Cláudio Torres",
       "enrichment_status": "partial",
       "genres": [
         "Comedy",
@@ -23480,7 +23505,7 @@
       "imdb_votes": "3,976",
       "metacritic": null,
       "origin": "Brazilian",
-      "original_title": "A Mulher Invis\u00edvel",
+      "original_title": "A Mulher Invisível",
       "plot": "A romantic comedy in which a 35-year-old man is abandoned by his wife and falls in love with his neighbor, a perfect, ideal woman. The only problem: she doesn't exist.",
       "poster_url": "https://m.media-amazon.com/images/M/MV5BNDdiNmZhMDYtM2MyOS00MWI2LTkxZDUtYzY0ZDNiN2ZjZWNhXkEyXkFqcGc@._V1_SX300.jpg",
       "rated": null,
