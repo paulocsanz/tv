@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { SESSION_COOKIE } from "@/lib/session";
+import { absoluteUrl } from "@/lib/absolute-url";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8080";
 
@@ -26,7 +27,7 @@ export async function POST() {
 // so without this GET handler the browser keeps resending the dead cookie
 // and proxy.ts bounces it between "/" and "/login" forever.
 export async function GET(request: Request) {
-  const response = NextResponse.redirect(new URL("/login", request.url));
+  const response = NextResponse.redirect(absoluteUrl(request, "/login"));
   response.cookies.delete(SESSION_COOKIE);
   return response;
 }

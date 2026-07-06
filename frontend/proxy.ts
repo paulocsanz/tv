@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { SESSION_COOKIE } from "@/lib/session";
+import { absoluteUrl } from "@/lib/absolute-url";
 
 const PUBLIC_PATHS = ["/login"];
 
@@ -12,13 +13,13 @@ export function proxy(request: NextRequest) {
   const hasSession = request.cookies.has(SESSION_COOKIE);
 
   if (!hasSession && !isPublic) {
-    const loginUrl = new URL("/login", request.url);
+    const loginUrl = absoluteUrl(request, "/login");
     loginUrl.searchParams.set("next", pathname);
     return NextResponse.redirect(loginUrl);
   }
 
   if (hasSession && pathname === "/login") {
-    return NextResponse.redirect(new URL("/", request.url));
+    return NextResponse.redirect(absoluteUrl(request, "/"));
   }
 
   return NextResponse.next();
