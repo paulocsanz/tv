@@ -34,7 +34,7 @@ export function VideoPlayer({ id, s3Keys }: { id: string; s3Keys: string[] }) {
         </div>
       )}
       <div className="relative w-full overflow-hidden rounded-lg bg-black">
-        <video key={streamUrl} className="aspect-video w-full" controls crossOrigin="anonymous">
+        <video key={streamUrl} className="aspect-video w-full" controls>
           <source src={streamUrl} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
