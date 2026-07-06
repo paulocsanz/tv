@@ -41,7 +41,7 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
           clientRef.current = new WebTorrent({
             maxConnections: 55,
             utp: false,
-          });
+          } as WebTorrent.Options);
         }
 
         const client = clientRef.current;
@@ -56,8 +56,10 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
         const torrentBlob = await torrentResponse.blob();
         const torrentArrayBuffer = await torrentBlob.arrayBuffer();
 
-        // Add torrent to client
-        client.add(new Uint8Array(torrentArrayBuffer), (torrent) => {
+        // Add torrent to client. The type declarations want a Node Buffer,
+        // but Buffer isn't polyfilled in this browser bundle and isn't
+        // needed - webtorrent's actual runtime accepts a plain Uint8Array.
+        client.add(new Uint8Array(torrentArrayBuffer) as unknown as Buffer, (torrent) => {
           // Find the first video file in the torrent
           const videoFile = torrent.files.find((file) =>
             /\.(mp4|webm|avi|mov)$/i.test(file.name)
@@ -79,7 +81,7 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
 
           stream.on("end", () => {
             // Create blob from all chunks and set as video source
-            const blob = new Blob(chunks, { type: "video/mp4" });
+            const blob = new Blob(chunks as BlobPart[], { type: "video/mp4" });
             const blobUrl = URL.createObjectURL(blob);
             if (videoRef.current) {
               videoRef.current.src = blobUrl;
