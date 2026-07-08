@@ -9,13 +9,17 @@ use axum::{
 use serde::{Deserialize, Serialize};
 use sqlx::postgres::PgPoolOptions;
 use sqlx::PgPool;
+use std::collections::HashMap;
 use std::sync::Arc;
 use std::path::PathBuf;
 use std::time::Duration;
 use tower_http::cors::{Any, CorsLayer};
 use tower_http::trace::TraceLayer;
 use tv_backend::auth::{self, UserRecord};
-use tv_backend::models::{ContentType, EnrichedCache, EnrichedItem};
+use tv_backend::models::{
+    CollectionParts, ContentType, EnrichedCache, EnrichedItem, EpisodeMetadata, RelatedTitle,
+    SimilarEntry,
+};
 use tv_backend::progress;
 
 struct S3Config {
@@ -27,6 +31,12 @@ struct AppState {
     items: Vec<EnrichedItem>,
     db: PgPool,
     s3: Option<S3Config>,
+    /// item id -> ranked TMDB recommendations, in or out of the catalog.
+    /// See backfill-similar.js.
+    similar: HashMap<String, Vec<SimilarEntry>>,
+    /// TMDB collection id (as a string key) -> that franchise's full movie
+    /// list, in or out of the catalog. See backfill-collection-parts.js.
+    collection_parts: HashMap<String, CollectionParts>,
 }
 
 async fn connect_db(database_url: &str) -> PgPool {
@@ -78,6 +88,152 @@ fn effective_rating(item: &EnrichedItem) -> f64 {
     item.imdb_rating.unwrap_or(item.curated_imdb_rating)
 }
 
+#[derive(Debug, Deserialize)]
+struct CollectionBackfill {
+    collection_id: i64,
+    collection_name: String,
+}
+
+/// Merges in TMDB collection membership for items enriched before that field
+/// existed, from a side file (see backfill-collections.js at the repo root).
+/// Kept separate from enriched_400.json because that file is written to
+/// continuously by the download pipeline - overwriting it here risks
+/// clobbering in-flight torrent/upload state.
+fn apply_collections_backfill(items: &mut [EnrichedItem], enriched_data_path: &str) {
+    let Some(backfill_path) = std::path::Path::new(enriched_data_path)
+        .parent()
+        .map(|p| p.join("collections_backfill.json"))
+    else {
+        return;
+    };
+    let Ok(raw) = std::fs::read_to_string(&backfill_path) else {
+        return;
+    };
+    let map: HashMap<String, CollectionBackfill> = match serde_json::from_str(&raw) {
+        Ok(m) => m,
+        Err(e) => {
+            tracing::warn!("failed to parse {}: {e}", backfill_path.display());
+            return;
+        }
+    };
+
+    let mut applied = 0;
+    for item in items.iter_mut() {
+        if item.collection_id.is_none() {
+            if let Some(c) = map.get(&item.id) {
+                item.collection_id = Some(c.collection_id);
+                item.collection_name = Some(c.collection_name.clone());
+                applied += 1;
+            }
+        }
+    }
+    tracing::info!(
+        "Applied collection backfill to {applied} items from {}",
+        backfill_path.display()
+    );
+}
+
+/// Merges in TMDB episode titles/overviews/thumbnails for already-downloaded
+/// TV episodes, from a side file (see backfill-episode-metadata.js). Same
+/// separate-file rationale as `apply_collections_backfill`. Re-run that
+/// script after the download pipeline adds episodes to a show that isn't
+/// covered yet - this only fills in what's here at load time.
+fn apply_episode_metadata_backfill(items: &mut [EnrichedItem], enriched_data_path: &str) {
+    let Some(backfill_path) = std::path::Path::new(enriched_data_path)
+        .parent()
+        .map(|p| p.join("episode_metadata_backfill.json"))
+    else {
+        return;
+    };
+    let Ok(raw) = std::fs::read_to_string(&backfill_path) else {
+        return;
+    };
+    let map: HashMap<String, Vec<EpisodeMetadata>> = match serde_json::from_str(&raw) {
+        Ok(m) => m,
+        Err(e) => {
+            tracing::warn!("failed to parse {}: {e}", backfill_path.display());
+            return;
+        }
+    };
+
+    let mut applied = 0;
+    for item in items.iter_mut() {
+        if item.episodes.is_empty() {
+            if let Some(eps) = map.get(&item.id) {
+                item.episodes = eps.clone();
+                applied += 1;
+            }
+        }
+    }
+    tracing::info!(
+        "Applied episode metadata backfill to {applied} items from {}",
+        backfill_path.display()
+    );
+}
+
+/// Merges in TMDB thematic keywords (see backfill-keywords.js). Same
+/// separate-file rationale as `apply_collections_backfill`.
+fn apply_keywords_backfill(items: &mut [EnrichedItem], enriched_data_path: &str) {
+    let Some(backfill_path) = std::path::Path::new(enriched_data_path)
+        .parent()
+        .map(|p| p.join("keywords_backfill.json"))
+    else {
+        return;
+    };
+    let Ok(raw) = std::fs::read_to_string(&backfill_path) else {
+        return;
+    };
+    let map: HashMap<String, Vec<String>> = match serde_json::from_str(&raw) {
+        Ok(m) => m,
+        Err(e) => {
+            tracing::warn!("failed to parse {}: {e}", backfill_path.display());
+            return;
+        }
+    };
+
+    let mut applied = 0;
+    for item in items.iter_mut() {
+        if item.keywords.is_empty() {
+            if let Some(kw) = map.get(&item.id) {
+                item.keywords = kw.clone();
+                applied += 1;
+            }
+        }
+    }
+    tracing::info!(
+        "Applied keywords backfill to {applied} items from {}",
+        backfill_path.display()
+    );
+}
+
+/// Loads a side file sitting next to enriched_400.json into a HashMap,
+/// tolerating a missing or unparsable file (logs and returns empty) - these
+/// backfills are all best-effort enhancements, never required to boot.
+fn load_side_file<T: serde::de::DeserializeOwned>(
+    enriched_data_path: &str,
+    filename: &str,
+) -> HashMap<String, T> {
+    let Some(path) = std::path::Path::new(enriched_data_path)
+        .parent()
+        .map(|p| p.join(filename))
+    else {
+        return HashMap::new();
+    };
+    let Ok(raw) = std::fs::read_to_string(&path) else {
+        return HashMap::new();
+    };
+    match serde_json::from_str(&raw) {
+        Ok(m) => {
+            tracing::info!("Loaded {}", path.display());
+            m
+        }
+        Err(e) => {
+            tracing::warn!("failed to parse {}: {e}", path.display());
+            HashMap::new()
+        }
+    }
+}
+
 #[tokio::main]
 async fn main() {
     tracing_subscriber::fmt()
@@ -91,7 +247,14 @@ async fn main() {
         std::env::var("ENRICHED_DATA_PATH").unwrap_or_else(|_| "data/enriched_400.json".to_string());
     let raw = std::fs::read_to_string(&data_path)
         .unwrap_or_else(|e| panic!("failed to read enriched data at {data_path}: {e}"));
-    let cache: EnrichedCache = serde_json::from_str(&raw).expect("invalid enriched data JSON");
+    let mut cache: EnrichedCache = serde_json::from_str(&raw).expect("invalid enriched data JSON");
+    apply_collections_backfill(&mut cache.items, &data_path);
+    apply_episode_metadata_backfill(&mut cache.items, &data_path);
+    apply_keywords_backfill(&mut cache.items, &data_path);
+    let similar: HashMap<String, Vec<SimilarEntry>> =
+        load_side_file(&data_path, "similar_backfill.json");
+    let collection_parts: HashMap<String, CollectionParts> =
+        load_side_file(&data_path, "collection_parts.json");
 
     tracing::info!("Loaded {} items from {}", cache.items.len(), data_path);
 
@@ -126,6 +289,8 @@ async fn main() {
         items: cache.items,
         db,
         s3,
+        similar,
+        collection_parts,
     });
 
     let cors = CorsLayer::new()
@@ -142,8 +307,11 @@ async fn main() {
         .route("/api/sections", get(get_sections))
         .route("/api/content", get(get_content))
         .route("/api/content/:id", get(get_content_by_id))
+        .route("/api/content/:id/related", get(get_related_content))
+        .route("/api/content/:id/similar", get(get_similar_content))
         .route("/api/content/:id/torrent", get(get_torrent_file))
         .route("/api/content/:id/stream", get(get_stream_url))
+        .route("/api/content/:id/subtitles/:track_id", get(get_subtitle_content))
         .route("/api/content/:id/progress", get(get_progress_handler).post(post_progress_handler))
         .route("/api/continue-watching", get(get_continue_watching))
         .route("/api/logout", post(logout))
@@ -240,9 +408,18 @@ struct MetaResponse {
     brazilian: usize,
     international: usize,
     genres: Vec<String>,
+    /// Thematic keywords shared by at least a few titles - most TMDB
+    /// keywords are one-offs and would make a useless, noisy filter list,
+    /// so those are left out (a title can still carry them; they just
+    /// aren't offered as a browse filter).
+    keywords: Vec<String>,
     year_min: i32,
     year_max: i32,
 }
+
+/// Keywords appearing on fewer titles than this are too obscure to be a
+/// useful browse filter (most TMDB keywords are one-offs).
+const MIN_KEYWORD_FREQUENCY: usize = 5;
 
 async fn get_meta(State(state): State<Arc<AppState>>) -> Json<MetaResponse> {
     let items = &state.items;
@@ -253,6 +430,17 @@ async fn get_meta(State(state): State<Arc<AppState>>) -> Json<MetaResponse> {
         .into_iter()
         .collect();
     genres.sort();
+
+    let mut keyword_counts: HashMap<String, usize> = HashMap::new();
+    for keyword in items.iter().flat_map(|i| i.keywords.iter()) {
+        *keyword_counts.entry(keyword.clone()).or_insert(0) += 1;
+    }
+    let mut keywords: Vec<String> = keyword_counts
+        .into_iter()
+        .filter(|(_, count)| *count >= MIN_KEYWORD_FREQUENCY)
+        .map(|(keyword, _)| keyword)
+        .collect();
+    keywords.sort();
 
     let year_min = items.iter().map(|i| i.year).min().unwrap_or(0);
     let year_max = items.iter().map(|i| i.year).max().unwrap_or(0);
@@ -270,6 +458,7 @@ async fn get_meta(State(state): State<Arc<AppState>>) -> Json<MetaResponse> {
         brazilian: items.iter().filter(|i| i.origin == "Brazilian").count(),
         international: items.iter().filter(|i| i.origin == "International").count(),
         genres,
+        keywords,
         year_min,
         year_max,
     })
@@ -395,6 +584,7 @@ struct ContentQuery {
     search: Option<String>,
     min_rating: Option<f64>,
     genre: Option<String>,
+    keyword: Option<String>,
     decade: Option<i32>,
     sort: Option<String>,
     page: Option<usize>,
@@ -459,6 +649,10 @@ async fn get_content(
         filtered.retain(|i| i.genres.iter().any(|g| g.eq_ignore_ascii_case(genre)));
     }
 
+    if let Some(keyword) = &q.keyword {
+        filtered.retain(|i| i.keywords.iter().any(|k| k.eq_ignore_ascii_case(keyword)));
+    }
+
     if let Some(decade) = q.decade {
         filtered.retain(|i| i.year >= decade && i.year < decade + 10);
     }
@@ -502,6 +696,142 @@ async fn get_content_by_id(
         Some(item) => Json(item.clone()).into_response(),
         None => (StatusCode::NOT_FOUND, "content not found").into_response(),
     }
+}
+
+/// Builds a `RelatedTitle` for a TMDB (tmdb_id, content_type) pair, preferring
+/// the catalog's own data (and a clickable `id`) when we happen to have that
+/// title, falling back to the raw TMDB fields (no `id` - nothing to stream)
+/// otherwise.
+fn resolve_related_title(
+    state: &AppState,
+    tmdb_id: i64,
+    content_type: ContentType,
+    title: String,
+    year: Option<i32>,
+    poster_url: Option<String>,
+    rating: Option<f64>,
+) -> RelatedTitle {
+    let catalog_item = state
+        .items
+        .iter()
+        .find(|i| i.tmdb_id == Some(tmdb_id) && i.content_type == content_type);
+
+    match catalog_item {
+        Some(i) => RelatedTitle {
+            id: Some(i.id.clone()),
+            tmdb_id,
+            title: i.title.clone(),
+            year: Some(i.year),
+            poster_url: i.poster_url.clone(),
+            content_type: i.content_type.clone(),
+            rating: Some(effective_rating(i)),
+        },
+        None => RelatedTitle {
+            id: None,
+            tmdb_id,
+            title,
+            year,
+            poster_url,
+            content_type,
+            rating,
+        },
+    }
+}
+
+async fn get_related_content(
+    State(state): State<Arc<AppState>>,
+    Path(id): Path<String>,
+) -> impl IntoResponse {
+    let Some(item) = state.items.iter().find(|i| i.id == id) else {
+        return (StatusCode::NOT_FOUND, "content not found").into_response();
+    };
+
+    let Some(collection_id) = item.collection_id else {
+        return Json(Vec::<RelatedTitle>::new()).into_response();
+    };
+
+    let mut related: Vec<RelatedTitle> = match state.collection_parts.get(&collection_id.to_string()) {
+        Some(parts) => parts
+            .parts
+            .iter()
+            .map(|p| {
+                resolve_related_title(
+                    &state,
+                    p.tmdb_id,
+                    ContentType::Movie,
+                    p.title.clone(),
+                    p.year,
+                    p.poster_url.clone(),
+                    p.rating,
+                )
+            })
+            .collect(),
+        // Full collection membership hasn't been backfilled yet - fall back
+        // to whatever catalog items happen to point at this collection_id,
+        // so the row (at least featuring this item) still renders.
+        None => state
+            .items
+            .iter()
+            .filter(|i| i.collection_id == Some(collection_id))
+            .filter_map(|i| {
+                i.tmdb_id.map(|tmdb_id| {
+                    resolve_related_title(
+                        &state,
+                        tmdb_id,
+                        i.content_type.clone(),
+                        i.title.clone(),
+                        Some(i.year),
+                        i.poster_url.clone(),
+                        Some(effective_rating(i)),
+                    )
+                })
+            })
+            .collect(),
+    };
+    related.sort_by(|a, b| a.year.cmp(&b.year));
+
+    Json(related).into_response()
+}
+
+async fn get_similar_content(
+    State(state): State<Arc<AppState>>,
+    Path(id): Path<String>,
+) -> impl IntoResponse {
+    let Some(item) = state.items.iter().find(|i| i.id == id) else {
+        return (StatusCode::NOT_FOUND, "content not found").into_response();
+    };
+
+    let Some(entries) = state.similar.get(&id) else {
+        return Json(Vec::<RelatedTitle>::new()).into_response();
+    };
+
+    // Skip anything already surfaced by the collection (sequels/prequels)
+    // row, so the two sections don't repeat the same poster.
+    let collection_tmdb_ids: Vec<i64> = item
+        .collection_id
+        .and_then(|collection_id| state.collection_parts.get(&collection_id.to_string()))
+        .map(|parts| parts.parts.iter().map(|p| p.tmdb_id).collect())
+        .unwrap_or_default();
+
+    let similar: Vec<RelatedTitle> = entries
+        .iter()
+        .filter(|e| {
+            Some(e.tmdb_id) != item.tmdb_id && !collection_tmdb_ids.contains(&e.tmdb_id)
+        })
+        .map(|e| {
+            resolve_related_title(
+                &state,
+                e.tmdb_id,
+                e.content_type.clone(),
+                e.title.clone(),
+                e.year,
+                e.poster_url.clone(),
+                e.rating,
+            )
+        })
+        .collect();
+
+    Json(similar).into_response()
 }
 
 async fn get_torrent_file(
@@ -591,6 +921,67 @@ async fn get_stream_url(
         Err(e) => {
             tracing::error!("failed to presign stream url: {e}");
             (StatusCode::INTERNAL_SERVER_ERROR, "failed to build stream url").into_response()
+        }
+    }
+}
+
+#[derive(Deserialize)]
+struct SubtitleQuery {
+    episode: Option<i32>,
+}
+
+// Proxies the WebVTT bytes directly rather than a presigned redirect like
+// get_stream_url - subtitle files are KB-sized (unlike video, no benefit to
+// a range-request-capable redirect), and a <track> element's fetch is
+// subject to CORS, which the bucket has no config for. Serving it from this
+// same origin sidesteps that entirely.
+async fn get_subtitle_content(
+    State(state): State<Arc<AppState>>,
+    Path((id, track_id)): Path<(String, String)>,
+    Query(q): Query<SubtitleQuery>,
+) -> impl IntoResponse {
+    let Some(s3) = &state.s3 else {
+        return (StatusCode::SERVICE_UNAVAILABLE, "video storage not configured").into_response();
+    };
+
+    let Some(item) = state.items.iter().find(|i| i.id == id) else {
+        return (StatusCode::NOT_FOUND, "content not found").into_response();
+    };
+
+    let episode = q.episode.unwrap_or(0);
+    let Some(track) = item
+        .subtitles
+        .iter()
+        .find(|t| t.id == track_id && t.episode == episode)
+    else {
+        return (StatusCode::NOT_FOUND, "subtitle track not found").into_response();
+    };
+
+    let object = match s3
+        .client
+        .get_object()
+        .bucket(&s3.bucket)
+        .key(&track.s3_key)
+        .send()
+        .await
+    {
+        Ok(object) => object,
+        Err(e) => {
+            tracing::error!("failed to fetch subtitle object: {e}");
+            return (StatusCode::INTERNAL_SERVER_ERROR, "failed to fetch subtitle").into_response();
+        }
+    };
+
+    match object.body.collect().await {
+        Ok(bytes) => (
+            StatusCode::OK,
+            [(header::CONTENT_TYPE, "text/vtt; charset=utf-8")],
+            bytes.into_bytes().to_vec(),
+        )
+            .into_response(),
+        Err(e) => {
+            tracing::error!("failed to read subtitle body: {e}");
+            (StatusCode::INTERNAL_SERVER_ERROR, "failed to read subtitle").into_response()
         }
     }
 }

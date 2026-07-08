@@ -1,26 +1,16 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* This app is always dark (see the `dark` class + `bg-black text-zinc-100` on
+   <body> in app/layout.tsx) - it never adapts to a light OS/browser
+   preference. The unlayered `body { background/color }` rule that used to
+   live here was leftover create-next-app boilerplate tracking
+   prefers-color-scheme instead: being unlayered CSS, it silently beat
+   Tailwind's layered `bg-black`/`text-zinc-100` utility classes on <body>
+   regardless of specificity, so every page rendered black-on-white instead
+   of the intended dark theme for any visitor whose system was in light mode
+   (confirmed: toggling Playwright's colorScheme flipped the live body
+   background between white and #0a0a0a on the unmodified /login page). */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

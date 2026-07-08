@@ -1,6 +1,6 @@
 import { ContentItem, displayRating } from "@/lib/types";
 
-function StarIcon() {
+export function StarIcon() {
   return (
     <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5">
       <path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6z" />

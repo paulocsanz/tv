@@ -1,0 +1,937 @@
+{
+  "10": {
+    "name": "Star Wars Collection",
+    "parts": [
+      {
+        "tmdb_id": 11,
+        "title": "Star Wars",
+        "year": 1977,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+        "rating": 8.2
+      },
+      {
+        "tmdb_id": 1891,
+        "title": "The Empire Strikes Back",
+        "year": 1980,
+        "poster_url": "https://image.tmdb.org/t/p/w500/nNAeTmF4CtdSgMDplXTDPOpYzsX.jpg",
+        "rating": 8.392
+      },
+      {
+        "tmdb_id": 1892,
+        "title": "Return of the Jedi",
+        "year": 1983,
+        "poster_url": "https://image.tmdb.org/t/p/w500/jQYlydvHm3kUix1f8prMucrplhm.jpg",
+        "rating": 7.909
+      },
+      {
+        "tmdb_id": 1893,
+        "title": "Star Wars: Episode I - The Phantom Menace",
+        "year": 1999,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg",
+        "rating": 6.58
+      },
+      {
+        "tmdb_id": 1894,
+        "title": "Star Wars: Episode II - Attack of the Clones",
+        "year": 2002,
+        "poster_url": "https://image.tmdb.org/t/p/w500/oZNPzxqM2s5DyVWab09NTQScDQt.jpg",
+        "rating": 6.595
+      },
+      {
+        "tmdb_id": 1895,
+        "title": "Star Wars: Episode III - Revenge of the Sith",
+        "year": 2005,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg",
+        "rating": 7.5
+      },
+      {
+        "tmdb_id": 140607,
+        "title": "Star Wars: The Force Awakens",
+        "year": 2015,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg",
+        "rating": 7.248
+      },
+      {
+        "tmdb_id": 181812,
+        "title": "Star Wars: The Rise of Skywalker",
+        "year": 2019,
+        "poster_url": "https://image.tmdb.org/t/p/w500/db32LaOibwEliAmSL2jjDF6oDdj.jpg",
+        "rating": 6.264
+      },
+      {
+        "tmdb_id": 181808,
+        "title": "Star Wars: The Last Jedi",
+        "year": 2017,
+        "poster_url": "https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+        "rating": 6.749
+      }
+    ]
+  },
+  "84": {
+    "name": "Indiana Jones Collection",
+    "parts": [
+      {
+        "tmdb_id": 85,
+        "title": "Raiders of the Lost Ark",
+        "year": 1981,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+        "rating": 7.925
+      },
+      {
+        "tmdb_id": 87,
+        "title": "Indiana Jones and the Temple of Doom",
+        "year": 1984,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gpdVNUaa4LhRMLfJOPj1AZdhAZ3.jpg",
+        "rating": 7.31
+      },
+      {
+        "tmdb_id": 89,
+        "title": "Indiana Jones and the Last Crusade",
+        "year": 1989,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg",
+        "rating": 7.853
+      },
+      {
+        "tmdb_id": 217,
+        "title": "Indiana Jones and the Kingdom of the Crystal Skull",
+        "year": 2008,
+        "poster_url": "https://image.tmdb.org/t/p/w500/56As6XEM1flWvprX4LgkPl8ii4K.jpg",
+        "rating": 6.027
+      },
+      {
+        "tmdb_id": 335977,
+        "title": "Indiana Jones and the Dial of Destiny",
+        "year": 2023,
+        "poster_url": "https://image.tmdb.org/t/p/w500/Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
+        "rating": 6.511
+      }
+    ]
+  },
+  "119": {
+    "name": "The Lord of the Rings Collection",
+    "parts": [
+      {
+        "tmdb_id": 120,
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "year": 2001,
+        "poster_url": "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+        "rating": 8.437
+      },
+      {
+        "tmdb_id": 121,
+        "title": "The Lord of the Rings: The Two Towers",
+        "year": 2002,
+        "poster_url": "https://image.tmdb.org/t/p/w500/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+        "rating": 8.422
+      },
+      {
+        "tmdb_id": 122,
+        "title": "The Lord of the Rings: The Return of the King",
+        "year": 2003,
+        "poster_url": "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+        "rating": 8.5
+      }
+    ]
+  },
+  "230": {
+    "name": "The Godfather Collection",
+    "parts": [
+      {
+        "tmdb_id": 238,
+        "title": "The Godfather",
+        "year": 1972,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "rating": 8.687
+      },
+      {
+        "tmdb_id": 240,
+        "title": "The Godfather Part II",
+        "year": 1974,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+        "rating": 8.6
+      },
+      {
+        "tmdb_id": 242,
+        "title": "The Godfather Part III",
+        "year": 1990,
+        "poster_url": "https://image.tmdb.org/t/p/w500/lm3pQ2QoQ16pextRsmnUbG2onES.jpg",
+        "rating": 7.42
+      }
+    ]
+  },
+  "263": {
+    "name": "The Dark Knight Collection",
+    "parts": [
+      {
+        "tmdb_id": 155,
+        "title": "The Dark Knight",
+        "year": 2008,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "rating": 8.532
+      },
+      {
+        "tmdb_id": 49026,
+        "title": "The Dark Knight Rises",
+        "year": 2012,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
+        "rating": 7.795
+      },
+      {
+        "tmdb_id": 272,
+        "title": "Batman Begins",
+        "year": 2005,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
+        "rating": 7.728
+      }
+    ]
+  },
+  "264": {
+    "name": "Back to the Future Collection",
+    "parts": [
+      {
+        "tmdb_id": 105,
+        "title": "Back to the Future",
+        "year": 1985,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg",
+        "rating": 8.326
+      },
+      {
+        "tmdb_id": 165,
+        "title": "Back to the Future Part II",
+        "year": 1989,
+        "poster_url": "https://image.tmdb.org/t/p/w500/hQq8xZe5uLjFzSBt4LanNP7SQjl.jpg",
+        "rating": 7.783
+      },
+      {
+        "tmdb_id": 196,
+        "title": "Back to the Future Part III",
+        "year": 1990,
+        "poster_url": "https://image.tmdb.org/t/p/w500/crzoVQnMzIrRfHtQw0tLBirNfVg.jpg",
+        "rating": 7.494
+      }
+    ]
+  },
+  "528": {
+    "name": "The Terminator Collection",
+    "parts": [
+      {
+        "tmdb_id": 218,
+        "title": "The Terminator",
+        "year": 1984,
+        "poster_url": "https://image.tmdb.org/t/p/w500/qvktm0BHcnmDpul4Hz01GIazWPr.jpg",
+        "rating": 7.685
+      },
+      {
+        "tmdb_id": 280,
+        "title": "Terminator 2: Judgment Day",
+        "year": 1991,
+        "poster_url": "https://image.tmdb.org/t/p/w500/jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg",
+        "rating": 8.154
+      },
+      {
+        "tmdb_id": 296,
+        "title": "Terminator 3: Rise of the Machines",
+        "year": 2003,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vvevzdYIrk2636maNW4qeWmlPFG.jpg",
+        "rating": 6.196
+      },
+      {
+        "tmdb_id": 534,
+        "title": "Terminator Salvation",
+        "year": 2009,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gw6JhlekZgtKUFlDTezq3j5JEPK.jpg",
+        "rating": 6.092
+      },
+      {
+        "tmdb_id": 87101,
+        "title": "Terminator Genisys",
+        "year": 2015,
+        "poster_url": "https://image.tmdb.org/t/p/w500/oZRVDpNtmHk8M1VYy1aeOWUXgbC.jpg",
+        "rating": 5.957
+      },
+      {
+        "tmdb_id": 290859,
+        "title": "Terminator: Dark Fate",
+        "year": 2019,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vqzNJRH4YyquRiWxCCOH0aXggHI.jpg",
+        "rating": 6.422
+      }
+    ]
+  },
+  "2344": {
+    "name": "The Matrix Collection",
+    "parts": [
+      {
+        "tmdb_id": 603,
+        "title": "The Matrix",
+        "year": 1999,
+        "poster_url": "https://image.tmdb.org/t/p/w500/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
+        "rating": 8.25
+      },
+      {
+        "tmdb_id": 604,
+        "title": "The Matrix Reloaded",
+        "year": 2003,
+        "poster_url": "https://image.tmdb.org/t/p/w500/aA5qHS0FbSXO8PxcxUIHbDrJyuh.jpg",
+        "rating": 7.08
+      },
+      {
+        "tmdb_id": 605,
+        "title": "The Matrix Revolutions",
+        "year": 2003,
+        "poster_url": "https://image.tmdb.org/t/p/w500/bkkS61w94ZVMNVd8KEyyJl2tnY5.jpg",
+        "rating": 6.755
+      },
+      {
+        "tmdb_id": 624860,
+        "title": "The Matrix Resurrections",
+        "year": 2021,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
+        "rating": 6.328
+      }
+    ]
+  },
+  "4438": {
+    "name": "The Space Odyssey Series",
+    "parts": [
+      {
+        "tmdb_id": 62,
+        "title": "2001: A Space Odyssey",
+        "year": 1968,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+        "rating": 8.05
+      },
+      {
+        "tmdb_id": 4437,
+        "title": "2010",
+        "year": 1984,
+        "poster_url": "https://image.tmdb.org/t/p/w500/mEWKXuCMv7mFMxXVSTI3v8UOQuq.jpg",
+        "rating": 6.655
+      }
+    ]
+  },
+  "8091": {
+    "name": "Alien Collection",
+    "parts": [
+      {
+        "tmdb_id": 348,
+        "title": "Alien",
+        "year": 1979,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+        "rating": 8.171
+      },
+      {
+        "tmdb_id": 679,
+        "title": "Aliens",
+        "year": 1986,
+        "poster_url": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+        "rating": 7.965
+      },
+      {
+        "tmdb_id": 8077,
+        "title": "Alien³",
+        "year": 1992,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xh5wI0UoW7DfS1IyLy3d2CgrCEP.jpg",
+        "rating": 6.386
+      },
+      {
+        "tmdb_id": 8078,
+        "title": "Alien Resurrection",
+        "year": 1997,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9aRDMlU5Zwpysilm0WCWzU2PCFv.jpg",
+        "rating": 6.17
+      }
+    ]
+  },
+  "9743": {
+    "name": "The Hannibal Lecter Collection",
+    "parts": [
+      {
+        "tmdb_id": 274,
+        "title": "The Silence of the Lambs",
+        "year": 1991,
+        "poster_url": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+        "rating": 8.345
+      },
+      {
+        "tmdb_id": 9533,
+        "title": "Red Dragon",
+        "year": 2002,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ou9ZKA2cms02b7CdCdVqGkKu0O0.jpg",
+        "rating": 7.049
+      },
+      {
+        "tmdb_id": 9740,
+        "title": "Hannibal",
+        "year": 2001,
+        "poster_url": "https://image.tmdb.org/t/p/w500/v5wAZwRqpGWmyAaaJ8BBHYuNXnj.jpg",
+        "rating": 6.779
+      }
+    ]
+  },
+  "10194": {
+    "name": "Toy Story Collection",
+    "parts": [
+      {
+        "tmdb_id": 862,
+        "title": "Toy Story",
+        "year": 1995,
+        "poster_url": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+        "rating": 8
+      },
+      {
+        "tmdb_id": 863,
+        "title": "Toy Story 2",
+        "year": 1999,
+        "poster_url": "https://image.tmdb.org/t/p/w500/4rbcp3ng8n1MKHjpeqW0L7Fnpzz.jpg",
+        "rating": 7.6
+      },
+      {
+        "tmdb_id": 10193,
+        "title": "Toy Story 3",
+        "year": 2010,
+        "poster_url": "https://image.tmdb.org/t/p/w500/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg",
+        "rating": 7.812
+      },
+      {
+        "tmdb_id": 301528,
+        "title": "Toy Story 4",
+        "year": 2019,
+        "poster_url": "https://image.tmdb.org/t/p/w500/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg",
+        "rating": 7.459
+      },
+      {
+        "tmdb_id": 1084244,
+        "title": "Toy Story 5",
+        "year": 2026,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wLvUuBF2Yj0JmMGLUdRRVu7LvNB.jpg",
+        "rating": 7.403
+      }
+    ]
+  },
+  "86311": {
+    "name": "The Avengers Collection",
+    "parts": [
+      {
+        "tmdb_id": 24428,
+        "title": "The Avengers",
+        "year": 2012,
+        "poster_url": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+        "rating": 8.053
+      },
+      {
+        "tmdb_id": 99861,
+        "title": "Avengers: Age of Ultron",
+        "year": 2015,
+        "poster_url": "https://image.tmdb.org/t/p/w500/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
+        "rating": 7.275
+      },
+      {
+        "tmdb_id": 299536,
+        "title": "Avengers: Infinity War",
+        "year": 2018,
+        "poster_url": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+        "rating": 8.238
+      },
+      {
+        "tmdb_id": 299534,
+        "title": "Avengers: Endgame",
+        "year": 2019,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+        "rating": 8.238
+      },
+      {
+        "tmdb_id": 1003596,
+        "title": "Avengers: Doomsday",
+        "year": 2026,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg",
+        "rating": 0
+      },
+      {
+        "tmdb_id": 1003598,
+        "title": "Avengers: Secret Wars",
+        "year": 2027,
+        "poster_url": "https://image.tmdb.org/t/p/w500/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg",
+        "rating": 0
+      }
+    ]
+  },
+  "94032": {
+    "name": "The Lion King Collection",
+    "parts": [
+      {
+        "tmdb_id": 11430,
+        "title": "The Lion King 1½",
+        "year": 2004,
+        "poster_url": "https://image.tmdb.org/t/p/w500/u2hN0WT7Dz46HfhQbr6uzSYfVW4.jpg",
+        "rating": 6.583
+      },
+      {
+        "tmdb_id": 9732,
+        "title": "The Lion King II: Simba's Pride",
+        "year": 1998,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sWR1x6UCMCGN9xEf8RGhPS934X0.jpg",
+        "rating": 6.94
+      },
+      {
+        "tmdb_id": 8587,
+        "title": "The Lion King",
+        "year": 1994,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg",
+        "rating": 8.254
+      }
+    ]
+  },
+  "110021": {
+    "name": "The Magnificent Seven Collection",
+    "parts": [
+      {
+        "tmdb_id": 966,
+        "title": "The Magnificent Seven",
+        "year": 1960,
+        "poster_url": "https://image.tmdb.org/t/p/w500/e5ToxOyJwuZD4VOfI0qEn5uIjeJ.jpg",
+        "rating": 7.505
+      },
+      {
+        "tmdb_id": 43417,
+        "title": "The Magnificent Seven Ride!",
+        "year": 1972,
+        "poster_url": "https://image.tmdb.org/t/p/w500/g9wUJuEBpAFS6fjXguyWqudZWhZ.jpg",
+        "rating": 5.569
+      },
+      {
+        "tmdb_id": 12639,
+        "title": "Return of the Seven",
+        "year": 1966,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xO3cPFFzXa7zZ704dOwgws5duFK.jpg",
+        "rating": 6.12
+      },
+      {
+        "tmdb_id": 12625,
+        "title": "Guns of the Magnificent Seven",
+        "year": 1969,
+        "poster_url": "https://image.tmdb.org/t/p/w500/moFQCPRHvMGfvoFbF5lqEQw9ETX.jpg",
+        "rating": 5.398
+      }
+    ]
+  },
+  "119581": {
+    "name": "Elite Squad Collection",
+    "parts": [
+      {
+        "tmdb_id": 7347,
+        "title": "Elite Squad",
+        "year": 2007,
+        "poster_url": "https://image.tmdb.org/t/p/w500/lwIXz785N2fXi8hsBr1IXciFlkM.jpg",
+        "rating": 8.061
+      },
+      {
+        "tmdb_id": 47931,
+        "title": "Elite Squad: The Enemy Within",
+        "year": 2010,
+        "poster_url": "https://image.tmdb.org/t/p/w500/c7yCrf3PTSdp6RMGktZQhzFcFFM.jpg",
+        "rating": 7.849
+      }
+    ]
+  },
+  "119674": {
+    "name": "Psycho Collection",
+    "parts": [
+      {
+        "tmdb_id": 539,
+        "title": "Psycho",
+        "year": 1960,
+        "poster_url": "https://image.tmdb.org/t/p/w500/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
+        "rating": 8.413
+      },
+      {
+        "tmdb_id": 10576,
+        "title": "Psycho II",
+        "year": 1983,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sJAPRj3vHmjV4z97YK84iDovYlm.jpg",
+        "rating": 6.509
+      },
+      {
+        "tmdb_id": 12662,
+        "title": "Psycho III",
+        "year": 1986,
+        "poster_url": "https://image.tmdb.org/t/p/w500/tgV4eeW0X7os7p3SYbNwDI0NYGa.jpg",
+        "rating": 5.67
+      },
+      {
+        "tmdb_id": 40377,
+        "title": "Psycho IV: The Beginning",
+        "year": 1990,
+        "poster_url": "https://image.tmdb.org/t/p/w500/vxWTkQRAvTvA6rbBhsdC4pdnHuq.jpg",
+        "rating": 5.702
+      }
+    ]
+  },
+  "330605": {
+    "name": "The Sting Collection",
+    "parts": [
+      {
+        "tmdb_id": 9277,
+        "title": "The Sting",
+        "year": 1973,
+        "poster_url": "https://image.tmdb.org/t/p/w500/ckmYng37zey8INYf6d10cVgIG93.jpg",
+        "rating": 8
+      },
+      {
+        "tmdb_id": 36912,
+        "title": "The Sting II",
+        "year": 1983,
+        "poster_url": "https://image.tmdb.org/t/p/w500/oWySCxbLK4vB7BY5CzonJZuLYa7.jpg",
+        "rating": 4.784
+      }
+    ]
+  },
+  "342577": {
+    "name": "Till Luck Do Us Part Collection",
+    "parts": [
+      {
+        "tmdb_id": 154441,
+        "title": "Till Luck Do Us Part",
+        "year": 2012,
+        "poster_url": "https://image.tmdb.org/t/p/w500/xAd1DeclHsJ0lnrizw4bTYivFqB.jpg",
+        "rating": 6.446
+      },
+      {
+        "tmdb_id": 324465,
+        "title": "Till Luck Do Us: Part 3",
+        "year": 2015,
+        "poster_url": "https://image.tmdb.org/t/p/w500/oStp9ynfr1dFKBrOSf7U8QYocgR.jpg",
+        "rating": 6.023
+      },
+      {
+        "tmdb_id": 228177,
+        "title": "Till Luck Do Us Part 2",
+        "year": 2013,
+        "poster_url": "https://image.tmdb.org/t/p/w500/DOmK1UXPulQWLj3xdArcHKGQ9C.jpg",
+        "rating": 5.769
+      },
+      {
+        "tmdb_id": 1225940,
+        "title": "Till Luck Do Us Part 4",
+        "year": null,
+        "poster_url": null,
+        "rating": 0
+      }
+    ]
+  },
+  "455278": {
+    "name": "My Mom is a Character Collection",
+    "parts": [
+      {
+        "tmdb_id": 203217,
+        "title": "My Mom Is a Character",
+        "year": 2013,
+        "poster_url": "https://image.tmdb.org/t/p/w500/2AXnTisn91NjZvsesN9SEZtMaRe.jpg",
+        "rating": 7.738
+      },
+      {
+        "tmdb_id": 227932,
+        "title": "My Mom Is a Character 2",
+        "year": 2016,
+        "poster_url": "https://image.tmdb.org/t/p/w500/eDApDWU6r9zxk9MZLc6rfnBb3vu.jpg",
+        "rating": 7.7
+      },
+      {
+        "tmdb_id": 620683,
+        "title": "My Mom Is a Character 3",
+        "year": 2019,
+        "poster_url": "https://image.tmdb.org/t/p/w500/zw77BFPGJ73Lig8GwRzYj1XHq53.jpg",
+        "rating": 8.185
+      }
+    ]
+  },
+  "530064": {
+    "name": "The Shining Collection",
+    "parts": [
+      {
+        "tmdb_id": 694,
+        "title": "The Shining",
+        "year": 1980,
+        "poster_url": "https://image.tmdb.org/t/p/w500/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
+        "rating": 8.203
+      },
+      {
+        "tmdb_id": 501170,
+        "title": "Doctor Sleep",
+        "year": 2019,
+        "poster_url": "https://image.tmdb.org/t/p/w500/p69QzIBbN06aTYqRRiCOY1emNBh.jpg",
+        "rating": 7.1
+      }
+    ]
+  },
+  "573436": {
+    "name": "Spider-Man: Spider-Verse Collection",
+    "parts": [
+      {
+        "tmdb_id": 324857,
+        "title": "Spider-Man: Into the Spider-Verse",
+        "year": 2018,
+        "poster_url": "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+        "rating": 8.393
+      },
+      {
+        "tmdb_id": 569094,
+        "title": "Spider-Man: Across the Spider-Verse",
+        "year": 2023,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+        "rating": 8.339
+      },
+      {
+        "tmdb_id": 911916,
+        "title": "Spider-Man: Beyond the Spider-Verse",
+        "year": 2027,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9PIhQqqI6Q4a5YjwMjxvzZcPJhf.jpg",
+        "rating": 0
+      }
+    ]
+  },
+  "633215": {
+    "name": "Midnight Run Collection",
+    "parts": [
+      {
+        "tmdb_id": 9013,
+        "title": "Midnight Run",
+        "year": 1988,
+        "poster_url": "https://image.tmdb.org/t/p/w500/yx0touyDQ9enWDsFgS4MbBwCSNd.jpg",
+        "rating": 7.188
+      },
+      {
+        "tmdb_id": 202620,
+        "title": "Another Midnight Run",
+        "year": 1994,
+        "poster_url": "https://image.tmdb.org/t/p/w500/p383EbPjOpBBLrKblKWicnohe1a.jpg",
+        "rating": 6.944
+      },
+      {
+        "tmdb_id": 529000,
+        "title": "Midnight Run Around",
+        "year": 1994,
+        "poster_url": "https://image.tmdb.org/t/p/w500/sloHmltnX43bX0deWi8qvMBdQvi.jpg",
+        "rating": 6.7
+      },
+      {
+        "tmdb_id": 437066,
+        "title": "Midnight Run for Your Life",
+        "year": 1994,
+        "poster_url": "https://image.tmdb.org/t/p/w500/5bFCvAuXNkWGetCPp9x0zerma1P.jpg",
+        "rating": 5.2
+      }
+    ]
+  },
+  "726871": {
+    "name": "Dune Collection",
+    "parts": [
+      {
+        "tmdb_id": 438631,
+        "title": "Dune",
+        "year": 2021,
+        "poster_url": "https://image.tmdb.org/t/p/w500/gDzOcq0pfeCeqMBwKIJlSmQpjkZ.jpg",
+        "rating": 7.781
+      },
+      {
+        "tmdb_id": 693134,
+        "title": "Dune: Part Two",
+        "year": 2024,
+        "poster_url": "https://image.tmdb.org/t/p/w500/heM4XKC0jA8fTSNe8F7oUkcJV7Z.jpg",
+        "rating": 8.128
+      },
+      {
+        "tmdb_id": 1170608,
+        "title": "Dune: Part Three",
+        "year": 2026,
+        "poster_url": "https://image.tmdb.org/t/p/w500/b4wekkUaxExzOeGe7hKXzhnyXHt.jpg",
+        "rating": 0
+      }
+    ]
+  },
+  "743415": {
+    "name": "De Pernas pro Ar: Coleção",
+    "parts": [
+      {
+        "tmdb_id": 62156,
+        "title": "Head Over Heels",
+        "year": 2010,
+        "poster_url": "https://image.tmdb.org/t/p/w500/m8tcxGK8liu31vj2vwidON5jPWY.jpg",
+        "rating": 6.466
+      },
+      {
+        "tmdb_id": 161908,
+        "title": "Head Over Heels 2",
+        "year": 2012,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9Qd8MSJLAtDHMiPrZ3kgHW63DIc.jpg",
+        "rating": 6.349
+      },
+      {
+        "tmdb_id": 562289,
+        "title": "Head Over Heels 3",
+        "year": 2019,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8Mx1d3Gi6NiUGJ78fcs0UOPtwbX.jpg",
+        "rating": 7.029
+      }
+    ]
+  },
+  "987044": {
+    "name": "Joker Collection",
+    "parts": [
+      {
+        "tmdb_id": 475557,
+        "title": "Joker",
+        "year": 2019,
+        "poster_url": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+        "rating": 8.123
+      },
+      {
+        "tmdb_id": 889737,
+        "title": "Joker: Folie à Deux",
+        "year": 2024,
+        "poster_url": "https://image.tmdb.org/t/p/w500/aciP8Km0waTLXEYf5ybFK5CSUxl.jpg",
+        "rating": 5.409
+      }
+    ]
+  },
+  "1048282": {
+    "name": "Heat Collection",
+    "parts": [
+      {
+        "tmdb_id": 949,
+        "title": "Heat",
+        "year": 1995,
+        "poster_url": "https://image.tmdb.org/t/p/w500/e09dLw1Ljtccd2P4NsuUvVtS5du.jpg",
+        "rating": 7.939
+      },
+      {
+        "tmdb_id": 1047807,
+        "title": "Heat 2",
+        "year": null,
+        "poster_url": "https://image.tmdb.org/t/p/w500/8nVqwnRrTQZatWqaVtobjmFUdbJ.jpg",
+        "rating": 0
+      }
+    ]
+  },
+  "1069584": {
+    "name": "Gladiator Collection",
+    "parts": [
+      {
+        "tmdb_id": 98,
+        "title": "Gladiator",
+        "year": 2000,
+        "poster_url": "https://image.tmdb.org/t/p/w500/wN2xWp1eIwCKOD0BHTcErTBv1Uq.jpg",
+        "rating": 8.227
+      },
+      {
+        "tmdb_id": 558449,
+        "title": "Gladiator II",
+        "year": 2024,
+        "poster_url": "https://image.tmdb.org/t/p/w500/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg",
+        "rating": 6.61
+      },
+      {
+        "tmdb_id": 1359289,
+        "title": "Gladiator III",
+        "year": null,
+        "poster_url": null,
+        "rating": 0
+      }
+    ]
+  },
+  "1219938": {
+    "name": "O Auto da Compadecida: Coleção",
+    "parts": [
+      {
+        "tmdb_id": 40096,
+        "title": "A Dog's Will",
+        "year": 2000,
+        "poster_url": "https://image.tmdb.org/t/p/w500/z9Au9XtK0ARzkKGsZCzMkmKgMPf.jpg",
+        "rating": 8.41
+      },
+      {
+        "tmdb_id": 1099413,
+        "title": "The Rogue's Trial",
+        "year": 2024,
+        "poster_url": "https://image.tmdb.org/t/p/w500/pRuYcFAq2kUha5ceFe42HR14335.jpg",
+        "rating": 6.622
+      }
+    ]
+  },
+  "1229894": {
+    "name": "Estômago Duology",
+    "parts": [
+      {
+        "tmdb_id": 69335,
+        "title": "Estômago: A Gastronomic Story",
+        "year": 2007,
+        "poster_url": "https://image.tmdb.org/t/p/w500/mo9utQQ9nurl2ELWUzS4e3WHGDm.jpg",
+        "rating": 7.878
+      },
+      {
+        "tmdb_id": 1225683,
+        "title": "Estomago 2: The Cookfather",
+        "year": 2024,
+        "poster_url": "https://image.tmdb.org/t/p/w500/21zKw6hhZaJxFyCDRHcS3E3BUzd.jpg",
+        "rating": 6.9
+      }
+    ]
+  },
+  "1307543": {
+    "name": "O Bandido Da Luz Vermelha - Coleção",
+    "parts": [
+      {
+        "tmdb_id": 186738,
+        "title": "The Red Light Bandit",
+        "year": 1968,
+        "poster_url": "https://image.tmdb.org/t/p/w500/49CQCiWXs3mnFSJmAxVTTYOMQjh.jpg",
+        "rating": 7.6
+      },
+      {
+        "tmdb_id": 255939,
+        "title": "Light in Darkness: The Return of Red Light Bandit",
+        "year": 2012,
+        "poster_url": "https://image.tmdb.org/t/p/w500/9KrLBQbNIYoVEUMBm2xB0iRrPQC.jpg",
+        "rating": 5.2
+      }
+    ]
+  },
+  "1432360": {
+    "name": "Braveheart Collection",
+    "parts": [
+      {
+        "tmdb_id": 532812,
+        "title": "Robert the Bruce",
+        "year": 2019,
+        "poster_url": "https://image.tmdb.org/t/p/w500/e6eNN4EpGtbXAbsR97QgjnjHs6s.jpg",
+        "rating": 5.522
+      },
+      {
+        "tmdb_id": 197,
+        "title": "Braveheart",
+        "year": 1995,
+        "poster_url": "https://image.tmdb.org/t/p/w500/or1gBugydmjToAEq7OZY0owwFk.jpg",
+        "rating": 7.945
+      }
+    ]
+  },
+  "1505820": {
+    "name": "Coleção S.O.S. Mulheres ao Mar",
+    "parts": [
+      {
+        "tmdb_id": 227961,
+        "title": "S.O.S.: Women to the Sea",
+        "year": 2014,
+        "poster_url": "https://image.tmdb.org/t/p/w500/3cB6m75oYbbuRI9K1Tgi2DBKhw9.jpg",
+        "rating": 6.674
+      },
+      {
+        "tmdb_id": 337706,
+        "title": "S.O.S.: Women to the Sea 2",
+        "year": 2015,
+        "poster_url": "https://image.tmdb.org/t/p/w500/aQKthnMTPMTOJmHepgWMOQhE7qX.jpg",
+        "rating": 6.6
+      }
+    ]
+  }
+}

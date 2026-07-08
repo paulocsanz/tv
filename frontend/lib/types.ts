@@ -25,11 +25,49 @@ export interface ContentItem {
   metacritic: string | null;
   imdb_id: string | null;
   tmdb_id: number | null;
+  collection_id: number | null;
+  collection_name: string | null;
   trailer_key: string | null;
   enrichment_status: EnrichmentStatus;
   torrent_file: string | null;
   s3_key: string | null;
   s3_keys: string[];
+  subtitles: SubtitleTrack[];
+  episodes: EpisodeMetadata[];
+  keywords: string[];
+}
+
+export interface EpisodeMetadata {
+  /** 1-based index into s3_keys - matches SubtitleTrack.episode. */
+  episode: number;
+  season_number: number;
+  episode_number: number;
+  name: string | null;
+  overview: string | null;
+  still_url: string | null;
+}
+
+export interface SubtitleTrack {
+  /** 0 for movies/single-file series; otherwise the 1-based index into s3_keys. */
+  episode: number;
+  id: string;
+  lang: string;
+  label: string;
+  forced: boolean;
+  s3_key: string;
+}
+
+// A title shown in a "Sequels & Prequels" or "More Like This" row. `id` is
+// null when TMDB knows about the title but it isn't in the library - there's
+// nothing to link to locally, so the frontend links out to TMDB instead.
+export interface RelatedTitle {
+  id: string | null;
+  tmdb_id: number;
+  title: string;
+  year: number | null;
+  poster_url: string | null;
+  content_type: ContentType;
+  rating: number | null;
 }
 
 export interface Section {
@@ -76,6 +114,7 @@ export interface MetaResponse {
   brazilian: number;
   international: number;
   genres: string[];
+  keywords: string[];
   year_min: number;
   year_max: number;
 }

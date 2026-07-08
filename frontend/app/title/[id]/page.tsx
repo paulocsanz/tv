@@ -1,8 +1,10 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getContentById, getProgress } from "@/lib/api";
+import { getContentById, getProgress, getRelatedContent, getSimilarContent } from "@/lib/api";
 import { ImdbBadge, RottenTomatoesBadge } from "@/components/RatingBadges";
 import { PosterPlaceholder } from "@/components/ContentCard";
+import { RelatedTitleCard } from "@/components/RelatedTitleCard";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export async function generateMetadata({
@@ -27,6 +29,9 @@ export default async function TitlePage({
   const { id } = await params;
   const item = await getContentById(id);
   if (!item) notFound();
+
+  const related = item.collection_id ? await getRelatedContent(id) : [];
+  const similar = await getSimilarContent(id);
 
   const backdrop = item.backdrop_url;
 
@@ -118,6 +123,44 @@ export default async function TitlePage({
           </p>
         )}
 
+        {item.keywords.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-1.5">
+            {item.keywords.slice(0, 8).map((keyword) => (
+              <Link
+                key={keyword}
+                href={`/browse?keyword=${encodeURIComponent(keyword)}`}
+                className="rounded-full bg-white/5 px-2.5 py-1 text-xs text-zinc-400 ring-1 ring-inset ring-white/10 hover:bg-white/10 hover:text-zinc-200"
+              >
+                {keyword}
+              </Link>
+            ))}
+          </div>
+        )}
+
+        {related.length > 0 && (
+          <div className="mt-10">
+            <h2 className="mb-3 text-lg font-semibold text-white">
+              {item.collection_name ?? "Related Titles"}
+            </h2>
+            <div className="flex gap-3 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              {related.map((title) => (
+                <RelatedTitleCard key={title.tmdb_id} title={title} current={title.id === item.id} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {similar.length > 0 && (
+          <div className="mt-10">
+            <h2 className="mb-3 text-lg font-semibold text-white">More Like This</h2>
+            <div className="flex gap-3 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              {similar.map((title) => (
+                <RelatedTitleCard key={title.tmdb_id} title={title} />
+              ))}
+            </div>
+          </div>
+        )}
+
         {item.s3_key || item.s3_keys.length > 0 ? (
           <div id="video-player" className="mt-10 scroll-mt-24">
             <h2 className="mb-3 text-lg font-semibold text-white">Watch</h2>
@@ -125,6 +168,8 @@ export default async function TitlePage({
               id={item.id}
               s3Keys={item.s3_keys.length > 0 ? item.s3_keys : [item.s3_key!]}
               initialProgress={await getProgress(item.id)}
+              subtitles={item.subtitles}
+              episodeMetadata={item.episodes}
             />
           </div>
         ) : item.torrent_file ? (

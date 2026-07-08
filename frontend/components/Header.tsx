@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { LogoutButton } from "./LogoutButton";
+import { MobileNav } from "./MobileNav";
 import { SearchBox } from "./SearchBox";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-white/5 bg-black/80 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-8">
+      <div className="relative mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-8">
+        <MobileNav />
         <Link href="/" className="shrink-0 text-lg font-bold tracking-tight text-white">
           Top<span className="text-[#f5c518]">400</span>
         </Link>

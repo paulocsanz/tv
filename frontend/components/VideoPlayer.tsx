@@ -1,14 +1,31 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { ProgressEntry } from "@/lib/types";
+import type { EpisodeMetadata, ProgressEntry, SubtitleTrack } from "@/lib/types";
+
+// HTML <track srclang> wants a BCP 47 tag; source files report ISO 639-2
+// (3-letter) codes via ffprobe, which some browsers render captions-menu
+// labels for less predictably than the 2-letter ISO 639-1 form. Only the
+// languages actually seen in this catalog need mapping - everything else
+// falls back to the 3-letter code as-is, which is still a valid tag.
+const BCP47: Record<string, string> = {
+  eng: "en", spa: "es", fre: "fr", fra: "fr", ger: "de", deu: "de",
+  ita: "it", por: "pt", rus: "ru", jpn: "ja", kor: "ko", chi: "zh", zho: "zh",
+  ara: "ar", dut: "nl", nld: "nl", swe: "sv", nor: "no", dan: "da", fin: "fi",
+  pol: "pl", tur: "tr", heb: "he", hin: "hi", gre: "el", ell: "el",
+};
 
 type Episode = {
   key: string;
   /** 1-based index into the original s3Keys array — what the backend expects. */
   originalIndex: number;
   number: number;
+  /** Only set from real TMDB metadata - lets the sort account for season
+   * boundaries once a show has more than one season downloaded. */
+  seasonNumber?: number;
   title: string;
+  overview?: string | null;
+  stillUrl?: string | null;
 };
 
 function parseEpisode(s3Key: string, originalIndex: number): Episode {
@@ -24,6 +41,26 @@ function parseEpisode(s3Key: string, originalIndex: number): Episode {
     originalIndex,
     number: numberMatch ? parseInt(numberMatch[1], 10) : originalIndex + 1,
     title,
+  };
+}
+
+// Prefers real TMDB episode data (title/overview/still) when the backfill
+// has matched this episode; falls back to parsing the filename otherwise.
+function buildEpisode(
+  s3Key: string,
+  originalIndex: number,
+  episodeMetadata: EpisodeMetadata[]
+): Episode {
+  const parsed = parseEpisode(s3Key, originalIndex);
+  const meta = episodeMetadata.find((m) => m.episode === originalIndex + 1);
+  if (!meta) return parsed;
+  return {
+    ...parsed,
+    number: meta.episode_number,
+    seasonNumber: meta.season_number,
+    title: meta.name ?? parsed.title,
+    overview: meta.overview,
+    stillUrl: meta.still_url,
   };
 }
 
@@ -47,17 +84,23 @@ export function VideoPlayer({
   id,
   s3Keys,
   initialProgress,
+  subtitles,
+  episodeMetadata = [],
 }: {
   id: string;
   s3Keys: string[];
   initialProgress: ProgressEntry[];
+  subtitles: SubtitleTrack[];
+  episodeMetadata?: EpisodeMetadata[];
 }) {
   const hasEpisodes = s3Keys.length > 1;
   // s3Keys isn't guaranteed to be in episode order; sort a copy for display
   // while keeping each episode's original index for the stream request,
   // since the backend indexes into s3Keys as stored.
   const episodes = hasEpisodes
-    ? s3Keys.map(parseEpisode).sort((a, b) => a.number - b.number)
+    ? s3Keys
+        .map((key, i) => buildEpisode(key, i, episodeMetadata))
+        .sort((a, b) => (a.seasonNumber ?? 0) - (b.seasonNumber ?? 0) || a.number - b.number)
     : [];
   const [selectedIndex, setSelectedIndex] = useState(() =>
     hasEpisodes ? resumeOriginalIndex(initialProgress, episodes[0]?.originalIndex ?? 0) : 0
@@ -72,6 +115,12 @@ export function VideoPlayer({
   // 0 is the movie/no-episode sentinel, matching the backend schema.
   const episodeNumber = hasEpisodes ? selectedIndex + 1 : 0;
   const savedProgress = initialProgress.find((p) => p.episode === episodeNumber) ?? null;
+  const episodeSubtitles = subtitles.filter((t) => t.episode === episodeNumber);
+  // First non-forced English track wins the browser's default caption
+  // choice; forced tracks (foreign-dialogue-only) are opt-in, never default.
+  const defaultSubtitleId =
+    (episodeSubtitles.find((t) => t.lang === "eng" && !t.forced) ??
+      episodeSubtitles.find((t) => !t.forced))?.id ?? null;
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [seeked, setSeeked] = useState(false);
@@ -208,6 +257,16 @@ export function VideoPlayer({
           onError={() => setStatus("error")}
         >
           <source src={streamUrl} type="video/mp4" />
+          {episodeSubtitles.map((t) => (
+            <track
+              key={t.id}
+              kind="subtitles"
+              src={`/api/subtitles/${id}/${t.id}${hasEpisodes ? `?episode=${episodeNumber}` : ""}`}
+              srcLang={BCP47[t.lang] ?? t.lang}
+              label={t.label}
+              default={t.id === defaultSubtitleId}
+            />
+          ))}
         </video>
 
         {status === "loading" && (
@@ -271,23 +330,42 @@ export function VideoPlayer({
                 <button
                   key={ep.key}
                   onClick={() => setSelectedIndex(ep.originalIndex)}
-                  className={`relative flex w-full items-center gap-3 border-b border-white/5 px-4 py-2.5 text-left last:border-b-0 ${
+                  className={`relative flex w-full items-start gap-3 border-b border-white/5 px-4 py-2.5 text-left last:border-b-0 ${
                     isActive ? "bg-white/10" : "hover:bg-white/5"
                   }`}
                 >
-                  <span
-                    className={`flex h-7 w-7 shrink-0 items-center justify-center rounded text-xs font-medium ${
-                      isActive ? "bg-white text-black" : "bg-white/10 text-zinc-400"
-                    }`}
-                  >
-                    {isActive ? "▶" : ep.number}
-                  </span>
-                  <span
-                    className={`truncate text-sm ${
-                      isActive ? "font-medium text-white" : "text-zinc-300"
-                    }`}
-                  >
-                    {ep.title}
+                  {ep.stillUrl ? (
+                    <span className="relative h-10 w-16 shrink-0 overflow-hidden rounded bg-black/40">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={ep.stillUrl} alt="" className="h-full w-full object-cover" />
+                      {isActive && (
+                        <span className="absolute inset-0 flex items-center justify-center bg-black/50 text-xs text-white">
+                          ▶
+                        </span>
+                      )}
+                    </span>
+                  ) : (
+                    <span
+                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded text-xs font-medium ${
+                        isActive ? "bg-white text-black" : "bg-white/10 text-zinc-400"
+                      }`}
+                    >
+                      {isActive ? "▶" : ep.number}
+                    </span>
+                  )}
+                  <span className="min-w-0 flex-1">
+                    <span
+                      className={`block truncate text-sm ${
+                        isActive ? "font-medium text-white" : "text-zinc-300"
+                      }`}
+                    >
+                      {ep.number}. {ep.title}
+                    </span>
+                    {ep.overview && (
+                      <span className="mt-0.5 line-clamp-2 block text-xs text-zinc-500">
+                        {ep.overview}
+                      </span>
+                    )}
                   </span>
                   {fraction > 0 && (
                     <div className="absolute inset-x-0 bottom-0 h-0.5 bg-white/10">

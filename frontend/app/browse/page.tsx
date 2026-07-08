@@ -22,6 +22,7 @@ export default async function BrowsePage({
     search: first(sp.search),
     min_rating: first(sp.min_rating),
     genre: first(sp.genre),
+    keyword: first(sp.keyword),
     decade: first(sp.decade),
     sort: first(sp.sort),
     page: first(sp.page),

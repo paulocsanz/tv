@@ -7,6 +7,7 @@ import {
   MeResponse,
   MetaResponse,
   ProgressEntry,
+  RelatedTitle,
   Section,
   UserSummary,
 } from "./types";
@@ -45,6 +46,7 @@ export interface ContentQuery {
   search?: string;
   min_rating?: string;
   genre?: string;
+  keyword?: string;
   decade?: string;
   sort?: string;
   page?: string;
@@ -68,6 +70,29 @@ export async function getContentById(id: string): Promise<ContentItem | null> {
   if (res.status === 404) return null;
   if (res.status === 401) redirect("/api/logout");
   if (!res.ok) throw new Error(`API request failed: /api/content/${id} (${res.status})`);
+  return res.json();
+}
+
+// Every movie in the same TMDB collection (prequels/sequels), ordered by
+// year - including ones not in the library, which render as non-playable
+// TMDB links. Empty when the title isn't part of a collection.
+export async function getRelatedContent(id: string): Promise<RelatedTitle[]> {
+  const res = await fetch(`${API_URL}/api/content/${id}/related`, {
+    headers: await authHeaders(),
+    next: { revalidate: 3600 },
+  });
+  if (!res.ok) return [];
+  return res.json();
+}
+
+// TMDB-recommended titles ranked by relevance, in or out of the library.
+// Excludes anything already shown in the collection row above.
+export async function getSimilarContent(id: string): Promise<RelatedTitle[]> {
+  const res = await fetch(`${API_URL}/api/content/${id}/similar`, {
+    headers: await authHeaders(),
+    next: { revalidate: 3600 },
+  });
+  if (!res.ok) return [];
   return res.json();
 }
 

@@ -60,6 +60,19 @@ export function FilterBar({ meta }: { meta: MetaResponse }) {
 
       <select
         className={select}
+        value={searchParams.get("keyword") ?? ""}
+        onChange={(e) => setParam("keyword", e.target.value)}
+      >
+        <option value="">All Themes</option>
+        {meta.keywords.map((k) => (
+          <option key={k} value={k}>
+            {k}
+          </option>
+        ))}
+      </select>
+
+      <select
+        className={select}
         value={searchParams.get("decade") ?? ""}
         onChange={(e) => setParam("decade", e.target.value)}
       >

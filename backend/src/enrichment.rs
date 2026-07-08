@@ -161,6 +161,17 @@ struct TmdbExternalIds {
 }
 
 #[derive(Debug, Deserialize)]
+struct TmdbCollection {
+    id: i64,
+    name: String,
+}
+
+#[derive(Debug, Deserialize, Default)]
+struct TmdbMovieDetails {
+    belongs_to_collection: Option<TmdbCollection>,
+}
+
+#[derive(Debug, Deserialize)]
 struct TmdbVideo {
     key: String,
     site: String,
@@ -180,6 +191,8 @@ struct TmdbData {
     tmdb_id: Option<i64>,
     imdb_id: Option<String>,
     original_title: Option<String>,
+    collection_id: Option<i64>,
+    collection_name: Option<String>,
 }
 
 async fn fetch_tmdb(
@@ -264,12 +277,37 @@ async fn fetch_tmdb(
         .and_then(|e| e.imdb_id)
         .filter(|id| !id.is_empty());
 
+    // Collections (franchise groupings, e.g. "The Matrix Collection") only
+    // exist for movies in TMDB's data model - skip the extra call for TV.
+    let (collection_id, collection_name) = match content_type {
+        ContentType::Movie => {
+            let details_url = format!("https://api.themoviedb.org/3/movie/{}", first.id);
+            let details: Option<TmdbMovieDetails> = match client
+                .get(&details_url)
+                .bearer_auth(token)
+                .send()
+                .await
+            {
+                Ok(resp) => resp.json().await.ok(),
+                Err(_) => None,
+            };
+            let collection = details.and_then(|d| d.belongs_to_collection);
+            match collection {
+                Some(c) => (Some(c.id), Some(c.name)),
+                None => (None, None),
+            }
+        }
+        ContentType::Tv => (None, None),
+    };
+
     Some(TmdbData {
         backdrop_url,
         trailer_key,
         tmdb_id: Some(first.id),
         imdb_id,
         original_title,
+        collection_id,
+        collection_name,
     })
 }
 
@@ -379,14 +417,23 @@ pub async fn enrich_one(
         )
     };
 
-    let (backdrop_url, trailer_key, tmdb_id, original_title, tmdb_imdb_id) = if let Some(t) = tmdb {
-        if status == EnrichmentStatus::Failed {
-            status = EnrichmentStatus::Partial;
-        }
-        (t.backdrop_url, t.trailer_key, t.tmdb_id, t.original_title, t.imdb_id)
-    } else {
-        (None, None, None, None, None)
-    };
+    let (backdrop_url, trailer_key, tmdb_id, original_title, tmdb_imdb_id, collection_id, collection_name) =
+        if let Some(t) = tmdb {
+            if status == EnrichmentStatus::Failed {
+                status = EnrichmentStatus::Partial;
+            }
+            (
+                t.backdrop_url,
+                t.trailer_key,
+                t.tmdb_id,
+                t.original_title,
+                t.imdb_id,
+                t.collection_id,
+                t.collection_name,
+            )
+        } else {
+            (None, None, None, None, None, None, None)
+        };
 
     if status == EnrichmentStatus::Ok && (poster_url.is_none() || trailer_key.is_none()) {
         status = EnrichmentStatus::Partial;
@@ -416,10 +463,15 @@ pub async fn enrich_one(
         metacritic,
         imdb_id: imdb_id.or(tmdb_imdb_id),
         tmdb_id,
+        collection_id,
+        collection_name,
         trailer_key,
         enrichment_status: status,
         torrent_file: None,
         s3_key: None,
         s3_keys: Vec::new(),
+        subtitles: Vec::new(),
+        episodes: Vec::new(),
+        keywords: Vec::new(),
     }
 }
