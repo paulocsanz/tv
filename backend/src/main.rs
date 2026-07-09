@@ -15,6 +15,7 @@ use std::path::PathBuf;
 use std::time::Duration;
 use tower_http::cors::{Any, CorsLayer};
 use tower_http::trace::TraceLayer;
+use tv_backend::audit;
 use tv_backend::auth::{self, UserRecord};
 use tv_backend::models::{
     CollectionParts, ContentType, EnrichedCache, EnrichedItem, EpisodeMetadata, RelatedTitle,
@@ -320,7 +321,11 @@ async fn main() {
         .route("/api/admin/users", get(list_users_handler).post(create_user_handler))
         .route("/api/admin/pipeline", get(get_pipeline_status_handler))
         .route("/api/admin/invites", post(create_invite_handler))
+        .route("/api/admin/catalog", get(get_catalog_review_handler))
+        .route("/api/admin/catalog/:id/research", post(retrigger_torrent_search_handler))
         .route("/api/account/password", post(change_password_handler))
+        .route("/api/account/preferences", post(update_preferences_handler))
+        .route("/api/usage-summary", get(usage_summary_handler))
         .route_layer(middleware::from_fn_with_state(state.clone(), require_auth));
 
     let app = Router::new()
@@ -994,12 +999,18 @@ async fn get_subtitle_content(
 struct MeResponse {
     username: String,
     is_admin: bool,
+    display_name: Option<String>,
+    default_subtitle_lang: Option<String>,
+    autoplay_next: bool,
 }
 
 async fn get_me(Extension(user): Extension<UserRecord>) -> Json<MeResponse> {
     Json(MeResponse {
         username: user.username,
         is_admin: user.is_admin,
+        display_name: user.display_name,
+        default_subtitle_lang: user.default_subtitle_lang,
+        autoplay_next: user.autoplay_next,
     })
 }
 
@@ -1075,6 +1086,48 @@ async fn change_password_handler(
     }
 }
 
+#[derive(Deserialize)]
+struct UpdatePreferencesRequest {
+    display_name: Option<String>,
+    default_subtitle_lang: Option<String>,
+    autoplay_next: bool,
+}
+
+async fn update_preferences_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+    Json(body): Json<UpdatePreferencesRequest>,
+) -> impl IntoResponse {
+    match auth::update_preferences(
+        &state.db,
+        user.id,
+        body.display_name.as_deref().filter(|s| !s.is_empty()),
+        body.default_subtitle_lang.as_deref().filter(|s| !s.is_empty()),
+        body.autoplay_next,
+    )
+    .await
+    {
+        Ok(()) => StatusCode::NO_CONTENT.into_response(),
+        Err(e) => {
+            tracing::error!("failed to update preferences: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+/// Any signed-in user can see the group's usage split (RFC 0001 P1) - it's
+/// meant to inform an offline cost conversation among people who already
+/// know each other, not a private admin metric.
+async fn usage_summary_handler(State(state): State<Arc<AppState>>) -> impl IntoResponse {
+    match progress::usage_by_user(&state.db).await {
+        Ok(usage) => Json(usage).into_response(),
+        Err(e) => {
+            tracing::error!("failed to compute usage summary: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
 #[derive(Serialize)]
 struct InviteResponse {
     token: String,
@@ -1107,14 +1160,21 @@ struct SignupRequest {
     token: String,
     username: String,
     password: String,
+    display_name: Option<String>,
 }
 
 async fn signup_handler(
     State(state): State<Arc<AppState>>,
     Json(body): Json<SignupRequest>,
 ) -> impl IntoResponse {
-    let user = match auth::redeem_invite(&state.db, &body.token, &body.username, &body.password)
-        .await
+    let user = match auth::redeem_invite(
+        &state.db,
+        &body.token,
+        &body.username,
+        &body.password,
+        body.display_name.as_deref().filter(|s| !s.is_empty()),
+    )
+    .await
     {
         Ok(user) => user,
         Err(auth::RedeemInviteError::InvalidOrExpired) => {
@@ -1256,9 +1316,7 @@ async fn get_pipeline_status_handler(Extension(user): Extension<UserRecord>) -> 
         return StatusCode::FORBIDDEN.into_response();
     }
 
-    let lock_pid: Option<i32> = std::fs::read_to_string(pipeline_lock_path())
-        .ok()
-        .and_then(|s| s.trim().parse().ok());
+    let lock_pid = pipeline_lock_pid();
     let running = lock_pid.map(pid_alive).unwrap_or(false);
 
     let Ok(raw) = std::fs::read_to_string(pipeline_events_path()) else {
@@ -1323,6 +1381,134 @@ async fn get_pipeline_status_handler(Extension(user): Extension<UserRecord>) -> 
         current_run,
     })
     .into_response()
+}
+
+#[derive(Serialize)]
+struct CatalogGapItem {
+    id: String,
+    title: String,
+    content_type: ContentType,
+}
+
+#[derive(Serialize)]
+struct CatalogReviewResponse {
+    no_torrent_options: Vec<CatalogGapItem>,
+    recent_edits: Vec<audit::CatalogEditEntry>,
+}
+
+/// Replaces reading *-flagged.json/bloated-uploads.json off disk (RFC 0003
+/// P1) - items with zero torrent options at either quality are exactly the
+/// review queue those files were standing in for.
+async fn get_catalog_review_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+) -> impl IntoResponse {
+    if !user.is_admin {
+        return StatusCode::FORBIDDEN.into_response();
+    }
+
+    let no_torrent_options: Vec<CatalogGapItem> = state
+        .items
+        .iter()
+        .filter(|i| i.s3_key.is_none() && i.s3_keys.is_empty())
+        .filter(|i| i.torrent_file.is_none())
+        .map(|i| CatalogGapItem {
+            id: i.id.clone(),
+            title: i.title.clone(),
+            content_type: i.content_type.clone(),
+        })
+        .collect();
+
+    let recent_edits = match audit::recent_catalog_edits(&state.db, 50).await {
+        Ok(edits) => edits,
+        Err(e) => {
+            tracing::error!("failed to fetch catalog edit log: {e}");
+            Vec::new()
+        }
+    };
+
+    Json(CatalogReviewResponse {
+        no_torrent_options,
+        recent_edits,
+    })
+    .into_response()
+}
+
+/// Re-runs the torrent picker for exactly one title (RFC 0003 P2) - the
+/// same escape hatch `pick-best-torrents.js <quality> <title-filter>`
+/// offers from the terminal, exposed as a button instead. Refuses outright
+/// if the download pipeline is running: both processes writing
+/// enriched_400.json at once is exactly what pipeline-status warns against.
+async fn retrigger_torrent_search_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+    Path(id): Path<String>,
+) -> impl IntoResponse {
+    if !user.is_admin {
+        return StatusCode::FORBIDDEN.into_response();
+    }
+
+    let Some(item) = state.items.iter().find(|i| i.id == id) else {
+        return (StatusCode::NOT_FOUND, "content not found").into_response();
+    };
+
+    if pipeline_lock_pid().is_some_and(pid_alive) {
+        return (
+            StatusCode::CONFLICT,
+            Json(serde_json::json!({
+                "error": "the download pipeline is currently running - stop it first, \
+                          re-running the torrent picker at the same time would corrupt \
+                          enriched_400.json"
+            })),
+        )
+            .into_response();
+    }
+
+    let project_root = std::env::var("PROJECT_ROOT").unwrap_or_else(|_| ".".to_string());
+    let output = tokio::process::Command::new("node")
+        .arg("pick-best-torrents.js")
+        .arg("720p")
+        .arg(&item.title)
+        .current_dir(&project_root)
+        .output()
+        .await;
+
+    match output {
+        Ok(out) if out.status.success() => {
+            let stdout = String::from_utf8_lossy(&out.stdout);
+            let found = stdout.contains("✓");
+            let detail = if found { "found new options" } else { "no options found" };
+            if let Err(e) =
+                audit::log_catalog_edit(&state.db, user.id, &id, "retrigger_torrent_search", Some(detail))
+                    .await
+            {
+                tracing::error!("failed to log catalog edit: {e}");
+            }
+            Json(serde_json::json!({ "found": found })).into_response()
+        }
+        Ok(out) => {
+            tracing::error!(
+                "pick-best-torrents.js exited non-zero: {}",
+                String::from_utf8_lossy(&out.stderr)
+            );
+            (StatusCode::INTERNAL_SERVER_ERROR, "torrent search failed").into_response()
+        }
+        Err(e) => {
+            tracing::error!("failed to spawn pick-best-torrents.js: {e}");
+            (
+                StatusCode::SERVICE_UNAVAILABLE,
+                "couldn't run the torrent picker here (needs Node + this project's root on the \
+                 same machine as the backend)",
+            )
+                .into_response()
+        }
+    }
+}
+
+fn pipeline_lock_pid() -> Option<i32> {
+    std::fs::read_to_string(pipeline_lock_path())
+        .ok()
+        .and_then(|s| s.trim().parse().ok())
 }
 
 async fn get_continue_watching(

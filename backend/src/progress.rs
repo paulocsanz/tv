@@ -2,6 +2,37 @@ use serde::Serialize;
 use sqlx::PgPool;
 
 #[derive(sqlx::FromRow, Serialize)]
+pub struct UserUsage {
+    pub user_id: i64,
+    pub username: String,
+    pub display_name: Option<String>,
+    pub watch_minutes: f64,
+}
+
+/// Per-user share of total watch time (RFC 0001: "per-user attribution ...
+/// derivable from existing sessions", used to inform cost-splitting - not a
+/// billing engine). There's no file-size field on catalog items to attribute
+/// actual bytes served, and streaming goes through presigned S3 redirects
+/// the backend never sees the byte count for anyway - watch time from the
+/// progress table already tracked for Continue Watching is the honest
+/// signal actually available, not an approximation bolted on separately.
+/// `position_seconds` is each episode's last-saved position, which
+/// undercounts rewatches, but overcounting via naive duration sums would be
+/// worse (a barely-started episode would count as fully watched).
+pub async fn usage_by_user(pool: &PgPool) -> Result<Vec<UserUsage>, sqlx::Error> {
+    sqlx::query_as(
+        "SELECT u.id AS user_id, u.username, u.display_name, \
+                COALESCE(SUM(w.position_seconds) / 60.0, 0.0) AS watch_minutes \
+         FROM users u \
+         LEFT JOIN watch_progress w ON w.user_id = u.id \
+         GROUP BY u.id, u.username, u.display_name \
+         ORDER BY watch_minutes DESC",
+    )
+    .fetch_all(pool)
+    .await
+}
+
+#[derive(sqlx::FromRow, Serialize)]
 pub struct ProgressRow {
     pub episode: i32,
     pub position_seconds: f64,

@@ -11,6 +11,9 @@ pub struct UserRecord {
     pub id: i64,
     pub username: String,
     pub is_admin: bool,
+    pub display_name: Option<String>,
+    pub default_subtitle_lang: Option<String>,
+    pub autoplay_next: bool,
 }
 
 #[derive(sqlx::FromRow)]
@@ -19,7 +22,13 @@ struct UserRow {
     username: String,
     password_hash: String,
     is_admin: bool,
+    display_name: Option<String>,
+    default_subtitle_lang: Option<String>,
+    autoplay_next: bool,
 }
+
+const USER_COLUMNS: &str =
+    "id, username, password_hash, is_admin, display_name, default_subtitle_lang, autoplay_next";
 
 impl From<UserRow> for UserRecord {
     fn from(row: UserRow) -> Self {
@@ -27,6 +36,9 @@ impl From<UserRow> for UserRecord {
             id: row.id,
             username: row.username,
             is_admin: row.is_admin,
+            display_name: row.display_name,
+            default_subtitle_lang: row.default_subtitle_lang,
+            autoplay_next: row.autoplay_next,
         }
     }
 }
@@ -36,6 +48,7 @@ pub struct UserSummary {
     pub id: i64,
     pub username: String,
     pub is_admin: bool,
+    pub display_name: Option<String>,
 }
 
 pub enum CreateUserError {
@@ -61,9 +74,7 @@ pub async fn seed_admin(pool: &PgPool, username: &str, password: &str) -> Result
 }
 
 pub async fn verify_login(pool: &PgPool, username: &str, password: &str) -> Option<UserRecord> {
-    let row: UserRow = sqlx::query_as(
-        "SELECT id, username, password_hash, is_admin FROM users WHERE username = $1",
-    )
+    let row: UserRow = sqlx::query_as(&format!("SELECT {USER_COLUMNS} FROM users WHERE username = $1"))
     .bind(username)
     .fetch_optional(pool)
     .await
@@ -88,7 +99,8 @@ pub async fn create_session(pool: &PgPool, user_id: i64) -> Result<String, sqlx:
 
 pub async fn session_user(pool: &PgPool, token: &str) -> Option<UserRecord> {
     let row: UserRow = sqlx::query_as(
-        "SELECT u.id, u.username, u.password_hash, u.is_admin \
+        "SELECT u.id, u.username, u.password_hash, u.is_admin, u.display_name, \
+                u.default_subtitle_lang, u.autoplay_next \
          FROM sessions s JOIN users u ON u.id = s.user_id \
          WHERE s.token_hash = $1",
     )
@@ -114,10 +126,10 @@ pub async fn create_user(
     is_admin: bool,
 ) -> Result<UserRecord, CreateUserError> {
     let password_hash = hash_password(password);
-    let result: Result<UserRow, sqlx::Error> = sqlx::query_as(
+    let result: Result<UserRow, sqlx::Error> = sqlx::query_as(&format!(
         "INSERT INTO users (username, password_hash, is_admin) VALUES ($1, $2, $3) \
-         RETURNING id, username, password_hash, is_admin",
-    )
+         RETURNING {USER_COLUMNS}"
+    ))
     .bind(username)
     .bind(password_hash)
     .bind(is_admin)
@@ -134,7 +146,7 @@ pub async fn create_user(
 }
 
 pub async fn list_users(pool: &PgPool) -> Result<Vec<UserSummary>, sqlx::Error> {
-    sqlx::query_as("SELECT id, username, is_admin FROM users ORDER BY id")
+    sqlx::query_as("SELECT id, username, is_admin, display_name FROM users ORDER BY id")
         .fetch_all(pool)
         .await
 }
@@ -172,7 +184,7 @@ pub async fn change_password(
     new_password: &str,
 ) -> Result<(), ChangePasswordError> {
     let row: UserRow =
-        sqlx::query_as("SELECT id, username, password_hash, is_admin FROM users WHERE id = $1")
+        sqlx::query_as(&format!("SELECT {USER_COLUMNS} FROM users WHERE id = $1"))
             .bind(user_id)
             .fetch_one(pool)
             .await
@@ -192,6 +204,31 @@ pub async fn change_password(
         .await
         .map_err(ChangePasswordError::Database)?;
 
+    Ok(())
+}
+
+/// Updates the self-serve profile fields together (RFC 0001 P2 display name,
+/// RFC 0002 P1 preferences) - one form on /account, one call. `None` for
+/// display_name/default_subtitle_lang clears that field rather than leaving
+/// it untouched, matching how the account form submits its current values
+/// (including empty ones) every time rather than only the changed field.
+pub async fn update_preferences(
+    pool: &PgPool,
+    user_id: i64,
+    display_name: Option<&str>,
+    default_subtitle_lang: Option<&str>,
+    autoplay_next: bool,
+) -> Result<(), sqlx::Error> {
+    sqlx::query(
+        "UPDATE users SET display_name = $1, default_subtitle_lang = $2, autoplay_next = $3 \
+         WHERE id = $4",
+    )
+    .bind(display_name)
+    .bind(default_subtitle_lang)
+    .bind(autoplay_next)
+    .bind(user_id)
+    .execute(pool)
+    .await?;
     Ok(())
 }
 
@@ -234,6 +271,7 @@ pub async fn redeem_invite(
     token: &str,
     username: &str,
     password: &str,
+    display_name: Option<&str>,
 ) -> Result<UserRecord, RedeemInviteError> {
     let token_hash = hash_token(token);
     let mut tx = pool.begin().await.map_err(RedeemInviteError::Database)?;
@@ -253,12 +291,13 @@ pub async fn redeem_invite(
     }
 
     let password_hash = hash_password(password);
-    let result: Result<UserRow, sqlx::Error> = sqlx::query_as(
-        "INSERT INTO users (username, password_hash, is_admin) VALUES ($1, $2, FALSE) \
-         RETURNING id, username, password_hash, is_admin",
-    )
+    let result: Result<UserRow, sqlx::Error> = sqlx::query_as(&format!(
+        "INSERT INTO users (username, password_hash, is_admin, display_name) \
+         VALUES ($1, $2, FALSE, $3) RETURNING {USER_COLUMNS}"
+    ))
     .bind(username)
     .bind(password_hash)
+    .bind(display_name)
     .fetch_one(&mut *tx)
     .await;
 
