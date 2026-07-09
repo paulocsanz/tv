@@ -46,3 +46,7 @@ nohup.out
 *.bak-pre-*
 pick-*-results.json
 *-dry-run*.json
+
+# Claude Code local-only state (keep .claude/skills/ tracked)
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
