@@ -1,6 +1,6 @@
 # Account Signup & Cost Sharing
 
-**Status:** Draft
+**Status:** Implemented
 
 ## Background
 
@@ -33,11 +33,19 @@
       invitee sets their own username/password, replacing admin-only `CreateUserForm` submission.
       Implemented 2026-07-09: `POST /api/admin/invites` (admin-only) + `/signup?token=` page,
       7-day single-use tokens in a new `invites` table (migration `0002_invites.sql`).
-- [ ] **P0** Per-user attribution: track bytes served / minutes watched per user (derivable from
+- [x] **P0** Per-user attribution: track bytes served / minutes watched per user (derivable from
       existing sessions + S3 access patterns) — a signal, not a billing engine.
-- [ ] **P1** A simple periodic cost summary (e.g. monthly, emailed or shown on `/account`)
+      Implemented 2026-07-09: `progress::usage_by_user` sums `watch_progress.position_seconds`
+      per user. Bytes served was dropped — streaming goes through presigned S3 redirects the
+      backend never sees byte counts for, and there's no file-size field on catalog items to
+      approximate from; watch time is the honest signal actually available.
+- [x] **P1** A simple periodic cost summary (e.g. monthly, emailed or shown on `/account`)
       showing the group's total spend and each person's share of usage — no payment processing.
-- [ ] **P2** Let invited users set a display name distinct from login username.
+      Implemented 2026-07-09: "Group usage" section on `/account`, `GET /api/usage-summary`.
+      No "spend" figure (nothing here knows the actual S3/compute bill) - shows time-watched
+      share instead, which is what the per-user attribution above can honestly provide.
+- [x] **P2** Let invited users set a display name distinct from login username.
+      Implemented 2026-07-09: optional field on `/signup` and editable anytime on `/account`.
 - Keep the single shared catalog model — no per-tenant catalog isolation. "Tenant" means
   "invited person," not "paying customer."
 - **Explicitly out of scope** unless the open question above gets a different answer: public

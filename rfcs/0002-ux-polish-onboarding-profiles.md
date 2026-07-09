@@ -1,6 +1,6 @@
 # UX Polish: Onboarding & Self-Serve Profiles
 
-**Status:** Draft
+**Status:** Implemented
 
 ## Background
 
@@ -23,13 +23,25 @@
 
 ## Proposed Solution
 
-- [ ] **P0** First-login onboarding: a short in-app walkthrough covering Continue Watching,
+- [x] **P0** First-login onboarding: a short in-app walkthrough covering Continue Watching,
       search, and playback controls — shown once, skippable.
+      Implemented 2026-07-09: `OnboardingWalkthrough` on the home page. "Shown once" is
+      per-browser (localStorage), not per-account — there's no backend field for it yet.
 - [x] **P0** Self-serve `/account` page: change own password, view own watch history.
       Implemented 2026-07-09: `/account` page (linked from Header) + `POST /api/account/password`.
       Reuses the existing continue-watching query for "watch history" rather than a new table.
-- [ ] **P1** User preferences on the same page: default subtitle language, autoplay-next-episode.
-- [ ] **P1** Real empty states: zero search results, empty Continue Watching, a title with no
+- [x] **P1** User preferences on the same page: default subtitle language, autoplay-next-episode.
+      Implemented 2026-07-09: `PreferencesForm` on `/account`, wired into `VideoPlayer` (subtitle
+      default and auto-advance to the next episode on end).
+- [x] **P1** Real empty states: zero search results, empty Continue Watching, a title with no
       streamable file yet (surface something more useful than a blank/broken player).
-- [ ] **P2** Visual consistency pass across login/browse/title pages — shared spacing scale,
+      Search (already had one) and "no streamable file" (title page) got real empty states.
+      Empty Continue Watching stays hidden rather than showing a placeholder row — matching
+      how it already behaved, and how most catalog UIs handle it; the "new user with nothing
+      watched yet" case is covered by the onboarding walkthrough instead.
+- [x] **P2** Visual consistency pass across login/browse/title pages — shared spacing scale,
       typography, and color tokens layered onto the existing Tailwind setup.
+      Audited 2026-07-09: container widths, headings, and form styling were already consistent
+      (new pages this session followed existing patterns throughout). One real duplication
+      found and fixed: the "Not authorized" admin-gate markup, copy-pasted identically across
+      3 admin pages, extracted into a shared `NotAuthorized` component.
