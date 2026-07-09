@@ -300,7 +300,8 @@ async fn main() {
 
     let public_routes = Router::new()
         .route("/health", get(health))
-        .route("/api/login", post(login));
+        .route("/api/login", post(login))
+        .route("/api/signup", post(signup_handler));
 
     let protected_routes = Router::new()
         .route("/api/meta", get(get_meta))
@@ -317,6 +318,9 @@ async fn main() {
         .route("/api/logout", post(logout))
         .route("/api/me", get(get_me))
         .route("/api/admin/users", get(list_users_handler).post(create_user_handler))
+        .route("/api/admin/pipeline", get(get_pipeline_status_handler))
+        .route("/api/admin/invites", post(create_invite_handler))
+        .route("/api/account/password", post(change_password_handler))
         .route_layer(middleware::from_fn_with_state(state.clone(), require_auth));
 
     let app = Router::new()
@@ -1045,6 +1049,104 @@ async fn create_user_handler(
 }
 
 #[derive(Deserialize)]
+struct ChangePasswordRequest {
+    current_password: String,
+    new_password: String,
+}
+
+async fn change_password_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+    Json(body): Json<ChangePasswordRequest>,
+) -> impl IntoResponse {
+    match auth::change_password(&state.db, user.id, &body.current_password, &body.new_password)
+        .await
+    {
+        Ok(()) => StatusCode::NO_CONTENT.into_response(),
+        Err(auth::ChangePasswordError::WrongCurrentPassword) => (
+            StatusCode::UNAUTHORIZED,
+            Json(serde_json::json!({ "error": "current password is incorrect" })),
+        )
+            .into_response(),
+        Err(auth::ChangePasswordError::Database(e)) => {
+            tracing::error!("failed to change password: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+#[derive(Serialize)]
+struct InviteResponse {
+    token: String,
+    expires_at: String,
+}
+
+async fn create_invite_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+) -> impl IntoResponse {
+    if !user.is_admin {
+        return StatusCode::FORBIDDEN.into_response();
+    }
+
+    match auth::create_invite(&state.db, user.id).await {
+        Ok(invite) => Json(InviteResponse {
+            token: invite.token,
+            expires_at: invite.expires_at,
+        })
+        .into_response(),
+        Err(e) => {
+            tracing::error!("failed to create invite: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+#[derive(Deserialize)]
+struct SignupRequest {
+    token: String,
+    username: String,
+    password: String,
+}
+
+async fn signup_handler(
+    State(state): State<Arc<AppState>>,
+    Json(body): Json<SignupRequest>,
+) -> impl IntoResponse {
+    let user = match auth::redeem_invite(&state.db, &body.token, &body.username, &body.password)
+        .await
+    {
+        Ok(user) => user,
+        Err(auth::RedeemInviteError::InvalidOrExpired) => {
+            return (
+                StatusCode::GONE,
+                Json(serde_json::json!({ "error": "invite link is invalid or expired" })),
+            )
+                .into_response()
+        }
+        Err(auth::RedeemInviteError::UsernameTaken) => {
+            return (
+                StatusCode::CONFLICT,
+                Json(serde_json::json!({ "error": "username already taken" })),
+            )
+                .into_response()
+        }
+        Err(auth::RedeemInviteError::Database(e)) => {
+            tracing::error!("failed to redeem invite: {e}");
+            return StatusCode::INTERNAL_SERVER_ERROR.into_response();
+        }
+    };
+
+    match auth::create_session(&state.db, user.id).await {
+        Ok(token) => Json(LoginResponse { token }).into_response(),
+        Err(e) => {
+            tracing::error!("failed to create session after signup: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+#[derive(Deserialize)]
 struct ProgressUpdateRequest {
     episode: i32,
     position_seconds: f64,
@@ -1095,6 +1197,132 @@ struct ContinueWatchingItem {
     item: EnrichedItem,
     episode: i32,
     progress_fraction: f64,
+}
+
+fn pipeline_events_path() -> String {
+    std::env::var("PIPELINE_EVENTS_PATH").unwrap_or_else(|_| "pipeline-events.jsonl".to_string())
+}
+
+fn pipeline_lock_path() -> String {
+    std::env::var("PIPELINE_LOCK_PATH")
+        .unwrap_or_else(|_| ".download-picked-torrents.lock".to_string())
+}
+
+/// Shells out to `ps` rather than pulling in a process-inspection crate -
+/// this is a personal-project admin page, not something worth a new
+/// dependency for. Only meaningful when the backend runs on the same
+/// machine as the download pipeline (local dev); in a real deployment
+/// there's no lock file to find and `running` is simply false.
+fn pid_alive(pid: i32) -> bool {
+    std::process::Command::new("ps")
+        .args(["-p", &pid.to_string()])
+        .output()
+        .map(|o| o.status.success())
+        .unwrap_or(false)
+}
+
+fn now_ms() -> i64 {
+    std::time::SystemTime::now()
+        .duration_since(std::time::UNIX_EPOCH)
+        .unwrap_or_default()
+        .as_millis() as i64
+}
+
+#[derive(Serialize, Default)]
+struct PipelineStatusResponse {
+    running: bool,
+    lock_pid: Option<i32>,
+    last_event: Option<serde_json::Value>,
+    seconds_since_last_event: Option<i64>,
+    current_run: Option<PipelineRunSummary>,
+}
+
+#[derive(Serialize)]
+struct PipelineRunSummary {
+    started_ts: i64,
+    picked: i64,
+    total: i64,
+    done_this_run: usize,
+    failed_this_run: usize,
+}
+
+/// Reads whatever the download pipeline has written to `pipeline-events.jsonl`
+/// and the lock file next to it - see the `pipeline-status` Claude Code skill,
+/// which this mirrors for the web admin UI (RFC 0003). Read-only; never
+/// touches `enriched_400.json` itself, so it's safe to call while the
+/// pipeline is running.
+async fn get_pipeline_status_handler(Extension(user): Extension<UserRecord>) -> impl IntoResponse {
+    if !user.is_admin {
+        return StatusCode::FORBIDDEN.into_response();
+    }
+
+    let lock_pid: Option<i32> = std::fs::read_to_string(pipeline_lock_path())
+        .ok()
+        .and_then(|s| s.trim().parse().ok());
+    let running = lock_pid.map(pid_alive).unwrap_or(false);
+
+    let Ok(raw) = std::fs::read_to_string(pipeline_events_path()) else {
+        return Json(PipelineStatusResponse {
+            running,
+            lock_pid,
+            ..Default::default()
+        })
+        .into_response();
+    };
+
+    let events: Vec<serde_json::Value> = raw
+        .lines()
+        .filter_map(|line| serde_json::from_str(line).ok())
+        .collect();
+
+    let last_event = events.last().cloned();
+    let seconds_since_last_event = last_event
+        .as_ref()
+        .and_then(|e| e.get("ts"))
+        .and_then(|v| v.as_i64())
+        .map(|ts| (now_ms() - ts) / 1000);
+
+    fn event_type(e: &serde_json::Value) -> Option<&str> {
+        e.get("type").and_then(|v| v.as_str())
+    }
+    fn event_ts(e: &serde_json::Value) -> i64 {
+        e.get("ts").and_then(|v| v.as_i64()).unwrap_or(0)
+    }
+
+    let last_start = events
+        .iter()
+        .rev()
+        .find(|e| event_type(e) == Some("pipeline_start"));
+
+    let current_run = last_start.map(|start| {
+        let started_ts = event_ts(start);
+        let picked = start.get("picked").and_then(|v| v.as_i64()).unwrap_or(0);
+        let total = start.get("total").and_then(|v| v.as_i64()).unwrap_or(0);
+        let done_this_run = events
+            .iter()
+            .filter(|e| event_ts(e) >= started_ts && event_type(e) == Some("item_done"))
+            .count();
+        let failed_this_run = events
+            .iter()
+            .filter(|e| event_ts(e) >= started_ts && event_type(e) == Some("item_failed"))
+            .count();
+        PipelineRunSummary {
+            started_ts,
+            picked,
+            total,
+            done_this_run,
+            failed_this_run,
+        }
+    });
+
+    Json(PipelineStatusResponse {
+        running,
+        lock_pid,
+        last_event,
+        seconds_since_last_event,
+        current_run,
+    })
+    .into_response()
 }
 
 async fn get_continue_watching(
