@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { getMeOrNull, getPipelineStatusOrNull } from "@/lib/api";
+import { AdminNav } from "@/components/AdminNav";
+import { NotAuthorized } from "@/components/NotAuthorized";
 
 function timeAgo(seconds: number): string {
   if (seconds < 60) return `${Math.floor(seconds)}s ago`;
@@ -14,13 +15,7 @@ function timeAgo(seconds: number): string {
 export default async function AdminPipelinePage() {
   const me = await getMeOrNull();
 
-  if (!me || !me.is_admin) {
-    return (
-      <div className="mx-auto max-w-md px-4 py-24 text-center text-zinc-400">
-        Not authorized.
-      </div>
-    );
-  }
+  if (!me || !me.is_admin) return <NotAuthorized />;
 
   const status = await getPipelineStatusOrNull();
 
@@ -28,9 +23,7 @@ export default async function AdminPipelinePage() {
     <div className="mx-auto max-w-xl px-4 py-12 sm:px-8">
       <div className="mb-6 flex items-center justify-between">
         <h1 className="text-2xl font-bold text-white">Pipeline</h1>
-        <Link href="/admin/users" className="text-sm text-zinc-400 hover:text-white">
-          Accounts →
-        </Link>
+        <AdminNav current="/admin/pipeline" />
       </div>
 
       {!status ? (

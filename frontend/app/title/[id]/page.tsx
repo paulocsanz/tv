@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getContentById, getProgress, getRelatedContent, getSimilarContent } from "@/lib/api";
+import { getContentById, getMeOrNull, getProgress, getRelatedContent, getSimilarContent } from "@/lib/api";
 import { ImdbBadge, RottenTomatoesBadge } from "@/components/RatingBadges";
 import { PosterPlaceholder } from "@/components/ContentCard";
 import { RelatedTitleCard } from "@/components/RelatedTitleCard";
@@ -32,6 +32,7 @@ export default async function TitlePage({
 
   const related = item.collection_id ? await getRelatedContent(id) : [];
   const similar = await getSimilarContent(id);
+  const me = await getMeOrNull();
 
   const backdrop = item.backdrop_url;
 
@@ -170,13 +171,21 @@ export default async function TitlePage({
               initialProgress={await getProgress(item.id)}
               subtitles={item.subtitles}
               episodeMetadata={item.episodes}
+              preferredSubtitleLang={me?.default_subtitle_lang ?? null}
+              autoplayNext={me?.autoplay_next ?? true}
             />
           </div>
         ) : item.torrent_file ? (
           <p className="mt-4 inline-block rounded-lg bg-amber-600/20 px-3 py-1.5 text-sm text-amber-300">
             📥 Available locally: <code className="text-xs font-mono">{item.torrent_file}</code>
           </p>
-        ) : null}
+        ) : (
+          <div className="mt-10 rounded-lg border border-white/10 bg-white/5 px-4 py-6 text-center">
+            <p className="text-sm text-zinc-400">
+              Not available to stream yet — it&apos;s still in the acquisition queue.
+            </p>
+          </div>
+        )}
 
         {item.trailer_key && (
           <div id="trailer" className="mt-10 scroll-mt-24">

@@ -86,12 +86,16 @@ export function VideoPlayer({
   initialProgress,
   subtitles,
   episodeMetadata = [],
+  preferredSubtitleLang = null,
+  autoplayNext = true,
 }: {
   id: string;
   s3Keys: string[];
   initialProgress: ProgressEntry[];
   subtitles: SubtitleTrack[];
   episodeMetadata?: EpisodeMetadata[];
+  preferredSubtitleLang?: string | null;
+  autoplayNext?: boolean;
 }) {
   const hasEpisodes = s3Keys.length > 1;
   // s3Keys isn't guaranteed to be in episode order; sort a copy for display
@@ -116,10 +120,14 @@ export function VideoPlayer({
   const episodeNumber = hasEpisodes ? selectedIndex + 1 : 0;
   const savedProgress = initialProgress.find((p) => p.episode === episodeNumber) ?? null;
   const episodeSubtitles = subtitles.filter((t) => t.episode === episodeNumber);
-  // First non-forced English track wins the browser's default caption
-  // choice; forced tracks (foreign-dialogue-only) are opt-in, never default.
+  // The user's preferred language wins if this episode has it; otherwise
+  // fall back to non-forced English, then any non-forced track. Forced
+  // tracks (foreign-dialogue-only) are opt-in, never a default.
   const defaultSubtitleId =
-    (episodeSubtitles.find((t) => t.lang === "eng" && !t.forced) ??
+    ((preferredSubtitleLang
+      ? episodeSubtitles.find((t) => t.lang === preferredSubtitleLang && !t.forced)
+      : undefined) ??
+      episodeSubtitles.find((t) => t.lang === "eng" && !t.forced) ??
       episodeSubtitles.find((t) => !t.forced))?.id ?? null;
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -195,6 +203,16 @@ export function VideoPlayer({
     video.currentTime = Math.min(duration, Math.max(0, video.currentTime + deltaSeconds));
   }
 
+  // `episodes` is sorted for display, which isn't the same order as
+  // `selectedIndex` (an index into the original s3Keys array) - "next" means
+  // the next one in display/narrative order, not originalIndex + 1.
+  function playNextEpisode() {
+    if (!autoplayNext || !hasEpisodes) return;
+    const currentPos = episodes.findIndex((ep) => ep.originalIndex === selectedIndex);
+    const next = episodes[currentPos + 1];
+    if (next) setSelectedIndex(next.originalIndex);
+  }
+
   // Left/Right skip ±10s, Space toggles play/pause - but only when the
   // video element itself doesn't already have focus. Browsers bind their
   // own versions of these same shortcuts to a focused <video>, and we can't
@@ -250,6 +268,7 @@ export function VideoPlayer({
           onEnded={() => {
             setIsPlaying(false);
             reportProgress(false);
+            playNextEpisode();
           }}
           onWaiting={() => setStatus("loading")}
           onPlaying={() => setStatus("ready")}

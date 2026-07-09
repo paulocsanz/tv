@@ -94,17 +94,47 @@ export interface ProgressEntry {
 export interface MeResponse {
   username: string;
   is_admin: boolean;
+  display_name: string | null;
+  default_subtitle_lang: string | null;
+  autoplay_next: boolean;
 }
 
 export interface UserSummary {
   id: number;
   username: string;
   is_admin: boolean;
+  display_name: string | null;
 }
 
 export interface InviteResponse {
   token: string;
   expires_at: string;
+}
+
+export interface UserUsage {
+  user_id: number;
+  username: string;
+  display_name: string | null;
+  watch_minutes: number;
+}
+
+export interface CatalogGapItem {
+  id: string;
+  title: string;
+  content_type: ContentType;
+}
+
+export interface CatalogEditEntry {
+  username: string;
+  content_id: string;
+  action: string;
+  detail: string | null;
+  created_at: string;
+}
+
+export interface CatalogReviewResponse {
+  no_torrent_options: CatalogGapItem[];
+  recent_edits: CatalogEditEntry[];
 }
 
 export interface PipelineRunSummary {

@@ -8,6 +8,7 @@ export async function POST(request: Request) {
   const token = body?.token;
   const username = body?.username;
   const password = body?.password;
+  const displayName = body?.display_name;
 
   if (typeof token !== "string" || typeof username !== "string" || typeof password !== "string") {
     return NextResponse.json({ error: "token, username and password are required" }, { status: 400 });
@@ -16,7 +17,12 @@ export async function POST(request: Request) {
   const backendRes = await fetch(`${API_URL}/api/signup`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ token, username, password }),
+    body: JSON.stringify({
+      token,
+      username,
+      password,
+      display_name: typeof displayName === "string" ? displayName : null,
+    }),
   });
 
   if (!backendRes.ok) {

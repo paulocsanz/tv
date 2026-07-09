@@ -9,6 +9,7 @@ function SignupForm() {
   const token = searchParams.get("token") ?? "";
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [displayName, setDisplayName] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
 
@@ -20,7 +21,7 @@ function SignupForm() {
     const res = await fetch("/api/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ token, username, password }),
+      body: JSON.stringify({ token, username, password, display_name: displayName || null }),
     });
 
     if (!res.ok) {
@@ -74,6 +75,19 @@ function SignupForm() {
           onChange={(e) => setPassword(e.target.value)}
           required
           minLength={8}
+          className="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-white outline-none focus:border-[#f5c518]"
+        />
+      </div>
+      <div>
+        <label htmlFor="display-name" className="mb-1 block text-sm text-zinc-400">
+          Display name <span className="text-zinc-600">(optional)</span>
+        </label>
+        <input
+          id="display-name"
+          autoComplete="nickname"
+          value={displayName}
+          onChange={(e) => setDisplayName(e.target.value)}
+          placeholder={username || "How others see you"}
           className="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-white outline-none focus:border-[#f5c518]"
         />
       </div>

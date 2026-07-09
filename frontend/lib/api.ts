@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import {
+  CatalogReviewResponse,
   ContentItem,
   ContentResponse,
   ContinueWatchingItem,
@@ -11,6 +12,7 @@ import {
   RelatedTitle,
   Section,
   UserSummary,
+  UserUsage,
 } from "./types";
 import { SESSION_COOKIE } from "./session";
 
@@ -145,5 +147,23 @@ export async function getContinueWatching(): Promise<ContinueWatchingItem[]> {
     cache: "no-store",
   });
   if (!res.ok) return [];
+  return res.json();
+}
+
+export async function getUsageSummary(): Promise<UserUsage[]> {
+  const res = await fetch(`${API_URL}/api/usage-summary`, {
+    headers: await authHeaders(),
+    cache: "no-store",
+  });
+  if (!res.ok) return [];
+  return res.json();
+}
+
+export async function getCatalogReviewOrNull(): Promise<CatalogReviewResponse | null> {
+  const res = await fetch(`${API_URL}/api/admin/catalog`, {
+    headers: await authHeaders(),
+    cache: "no-store",
+  });
+  if (!res.ok) return null;
   return res.json();
 }
