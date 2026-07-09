@@ -9701,7 +9701,9 @@
       "trailer_key": "i-vsILeJ8_8",
       "enrichment_status": "ok",
       "torrent_file": "Star_Wars_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/star-wars-1977-movie/Star.Wars.Episode.4.A.New.Hope.1977.1080p.BrRip.x264.BOKUTOX.YIFY.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -9723,7 +9725,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_key": "videos/star-wars-1977-movie/Star.Wars.Episode.4.A.New.Hope.1977.1080p.BrRip.x264.BOKUTOX.YIFY.mp4"
     },
     {
       "id": "city-of-god-2002-movie",
@@ -9999,8 +10002,10 @@
       "trailer_key": "wDVdgnhiNlY",
       "enrichment_status": "ok",
       "torrent_file": "A_Dog's_Will_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/a-dog-s-will-2000-movie/O.Auto.da.Compadecida.Remasterizado.2000.BluRay.1080p.Remux.H264.DTS-HD.5.1-lendker.mp4",
+      "s3_keys": [
+        "videos/a-dog-s-will-2000-movie/O.Auto.da.Compadecida.Remasterizado.2000.BluRay.1080p.Remux.H264.DTS-HD.5.1-lendker.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -10900,7 +10905,9 @@
       "trailer_key": "og9hFxxdSOg",
       "enrichment_status": "ok",
       "torrent_file": "The_Past_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/the-pianist-2002-movie/The.Pianist.2002.1080p.BrRip.x264.YIFY.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -10948,7 +10955,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_key": "videos/the-pianist-2002-movie/The.Pianist.2002.1080p.BrRip.x264.YIFY.mp4"
     },
     {
       "id": "city-lights-1931-movie",
@@ -12222,7 +12230,9 @@
       "trailer_key": "sVwH0hIvV5k",
       "enrichment_status": "ok",
       "torrent_file": "Lion_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/alien-1979-movie/Alien.Directors.Cut.1979.1080p.BRrip.x264.GAZ.YIFY.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -12236,7 +12246,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_key": "videos/alien-1979-movie/Alien.Directors.Cut.1979.1080p.BRrip.x264.GAZ.YIFY.mp4"
     },
     {
       "id": "cinema-paradiso-1988-movie",
@@ -14106,8 +14117,19 @@
       "trailer_key": "-RFFRxcoKfA",
       "enrichment_status": "ok",
       "torrent_file": "Joker_x",
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/joker-2019-movie/Joker 2019 BluRay 1080p DDP 5 1 x264-hallowed.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/joker-2019-movie/Joker 2019 BluRay 1080p DDP 5 1 x264-hallowed.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "torrent_options": [
@@ -14152,7 +14174,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 0,
+      "s3_key": "videos/joker-2019-movie/Joker 2019 BluRay 1080p DDP 5 1 x264-hallowed.mp4"
     },
     {
       "id": "st-elsewhere-1982-tv",
@@ -17266,8 +17289,131 @@
       "trailer_key": "6c3K7LhA9Yc",
       "enrichment_status": "ok",
       "torrent_file": "Toy_Story_3_x",
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.eng.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.eng-2.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "cze",
+          "lang": "cze",
+          "label": "Czech",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.cze.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "gre",
+          "lang": "gre",
+          "label": "Greek",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.gre.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.spa.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "hun",
+          "lang": "hun",
+          "label": "HUN",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.hun.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "ice",
+          "lang": "ice",
+          "label": "ICE",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.ice.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "kor",
+          "lang": "kor",
+          "label": "Korean",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.kor.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "pol",
+          "lang": "pol",
+          "label": "Polish",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.pol.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "rum",
+          "lang": "rum",
+          "label": "RUM",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.rum.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "slo",
+          "lang": "slo",
+          "label": "SLO",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.slo.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "tur",
+          "lang": "tur",
+          "label": "Turkish",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.tur.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "chi",
+          "lang": "chi",
+          "label": "Chinese",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.chi.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "chi-2",
+          "lang": "chi",
+          "label": "Chinese",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.chi-2.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "chi-3",
+          "lang": "chi",
+          "label": "Chinese",
+          "forced": false,
+          "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.chi-3.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "torrent_options": [
@@ -17288,7 +17434,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_key": "videos/toy-story-3-2010-movie/Toy Story 3 2010 1080p DSNP WEB-DL H265 SDR DDP Atmos 5 1 English --HONE.mp4"
     },
     {
       "id": "aliens-1986-movie",
@@ -19107,9 +19254,19 @@
       "trailer_key": "cPNiwc3ogIo",
       "enrichment_status": "ok",
       "torrent_file": "North_by_Northwest_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/north-by-northwest-1959-movie/North.By.Northwest.1959.720p.BluRay.999MB.HQ.x265.10bit-GalaxyRG.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/north-by-northwest-1959-movie/North.By.Northwest.1959.720p.BluRay.999MB.HQ.x265.10bit-GalaxyRG.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "torrent_options_720p": [
@@ -19165,7 +19322,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_key": "videos/north-by-northwest-1959-movie/North.By.Northwest.1959.720p.BluRay.999MB.HQ.x265.10bit-GalaxyRG.mp4"
     },
     {
       "id": "i-love-lucy-1951-tv",
@@ -19495,7 +19653,9 @@
       "trailer_key": "Ajcdb4FAL7A",
       "enrichment_status": "ok",
       "torrent_file": "UFO_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/up-2009-movie/Up.2009.1080p.BluRay.x264.YIFY.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -19509,7 +19669,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_key": "videos/up-2009-movie/Up.2009.1080p.BluRay.x264.YIFY.mp4"
     },
     {
       "id": "singin-in-the-rain-1952-movie",
@@ -19613,7 +19774,9 @@
       "trailer_key": "CxwTLktovTU",
       "enrichment_status": "ok",
       "torrent_file": "Love_Story_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/toy-story-1995-movie/Toy.Story.1995.1080p.BRrip.x264.YIFY.mp4"
+      ],
       "subtitles": [
         {
           "episode": 0,
@@ -19644,7 +19807,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_key": "videos/toy-story-1995-movie/Toy.Story.1995.1080p.BRrip.x264.YIFY.mp4"
     },
     {
       "id": "they-don-t-wear-black-tie-1981-movie",
@@ -22458,9 +22622,20 @@
       "trailer_key": "MdENmefJRpw",
       "enrichment_status": "ok",
       "torrent_file": null,
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/back-to-the-future-part-ii-1989-movie/Back.to.the.Future.Part.II.1989.REPACK.REMASTERED.720p.BluRay.999MB.HQ.x265.10bit-GalaxyRG.mp4",
+      "s3_keys": [
+        "videos/back-to-the-future-part-ii-1989-movie/Back.to.the.Future.Part.II.1989.REPACK.REMASTERED.720p.BluRay.999MB.HQ.x265.10bit-GalaxyRG.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/back-to-the-future-part-ii-1989-movie/Back.to.the.Future.Part.II.1989.REPACK.REMASTERED.720p.BluRay.999MB.HQ.x265.10bit-GalaxyRG.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "torrent_options": [
