@@ -23218,8 +23218,10 @@
       "trailer_key": "nGrW-OR2uDk",
       "enrichment_status": "ok",
       "torrent_file": null,
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/the-terminator-1984-movie/Terminator.1984.720p.BluRayx264.YIFY.mp4",
+      "s3_keys": [
+        "videos/the-terminator-1984-movie/Terminator.1984.720p.BluRayx264.YIFY.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -23458,7 +23460,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 2
     },
     {
       "id": "elena-2012-movie",
@@ -25919,7 +25921,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 2
+      "current_torrent_index_720p": 3
     },
     {
       "id": "avengers-age-of-ultron-2015-movie",
@@ -27766,7 +27768,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 2
+      "current_torrent_index_720p": 3
     },
     {
       "id": "travessia-2022-tv",
@@ -32530,7 +32532,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 2
+      "current_torrent_index_720p": 3
     },
     {
       "id": "love-for-sale-2006-movie",
