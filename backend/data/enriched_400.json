@@ -307,7 +307,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "chernobyl-2019-tv",
@@ -1201,7 +1201,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "the-godfather-1972-movie",
@@ -3794,7 +3794,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "over-the-garden-wall-2014-tv",
@@ -6437,15 +6437,9 @@
       "trailer_key": "F4da9uRIg8c",
       "enrichment_status": "ok",
       "torrent_file": "One_Flew_Over_the_Cuckoo's_Nest_x",
-      "s3_key": "videos/one-flew-over-the-cuckoo-s-nest-1975-movie/Asylum - An Empty Nest for the Mentally Ill.mp4",
+      "s3_key": "videos/one-flew-over-the-cuckoo-s-nest-1975-movie/One Flew Over the Cuckoo's Nest (1975) (1080p BluRay x265 Silence).mp4",
       "s3_keys": [
-        "videos/one-flew-over-the-cuckoo-s-nest-1975-movie/Asylum - An Empty Nest for the Mentally Ill.mp4",
-        "videos/one-flew-over-the-cuckoo-s-nest-1975-movie/Deleted Scenes.mp4",
-        "videos/one-flew-over-the-cuckoo-s-nest-1975-movie/Trailer.mp4",
-        "videos/one-flew-over-the-cuckoo-s-nest-1975-movie/One Flew Over the Cuckoo's Nest (1975) (1080p BluRay x265 Silence).mp4",
-        "videos/one-flew-over-the-cuckoo-s-nest-1975-movie/Completely Cuckoo.mp4",
-        "videos/one-flew-over-the-cuckoo-s-nest-1975-movie/Completely Cuckoo.mp4",
-        "videos/one-flew-over-the-cuckoo-s-nest-1975-movie/One Flew Over the Cuckoo's Nest 1975 (1080p x265 10bit Tigole).mp4"
+        "videos/one-flew-over-the-cuckoo-s-nest-1975-movie/One Flew Over the Cuckoo's Nest (1975) (1080p BluRay x265 Silence).mp4"
       ],
       "subtitles": [],
       "episodes": [],
@@ -6998,16 +6992,7 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "torrent_options": [
-        {
-          "title": "Pawged - Elizabeth Skylar - Elizabeth Loves Big Dick - MILF, Interracial 1080p  ",
-          "magnet": "magnet:?xt=urn:btih:2B4FFE81730100007E3C48CCF41207C1644F6960&dn=Pawged%20-%20Elizabeth%20Skylar%20-%20Elizabeth%20Loves%20Big%20Dick%20-%20MILF%2C%20Interracial%201080p%20%20&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 45,
-          "size": "2.6 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 800
-        }
-      ],
+      "torrent_options": [],
       "current_torrent_index": 0
     },
     {
@@ -8426,7 +8411,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "this-is-us-2016-tv",
@@ -10915,23 +10900,11 @@
       "trailer_key": "og9hFxxdSOg",
       "enrichment_status": "ok",
       "torrent_file": "The_Past_x",
-      "s3_key": "videos/the-pianist-2002-movie/40753_lyra_720.mp4",
-      "s3_keys": [
-        "videos/the-pianist-2002-movie/40753_lyra_720.mp4"
-      ],
+      "s3_keys": [],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "torrent_options_720p": [
-        {
-          "title": "SexAndSubmission - Kink - Lyra Law - The Pianist - Anal, Hardcore, BDSM 720p  ",
-          "magnet": "magnet:?xt=urn:btih:BD246C87906EB2AABD2FAA518FB2D7CC9CA3E1AB&dn=SexAndSubmission%20-%20Kink%20-%20Lyra%20Law%20-%20The%20Pianist%20-%20Anal%2C%20Hardcore%2C%20BDSM%20720p%20%20&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 63,
-          "size": "2.3 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 800
-        }
-      ],
+      "torrent_options_720p": [],
       "current_torrent_index_720p": 0,
       "torrent_options": [
         {
@@ -12151,7 +12124,9 @@
       "trailer_key": "P5ieIbInFpg",
       "enrichment_status": "ok",
       "torrent_file": "Gladiator_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/gladiator-2000-movie/Gladiator.EXTENDED.REMASTERED.2000.720p.BrRip.x264.BOKUTOX.YIFY.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -12208,7 +12183,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 0,
+      "s3_key": "videos/gladiator-2000-movie/Gladiator.EXTENDED.REMASTERED.2000.720p.BrRip.x264.BOKUTOX.YIFY.mp4"
     },
     {
       "id": "alien-1979-movie",
@@ -13894,14 +13870,6 @@
       "current_torrent_index": 0,
       "torrent_options_720p": [
         {
-          "title": "SexArt - Vanessa Decker (The Cove) 12 28 16 720p",
-          "magnet": "magnet:?xt=urn:btih:1A15269FBEB7B9CEC7EF36C56E4316F8B3470B6C&dn=SexArt+-+Vanessa+Decker+%28The+Cove%29+12+28+16+720p&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Feddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.pornoshara.tv%3A2711%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.ololosh.space%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dump.cl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker-udp.gbitt.info%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker01-msk-virt.corbina.net%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.free-tracker.ga%3A6969%2Fannounce&tr=udp%3A%2F%2Fns-1.x-fins.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fleet-tracker.moe%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.open-internet.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Fdenis.stalker.upeer.me%3A6969%2Fannounce",
-          "seeders": 34,
-          "size": "596.88 MB",
-          "provider": "Limetorrents",
-          "contentScore": 800
-        },
-        {
           "title": "The Cove [2009] 720p BRRiP H 264 AAC - ExtraTorrentRG",
           "magnet": "magnet:?xt=urn:btih:33D71263B59837804E5811C2D8FC9A2635A4DFD5&dn=The+Cove+%5B2009%5D+720p+BRRiP+H+264+AAC+-+ExtraTorrentRG&tr=udp%3A%2F%2Feddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.vanitycore.co%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2Fgenesis.1337x.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker4.piratux.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.blackunicorn.xyz%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.mg64.net%3A6881%2Fannounce&tr=udp%3A%2F%2Ftracker.x4w.co%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.sktorrent.net%3A6969%2Fannounce&tr=udp%3A%2F%2Fmgtracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.mgtracker.org%3A2710%2Fannounce&tr=udp%3A%2F%2Fasnet.pw%3A2710%2Fannounce&tr=http%3A%2F%2Ffr33dom.h33t.com%3A3310%2Fannounce&tr=http%3A%2F%2Fpow7.com%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.istole.it%3A80%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%2Fannounce&tr=udp%3A%2F%2Ftracker.pomf.se%3A80%2Fannounce&tr=http%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ffr33domtracker.h33t.com%3A3310%2Fannounce&tr=http%3A%2F%2Ftracker.istole.it%2Fannounce&tr=http%3A%2F%2Fbigfoot1942.sektori.org%3A6969%2Fannounce&tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fcastradio.net%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.publicbt.com%2Fannounce&tr=http%3A%2F%2Ftracker2.wasabii.com.tw%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.ololosh.space%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dump.cl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker-udp.gbitt.info%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker01-msk-virt.corbina.net%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.free-tracker.ga%3A6969%2Fannounce&tr=udp%3A%2F%2Fns-1.x-fins.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fleet-tracker.moe%3A1337%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.open-internet.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Fdenis.stalker.upeer.me%3A6969%2Fannounce",
           "seeders": 25,
@@ -14184,7 +14152,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "st-elsewhere-1982-tv",
@@ -19527,10 +19495,7 @@
       "trailer_key": "Ajcdb4FAL7A",
       "enrichment_status": "ok",
       "torrent_file": "UFO_x",
-      "s3_key": "videos/up-2009-movie/15.06.2026_Yurievij_Up Close And Personal 3_Zero Tolerance Films_720p.mp4",
-      "s3_keys": [
-        "videos/up-2009-movie/15.06.2026_Yurievij_Up Close And Personal 3_Zero Tolerance Films_720p.mp4"
-      ],
+      "s3_keys": [],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -19540,14 +19505,6 @@
           "magnet": "magnet:?xt=urn:btih:6AC7F6C2C49342F02DE3621B9595C073C485A47A&dn=Up%20(2009)%201080p%20BrRip%20x264%20-%20YIFY&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
           "seeders": 361,
           "size": "1.5 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 800
-        },
-        {
-          "title": "Puba - Nick Manning Tears up Allie Haze - Brunette, Gonzo, Hardcore 1080p  ",
-          "magnet": "magnet:?xt=urn:btih:7CCE0DB1D5E0DD2ED05E53E56E51FD40F527A05D&dn=Puba%20-%20Nick%20Manning%20Tears%20up%20Allie%20Haze%20-%20Brunette%2C%20Gonzo%2C%20Hardcore%201080p%20%20&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 106,
-          "size": "605.8 MB",
           "provider": "ThePirateBay",
           "contentScore": 800
         }
@@ -23326,7 +23283,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "elena-2012-movie",
@@ -25787,7 +25744,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "avengers-age-of-ultron-2015-movie",
@@ -25876,7 +25833,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "star-wars-the-force-awakens-2015-movie",
@@ -27634,7 +27591,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "travessia-2022-tv",
@@ -28004,7 +27961,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "the-little-prince-s-rap-against-the-wicked-souls-2000-movie",
@@ -30797,7 +30754,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "the-lion-king-11-2-2004-movie",
@@ -32398,7 +32355,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "love-for-sale-2006-movie",
@@ -32489,14 +32446,6 @@
           "magnet": "magnet:?xt=urn:btih:B78510A1A440D131E4BC329E0B385F80C203B60D&dn=Family%20Fun%202%20(Mile%20High%20Media%2C%20Reality%20Junkies)%202024%20WEB-DL%20720p%20%20&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
           "seeders": 115,
           "size": "2.7 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 800
-        },
-        {
-          "title": "Double Dip 7 (Reality Kings) 2026 WEB-DL 720p  ",
-          "magnet": "magnet:?xt=urn:btih:F497118D3EA55FE05726135A03A00EAE74EE24C2&dn=Double%20Dip%207%20(Reality%20Kings)%202026%20WEB-DL%20720p%20%20&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 80,
-          "size": "3.6 GB",
           "provider": "ThePirateBay",
           "contentScore": 800
         }
@@ -33903,7 +33852,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 2
     },
     {
       "id": "de-pernas-pro-ar-2010-movie",
