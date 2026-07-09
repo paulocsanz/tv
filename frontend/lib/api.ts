@@ -6,6 +6,7 @@ import {
   ContinueWatchingItem,
   MeResponse,
   MetaResponse,
+  PipelineStatusResponse,
   ProgressEntry,
   RelatedTitle,
   Section,
@@ -121,6 +122,15 @@ export async function getProgress(id: string): Promise<ProgressEntry[]> {
 
 export async function getUsersOrNull(): Promise<UserSummary[] | null> {
   const res = await fetch(`${API_URL}/api/admin/users`, {
+    headers: await authHeaders(),
+    cache: "no-store",
+  });
+  if (!res.ok) return null;
+  return res.json();
+}
+
+export async function getPipelineStatusOrNull(): Promise<PipelineStatusResponse | null> {
+  const res = await fetch(`${API_URL}/api/admin/pipeline`, {
     headers: await authHeaders(),
     cache: "no-store",
   });

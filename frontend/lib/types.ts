@@ -102,6 +102,29 @@ export interface UserSummary {
   is_admin: boolean;
 }
 
+export interface InviteResponse {
+  token: string;
+  expires_at: string;
+}
+
+export interface PipelineRunSummary {
+  started_ts: number;
+  picked: number;
+  total: number;
+  done_this_run: number;
+  failed_this_run: number;
+}
+
+export interface PipelineStatusResponse {
+  running: boolean;
+  lock_pid: number | null;
+  // Raw pipeline-events.jsonl line - shape varies by event type, so this
+  // stays loosely typed rather than mirroring every event variant.
+  last_event: Record<string, unknown> | null;
+  seconds_since_last_event: number | null;
+  current_run: PipelineRunSummary | null;
+}
+
 export interface ContinueWatchingItem extends ContentItem {
   episode: number;
   progress_fraction: number;

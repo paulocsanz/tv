@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { getMeOrNull, getUsersOrNull } from "@/lib/api";
 import { CreateUserForm } from "@/components/CreateUserForm";
+import { CreateInviteButton } from "@/components/CreateInviteButton";
 
 // Deliberately not linked from the global Header/nav - this is a
 // direct-URL admin tool, not a page every visitor needs to know about.
@@ -18,7 +20,12 @@ export default async function AdminUsersPage() {
 
   return (
     <div className="mx-auto max-w-xl px-4 py-12 sm:px-8">
-      <h1 className="mb-6 text-2xl font-bold text-white">Accounts</h1>
+      <div className="mb-6 flex items-center justify-between">
+        <h1 className="text-2xl font-bold text-white">Accounts</h1>
+        <Link href="/admin/pipeline" className="text-sm text-zinc-400 hover:text-white">
+          Pipeline →
+        </Link>
+      </div>
 
       <ul className="mb-10 divide-y divide-white/10 rounded-lg border border-white/10">
         {users.map((u) => (
@@ -33,6 +40,7 @@ export default async function AdminUsersPage() {
         ))}
       </ul>
 
+      <CreateInviteButton />
       <CreateUserForm />
     </div>
   );

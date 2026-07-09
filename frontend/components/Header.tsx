@@ -31,6 +31,9 @@ export function Header() {
             <SearchBox />
           </Suspense>
         </div>
+        <Link href="/account" className="shrink-0 text-sm text-zinc-400 hover:text-white">
+          Account
+        </Link>
         <LogoutButton />
       </div>
     </header>
