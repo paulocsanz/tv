@@ -38,3 +38,11 @@ nohup.out
 
 # Railway
 .railway-config-pull-*
+
+# Pipeline runtime state / one-off tooling output
+.download-picked-torrents.lock
+*-log.txt
+*-log-*.txt
+*.bak-pre-*
+pick-*-results.json
+*-dry-run*.json
