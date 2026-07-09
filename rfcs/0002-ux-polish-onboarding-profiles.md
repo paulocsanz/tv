@@ -25,7 +25,9 @@
 
 - [ ] **P0** First-login onboarding: a short in-app walkthrough covering Continue Watching,
       search, and playback controls — shown once, skippable.
-- [ ] **P0** Self-serve `/account` page: change own password, view own watch history.
+- [x] **P0** Self-serve `/account` page: change own password, view own watch history.
+      Implemented 2026-07-09: `/account` page (linked from Header) + `POST /api/account/password`.
+      Reuses the existing continue-watching query for "watch history" rather than a new table.
 - [ ] **P1** User preferences on the same page: default subtitle language, autoplay-next-episode.
 - [ ] **P1** Real empty states: zero search results, empty Continue Watching, a title with no
       streamable file yet (surface something more useful than a blank/broken player).

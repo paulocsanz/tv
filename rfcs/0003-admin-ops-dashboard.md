@@ -25,9 +25,12 @@
 
 ## Proposed Solution
 
-- [ ] **P0** `/admin/pipeline` page: surface the same signals `pipeline-status` already checks —
-      process alive, last event timestamp, items done/failed this run, disk usage — via a small
-      backend endpoint that reads `pipeline-events.jsonl`.
+- [x] **P0** `/admin/pipeline` page: surface the same signals `pipeline-status` already checks —
+      process alive, last event timestamp, items done/failed this run — via a small backend
+      endpoint that reads `pipeline-events.jsonl`. Implemented 2026-07-09: `GET /api/admin/pipeline`
+      + `/admin/pipeline` page. Disk usage deliberately left out of this cut — `du -sh downloads`
+      over hundreds of GB is too slow for a page-load request; the `infra-usage` skill already
+      covers that separately.
 - [ ] **P1** `/admin/catalog` page: a reviewable queue of items needing a human decision — zero
       torrent options, flagged title mismatches, exhausted retries — replacing the current
       read-a-JSON-file-on-disk workflow.

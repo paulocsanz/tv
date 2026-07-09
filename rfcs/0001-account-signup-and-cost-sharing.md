@@ -29,8 +29,10 @@
 
 ## Proposed Solution
 
-- [ ] **P0** Invite-link signup: admin generates a single-use or time-limited invite link; the
+- [x] **P0** Invite-link signup: admin generates a single-use or time-limited invite link; the
       invitee sets their own username/password, replacing admin-only `CreateUserForm` submission.
+      Implemented 2026-07-09: `POST /api/admin/invites` (admin-only) + `/signup?token=` page,
+      7-day single-use tokens in a new `invites` table (migration `0002_invites.sql`).
 - [ ] **P0** Per-user attribution: track bytes served / minutes watched per user (derivable from
       existing sessions + S3 access patterns) — a signal, not a billing engine.
 - [ ] **P1** A simple periodic cost summary (e.g. monthly, emailed or shown on `/account`)

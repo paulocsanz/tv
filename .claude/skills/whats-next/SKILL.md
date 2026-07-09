@@ -249,6 +249,16 @@ every run.
   Before flagging a pipeline item as stuck, check for a later `item_done` for the same `id`, and
   cross-check `current_torrent_index_720p` against `torrent_options_720p.length` in
   `enriched_400.json` — only exhausted-options items are genuinely stuck.
+- **2026-07-09** — First full run. Phase 3's stub grep only covers `backend/src` and
+  `frontend/{app,components,lib}`; it misses the repo-root one-off pipeline/tooling scripts
+  (`backfill-*.js`, `download-picked-torrents.js`, etc.). That's fine — those are one-off tooling,
+  not request-serving code, so they're legitimately out of scope for hot-path risk — but don't
+  mistake "zero hits" for "scanned everything."
+- **2026-07-09** — Phase 5 should also check for near-duplicate catalog entries (same title/year
+  under two different ids), not just missing-field gaps. Found one today by accident:
+  `once-upon-a-time-was-i-veronica-2012-movie` vs `once-upon-a-time-veronica-2012-movie` — the
+  second already has correct `original_title`/`tmdb_id`, the first is dead weight. A fuzzy
+  title+year match across all items would catch this class of gap on purpose next time.
 
 ---
 
