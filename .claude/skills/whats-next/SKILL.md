@@ -259,6 +259,22 @@ every run.
   `once-upon-a-time-was-i-veronica-2012-movie` vs `once-upon-a-time-veronica-2012-movie` — the
   second already has correct `original_title`/`tmdb_id`, the first is dead weight. A fuzzy
   title+year match across all items would catch this class of gap on purpose next time.
+- **2026-07-10** — Same-`tmdb_id`-under-different-catalog-ids is a stronger duplicate signal than
+  title+year fuzzy matching, and catches a different class of bug: two catalog entries pointing at
+  the *same* TMDB record (a real mismatch, e.g. two different-year "Fina Estampa" entries sharing
+  one id) vs. two entries that are genuinely different works with similar titles. Run both checks;
+  don't drop the fuzzy one just because the tmdb_id one exists — a title/year collision with two
+  *different* tmdb_ids (e.g. "Divine Love" 2019 TV vs movie) is a separate thing worth its own look.
+- **2026-07-10** — `*-flagged.json`/`*-suspicious.json` report files go stale the moment any catalog
+  edit touches an item they reference, and nothing regenerates them automatically. Today
+  `original-titles-flagged.json` still listed Midnight as an open yearMismatch case a full session
+  after that was fixed directly in `enriched_400.json`. Don't trust these files' contents at face
+  value — cross-check each entry against the live catalog before reporting it as open, and say so
+  explicitly when a file turns out to be stale rather than silently correcting for it.
+- **2026-07-10** — Phase 3's grep-only sweep missed a real bug: `main.rs`'s default browse sort
+  does `.partial_cmp(...).unwrap()` on ratings parsed from external OMDb strings, which panics on
+  `NaN` input. Grepping for `.unwrap()`/`.expect()` specifically in sort/comparison closures on
+  hot request paths is worth adding as a standing Phase 3 check, not just the stub-marker greps.
 
 ---
 

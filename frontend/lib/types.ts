@@ -35,6 +35,18 @@ export interface ContentItem {
   subtitles: SubtitleTrack[];
   episodes: EpisodeMetadata[];
   keywords: string[];
+  award_entries: AwardEntry[];
+}
+
+// A nomination or win at an awards event/festival (e.g. Academy Awards Best
+// Picture). Distinct from the free-text `awards` OMDb summary above. Generic
+// across events - only Academy Awards data is populated today, but a future
+// event (Cannes, etc.) needs no shape change here.
+export interface AwardEntry {
+  event: string;
+  category: string;
+  year: number;
+  won: boolean;
 }
 
 export interface EpisodeMetadata {

@@ -18,8 +18,8 @@ use tower_http::trace::TraceLayer;
 use tv_backend::audit;
 use tv_backend::auth::{self, UserRecord};
 use tv_backend::models::{
-    CollectionParts, ContentType, EnrichedCache, EnrichedItem, EpisodeMetadata, RelatedTitle,
-    SimilarEntry,
+    AwardEntry, CollectionParts, ContentType, EnrichedCache, EnrichedItem, EpisodeMetadata,
+    RelatedTitle, SimilarEntry,
 };
 use tv_backend::progress;
 
@@ -207,6 +207,44 @@ fn apply_keywords_backfill(items: &mut [EnrichedItem], enriched_data_path: &str)
     );
 }
 
+/// Merges in structured award/festival nominations (see resolve-oscars.js
+/// and generate-awards-backfill.js). Same separate-file rationale as
+/// `apply_collections_backfill`. Only Academy Awards Best Picture data is
+/// populated today, but the shape is generic - a future event (Cannes,
+/// etc.) is just more rows in the same backfill file, no code change.
+fn apply_awards_backfill(items: &mut [EnrichedItem], enriched_data_path: &str) {
+    let Some(backfill_path) = std::path::Path::new(enriched_data_path)
+        .parent()
+        .map(|p| p.join("awards_backfill.json"))
+    else {
+        return;
+    };
+    let Ok(raw) = std::fs::read_to_string(&backfill_path) else {
+        return;
+    };
+    let map: HashMap<String, Vec<AwardEntry>> = match serde_json::from_str(&raw) {
+        Ok(m) => m,
+        Err(e) => {
+            tracing::warn!("failed to parse {}: {e}", backfill_path.display());
+            return;
+        }
+    };
+
+    let mut applied = 0;
+    for item in items.iter_mut() {
+        if item.award_entries.is_empty() {
+            if let Some(awards) = map.get(&item.id) {
+                item.award_entries = awards.clone();
+                applied += 1;
+            }
+        }
+    }
+    tracing::info!(
+        "Applied awards backfill to {applied} items from {}",
+        backfill_path.display()
+    );
+}
+
 /// Loads a side file sitting next to enriched_400.json into a HashMap,
 /// tolerating a missing or unparsable file (logs and returns empty) - these
 /// backfills are all best-effort enhancements, never required to boot.
@@ -252,6 +290,7 @@ async fn main() {
     apply_collections_backfill(&mut cache.items, &data_path);
     apply_episode_metadata_backfill(&mut cache.items, &data_path);
     apply_keywords_backfill(&mut cache.items, &data_path);
+    apply_awards_backfill(&mut cache.items, &data_path);
     let similar: HashMap<String, Vec<SimilarEntry>> =
         load_side_file(&data_path, "similar_backfill.json");
     let collection_parts: HashMap<String, CollectionParts> =
@@ -543,6 +582,13 @@ async fn get_sections(State(state): State<Arc<AppState>>) -> Json<Vec<Section>> 
             .collect(),
         18,
     );
+    let best_picture = top_n(
+        items
+            .iter()
+            .filter(|i| i.award_entries.iter().any(|a| a.category == "Best Picture"))
+            .collect(),
+        18,
+    );
 
     let sections = vec![
         Section {
@@ -585,6 +631,11 @@ async fn get_sections(State(state): State<Arc<AppState>>) -> Json<Vec<Section>> 
             title: "Hidden Gems".into(),
             items: clone_items(hidden_gems),
         },
+        Section {
+            key: "best_picture".into(),
+            title: "Best Picture Winners & Nominees".into(),
+            items: clone_items(best_picture),
+        },
     ];
 
     Json(sections)
@@ -599,6 +650,12 @@ struct ContentQuery {
     min_rating: Option<f64>,
     genre: Option<String>,
     keyword: Option<String>,
+    /// Filter to items with an award_entries row in this category, e.g.
+    /// "Best Picture" - matches any event (currently just "Academy Awards").
+    award_category: Option<String>,
+    /// When true (and combined with award_category), only items that WON in
+    /// that category - otherwise nominees and winners are both included.
+    award_won: Option<bool>,
     decade: Option<i32>,
     sort: Option<String>,
     page: Option<usize>,
@@ -665,6 +722,15 @@ async fn get_content(
 
     if let Some(keyword) = &q.keyword {
         filtered.retain(|i| i.keywords.iter().any(|k| k.eq_ignore_ascii_case(keyword)));
+    }
+
+    if let Some(category) = &q.award_category {
+        let won_only = q.award_won.unwrap_or(false);
+        filtered.retain(|i| {
+            i.award_entries
+                .iter()
+                .any(|a| a.category.eq_ignore_ascii_case(category) && (!won_only || a.won))
+        });
     }
 
     if let Some(decade) = q.decade {
@@ -1574,5 +1640,195 @@ async fn get_continue_watching(
             tracing::error!("failed to fetch continue watching: {e}");
             StatusCode::INTERNAL_SERVER_ERROR.into_response()
         }
+    }
+}
+
+#[cfg(test)]
+mod backfill_tests {
+    use super::*;
+
+    fn test_item(id: &str) -> EnrichedItem {
+        EnrichedItem {
+            id: id.to_string(),
+            title: id.to_string(),
+            original_title: None,
+            year: 2000,
+            content_type: ContentType::Movie,
+            origin: "International".to_string(),
+            director: None,
+            creator: None,
+            curated_imdb_rating: 7.0,
+            poster_url: None,
+            backdrop_url: None,
+            plot: None,
+            genres: Vec::new(),
+            runtime: None,
+            actors: Vec::new(),
+            awards: None,
+            rated: None,
+            imdb_rating: None,
+            imdb_votes: None,
+            rotten_tomatoes: None,
+            metacritic: None,
+            imdb_id: None,
+            tmdb_id: None,
+            collection_id: None,
+            collection_name: None,
+            trailer_key: None,
+            enrichment_status: tv_backend::models::EnrichmentStatus::Ok,
+            torrent_file: None,
+            s3_key: None,
+            s3_keys: Vec::new(),
+            subtitles: Vec::new(),
+            episodes: Vec::new(),
+            keywords: Vec::new(),
+            award_entries: Vec::new(),
+        }
+    }
+
+    /// Each test gets its own throwaway directory (rather than a shared temp
+    /// path) so concurrent test threads - the default `cargo test` harness
+    /// behavior - don't race on the same awards_backfill.json / fake
+    /// enriched_400.json path, mirroring the unique-per-test-run approach
+    /// auth.rs's tests use for usernames.
+    fn temp_data_dir() -> std::path::PathBuf {
+        use rand::Rng;
+        let suffix: u64 = rand::thread_rng().gen();
+        let dir = std::env::temp_dir().join(format!("awards_backfill_test_{suffix:x}"));
+        std::fs::create_dir_all(&dir).expect("failed to create temp test dir");
+        dir.join("enriched_400.json")
+    }
+
+    #[test]
+    fn merges_awards_onto_matching_items_only() {
+        let enriched_data_path = temp_data_dir();
+        let backfill_path = std::path::Path::new(&enriched_data_path)
+            .parent()
+            .unwrap()
+            .join("awards_backfill.json");
+        std::fs::write(
+            &backfill_path,
+            serde_json::json!({
+                "the-godfather-1972-movie": [
+                    {"event": "Academy Awards", "category": "Best Picture", "year": 1973, "won": true}
+                ]
+            })
+            .to_string(),
+        )
+        .unwrap();
+
+        let mut items = vec![
+            test_item("the-godfather-1972-movie"),
+            test_item("the-lion-king-1994-movie"),
+        ];
+        apply_awards_backfill(&mut items, enriched_data_path.to_str().unwrap());
+
+        assert_eq!(items[0].award_entries.len(), 1);
+        assert_eq!(items[0].award_entries[0].category, "Best Picture");
+        assert!(items[0].award_entries[0].won);
+        // The item with no matching backfill row (e.g. an unrelated title a
+        // bad TMDB search match could have collided with) must stay
+        // untouched - regression guard for exactly that class of bug hit
+        // while sourcing the Oscars dataset (a "Lion" (2016) search briefly
+        // resolved to "The Lion King" (1994) before being caught).
+        assert!(items[1].award_entries.is_empty());
+    }
+
+    #[test]
+    fn does_not_overwrite_existing_award_entries() {
+        let enriched_data_path = temp_data_dir();
+        let backfill_path = std::path::Path::new(&enriched_data_path)
+            .parent()
+            .unwrap()
+            .join("awards_backfill.json");
+        std::fs::write(
+            &backfill_path,
+            serde_json::json!({
+                "parasite-2019-movie": [
+                    {"event": "Academy Awards", "category": "Best Picture", "year": 2020, "won": true}
+                ]
+            })
+            .to_string(),
+        )
+        .unwrap();
+
+        let mut item = test_item("parasite-2019-movie");
+        item.award_entries.push(AwardEntry {
+            event: "Cannes Film Festival".to_string(),
+            category: "Palme d'Or".to_string(),
+            year: 2019,
+            won: true,
+        });
+        let mut items = vec![item];
+        apply_awards_backfill(&mut items, enriched_data_path.to_str().unwrap());
+
+        // Already had an entry, so the (empty-check-gated) backfill must
+        // leave it alone rather than appending/overwriting - matches
+        // apply_keywords_backfill's semantics exactly.
+        assert_eq!(items[0].award_entries.len(), 1);
+        assert_eq!(items[0].award_entries[0].event, "Cannes Film Festival");
+    }
+
+    #[test]
+    fn missing_backfill_file_is_tolerated() {
+        let enriched_data_path = temp_data_dir();
+        let mut items = vec![test_item("some-movie-2000-movie")];
+        apply_awards_backfill(&mut items, enriched_data_path.to_str().unwrap());
+        assert!(items[0].award_entries.is_empty());
+    }
+
+    /// Exercises the real repo data (data/enriched_400.json +
+    /// data/awards_backfill.json), the same load path `server` uses at
+    /// boot - the closest thing to hitting a running /api/content without a
+    /// Postgres instance available (the full `server` binary requires
+    /// DATABASE_URL, see main() below). Asserts on the actual Oscars
+    /// dataset rather than a synthetic fixture.
+    #[test]
+    fn real_data_best_picture_backfill_is_sane() {
+        let data_path = "data/enriched_400.json";
+        let raw = std::fs::read_to_string(data_path).expect("data/enriched_400.json must exist");
+        let mut cache: EnrichedCache = serde_json::from_str(&raw).expect("valid enriched cache JSON");
+        apply_awards_backfill(&mut cache.items, data_path);
+
+        let by_id = |id: &str| cache.items.iter().find(|i| i.id == id);
+
+        let godfather = by_id("the-godfather-1972-movie").expect("The Godfather must be in the catalog");
+        assert!(
+            godfather
+                .award_entries
+                .iter()
+                .any(|a| a.category == "Best Picture" && a.won),
+            "The Godfather should carry a won Best Picture entry"
+        );
+
+        let lion = by_id("lion-2016-movie").expect("Lion (2016) must be in the catalog");
+        assert!(
+            lion.award_entries
+                .iter()
+                .any(|a| a.category == "Best Picture" && !a.won),
+            "Lion (2016) should carry a nominated (not won) Best Picture entry"
+        );
+
+        // Regression guard for the exact join-drift bug hit while building
+        // this dataset: an ambiguous TMDB search for "Lion"+2016 briefly
+        // resolved to The Lion King (1994) before being caught and fixed -
+        // The Lion King's own catalog entry must never pick up a Best
+        // Picture nomination.
+        if let Some(lion_king) = by_id("the-lion-king-1994-movie") {
+            assert!(
+                lion_king.award_entries.is_empty(),
+                "The Lion King must not have any award_entries"
+            );
+        }
+
+        let best_picture_count = cache
+            .items
+            .iter()
+            .filter(|i| i.award_entries.iter().any(|a| a.category == "Best Picture"))
+            .count();
+        assert!(
+            best_picture_count > 600,
+            "expected 600+ Best Picture nominees/winners in the catalog, got {best_picture_count}"
+        );
     }
 }

@@ -1,0 +1,3746 @@
+[
+  {
+    "title": "7th Heaven",
+    "film_year": 1927,
+    "ceremony_year": 1929,
+    "won": false
+  },
+  {
+    "title": "Chang: A Drama of the Wilderness",
+    "film_year": 1927,
+    "ceremony_year": 1929,
+    "won": false
+  },
+  {
+    "title": "Sunrise: A Song of Two Humans",
+    "film_year": 1927,
+    "ceremony_year": 1929,
+    "won": true
+  },
+  {
+    "title": "The Crowd",
+    "film_year": 1928,
+    "ceremony_year": 1929,
+    "won": false
+  },
+  {
+    "title": "The Racket",
+    "film_year": 1928,
+    "ceremony_year": 1929,
+    "won": false
+  },
+  {
+    "title": "Wings",
+    "film_year": 1927,
+    "ceremony_year": 1929,
+    "won": true
+  },
+  {
+    "title": "Alibi",
+    "film_year": 1929,
+    "ceremony_year": 1930,
+    "won": false
+  },
+  {
+    "title": "All Quiet on the Western Front",
+    "film_year": 1930,
+    "ceremony_year": 1930,
+    "won": true
+  },
+  {
+    "title": "Disraeli",
+    "film_year": 1929,
+    "ceremony_year": 1930,
+    "won": false
+  },
+  {
+    "title": "In Old Arizona",
+    "film_year": 1928,
+    "ceremony_year": 1930,
+    "won": false
+  },
+  {
+    "title": "The Big House",
+    "film_year": 1930,
+    "ceremony_year": 1930,
+    "won": false
+  },
+  {
+    "title": "The Broadway Melody",
+    "film_year": 1929,
+    "ceremony_year": 1930,
+    "won": true
+  },
+  {
+    "title": "The Divorcee",
+    "film_year": 1930,
+    "ceremony_year": 1930,
+    "won": false
+  },
+  {
+    "title": "The Hollywood Revue",
+    "film_year": 1929,
+    "ceremony_year": 1930,
+    "won": false
+  },
+  {
+    "title": "The Love Parade",
+    "film_year": 1929,
+    "ceremony_year": 1930,
+    "won": false
+  },
+  {
+    "title": "The Patriot",
+    "film_year": 1928,
+    "ceremony_year": 1930,
+    "won": false
+  },
+  {
+    "title": "Cimarron",
+    "film_year": 1931,
+    "ceremony_year": 1931,
+    "won": true
+  },
+  {
+    "title": "East Lynne",
+    "film_year": 1931,
+    "ceremony_year": 1931,
+    "won": false
+  },
+  {
+    "title": "Skippy",
+    "film_year": 1931,
+    "ceremony_year": 1931,
+    "won": false
+  },
+  {
+    "title": "The Front Page",
+    "film_year": 1931,
+    "ceremony_year": 1931,
+    "won": false
+  },
+  {
+    "title": "Trader Horn",
+    "film_year": 1931,
+    "ceremony_year": 1931,
+    "won": false
+  },
+  {
+    "title": "Arrowsmith",
+    "film_year": 1931,
+    "ceremony_year": 1932,
+    "won": false
+  },
+  {
+    "title": "Bad Girl",
+    "film_year": 1931,
+    "ceremony_year": 1932,
+    "won": false
+  },
+  {
+    "title": "Five Star Final",
+    "film_year": 1931,
+    "ceremony_year": 1932,
+    "won": false
+  },
+  {
+    "title": "Grand Hotel",
+    "film_year": 1932,
+    "ceremony_year": 1932,
+    "won": true
+  },
+  {
+    "title": "One Hour with You",
+    "film_year": 1932,
+    "ceremony_year": 1932,
+    "won": false
+  },
+  {
+    "title": "Shanghai Express",
+    "film_year": 1932,
+    "ceremony_year": 1932,
+    "won": false
+  },
+  {
+    "title": "The Champ",
+    "film_year": 1931,
+    "ceremony_year": 1932,
+    "won": false
+  },
+  {
+    "title": "The Smiling Lieutenant",
+    "film_year": 1931,
+    "ceremony_year": 1932,
+    "won": false
+  },
+  {
+    "title": "42nd Street",
+    "film_year": 1933,
+    "ceremony_year": 1934,
+    "won": false
+  },
+  {
+    "title": "A Farewell to Arms",
+    "film_year": 1932,
+    "ceremony_year": 1934,
+    "won": false
+  },
+  {
+    "title": "Cavalcade",
+    "film_year": 1933,
+    "ceremony_year": 1934,
+    "won": true
+  },
+  {
+    "title": "I Am a Fugitive from a Chain Gang",
+    "film_year": 1932,
+    "ceremony_year": 1934,
+    "won": false
+  },
+  {
+    "title": "Lady for a Day",
+    "film_year": 1933,
+    "ceremony_year": 1934,
+    "won": false
+  },
+  {
+    "title": "Little Women",
+    "film_year": 1933,
+    "ceremony_year": 1934,
+    "won": false
+  },
+  {
+    "title": "She Done Him Wrong",
+    "film_year": 1933,
+    "ceremony_year": 1934,
+    "won": false
+  },
+  {
+    "title": "Smilin' Through",
+    "film_year": 1932,
+    "ceremony_year": 1934,
+    "won": false
+  },
+  {
+    "title": "State Fair",
+    "film_year": 1933,
+    "ceremony_year": 1934,
+    "won": false
+  },
+  {
+    "title": "The Private Life of Henry VIII",
+    "film_year": 1933,
+    "ceremony_year": 1934,
+    "won": false
+  },
+  {
+    "title": "Cleopatra",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "Flirtation Walk",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "Here Comes the Navy",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "Imitation of Life",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "It Happened One Night",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": true
+  },
+  {
+    "title": "One Night of Love",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "The Barretts of Wimpole Street",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "The Gay Divorcee",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "The House of Rothschild",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "The Thin Man",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "The White Parade",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "Viva Villa!",
+    "film_year": 1934,
+    "ceremony_year": 1935,
+    "won": false
+  },
+  {
+    "title": "A Midsummer Night's Dream",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "Alice Adams",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "Broadway Melody of 1936",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "Captain Blood",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "David Copperfield",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "Les Mis\u00e9rables",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "Mutiny on the Bounty",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": true
+  },
+  {
+    "title": "Naughty Marietta",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "Ruggles of Red Gap",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "The Informer",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "The Lives of a Bengal Lancer",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "Top Hat",
+    "film_year": 1935,
+    "ceremony_year": 1936,
+    "won": false
+  },
+  {
+    "title": "A Tale of Two Cities",
+    "film_year": 1935,
+    "ceremony_year": 1937,
+    "won": false
+  },
+  {
+    "title": "Anthony Adverse",
+    "film_year": 1936,
+    "ceremony_year": 1937,
+    "won": false
+  },
+  {
+    "title": "Dodsworth",
+    "film_year": 1936,
+    "ceremony_year": 1937,
+    "won": false
+  },
+  {
+    "title": "Libeled Lady",
+    "film_year": 1936,
+    "ceremony_year": 1937,
+    "won": false
+  },
+  {
+    "title": "Mr. Deeds Goes to Town",
+    "film_year": 1936,
+    "ceremony_year": 1937,
+    "won": false
+  },
+  {
+    "title": "Romeo and Juliet",
+    "film_year": 1936,
+    "ceremony_year": 1937,
+    "won": false
+  },
+  {
+    "title": "San Francisco",
+    "film_year": 1936,
+    "ceremony_year": 1937,
+    "won": false
+  },
+  {
+    "title": "The Great Ziegfeld",
+    "film_year": 1936,
+    "ceremony_year": 1937,
+    "won": true
+  },
+  {
+    "title": "The Story of Louis Pasteur",
+    "film_year": 1936,
+    "ceremony_year": 1937,
+    "won": false
+  },
+  {
+    "title": "Three Smart Girls",
+    "film_year": 1936,
+    "ceremony_year": 1937,
+    "won": false
+  },
+  {
+    "title": "A Star Is Born",
+    "film_year": 1937,
+    "ceremony_year": 1938,
+    "won": false
+  },
+  {
+    "title": "Captains Courageous",
+    "film_year": 1937,
+    "ceremony_year": 1938,
+    "won": false
+  },
+  {
+    "title": "Dead End",
+    "film_year": 1937,
+    "ceremony_year": 1938,
+    "won": false
+  },
+  {
+    "title": "In Old Chicago",
+    "film_year": 1937,
+    "ceremony_year": 1938,
+    "won": false
+  },
+  {
+    "title": "Lost Horizon",
+    "film_year": 1937,
+    "ceremony_year": 1938,
+    "won": false
+  },
+  {
+    "title": "One Hundred Men and a Girl",
+    "film_year": 1937,
+    "ceremony_year": 1938,
+    "won": false
+  },
+  {
+    "title": "Stage Door",
+    "film_year": 1937,
+    "ceremony_year": 1938,
+    "won": false
+  },
+  {
+    "title": "The Awful Truth",
+    "film_year": 1937,
+    "ceremony_year": 1938,
+    "won": false
+  },
+  {
+    "title": "The Good Earth",
+    "film_year": 1937,
+    "ceremony_year": 1938,
+    "won": false
+  },
+  {
+    "title": "The Life of Emile Zola",
+    "film_year": 1937,
+    "ceremony_year": 1938,
+    "won": true
+  },
+  {
+    "title": "Alexander's Ragtime Band",
+    "film_year": 1938,
+    "ceremony_year": 1939,
+    "won": false
+  },
+  {
+    "title": "Boys Town",
+    "film_year": 1938,
+    "ceremony_year": 1939,
+    "won": false
+  },
+  {
+    "title": "Four Daughters",
+    "film_year": 1938,
+    "ceremony_year": 1939,
+    "won": false
+  },
+  {
+    "title": "Grand Illusion",
+    "film_year": 1938,
+    "ceremony_year": 1939,
+    "won": false
+  },
+  {
+    "title": "Jezebel",
+    "film_year": 1938,
+    "ceremony_year": 1939,
+    "won": false
+  },
+  {
+    "title": "Pygmalion",
+    "film_year": 1938,
+    "ceremony_year": 1939,
+    "won": false
+  },
+  {
+    "title": "Test Pilot",
+    "film_year": 1938,
+    "ceremony_year": 1939,
+    "won": false
+  },
+  {
+    "title": "The Adventures of Robin Hood",
+    "film_year": 1938,
+    "ceremony_year": 1939,
+    "won": false
+  },
+  {
+    "title": "The Citadel",
+    "film_year": 1938,
+    "ceremony_year": 1939,
+    "won": false
+  },
+  {
+    "title": "You Can't Take It with You",
+    "film_year": 1938,
+    "ceremony_year": 1939,
+    "won": true
+  },
+  {
+    "title": "Dark Victory",
+    "film_year": 1939,
+    "ceremony_year": 1940,
+    "won": false
+  },
+  {
+    "title": "Gone with the Wind",
+    "film_year": 1939,
+    "ceremony_year": 1940,
+    "won": true
+  },
+  {
+    "title": "Goodbye, Mr. Chips",
+    "film_year": 1939,
+    "ceremony_year": 1940,
+    "won": false
+  },
+  {
+    "title": "Love Affair",
+    "film_year": 1939,
+    "ceremony_year": 1940,
+    "won": false
+  },
+  {
+    "title": "Mr. Smith Goes to Washington",
+    "film_year": 1939,
+    "ceremony_year": 1940,
+    "won": false
+  },
+  {
+    "title": "Ninotchka",
+    "film_year": 1939,
+    "ceremony_year": 1940,
+    "won": false
+  },
+  {
+    "title": "Of Mice and Men",
+    "film_year": 1939,
+    "ceremony_year": 1940,
+    "won": false
+  },
+  {
+    "title": "Stagecoach",
+    "film_year": 1939,
+    "ceremony_year": 1940,
+    "won": false
+  },
+  {
+    "title": "The Wizard of Oz",
+    "film_year": 1939,
+    "ceremony_year": 1940,
+    "won": false
+  },
+  {
+    "title": "Wuthering Heights",
+    "film_year": 1939,
+    "ceremony_year": 1940,
+    "won": false
+  },
+  {
+    "title": "All This, and Heaven Too",
+    "film_year": 1940,
+    "ceremony_year": 1941,
+    "won": false
+  },
+  {
+    "title": "Foreign Correspondent",
+    "film_year": 1940,
+    "ceremony_year": 1941,
+    "won": false
+  },
+  {
+    "title": "Kitty Foyle",
+    "film_year": 1940,
+    "ceremony_year": 1941,
+    "won": false
+  },
+  {
+    "title": "Our Town",
+    "film_year": 1940,
+    "ceremony_year": 1941,
+    "won": false
+  },
+  {
+    "title": "Rebecca",
+    "film_year": 1940,
+    "ceremony_year": 1941,
+    "won": true
+  },
+  {
+    "title": "The Grapes of Wrath",
+    "film_year": 1940,
+    "ceremony_year": 1941,
+    "won": false
+  },
+  {
+    "title": "The Great Dictator",
+    "film_year": 1940,
+    "ceremony_year": 1941,
+    "won": false
+  },
+  {
+    "title": "The Letter",
+    "film_year": 1940,
+    "ceremony_year": 1941,
+    "won": false
+  },
+  {
+    "title": "The Long Voyage Home",
+    "film_year": 1940,
+    "ceremony_year": 1941,
+    "won": false
+  },
+  {
+    "title": "The Philadelphia Story",
+    "film_year": 1940,
+    "ceremony_year": 1941,
+    "won": false
+  },
+  {
+    "title": "Blossoms in the Dust",
+    "film_year": 1941,
+    "ceremony_year": 1942,
+    "won": false
+  },
+  {
+    "title": "Citizen Kane",
+    "film_year": 1941,
+    "ceremony_year": 1942,
+    "won": false
+  },
+  {
+    "title": "Here Comes Mr. Jordan",
+    "film_year": 1941,
+    "ceremony_year": 1942,
+    "won": false
+  },
+  {
+    "title": "Hold Back the Dawn",
+    "film_year": 1941,
+    "ceremony_year": 1942,
+    "won": false
+  },
+  {
+    "title": "How Green Was My Valley",
+    "film_year": 1941,
+    "ceremony_year": 1942,
+    "won": true
+  },
+  {
+    "title": "One Foot in Heaven",
+    "film_year": 1941,
+    "ceremony_year": 1942,
+    "won": false
+  },
+  {
+    "title": "Sergeant York",
+    "film_year": 1941,
+    "ceremony_year": 1942,
+    "won": false
+  },
+  {
+    "title": "Suspicion",
+    "film_year": 1941,
+    "ceremony_year": 1942,
+    "won": false
+  },
+  {
+    "title": "The Little Foxes",
+    "film_year": 1941,
+    "ceremony_year": 1942,
+    "won": false
+  },
+  {
+    "title": "The Maltese Falcon",
+    "film_year": 1941,
+    "ceremony_year": 1942,
+    "won": false
+  },
+  {
+    "title": "49th Parallel",
+    "film_year": 1942,
+    "ceremony_year": 1943,
+    "won": false
+  },
+  {
+    "title": "Kings Row",
+    "film_year": 1942,
+    "ceremony_year": 1943,
+    "won": false
+  },
+  {
+    "title": "Mrs. Miniver",
+    "film_year": 1942,
+    "ceremony_year": 1943,
+    "won": true
+  },
+  {
+    "title": "Random Harvest",
+    "film_year": 1942,
+    "ceremony_year": 1943,
+    "won": false
+  },
+  {
+    "title": "The Magnificent Ambersons",
+    "film_year": 1942,
+    "ceremony_year": 1943,
+    "won": false
+  },
+  {
+    "title": "The Pied Piper",
+    "film_year": 1942,
+    "ceremony_year": 1943,
+    "won": false
+  },
+  {
+    "title": "The Pride of the Yankees",
+    "film_year": 1942,
+    "ceremony_year": 1943,
+    "won": false
+  },
+  {
+    "title": "The Talk of the Town",
+    "film_year": 1942,
+    "ceremony_year": 1943,
+    "won": false
+  },
+  {
+    "title": "Wake Island",
+    "film_year": 1942,
+    "ceremony_year": 1943,
+    "won": false
+  },
+  {
+    "title": "Yankee Doodle Dandy",
+    "film_year": 1942,
+    "ceremony_year": 1943,
+    "won": false
+  },
+  {
+    "title": "Casablanca",
+    "film_year": 1943,
+    "ceremony_year": 1944,
+    "won": true
+  },
+  {
+    "title": "For Whom the Bell Tolls",
+    "film_year": 1943,
+    "ceremony_year": 1944,
+    "won": false
+  },
+  {
+    "title": "Heaven Can Wait",
+    "film_year": 1943,
+    "ceremony_year": 1944,
+    "won": false
+  },
+  {
+    "title": "In Which We Serve",
+    "film_year": 1943,
+    "ceremony_year": 1944,
+    "won": false
+  },
+  {
+    "title": "Madame Curie",
+    "film_year": 1943,
+    "ceremony_year": 1944,
+    "won": false
+  },
+  {
+    "title": "The Human Comedy",
+    "film_year": 1943,
+    "ceremony_year": 1944,
+    "won": false
+  },
+  {
+    "title": "The More the Merrier",
+    "film_year": 1943,
+    "ceremony_year": 1944,
+    "won": false
+  },
+  {
+    "title": "The Ox-Bow Incident",
+    "film_year": 1943,
+    "ceremony_year": 1944,
+    "won": false
+  },
+  {
+    "title": "The Song of Bernadette",
+    "film_year": 1943,
+    "ceremony_year": 1944,
+    "won": false
+  },
+  {
+    "title": "Watch on the Rhine",
+    "film_year": 1943,
+    "ceremony_year": 1944,
+    "won": false
+  },
+  {
+    "title": "Double Indemnity",
+    "film_year": 1944,
+    "ceremony_year": 1945,
+    "won": false
+  },
+  {
+    "title": "Gaslight",
+    "film_year": 1944,
+    "ceremony_year": 1945,
+    "won": false
+  },
+  {
+    "title": "Going My Way",
+    "film_year": 1944,
+    "ceremony_year": 1945,
+    "won": true
+  },
+  {
+    "title": "Since You Went Away",
+    "film_year": 1944,
+    "ceremony_year": 1945,
+    "won": false
+  },
+  {
+    "title": "Wilson",
+    "film_year": 1944,
+    "ceremony_year": 1945,
+    "won": false
+  },
+  {
+    "title": "Anchors Aweigh",
+    "film_year": 1945,
+    "ceremony_year": 1946,
+    "won": false
+  },
+  {
+    "title": "Mildred Pierce",
+    "film_year": 1945,
+    "ceremony_year": 1946,
+    "won": false
+  },
+  {
+    "title": "Spellbound",
+    "film_year": 1945,
+    "ceremony_year": 1946,
+    "won": false
+  },
+  {
+    "title": "The Bells of St. Mary's",
+    "film_year": 1945,
+    "ceremony_year": 1946,
+    "won": false
+  },
+  {
+    "title": "The Lost Weekend",
+    "film_year": 1945,
+    "ceremony_year": 1946,
+    "won": true
+  },
+  {
+    "title": "Henry V",
+    "film_year": 1944,
+    "ceremony_year": 1947,
+    "won": false
+  },
+  {
+    "title": "It's a Wonderful Life",
+    "film_year": 1946,
+    "ceremony_year": 1947,
+    "won": false
+  },
+  {
+    "title": "The Best Years of Our Lives",
+    "film_year": 1946,
+    "ceremony_year": 1947,
+    "won": true
+  },
+  {
+    "title": "The Razor's Edge",
+    "film_year": 1946,
+    "ceremony_year": 1947,
+    "won": false
+  },
+  {
+    "title": "The Yearling",
+    "film_year": 1946,
+    "ceremony_year": 1947,
+    "won": false
+  },
+  {
+    "title": "Crossfire",
+    "film_year": 1947,
+    "ceremony_year": 1948,
+    "won": false
+  },
+  {
+    "title": "Gentleman's Agreement",
+    "film_year": 1947,
+    "ceremony_year": 1948,
+    "won": true
+  },
+  {
+    "title": "Great Expectations",
+    "film_year": 1946,
+    "ceremony_year": 1948,
+    "won": false
+  },
+  {
+    "title": "Miracle on 34th Street",
+    "film_year": 1947,
+    "ceremony_year": 1948,
+    "won": false
+  },
+  {
+    "title": "The Bishop's Wife",
+    "film_year": 1947,
+    "ceremony_year": 1948,
+    "won": false
+  },
+  {
+    "title": "Hamlet",
+    "film_year": 1948,
+    "ceremony_year": 1949,
+    "won": true
+  },
+  {
+    "title": "Johnny Belinda",
+    "film_year": 1948,
+    "ceremony_year": 1949,
+    "won": false
+  },
+  {
+    "title": "The Red Shoes",
+    "film_year": 1948,
+    "ceremony_year": 1949,
+    "won": false
+  },
+  {
+    "title": "The Snake Pit",
+    "film_year": 1948,
+    "ceremony_year": 1949,
+    "won": false
+  },
+  {
+    "title": "The Treasure of the Sierra Madre",
+    "film_year": 1948,
+    "ceremony_year": 1949,
+    "won": false
+  },
+  {
+    "title": "A Letter to Three Wives",
+    "film_year": 1949,
+    "ceremony_year": 1950,
+    "won": false
+  },
+  {
+    "title": "All the King's Men",
+    "film_year": 1949,
+    "ceremony_year": 1950,
+    "won": true
+  },
+  {
+    "title": "Battleground",
+    "film_year": 1949,
+    "ceremony_year": 1950,
+    "won": false
+  },
+  {
+    "title": "The Heiress",
+    "film_year": 1949,
+    "ceremony_year": 1950,
+    "won": false
+  },
+  {
+    "title": "Twelve O'Clock High",
+    "film_year": 1949,
+    "ceremony_year": 1950,
+    "won": false
+  },
+  {
+    "title": "All About Eve",
+    "film_year": 1950,
+    "ceremony_year": 1951,
+    "won": true
+  },
+  {
+    "title": "Born Yesterday",
+    "film_year": 1950,
+    "ceremony_year": 1951,
+    "won": false
+  },
+  {
+    "title": "Father of the Bride",
+    "film_year": 1950,
+    "ceremony_year": 1951,
+    "won": false
+  },
+  {
+    "title": "King Solomon's Mines",
+    "film_year": 1950,
+    "ceremony_year": 1951,
+    "won": false
+  },
+  {
+    "title": "Sunset Boulevard",
+    "film_year": 1950,
+    "ceremony_year": 1951,
+    "won": false
+  },
+  {
+    "title": "A Place in the Sun",
+    "film_year": 1951,
+    "ceremony_year": 1952,
+    "won": false
+  },
+  {
+    "title": "A Streetcar Named Desire",
+    "film_year": 1951,
+    "ceremony_year": 1952,
+    "won": false
+  },
+  {
+    "title": "An American in Paris",
+    "film_year": 1951,
+    "ceremony_year": 1952,
+    "won": true
+  },
+  {
+    "title": "Decision Before Dawn",
+    "film_year": 1951,
+    "ceremony_year": 1952,
+    "won": false
+  },
+  {
+    "title": "Quo Vadis",
+    "film_year": 1951,
+    "ceremony_year": 1952,
+    "won": false
+  },
+  {
+    "title": "High Noon",
+    "film_year": 1952,
+    "ceremony_year": 1953,
+    "won": false
+  },
+  {
+    "title": "Ivanhoe",
+    "film_year": 1952,
+    "ceremony_year": 1953,
+    "won": false
+  },
+  {
+    "title": "Moulin Rouge",
+    "film_year": 1952,
+    "ceremony_year": 1953,
+    "won": false
+  },
+  {
+    "title": "The Greatest Show on Earth",
+    "film_year": 1952,
+    "ceremony_year": 1953,
+    "won": true
+  },
+  {
+    "title": "The Quiet Man",
+    "film_year": 1952,
+    "ceremony_year": 1953,
+    "won": false
+  },
+  {
+    "title": "From Here to Eternity",
+    "film_year": 1953,
+    "ceremony_year": 1954,
+    "won": true
+  },
+  {
+    "title": "Julius Caesar",
+    "film_year": 1953,
+    "ceremony_year": 1954,
+    "won": false
+  },
+  {
+    "title": "Roman Holiday",
+    "film_year": 1953,
+    "ceremony_year": 1954,
+    "won": false
+  },
+  {
+    "title": "Shane",
+    "film_year": 1953,
+    "ceremony_year": 1954,
+    "won": false
+  },
+  {
+    "title": "The Robe",
+    "film_year": 1953,
+    "ceremony_year": 1954,
+    "won": false
+  },
+  {
+    "title": "On the Waterfront",
+    "film_year": 1954,
+    "ceremony_year": 1955,
+    "won": true
+  },
+  {
+    "title": "Seven Brides for Seven Brothers",
+    "film_year": 1954,
+    "ceremony_year": 1955,
+    "won": false
+  },
+  {
+    "title": "The Caine Mutiny",
+    "film_year": 1954,
+    "ceremony_year": 1955,
+    "won": false
+  },
+  {
+    "title": "The Country Girl",
+    "film_year": 1954,
+    "ceremony_year": 1955,
+    "won": false
+  },
+  {
+    "title": "Three Coins in the Fountain",
+    "film_year": 1954,
+    "ceremony_year": 1955,
+    "won": false
+  },
+  {
+    "title": "Love Is a Many-Splendored Thing",
+    "film_year": 1955,
+    "ceremony_year": 1956,
+    "won": false
+  },
+  {
+    "title": "Marty",
+    "film_year": 1955,
+    "ceremony_year": 1956,
+    "won": true
+  },
+  {
+    "title": "Mister Roberts",
+    "film_year": 1955,
+    "ceremony_year": 1956,
+    "won": false
+  },
+  {
+    "title": "Picnic",
+    "film_year": 1955,
+    "ceremony_year": 1956,
+    "won": false
+  },
+  {
+    "title": "The Rose Tattoo",
+    "film_year": 1955,
+    "ceremony_year": 1956,
+    "won": false
+  },
+  {
+    "title": "Around the World in 80 Days",
+    "film_year": 1956,
+    "ceremony_year": 1957,
+    "won": true
+  },
+  {
+    "title": "Friendly Persuasion",
+    "film_year": 1956,
+    "ceremony_year": 1957,
+    "won": false
+  },
+  {
+    "title": "Giant",
+    "film_year": 1956,
+    "ceremony_year": 1957,
+    "won": false
+  },
+  {
+    "title": "The King and I",
+    "film_year": 1956,
+    "ceremony_year": 1957,
+    "won": false
+  },
+  {
+    "title": "The Ten Commandments",
+    "film_year": 1956,
+    "ceremony_year": 1957,
+    "won": false
+  },
+  {
+    "title": "12 Angry Men",
+    "film_year": 1957,
+    "ceremony_year": 1958,
+    "won": false
+  },
+  {
+    "title": "Peyton Place",
+    "film_year": 1957,
+    "ceremony_year": 1958,
+    "won": false
+  },
+  {
+    "title": "Sayonara",
+    "film_year": 1957,
+    "ceremony_year": 1958,
+    "won": false
+  },
+  {
+    "title": "The Bridge on the River Kwai",
+    "film_year": 1957,
+    "ceremony_year": 1958,
+    "won": true
+  },
+  {
+    "title": "Witness for the Prosecution",
+    "film_year": 1957,
+    "ceremony_year": 1958,
+    "won": false
+  },
+  {
+    "title": "Auntie Mame",
+    "film_year": 1958,
+    "ceremony_year": 1959,
+    "won": false
+  },
+  {
+    "title": "Cat on a Hot Tin Roof",
+    "film_year": 1958,
+    "ceremony_year": 1959,
+    "won": false
+  },
+  {
+    "title": "Gigi",
+    "film_year": 1958,
+    "ceremony_year": 1959,
+    "won": true
+  },
+  {
+    "title": "Separate Tables",
+    "film_year": 1958,
+    "ceremony_year": 1959,
+    "won": false
+  },
+  {
+    "title": "The Defiant Ones",
+    "film_year": 1958,
+    "ceremony_year": 1959,
+    "won": false
+  },
+  {
+    "title": "Anatomy of a Murder",
+    "film_year": 1959,
+    "ceremony_year": 1960,
+    "won": false
+  },
+  {
+    "title": "Ben-Hur",
+    "film_year": 1959,
+    "ceremony_year": 1960,
+    "won": true
+  },
+  {
+    "title": "Room at the Top",
+    "film_year": 1959,
+    "ceremony_year": 1960,
+    "won": false
+  },
+  {
+    "title": "The Diary of Anne Frank",
+    "film_year": 1959,
+    "ceremony_year": 1960,
+    "won": false
+  },
+  {
+    "title": "The Nun's Story",
+    "film_year": 1959,
+    "ceremony_year": 1960,
+    "won": false
+  },
+  {
+    "title": "Elmer Gantry",
+    "film_year": 1960,
+    "ceremony_year": 1961,
+    "won": false
+  },
+  {
+    "title": "Sons and Lovers",
+    "film_year": 1960,
+    "ceremony_year": 1961,
+    "won": false
+  },
+  {
+    "title": "The Alamo",
+    "film_year": 1960,
+    "ceremony_year": 1961,
+    "won": false
+  },
+  {
+    "title": "The Apartment",
+    "film_year": 1960,
+    "ceremony_year": 1961,
+    "won": true
+  },
+  {
+    "title": "The Sundowners",
+    "film_year": 1960,
+    "ceremony_year": 1961,
+    "won": false
+  },
+  {
+    "title": "Fanny",
+    "film_year": 1961,
+    "ceremony_year": 1962,
+    "won": false
+  },
+  {
+    "title": "Judgment at Nuremberg",
+    "film_year": 1961,
+    "ceremony_year": 1962,
+    "won": false
+  },
+  {
+    "title": "The Guns of Navarone",
+    "film_year": 1961,
+    "ceremony_year": 1962,
+    "won": false
+  },
+  {
+    "title": "The Hustler",
+    "film_year": 1961,
+    "ceremony_year": 1962,
+    "won": false
+  },
+  {
+    "title": "West Side Story",
+    "film_year": 1961,
+    "ceremony_year": 1962,
+    "won": true
+  },
+  {
+    "title": "Lawrence of Arabia",
+    "film_year": 1962,
+    "ceremony_year": 1963,
+    "won": true
+  },
+  {
+    "title": "Mutiny on the Bounty",
+    "film_year": 1962,
+    "ceremony_year": 1963,
+    "won": false
+  },
+  {
+    "title": "The Longest Day",
+    "film_year": 1962,
+    "ceremony_year": 1963,
+    "won": false
+  },
+  {
+    "title": "The Music Man",
+    "film_year": 1962,
+    "ceremony_year": 1963,
+    "won": false
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "film_year": 1962,
+    "ceremony_year": 1963,
+    "won": false
+  },
+  {
+    "title": "America America",
+    "film_year": 1963,
+    "ceremony_year": 1964,
+    "won": false
+  },
+  {
+    "title": "Cleopatra",
+    "film_year": 1963,
+    "ceremony_year": 1964,
+    "won": false
+  },
+  {
+    "title": "How the West Was Won",
+    "film_year": 1963,
+    "ceremony_year": 1964,
+    "won": false
+  },
+  {
+    "title": "Lilies of the Field",
+    "film_year": 1963,
+    "ceremony_year": 1964,
+    "won": false
+  },
+  {
+    "title": "Tom Jones",
+    "film_year": 1963,
+    "ceremony_year": 1964,
+    "won": true
+  },
+  {
+    "title": "Becket",
+    "film_year": 1964,
+    "ceremony_year": 1965,
+    "won": false
+  },
+  {
+    "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+    "film_year": 1964,
+    "ceremony_year": 1965,
+    "won": false
+  },
+  {
+    "title": "Mary Poppins",
+    "film_year": 1964,
+    "ceremony_year": 1965,
+    "won": false
+  },
+  {
+    "title": "My Fair Lady",
+    "film_year": 1964,
+    "ceremony_year": 1965,
+    "won": true
+  },
+  {
+    "title": "Zorba the Greek",
+    "film_year": 1964,
+    "ceremony_year": 1965,
+    "won": false
+  },
+  {
+    "title": "A Thousand Clowns",
+    "film_year": 1965,
+    "ceremony_year": 1966,
+    "won": false
+  },
+  {
+    "title": "Darling",
+    "film_year": 1965,
+    "ceremony_year": 1966,
+    "won": false
+  },
+  {
+    "title": "Doctor Zhivago",
+    "film_year": 1965,
+    "ceremony_year": 1966,
+    "won": false
+  },
+  {
+    "title": "Ship of Fools",
+    "film_year": 1965,
+    "ceremony_year": 1966,
+    "won": false
+  },
+  {
+    "title": "The Sound of Music",
+    "film_year": 1965,
+    "ceremony_year": 1966,
+    "won": true
+  },
+  {
+    "title": "A Man for All Seasons",
+    "film_year": 1966,
+    "ceremony_year": 1967,
+    "won": true
+  },
+  {
+    "title": "Alfie",
+    "film_year": 1966,
+    "ceremony_year": 1967,
+    "won": false
+  },
+  {
+    "title": "The Russians Are Coming, the Russians Are Coming",
+    "film_year": 1966,
+    "ceremony_year": 1967,
+    "won": false
+  },
+  {
+    "title": "The Sand Pebbles",
+    "film_year": 1966,
+    "ceremony_year": 1967,
+    "won": false
+  },
+  {
+    "title": "Who's Afraid of Virginia Woolf?",
+    "film_year": 1966,
+    "ceremony_year": 1967,
+    "won": false
+  },
+  {
+    "title": "Bonnie and Clyde",
+    "film_year": 1967,
+    "ceremony_year": 1968,
+    "won": false
+  },
+  {
+    "title": "Doctor Dolittle",
+    "film_year": 1967,
+    "ceremony_year": 1968,
+    "won": false
+  },
+  {
+    "title": "Guess Who's Coming to Dinner",
+    "film_year": 1967,
+    "ceremony_year": 1968,
+    "won": false
+  },
+  {
+    "title": "In the Heat of the Night",
+    "film_year": 1967,
+    "ceremony_year": 1968,
+    "won": true
+  },
+  {
+    "title": "The Graduate",
+    "film_year": 1967,
+    "ceremony_year": 1968,
+    "won": false
+  },
+  {
+    "title": "Funny Girl",
+    "film_year": 1968,
+    "ceremony_year": 1969,
+    "won": false
+  },
+  {
+    "title": "Oliver!",
+    "film_year": 1968,
+    "ceremony_year": 1969,
+    "won": true
+  },
+  {
+    "title": "Rachel, Rachel",
+    "film_year": 1968,
+    "ceremony_year": 1969,
+    "won": false
+  },
+  {
+    "title": "Romeo and Juliet",
+    "film_year": 1968,
+    "ceremony_year": 1969,
+    "won": false
+  },
+  {
+    "title": "The Lion in Winter",
+    "film_year": 1968,
+    "ceremony_year": 1969,
+    "won": false
+  },
+  {
+    "title": "Anne of the Thousand Days",
+    "film_year": 1969,
+    "ceremony_year": 1970,
+    "won": false
+  },
+  {
+    "title": "Butch Cassidy and the Sundance Kid",
+    "film_year": 1969,
+    "ceremony_year": 1970,
+    "won": false
+  },
+  {
+    "title": "Hello, Dolly!",
+    "film_year": 1969,
+    "ceremony_year": 1970,
+    "won": false
+  },
+  {
+    "title": "Midnight Cowboy",
+    "film_year": 1969,
+    "ceremony_year": 1970,
+    "won": true
+  },
+  {
+    "title": "Z",
+    "film_year": 1969,
+    "ceremony_year": 1970,
+    "won": false
+  },
+  {
+    "title": "Airport",
+    "film_year": 1970,
+    "ceremony_year": 1971,
+    "won": false
+  },
+  {
+    "title": "Five Easy Pieces",
+    "film_year": 1970,
+    "ceremony_year": 1971,
+    "won": false
+  },
+  {
+    "title": "Love Story",
+    "film_year": 1970,
+    "ceremony_year": 1971,
+    "won": false
+  },
+  {
+    "title": "M*A*S*H",
+    "film_year": 1970,
+    "ceremony_year": 1971,
+    "won": false
+  },
+  {
+    "title": "Patton",
+    "film_year": 1970,
+    "ceremony_year": 1971,
+    "won": true
+  },
+  {
+    "title": "A Clockwork Orange",
+    "film_year": 1971,
+    "ceremony_year": 1972,
+    "won": false
+  },
+  {
+    "title": "Fiddler on the Roof",
+    "film_year": 1971,
+    "ceremony_year": 1972,
+    "won": false
+  },
+  {
+    "title": "Nicholas and Alexandra",
+    "film_year": 1971,
+    "ceremony_year": 1972,
+    "won": false
+  },
+  {
+    "title": "The French Connection",
+    "film_year": 1971,
+    "ceremony_year": 1972,
+    "won": true
+  },
+  {
+    "title": "The Last Picture Show",
+    "film_year": 1971,
+    "ceremony_year": 1972,
+    "won": false
+  },
+  {
+    "title": "Cabaret",
+    "film_year": 1972,
+    "ceremony_year": 1973,
+    "won": false
+  },
+  {
+    "title": "Deliverance",
+    "film_year": 1972,
+    "ceremony_year": 1973,
+    "won": false
+  },
+  {
+    "title": "Sounder",
+    "film_year": 1972,
+    "ceremony_year": 1973,
+    "won": false
+  },
+  {
+    "title": "The Emigrants",
+    "film_year": 1971,
+    "ceremony_year": 1973,
+    "won": false
+  },
+  {
+    "title": "The Godfather",
+    "film_year": 1972,
+    "ceremony_year": 1973,
+    "won": true
+  },
+  {
+    "title": "A Touch of Class",
+    "film_year": 1973,
+    "ceremony_year": 1974,
+    "won": false
+  },
+  {
+    "title": "American Graffiti",
+    "film_year": 1973,
+    "ceremony_year": 1974,
+    "won": false
+  },
+  {
+    "title": "Cries and Whispers",
+    "film_year": 1973,
+    "ceremony_year": 1974,
+    "won": false
+  },
+  {
+    "title": "The Exorcist",
+    "film_year": 1973,
+    "ceremony_year": 1974,
+    "won": false
+  },
+  {
+    "title": "The Sting",
+    "film_year": 1973,
+    "ceremony_year": 1974,
+    "won": true
+  },
+  {
+    "title": "Chinatown",
+    "film_year": 1974,
+    "ceremony_year": 1975,
+    "won": false
+  },
+  {
+    "title": "Lenny",
+    "film_year": 1974,
+    "ceremony_year": 1975,
+    "won": false
+  },
+  {
+    "title": "The Conversation",
+    "film_year": 1974,
+    "ceremony_year": 1975,
+    "won": false
+  },
+  {
+    "title": "The Godfather Part II",
+    "film_year": 1974,
+    "ceremony_year": 1975,
+    "won": true
+  },
+  {
+    "title": "The Towering Inferno",
+    "film_year": 1974,
+    "ceremony_year": 1975,
+    "won": false
+  },
+  {
+    "title": "Barry Lyndon",
+    "film_year": 1975,
+    "ceremony_year": 1976,
+    "won": false
+  },
+  {
+    "title": "Dog Day Afternoon",
+    "film_year": 1975,
+    "ceremony_year": 1976,
+    "won": false
+  },
+  {
+    "title": "Jaws",
+    "film_year": 1975,
+    "ceremony_year": 1976,
+    "won": false
+  },
+  {
+    "title": "Nashville",
+    "film_year": 1975,
+    "ceremony_year": 1976,
+    "won": false
+  },
+  {
+    "title": "One Flew Over the Cuckoo's Nest",
+    "film_year": 1975,
+    "ceremony_year": 1976,
+    "won": true
+  },
+  {
+    "title": "All the President's Men",
+    "film_year": 1976,
+    "ceremony_year": 1977,
+    "won": false
+  },
+  {
+    "title": "Bound for Glory",
+    "film_year": 1976,
+    "ceremony_year": 1977,
+    "won": false
+  },
+  {
+    "title": "Network",
+    "film_year": 1976,
+    "ceremony_year": 1977,
+    "won": false
+  },
+  {
+    "title": "Rocky",
+    "film_year": 1976,
+    "ceremony_year": 1977,
+    "won": true
+  },
+  {
+    "title": "Taxi Driver",
+    "film_year": 1976,
+    "ceremony_year": 1977,
+    "won": false
+  },
+  {
+    "title": "Annie Hall",
+    "film_year": 1977,
+    "ceremony_year": 1978,
+    "won": true
+  },
+  {
+    "title": "Julia",
+    "film_year": 1977,
+    "ceremony_year": 1978,
+    "won": false
+  },
+  {
+    "title": "Star Wars",
+    "film_year": 1977,
+    "ceremony_year": 1978,
+    "won": false
+  },
+  {
+    "title": "The Goodbye Girl",
+    "film_year": 1977,
+    "ceremony_year": 1978,
+    "won": false
+  },
+  {
+    "title": "The Turning Point",
+    "film_year": 1977,
+    "ceremony_year": 1978,
+    "won": false
+  },
+  {
+    "title": "An Unmarried Woman",
+    "film_year": 1978,
+    "ceremony_year": 1979,
+    "won": false
+  },
+  {
+    "title": "Coming Home",
+    "film_year": 1978,
+    "ceremony_year": 1979,
+    "won": false
+  },
+  {
+    "title": "Heaven Can Wait",
+    "film_year": 1978,
+    "ceremony_year": 1979,
+    "won": false
+  },
+  {
+    "title": "Midnight Express",
+    "film_year": 1978,
+    "ceremony_year": 1979,
+    "won": false
+  },
+  {
+    "title": "The Deer Hunter",
+    "film_year": 1978,
+    "ceremony_year": 1979,
+    "won": true
+  },
+  {
+    "title": "All That Jazz",
+    "film_year": 1979,
+    "ceremony_year": 1980,
+    "won": false
+  },
+  {
+    "title": "Apocalypse Now",
+    "film_year": 1979,
+    "ceremony_year": 1980,
+    "won": false
+  },
+  {
+    "title": "Breaking Away",
+    "film_year": 1979,
+    "ceremony_year": 1980,
+    "won": false
+  },
+  {
+    "title": "Kramer vs. Kramer",
+    "film_year": 1979,
+    "ceremony_year": 1980,
+    "won": true
+  },
+  {
+    "title": "Norma Rae",
+    "film_year": 1979,
+    "ceremony_year": 1980,
+    "won": false
+  },
+  {
+    "title": "Coal Miner's Daughter",
+    "film_year": 1980,
+    "ceremony_year": 1981,
+    "won": false
+  },
+  {
+    "title": "Ordinary People",
+    "film_year": 1980,
+    "ceremony_year": 1981,
+    "won": true
+  },
+  {
+    "title": "Raging Bull",
+    "film_year": 1980,
+    "ceremony_year": 1981,
+    "won": false
+  },
+  {
+    "title": "Tess",
+    "film_year": 1979,
+    "ceremony_year": 1981,
+    "won": false
+  },
+  {
+    "title": "The Elephant Man",
+    "film_year": 1980,
+    "ceremony_year": 1981,
+    "won": false
+  },
+  {
+    "title": "Atlantic City",
+    "film_year": 1980,
+    "ceremony_year": 1982,
+    "won": false
+  },
+  {
+    "title": "Chariots of Fire",
+    "film_year": 1981,
+    "ceremony_year": 1982,
+    "won": true
+  },
+  {
+    "title": "On Golden Pond",
+    "film_year": 1981,
+    "ceremony_year": 1982,
+    "won": false
+  },
+  {
+    "title": "Raiders of the Lost Ark",
+    "film_year": 1981,
+    "ceremony_year": 1982,
+    "won": false
+  },
+  {
+    "title": "Reds",
+    "film_year": 1981,
+    "ceremony_year": 1982,
+    "won": false
+  },
+  {
+    "title": "E.T. the Extra-Terrestrial",
+    "film_year": 1982,
+    "ceremony_year": 1983,
+    "won": false
+  },
+  {
+    "title": "Gandhi",
+    "film_year": 1982,
+    "ceremony_year": 1983,
+    "won": true
+  },
+  {
+    "title": "Missing",
+    "film_year": 1982,
+    "ceremony_year": 1983,
+    "won": false
+  },
+  {
+    "title": "The Verdict",
+    "film_year": 1982,
+    "ceremony_year": 1983,
+    "won": false
+  },
+  {
+    "title": "Tootsie",
+    "film_year": 1982,
+    "ceremony_year": 1983,
+    "won": false
+  },
+  {
+    "title": "Tender Mercies",
+    "film_year": 1983,
+    "ceremony_year": 1984,
+    "won": false
+  },
+  {
+    "title": "Terms of Endearment",
+    "film_year": 1983,
+    "ceremony_year": 1984,
+    "won": true
+  },
+  {
+    "title": "The Big Chill",
+    "film_year": 1983,
+    "ceremony_year": 1984,
+    "won": false
+  },
+  {
+    "title": "The Dresser",
+    "film_year": 1983,
+    "ceremony_year": 1984,
+    "won": false
+  },
+  {
+    "title": "The Right Stuff",
+    "film_year": 1983,
+    "ceremony_year": 1984,
+    "won": false
+  },
+  {
+    "title": "A Passage to India",
+    "film_year": 1984,
+    "ceremony_year": 1985,
+    "won": false
+  },
+  {
+    "title": "A Soldier's Story",
+    "film_year": 1984,
+    "ceremony_year": 1985,
+    "won": false
+  },
+  {
+    "title": "Amadeus",
+    "film_year": 1984,
+    "ceremony_year": 1985,
+    "won": true
+  },
+  {
+    "title": "Places in the Heart",
+    "film_year": 1984,
+    "ceremony_year": 1985,
+    "won": false
+  },
+  {
+    "title": "The Killing Fields",
+    "film_year": 1984,
+    "ceremony_year": 1985,
+    "won": false
+  },
+  {
+    "title": "Kiss of the Spider Woman",
+    "film_year": 1985,
+    "ceremony_year": 1986,
+    "won": false
+  },
+  {
+    "title": "Out of Africa",
+    "film_year": 1985,
+    "ceremony_year": 1986,
+    "won": true
+  },
+  {
+    "title": "Prizzi's Honor",
+    "film_year": 1985,
+    "ceremony_year": 1986,
+    "won": false
+  },
+  {
+    "title": "The Color Purple",
+    "film_year": 1985,
+    "ceremony_year": 1986,
+    "won": false
+  },
+  {
+    "title": "Witness",
+    "film_year": 1985,
+    "ceremony_year": 1986,
+    "won": false
+  },
+  {
+    "title": "A Room with a View",
+    "film_year": 1985,
+    "ceremony_year": 1987,
+    "won": false
+  },
+  {
+    "title": "Children of a Lesser God",
+    "film_year": 1986,
+    "ceremony_year": 1987,
+    "won": false
+  },
+  {
+    "title": "Hannah and Her Sisters",
+    "film_year": 1986,
+    "ceremony_year": 1987,
+    "won": false
+  },
+  {
+    "title": "Platoon",
+    "film_year": 1986,
+    "ceremony_year": 1987,
+    "won": true
+  },
+  {
+    "title": "The Mission",
+    "film_year": 1986,
+    "ceremony_year": 1987,
+    "won": false
+  },
+  {
+    "title": "Broadcast News",
+    "film_year": 1987,
+    "ceremony_year": 1988,
+    "won": false
+  },
+  {
+    "title": "Fatal Attraction",
+    "film_year": 1987,
+    "ceremony_year": 1988,
+    "won": false
+  },
+  {
+    "title": "Hope and Glory",
+    "film_year": 1987,
+    "ceremony_year": 1988,
+    "won": false
+  },
+  {
+    "title": "Moonstruck",
+    "film_year": 1987,
+    "ceremony_year": 1988,
+    "won": false
+  },
+  {
+    "title": "The Last Emperor",
+    "film_year": 1987,
+    "ceremony_year": 1988,
+    "won": true
+  },
+  {
+    "title": "Dangerous Liaisons",
+    "film_year": 1988,
+    "ceremony_year": 1989,
+    "won": false
+  },
+  {
+    "title": "Mississippi Burning",
+    "film_year": 1988,
+    "ceremony_year": 1989,
+    "won": false
+  },
+  {
+    "title": "Rain Man",
+    "film_year": 1988,
+    "ceremony_year": 1989,
+    "won": true
+  },
+  {
+    "title": "The Accidental Tourist",
+    "film_year": 1988,
+    "ceremony_year": 1989,
+    "won": false
+  },
+  {
+    "title": "Working Girl",
+    "film_year": 1988,
+    "ceremony_year": 1989,
+    "won": false
+  },
+  {
+    "title": "Born on the Fourth of July",
+    "film_year": 1989,
+    "ceremony_year": 1990,
+    "won": false
+  },
+  {
+    "title": "Dead Poets Society",
+    "film_year": 1989,
+    "ceremony_year": 1990,
+    "won": false
+  },
+  {
+    "title": "Driving Miss Daisy",
+    "film_year": 1989,
+    "ceremony_year": 1990,
+    "won": true
+  },
+  {
+    "title": "Field of Dreams",
+    "film_year": 1989,
+    "ceremony_year": 1990,
+    "won": false
+  },
+  {
+    "title": "My Left Foot",
+    "film_year": 1989,
+    "ceremony_year": 1990,
+    "won": false
+  },
+  {
+    "title": "Awakenings",
+    "film_year": 1990,
+    "ceremony_year": 1991,
+    "won": false
+  },
+  {
+    "title": "Dances With Wolves",
+    "film_year": 1990,
+    "ceremony_year": 1991,
+    "won": true
+  },
+  {
+    "title": "Ghost",
+    "film_year": 1990,
+    "ceremony_year": 1991,
+    "won": false
+  },
+  {
+    "title": "Goodfellas",
+    "film_year": 1990,
+    "ceremony_year": 1991,
+    "won": false
+  },
+  {
+    "title": "The Godfather Part III",
+    "film_year": 1990,
+    "ceremony_year": 1991,
+    "won": false
+  },
+  {
+    "title": "Beauty and the Beast",
+    "film_year": 1991,
+    "ceremony_year": 1992,
+    "won": false
+  },
+  {
+    "title": "Bugsy",
+    "film_year": 1991,
+    "ceremony_year": 1992,
+    "won": false
+  },
+  {
+    "title": "JFK",
+    "film_year": 1991,
+    "ceremony_year": 1992,
+    "won": false
+  },
+  {
+    "title": "The Prince of Tides",
+    "film_year": 1991,
+    "ceremony_year": 1992,
+    "won": false
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "film_year": 1991,
+    "ceremony_year": 1992,
+    "won": true
+  },
+  {
+    "title": "A Few Good Men",
+    "film_year": 1992,
+    "ceremony_year": 1993,
+    "won": false
+  },
+  {
+    "title": "Howards End",
+    "film_year": 1992,
+    "ceremony_year": 1993,
+    "won": false
+  },
+  {
+    "title": "Scent of a Woman",
+    "film_year": 1992,
+    "ceremony_year": 1993,
+    "won": false
+  },
+  {
+    "title": "The Crying Game",
+    "film_year": 1992,
+    "ceremony_year": 1993,
+    "won": false
+  },
+  {
+    "title": "Unforgiven",
+    "film_year": 1992,
+    "ceremony_year": 1993,
+    "won": true
+  },
+  {
+    "title": "In the Name of the Father",
+    "film_year": 1993,
+    "ceremony_year": 1994,
+    "won": false
+  },
+  {
+    "title": "Schindler's List",
+    "film_year": 1993,
+    "ceremony_year": 1994,
+    "won": true
+  },
+  {
+    "title": "The Fugitive",
+    "film_year": 1993,
+    "ceremony_year": 1994,
+    "won": false
+  },
+  {
+    "title": "The Piano",
+    "film_year": 1993,
+    "ceremony_year": 1994,
+    "won": false
+  },
+  {
+    "title": "The Remains of the Day",
+    "film_year": 1993,
+    "ceremony_year": 1994,
+    "won": false
+  },
+  {
+    "title": "Forrest Gump",
+    "film_year": 1994,
+    "ceremony_year": 1995,
+    "won": true
+  },
+  {
+    "title": "Four Weddings and a Funeral",
+    "film_year": 1994,
+    "ceremony_year": 1995,
+    "won": false
+  },
+  {
+    "title": "Pulp Fiction",
+    "film_year": 1994,
+    "ceremony_year": 1995,
+    "won": false
+  },
+  {
+    "title": "Quiz Show",
+    "film_year": 1994,
+    "ceremony_year": 1995,
+    "won": false
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "film_year": 1994,
+    "ceremony_year": 1995,
+    "won": false
+  },
+  {
+    "title": "Apollo 13",
+    "film_year": 1995,
+    "ceremony_year": 1996,
+    "won": false
+  },
+  {
+    "title": "Babe",
+    "film_year": 1995,
+    "ceremony_year": 1996,
+    "won": false
+  },
+  {
+    "title": "Braveheart",
+    "film_year": 1995,
+    "ceremony_year": 1996,
+    "won": true
+  },
+  {
+    "title": "Il Postino: The Postman",
+    "film_year": 1995,
+    "ceremony_year": 1996,
+    "won": false
+  },
+  {
+    "title": "Sense and Sensibility",
+    "film_year": 1995,
+    "ceremony_year": 1996,
+    "won": false
+  },
+  {
+    "title": "Fargo",
+    "film_year": 1996,
+    "ceremony_year": 1997,
+    "won": false
+  },
+  {
+    "title": "Jerry Maguire",
+    "film_year": 1996,
+    "ceremony_year": 1997,
+    "won": false
+  },
+  {
+    "title": "Secrets & Lies",
+    "film_year": 1996,
+    "ceremony_year": 1997,
+    "won": false
+  },
+  {
+    "title": "Shine",
+    "film_year": 1996,
+    "ceremony_year": 1997,
+    "won": false
+  },
+  {
+    "title": "The English Patient",
+    "film_year": 1996,
+    "ceremony_year": 1997,
+    "won": true
+  },
+  {
+    "title": "As Good as It Gets",
+    "film_year": 1997,
+    "ceremony_year": 1998,
+    "won": false
+  },
+  {
+    "title": "Good Will Hunting",
+    "film_year": 1997,
+    "ceremony_year": 1998,
+    "won": false
+  },
+  {
+    "title": "L.A. Confidential",
+    "film_year": 1997,
+    "ceremony_year": 1998,
+    "won": false
+  },
+  {
+    "title": "The Full Monty",
+    "film_year": 1997,
+    "ceremony_year": 1998,
+    "won": false
+  },
+  {
+    "title": "Titanic",
+    "film_year": 1997,
+    "ceremony_year": 1998,
+    "won": true
+  },
+  {
+    "title": "Elizabeth",
+    "film_year": 1998,
+    "ceremony_year": 1999,
+    "won": false
+  },
+  {
+    "title": "Life Is Beautiful",
+    "film_year": 1998,
+    "ceremony_year": 1999,
+    "won": false
+  },
+  {
+    "title": "Saving Private Ryan",
+    "film_year": 1998,
+    "ceremony_year": 1999,
+    "won": false
+  },
+  {
+    "title": "Shakespeare in Love",
+    "film_year": 1998,
+    "ceremony_year": 1999,
+    "won": true
+  },
+  {
+    "title": "The Thin Red Line",
+    "film_year": 1998,
+    "ceremony_year": 1999,
+    "won": false
+  },
+  {
+    "title": "American Beauty",
+    "film_year": 1999,
+    "ceremony_year": 2000,
+    "won": true
+  },
+  {
+    "title": "The Cider House Rules",
+    "film_year": 1999,
+    "ceremony_year": 2000,
+    "won": false
+  },
+  {
+    "title": "The Green Mile",
+    "film_year": 1999,
+    "ceremony_year": 2000,
+    "won": false
+  },
+  {
+    "title": "The Insider",
+    "film_year": 1999,
+    "ceremony_year": 2000,
+    "won": false
+  },
+  {
+    "title": "The Sixth Sense",
+    "film_year": 1999,
+    "ceremony_year": 2000,
+    "won": false
+  },
+  {
+    "title": "Chocolat",
+    "film_year": 2000,
+    "ceremony_year": 2001,
+    "won": false
+  },
+  {
+    "title": "Crouching Tiger, Hidden Dragon",
+    "film_year": 2000,
+    "ceremony_year": 2001,
+    "won": false
+  },
+  {
+    "title": "Erin Brockovich",
+    "film_year": 2000,
+    "ceremony_year": 2001,
+    "won": false
+  },
+  {
+    "title": "Gladiator",
+    "film_year": 2000,
+    "ceremony_year": 2001,
+    "won": true
+  },
+  {
+    "title": "Traffic",
+    "film_year": 2000,
+    "ceremony_year": 2001,
+    "won": false
+  },
+  {
+    "title": "A Beautiful Mind",
+    "film_year": 2001,
+    "ceremony_year": 2002,
+    "won": true
+  },
+  {
+    "title": "Gosford Park",
+    "film_year": 2001,
+    "ceremony_year": 2002,
+    "won": false
+  },
+  {
+    "title": "In the Bedroom",
+    "film_year": 2001,
+    "ceremony_year": 2002,
+    "won": false
+  },
+  {
+    "title": "Moulin Rouge!",
+    "film_year": 2001,
+    "ceremony_year": 2002,
+    "won": false
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "film_year": 2001,
+    "ceremony_year": 2002,
+    "won": false
+  },
+  {
+    "title": "Chicago",
+    "film_year": 2002,
+    "ceremony_year": 2003,
+    "won": true
+  },
+  {
+    "title": "Gangs of New York",
+    "film_year": 2002,
+    "ceremony_year": 2003,
+    "won": false
+  },
+  {
+    "title": "The Hours",
+    "film_year": 2002,
+    "ceremony_year": 2003,
+    "won": false
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "film_year": 2002,
+    "ceremony_year": 2003,
+    "won": false
+  },
+  {
+    "title": "The Pianist",
+    "film_year": 2002,
+    "ceremony_year": 2003,
+    "won": false
+  },
+  {
+    "title": "Lost in Translation",
+    "film_year": 2003,
+    "ceremony_year": 2004,
+    "won": false
+  },
+  {
+    "title": "Master and Commander: The Far Side of the World",
+    "film_year": 2003,
+    "ceremony_year": 2004,
+    "won": false
+  },
+  {
+    "title": "Mystic River",
+    "film_year": 2003,
+    "ceremony_year": 2004,
+    "won": false
+  },
+  {
+    "title": "Seabiscuit",
+    "film_year": 2003,
+    "ceremony_year": 2004,
+    "won": false
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "film_year": 2003,
+    "ceremony_year": 2004,
+    "won": true
+  },
+  {
+    "title": "Finding Neverland",
+    "film_year": 2004,
+    "ceremony_year": 2005,
+    "won": false
+  },
+  {
+    "title": "Million Dollar Baby",
+    "film_year": 2004,
+    "ceremony_year": 2005,
+    "won": true
+  },
+  {
+    "title": "Ray",
+    "film_year": 2004,
+    "ceremony_year": 2005,
+    "won": false
+  },
+  {
+    "title": "Sideways",
+    "film_year": 2004,
+    "ceremony_year": 2005,
+    "won": false
+  },
+  {
+    "title": "The Aviator",
+    "film_year": 2004,
+    "ceremony_year": 2005,
+    "won": false
+  },
+  {
+    "title": "Brokeback Mountain",
+    "film_year": 2005,
+    "ceremony_year": 2006,
+    "won": false
+  },
+  {
+    "title": "Capote",
+    "film_year": 2005,
+    "ceremony_year": 2006,
+    "won": false
+  },
+  {
+    "title": "Crash",
+    "film_year": 2004,
+    "ceremony_year": 2006,
+    "won": true
+  },
+  {
+    "title": "Good Night, and Good Luck",
+    "film_year": 2005,
+    "ceremony_year": 2006,
+    "won": false
+  },
+  {
+    "title": "Munich",
+    "film_year": 2005,
+    "ceremony_year": 2006,
+    "won": false
+  },
+  {
+    "title": "Babel",
+    "film_year": 2006,
+    "ceremony_year": 2007,
+    "won": false
+  },
+  {
+    "title": "Letters from Iwo Jima",
+    "film_year": 2006,
+    "ceremony_year": 2007,
+    "won": false
+  },
+  {
+    "title": "Little Miss Sunshine",
+    "film_year": 2006,
+    "ceremony_year": 2007,
+    "won": false
+  },
+  {
+    "title": "The Departed",
+    "film_year": 2006,
+    "ceremony_year": 2007,
+    "won": true
+  },
+  {
+    "title": "The Queen",
+    "film_year": 2006,
+    "ceremony_year": 2007,
+    "won": false
+  },
+  {
+    "title": "Atonement",
+    "film_year": 2007,
+    "ceremony_year": 2008,
+    "won": false
+  },
+  {
+    "title": "Juno",
+    "film_year": 2007,
+    "ceremony_year": 2008,
+    "won": false
+  },
+  {
+    "title": "Michael Clayton",
+    "film_year": 2007,
+    "ceremony_year": 2008,
+    "won": false
+  },
+  {
+    "title": "No Country for Old Men",
+    "film_year": 2007,
+    "ceremony_year": 2008,
+    "won": true
+  },
+  {
+    "title": "There Will Be Blood",
+    "film_year": 2007,
+    "ceremony_year": 2008,
+    "won": false
+  },
+  {
+    "title": "Frost/Nixon",
+    "film_year": 2008,
+    "ceremony_year": 2009,
+    "won": false
+  },
+  {
+    "title": "Milk",
+    "film_year": 2008,
+    "ceremony_year": 2009,
+    "won": false
+  },
+  {
+    "title": "Slumdog Millionaire",
+    "film_year": 2008,
+    "ceremony_year": 2009,
+    "won": true
+  },
+  {
+    "title": "The Curious Case of Benjamin Button",
+    "film_year": 2008,
+    "ceremony_year": 2009,
+    "won": false
+  },
+  {
+    "title": "The Reader",
+    "film_year": 2008,
+    "ceremony_year": 2009,
+    "won": false
+  },
+  {
+    "title": "A Serious Man",
+    "film_year": 2009,
+    "ceremony_year": 2010,
+    "won": false
+  },
+  {
+    "title": "An Education",
+    "film_year": 2009,
+    "ceremony_year": 2010,
+    "won": false
+  },
+  {
+    "title": "Avatar",
+    "film_year": 2009,
+    "ceremony_year": 2010,
+    "won": false
+  },
+  {
+    "title": "District 9",
+    "film_year": 2009,
+    "ceremony_year": 2010,
+    "won": false
+  },
+  {
+    "title": "Inglourious Basterds",
+    "film_year": 2009,
+    "ceremony_year": 2010,
+    "won": false
+  },
+  {
+    "title": "Precious",
+    "film_year": 2009,
+    "ceremony_year": 2010,
+    "won": false
+  },
+  {
+    "title": "The Blind Side",
+    "film_year": 2009,
+    "ceremony_year": 2010,
+    "won": false
+  },
+  {
+    "title": "The Hurt Locker",
+    "film_year": 2009,
+    "ceremony_year": 2010,
+    "won": true
+  },
+  {
+    "title": "Up",
+    "film_year": 2009,
+    "ceremony_year": 2010,
+    "won": false
+  },
+  {
+    "title": "Up in the Air",
+    "film_year": 2009,
+    "ceremony_year": 2010,
+    "won": false
+  },
+  {
+    "title": "127 Hours",
+    "film_year": 2010,
+    "ceremony_year": 2011,
+    "won": false
+  },
+  {
+    "title": "Black Swan",
+    "film_year": 2010,
+    "ceremony_year": 2011,
+    "won": false
+  },
+  {
+    "title": "Inception",
+    "film_year": 2010,
+    "ceremony_year": 2011,
+    "won": false
+  },
+  {
+    "title": "The Fighter",
+    "film_year": 2010,
+    "ceremony_year": 2011,
+    "won": false
+  },
+  {
+    "title": "The Kids Are All Right",
+    "film_year": 2010,
+    "ceremony_year": 2011,
+    "won": false
+  },
+  {
+    "title": "The King's Speech",
+    "film_year": 2010,
+    "ceremony_year": 2011,
+    "won": true
+  },
+  {
+    "title": "The Social Network",
+    "film_year": 2010,
+    "ceremony_year": 2011,
+    "won": false
+  },
+  {
+    "title": "Toy Story 3",
+    "film_year": 2010,
+    "ceremony_year": 2011,
+    "won": false
+  },
+  {
+    "title": "True Grit",
+    "film_year": 2010,
+    "ceremony_year": 2011,
+    "won": false
+  },
+  {
+    "title": "Winter's Bone",
+    "film_year": 2010,
+    "ceremony_year": 2011,
+    "won": false
+  },
+  {
+    "title": "Extremely Loud & Incredibly Close",
+    "film_year": 2011,
+    "ceremony_year": 2012,
+    "won": false
+  },
+  {
+    "title": "Hugo",
+    "film_year": 2011,
+    "ceremony_year": 2012,
+    "won": false
+  },
+  {
+    "title": "Midnight in Paris",
+    "film_year": 2011,
+    "ceremony_year": 2012,
+    "won": false
+  },
+  {
+    "title": "Moneyball",
+    "film_year": 2011,
+    "ceremony_year": 2012,
+    "won": false
+  },
+  {
+    "title": "The Artist",
+    "film_year": 2011,
+    "ceremony_year": 2012,
+    "won": true
+  },
+  {
+    "title": "The Descendants",
+    "film_year": 2011,
+    "ceremony_year": 2012,
+    "won": false
+  },
+  {
+    "title": "The Help",
+    "film_year": 2011,
+    "ceremony_year": 2012,
+    "won": false
+  },
+  {
+    "title": "The Tree of Life",
+    "film_year": 2011,
+    "ceremony_year": 2012,
+    "won": false
+  },
+  {
+    "title": "War Horse",
+    "film_year": 2011,
+    "ceremony_year": 2012,
+    "won": false
+  },
+  {
+    "title": "Amour",
+    "film_year": 2012,
+    "ceremony_year": 2013,
+    "won": false
+  },
+  {
+    "title": "Argo",
+    "film_year": 2012,
+    "ceremony_year": 2013,
+    "won": true
+  },
+  {
+    "title": "Beasts of the Southern Wild",
+    "film_year": 2012,
+    "ceremony_year": 2013,
+    "won": false
+  },
+  {
+    "title": "Django Unchained",
+    "film_year": 2012,
+    "ceremony_year": 2013,
+    "won": false
+  },
+  {
+    "title": "Les Mis\u00e9rables",
+    "film_year": 2012,
+    "ceremony_year": 2013,
+    "won": false
+  },
+  {
+    "title": "Life of Pi",
+    "film_year": 2012,
+    "ceremony_year": 2013,
+    "won": false
+  },
+  {
+    "title": "Lincoln",
+    "film_year": 2012,
+    "ceremony_year": 2013,
+    "won": false
+  },
+  {
+    "title": "Silver Linings Playbook",
+    "film_year": 2012,
+    "ceremony_year": 2013,
+    "won": false
+  },
+  {
+    "title": "Zero Dark Thirty",
+    "film_year": 2012,
+    "ceremony_year": 2013,
+    "won": false
+  },
+  {
+    "title": "12 Years a Slave",
+    "film_year": 2013,
+    "ceremony_year": 2014,
+    "won": true
+  },
+  {
+    "title": "American Hustle",
+    "film_year": 2013,
+    "ceremony_year": 2014,
+    "won": false
+  },
+  {
+    "title": "Captain Phillips",
+    "film_year": 2013,
+    "ceremony_year": 2014,
+    "won": false
+  },
+  {
+    "title": "Dallas Buyers Club",
+    "film_year": 2013,
+    "ceremony_year": 2014,
+    "won": false
+  },
+  {
+    "title": "Gravity",
+    "film_year": 2013,
+    "ceremony_year": 2014,
+    "won": false
+  },
+  {
+    "title": "Her",
+    "film_year": 2013,
+    "ceremony_year": 2014,
+    "won": false
+  },
+  {
+    "title": "Nebraska",
+    "film_year": 2013,
+    "ceremony_year": 2014,
+    "won": false
+  },
+  {
+    "title": "Philomena",
+    "film_year": 2013,
+    "ceremony_year": 2014,
+    "won": false
+  },
+  {
+    "title": "The Wolf of Wall Street",
+    "film_year": 2013,
+    "ceremony_year": 2014,
+    "won": false
+  },
+  {
+    "title": "American Sniper",
+    "film_year": 2014,
+    "ceremony_year": 2015,
+    "won": false
+  },
+  {
+    "title": "Birdman or (The Unexpected Virtue of Ignorance)",
+    "film_year": 2014,
+    "ceremony_year": 2015,
+    "won": true
+  },
+  {
+    "title": "Boyhood",
+    "film_year": 2014,
+    "ceremony_year": 2015,
+    "won": false
+  },
+  {
+    "title": "Selma",
+    "film_year": 2014,
+    "ceremony_year": 2015,
+    "won": false
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "film_year": 2014,
+    "ceremony_year": 2015,
+    "won": false
+  },
+  {
+    "title": "The Imitation Game",
+    "film_year": 2014,
+    "ceremony_year": 2015,
+    "won": false
+  },
+  {
+    "title": "The Theory of Everything",
+    "film_year": 2014,
+    "ceremony_year": 2015,
+    "won": false
+  },
+  {
+    "title": "Whiplash",
+    "film_year": 2014,
+    "ceremony_year": 2015,
+    "won": false
+  },
+  {
+    "title": "Bridge of Spies",
+    "film_year": 2015,
+    "ceremony_year": 2016,
+    "won": false
+  },
+  {
+    "title": "Brooklyn",
+    "film_year": 2015,
+    "ceremony_year": 2016,
+    "won": false
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "film_year": 2015,
+    "ceremony_year": 2016,
+    "won": false
+  },
+  {
+    "title": "Room",
+    "film_year": 2015,
+    "ceremony_year": 2016,
+    "won": false
+  },
+  {
+    "title": "Spotlight",
+    "film_year": 2015,
+    "ceremony_year": 2016,
+    "won": true
+  },
+  {
+    "title": "The Big Short",
+    "film_year": 2015,
+    "ceremony_year": 2016,
+    "won": false
+  },
+  {
+    "title": "The Martian",
+    "film_year": 2015,
+    "ceremony_year": 2016,
+    "won": false
+  },
+  {
+    "title": "The Revenant",
+    "film_year": 2015,
+    "ceremony_year": 2016,
+    "won": false
+  },
+  {
+    "title": "Arrival",
+    "film_year": 2016,
+    "ceremony_year": 2017,
+    "won": false
+  },
+  {
+    "title": "Fences",
+    "film_year": 2016,
+    "ceremony_year": 2017,
+    "won": false
+  },
+  {
+    "title": "Hacksaw Ridge",
+    "film_year": 2016,
+    "ceremony_year": 2017,
+    "won": false
+  },
+  {
+    "title": "Hell or High Water",
+    "film_year": 2016,
+    "ceremony_year": 2017,
+    "won": false
+  },
+  {
+    "title": "Hidden Figures",
+    "film_year": 2016,
+    "ceremony_year": 2017,
+    "won": false
+  },
+  {
+    "title": "La La Land",
+    "film_year": 2016,
+    "ceremony_year": 2017,
+    "won": false
+  },
+  {
+    "title": "Lion",
+    "film_year": 2016,
+    "ceremony_year": 2017,
+    "won": false
+  },
+  {
+    "title": "Manchester by the Sea",
+    "film_year": 2016,
+    "ceremony_year": 2017,
+    "won": false
+  },
+  {
+    "title": "Moonlight",
+    "film_year": 2016,
+    "ceremony_year": 2017,
+    "won": true
+  },
+  {
+    "title": "Call Me by Your Name",
+    "film_year": 2017,
+    "ceremony_year": 2018,
+    "won": false
+  },
+  {
+    "title": "Darkest Hour",
+    "film_year": 2017,
+    "ceremony_year": 2018,
+    "won": false
+  },
+  {
+    "title": "Dunkirk",
+    "film_year": 2017,
+    "ceremony_year": 2018,
+    "won": false
+  },
+  {
+    "title": "Get Out",
+    "film_year": 2017,
+    "ceremony_year": 2018,
+    "won": false
+  },
+  {
+    "title": "Lady Bird",
+    "film_year": 2017,
+    "ceremony_year": 2018,
+    "won": false
+  },
+  {
+    "title": "Phantom Thread",
+    "film_year": 2017,
+    "ceremony_year": 2018,
+    "won": false
+  },
+  {
+    "title": "The Post",
+    "film_year": 2017,
+    "ceremony_year": 2018,
+    "won": false
+  },
+  {
+    "title": "The Shape of Water",
+    "film_year": 2017,
+    "ceremony_year": 2018,
+    "won": true
+  },
+  {
+    "title": "Three Billboards Outside Ebbing, Missouri",
+    "film_year": 2017,
+    "ceremony_year": 2018,
+    "won": false
+  },
+  {
+    "title": "A Star Is Born",
+    "film_year": 2018,
+    "ceremony_year": 2019,
+    "won": false
+  },
+  {
+    "title": "BlacKkKlansman",
+    "film_year": 2018,
+    "ceremony_year": 2019,
+    "won": false
+  },
+  {
+    "title": "Black Panther",
+    "film_year": 2018,
+    "ceremony_year": 2019,
+    "won": false
+  },
+  {
+    "title": "Bohemian Rhapsody",
+    "film_year": 2018,
+    "ceremony_year": 2019,
+    "won": false
+  },
+  {
+    "title": "Green Book",
+    "film_year": 2018,
+    "ceremony_year": 2019,
+    "won": true
+  },
+  {
+    "title": "Roma",
+    "film_year": 2018,
+    "ceremony_year": 2019,
+    "won": false
+  },
+  {
+    "title": "The Favourite",
+    "film_year": 2018,
+    "ceremony_year": 2019,
+    "won": false
+  },
+  {
+    "title": "Vice",
+    "film_year": 2018,
+    "ceremony_year": 2019,
+    "won": false
+  },
+  {
+    "title": "1917",
+    "film_year": 2019,
+    "ceremony_year": 2020,
+    "won": false
+  },
+  {
+    "title": "Ford v Ferrari",
+    "film_year": 2019,
+    "ceremony_year": 2020,
+    "won": false
+  },
+  {
+    "title": "Jojo Rabbit",
+    "film_year": 2019,
+    "ceremony_year": 2020,
+    "won": false
+  },
+  {
+    "title": "Joker",
+    "film_year": 2019,
+    "ceremony_year": 2020,
+    "won": false
+  },
+  {
+    "title": "Little Women",
+    "film_year": 2019,
+    "ceremony_year": 2020,
+    "won": false
+  },
+  {
+    "title": "Marriage Story",
+    "film_year": 2019,
+    "ceremony_year": 2020,
+    "won": false
+  },
+  {
+    "title": "Once Upon a Time in Hollywood",
+    "film_year": 2019,
+    "ceremony_year": 2020,
+    "won": false
+  },
+  {
+    "title": "Parasite",
+    "film_year": 2019,
+    "ceremony_year": 2020,
+    "won": true
+  },
+  {
+    "title": "The Irishman",
+    "film_year": 2019,
+    "ceremony_year": 2020,
+    "won": false
+  },
+  {
+    "title": "Judas and the Black Messiah",
+    "film_year": 2021,
+    "ceremony_year": 2021,
+    "won": false
+  },
+  {
+    "title": "Mank",
+    "film_year": 2020,
+    "ceremony_year": 2021,
+    "won": false
+  },
+  {
+    "title": "Minari",
+    "film_year": 2020,
+    "ceremony_year": 2021,
+    "won": false
+  },
+  {
+    "title": "Nomadland",
+    "film_year": 2020,
+    "ceremony_year": 2021,
+    "won": true
+  },
+  {
+    "title": "Promising Young Woman",
+    "film_year": 2020,
+    "ceremony_year": 2021,
+    "won": false
+  },
+  {
+    "title": "Sound of Metal",
+    "film_year": 2019,
+    "ceremony_year": 2021,
+    "won": false
+  },
+  {
+    "title": "The Father",
+    "film_year": 2020,
+    "ceremony_year": 2021,
+    "won": false
+  },
+  {
+    "title": "The Trial of the Chicago 7",
+    "film_year": 2020,
+    "ceremony_year": 2021,
+    "won": false
+  },
+  {
+    "title": "Belfast",
+    "film_year": 2021,
+    "ceremony_year": 2022,
+    "won": false
+  },
+  {
+    "title": "CODA",
+    "film_year": 2021,
+    "ceremony_year": 2022,
+    "won": true
+  },
+  {
+    "title": "Don't Look Up",
+    "film_year": 2021,
+    "ceremony_year": 2022,
+    "won": false
+  },
+  {
+    "title": "Drive My Car",
+    "film_year": 2021,
+    "ceremony_year": 2022,
+    "won": false
+  },
+  {
+    "title": "Dune",
+    "film_year": 2021,
+    "ceremony_year": 2022,
+    "won": false
+  },
+  {
+    "title": "King Richard",
+    "film_year": 2021,
+    "ceremony_year": 2022,
+    "won": false
+  },
+  {
+    "title": "Licorice Pizza",
+    "film_year": 2021,
+    "ceremony_year": 2022,
+    "won": false
+  },
+  {
+    "title": "Nightmare Alley",
+    "film_year": 2021,
+    "ceremony_year": 2022,
+    "won": false
+  },
+  {
+    "title": "The Power of the Dog",
+    "film_year": 2021,
+    "ceremony_year": 2022,
+    "won": false
+  },
+  {
+    "title": "West Side Story",
+    "film_year": 2021,
+    "ceremony_year": 2022,
+    "won": false
+  },
+  {
+    "title": "All Quiet on the Western Front",
+    "film_year": 2022,
+    "ceremony_year": 2023,
+    "won": false
+  },
+  {
+    "title": "Avatar: The Way of Water",
+    "film_year": 2022,
+    "ceremony_year": 2023,
+    "won": false
+  },
+  {
+    "title": "Elvis",
+    "film_year": 2022,
+    "ceremony_year": 2023,
+    "won": false
+  },
+  {
+    "title": "Everything Everywhere All at Once",
+    "film_year": 2022,
+    "ceremony_year": 2023,
+    "won": true
+  },
+  {
+    "title": "The Banshees of Inisherin",
+    "film_year": 2022,
+    "ceremony_year": 2023,
+    "won": false
+  },
+  {
+    "title": "The Fabelmans",
+    "film_year": 2022,
+    "ceremony_year": 2023,
+    "won": false
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "film_year": 2022,
+    "ceremony_year": 2023,
+    "won": false
+  },
+  {
+    "title": "Triangle of Sadness",
+    "film_year": 2022,
+    "ceremony_year": 2023,
+    "won": false
+  },
+  {
+    "title": "T\u00e1r",
+    "film_year": 2022,
+    "ceremony_year": 2023,
+    "won": false
+  },
+  {
+    "title": "Women Talking",
+    "film_year": 2022,
+    "ceremony_year": 2023,
+    "won": false
+  },
+  {
+    "title": "American Fiction",
+    "film_year": 2023,
+    "ceremony_year": 2024,
+    "won": false
+  },
+  {
+    "title": "Anatomy of a Fall",
+    "film_year": 2023,
+    "ceremony_year": 2024,
+    "won": false
+  },
+  {
+    "title": "Barbie",
+    "film_year": 2023,
+    "ceremony_year": 2024,
+    "won": false
+  },
+  {
+    "title": "Killers of the Flower Moon",
+    "film_year": 2023,
+    "ceremony_year": 2024,
+    "won": false
+  },
+  {
+    "title": "Maestro",
+    "film_year": 2023,
+    "ceremony_year": 2024,
+    "won": false
+  },
+  {
+    "title": "Oppenheimer",
+    "film_year": 2023,
+    "ceremony_year": 2024,
+    "won": true
+  },
+  {
+    "title": "Past Lives",
+    "film_year": 2023,
+    "ceremony_year": 2024,
+    "won": false
+  },
+  {
+    "title": "Poor Things",
+    "film_year": 2023,
+    "ceremony_year": 2024,
+    "won": false
+  },
+  {
+    "title": "The Holdovers",
+    "film_year": 2023,
+    "ceremony_year": 2024,
+    "won": false
+  },
+  {
+    "title": "The Zone of Interest",
+    "film_year": 2023,
+    "ceremony_year": 2024,
+    "won": false
+  },
+  {
+    "title": "A Complete Unknown",
+    "film_year": 2024,
+    "ceremony_year": 2025,
+    "won": false
+  },
+  {
+    "title": "Anora",
+    "film_year": 2024,
+    "ceremony_year": 2025,
+    "won": true
+  },
+  {
+    "title": "Conclave",
+    "film_year": 2024,
+    "ceremony_year": 2025,
+    "won": false
+  },
+  {
+    "title": "Dune: Part Two",
+    "film_year": 2024,
+    "ceremony_year": 2025,
+    "won": false
+  },
+  {
+    "title": "Emilia P\u00e9rez",
+    "film_year": 2024,
+    "ceremony_year": 2025,
+    "won": false
+  },
+  {
+    "title": "I'm Still Here",
+    "film_year": 2024,
+    "ceremony_year": 2025,
+    "won": false
+  },
+  {
+    "title": "Nickel Boys",
+    "film_year": 2024,
+    "ceremony_year": 2025,
+    "won": false
+  },
+  {
+    "title": "The Brutalist",
+    "film_year": 2024,
+    "ceremony_year": 2025,
+    "won": false
+  },
+  {
+    "title": "The Substance",
+    "film_year": 2024,
+    "ceremony_year": 2025,
+    "won": false
+  },
+  {
+    "title": "Wicked",
+    "film_year": 2024,
+    "ceremony_year": 2025,
+    "won": false
+  },
+  {
+    "title": "Bugonia",
+    "film_year": 2025,
+    "ceremony_year": 2026,
+    "won": false
+  },
+  {
+    "title": "F1",
+    "film_year": 2025,
+    "ceremony_year": 2026,
+    "won": false
+  },
+  {
+    "title": "Frankenstein",
+    "film_year": 2025,
+    "ceremony_year": 2026,
+    "won": false
+  },
+  {
+    "title": "Hamnet",
+    "film_year": 2025,
+    "ceremony_year": 2026,
+    "won": false
+  },
+  {
+    "title": "Marty Supreme",
+    "film_year": 2025,
+    "ceremony_year": 2026,
+    "won": false
+  },
+  {
+    "title": "One Battle After Another",
+    "film_year": 2025,
+    "ceremony_year": 2026,
+    "won": true
+  },
+  {
+    "title": "Sentimental Value",
+    "film_year": 2025,
+    "ceremony_year": 2026,
+    "won": false
+  },
+  {
+    "title": "Sinners",
+    "film_year": 2025,
+    "ceremony_year": 2026,
+    "won": false
+  },
+  {
+    "title": "The Secret Agent",
+    "film_year": 2025,
+    "ceremony_year": 2026,
+    "won": false
+  },
+  {
+    "title": "Train Dreams",
+    "film_year": 2025,
+    "ceremony_year": 2026,
+    "won": false
+  }
+]

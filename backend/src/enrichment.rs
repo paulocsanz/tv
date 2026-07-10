@@ -473,5 +473,6 @@ pub async fn enrich_one(
         subtitles: Vec::new(),
         episodes: Vec::new(),
         keywords: Vec::new(),
+        award_entries: Vec::new(),
     }
 }

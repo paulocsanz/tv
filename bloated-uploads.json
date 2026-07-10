@@ -1,0 +1,37 @@
+[
+  {
+    "id": "band-of-brothers-2001-tv",
+    "title": "Band of Brothers",
+    "content_type": "tv",
+    "episodeCount": 11,
+    "pickedTorrentTitle": "Band of Brothers (TV Mini Series 2001) 720p BluRay HEVC x265 BON"
+  },
+  {
+    "id": "apocalypse-now-1979-movie",
+    "title": "Apocalypse Now",
+    "content_type": "movie",
+    "episodeCount": 10,
+    "pickedTorrentTitle": "Apocalypse.Now.1979.FINAL.CUT.720p.BluRay.999MB.x265.10bit-Ga"
+  },
+  {
+    "id": "rear-window-1954-movie",
+    "title": "Rear Window",
+    "content_type": "movie",
+    "episodeCount": 1,
+    "pickedTorrentTitle": "Rear.Window.1954.720p.BluRay.999MB.x265.10bit-GalaxyRG"
+  },
+  {
+    "id": "inglourious-basterds-2009-movie",
+    "title": "Inglourious Basterds",
+    "content_type": "movie",
+    "episodeCount": 1,
+    "pickedTorrentTitle": "Inglourious.Basterds.2009.720p.BluRay.999MB.x265.10bit-Galaxy"
+  },
+  {
+    "id": "the-sting-1973-movie",
+    "title": "The Sting",
+    "content_type": "movie",
+    "episodeCount": 1,
+    "pickedTorrentTitle": "The.Sting.1973.720p.BluRay.999MB.x265.10bit-GalaxyRG"
+  }
+]

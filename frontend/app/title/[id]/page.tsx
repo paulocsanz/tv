@@ -124,6 +124,23 @@ export default async function TitlePage({
           </p>
         )}
 
+        {item.award_entries.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            {item.award_entries.map((award, i) => (
+              <span
+                key={`${award.event}-${award.category}-${award.year}-${i}`}
+                className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset ${
+                  award.won
+                    ? "bg-amber-500/15 text-amber-300 ring-amber-400/30"
+                    : "bg-white/5 text-zinc-400 ring-white/10"
+                }`}
+              >
+                {award.won ? "🏆 Won" : "Nominated"} · {award.category} · {award.event} {award.year}
+              </span>
+            ))}
+          </div>
+        )}
+
         {item.keywords.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-1.5">
             {item.keywords.slice(0, 8).map((keyword) => (

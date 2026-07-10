@@ -1,0 +1,64 @@
+[
+  {
+    "reason": "titleOnlyFallback",
+    "source_title": "In Old Chicago",
+    "source_film_year": 1937,
+    "tmdb_id": 78734,
+    "tmdb_title": "In Old Chicago",
+    "tmdb_release_date": "1938-04-15"
+  },
+  {
+    "reason": "yearMismatch",
+    "source_title": "Casablanca",
+    "source_film_year": 1943,
+    "catalog_id": "casablanca-1942-movie",
+    "catalog_year": 1942
+  },
+  {
+    "reason": "titleOnlyFallback",
+    "source_title": "A Room with a View",
+    "source_film_year": 1985,
+    "tmdb_id": 11257,
+    "tmdb_title": "A Room with a View",
+    "tmdb_release_date": "1986-03-07"
+  },
+  {
+    "reason": "titleMismatch",
+    "source_title": "My Left Foot",
+    "source_film_year": 1989,
+    "tmdb_id": 10161,
+    "tmdb_title": "My Left Foot: The Story of Christy Brown",
+    "tmdb_release_date": "1989-04-07"
+  },
+  {
+    "reason": "titleMismatch",
+    "source_title": "Il Postino: The Postman",
+    "source_film_year": 1995,
+    "tmdb_id": 11010,
+    "tmdb_title": "The Postman",
+    "tmdb_release_date": "1994-09-22"
+  },
+  {
+    "reason": "yearMismatch",
+    "source_title": "Life Is Beautiful",
+    "source_film_year": 1998,
+    "catalog_id": "life-is-beautiful-1997-movie",
+    "catalog_year": 1997
+  },
+  {
+    "reason": "titleMismatch",
+    "source_title": "Precious",
+    "source_film_year": 2009,
+    "tmdb_id": 25793,
+    "tmdb_title": "Precious: Based on the Novel 'Push' by Sapphire",
+    "tmdb_release_date": "2009-11-06"
+  },
+  {
+    "reason": "titleMismatch",
+    "source_title": "Lion",
+    "source_film_year": 2016,
+    "tmdb_id": 8587,
+    "tmdb_title": "The Lion King",
+    "tmdb_release_date": "1994-06-15"
+  }
+]

@@ -1,0 +1,228 @@
+{
+  "yearMismatch": [
+    {
+      "title": "Chaves",
+      "catalogYear": 1971,
+      "tmdbYear": "1973",
+      "original_title": "Chaves (Max Exclusivo)"
+    },
+    {
+      "title": "Stomachache",
+      "catalogYear": 2007,
+      "tmdbYear": "2025",
+      "original_title": "Stomachache"
+    },
+    {
+      "title": "The Sound Around",
+      "catalogYear": 2012,
+      "tmdbYear": "1994",
+      "original_title": "Blue Angels: Around the World at the Speed of Sound"
+    },
+    {
+      "title": "The Trespasser",
+      "catalogYear": 2001,
+      "tmdbYear": "2002",
+      "original_title": "O Invasor"
+    },
+    {
+      "title": "Eliana",
+      "catalogYear": 1991,
+      "tmdbYear": "2013",
+      "original_title": "Kakambal ni Eliana"
+    },
+    {
+      "title": "The Man of the Crowd",
+      "catalogYear": 2012,
+      "tmdbYear": "1987",
+      "original_title": "The Man of the Crowd"
+    },
+    {
+      "title": "Dancing Brasil",
+      "catalogYear": 2013,
+      "tmdbYear": "2017",
+      "original_title": "Dancing Brasil"
+    },
+    {
+      "title": "Midnight",
+      "catalogYear": 1998,
+      "tmdbYear": "1988",
+      "original_title": "Midnight Run"
+    },
+    {
+      "title": "Medusa",
+      "catalogYear": 2021,
+      "tmdbYear": "2020",
+      "original_title": "Medusa"
+    }
+  ],
+  "sameAsInput": [
+    {
+      "title": "Os Normais",
+      "original_title": "Os Normais"
+    },
+    {
+      "title": "Pantanal",
+      "original_title": "Pantanal"
+    },
+    {
+      "title": "A Grande Família",
+      "original_title": "A Grande Família"
+    },
+    {
+      "title": "Profissão Repórter",
+      "original_title": "Profissão Repórter"
+    },
+    {
+      "title": "Mandrake",
+      "original_title": "Mandrake"
+    },
+    {
+      "title": "Globo Repórter",
+      "original_title": "Globo Repórter"
+    },
+    {
+      "title": "Fantástico",
+      "original_title": "Fantástico"
+    },
+    {
+      "title": "Saramandaia",
+      "original_title": "Saramandaia"
+    },
+    {
+      "title": "Carandiru",
+      "original_title": "Carandiru"
+    },
+    {
+      "title": "Jornal Nacional",
+      "original_title": "Jornal Nacional"
+    },
+    {
+      "title": "Aquarius",
+      "original_title": "Aquarius"
+    },
+    {
+      "title": "3%",
+      "original_title": "3%"
+    },
+    {
+      "title": "Esquenta!",
+      "original_title": "Esquenta!"
+    },
+    {
+      "title": "A Terra Prometida",
+      "original_title": "A Terra Prometida"
+    },
+    {
+      "title": "Bacurau",
+      "original_title": "Bacurau"
+    },
+    {
+      "title": "Sintonia",
+      "original_title": "Sintonia"
+    },
+    {
+      "title": "Kiss of the Spider Woman",
+      "original_title": "Kiss of the Spider Woman"
+    },
+    {
+      "title": "Sandy & Junior",
+      "original_title": "Sandy & Junior"
+    },
+    {
+      "title": "Limite",
+      "original_title": "Limite"
+    },
+    {
+      "title": "Amor Eterno Amor",
+      "original_title": "Amor Eterno Amor"
+    },
+    {
+      "title": "Trash",
+      "original_title": "Trash"
+    },
+    {
+      "title": "Passione",
+      "original_title": "Passione"
+    },
+    {
+      "title": "Madame Satã",
+      "original_title": "Madame Satã"
+    },
+    {
+      "title": "Xuxa",
+      "original_title": "Xuxa"
+    },
+    {
+      "title": "The Voice Brasil",
+      "original_title": "The Voice Brasil"
+    },
+    {
+      "title": "Conversa com Bial",
+      "original_title": "Conversa com Bial"
+    },
+    {
+      "title": "No Rancho Fundo",
+      "original_title": "No Rancho Fundo"
+    },
+    {
+      "title": "Domingão do Faustão",
+      "original_title": "Domingão do Faustão"
+    },
+    {
+      "title": "Mais Você",
+      "original_title": "Mais Você"
+    },
+    {
+      "title": "At Play in the Fields of the Lord",
+      "original_title": "At Play in the Fields of the Lord"
+    },
+    {
+      "title": "Cara e Coragem",
+      "original_title": "Cara e Coragem"
+    },
+    {
+      "title": "No Limite",
+      "original_title": "No Limite"
+    },
+    {
+      "title": "O Sétimo Guardião",
+      "original_title": "O Sétimo Guardião"
+    },
+    {
+      "title": "Zorra Total",
+      "original_title": "Zorra Total"
+    },
+    {
+      "title": "Altas Horas",
+      "original_title": "Altas Horas"
+    },
+    {
+      "title": "Caldeirão do Huck",
+      "original_title": "Caldeirão do Huck"
+    },
+    {
+      "title": "Rock Story",
+      "original_title": "Rock Story"
+    },
+    {
+      "title": "Quilombo",
+      "original_title": "Quilombo"
+    },
+    {
+      "title": "Faustão na Band",
+      "original_title": "Faustão na Band"
+    },
+    {
+      "title": "Reality Z",
+      "original_title": "Reality Z"
+    },
+    {
+      "title": "Encontro com Fátima Bernardes",
+      "original_title": "Encontro com Fátima Bernardes"
+    },
+    {
+      "title": "A Fazenda",
+      "original_title": "A Fazenda"
+    }
+  ]
+}

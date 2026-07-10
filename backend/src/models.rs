@@ -94,6 +94,26 @@ pub struct EnrichedItem {
     /// powering the browse-page keyword filter. See backfill-keywords.js.
     #[serde(default)]
     pub keywords: Vec<String>,
+    /// Structured award/festival nominations (e.g. Academy Awards Best
+    /// Picture), distinct from the free-text OMDb `awards` summary above.
+    /// Generic across events so a future pass (Cannes, etc.) is just more
+    /// data here, not a schema change. See resolve-oscars.js and
+    /// generate-awards-backfill.js.
+    #[serde(default)]
+    pub award_entries: Vec<AwardEntry>,
+}
+
+/// One nomination or win at an awards event/festival.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct AwardEntry {
+    /// e.g. "Academy Awards" (future: "Cannes Film Festival", etc.)
+    pub event: String,
+    /// e.g. "Best Picture"
+    pub category: String,
+    /// Ceremony year, e.g. 2024 for the 96th Academy Awards - not
+    /// necessarily the film's release year.
+    pub year: i32,
+    pub won: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
