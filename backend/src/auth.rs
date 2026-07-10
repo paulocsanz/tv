@@ -471,4 +471,122 @@ mod tests {
 
         cleanup_user(&pool, &username).await;
     }
+
+    #[tokio::test]
+    async fn create_invite_then_redeem_succeeds() {
+        let pool = test_pool().await;
+        let creator_username = unique_username("invite_creator");
+        let creator = create_user(&pool, &creator_username, "creator-pass-123", true)
+            .await
+            .ok()
+            .expect("create_user should succeed for a new username");
+
+        let invite = create_invite(&pool, creator.id)
+            .await
+            .expect("create_invite should succeed for an existing user");
+
+        let invitee_username = unique_username("invitee");
+        let user = redeem_invite(
+            &pool,
+            &invite.token,
+            &invitee_username,
+            "invitee-pass-123",
+            Some("Invitee Display"),
+        )
+        .await
+        .ok()
+        .expect("redeem_invite should succeed for a fresh, unused invite");
+
+        assert_eq!(user.username, invitee_username);
+        assert_eq!(user.display_name.as_deref(), Some("Invitee Display"));
+        assert!(!user.is_admin, "invited users should never be created as admins");
+
+        cleanup_user(&pool, &invitee_username).await;
+        cleanup_user(&pool, &creator_username).await;
+    }
+
+    #[tokio::test]
+    async fn redeem_invite_twice_fails_the_second_time() {
+        let pool = test_pool().await;
+        let creator_username = unique_username("invite_creator2");
+        let creator = create_user(&pool, &creator_username, "creator-pass-123", true)
+            .await
+            .ok()
+            .expect("create_user should succeed for a new username");
+
+        let invite = create_invite(&pool, creator.id)
+            .await
+            .expect("create_invite should succeed for an existing user");
+
+        let first_username = unique_username("invitee_first");
+        redeem_invite(&pool, &invite.token, &first_username, "pass-123456", None)
+            .await
+            .ok()
+            .expect("the first redemption of a fresh invite should succeed");
+
+        let second_username = unique_username("invitee_second");
+        let second_result =
+            redeem_invite(&pool, &invite.token, &second_username, "pass-123456", None).await;
+        assert!(
+            matches!(second_result, Err(RedeemInviteError::InvalidOrExpired)),
+            "redeeming an already-used invite should fail as InvalidOrExpired, not succeed"
+        );
+
+        cleanup_user(&pool, &first_username).await;
+        cleanup_user(&pool, &creator_username).await;
+    }
+
+    #[tokio::test]
+    async fn redeem_invite_with_a_token_that_was_never_issued_fails() {
+        let pool = test_pool().await;
+        let result = redeem_invite(
+            &pool,
+            "this-token-was-never-issued-by-create-invite",
+            &unique_username("nobody"),
+            "pass-123456",
+            None,
+        )
+        .await;
+        assert!(matches!(result, Err(RedeemInviteError::InvalidOrExpired)));
+    }
+
+    /// Exercises the `FOR UPDATE` row lock in redeem_invite directly: five
+    /// concurrent redemptions of the *same* single-use invite should let
+    /// exactly one through, not create five accounts or silently drop the
+    /// single-use constraint under contention.
+    #[tokio::test]
+    async fn concurrent_redemption_of_the_same_invite_only_lets_one_through() {
+        let pool = test_pool().await;
+        let creator_username = unique_username("invite_creator3");
+        let creator = create_user(&pool, &creator_username, "creator-pass-123", true)
+            .await
+            .ok()
+            .expect("create_user should succeed for a new username");
+
+        let invite = create_invite(&pool, creator.id)
+            .await
+            .expect("create_invite should succeed for an existing user");
+
+        let usernames: Vec<String> = (0..5).map(|i| unique_username(&format!("racer{i}"))).collect();
+        let results = futures::future::join_all(usernames.iter().map(|username| {
+            let pool = pool.clone();
+            let token = invite.token.clone();
+            let username = username.clone();
+            async move { redeem_invite(&pool, &token, &username, "racer-pass-123", None).await }
+        }))
+        .await;
+
+        let succeeded = results.iter().filter(|r| r.is_ok()).count();
+        assert_eq!(
+            succeeded, 1,
+            "exactly one concurrent redemption of a single-use invite should succeed, not {succeeded}"
+        );
+
+        for (username, result) in usernames.iter().zip(results.iter()) {
+            if result.is_ok() {
+                cleanup_user(&pool, username).await;
+            }
+        }
+        cleanup_user(&pool, &creator_username).await;
+    }
 }

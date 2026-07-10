@@ -481,7 +481,12 @@ struct Section {
 }
 
 fn top_n<'a>(mut items: Vec<&'a EnrichedItem>, n: usize) -> Vec<&'a EnrichedItem> {
-    items.sort_by(|a, b| effective_rating(b).partial_cmp(&effective_rating(a)).unwrap());
+    // total_cmp, not partial_cmp().unwrap() - imdb_rating is parsed from an
+    // external OMDb string (enrichment.rs), and f64::parse happily accepts
+    // "NaN" as valid input. partial_cmp returns None for NaN, which would
+    // panic here; total_cmp gives NaN a well-defined (if arbitrary) place in
+    // the order instead of crashing every request that hits a bad rating.
+    items.sort_by(|a, b| effective_rating(b).total_cmp(&effective_rating(a)));
     items.truncate(n);
     items
 }
@@ -666,14 +671,13 @@ async fn get_content(
         filtered.retain(|i| i.year >= decade && i.year < decade + 10);
     }
 
+    // total_cmp, not partial_cmp().unwrap() - see the comment on top_n for why.
     match q.sort.as_deref().unwrap_or("rating_desc") {
-        "rating_asc" => {
-            filtered.sort_by(|a, b| effective_rating(a).partial_cmp(&effective_rating(b)).unwrap())
-        }
+        "rating_asc" => filtered.sort_by(|a, b| effective_rating(a).total_cmp(&effective_rating(b))),
         "year_desc" => filtered.sort_by(|a, b| b.year.cmp(&a.year)),
         "year_asc" => filtered.sort_by(|a, b| a.year.cmp(&b.year)),
         "title_asc" => filtered.sort_by(|a, b| a.title.cmp(&b.title)),
-        _ => filtered.sort_by(|a, b| effective_rating(b).partial_cmp(&effective_rating(a)).unwrap()),
+        _ => filtered.sort_by(|a, b| effective_rating(b).total_cmp(&effective_rating(a))),
     }
 
     let total = filtered.len();
@@ -1436,9 +1440,16 @@ async fn get_catalog_review_handler(
 
 /// Re-runs the torrent picker for exactly one title (RFC 0003 P2) - the
 /// same escape hatch `pick-best-torrents.js <quality> <title-filter>`
-/// offers from the terminal, exposed as a button instead. Refuses outright
-/// if the download pipeline is running: both processes writing
-/// enriched_400.json at once is exactly what pipeline-status warns against.
+/// offers from the terminal, exposed as a button instead.
+///
+/// The pre-flight lock check below is just a fast-fail for the UI - it
+/// can't close the race against the download pipeline starting *between*
+/// this check and the child actually running (TOCTOU). The real protection
+/// is that `pick-best-torrents.js` now acquires the same lock file itself
+/// at startup, same as the pipeline does, so whichever of the two actually
+/// gets there first wins and the other refuses to start. Belt and
+/// suspenders: this check gives a fast, specific error instead of waiting
+/// for the child to spawn and fail.
 async fn retrigger_torrent_search_handler(
     State(state): State<Arc<AppState>>,
     Extension(user): Extension<UserRecord>,
@@ -1465,13 +1476,35 @@ async fn retrigger_torrent_search_handler(
     }
 
     let project_root = std::env::var("PROJECT_ROOT").unwrap_or_else(|_| ".".to_string());
-    let output = tokio::process::Command::new("node")
+    let child = tokio::process::Command::new("node")
         .arg("pick-best-torrents.js")
         .arg("720p")
         .arg(&item.title)
         .current_dir(&project_root)
-        .output()
-        .await;
+        .stdout(std::process::Stdio::piped())
+        .stderr(std::process::Stdio::piped())
+        // Kills the child if the timeout below drops this future before it
+        // resolves - otherwise a hung `node` process (the exact failure mode
+        // the pipeline itself hit earlier tonight) would outlive the request
+        // and keep the lock file held indefinitely.
+        .kill_on_drop(true)
+        .spawn();
+
+    let output = match child {
+        Ok(child) => {
+            match tokio::time::timeout(std::time::Duration::from_secs(90), child.wait_with_output())
+                .await
+            {
+                Ok(result) => result,
+                Err(_) => {
+                    tracing::error!("pick-best-torrents.js timed out after 90s for {id}");
+                    return (StatusCode::GATEWAY_TIMEOUT, "torrent search timed out after 90s")
+                        .into_response();
+                }
+            }
+        }
+        Err(e) => Err(e),
+    };
 
     match output {
         Ok(out) if out.status.success() => {
