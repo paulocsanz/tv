@@ -1111,7 +1111,6 @@
       "trailer_key": "Q8cBFvpqmH0",
       "enrichment_status": "ok",
       "torrent_file": "The_Sopranos_x",
-      "s3_key": null,
       "s3_keys": [],
       "subtitles": [],
       "episodes": [],
@@ -1201,7 +1200,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 2
+      "current_torrent_index_720p": 3
     },
     {
       "id": "the-godfather-1972-movie",
@@ -1643,30 +1642,6 @@
       "keywords": [],
       "torrent_options": [
         {
-          "title": "Sherlock Holmes (2009) 1080p BrRip x264 - YIFY",
-          "magnet": "magnet:?xt=urn:btih:5CE06B786378D8287128D83E6D7CBEBB06F8800F&dn=Sherlock%20Holmes%20(2009)%201080p%20BrRip%20x264%20-%20YIFY&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 122,
-          "size": "1.8 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 800
-        },
-        {
-          "title": "Sherlock Holmes A Game Of Shadows (2011) 1080p BrRip 1.6GB YIFY",
-          "magnet": "magnet:?xt=urn:btih:7DE2D079C2AD50F4AF24870D800F5D5A23947721&dn=Sherlock%20Holmes%20A%20Game%20Of%20Shadows%20(2011)%201080p%20BrRip%201.6GB%20YIFY&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 101,
-          "size": "1.7 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 800
-        },
-        {
-          "title": "Young Sherlock - Season 1 - Mp4 x264 AC3 1080p",
-          "magnet": "magnet:?xt=urn:btih:BF7EAC12C2500AC491D92181427059C2117E0808&dn=Young%20Sherlock%20-%20Season%201%20-%20Mp4%20x264%20AC3%201080p&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 78,
-          "size": "9.4 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 800
-        },
-        {
           "title": "Sherlock Season 1-4 S01-S04 1080p 10bit BluRay 5 1 x265 HEVC-MZA",
           "magnet": "magnet:?xt=urn:btih:DA8F51CF9937EFA1068730F7148EF9E2BF1E01A7&dn=Sherlock%20Season%201-4%20S01-S04%201080p%2010bit%20BluRay%205%201%20x265%20HEVC-MZA&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
           "seeders": 182,
@@ -1692,17 +1667,9 @@
           "size": "9.5 GB",
           "provider": "ThePirateBay",
           "contentScore": 1000
-        },
-        {
-          "title": "Young Sherlock 2026 S01 720p WEB-DL HEVC x265 BONE",
-          "magnet": "magnet:?xt=urn:btih:F36C6A0C011A326DF7FB99DA97996652FB3B91A2&dn=Young%20Sherlock%202026%20S01%20720p%20WEB-DL%20HEVC%20x265%20BONE&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 85,
-          "size": "3.3 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 200
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 0
     },
     {
       "id": "hospital-playlist-2020-tv",
@@ -1827,9 +1794,291 @@
       "trailer_key": "WNhH00OIPP0",
       "enrichment_status": "ok",
       "torrent_file": "Rick_and_Morty_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "und",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-2",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-3",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-3.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-4",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-4.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-5",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-5.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-6",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-6.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-7",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-7.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-8",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-8.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-9",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-9.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-10",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-10.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-11",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-11.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-12",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-12.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-13",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-13.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-14",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-14.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-15",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-15.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-16",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-16.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-17",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-17.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-18",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-18.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-19",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-19.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-20",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-20.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-21",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-21.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-22",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-22.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-23",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-23.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-24",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-24.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-25",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-25.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-26",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-26.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-27",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-27.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-28",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-28.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-29",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-29.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-30",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-30.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-31",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-31.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-32",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-32.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-33",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-33.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-34",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-34.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-35",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].und-35.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "torrent_options_720p": [
@@ -1885,7 +2134,8 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_key": "videos/rick-and-morty-2013-tv/Rick.and.Morty.S09E07.720p.HEVC.x265-MeGusta[EZTVx.to].mp4"
     },
     {
       "id": "the-ascent-of-man-1973-tv",
@@ -2096,7 +2346,7 @@
           "contentScore": 200
         }
       ],
-      "current_torrent_index": 2
+      "current_torrent_index": 4
     },
     {
       "id": "the-godfather-part-ii-1974-movie",
@@ -2395,8 +2645,22 @@
       "trailer_key": "TxsVroiUHik",
       "enrichment_status": "ok",
       "torrent_file": "Civilisation_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/civilisation-1969-tv/Civilisation.02of13.The.Great.Thaw.720p.BluRay.YIFY.mp4",
+      "s3_keys": [
+        "videos/civilisation-1969-tv/Civilisation.02of13.The.Great.Thaw.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.01of13.The.Skin.of.Our.Teeth.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.03of13.Romance.and.Reality.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.05of13.The.Hero.as.Artist.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.04of13.Man.The.Measure.of.all.Things.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.07of13.Grandeur.and.Obedience.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.08of13.The.Light.of.Experience.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.09of13.The.Pursuit.of.Happiness.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.10of13.The.Smile.of.Reason.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.11of13.The.Worship.of.Nature.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.12of13.The.Fallacies.of.Hope.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.13of13.Heroic.Materialism.720p.BluRay.YIFY.mp4",
+        "videos/civilisation-1969-tv/Civilisation.06of13.Protest.and.Communication.720p.BluRay.YIFY.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -2709,7 +2973,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "the-twilight-zone-1959-tv",
@@ -2822,7 +3086,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "firefly-2002-tv",
@@ -3258,7 +3522,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Gravity Falls (2012-2016) PROPER S01-S02 COMPLETE 1080p BluRay AV1 Opus 5 1 + Ex..",
@@ -3379,7 +3643,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 2
     },
     {
       "id": "true-detective-2014-tv",
@@ -3794,7 +4058,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 2
+      "current_torrent_index_720p": 3
     },
     {
       "id": "over-the-garden-wall-2014-tv",
@@ -3899,7 +4163,7 @@
           "contentScore": 200
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "the-good-the-bad-and-the-ugly-1966-movie",
@@ -4068,7 +4332,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "curb-your-enthusiasm-2000-tv",
@@ -4171,7 +4435,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "forrest-gump-1994-movie",
@@ -20339,49 +20603,6 @@
       "keywords": []
     },
     {
-      "id": "fina-estampa-2020-tv",
-      "title": "Fina Estampa",
-      "original_title": "Fina Estampa",
-      "year": 2020,
-      "content_type": "tv",
-      "origin": "Brazilian",
-      "director": null,
-      "creator": "Aguinaldo Silva",
-      "curated_imdb_rating": 8.1,
-      "poster_url": "https://m.media-amazon.com/images/M/MV5BMzRjY2QxODktMzhlYS00MWQ3LTlhODgtYzExN2I2ZGUzMGNmXkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_SX300.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/1BB9HUBRKmgqDNSutyBtlY95opA.jpg",
-      "plot": "Griselda is a tough, hard-working handywoman who managed to raise her children on her own while struggling to make ends meet but everything changes when she wins the lottery.",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance"
-      ],
-      "runtime": "60 min",
-      "actors": [
-        "Lília Cabral",
-        "Christiane Torloni",
-        "Caio Castro"
-      ],
-      "awards": "4 wins & 17 nominations",
-      "rated": null,
-      "imdb_rating": 5.3,
-      "imdb_votes": "264",
-      "rotten_tomatoes": null,
-      "metacritic": null,
-      "imdb_id": "tt1860639",
-      "tmdb_id": 40858,
-      "collection_id": null,
-      "collection_name": null,
-      "trailer_key": null,
-      "enrichment_status": "partial",
-      "torrent_file": null,
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
-      "episodes": [],
-      "keywords": []
-    },
-    {
       "id": "globo-reporter-1973-tv",
       "title": "Globo Repórter",
       "original_title": "Globo Repórter",
@@ -21136,7 +21357,6 @@
       "trailer_key": "t6VqAOaWZD8",
       "enrichment_status": "ok",
       "torrent_file": "Pixote_x",
-      "s3_key": null,
       "s3_keys": [],
       "subtitles": [],
       "episodes": [],
@@ -25921,7 +26141,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 3
+      "current_torrent_index_720p": 4
     },
     {
       "id": "avengers-age-of-ultron-2015-movie",
@@ -30577,30 +30797,24 @@
       "director": "Ronaldo Duque",
       "creator": null,
       "curated_imdb_rating": 6.6,
-      "poster_url": "https://m.media-amazon.com/images/M/MV5BYjZjNjI5NzAtMTdmNC00MmJhLTk3ZTUtYjZkMmNjZTAwOTViXkEyXkFqcGdeQXVyNzAyNDgwOTI@._V1_SX300.jpg",
+      "poster_url": null,
       "backdrop_url": null,
-      "plot": "Film about an important episode in Brazilian History: the Araguaya guerrilla. In the 1970s, when Brazil was ruled by a military dictatorship, some left-wing militants and peasants took arms against the Army, in the Amazon. Right i...",
-      "genres": [
-        "Drama"
-      ],
-      "runtime": "105 min",
-      "actors": [
-        "Milton Aires",
-        "Criméia Alice",
-        "Fernando Alves Pinto"
-      ],
-      "awards": "2 wins & 1 nomination",
+      "plot": null,
+      "genres": [],
+      "runtime": null,
+      "actors": [],
+      "awards": null,
       "rated": null,
-      "imdb_rating": 5.5,
-      "imdb_votes": "66",
+      "imdb_rating": null,
+      "imdb_votes": null,
       "rotten_tomatoes": null,
       "metacritic": null,
-      "imdb_id": "tt0421631",
-      "tmdb_id": 249576,
+      "imdb_id": null,
+      "tmdb_id": null,
       "collection_id": null,
       "collection_name": null,
       "trailer_key": null,
-      "enrichment_status": "ok",
+      "enrichment_status": "failed",
       "torrent_file": "Araguaya_-_A_Conspiracy_of_Silence_x",
       "s3_key": null,
       "s3_keys": [],
@@ -30666,87 +30880,6 @@
           "seeders": 6,
           "size": "1.74 GB",
           "provider": "Limetorrents",
-          "contentScore": 800
-        }
-      ],
-      "current_torrent_index": 0
-    },
-    {
-      "id": "divine-love-2019-tv",
-      "title": "Divine Love",
-      "original_title": "仙台有树",
-      "year": 2019,
-      "content_type": "tv",
-      "origin": "Brazilian",
-      "director": null,
-      "creator": "Gabriel Mascaro",
-      "curated_imdb_rating": 6.6,
-      "poster_url": "https://m.media-amazon.com/images/M/MV5BOTIxYjFmMjAtOTRlYy00ZTg4LWJlNjctMjJhNDVjNTI0YjZkXkEyXkFqcGc@._V1_SX300.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/h5Z7JutfjTOETDg86YMex28F2se.jpg",
-      "plot": "The leader of the Xishan Sect seals a demonic spring to protect people, but is attacked. Her disciple learns the truth, helps her reincarnate, and falls in love with her new self as they defeat the demonic cultivator seeking the s...",
-      "genres": [
-        "Drama",
-        "Fantasy",
-        "Romance"
-      ],
-      "runtime": null,
-      "actors": [
-        "Deng Wei",
-        "Hanzhi Xiang",
-        "Ke Zhao"
-      ],
-      "awards": null,
-      "rated": null,
-      "imdb_rating": 7.1,
-      "imdb_votes": "163",
-      "rotten_tomatoes": null,
-      "metacritic": null,
-      "imdb_id": "tt29489346",
-      "tmdb_id": 238618,
-      "collection_id": null,
-      "collection_name": null,
-      "trailer_key": "NxtpTUM0SjE",
-      "enrichment_status": "ok",
-      "torrent_file": "Divine_Love_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
-      "episodes": [],
-      "keywords": [],
-      "torrent_options_720p": [
-        {
-          "title": "Divine.Love.2019.720p.BluRay.x264-RUSTED",
-          "magnet": "magnet:?xt=urn:btih:9211262161F9E72887F9AC8FB5D8A795EC02451D&dn=Divine.Love.2019.720p.BluRay.x264-RUSTED&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 5,
-          "size": "6.9 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 800
-        },
-        {
-          "title": "Divine Love (2019) 720p BluRay-WORLD",
-          "magnet": "magnet:?xt=urn:btih:E3C593A7ED127760F3AF4F0319BA40B678CE09EE&dn=Divine%20Love%20(2019)%20720p%20BluRay-WORLD&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 5,
-          "size": "963.0 MB",
-          "provider": "ThePirateBay",
-          "contentScore": 800
-        }
-      ],
-      "current_torrent_index_720p": 0,
-      "torrent_options": [
-        {
-          "title": "Love So Divine (2004) [1080p] [WEBRip] [YTS MX]",
-          "magnet": "magnet:?xt=urn:btih:1D70A0BFC420607245CFD7001A75992E151805DB&dn=Love+So+Divine+%282004%29+%5B1080p%5D+%5BWEBRip%5D+%5BYTS+MX%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fipv6.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.ololosh.space%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dump.cl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker-udp.gbitt.info%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker01-msk-virt.corbina.net%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.free-tracker.ga%3A6969%2Fannounce&tr=udp%3A%2F%2Fns-1.x-fins.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fleet-tracker.moe%3A1337%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.open-internet.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Fdenis.stalker.upeer.me%3A6969%2Fannounce",
-          "seeders": 43,
-          "size": "1.8 GB",
-          "provider": "Limetorrents",
-          "contentScore": 800
-        },
-        {
-          "title": "Divine Love (2019) 1080p BluRay 5.1-WORLD",
-          "magnet": "magnet:?xt=urn:btih:113B0DA4479F562D49B1FCE0ECB674FD7493FFC0&dn=Divine%20Love%20(2019)%201080p%20BluRay%205.1-WORLD&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 5,
-          "size": "2.0 GB",
-          "provider": "ThePirateBay",
           "contentScore": 800
         }
       ],
@@ -30871,9 +31004,27 @@
       "trailer_key": "gYbW1F_c9eM",
       "enrichment_status": "ok",
       "torrent_file": null,
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/star-wars-episode-ii-attack-of-the-clones-2002-movie/star.wars.episode.II.attack.of.the.clones.2002.720p.bluray.x264-nezu.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/star-wars-episode-ii-attack-of-the-clones-2002-movie/star.wars.episode.II.attack.of.the.clones.2002.720p.bluray.x264-nezu.eng.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English (Forced)",
+          "forced": true,
+          "s3_key": "videos/star-wars-episode-ii-attack-of-the-clones-2002-movie/star.wars.episode.II.attack.of.the.clones.2002.720p.bluray.x264-nezu.eng-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "torrent_options": [
@@ -30937,7 +31088,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 0,
+      "s3_key": "videos/star-wars-episode-ii-attack-of-the-clones-2002-movie/star.wars.episode.II.attack.of.the.clones.2002.720p.bluray.x264-nezu.mp4"
     },
     {
       "id": "the-lion-king-11-2-2004-movie",
@@ -31540,38 +31692,31 @@
     {
       "id": "the-bog-of-beasts-2006-movie",
       "title": "The Bog of Beasts",
-      "original_title": "Baixio das Bestas",
+      "original_title": null,
       "year": 2006,
       "content_type": "movie",
       "origin": "Brazilian",
       "director": "Cláudio Assis",
       "creator": null,
       "curated_imdb_rating": 6.5,
-      "poster_url": "https://m.media-amazon.com/images/M/MV5BNTVlNTQwYTktZGM0OC00OGI4LWI4YTEtZWNiZWMwZDY1NDllXkEyXkFqcGc@._V1_SX300.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/btf5hNXZXMKkgkje4eNJEMqMlkU.jpg",
-      "plot": "A man gets obsessed by a teenage girl, who is exploited by her own grandfather, who sometimes takes her to a gas station to show her naked to whomever pays him some money.",
-      "genres": [
-        "Drama",
-        "Horror"
-      ],
-      "runtime": "80 min",
-      "actors": [
-        "Fernando Teixeira",
-        "Caio Blat",
-        "Matheus Nachtergaele"
-      ],
-      "awards": "11 wins & 12 nominations",
+      "poster_url": null,
+      "backdrop_url": null,
+      "plot": null,
+      "genres": [],
+      "runtime": null,
+      "actors": [],
+      "awards": null,
       "rated": null,
-      "imdb_rating": 6.2,
-      "imdb_votes": "1,304",
+      "imdb_rating": null,
+      "imdb_votes": null,
       "rotten_tomatoes": null,
       "metacritic": null,
-      "imdb_id": "tt0982849",
-      "tmdb_id": 46647,
+      "imdb_id": null,
+      "tmdb_id": null,
       "collection_id": null,
       "collection_name": null,
-      "trailer_key": "bvPMB-vqMiA",
-      "enrichment_status": "ok",
+      "trailer_key": null,
+      "enrichment_status": "failed",
       "torrent_file": "The_Bog_of_Beasts_x",
       "s3_key": null,
       "s3_keys": [],
