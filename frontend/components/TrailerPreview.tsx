@@ -68,7 +68,12 @@ export function TrailerPreview({
           onClick={() => setOpen(false)}
         >
           <div
-            className="w-full max-w-2xl overflow-hidden rounded-lg bg-zinc-950 shadow-2xl ring-1 ring-white/10"
+            // resize-x: drag the right/bottom-right edge to make the modal
+            // bigger or smaller. Height isn't independently resizable - the
+            // video area below stays `aspect-video`, so it always matches
+            // whatever width the box is dragged to instead of ending up
+            // stretched or letterboxed.
+            className="w-[min(90vw,48rem)] min-w-[280px] max-w-[min(95vw,160vh)] resize-x overflow-hidden rounded-lg bg-zinc-950 shadow-2xl ring-1 ring-white/10"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between px-4 py-2.5">

@@ -14,3 +14,15 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
+/* Native <button> defaults to `cursor: default`, not `pointer` - only <a
+   href> gets a pointer cursor for free. Layered so a component can still
+   opt out with a `cursor-*` utility (higher-specificity utilities layer),
+   unlike an unlayered rule which would unconditionally win regardless of
+   specificity - see the note above about that exact bug. */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

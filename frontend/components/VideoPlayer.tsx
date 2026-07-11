@@ -190,17 +190,105 @@ function FullscreenIcon({ isFullscreen, className }: { isFullscreen: boolean; cl
   );
 }
 
+type BufferedRange = { start: number; end: number };
+
+// Grabs a real frame from the video at the hovered time, via a second
+// <video> + <canvas> hidden off the visible controls - not <img> thumbnails,
+// since there's no pre-generated sprite sheet from the transcode pipeline.
+// Reuses the same (range-request-capable, S3-backed) stream URL as the main
+// player, so scrubbing the hover position just issues ordinary byte-range
+// fetches for whatever moment is under the cursor.
+function ScrubPreview({
+  streamUrl,
+  hoverFraction,
+  duration,
+}: {
+  streamUrl: string;
+  hoverFraction: number | null;
+  duration: number;
+}) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const pendingTime = useRef<number | null>(null);
+  const visible = hoverFraction !== null && duration > 0;
+  const previewTime = hoverFraction !== null ? hoverFraction * duration : 0;
+
+  // Coalesce rapid mousemoves into whichever position was last requested
+  // once the in-flight seek (a real network fetch) resolves, rather than
+  // queuing a seek per pixel of mouse movement.
+  useEffect(() => {
+    if (!visible) return;
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.seeking) {
+      pendingTime.current = previewTime;
+      return;
+    }
+    if (Math.abs(video.currentTime - previewTime) > 0.5) {
+      video.currentTime = previewTime;
+    }
+  }, [previewTime, visible]);
+
+  // Source changed (new episode) - drop the stale frame so the preview
+  // doesn't briefly show the previous episode's thumbnail.
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas?.getContext("2d");
+    if (canvas && ctx) ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }, [streamUrl]);
+
+  function handleSeeked() {
+    const video = videoRef.current;
+    const canvas = canvasRef.current;
+    const ctx = canvas?.getContext("2d");
+    if (video && canvas && ctx) ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    if (video && pendingTime.current !== null) {
+      const next = pendingTime.current;
+      pendingTime.current = null;
+      if (Math.abs(video.currentTime - next) > 0.5) video.currentTime = next;
+    }
+  }
+
+  return (
+    <div
+      aria-hidden
+      className={`pointer-events-none absolute bottom-full z-10 mb-3 -translate-x-1/2 overflow-hidden rounded-md bg-black shadow-lg ring-1 ring-white/20 transition-opacity duration-100 ${
+        visible ? "opacity-100" : "opacity-0"
+      }`}
+      style={{ left: `clamp(80px, ${(hoverFraction ?? 0) * 100}%, calc(100% - 80px))` }}
+    >
+      <video
+        ref={videoRef}
+        src={streamUrl}
+        muted
+        preload="metadata"
+        onSeeked={handleSeeked}
+        className="hidden"
+      />
+      <canvas ref={canvasRef} width={160} height={90} className="block h-[90px] w-40 object-cover" />
+      <span className="block bg-black/85 px-1.5 py-0.5 text-center text-[11px] font-medium tabular-nums text-white">
+        {formatTime(previewTime)}
+      </span>
+    </div>
+  );
+}
+
 function SeekBar({
   currentTime,
   duration,
+  buffered,
+  streamUrl,
   onSeek,
 }: {
   currentTime: number;
   duration: number;
+  buffered: BufferedRange[];
+  streamUrl: string;
   onSeek: (seconds: number) => void;
 }) {
   const barRef = useRef<HTMLDivElement>(null);
   const [dragFraction, setDragFraction] = useState<number | null>(null);
+  const [hoverFraction, setHoverFraction] = useState<number | null>(null);
 
   function fractionFromEvent(e: React.PointerEvent) {
     const bar = barRef.current;
@@ -219,14 +307,19 @@ function SeekBar({
   }
 
   function handlePointerMove(e: React.PointerEvent) {
-    if (dragFraction === null || duration <= 0) return;
     const fraction = fractionFromEvent(e);
+    if (duration > 0) setHoverFraction(fraction);
+    if (dragFraction === null) return;
     setDragFraction(fraction);
     onSeek(fraction * duration);
   }
 
   function handlePointerUp() {
     setDragFraction(null);
+  }
+
+  function handlePointerLeave() {
+    setHoverFraction(null);
   }
 
   const fraction = duration > 0 ? (dragFraction ?? Math.min(1, currentTime / duration)) : 0;
@@ -238,11 +331,24 @@ function SeekBar({
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
+      onPointerLeave={handlePointerLeave}
       className="group/seek relative flex h-4 w-full cursor-pointer items-center"
     >
-      <div className="h-1 w-full rounded-full bg-white/25 transition-[height] group-hover/seek:h-1.5">
+      <ScrubPreview streamUrl={streamUrl} hoverFraction={hoverFraction} duration={duration} />
+      <div className="relative h-1 w-full rounded-full bg-white/25 transition-[height] group-hover/seek:h-1.5">
+        {duration > 0 &&
+          buffered.map((range, i) => (
+            <div
+              key={i}
+              className="absolute inset-y-0 rounded-full bg-white/45"
+              style={{
+                left: `${(range.start / duration) * 100}%`,
+                width: `${((range.end - range.start) / duration) * 100}%`,
+              }}
+            />
+          ))}
         <div
-          className="h-full rounded-full bg-[#f5c518]"
+          className="absolute inset-y-0 left-0 rounded-full bg-[#f5c518]"
           style={{ width: `${fraction * 100}%` }}
         />
       </div>
@@ -302,6 +408,7 @@ export function VideoPlayer({
   const [volume, setVolume] = useState(1);
   const [muted, setMuted] = useState(false);
   const [showControls, setShowControls] = useState(true);
+  const [buffered, setBuffered] = useState<BufferedRange[]>([]);
   const [subtitleMenuOpen, setSubtitleMenuOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const streamUrl = hasEpisodes
@@ -341,6 +448,15 @@ export function VideoPlayer({
     setCurrentTime(0);
     setDuration(0);
     setSelectedSubtitleId(defaultSubtitleId);
+    setBuffered([]);
+  }
+
+  function updateBuffered(video: HTMLVideoElement) {
+    const ranges: BufferedRange[] = [];
+    for (let i = 0; i < video.buffered.length; i++) {
+      ranges.push({ start: video.buffered.start(i), end: video.buffered.end(i) });
+    }
+    setBuffered(ranges);
   }
 
   function reportProgress(useBeacon: boolean) {
@@ -536,11 +652,16 @@ export function VideoPlayer({
   const controlsVisible = showControls || !isPlaying || subtitleMenuOpen;
 
   return (
-    <div className="flex flex-col gap-4 lg:flex-row">
+    <div className="flex flex-col gap-4 lg:flex-row lg:flex-wrap">
       <div
         ref={containerRef}
         onMouseMove={handleActivity}
-        className="group relative overflow-hidden rounded-2xl bg-black shadow-2xl shadow-black/50 ring-1 ring-white/10 lg:min-w-0 lg:flex-1"
+        // resize-x: drag the right/bottom-right edge to make the player
+        // bigger or smaller - height follows automatically via `aspect-video`
+        // on the <video> itself, so it can never end up letterboxed/stretched
+        // no matter what width the user drags to. min/max keep it from being
+        // shrunk to nothing or dragged wider than makes sense.
+        className="group relative min-w-[240px] max-w-[1600px] resize-x overflow-hidden rounded-2xl bg-black shadow-2xl shadow-black/50 ring-1 ring-white/10 lg:min-w-[320px] lg:flex-1"
       >
         <video
           ref={videoRef}
@@ -551,6 +672,7 @@ export function VideoPlayer({
           onLoadedMetadata={handleLoadedMetadata}
           onDurationChange={(e) => setDuration(e.currentTarget.duration)}
           onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
+          onProgress={(e) => updateBuffered(e.currentTarget)}
           onPlay={() => {
             setIsPlaying(true);
             scheduleHideControls();
@@ -632,7 +754,13 @@ export function VideoPlayer({
               controlsVisible ? "opacity-100" : "pointer-events-none opacity-0"
             }`}
           >
-            <SeekBar currentTime={currentTime} duration={duration} onSeek={seekTo} />
+            <SeekBar
+              currentTime={currentTime}
+              duration={duration}
+              buffered={buffered}
+              streamUrl={streamUrl}
+              onSeek={seekTo}
+            />
 
             <div className="flex items-center gap-1.5 text-zinc-200">
               <button
@@ -664,7 +792,7 @@ export function VideoPlayer({
                   value={muted ? 0 : volume}
                   onChange={(e) => handleVolumeChange(Number(e.target.value))}
                   aria-label="Volume"
-                  className="w-0 opacity-0 transition-all duration-150 group-hover/volume:w-16 group-hover/volume:opacity-100 group-focus-within/volume:w-16 group-focus-within/volume:opacity-100"
+                  className="w-0 cursor-pointer opacity-0 transition-all duration-150 group-hover/volume:w-16 group-hover/volume:opacity-100 group-focus-within/volume:w-16 group-focus-within/volume:opacity-100"
                 />
               </div>
 
