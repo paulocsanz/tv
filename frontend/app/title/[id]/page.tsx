@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getContentById, getMeOrNull, getProgress, getRelatedContent, getSimilarContent } from "@/lib/api";
@@ -7,6 +6,7 @@ import { PosterPlaceholder } from "@/components/ContentCard";
 import { RelatedTitleCard } from "@/components/RelatedTitleCard";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { TrailerPreview } from "@/components/TrailerPreview";
+import { Synopsis } from "@/components/Synopsis";
 
 export async function generateMetadata({
   params,
@@ -55,12 +55,17 @@ export default async function TitlePage({
 
       <div className="mx-auto -mt-32 max-w-5xl px-4 pb-16 sm:-mt-40 sm:px-8">
         <div className="flex flex-col gap-6 sm:flex-row">
-          <div className="relative aspect-[2/3] w-40 shrink-0 overflow-hidden rounded-lg bg-zinc-900 shadow-2xl ring-1 ring-white/10 sm:w-56">
-            {item.poster_url ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={item.poster_url} alt={item.title} className="h-full w-full object-cover" />
-            ) : (
-              <PosterPlaceholder title={item.title} />
+          <div className="flex w-40 shrink-0 flex-col gap-3 sm:w-56">
+            <div className="relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-zinc-900 shadow-2xl ring-1 ring-white/10">
+              {item.poster_url ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={item.poster_url} alt={item.title} className="h-full w-full object-cover" />
+              ) : (
+                <PosterPlaceholder title={item.title} />
+              )}
+            </div>
+            {item.trailer_key && (
+              <TrailerPreview trailerKey={item.trailer_key} title={item.title} className="w-full" />
             )}
           </div>
 
@@ -107,13 +112,18 @@ export default async function TitlePage({
           </div>
         </div>
 
-        <div id="video-player" className="mt-8 scroll-mt-24">
-          <div className="mb-3 flex items-end justify-between gap-4">
-            <h2 className="flex items-center gap-1.5 text-lg font-semibold text-white">
-              <span aria-hidden>🍿</span> Watch
-            </h2>
-            {item.trailer_key && <TrailerPreview trailerKey={item.trailer_key} title={item.title} />}
-          </div>
+        <Synopsis
+          plot={item.plot}
+          actors={item.actors}
+          awards={item.awards}
+          awardEntries={item.award_entries ?? []}
+          keywords={item.keywords}
+        />
+
+        <div id="video-player" className="mt-10 scroll-mt-24">
+          <h2 className="mb-3 flex items-center gap-1.5 text-lg font-semibold text-white">
+            <span aria-hidden>🍿</span> Watch
+          </h2>
 
           {item.s3_key || item.s3_keys.length > 0 ? (
             <VideoPlayer
@@ -138,55 +148,6 @@ export default async function TitlePage({
             </div>
           )}
         </div>
-
-        {item.plot && (
-          <p className="mt-8 max-w-3xl text-base leading-relaxed text-zinc-300">{item.plot}</p>
-        )}
-
-        {item.actors.length > 0 && (
-          <p className="mt-4 text-sm text-zinc-400">
-            <span className="text-zinc-500">Starring: </span>
-            {item.actors.join(", ")}
-          </p>
-        )}
-
-        {item.awards && (
-          <p className="mt-4 text-sm text-zinc-400">
-            <span className="text-zinc-500">Awards: </span>
-            {item.awards}
-          </p>
-        )}
-
-        {item.award_entries?.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-2">
-            {item.award_entries.map((award, i) => (
-              <span
-                key={`${award.event}-${award.category}-${award.year}-${i}`}
-                className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset ${
-                  award.won
-                    ? "bg-amber-500/15 text-amber-300 ring-amber-400/30"
-                    : "bg-white/5 text-zinc-400 ring-white/10"
-                }`}
-              >
-                {award.won ? "🏆 Won" : "Nominated"} · {award.category} · {award.event} {award.year}
-              </span>
-            ))}
-          </div>
-        )}
-
-        {item.keywords.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-1.5">
-            {item.keywords.slice(0, 8).map((keyword) => (
-              <Link
-                key={keyword}
-                href={`/browse?keyword=${encodeURIComponent(keyword)}`}
-                className="rounded-full bg-white/5 px-2.5 py-1 text-xs text-zinc-400 ring-1 ring-inset ring-white/10 hover:bg-white/10 hover:text-zinc-200"
-              >
-                {keyword}
-              </Link>
-            ))}
-          </div>
-        )}
 
         {related.length > 0 && (
           <div className="mt-10">

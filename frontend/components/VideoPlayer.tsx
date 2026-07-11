@@ -76,9 +76,188 @@ function resumeOriginalIndex(progress: ProgressEntry[], fallback: number): numbe
   return maxEpisode - 1;
 }
 
+function formatTime(seconds: number): string {
+  if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
+  const h = Math.floor(seconds / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  const s = Math.floor(seconds % 60);
+  if (h > 0) return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+  return `${m}:${String(s).padStart(2, "0")}`;
+}
+
+function PlayIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M8 5v14l11-7z" />
+    </svg>
+  );
+}
+
+function PauseIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+    </svg>
+  );
+}
+
+function SkipButton({ direction, onClick }: { direction: "back" | "forward"; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label={direction === "back" ? "Skip back 10 seconds" : "Skip forward 10 seconds"}
+      className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-zinc-200 transition-colors hover:bg-white/10 hover:text-white"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        className={`h-6 w-6 ${direction === "forward" ? "-scale-x-100" : ""}`}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M4 8v4h4" />
+        <path d="M4.5 12a7.5 7.5 0 1 0 2.1-5.2" />
+      </svg>
+      <span className="pointer-events-none absolute text-[9px] font-bold">10</span>
+    </button>
+  );
+}
+
+function VolumeIcon({ muted, className }: { muted: boolean; className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className}>
+      <path fill="currentColor" d="M3 10v4h4l5 5V5L7 10H3z" />
+      {muted ? (
+        <path
+          d="M16.5 9.5l4 5M20.5 9.5l-4 5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={1.8}
+          strokeLinecap="round"
+        />
+      ) : (
+        <>
+          <path
+            d="M15.5 8.5a4.5 4.5 0 0 1 0 7"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.8}
+            strokeLinecap="round"
+          />
+          <path
+            d="M18 6a8 8 0 0 1 0 12"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.8}
+            strokeLinecap="round"
+            opacity={0.6}
+          />
+        </>
+      )}
+    </svg>
+  );
+}
+
+function SubtitlesIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className={className}>
+      <rect x="3" y="5" width="18" height="14" rx="2.5" />
+      <path d="M7 10.5h3M7 13.5h5M14 10.5h3M14 13.5h3" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function FullscreenIcon({ isFullscreen, className }: { isFullscreen: boolean; className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      {isFullscreen ? (
+        <path d="M9 3v4a2 2 0 0 1-2 2H3M15 3v4a2 2 0 0 0 2 2h4M9 21v-4a2 2 0 0 0-2-2H3M15 21v-4a2 2 0 0 1 2-2h4" />
+      ) : (
+        <path d="M3 9V5a2 2 0 0 1 2-2h4M15 3h4a2 2 0 0 1 2 2v4M21 15v4a2 2 0 0 1-2 2h-4M9 21H5a2 2 0 0 1-2-2v-4" />
+      )}
+    </svg>
+  );
+}
+
+function SeekBar({
+  currentTime,
+  duration,
+  onSeek,
+}: {
+  currentTime: number;
+  duration: number;
+  onSeek: (seconds: number) => void;
+}) {
+  const barRef = useRef<HTMLDivElement>(null);
+  const [dragFraction, setDragFraction] = useState<number | null>(null);
+
+  function fractionFromEvent(e: React.PointerEvent) {
+    const bar = barRef.current;
+    if (!bar) return 0;
+    const rect = bar.getBoundingClientRect();
+    if (rect.width === 0) return 0;
+    return Math.min(1, Math.max(0, (e.clientX - rect.left) / rect.width));
+  }
+
+  function handlePointerDown(e: React.PointerEvent) {
+    if (duration <= 0) return;
+    const fraction = fractionFromEvent(e);
+    setDragFraction(fraction);
+    onSeek(fraction * duration);
+    e.currentTarget.setPointerCapture(e.pointerId);
+  }
+
+  function handlePointerMove(e: React.PointerEvent) {
+    if (dragFraction === null || duration <= 0) return;
+    const fraction = fractionFromEvent(e);
+    setDragFraction(fraction);
+    onSeek(fraction * duration);
+  }
+
+  function handlePointerUp() {
+    setDragFraction(null);
+  }
+
+  const fraction = duration > 0 ? (dragFraction ?? Math.min(1, currentTime / duration)) : 0;
+
+  return (
+    <div
+      ref={barRef}
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
+      onPointerCancel={handlePointerUp}
+      className="group/seek relative flex h-4 w-full cursor-pointer items-center"
+    >
+      <div className="h-1 w-full rounded-full bg-white/25 transition-[height] group-hover/seek:h-1.5">
+        <div
+          className="h-full rounded-full bg-[#f5c518]"
+          style={{ width: `${fraction * 100}%` }}
+        />
+      </div>
+      <div
+        className="absolute top-1/2 h-3 w-3 -translate-y-1/2 -translate-x-1/2 rounded-full bg-[#f5c518] opacity-0 shadow transition-opacity group-hover/seek:opacity-100"
+        style={{ left: `${fraction * 100}%` }}
+      />
+    </div>
+  );
+}
+
 type Status = "loading" | "ready" | "error";
 
 const REPORT_INTERVAL_MS = 10_000;
+const CONTROLS_HIDE_DELAY_MS = 2800;
 
 export function VideoPlayer({
   id,
@@ -118,6 +297,13 @@ export function VideoPlayer({
   const [status, setStatus] = useState<Status>("loading");
   const [retry, setRetry] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [volume, setVolume] = useState(1);
+  const [muted, setMuted] = useState(false);
+  const [showControls, setShowControls] = useState(true);
+  const [subtitleMenuOpen, setSubtitleMenuOpen] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const streamUrl = hasEpisodes
     ? `/api/stream/${id}?episode=${selectedIndex + 1}`
     : `/api/stream/${id}`;
@@ -137,8 +323,11 @@ export function VideoPlayer({
       : undefined) ??
       episodeSubtitles.find((t) => t.lang === "eng" && !t.forced) ??
       episodeSubtitles.find((t) => !t.forced))?.id ?? null;
+  const [selectedSubtitleId, setSelectedSubtitleId] = useState(defaultSubtitleId);
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const hideControlsTimer = useRef<number | null>(null);
   const [seeked, setSeeked] = useState(false);
 
   // Reset to "loading" whenever the source changes, without an effect (which
@@ -149,6 +338,9 @@ export function VideoPlayer({
     setTrackedUrl(streamUrl);
     setStatus("loading");
     setSeeked(false);
+    setCurrentTime(0);
+    setDuration(0);
+    setSelectedSubtitleId(defaultSubtitleId);
   }
 
   function reportProgress(useBeacon: boolean) {
@@ -193,6 +385,54 @@ export function VideoPlayer({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [streamUrl]);
 
+  // Native <track> cues still render through the browser - we just drive
+  // which one is active ourselves instead of relying on the browser's own
+  // (now-removed, since `controls` is gone) captions menu.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    for (let i = 0; i < video.textTracks.length; i++) {
+      const track = video.textTracks[i];
+      const trackId = episodeSubtitles[i]?.id;
+      track.mode = trackId && trackId === selectedSubtitleId ? "showing" : "hidden";
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedSubtitleId, episodeNumber, episodeSubtitles.length]);
+
+  useEffect(() => {
+    function handleFullscreenChange() {
+      setIsFullscreen(document.fullscreenElement === containerRef.current);
+    }
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);
+  }, []);
+
+  // Close the subtitle menu on an outside click rather than only via its own
+  // toggle button, matching how every other dropdown on the page behaves.
+  useEffect(() => {
+    if (!subtitleMenuOpen) return;
+    function handleClick() {
+      setSubtitleMenuOpen(false);
+    }
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
+  }, [subtitleMenuOpen]);
+
+  function scheduleHideControls() {
+    if (hideControlsTimer.current) window.clearTimeout(hideControlsTimer.current);
+    hideControlsTimer.current = window.setTimeout(() => setShowControls(false), CONTROLS_HIDE_DELAY_MS);
+  }
+
+  function stopHideControls() {
+    if (hideControlsTimer.current) window.clearTimeout(hideControlsTimer.current);
+    setShowControls(true);
+  }
+
+  function handleActivity() {
+    setShowControls(true);
+    if (isPlaying) scheduleHideControls();
+  }
+
   function handleLoadedMetadata() {
     const video = videoRef.current;
     // Seeding currentTime only works once metadata has loaded - setting it
@@ -201,14 +441,54 @@ export function VideoPlayer({
     if (video && savedProgress && !savedProgress.finished && !seeked) {
       video.currentTime = savedProgress.position_seconds;
     }
+    if (video) setDuration(video.duration);
     setSeeked(true);
   }
 
   function skip(deltaSeconds: number) {
     const video = videoRef.current;
     if (!video) return;
-    const duration = video.duration || Infinity;
-    video.currentTime = Math.min(duration, Math.max(0, video.currentTime + deltaSeconds));
+    const dur = video.duration || Infinity;
+    video.currentTime = Math.min(dur, Math.max(0, video.currentTime + deltaSeconds));
+    setCurrentTime(video.currentTime);
+  }
+
+  function seekTo(seconds: number) {
+    const video = videoRef.current;
+    if (!video) return;
+    video.currentTime = seconds;
+    setCurrentTime(seconds);
+  }
+
+  function togglePlay() {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) video.play();
+    else video.pause();
+  }
+
+  function toggleMute() {
+    const video = videoRef.current;
+    if (!video) return;
+    video.muted = !video.muted;
+    setMuted(video.muted);
+  }
+
+  function handleVolumeChange(next: number) {
+    const video = videoRef.current;
+    setVolume(next);
+    if (video) {
+      video.volume = next;
+      video.muted = next === 0;
+    }
+    setMuted(next === 0);
+  }
+
+  function toggleFullscreen() {
+    const el = containerRef.current;
+    if (!el) return;
+    if (document.fullscreenElement) document.exitFullscreen();
+    else el.requestFullscreen();
   }
 
   // `episodes` is sorted for display, which isn't the same order as
@@ -221,17 +501,13 @@ export function VideoPlayer({
     if (next) setSelectedIndex(next.originalIndex);
   }
 
-  // Left/Right skip ±10s, Space toggles play/pause - but only when the
-  // video element itself doesn't already have focus. Browsers bind their
-  // own versions of these same shortcuts to a focused <video>, and we can't
-  // reliably suppress that native handling, so deferring to it there avoids
-  // double-seeking; this still covers the common case of the page (not the
-  // video specifically) having focus.
+  // Left/Right skip ±10s, Space toggles play/pause. There's no native
+  // `controls` bar anymore to defer to, so these are the only handlers for
+  // these keys - active whenever an input/textarea doesn't have focus.
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
       const target = e.target as HTMLElement | null;
       if (target && ["INPUT", "TEXTAREA"].includes(target.tagName)) return;
-      if (document.activeElement === videoRef.current) return;
 
       if (e.key === "ArrowLeft") {
         skip(-10);
@@ -240,15 +516,13 @@ export function VideoPlayer({
         skip(10);
         e.preventDefault();
       } else if (e.key === " ") {
-        const video = videoRef.current;
-        if (!video) return;
-        if (video.paused) video.play();
-        else video.pause();
+        togglePlay();
         e.preventDefault();
       }
     }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
+     
   }, []);
 
   function progressFractionFor(originalIndex: number): number {
@@ -259,23 +533,36 @@ export function VideoPlayer({
     return Math.min(1, p.position_seconds / p.duration_seconds);
   }
 
+  const controlsVisible = showControls || !isPlaying || subtitleMenuOpen;
+
   return (
     <div className="flex flex-col gap-4 lg:flex-row">
-      <div className="relative overflow-hidden rounded-2xl bg-black shadow-2xl shadow-black/50 ring-1 ring-white/10 lg:min-w-0 lg:flex-1">
+      <div
+        ref={containerRef}
+        onMouseMove={handleActivity}
+        className="group relative overflow-hidden rounded-2xl bg-black shadow-2xl shadow-black/50 ring-1 ring-white/10 lg:min-w-0 lg:flex-1"
+      >
         <video
           ref={videoRef}
           key={`${streamUrl}-${retry}`}
           className="aspect-video w-full"
           poster={effectivePoster}
-          controls
+          onClick={togglePlay}
           onLoadedMetadata={handleLoadedMetadata}
-          onPlay={() => setIsPlaying(true)}
+          onDurationChange={(e) => setDuration(e.currentTarget.duration)}
+          onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
+          onPlay={() => {
+            setIsPlaying(true);
+            scheduleHideControls();
+          }}
           onPause={() => {
             setIsPlaying(false);
+            stopHideControls();
             reportProgress(false);
           }}
           onEnded={() => {
             setIsPlaying(false);
+            stopHideControls();
             reportProgress(false);
             playNextEpisode();
           }}
@@ -292,7 +579,6 @@ export function VideoPlayer({
               src={`/api/subtitles/${id}/${t.id}${hasEpisodes ? `?episode=${episodeNumber}` : ""}`}
               srcLang={BCP47[t.lang] ?? t.lang}
               label={t.label}
-              default={t.id === defaultSubtitleId}
             />
           ))}
         </video>
@@ -327,24 +613,132 @@ export function VideoPlayer({
           </div>
         )}
 
+        {status === "ready" && !isPlaying && (
+          <button
+            type="button"
+            onClick={togglePlay}
+            aria-label="Play"
+            className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors hover:bg-black/20"
+          >
+            <span className="flex h-16 w-16 items-center justify-center rounded-full bg-black/50 text-white ring-1 ring-white/20 backdrop-blur-sm">
+              <PlayIcon className="h-8 w-8 translate-x-0.5" />
+            </span>
+          </button>
+        )}
+
         {status === "ready" && (
-          <div className="pointer-events-none absolute left-2.5 top-2.5 flex gap-1.5">
-            <button
-              type="button"
-              onClick={() => skip(-10)}
-              aria-label="Skip back 10 seconds"
-              className="pointer-events-auto rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-zinc-200 shadow-sm backdrop-blur-sm transition-colors hover:bg-black/80"
-            >
-              ◀ 10
-            </button>
-            <button
-              type="button"
-              onClick={() => skip(10)}
-              aria-label="Skip forward 10 seconds"
-              className="pointer-events-auto rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-zinc-200 shadow-sm backdrop-blur-sm transition-colors hover:bg-black/80"
-            >
-              10 ▶
-            </button>
+          <div
+            className={`absolute inset-x-0 bottom-0 flex flex-col gap-2 bg-gradient-to-t from-black/85 via-black/40 to-transparent px-3 pb-2.5 pt-8 transition-opacity duration-200 ${
+              controlsVisible ? "opacity-100" : "pointer-events-none opacity-0"
+            }`}
+          >
+            <SeekBar currentTime={currentTime} duration={duration} onSeek={seekTo} />
+
+            <div className="flex items-center gap-1.5 text-zinc-200">
+              <button
+                type="button"
+                onClick={togglePlay}
+                aria-label={isPlaying ? "Pause" : "Play"}
+                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white"
+              >
+                {isPlaying ? <PauseIcon className="h-5 w-5" /> : <PlayIcon className="h-5 w-5" />}
+              </button>
+
+              <SkipButton direction="back" onClick={() => skip(-10)} />
+              <SkipButton direction="forward" onClick={() => skip(10)} />
+
+              <div className="group/volume flex items-center">
+                <button
+                  type="button"
+                  onClick={toggleMute}
+                  aria-label={muted ? "Unmute" : "Mute"}
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white"
+                >
+                  <VolumeIcon muted={muted} className="h-5 w-5" />
+                </button>
+                <input
+                  type="range"
+                  min={0}
+                  max={1}
+                  step={0.05}
+                  value={muted ? 0 : volume}
+                  onChange={(e) => handleVolumeChange(Number(e.target.value))}
+                  aria-label="Volume"
+                  className="w-0 opacity-0 transition-all duration-150 group-hover/volume:w-16 group-hover/volume:opacity-100 group-focus-within/volume:w-16 group-focus-within/volume:opacity-100"
+                />
+              </div>
+
+              <span className="ml-0.5 shrink-0 whitespace-nowrap text-xs tabular-nums text-zinc-300">
+                {formatTime(currentTime)} / {formatTime(duration)}
+              </span>
+
+              <div className="flex-1" />
+
+              {episodeSubtitles.length > 0 && (
+                <div className="relative shrink-0">
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSubtitleMenuOpen((v) => !v);
+                    }}
+                    aria-label="Subtitles"
+                    className={`flex h-9 w-9 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white ${
+                      selectedSubtitleId ? "text-[#f5c518]" : ""
+                    }`}
+                  >
+                    <SubtitlesIcon className="h-5 w-5" />
+                  </button>
+                  {subtitleMenuOpen && (
+                    <div
+                      onClick={(e) => e.stopPropagation()}
+                      className="absolute bottom-full right-0 mb-2 w-48 overflow-hidden rounded-lg bg-zinc-900/95 py-1 shadow-xl ring-1 ring-white/10 backdrop-blur-sm"
+                    >
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setSelectedSubtitleId(null);
+                          setSubtitleMenuOpen(false);
+                        }}
+                        className={`block w-full px-3 py-2 text-left text-sm ${
+                          selectedSubtitleId === null
+                            ? "bg-white/10 font-medium text-white"
+                            : "text-zinc-300 hover:bg-white/5"
+                        }`}
+                      >
+                        Off
+                      </button>
+                      {episodeSubtitles.map((t) => (
+                        <button
+                          type="button"
+                          key={t.id}
+                          onClick={() => {
+                            setSelectedSubtitleId(t.id);
+                            setSubtitleMenuOpen(false);
+                          }}
+                          className={`block w-full truncate px-3 py-2 text-left text-sm ${
+                            selectedSubtitleId === t.id
+                              ? "bg-white/10 font-medium text-white"
+                              : "text-zinc-300 hover:bg-white/5"
+                          }`}
+                        >
+                          {t.label}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              <button
+                type="button"
+                onClick={toggleFullscreen}
+                aria-label={isFullscreen ? "Exit fullscreen" : "Fullscreen"}
+                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white"
+              >
+                <FullscreenIcon isFullscreen={isFullscreen} className="h-5 w-5" />
+              </button>
+            </div>
           </div>
         )}
       </div>

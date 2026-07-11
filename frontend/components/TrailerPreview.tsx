@@ -6,7 +6,15 @@ import { useEffect, useState } from "react";
 // iframe - a full-size trailer competes with the main video for attention
 // and pushes everything else down the page. Collapsed by default; opens a
 // modal on click.
-export function TrailerPreview({ trailerKey, title }: { trailerKey: string; title: string }) {
+export function TrailerPreview({
+  trailerKey,
+  title,
+  className = "",
+}: {
+  trailerKey: string;
+  title: string;
+  className?: string;
+}) {
   const [open, setOpen] = useState(false);
 
   // The homepage Hero's "▶ Watch Trailer" button links to /title/[id]#trailer
@@ -33,7 +41,7 @@ export function TrailerPreview({ trailerKey, title }: { trailerKey: string; titl
         id="trailer"
         type="button"
         onClick={() => setOpen(true)}
-        className="group relative w-28 shrink-0 scroll-mt-24 overflow-hidden rounded-lg bg-zinc-900 ring-1 ring-white/10 transition hover:ring-white/25 sm:w-36"
+        className={`group relative shrink-0 scroll-mt-24 overflow-hidden rounded-lg bg-zinc-900 ring-1 ring-white/10 transition hover:ring-white/25 ${className || "w-28 sm:w-36"}`}
         aria-label={`Play trailer for ${title}`}
       >
         <span className="relative block aspect-video w-full">
