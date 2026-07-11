@@ -29,10 +29,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-black text-zinc-100">
+      <body className="flex min-h-screen flex-col bg-black text-zinc-100">
         <Header />
         <main className="flex-1">{children}</main>
-        <footer className="border-t border-white/5 px-4 py-8 text-center text-xs text-zinc-600 sm:px-8">
+        <footer className="border-t border-white/5 px-4 py-6 text-center text-xs text-zinc-600 sm:px-8">
           Ratings from IMDb &amp; Rotten Tomatoes (via OMDb). Artwork &amp; trailers via TMDB.
         </footer>
       </body>

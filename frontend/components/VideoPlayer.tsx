@@ -435,6 +435,7 @@ export function VideoPlayer({
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const hideControlsTimer = useRef<number | null>(null);
+  const seekReportTimer = useRef<number | null>(null);
   const [seeked, setSeeked] = useState(false);
 
   // Manual resize (drag the corner handle). Not CSS `resize`: this element
@@ -520,6 +521,17 @@ export function VideoPlayer({
         keepalive: true,
       }).catch(() => {});
     }
+  }
+
+  // Seeking/skipping only updated currentTime, never reported it - a seek
+  // right before a refresh (no pause, no 10s interval tick yet) was
+  // silently lost, resuming from the pre-seek position instead. Debounced
+  // rather than reporting on every event: the seek bar's onSeek fires
+  // continuously while dragging, and reporting on each of those would spam
+  // the backend with a request per pixel of drag movement.
+  function scheduleProgressReport() {
+    if (seekReportTimer.current) window.clearTimeout(seekReportTimer.current);
+    seekReportTimer.current = window.setTimeout(() => reportProgress(false), 800);
   }
 
   // Throttled reporting while actually playing; torn down on pause/episode
@@ -608,6 +620,7 @@ export function VideoPlayer({
     const dur = video.duration || Infinity;
     video.currentTime = Math.min(dur, Math.max(0, video.currentTime + deltaSeconds));
     setCurrentTime(video.currentTime);
+    scheduleProgressReport();
   }
 
   function seekTo(seconds: number) {
@@ -615,6 +628,7 @@ export function VideoPlayer({
     if (!video) return;
     video.currentTime = seconds;
     setCurrentTime(seconds);
+    scheduleProgressReport();
   }
 
   function togglePlay() {
@@ -679,7 +693,7 @@ export function VideoPlayer({
     }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-     
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function progressFractionFor(originalIndex: number): number {

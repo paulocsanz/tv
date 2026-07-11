@@ -6,7 +6,7 @@ export function Hero({ item }: { item: ContentItem }) {
   const backdrop = item.backdrop_url ?? item.poster_url;
 
   return (
-    <div className="relative h-[52vh] min-h-[360px] w-full overflow-hidden sm:h-[62vh]">
+    <div className="relative h-[40vh] min-h-[300px] w-full overflow-hidden sm:h-[45vh] md:h-[50vh] lg:h-[55vh]">
       {backdrop && (
         // eslint-disable-next-line @next/next/no-img-element
         <img

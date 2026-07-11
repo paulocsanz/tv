@@ -1389,9 +1389,242 @@
       "trailer_key": "gGqWqGOSTGQ",
       "enrichment_status": "ok",
       "torrent_file": "The_Rock_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/sherlock-2010-tv/Sherlock.S01E01.A.Study.in.Pink.720p.WEB-DL.HEVC.x265-BONE.mp4",
+      "s3_keys": [
+        "videos/sherlock-2010-tv/Sherlock.S01E01.A.Study.in.Pink.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S01E02.The.Blind.Banker.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S01E03.The.Great.Game.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S02E01.A.Scandal.in.Belgravia.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S03E00.(Mini.Episode).Many.Happy.Returns.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S02E02.The.Hounds.of.Baskerville.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S02E03.The.Reichenbach.Fall.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S03E01.The.Empty.Hearse.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S03E02.The.Sign.of.Three.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S04E01.The.Six.Thatchers.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S03E03.His.Last.Vow.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S01E00.720p.BluRay.x264-ITSat.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S04E00.The.Abominable.Bride.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S04E03.The.Final.Problem.720p.WEB-DL.HEVC.x265-BONE.mp4",
+        "videos/sherlock-2010-tv/Sherlock.S04E02.The.Lying.Detective.720p.WEB-DL.HEVC.x265-BONE.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S01E01.A.Study.in.Pink.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S01E01.A.Study.in.Pink.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S01E02.The.Blind.Banker.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S01E02.The.Blind.Banker.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S01E03.The.Great.Game.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S01E03.The.Great.Game.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S02E01.A.Scandal.in.Belgravia.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S02E01.A.Scandal.in.Belgravia.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S03E00.(Mini.Episode).Many.Happy.Returns.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S02E02.The.Hounds.of.Baskerville.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S02E02.The.Hounds.of.Baskerville.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S02E03.The.Reichenbach.Fall.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S02E03.The.Reichenbach.Fall.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S03E01.The.Empty.Hearse.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S03E01.The.Empty.Hearse.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S03E02.The.Sign.of.Three.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S03E02.The.Sign.of.Three.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S04E01.The.Six.Thatchers.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S04E01.The.Six.Thatchers.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S03E03.His.Last.Vow.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S03E03.His.Last.Vow.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S04E00.The.Abominable.Bride.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S04E00.The.Abominable.Bride.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 14,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S04E03.The.Final.Problem.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 14,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S04E03.The.Final.Problem.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        },
+        {
+          "episode": 15,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S04E02.The.Lying.Detective.720p.WEB-DL.HEVC.x265-BONE.eng.vtt"
+        },
+        {
+          "episode": 15,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sherlock-2010-tv/Sherlock.S04E02.The.Lying.Detective.720p.WEB-DL.HEVC.x265-BONE.eng-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -1509,8 +1742,23 @@
       "trailer_key": "FXIeYKlMA_0",
       "enrichment_status": "ok",
       "torrent_file": "Janus_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/fargo-2014-tv/Fargo (2014) - S02E01 - Waiting for Dutch (1080p BluRay x265 Silence).mp4",
+      "s3_keys": [
+        "videos/fargo-2014-tv/Fargo (2014) - S02E01 - Waiting for Dutch (1080p BluRay x265 Silence).mp4",
+        "videos/fargo-2014-tv/Fargo (2014) - S02E03 - The Myth of Sisyphus (1080p BluRay x265 Silence).mp4",
+        "videos/fargo-2014-tv/Fargo (2014) - S02E04 - Fear and Trembling (1080p BluRay x265 Silence).mp4",
+        "videos/fargo-2014-tv/Fargo (2014) - S02E02 - Before the Law (1080p x265 Silence).mp4",
+        "videos/fargo-2014-tv/Fargo (2014) - S02E05 - The Gift of the Magi (1080p BluRay x265 Silence).mp4",
+        "videos/fargo-2014-tv/Fargo (2014) - S02E06 - Rhinoceros (1080p BluRay x265 Silence).mp4",
+        "videos/fargo-2014-tv/Fargo (2014) - S02E09 - The Castle (1080p BluRay x265 Silence).mp4",
+        "videos/fargo-2014-tv/Fargo (2014) - S02E07 - Did You Do This No, You Did It! (1080p x265 Silence).mp4",
+        "videos/fargo-2014-tv/Fargo (2014) - S02E08 - Loplop (1080p x265 Silence).mp4",
+        "videos/fargo-2014-tv/Fargo (2014) - S02E10 - Palindrome (1080p BluRay x265 Silence).mp4",
+        "videos/fargo-2014-tv/The True History of Crime in the Midwest.mp4",
+        "videos/fargo-2014-tv/The Films of Ronald Reagan with Audio Commentary by Bruce Campbell.mp4",
+        "videos/fargo-2014-tv/Lou on Lou A Conversation with Patrick Wilson, Keith Carradine, and Noah Hawley.mp4",
+        "videos/fargo-2014-tv/Waffles and Bullet Holes A Return to Sioux Falls.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -1557,7 +1805,7 @@
           "contentScore": 200
         }
       ],
-      "current_torrent_index": 4
+      "current_torrent_index": 0
     },
     {
       "id": "the-twilight-zone-1959-tv",
@@ -1755,8 +2003,22 @@
       "trailer_key": "T40mDHDKqWM",
       "enrichment_status": "ok",
       "torrent_file": "I,_Claudius_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/i-claudius-1976-tv/I, Claudius S01E02  Family Affairs.mp4",
+      "s3_keys": [
+        "videos/i-claudius-1976-tv/I, Claudius S01E02  Family Affairs.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E01 A Touch of Murder.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E05 Poison Is Queen.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E06 Some Justice.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E04 What Shall We Do About Claudius.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E03 Waiting in the Wings.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E07 Queen of Heaven.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E08 Reign of Terror.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E09 Zeus, By Jove!.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E10 Hail Who.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E11 Fool's Luck.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E12 A God in Colchester.mp4",
+        "videos/i-claudius-1976-tv/I, Claudius S01E13 Old King Log.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -1787,7 +2049,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 2,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "I Claudius (BBC) (1976) (Complete) 1080p H.264 (moviesbyrizzo)",
@@ -1883,9 +2145,452 @@
       "trailer_key": "W4gLFBNGgiY",
       "enrichment_status": "ok",
       "torrent_file": "M3GAN_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/arcane-2021-tv/Arcane.S02E01.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+      "s3_keys": [
+        "videos/arcane-2021-tv/Arcane.S02E01.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/arcane-2021-tv/Arcane.S02E02.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/arcane-2021-tv/Arcane.S02E03.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/arcane-2021-tv/Arcane.S02E04.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/arcane-2021-tv/Arcane.S02E05.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/arcane-2021-tv/Arcane.S02E06.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/arcane-2021-tv/Arcane.S02E08.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/arcane-2021-tv/Arcane.S02E07.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/arcane-2021-tv/Arcane.S02E09.720p.NF.WEBRip.x264-GalaxyTV.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E01.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E01.720p.NF.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E01.720p.NF.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E01.720p.NF.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E01.720p.NF.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E01.720p.NF.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E02.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E02.720p.NF.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E02.720p.NF.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E02.720p.NF.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E02.720p.NF.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E02.720p.NF.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E03.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E03.720p.NF.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E03.720p.NF.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E03.720p.NF.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E03.720p.NF.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E03.720p.NF.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E04.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E04.720p.NF.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E04.720p.NF.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E04.720p.NF.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E04.720p.NF.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E04.720p.NF.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E05.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E05.720p.NF.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E05.720p.NF.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E05.720p.NF.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E05.720p.NF.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E05.720p.NF.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E06.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E06.720p.NF.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E06.720p.NF.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E06.720p.NF.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E06.720p.NF.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E06.720p.NF.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E08.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E08.720p.NF.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E08.720p.NF.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E08.720p.NF.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E08.720p.NF.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E08.720p.NF.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E07.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E07.720p.NF.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E07.720p.NF.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E07.720p.NF.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E07.720p.NF.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E07.720p.NF.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E09.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E09.720p.NF.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E09.720p.NF.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E09.720p.NF.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E09.720p.NF.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/arcane-2021-tv/Arcane.S02E09.720p.NF.WEBRip.x264-GalaxyTV.por-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -1907,7 +2612,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Arcane.S02.COMPLETE.REPACK.1080p.NF.WEB-DL.DDP5.1.Atmos.H.264-FL",
@@ -2241,9 +2946,137 @@
       "trailer_key": "oBZrZij2-g8",
       "enrichment_status": "ok",
       "torrent_file": "Firefly_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/firefly-2002-tv/00 Firefly Serenity - Pilot Film 2002 Eng Subs 720p [H264-mp4].mp4",
+      "s3_keys": [
+        "videos/firefly-2002-tv/00 Firefly Serenity - Pilot Film 2002 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/01 Firefly The Train Job - Episode 01 2002 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/02 Firefly Bushwhacked - Episode 02 2002 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/03 Firefly Shindig - Episode 03 2002 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/04 Firefly Safe - Episode 04 2002 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/05 Firefly Our Mrs Reynolds - Episode 05 2002 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/06 Firefly Jaynestown - Episode 06 2002 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/07 Firefly Out Of Gas - Episode 07 2002 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/08 Firefly Ariel - Episode 08 2002 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/09 Firefly War Stories - Episode 09 2002 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/10 Firefly Trash - Episode 10 2003 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/11 Firefly The Message - Episode 11 2003 Eng Subs 720p [h264-mp4]-1.mp4",
+        "videos/firefly-2002-tv/12 Firefly Heart Of Gold - Episode 12 2003 Eng Subs 720p [H264-mp4].mp4",
+        "videos/firefly-2002-tv/13 Firefly Objects In Space - Episode 13 2002 Eng Subs 720p [H264-mp4].mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/00 Firefly Serenity - Pilot Film 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/01 Firefly The Train Job - Episode 01 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/02 Firefly Bushwhacked - Episode 02 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/03 Firefly Shindig - Episode 03 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/04 Firefly Safe - Episode 04 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/05 Firefly Our Mrs Reynolds - Episode 05 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/06 Firefly Jaynestown - Episode 06 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/07 Firefly Out Of Gas - Episode 07 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/08 Firefly Ariel - Episode 08 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/09 Firefly War Stories - Episode 09 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/10 Firefly Trash - Episode 10 2003 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/11 Firefly The Message - Episode 11 2003 Eng Subs 720p [h264-mp4]-1.eng.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/12 Firefly Heart Of Gold - Episode 12 2003 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 14,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/firefly-2002-tv/13 Firefly Objects In Space - Episode 13 2002 Eng Subs 720p [H264-mp4].eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -2339,8 +3172,10 @@
       "trailer_key": "89i-Fn2CqQg",
       "enrichment_status": "ok",
       "torrent_file": "It's_Okay_to_Not_Be_Okay_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/it-s-okay-to-not-be-okay-2020-tv/Masters.Of.The.Universe.2026.RETAIL.DKSUBS.1080p.WEBRip.x264.AAC-[YTS.GG - YTS.BZ].mp4",
+      "s3_keys": [
+        "videos/it-s-okay-to-not-be-okay-2020-tv/Masters.Of.The.Universe.2026.RETAIL.DKSUBS.1080p.WEBRip.x264.AAC-[YTS.GG - YTS.BZ].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -2387,7 +3222,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 2
+      "current_torrent_index": 0
     },
     {
       "id": "sitio-do-picapau-amarelo-1977-tv",
@@ -2677,7 +3512,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 2,
+      "current_torrent_index_720p": 3,
       "torrent_options": [
         {
           "title": "Gravity Falls (2012-2016) PROPER S01-S02 COMPLETE 1080p BluRay AV1 Opus 5 1 + Ex..",
@@ -2750,9 +3585,74 @@
       "trailer_key": "H29XSxoKp80",
       "enrichment_status": "ok",
       "torrent_file": "Fences_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/friends-1994-tv/Smiling.Friends.S01E01.1080p.WEBRip.x264-BAE[eztv.re].mp4",
+      "s3_keys": [
+        "videos/friends-1994-tv/Smiling.Friends.S01E01.1080p.WEBRip.x264-BAE[eztv.re].mp4",
+        "videos/friends-1994-tv/Smiling.Friends.S01E02.1080p.WEBRip.x264-BAE[eztv.re].mp4",
+        "videos/friends-1994-tv/Smiling.Friends.S01E03.1080p.WEBRip.x264-BAE[eztv.re].mp4",
+        "videos/friends-1994-tv/Smiling.Friends.S01E04.1080p.WEBRip.x264-BAE[eztv.re].mp4",
+        "videos/friends-1994-tv/Smiling.Friends.S01E05.1080p.WEBRip.x264-BAE[eztv.re].mp4",
+        "videos/friends-1994-tv/Smiling.Friends.S01E06.1080p.WEBRip.x264-BAE[eztv.re].mp4",
+        "videos/friends-1994-tv/Smiling.Friends.S01E07.1080p.WEBRip.x264-BAE[eztv.re].mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/friends-1994-tv/Smiling.Friends.S01E01.1080p.WEBRip.x264-BAE[eztv.re].eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/friends-1994-tv/Smiling.Friends.S01E02.1080p.WEBRip.x264-BAE[eztv.re].eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/friends-1994-tv/Smiling.Friends.S01E03.1080p.WEBRip.x264-BAE[eztv.re].eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/friends-1994-tv/Smiling.Friends.S01E04.1080p.WEBRip.x264-BAE[eztv.re].eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/friends-1994-tv/Smiling.Friends.S01E05.1080p.WEBRip.x264-BAE[eztv.re].eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/friends-1994-tv/Smiling.Friends.S01E06.1080p.WEBRip.x264-BAE[eztv.re].eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/friends-1994-tv/Smiling.Friends.S01E07.1080p.WEBRip.x264-BAE[eztv.re].eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -2798,7 +3698,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 0
     },
     {
       "id": "true-detective-2014-tv",
@@ -2990,8 +3890,10 @@
       "trailer_key": "ESEUoa-mz2c",
       "enrichment_status": "ok",
       "torrent_file": "Minari_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/dark-2017-tv/Batman.The.Dark.Knight.2008.1080p.BluRay.x264.YIFY.mp4",
+      "s3_keys": [
+        "videos/dark-2017-tv/Batman.The.Dark.Knight.2008.1080p.BluRay.x264.YIFY.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -3038,7 +3940,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 0
     },
     {
       "id": "forrest-gump-1994-movie",
@@ -3167,8 +4069,19 @@
       "trailer_key": "ZO-XX1UpsqY",
       "enrichment_status": "ok",
       "torrent_file": "Succession_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/succession-2018-tv/Succession S01E01 Celebration.mp4",
+      "s3_keys": [
+        "videos/succession-2018-tv/Succession S01E01 Celebration.mp4",
+        "videos/succession-2018-tv/Succession S01E02 Sht Show at the Fk Factory.mp4",
+        "videos/succession-2018-tv/Succession S01E03 Lifeboats.mp4",
+        "videos/succession-2018-tv/Succession S01E04 Sad Sack Wasp Trap.mp4",
+        "videos/succession-2018-tv/Succession S01E08 Prague.mp4",
+        "videos/succession-2018-tv/Succession S01E05 I Went to Market.mp4",
+        "videos/succession-2018-tv/Succession S01E06 Which Side Are You On.mp4",
+        "videos/succession-2018-tv/Succession S01E07 Austerlitz.mp4",
+        "videos/succession-2018-tv/Succession S01E09 Pre-Nuptial.mp4",
+        "videos/succession-2018-tv/Succession S01E10 Nobody Is Ever Missing.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -3265,9 +4178,607 @@
       "trailer_key": "BwPcMIDFVKw",
       "enrichment_status": "ok",
       "torrent_file": "Ted_Lasso_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E01.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+      "s3_keys": [
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E01.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E02.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E03.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E04.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E05.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E07.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E06.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E08.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E09.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E10.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E11.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/ted-lasso-2020-tv/Ted.Lasso.S03E12.720p.ATVP.WEBRip.x264-GalaxyTV.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E01.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E01.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E01.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E01.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E01.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E01.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E02.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E02.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E02.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E02.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E02.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E02.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E03.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E03.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E03.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E03.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E03.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E03.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E04.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E04.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E04.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E04.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E04.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E04.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E05.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E05.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E05.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E05.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E05.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E05.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E07.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E07.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E07.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E07.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E07.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E07.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E06.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E06.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng-3",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E06.720p.ATVP.WEBRip.x264-GalaxyTV.eng-3.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E06.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E06.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E06.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E06.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E08.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E08.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E08.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E08.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E08.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E08.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E09.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E09.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E09.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E09.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E09.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E09.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E10.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E10.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E10.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E10.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E10.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E10.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E11.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E11.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E11.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E11.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E11.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E11.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E12.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E12.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E12.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E12.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E12.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/ted-lasso-2020-tv/Ted.Lasso.S03E12.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -3491,8 +5002,14 @@
       "trailer_key": "36mAsVSH_-s",
       "enrichment_status": "ok",
       "torrent_file": "Over_the_Garden_Wall_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/over-the-garden-wall-2014-tv/3&4 over the garden wall.mp4",
+      "s3_keys": [
+        "videos/over-the-garden-wall-2014-tv/3&4 over the garden wall.mp4",
+        "videos/over-the-garden-wall-2014-tv/1&2 over the garden wall.mp4",
+        "videos/over-the-garden-wall-2014-tv/5&6 over the garden wall.mp4",
+        "videos/over-the-garden-wall-2014-tv/7&8 over the garden wall.mp4",
+        "videos/over-the-garden-wall-2014-tv/9&10 over the garden wall.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -3531,7 +5048,7 @@
           "contentScore": 200
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Over the Garden Wall 2015 [1080p]Komplet[ExYu-Subs]",
@@ -3696,9 +5213,28 @@
       "trailer_key": "ltY335eAbOA",
       "enrichment_status": "ok",
       "torrent_file": "Curb_Your_Enthusiasm_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/curb-your-enthusiasm-2000-tv/Curb.Your.Enthusiasm.S11E06.720p.WEB.x265-MiNX.mp4",
+      "s3_keys": [
+        "videos/curb-your-enthusiasm-2000-tv/Curb.Your.Enthusiasm.S11E06.720p.WEB.x265-MiNX.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/curb-your-enthusiasm-2000-tv/Curb.Your.Enthusiasm.S11E06.720p.WEB.x265-MiNX.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/curb-your-enthusiasm-2000-tv/Curb.Your.Enthusiasm.S11E06.720p.WEB.x265-MiNX.spa.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -3720,7 +5256,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Curb.Your.Enthusiasm.S01.1080p.WEBRip.x265",
@@ -3802,8 +5338,12 @@
       "trailer_key": "1iqra1ojEvM",
       "enrichment_status": "ok",
       "torrent_file": "Black_Widow_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/black-mirror-2011-tv/Black.Mirror.S01E01.720p.WEBRip.x264-GalaxyTV.mp4",
+      "s3_keys": [
+        "videos/black-mirror-2011-tv/Black.Mirror.S01E01.720p.WEBRip.x264-GalaxyTV.mp4",
+        "videos/black-mirror-2011-tv/Black.Mirror.S01E02.720p.WEBRip.x264-GalaxyTV.mp4",
+        "videos/black-mirror-2011-tv/Black.Mirror.S01E03.720p.WEBRip.x264-GalaxyTV.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -4372,7 +5912,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Justice.League.Crisis.on.Infinite.Earths.Part.Two.2024.1080p.Blu",
@@ -4501,7 +6041,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Frontline S2026E05 Caught in the Crackdown 1080p AMZN WEB-DL DDP2 0 H 264-K",
@@ -4734,7 +6274,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "The Last of Us S02E01 1080p MAX WEB-DL DDP5 1 x264-NTb EZTV",
@@ -5039,7 +6579,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "trollhunters-tales-of-arcadia-2016-tv",
@@ -5230,7 +6770,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Six Feet Under 2001 Seasons 1 to 5 Complete 1080p AMZN WEB-DL x264 [i_c]",
@@ -5446,7 +6986,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 2
     },
     {
       "id": "south-park-1997-tv",
@@ -5605,7 +7145,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "House Of Cards - Season 1 to 6 (Complete Series) - Mp4 x264 AC3 1080p",
@@ -5923,7 +7463,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "primal-2019-tv",
@@ -5994,7 +7534,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Primal Fear 1996 Remastered 1080p BluRay HEVC x265 5.1 BONE",
@@ -6179,7 +7719,7 @@
           "contentScore": 200
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "spider-man-across-the-spider-verse-2023-movie",
@@ -6312,7 +7852,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "One Direction This Is Us 2013 1080p BrRip x264 Clear Print",
@@ -6445,7 +7985,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "The.Bear.S05.Complete.1080p.WEBRip.10Bit.DDP5.1.x265-NeoNoir",
@@ -6549,7 +8089,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Arrested Development (2003) Season 1 S01 REPACK (1080p BluRay x265 HEVC 10bit EA",
@@ -6645,7 +8185,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "House Of The Dragon - Season 2 - Mp4 x264 AC3 1080p",
@@ -6766,7 +8306,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "The Marvelous Mrs Maisel - Season 5 - Mp4 x264 AC3 1080p",
@@ -7481,7 +9021,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Deadwood la pelicula [MicroHD 1080p][AC3 2 0-Castellano-AC3 5 1-Ingles+Subs][ES-..",
@@ -7611,7 +9151,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "saving-private-ryan-1998-movie",
@@ -7839,7 +9379,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "seven-samurai-1954-movie",
@@ -8666,7 +10206,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "The Venture Bros Radiant Is The Blood Of The Baboon Heart 2023 1080p AMZN WEB-DL",
@@ -9537,7 +11077,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Psych (2006) Season 1-8 S01-S08 (1080p AMZN WEB-DL x265 HEVC 10bit AAC 5 1 MONOL..",
@@ -9963,7 +11503,7 @@
           "contentScore": 200
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "psycho-1960-movie",
@@ -10250,7 +11790,7 @@
           "contentScore": 550
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "city-lights-1931-movie",
@@ -10977,7 +12517,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Star Wars The Clone Wars S07E06 1080p WEB H264-PETRiFiED[rarbg]",
@@ -11652,7 +13192,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Do Outro Lado Da Fronteira 2017 (1080p)",
@@ -11882,7 +13422,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Taxi.Driver.1976.REMASTERED.1080p.BluRay.x264.MkvCage [GoodFilms",
@@ -12012,7 +13552,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Doctor Who 2005 S01 1080p BluRay x265",
@@ -12514,7 +14054,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Verdades Secretas 2015 (1080p) LAPUMiA",
@@ -12595,7 +14135,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Harry Potter and the Prisoner of Azkaban (2004) 1080p BrRip x264",
@@ -12809,7 +14349,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "I Love Lucy 1951 Seasons 1 to 9 Complete 1080p BLURAY and REMUX and WEB-DL x264",
@@ -14235,7 +15775,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Poldark Season 1 S01 (1080p Bluray x265 HEVC 10bit AAC 5.1 Tigol",
@@ -14783,7 +16323,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "green-book-2018-movie",
@@ -15318,7 +16858,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "hacksaw-ridge-2016-movie",
@@ -15692,7 +17232,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "mandrake-2005-tv",
@@ -16488,7 +18028,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Scandal.US.S01.1080p.AMZN.WEBRip.DDP2.0.x265-SiGMA",
@@ -16649,7 +18189,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "The Blacklist Season 1 S01 (1080p Web x265 10bit 5.1 Joy)[UTR]",
@@ -16953,7 +18493,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Billions S02E10 1080p WEBRip X264-DEFLATE[ettv]",
@@ -18328,7 +19868,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Capitao America Admiravel Mundo Novo 2025 1080p WEB-DL DUAL 5 1",
@@ -21658,7 +23198,7 @@
           "contentScore": 200
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": []
     },
     {
@@ -23350,8 +24890,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Carandiru_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/carandiru-2003-movie/Carandiru.2003.PORTUGUESE.1080p.WEB-DL.x265.AAC-5.1-Kali.mp4",
+      "s3_keys": [
+        "videos/carandiru-2003-movie/Carandiru.2003.PORTUGUESE.1080p.WEB-DL.x265.AAC-5.1-Kali.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -23382,7 +24924,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 2
+      "current_torrent_index": 0
     },
     {
       "id": "toy-story-2-1999-movie",
@@ -25133,7 +26675,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Plano em Fam&iacute;lia 2023 The Family Plan 1080p x264 DUAL AlienVolt",
@@ -25381,8 +26923,10 @@
       "trailer_key": "kKtUEpopu6A",
       "enrichment_status": "ok",
       "torrent_file": "Black_Orpheus_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/black-orpheus-1959-movie/Black.Orpheus.1959.720p.BluRay.x264.AAC-[YTS.MX].mp4",
+      "s3_keys": [
+        "videos/black-orpheus-1959-movie/Black.Orpheus.1959.720p.BluRay.x264.AAC-[YTS.MX].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -33590,7 +35134,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "limite-1931-movie",
@@ -48108,7 +49652,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Terminator dark fate 2019 1080p-dual-por-cinemaqualidade is",
@@ -49250,7 +50794,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Divine Love (2019) 1080p BluRay 5.1-WORLD",
@@ -52805,7 +54349,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 2
     },
     {
       "id": "avengers-doomsday-2026-movie",
