@@ -30,18 +30,26 @@ export function AwardsCard({
         <p className="mt-1.5 text-sm text-zinc-400">{awardsClauses.join(" · ")}</p>
       )}
       {awardEntries.length > 0 && (
-        <div className={`flex flex-wrap gap-2 ${awardsClauses.length > 0 ? "mt-3" : "mt-1.5"}`}>
+        // Stacked blocks, not inline pills: this card lives in a narrow
+        // (320px) sidebar, and "Nominated · Best Picture · Academy Awards
+        // 1991" wrapping mid-line inside a rounded-full pill looked broken -
+        // a pill shape only reads cleanly on one line. A rounded-md block
+        // with the category on its own line wraps like normal text instead.
+        <div className={`flex flex-col gap-1.5 ${awardsClauses.length > 0 ? "mt-3" : "mt-1.5"}`}>
           {awardEntries.map((award, i) => (
-            <span
+            <div
               key={`${award.event}-${award.category}-${award.year}-${i}`}
-              className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset ${
-                award.won
-                  ? "bg-amber-500/15 text-amber-300 ring-amber-400/30"
-                  : "bg-white/10 text-zinc-300 ring-white/15"
+              className={`rounded-md px-2.5 py-1.5 text-xs ring-1 ring-inset ${
+                award.won ? "bg-amber-500/15 ring-amber-400/30" : "bg-white/10 ring-white/15"
               }`}
             >
-              {award.won ? "🏆 Won" : "🎗️ Nominated"} · {award.category} · {award.event} {award.year}
-            </span>
+              <div className={`font-semibold ${award.won ? "text-amber-300" : "text-zinc-300"}`}>
+                {award.won ? "🏆 Won" : "🎗️ Nominated"} · {award.category}
+              </div>
+              <div className={award.won ? "text-amber-300/70" : "text-zinc-500"}>
+                {award.event} {award.year}
+              </div>
+            </div>
           ))}
         </div>
       )}

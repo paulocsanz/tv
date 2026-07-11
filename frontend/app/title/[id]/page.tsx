@@ -84,6 +84,11 @@ export default async function TitlePage({
               </div>
             </div>
           )}
+
+          {/* Lives right after the video, not after the whole hero row -
+              the sidebar is often taller than the video (awards/keywords),
+              and waiting for the row to end left a big dead gap here. */}
+          <Synopsis plot={item.plot} actors={item.actors} />
         </div>
 
         <div className="flex flex-col gap-3 xl:w-80 xl:shrink-0">
@@ -149,8 +154,6 @@ export default async function TitlePage({
           )}
         </div>
       </div>
-
-      <Synopsis plot={item.plot} actors={item.actors} />
 
       {related.length > 0 && (
         <div className="mt-10">
