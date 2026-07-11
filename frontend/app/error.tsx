@@ -17,7 +17,7 @@ export default function Error({
   return (
     <div className="flex min-h-[70vh] flex-col items-center justify-center px-4 text-center">
       <h1 className="mb-2 text-2xl font-bold text-white">
-        Top<span className="text-[#f5c518]">400</span>
+        Sess<span className="text-[#f5c518]">ão</span>
       </h1>
       <p className="mb-1 text-lg font-semibold text-white">Something went wrong.</p>
       <p className="mb-6 max-w-sm text-sm text-zinc-400">

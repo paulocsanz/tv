@@ -10,7 +10,7 @@ export function Header() {
       <div className="relative mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-8">
         <MobileNav />
         <Link href="/" className="shrink-0 text-lg font-bold tracking-tight text-white">
-          Top<span className="text-[#f5c518]">400</span>
+          Sess<span className="text-[#f5c518]">ão</span>
         </Link>
         <nav className="hidden gap-4 text-sm text-zinc-300 sm:flex">
           <Link href="/browse?type=movie" className="hover:text-white">

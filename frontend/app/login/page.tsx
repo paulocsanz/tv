@@ -79,7 +79,7 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-[70vh] flex-col items-center justify-center px-4">
       <h1 className="mb-6 text-2xl font-bold text-white">
-        Top<span className="text-[#f5c518]">400</span>
+        Sess<span className="text-[#f5c518]">ão</span>
       </h1>
       <Suspense>
         <LoginForm />

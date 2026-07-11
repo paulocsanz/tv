@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
 // seen onboarding" yet, and adding one felt like overkill for a dismissible
 // tooltip sequence. Worth revisiting if people keep hitting it on shared
 // devices, but that hasn't come up yet.
-const SEEN_KEY = "top400_onboarding_seen_v1";
+const SEEN_KEY = "sessao_onboarding_seen_v1";
 
 const STEPS = [
   {
-    title: "Welcome to Top400",
-    body: "A curated catalog of 400 movies and TV series. Here's a 30-second tour.",
+    title: "Welcome to Sessão",
+    body: "A curated catalog of movies and TV series. Here's a 30-second tour.",
   },
   {
     title: "Continue Watching",

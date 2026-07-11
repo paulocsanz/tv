@@ -6,6 +6,7 @@ import { ImdbBadge, RottenTomatoesBadge } from "@/components/RatingBadges";
 import { PosterPlaceholder } from "@/components/ContentCard";
 import { RelatedTitleCard } from "@/components/RelatedTitleCard";
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { TrailerPreview } from "@/components/TrailerPreview";
 
 export async function generateMetadata({
   params,
@@ -106,6 +107,38 @@ export default async function TitlePage({
           </div>
         </div>
 
+        <div id="video-player" className="mt-8 scroll-mt-24">
+          <div className="mb-3 flex items-end justify-between gap-4">
+            <h2 className="flex items-center gap-1.5 text-lg font-semibold text-white">
+              <span aria-hidden>🍿</span> Watch
+            </h2>
+            {item.trailer_key && <TrailerPreview trailerKey={item.trailer_key} title={item.title} />}
+          </div>
+
+          {item.s3_key || item.s3_keys.length > 0 ? (
+            <VideoPlayer
+              id={item.id}
+              s3Keys={item.s3_keys.length > 0 ? item.s3_keys : [item.s3_key!]}
+              initialProgress={await getProgress(item.id)}
+              subtitles={item.subtitles}
+              episodeMetadata={item.episodes}
+              preferredSubtitleLang={me?.default_subtitle_lang ?? null}
+              autoplayNext={me?.autoplay_next ?? true}
+              posterUrl={item.backdrop_url}
+            />
+          ) : item.torrent_file ? (
+            <p className="inline-block rounded-lg bg-amber-600/20 px-3 py-1.5 text-sm text-amber-300">
+              📥 Available locally: <code className="text-xs font-mono">{item.torrent_file}</code>
+            </p>
+          ) : (
+            <div className="rounded-lg border border-white/10 bg-white/5 px-4 py-6 text-center">
+              <p className="text-sm text-zinc-400">
+                Not available to stream yet — it&apos;s still in the acquisition queue.
+              </p>
+            </div>
+          )}
+        </div>
+
         {item.plot && (
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-zinc-300">{item.plot}</p>
         )}
@@ -124,7 +157,7 @@ export default async function TitlePage({
           </p>
         )}
 
-        {item.award_entries.length > 0 && (
+        {item.award_entries?.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-2">
             {item.award_entries.map((award, i) => (
               <span
@@ -175,46 +208,6 @@ export default async function TitlePage({
               {similar.map((title) => (
                 <RelatedTitleCard key={title.tmdb_id} title={title} />
               ))}
-            </div>
-          </div>
-        )}
-
-        {item.s3_key || item.s3_keys.length > 0 ? (
-          <div id="video-player" className="mt-10 scroll-mt-24">
-            <h2 className="mb-3 text-lg font-semibold text-white">Watch</h2>
-            <VideoPlayer
-              id={item.id}
-              s3Keys={item.s3_keys.length > 0 ? item.s3_keys : [item.s3_key!]}
-              initialProgress={await getProgress(item.id)}
-              subtitles={item.subtitles}
-              episodeMetadata={item.episodes}
-              preferredSubtitleLang={me?.default_subtitle_lang ?? null}
-              autoplayNext={me?.autoplay_next ?? true}
-            />
-          </div>
-        ) : item.torrent_file ? (
-          <p className="mt-4 inline-block rounded-lg bg-amber-600/20 px-3 py-1.5 text-sm text-amber-300">
-            📥 Available locally: <code className="text-xs font-mono">{item.torrent_file}</code>
-          </p>
-        ) : (
-          <div className="mt-10 rounded-lg border border-white/10 bg-white/5 px-4 py-6 text-center">
-            <p className="text-sm text-zinc-400">
-              Not available to stream yet — it&apos;s still in the acquisition queue.
-            </p>
-          </div>
-        )}
-
-        {item.trailer_key && (
-          <div id="trailer" className="mt-10 scroll-mt-24">
-            <h2 className="mb-3 text-lg font-semibold text-white">Trailer</h2>
-            <div className="aspect-video w-full max-w-3xl overflow-hidden rounded-lg bg-zinc-900">
-              <iframe
-                className="h-full w-full"
-                src={`https://www.youtube.com/embed/${item.trailer_key}`}
-                title={`${item.title} trailer`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
             </div>
           </div>
         )}

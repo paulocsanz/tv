@@ -88,6 +88,7 @@ export function VideoPlayer({
   episodeMetadata = [],
   preferredSubtitleLang = null,
   autoplayNext = true,
+  posterUrl = null,
 }: {
   id: string;
   s3Keys: string[];
@@ -96,6 +97,11 @@ export function VideoPlayer({
   episodeMetadata?: EpisodeMetadata[];
   preferredSubtitleLang?: string | null;
   autoplayNext?: boolean;
+  /** Falls back to the title's backdrop when the current episode has no
+   * still image of its own - a plain <video> just shows black before
+   * playback starts (many films/episodes fade in from black), which reads
+   * as broken rather than "not started yet". */
+  posterUrl?: string | null;
 }) {
   const hasEpisodes = s3Keys.length > 1;
   // s3Keys isn't guaranteed to be in episode order; sort a copy for display
@@ -118,6 +124,8 @@ export function VideoPlayer({
   const progressUrl = `/api/progress/${id}`;
   // 0 is the movie/no-episode sentinel, matching the backend schema.
   const episodeNumber = hasEpisodes ? selectedIndex + 1 : 0;
+  const currentEpisode = hasEpisodes ? episodes.find((ep) => ep.originalIndex === selectedIndex) : null;
+  const effectivePoster = currentEpisode?.stillUrl ?? posterUrl ?? undefined;
   const savedProgress = initialProgress.find((p) => p.episode === episodeNumber) ?? null;
   const episodeSubtitles = subtitles.filter((t) => t.episode === episodeNumber);
   // The user's preferred language wins if this episode has it; otherwise
@@ -253,11 +261,12 @@ export function VideoPlayer({
 
   return (
     <div className="flex flex-col gap-4 lg:flex-row">
-      <div className="relative overflow-hidden rounded-lg bg-black lg:min-w-0 lg:flex-1">
+      <div className="relative overflow-hidden rounded-2xl bg-black shadow-2xl shadow-black/50 ring-1 ring-white/10 lg:min-w-0 lg:flex-1">
         <video
           ref={videoRef}
           key={`${streamUrl}-${retry}`}
           className="aspect-video w-full"
+          poster={effectivePoster}
           controls
           onLoadedMetadata={handleLoadedMetadata}
           onPlay={() => setIsPlaying(true)}
@@ -291,14 +300,18 @@ export function VideoPlayer({
         {status === "loading" && (
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 flex items-center justify-center"
+            className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/30"
           >
-            <div className="h-8 w-8 animate-spin rounded-full border-2 border-white/20 border-t-white" />
+            <div className="h-9 w-9 animate-spin rounded-full border-[3px] border-white/15 border-t-[#f5c518]" />
+            <span className="animate-pulse text-xs font-medium text-zinc-400">Loading…</span>
           </div>
         )}
 
         {status === "error" && (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/90 px-6 text-center">
+            <span aria-hidden className="text-2xl">
+              😕
+            </span>
             <p className="text-sm text-zinc-300">
               This video isn&apos;t available right now — it may still be processing.
             </p>
@@ -307,7 +320,7 @@ export function VideoPlayer({
                 setStatus("loading");
                 setRetry((r) => r + 1);
               }}
-              className="rounded-md bg-white/10 px-3 py-1.5 text-sm text-zinc-200 hover:bg-white/20"
+              className="rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-zinc-200 transition-colors hover:bg-white/20"
             >
               Try again
             </button>
@@ -315,12 +328,12 @@ export function VideoPlayer({
         )}
 
         {status === "ready" && (
-          <div className="pointer-events-none absolute left-2 top-2 flex gap-1.5">
+          <div className="pointer-events-none absolute left-2.5 top-2.5 flex gap-1.5">
             <button
               type="button"
               onClick={() => skip(-10)}
               aria-label="Skip back 10 seconds"
-              className="pointer-events-auto rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-zinc-200 backdrop-blur-sm hover:bg-black/80"
+              className="pointer-events-auto rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-zinc-200 shadow-sm backdrop-blur-sm transition-colors hover:bg-black/80"
             >
               ◀ 10
             </button>
@@ -328,7 +341,7 @@ export function VideoPlayer({
               type="button"
               onClick={() => skip(10)}
               aria-label="Skip forward 10 seconds"
-              className="pointer-events-auto rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-zinc-200 backdrop-blur-sm hover:bg-black/80"
+              className="pointer-events-auto rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-zinc-200 shadow-sm backdrop-blur-sm transition-colors hover:bg-black/80"
             >
               10 ▶
             </button>
@@ -337,7 +350,7 @@ export function VideoPlayer({
       </div>
 
       {hasEpisodes && (
-        <div className="flex max-h-80 flex-col overflow-hidden rounded-lg ring-1 ring-white/10 lg:max-h-[28rem] lg:w-72 lg:shrink-0">
+        <div className="flex max-h-80 flex-col overflow-hidden rounded-2xl bg-zinc-950/60 shadow-xl shadow-black/30 ring-1 ring-white/10 lg:max-h-[28rem] lg:w-72 lg:shrink-0">
           <div className="shrink-0 border-b border-white/10 px-4 py-2.5 text-xs font-semibold uppercase tracking-wide text-zinc-400">
             Episodes · {episodes.length}
           </div>
@@ -349,24 +362,26 @@ export function VideoPlayer({
                 <button
                   key={ep.key}
                   onClick={() => setSelectedIndex(ep.originalIndex)}
-                  className={`relative flex w-full items-start gap-3 border-b border-white/5 px-4 py-2.5 text-left last:border-b-0 ${
-                    isActive ? "bg-white/10" : "hover:bg-white/5"
+                  className={`relative flex w-full items-start gap-3 border-b border-white/5 py-2.5 pr-4 text-left transition-colors last:border-b-0 ${
+                    isActive
+                      ? "border-l-2 border-l-[#f5c518] bg-white/10 pl-3.5"
+                      : "border-l-2 border-l-transparent pl-3.5 hover:bg-white/5"
                   }`}
                 >
                   {ep.stillUrl ? (
-                    <span className="relative h-10 w-16 shrink-0 overflow-hidden rounded bg-black/40">
+                    <span className="relative h-10 w-16 shrink-0 overflow-hidden rounded-lg bg-black/40 ring-1 ring-white/5">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={ep.stillUrl} alt="" className="h-full w-full object-cover" />
                       {isActive && (
-                        <span className="absolute inset-0 flex items-center justify-center bg-black/50 text-xs text-white">
+                        <span className="absolute inset-0 flex items-center justify-center bg-black/50 text-xs text-[#f5c518]">
                           ▶
                         </span>
                       )}
                     </span>
                   ) : (
                     <span
-                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded text-xs font-medium ${
-                        isActive ? "bg-white text-black" : "bg-white/10 text-zinc-400"
+                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-medium ${
+                        isActive ? "bg-[#f5c518] text-black" : "bg-white/10 text-zinc-400"
                       }`}
                     >
                       {isActive ? "▶" : ep.number}

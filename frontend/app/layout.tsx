@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Top 400 — Movies & TV Series",
+  title: "Sessão — Movies & TV Series",
   description:
-    "The best 400 movies and TV series, Brazilian and international, classics and modern hits — with ratings, posters and trailers.",
+    "A curated catalog of the best movies and TV series, Brazilian and international, classics and modern hits — with ratings, posters and trailers.",
 };
 
 export default function RootLayout({
