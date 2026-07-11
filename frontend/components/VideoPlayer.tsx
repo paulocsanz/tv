@@ -229,6 +229,10 @@ function ScrubPreview({
     }
   }, [previewTime, visible]);
 
+  useEffect(() => {
+    if (!visible) pendingTime.current = null;
+  }, [visible]);
+
   // Source changed (new episode) - drop the stale frame so the preview
   // doesn't briefly show the previous episode's thumbnail.
   useEffect(() => {
@@ -257,14 +261,24 @@ function ScrubPreview({
       }`}
       style={{ left: `clamp(80px, ${(hoverFraction ?? 0) * 100}%, calc(100% - 80px))` }}
     >
-      <video
-        ref={videoRef}
-        src={streamUrl}
-        muted
-        preload="metadata"
-        onSeeked={handleSeeked}
-        className="hidden"
-      />
+      {/* Mounted only while actually hovered, not for the player's whole
+          lifetime - a persistent third <video> decoder session (on top of
+          the main player) is a real resource cost for no benefit to anyone
+          who never hovers, and some browsers get flaky about metadata/seeks
+          on background video elements the longer they sit around unused.
+          `opacity-0` + explicit size (not `hidden`/display:none) - Safari
+          doesn't reliably load metadata for display:none <video>s. */}
+      {visible && (
+        <video
+          ref={videoRef}
+          src={streamUrl}
+          muted
+          playsInline
+          preload="metadata"
+          onSeeked={handleSeeked}
+          className="absolute h-px w-px opacity-0"
+        />
+      )}
       <canvas ref={canvasRef} width={160} height={90} className="block h-[90px] w-40 object-cover" />
       <span className="block bg-black/85 px-1.5 py-0.5 text-center text-[11px] font-medium tabular-nums text-white">
         {formatTime(previewTime)}
