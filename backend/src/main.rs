@@ -19,7 +19,7 @@ use tv_backend::audit;
 use tv_backend::auth::{self, UserRecord};
 use tv_backend::models::{
     AwardEntry, CollectionParts, ContentType, EnrichedCache, EnrichedItem, EpisodeMetadata,
-    RelatedTitle, SimilarEntry,
+    RelatedTitle, SimilarEntry, SubtitleTrack,
 };
 use tv_backend::progress;
 
@@ -245,6 +245,71 @@ fn apply_awards_backfill(items: &mut [EnrichedItem], enriched_data_path: &str) {
     );
 }
 
+#[derive(Debug, Deserialize)]
+struct TrailerSubtitleEntry {
+    lang: String,
+    label: String,
+    s3_key: String,
+}
+
+#[derive(Debug, Deserialize)]
+struct TrailerBackfillEntry {
+    s3_key: String,
+    #[serde(default)]
+    subtitles: Vec<TrailerSubtitleEntry>,
+}
+
+/// Merges in self-hosted trailer video/captions (see download-trailers.js).
+/// Same separate-file rationale as `apply_collections_backfill`. The
+/// backfill file's subtitle entries are a slimmer shape than the shared
+/// `SubtitleTrack` struct (no `episode`/`id` - neither is meaningful for a
+/// trailer), so this constructs full `SubtitleTrack` values here rather
+/// than widening that struct's required fields for every other caller.
+fn apply_trailer_backfill(items: &mut [EnrichedItem], enriched_data_path: &str) {
+    let Some(backfill_path) = std::path::Path::new(enriched_data_path)
+        .parent()
+        .map(|p| p.join("trailer_backfill.json"))
+    else {
+        return;
+    };
+    let Ok(raw) = std::fs::read_to_string(&backfill_path) else {
+        return;
+    };
+    let map: HashMap<String, TrailerBackfillEntry> = match serde_json::from_str(&raw) {
+        Ok(m) => m,
+        Err(e) => {
+            tracing::warn!("failed to parse {}: {e}", backfill_path.display());
+            return;
+        }
+    };
+
+    let mut applied = 0;
+    for item in items.iter_mut() {
+        if item.trailer_s3_key.is_none() {
+            if let Some(entry) = map.get(&item.id) {
+                item.trailer_s3_key = Some(entry.s3_key.clone());
+                item.trailer_subtitles = entry
+                    .subtitles
+                    .iter()
+                    .map(|s| SubtitleTrack {
+                        episode: 0,
+                        id: s.lang.clone(),
+                        lang: s.lang.clone(),
+                        label: s.label.clone(),
+                        forced: false,
+                        s3_key: s.s3_key.clone(),
+                    })
+                    .collect();
+                applied += 1;
+            }
+        }
+    }
+    tracing::info!(
+        "Applied trailer backfill to {applied} items from {}",
+        backfill_path.display()
+    );
+}
+
 /// Loads a side file sitting next to enriched_400.json into a HashMap,
 /// tolerating a missing or unparsable file (logs and returns empty) - these
 /// backfills are all best-effort enhancements, never required to boot.
@@ -291,6 +356,7 @@ async fn main() {
     apply_episode_metadata_backfill(&mut cache.items, &data_path);
     apply_keywords_backfill(&mut cache.items, &data_path);
     apply_awards_backfill(&mut cache.items, &data_path);
+    apply_trailer_backfill(&mut cache.items, &data_path);
     let similar: HashMap<String, Vec<SimilarEntry>> =
         load_side_file(&data_path, "similar_backfill.json");
     let collection_parts: HashMap<String, CollectionParts> =
@@ -353,6 +419,11 @@ async fn main() {
         .route("/api/content/:id/torrent", get(get_torrent_file))
         .route("/api/content/:id/stream", get(get_stream_url))
         .route("/api/content/:id/subtitles/:track_id", get(get_subtitle_content))
+        .route("/api/content/:id/trailer-stream", get(get_trailer_stream_url))
+        .route(
+            "/api/content/:id/trailer-subtitles/:track_id",
+            get(get_trailer_subtitle_content),
+        )
         .route("/api/content/:id/progress", get(get_progress_handler).post(post_progress_handler))
         .route("/api/continue-watching", get(get_continue_watching))
         .route("/api/logout", post(logout))
@@ -1065,6 +1136,102 @@ async fn get_subtitle_content(
     }
 }
 
+// Same presigned-redirect shape as get_stream_url - no episode query, a
+// trailer is one file per item, not per-episode.
+async fn get_trailer_stream_url(
+    State(state): State<Arc<AppState>>,
+    Path(id): Path<String>,
+) -> impl IntoResponse {
+    let Some(s3) = &state.s3 else {
+        return (StatusCode::SERVICE_UNAVAILABLE, "video storage not configured").into_response();
+    };
+
+    let Some(item) = state.items.iter().find(|i| i.id == id) else {
+        return (StatusCode::NOT_FOUND, "content not found").into_response();
+    };
+
+    // 404, not 503 like get_stream_url's missing-config case - "no
+    // self-hosted trailer downloaded yet" is an expected, common state
+    // while download-trailers.js works through the catalog, not a config
+    // error. The frontend falls back to the YouTube iframe on a 404 here.
+    let Some(key) = &item.trailer_s3_key else {
+        return (StatusCode::NOT_FOUND, "no self-hosted trailer for this content").into_response();
+    };
+
+    let presign_config =
+        match aws_sdk_s3::presigning::PresigningConfig::expires_in(Duration::from_secs(4 * 3600)) {
+            Ok(c) => c,
+            Err(e) => {
+                tracing::error!("failed to build presigning config: {e}");
+                return (StatusCode::INTERNAL_SERVER_ERROR, "failed to build stream url")
+                    .into_response();
+            }
+        };
+
+    match s3
+        .client
+        .get_object()
+        .bucket(&s3.bucket)
+        .key(key)
+        .presigned(presign_config)
+        .await
+    {
+        Ok(presigned) => Redirect::temporary(presigned.uri()).into_response(),
+        Err(e) => {
+            tracing::error!("failed to presign trailer stream url: {e}");
+            (StatusCode::INTERNAL_SERVER_ERROR, "failed to build stream url").into_response()
+        }
+    }
+}
+
+// Same direct-proxy rationale as get_subtitle_content (CORS - the bucket has
+// no config for it, and these are tiny KB-sized files with no benefit to a
+// range-request-capable redirect).
+async fn get_trailer_subtitle_content(
+    State(state): State<Arc<AppState>>,
+    Path((id, track_id)): Path<(String, String)>,
+) -> impl IntoResponse {
+    let Some(s3) = &state.s3 else {
+        return (StatusCode::SERVICE_UNAVAILABLE, "video storage not configured").into_response();
+    };
+
+    let Some(item) = state.items.iter().find(|i| i.id == id) else {
+        return (StatusCode::NOT_FOUND, "content not found").into_response();
+    };
+
+    let Some(track) = item.trailer_subtitles.iter().find(|t| t.id == track_id) else {
+        return (StatusCode::NOT_FOUND, "trailer subtitle track not found").into_response();
+    };
+
+    let object = match s3
+        .client
+        .get_object()
+        .bucket(&s3.bucket)
+        .key(&track.s3_key)
+        .send()
+        .await
+    {
+        Ok(object) => object,
+        Err(e) => {
+            tracing::error!("failed to fetch trailer subtitle object: {e}");
+            return (StatusCode::INTERNAL_SERVER_ERROR, "failed to fetch subtitle").into_response();
+        }
+    };
+
+    match object.body.collect().await {
+        Ok(bytes) => (
+            StatusCode::OK,
+            [(header::CONTENT_TYPE, "text/vtt; charset=utf-8")],
+            bytes.into_bytes().to_vec(),
+        )
+            .into_response(),
+        Err(e) => {
+            tracing::error!("failed to read trailer subtitle body: {e}");
+            (StatusCode::INTERNAL_SERVER_ERROR, "failed to read subtitle").into_response()
+        }
+    }
+}
+
 #[derive(Serialize)]
 struct MeResponse {
     username: String,
@@ -1683,6 +1850,8 @@ mod backfill_tests {
             episodes: Vec::new(),
             keywords: Vec::new(),
             award_entries: Vec::new(),
+            trailer_s3_key: None,
+            trailer_subtitles: Vec::new(),
         }
     }
 

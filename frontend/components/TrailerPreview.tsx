@@ -1,18 +1,32 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import type { SubtitleTrack } from "@/lib/types";
+
+// Same 3-letter -> 2-letter mapping VideoPlayer.tsx uses for <track srcLang>
+// - trimmed to just what download-trailers.js ever actually requests
+// (en/pt), not the full catalog-wide language list.
+const BCP47: Record<string, string> = { eng: "en", por: "pt" };
 
 // Small click-to-expand trailer thumbnail instead of an always-embedded
 // iframe - a full-size trailer competes with the main video for attention
 // and pushes everything else down the page. Collapsed by default; opens a
 // modal on click.
 export function TrailerPreview({
+  id,
   trailerKey,
+  trailerS3Key,
+  trailerSubtitles = [],
   title,
+  posterUrl,
   className = "",
 }: {
+  id: string;
   trailerKey: string;
+  trailerS3Key?: string | null;
+  trailerSubtitles?: SubtitleTrack[];
   title: string;
+  posterUrl?: string | null;
   className?: string;
 }) {
   const [open, setOpen] = useState(false);
@@ -47,7 +61,7 @@ export function TrailerPreview({
         <span className="relative block aspect-video w-full">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={`https://img.youtube.com/vi/${trailerKey}/mqdefault.jpg`}
+            src={posterUrl || `https://img.youtube.com/vi/${trailerKey}/mqdefault.jpg`}
             alt=""
             className="h-full w-full object-cover opacity-80 transition-opacity group-hover:opacity-100"
           />
@@ -88,13 +102,31 @@ export function TrailerPreview({
               </button>
             </div>
             <div className="aspect-video w-full bg-black">
-              <iframe
-                className="h-full w-full"
-                src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1`}
-                title={`${title} trailer`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              {trailerS3Key ? (
+                // Self-hosted: a plain <video>, same as the main player -
+                // sidesteps YouTube's client-side regional licensing
+                // entirely, since this streams from our own bucket.
+                <video className="h-full w-full" controls autoPlay>
+                  <source src={`/api/trailer-stream/${id}`} type="video/mp4" />
+                  {trailerSubtitles.map((t) => (
+                    <track
+                      key={t.id}
+                      kind="subtitles"
+                      src={`/api/trailer-subtitles/${id}/${t.id}`}
+                      srcLang={BCP47[t.lang] ?? t.lang}
+                      label={t.label}
+                    />
+                  ))}
+                </video>
+              ) : (
+                <iframe
+                  className="h-full w-full"
+                  src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1`}
+                  title={`${title} trailer`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
             </div>
           </div>
         </div>

@@ -474,5 +474,7 @@ pub async fn enrich_one(
         episodes: Vec::new(),
         keywords: Vec::new(),
         award_entries: Vec::new(),
+        trailer_s3_key: None,
+        trailer_subtitles: Vec::new(),
     }
 }

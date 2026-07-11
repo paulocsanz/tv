@@ -28,6 +28,12 @@ export interface ContentItem {
   collection_id: number | null;
   collection_name: string | null;
   trailer_key: string | null;
+  // Self-hosted copy of the trailer, when download-trailers.js has gotten
+  // to this item - null falls back to the YouTube iframe (trailer_key
+  // above), which enforces regional licensing client-side and is
+  // unavailable in some countries for some trailers.
+  trailer_s3_key: string | null;
+  trailer_subtitles: SubtitleTrack[];
   enrichment_status: EnrichmentStatus;
   torrent_file: string | null;
   s3_key: string | null;

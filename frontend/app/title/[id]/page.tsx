@@ -132,7 +132,15 @@ export default async function TitlePage({
             </p>
           )}
           {item.trailer_key && (
-            <TrailerPreview trailerKey={item.trailer_key} title={item.title} className="w-full" />
+            <TrailerPreview
+              id={item.id}
+              trailerKey={item.trailer_key}
+              trailerS3Key={item.trailer_s3_key}
+              trailerSubtitles={item.trailer_subtitles ?? []}
+              title={item.title}
+              posterUrl={item.backdrop_url ?? item.poster_url}
+              className="w-full"
+            />
           )}
           {/* Awards + keywords live in the sidebar rather than stacked below
               the video - the sidebar already has empty space next to the

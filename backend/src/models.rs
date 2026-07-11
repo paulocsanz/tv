@@ -101,6 +101,21 @@ pub struct EnrichedItem {
     /// generate-awards-backfill.js.
     #[serde(default)]
     pub award_entries: Vec<AwardEntry>,
+    /// Self-hosted copy of the trailer (see download-trailers.js), when one
+    /// has been downloaded - lets the frontend play it directly instead of
+    /// embedding YouTube, which enforces regional licensing client-side and
+    /// is unavailable in some countries for some trailers. `None` until the
+    /// backfill catches up; the frontend falls back to the YouTube iframe
+    /// (via `trailer_key` above) in that case.
+    #[serde(default)]
+    pub trailer_s3_key: Option<String>,
+    /// Captions for the self-hosted trailer, in whatever languages YouTube
+    /// had natively (not machine-translated). Reuses `SubtitleTrack` even
+    /// though `episode` doesn't apply here (always 0, the same sentinel
+    /// movies already use for "no episode") rather than a near-identical
+    /// parallel struct for one unused field.
+    #[serde(default)]
+    pub trailer_subtitles: Vec<SubtitleTrack>,
 }
 
 /// One nomination or win at an awards event/festival.
