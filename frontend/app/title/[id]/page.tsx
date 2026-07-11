@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getContentById, getMeOrNull, getProgress, getRelatedContent, getSimilarContent } from "@/lib/api";
@@ -7,6 +8,7 @@ import { RelatedTitleCard } from "@/components/RelatedTitleCard";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { TrailerPreview } from "@/components/TrailerPreview";
 import { Synopsis } from "@/components/Synopsis";
+import { AwardsCard } from "@/components/AwardsCard";
 
 export async function generateMetadata({
   params,
@@ -46,10 +48,10 @@ export default async function TitlePage({
           wider screens instead of everything stacking one block per row. */}
       <div className="flex flex-col gap-6 xl:flex-row xl:flex-wrap xl:items-start">
         <div className="min-w-0 flex-1">
-          {/* The player itself is resizable (drag its right/bottom-right
-              edge) - flex-wrap above means the info sidebar drops below
-              instead of overlapping if it's resized wider than the space
-              they'd normally share. */}
+          {/* The player itself is resizable (drag its top-right handle) -
+              flex-wrap above means the info sidebar drops below instead of
+              overlapping if it's resized wider than the space they'd
+              normally share. */}
           {hasStream ? (
             <VideoPlayer
               id={item.id}
@@ -127,16 +129,28 @@ export default async function TitlePage({
           {item.trailer_key && (
             <TrailerPreview trailerKey={item.trailer_key} title={item.title} className="w-full" />
           )}
+          {/* Awards + keywords live in the sidebar rather than stacked below
+              the video - the sidebar already has empty space next to the
+              (usually taller) player, so this uses it instead of adding
+              more vertical scroll under the fold. */}
+          <AwardsCard awards={item.awards} awardEntries={item.award_entries ?? []} />
+          {item.keywords.length > 0 && (
+            <div className="flex flex-wrap gap-1.5">
+              {item.keywords.slice(0, 8).map((keyword) => (
+                <Link
+                  key={keyword}
+                  href={`/browse?keyword=${encodeURIComponent(keyword)}`}
+                  className="rounded-full bg-white/5 px-2.5 py-1 text-xs text-zinc-400 ring-1 ring-inset ring-white/10 hover:bg-white/10 hover:text-zinc-200"
+                >
+                  {keyword}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
-      <Synopsis
-        plot={item.plot}
-        actors={item.actors}
-        awards={item.awards}
-        awardEntries={item.award_entries ?? []}
-        keywords={item.keywords}
-      />
+      <Synopsis plot={item.plot} actors={item.actors} />
 
       {related.length > 0 && (
         <div className="mt-10">

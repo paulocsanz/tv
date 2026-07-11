@@ -47,7 +47,7 @@ export function SearchBox() {
         }
       }}
       placeholder="Search titles, directors, actors…"
-      className="w-full rounded-full bg-white/10 px-4 py-1.5 text-sm text-white placeholder-zinc-500 outline-none ring-1 ring-inset ring-white/10 focus:ring-white/30"
+      className="w-full rounded-md bg-white/10 px-4 py-1.5 text-sm text-white placeholder-zinc-500 outline-none ring-1 ring-inset ring-white/10 focus:ring-white/30"
     />
   );
 }

@@ -437,6 +437,47 @@ export function VideoPlayer({
   const hideControlsTimer = useRef<number | null>(null);
   const [seeked, setSeeked] = useState(false);
 
+  // Manual resize (drag the corner handle). Not CSS `resize`: this element
+  // is a `flex-1` flex item (fills whatever space isn't taken by the
+  // episode list/sidebar) - `flex-1`'s flex-basis:0% means the flex
+  // algorithm recomputes its width on every layout pass from flex-grow,
+  // silently overwriting whatever width native `resize` sets. Once the user
+  // actually drags, we detach from flex-grow entirely (inline width + `flex:
+  // none`) so nothing fights the size they chose; height still just follows
+  // from `aspect-video` on the <video> itself, so it can't end up stretched.
+  const [customWidth, setCustomWidth] = useState<number | null>(null);
+  const resizeStart = useRef<{ pointerX: number; width: number } | null>(null);
+  // The flex-computed width the very first time the user grabs the handle -
+  // the ceiling for all future drags. The sidebar next to this player is a
+  // separate flex item in a *different* (page-level) flex row that has no
+  // way to know this element was forced wider - growing past this player's
+  // own natural allocation doesn't push the sidebar aside, it just draws on
+  // top of it. Capping growth here avoids that rather than trying to thread
+  // resize state through the server-component page layout above it.
+  const naturalWidth = useRef<number | null>(null);
+
+  function handleResizePointerDown(e: React.PointerEvent) {
+    const el = containerRef.current;
+    if (!el) return;
+    const currentWidth = el.getBoundingClientRect().width;
+    if (naturalWidth.current === null) naturalWidth.current = currentWidth;
+    resizeStart.current = { pointerX: e.clientX, width: currentWidth };
+    e.currentTarget.setPointerCapture(e.pointerId);
+    e.preventDefault();
+  }
+
+  function handleResizePointerMove(e: React.PointerEvent) {
+    const start = resizeStart.current;
+    if (!start) return;
+    const max = naturalWidth.current ?? 1600;
+    const next = Math.min(max, Math.max(240, start.width + (e.clientX - start.pointerX)));
+    setCustomWidth(next);
+  }
+
+  function handleResizePointerUp() {
+    resizeStart.current = null;
+  }
+
   // Reset to "loading" whenever the source changes, without an effect (which
   // would run after a stale-status frame paints first) - this is React's
   // documented pattern for adjusting state during render.
@@ -656,12 +697,10 @@ export function VideoPlayer({
       <div
         ref={containerRef}
         onMouseMove={handleActivity}
-        // resize-x: drag the right/bottom-right edge to make the player
-        // bigger or smaller - height follows automatically via `aspect-video`
-        // on the <video> itself, so it can never end up letterboxed/stretched
-        // no matter what width the user drags to. min/max keep it from being
-        // shrunk to nothing or dragged wider than makes sense.
-        className="group relative min-w-[240px] max-w-[1600px] resize-x overflow-hidden rounded-2xl bg-black shadow-2xl shadow-black/50 ring-1 ring-white/10 lg:min-w-[320px] lg:flex-1"
+        style={customWidth ? { width: customWidth, flex: "none" } : undefined}
+        className={`group relative min-w-[240px] max-w-[1600px] overflow-hidden rounded-2xl bg-black shadow-2xl shadow-black/50 ring-1 ring-white/10 ${
+          customWidth ? "" : "lg:min-w-[320px] lg:flex-1"
+        }`}
       >
         <video
           ref={videoRef}
@@ -869,6 +908,25 @@ export function VideoPlayer({
             </div>
           </div>
         )}
+
+        {/* Top-right (not bottom-right, which the control bar's fullscreen
+            button already occupies) drag handle - always present, not just
+            on hover, so it reads as an affordance rather than something to
+            stumble on. */}
+        <div
+          onPointerDown={handleResizePointerDown}
+          onPointerMove={handleResizePointerMove}
+          onPointerUp={handleResizePointerUp}
+          onPointerCancel={handleResizePointerUp}
+          role="separator"
+          aria-label="Resize player"
+          aria-orientation="vertical"
+          className="absolute right-1.5 top-1.5 z-10 hidden h-7 w-7 cursor-ew-resize touch-none items-center justify-center rounded-full bg-black/40 text-white/50 backdrop-blur-sm transition-colors hover:bg-black/60 hover:text-white/90 lg:flex"
+        >
+          <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round">
+            <path d="M10 3L3 10M13 6L6 13" />
+          </svg>
+        </div>
       </div>
 
       {hasEpisodes && (
