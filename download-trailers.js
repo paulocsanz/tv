@@ -230,18 +230,36 @@ async function main() {
 
   let ok = 0;
   let failed = 0;
-  for (let i = 0; i < pending.length; i++) {
-    const item = pending[i];
-    process.stdout.write(`[${i + 1}/${pending.length}] `);
-    const success = await processOne(item, backfill);
-    if (success) ok++;
-    else failed++;
+  let completed = 0;
+  let nextIndex = 0;
 
-    if (!DRY_RUN && (i + 1) % 10 === 0) saveBackfill(backfill);
-    // Small delay between downloads - not hammering YouTube back-to-back
-    // across hundreds of requests.
-    await sleep(1500);
+  // Bounded worker pool, not one-item-at-a-time - S3 upload throughput and
+  // yt-dlp/YouTube are two different bottlenecks with two different safe
+  // concurrency levels. This bucket measurably tops out per-TCP-connection
+  // (see uploadToS3's comment in download-picked-torrents.js), so several
+  // items in flight helps there. YouTube's caption endpoint specifically
+  // rate-limits (confirmed: HTTP 429 even sequentially) - kept
+  // conservative (3 workers, 2s stagger per worker, i.e. an item starts
+  // roughly every ~0.7s rather than every ~1.5s under the old sequential
+  // loop) rather than maximizing throughput and risking a harder block.
+  const PARALLELISM = 3;
+
+  async function worker() {
+    while (nextIndex < pending.length) {
+      const myIndex = nextIndex++;
+      const item = pending[myIndex];
+      process.stdout.write(`[${myIndex + 1}/${pending.length}] `);
+      const success = await processOne(item, backfill);
+      completed++;
+      if (success) ok++;
+      else failed++;
+
+      if (!DRY_RUN && completed % 10 === 0) saveBackfill(backfill);
+      await sleep(2000);
+    }
   }
+
+  await Promise.all(Array.from({ length: PARALLELISM }, () => worker()));
   if (!DRY_RUN) saveBackfill(backfill);
 
   console.log(`\nDone. OK: ${ok} | Failed: ${failed}${DRY_RUN ? " | (dry run, nothing uploaded)" : ""}`);
