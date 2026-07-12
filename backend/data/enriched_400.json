@@ -240,8 +240,20 @@
       "trailer_key": "KKRBAFlN5ww",
       "enrichment_status": "ok",
       "torrent_file": "Band_of_Brothers_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/band-of-brothers-2001-tv/01 Band Of Brothers We Stand Alone Together - History 2001 Eng Subs 720p [H264-mp4].mp4",
+      "s3_keys": [
+        "videos/band-of-brothers-2001-tv/01 Band Of Brothers We Stand Alone Together - History 2001 Eng Subs 720p [H264-mp4].mp4",
+        "videos/band-of-brothers-2001-tv/02 Band Of Brothers Episode 01 Currahee - History 2001 Eng Subs 720p [H264-mp4].mp4",
+        "videos/band-of-brothers-2001-tv/03 Band Of Brothers Episode 02 Day of Days - History 2001 Eng Subs 720p [H264-mp4].mp4",
+        "videos/band-of-brothers-2001-tv/05 Band Of Brothers Episode 04 Replacements - History 2001 Eng Subs 720p [H264-mp4].mp4",
+        "videos/band-of-brothers-2001-tv/04 Band Of Brothers Episode 03 Carentan - History 2001 Eng Subs 720p [H264-mp4].mp4",
+        "videos/band-of-brothers-2001-tv/06 Band Of Brothers Episode 05 Crossroads - History 2001 Eng Subs 720p [H264-mp4].mp4",
+        "videos/band-of-brothers-2001-tv/07 Band Of Brothers Episode 06 Bastogne - History 2001 Eng Subs 720p [H264-mp4].mp4",
+        "videos/band-of-brothers-2001-tv/09 Band Of Brothers Episode 08 The Last Patrol - History 2001 Eng Subs 720p [H264-mp4].mp4",
+        "videos/band-of-brothers-2001-tv/10 Band Of Brothers Episode 09 Why We Fight - History 2001 Eng Subs 720p [H264-mp4].mp4",
+        "videos/band-of-brothers-2001-tv/08 Band Of Brothers Episode 07 The Breaking Point - History 2001 Eng Subs 720p [H264-mp4].mp4",
+        "videos/band-of-brothers-2001-tv/11 Band Of Brothers Episode 10 Points - History 2001 Eng Subs 720p [H264-mp4].mp4"
+      ],
       "subtitles": [
         {
           "episode": 7,
@@ -250,6 +262,86 @@
           "label": "English",
           "forced": false,
           "s3_key": "videos/band-of-brothers-2001-tv/Band Of Brothers S01E06 720p BluRay HEVC x265 BONE.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/band-of-brothers-2001-tv/02 Band Of Brothers Episode 01 Currahee - History 2001 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/band-of-brothers-2001-tv/03 Band Of Brothers Episode 02 Day of Days - History 2001 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/band-of-brothers-2001-tv/05 Band Of Brothers Episode 04 Replacements - History 2001 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/band-of-brothers-2001-tv/04 Band Of Brothers Episode 03 Carentan - History 2001 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/band-of-brothers-2001-tv/06 Band Of Brothers Episode 05 Crossroads - History 2001 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/band-of-brothers-2001-tv/07 Band Of Brothers Episode 06 Bastogne - History 2001 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/band-of-brothers-2001-tv/09 Band Of Brothers Episode 08 The Last Patrol - History 2001 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/band-of-brothers-2001-tv/10 Band Of Brothers Episode 09 Why We Fight - History 2001 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/band-of-brothers-2001-tv/08 Band Of Brothers Episode 07 The Breaking Point - History 2001 Eng Subs 720p [H264-mp4].eng.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/band-of-brothers-2001-tv/11 Band Of Brothers Episode 10 Points - History 2001 Eng Subs 720p [H264-mp4].eng.vtt"
         }
       ],
       "episodes": [],
@@ -273,7 +365,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Band of Brothers Complete (1080p Bluray x265 HEVC AAC 5.1 HQ Joy",
@@ -980,7 +1072,7 @@
           "contentScore": 200
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 2
     },
     {
       "id": "rick-and-morty-2013-tv",
@@ -3305,7 +3397,6 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "When_They_See_Us_x",
-      "s3_key": null,
       "s3_keys": [],
       "subtitles": [],
       "episodes": [],
@@ -3835,7 +3926,6 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "The_Six_Wives_of_Henry_VIII_x",
-      "s3_key": null,
       "s3_keys": [],
       "subtitles": [],
       "episodes": [],
@@ -5176,7 +5266,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "curb-your-enthusiasm-2000-tv",
@@ -5439,8 +5529,19 @@
       "trailer_key": "HN4oydykJFc",
       "enrichment_status": "ok",
       "torrent_file": "Better_Call_Saul_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/better-call-saul-2015-tv/Better Call Saul S03E01 Mabel.mp4",
+      "s3_keys": [
+        "videos/better-call-saul-2015-tv/Better Call Saul S03E01 Mabel.mp4",
+        "videos/better-call-saul-2015-tv/Better Call Saul S03E02 Witness.mp4",
+        "videos/better-call-saul-2015-tv/Better Call Saul S03E03 Sunk Costs.mp4",
+        "videos/better-call-saul-2015-tv/Better Call Saul S03E04 Sabrosito.mp4",
+        "videos/better-call-saul-2015-tv/Better Call Saul S03E05 Chicanery.mp4",
+        "videos/better-call-saul-2015-tv/Better Call Saul S03E06 Off Brand.mp4",
+        "videos/better-call-saul-2015-tv/Better Call Saul S03E07 Expenses.mp4",
+        "videos/better-call-saul-2015-tv/Better Call Saul S03E08 Slip.mp4",
+        "videos/better-call-saul-2015-tv/Better Call Saul S03E09 Fall.mp4",
+        "videos/better-call-saul-2015-tv/Better Call Saul S03E10 Lantern.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -6444,8 +6545,15 @@
       "trailer_key": "yjq4GU3R8VE",
       "enrichment_status": "ok",
       "torrent_file": "Scream_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/skam-2015-tv/Skam.S02E04.mp4",
+        "videos/skam-2015-tv/Skam.S02E03.mp4",
+        "videos/skam-2015-tv/Skam.S02E06.mp4",
+        "videos/skam-2015-tv/Skam.S02E05.mp4",
+        "videos/skam-2015-tv/Skam.S02E07.mp4",
+        "videos/skam-2015-tv/Skam.S02E08.mp4",
+        "videos/skam-2015-tv/Skam.S02E09.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -6582,50 +6690,6 @@
       "current_torrent_index": 1
     },
     {
-      "id": "trollhunters-tales-of-arcadia-2016-tv",
-      "title": "Trollhunters: Tales of Arcadia",
-      "original_title": null,
-      "year": 2016,
-      "content_type": "tv",
-      "origin": "International",
-      "director": null,
-      "creator": "Guillermo del Toro",
-      "curated_imdb_rating": 8.7,
-      "poster_url": "https://m.media-amazon.com/images/M/MV5BZTU1YTQwNDctOTlhZC00NDg3LTg2ZWYtZjgzNWZjOTUzM2VjXkEyXkFqcGc@._V1_SX300.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/oyi9AeavhrKTbISf4tZ83S7xp29.jpg",
-      "plot": "An ordinary boy finds a magic amulet that chooses him to be a Trollhunter, a guardian that defends the world of humans and the secret world of trolls.",
-      "genres": [
-        "Animation",
-        "Action",
-        "Adventure"
-      ],
-      "runtime": "23 min",
-      "actors": [
-        "Charlie Saxton",
-        "Lexi Medrano",
-        "Anton Yelchin"
-      ],
-      "awards": "18 wins & 26 nominations total",
-      "rated": "TV-Y7",
-      "imdb_rating": 8.4,
-      "imdb_votes": "20,861",
-      "rotten_tomatoes": null,
-      "metacritic": null,
-      "imdb_id": "tt1734135",
-      "tmdb_id": 68267,
-      "collection_id": null,
-      "collection_name": null,
-      "trailer_key": "J2oNgZlbSKI",
-      "enrichment_status": "ok",
-      "torrent_file": "Trollhunters:_Tales_of_Arcadia_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
-      "episodes": [],
-      "keywords": [],
-      "award_entries": []
-    },
-    {
       "id": "upstairs-downstairs-1971-tv",
       "title": "Upstairs, Downstairs",
       "original_title": null,
@@ -6708,7 +6772,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 1
     },
     {
       "id": "six-feet-under-2001-tv",
@@ -8584,9 +8648,452 @@
       "trailer_key": "xEQP4VVuyrY",
       "enrichment_status": "ok",
       "torrent_file": "SeaChange_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/severance-2022-tv/Severance.S01E01.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+      "s3_keys": [
+        "videos/severance-2022-tv/Severance.S01E01.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/severance-2022-tv/Severance.S01E02.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/severance-2022-tv/Severance.S01E05.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/severance-2022-tv/Severance.S01E04.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/severance-2022-tv/Severance.S01E03.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/severance-2022-tv/Severance.S01E06.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/severance-2022-tv/Severance.S01E08.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/severance-2022-tv/Severance.S01E09.720p.ATVP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/severance-2022-tv/Severance.S01E07.720p.ATVP.WEBRip.x264-GalaxyTV.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E01.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E01.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E01.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E01.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E01.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E01.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E02.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E02.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E02.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E02.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E02.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E02.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E05.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E05.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E05.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E05.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E05.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E05.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E04.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E04.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E04.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E04.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E04.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E04.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E03.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E03.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E03.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E03.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E03.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E03.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E06.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E06.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E06.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E06.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E06.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E06.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E08.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E08.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E08.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E08.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E08.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E08.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E09.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E09.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E09.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E09.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E09.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E09.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E07.720p.ATVP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E07.720p.ATVP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E07.720p.ATVP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E07.720p.ATVP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E07.720p.ATVP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/severance-2022-tv/Severance.S01E07.720p.ATVP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -9879,7 +10386,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "The Prisoner 1967 Season 1 Complete 1080p WEB-DL x264 [i_c]",
@@ -9984,7 +10491,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "The Honeymooners 2005 1080p WEB h264-NoRBiT",
@@ -11550,88 +12057,6 @@
       "episodes": [],
       "keywords": [],
       "award_entries": []
-    },
-    {
-      "id": "city-of-men-2002-tv",
-      "title": "City of Men",
-      "original_title": "Cidade dos Homens",
-      "year": 2002,
-      "content_type": "tv",
-      "origin": "Brazilian",
-      "director": null,
-      "creator": "Kátia Lund, Fernando Meirelles",
-      "curated_imdb_rating": 8.5,
-      "poster_url": "https://m.media-amazon.com/images/M/MV5BYzBmOTVkNmYtZTZhNy00ZGFiLWIxOTItMGE1MWYzMTZkMTUxXkEyXkFqcGc@._V1_SX300.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/eiLAEO2XSCwyDL7yOzVieMxrvhy.jpg",
-      "plot": "A realistic yet humorous look at the lives of Laranjinha and Acerola, two friends who live adventurous and dangerous lives in a Rio de Janeiro slum.",
-      "genres": [
-        "Comedy",
-        "Crime",
-        "Drama"
-      ],
-      "runtime": "30 min",
-      "actors": [
-        "Darlan Cunha",
-        "Douglas Silva",
-        "Camila Monteiro"
-      ],
-      "awards": "3 wins & 3 nominations",
-      "rated": null,
-      "imdb_rating": 8.2,
-      "imdb_votes": "3,018",
-      "rotten_tomatoes": null,
-      "metacritic": null,
-      "imdb_id": "tt0364801",
-      "tmdb_id": 3317,
-      "collection_id": null,
-      "collection_name": null,
-      "trailer_key": null,
-      "enrichment_status": "partial",
-      "torrent_file": "City_of_Men_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
-      "episodes": [],
-      "keywords": [],
-      "award_entries": [],
-      "torrent_options_720p": [
-        {
-          "title": "Two and a Half Men S05E04 City of Great Racks 720p BluRay FLAC2 0 H 264-NTb",
-          "magnet": "magnet:?xt=urn:btih:A6EAFA8664D2475DD34E06684AD0F12FF71B93B0&dn=Two%20and%20a%20Half%20Men%20S05E04%20City%20of%20Great%20Racks%20720p%20BluRay%20FLAC2%200%20H%20264-NTb&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 14,
-          "size": "1.0 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 10
-        }
-      ],
-      "current_torrent_index_720p": 0,
-      "torrent_options": [
-        {
-          "title": "Dora And The Lost City Of Gold 2019 1080p BluRay-Ben The-Men",
-          "magnet": "magnet:?xt=urn:btih:0A08117E91D4F21C6D8F3DE4EC3C03DF64CEF461&dn=Dora%20And%20The%20Lost%20City%20Of%20Gold%202019%201080p%20BluRay-Ben%20The-Men&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 5,
-          "size": "7.5 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 800
-        },
-        {
-          "title": "Two and a Half Men S05E04 City of Great Racks BluRay 1080p FLAC 2 0 AVC REM",
-          "magnet": "magnet:?xt=urn:btih:C5B16F7898594D9C00E6B0299AD57EA4668C2CA1&dn=Two%20and%20a%20Half%20Men%20S05E04%20City%20of%20Great%20Racks%20BluRay%201080p%20FLAC%202%200%20AVC%20REM&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 7,
-          "size": "3.6 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 10
-        },
-        {
-          "title": "Two and a Half Men S05E04 City of Great Racks 1080p BluRay FLAC2 0 H 264-NT",
-          "magnet": "magnet:?xt=urn:btih:E3BCCBBD8D696AD6F7004BA4F4592A6F2A3C9368&dn=Two%20and%20a%20Half%20Men%20S05E04%20City%20of%20Great%20Racks%201080p%20BluRay%20FLAC2%200%20H%20264-NT&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
-          "seeders": 7,
-          "size": "2.2 GB",
-          "provider": "ThePirateBay",
-          "contentScore": 10
-        }
-      ],
-      "current_torrent_index": 0
     },
     {
       "id": "entourage-2004-tv",
@@ -16981,49 +17406,6 @@
       "collection_id": null,
       "collection_name": null,
       "trailer_key": "zdqCqDSTVNI",
-      "enrichment_status": "ok",
-      "torrent_file": null,
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
-      "episodes": [],
-      "keywords": [],
-      "award_entries": []
-    },
-    {
-      "id": "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-1964-movie",
-      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
-      "original_title": null,
-      "year": 1964,
-      "content_type": "movie",
-      "origin": "International",
-      "director": "Stanley Kubrick",
-      "creator": null,
-      "curated_imdb_rating": 8.118,
-      "poster_url": "https://m.media-amazon.com/images/M/MV5BMjFjYzBlOTktMTI2OS00ZWVhLTgxMDUtNzAwODY2NmI3YTAzXkEyXkFqcGc@._V1_SX300.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/7i0L2ee4Iy0aXV6vR5u1ZmblOrx.jpg",
-      "plot": "A mentally unstable American general orders a hydrogen bomb attack on the Soviet Union, triggering a path to global nuclear holocaust that a war room full of politicians and generals frantically tries to stop.",
-      "genres": [
-        "Comedy",
-        "War"
-      ],
-      "runtime": "95 min",
-      "actors": [
-        "Peter Sellers",
-        "George C. Scott",
-        "Sterling Hayden"
-      ],
-      "awards": "Nominated for 4 Oscars. 14 wins & 11 nominations total",
-      "rated": "PG",
-      "imdb_rating": 8.3,
-      "imdb_votes": "549,187",
-      "rotten_tomatoes": "98%",
-      "metacritic": "97/100",
-      "imdb_id": "tt0057012",
-      "tmdb_id": 935,
-      "collection_id": null,
-      "collection_name": null,
-      "trailer_key": "XjLsIWZdWmc",
       "enrichment_status": "ok",
       "torrent_file": null,
       "s3_key": null,
@@ -29771,9 +30153,44 @@
       "trailer_key": "8yyzNQfaQR8",
       "enrichment_status": "ok",
       "torrent_file": "3%_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/3-2016-tv/Obsession.2026.1080p.AMZN.WEB-DL[Ben The Men].mp4",
+      "s3_keys": [
+        "videos/3-2016-tv/Obsession.2026.1080p.AMZN.WEB-DL[Ben The Men].mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/3-2016-tv/Obsession.2026.1080p.AMZN.WEB-DL[Ben The Men].eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/3-2016-tv/Obsession.2026.1080p.AMZN.WEB-DL[Ben The Men].spa.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/3-2016-tv/Obsession.2026.1080p.AMZN.WEB-DL[Ben The Men].por.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/3-2016-tv/Obsession.2026.1080p.AMZN.WEB-DL[Ben The Men].por-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -37557,60 +37974,6 @@
       "award_entries": []
     },
     {
-      "id": "coisa-mais-linda-2019-tv",
-      "title": "Coisa Mais Linda",
-      "original_title": "Coisa Mais Linda",
-      "year": 2019,
-      "content_type": "tv",
-      "origin": "Brazilian",
-      "director": null,
-      "creator": "Giuliano Cedroni, Heather Roth",
-      "curated_imdb_rating": 7.1,
-      "poster_url": "https://m.media-amazon.com/images/M/MV5BY2EwMDAwZTgtZmUwZC00YmU5LTgzNjAtODIwZjc4M2E1YTRmXkEyXkFqcGc@._V1_SX300.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/iASz7AOL3GzbTjOBJOsWzONBhaB.jpg",
-      "plot": "After her husband's disappearance, Maria Luiza opens a Bossa Nova club in defiance of her normally conservative demeanor.",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "runtime": "2 min",
-      "actors": [
-        "Maria Casadevall",
-        "Pathy Dejesus",
-        "Mel Lisboa"
-      ],
-      "awards": "1 win",
-      "rated": "TV-MA",
-      "imdb_rating": 7.8,
-      "imdb_votes": "3,955",
-      "rotten_tomatoes": null,
-      "metacritic": null,
-      "imdb_id": "tt8001788",
-      "tmdb_id": 86943,
-      "collection_id": null,
-      "collection_name": null,
-      "trailer_key": "48frEliYyVM",
-      "enrichment_status": "ok",
-      "torrent_file": "Coisa_Mais_Linda_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
-      "episodes": [],
-      "keywords": [],
-      "award_entries": [],
-      "torrent_options": [
-        {
-          "title": "Coisa Mais Linda S01E06 MULTi 1080p WEB x264-CARAPiLS",
-          "magnet": "magnet:?xt=urn:btih:59F261166B19C9159FB84C2EED7259A9106E74CF&dn=Coisa+Mais+Linda+S01E06+MULTi+1080p+WEB+x264-CARAPiLS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2740%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2730%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2770%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2740%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2730%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2770%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2720%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.port443.xyz%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2710%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fthetracker.org%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.justseed.it%3A1337%2Fannounce&tr=udp%3A%2F%2Fipv6.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451&tr=udp%3A%2F%2Fbt.xxx-tracker.com%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.ololosh.space%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dump.cl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker-udp.gbitt.info%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker01-msk-virt.corbina.net%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.free-tracker.ga%3A6969%2Fannounce&tr=udp%3A%2F%2Fns-1.x-fins.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fleet-tracker.moe%3A1337%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.open-internet.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Fdenis.stalker.upeer.me%3A6969%2Fannounce",
-          "seeders": 5,
-          "size": "1.35 GB",
-          "provider": "Limetorrents",
-          "contentScore": 10
-        }
-      ],
-      "current_torrent_index": 0
-    },
-    {
       "id": "the-patience-stone-2012-movie",
       "title": "The Patience Stone",
       "original_title": "Syngué Sabour - Pierre de patience",
@@ -37892,9 +38255,101 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Invisible_City_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E02.720p.PCOK.WEBRip.x264-GalaxyTV.mp4",
+      "s3_keys": [
+        "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E02.720p.PCOK.WEBRip.x264-GalaxyTV.mp4",
+        "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E01.720p.PCOK.WEBRip.x264-GalaxyTV.mp4",
+        "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E03.720p.PCOK.WEBRip.x264-GalaxyTV.mp4",
+        "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E04.720p.PCOK.WEBRip.x264-GalaxyTV.mp4",
+        "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E05.720p.PCOK.WEBRip.x264-GalaxyTV.mp4",
+        "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E06.720p.PCOK.WEBRip.x264-GalaxyTV.mp4",
+        "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E07.720p.PCOK.WEBRip.x264-GalaxyTV.mp4",
+        "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E09.720p.PCOK.WEBRip.x264-GalaxyTV.mp4",
+        "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E08.720p.PCOK.WEBRip.x264-GalaxyTV.mp4",
+        "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E10.720p.PCOK.WEBRip.x264-GalaxyTV.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E02.720p.PCOK.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E01.720p.PCOK.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E03.720p.PCOK.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E04.720p.PCOK.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E05.720p.PCOK.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E06.720p.PCOK.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E07.720p.PCOK.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E09.720p.PCOK.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E08.720p.PCOK.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invisible-city-2021-tv/Abominable.and.the.Invisible.City.S02E10.720p.PCOK.WEBRip.x264-GalaxyTV.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -38212,49 +38667,6 @@
         }
       ],
       "current_torrent_index": 0
-    },
-    {
-      "id": "rancho-fundo-2024-tv",
-      "title": "Rancho Fundo",
-      "original_title": "No Rancho Fundo",
-      "year": 2024,
-      "content_type": "tv",
-      "origin": "Brazilian",
-      "director": null,
-      "creator": "Mário Teixeira",
-      "curated_imdb_rating": 7.1,
-      "poster_url": "https://m.media-amazon.com/images/M/MV5BOTIwMDliMjQtNjFjNS00Y2M5LWJkMzItM2M0NmUwZTg5NWJiXkEyXkFqcGc@._V1_SX300.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/9hJqDmWGZLUCZHl0FulvkI6f6qz.jpg",
-      "plot": "Quinota é do tipo que acredita no amor a primeira vista, ainda que passe por uma grande decepção: apesar de se comprometer com a união, Marcelo não quer saber de casamento, abandona a noiva e foge para a cidade grande.",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "runtime": null,
-      "actors": [
-        "Luisa Arraes",
-        "Andrea Beltrão",
-        "Eduardo Moscovis"
-      ],
-      "awards": "1 nomination",
-      "rated": null,
-      "imdb_rating": null,
-      "imdb_votes": "26",
-      "rotten_tomatoes": null,
-      "metacritic": null,
-      "imdb_id": "tt29893969",
-      "tmdb_id": 237480,
-      "collection_id": null,
-      "collection_name": null,
-      "trailer_key": null,
-      "enrichment_status": "partial",
-      "torrent_file": "Rancho_Fundo_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
-      "episodes": [],
-      "keywords": [],
-      "award_entries": []
     },
     {
       "id": "passione-2010-tv",
@@ -50493,8 +50905,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Popstar_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/popstar-2002-tv/Popstar.Never.Stop.Never.Stopping.2016.720p.WEBRip.x264.AAC-ETRG.mp4",
+      "s3_keys": [
+        "videos/popstar-2002-tv/Popstar.Never.Stop.Never.Stopping.2016.720p.WEBRip.x264.AAC-ETRG.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -52995,8 +53409,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "S.O.S._Women_to_the_Sea_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/s-o-s-women-to-the-sea-2014-movie/S.O.S..Women.To.The.Sea.2014.720p.WEBRip.x264.AAC-[YTS.MX].mp4",
+      "s3_keys": [
+        "videos/s-o-s-women-to-the-sea-2014-movie/S.O.S..Women.To.The.Sea.2014.720p.WEBRip.x264.AAC-[YTS.MX].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -53711,7 +54127,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 2
     },
     {
       "id": "robert-the-bruce-2019-movie",
