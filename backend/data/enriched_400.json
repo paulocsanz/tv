@@ -10209,7 +10209,48 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "A Dog's Will 2000 720p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:d79dd45f3354530852ee754a7bbad31777ee56af&dn=A%20Dog's%20Will%202000%20720p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 9,
+          "size": "942.97 MB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "O Auto da Compadecida 2000 (DVDRip) Acesse o ORIGINAL WWW.BLUDV.TV 720P",
+          "magnet": "magnet:?xt=urn:btih:438ad83956a3c44a26bdda4aee228c4aa14a1764&dn=O%20Auto%20da%20Compadecida%202000%20(DVDRip)%20Acesse%20o%20ORIGINAL%20WWW.BLUDV.TV%20720P&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "6.8 GB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "O Auto da Compadecida 2000 (720p) WWW.LAPUMiAFiLMES.COM",
+          "magnet": "magnet:?xt=urn:btih:4299faf9cf5e223796c3b23f98e9647538f59acd&dn=O%20Auto%20da%20Compadecida%202000%20(720p)%20WWW.LAPUMiAFiLMES.COM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.05 GB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "O Auto da Compadecida 2000 (x265) Acesse o ORIGINAL WWW.BLUDV.TV 720P",
+          "magnet": "magnet:?xt=urn:btih:b71926031dea70bd81e9e1b1e29faafc99d97bfe&dn=O%20Auto%20da%20Compadecida%202000%20(x265)%20Acesse%20o%20ORIGINAL%20WWW.BLUDV.TV%20720P&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.42 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "O Auto da Compadecida Remasterizado 2000 BluRay.1080p.Remux.H264.DTS-HD.5.1-lend",
+          "magnet": "magnet:?xt=urn:btih:3049fbb30c46d6dcaf1b5eb6290469a3928c654c&dn=O%20Auto%20da%20Compadecida%20Remasterizado%202000%20BluRay.1080p.Remux.H264.DTS-HD.5.1-lend&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 7,
+          "size": "23.26 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "the-green-mile-1999-movie",
@@ -10823,7 +10864,76 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "City of God 2002 720p BluRay",
+          "magnet": "magnet:?xt=urn:btih:ed567d8c5aac0b417de9aeceedd3ad76c32f1c31&dn=City%20of%20God%202002%20720p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 28,
+          "size": "1.07 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "City.Of.God.2002.720p.Bluray.x264.anoXmous",
+          "magnet": "magnet:?xt=urn:btih:361db8f0516f48c86c1fee8d02fd0ca97a4abc1f&dn=City.Of.God.2002.720p.Bluray.x264.anoXmous&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 3,
+          "size": "791.2 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "City of God (2002) (EN subs) 720p.10bit.BluRay.x265-budgetbits",
+          "magnet": "magnet:?xt=urn:btih:bae139875bffb1860714306961ed0382ad5920aa&dn=City%20of%20God%20(2002)%20(EN%20subs)%20720p.10bit.BluRay.x265-budgetbits&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.08 GB",
+          "provider": "Torrentio/1337x"
+        },
+        {
+          "title": "City Of God-720p MP4 AAC x264 BRRip 2002-CC",
+          "magnet": "magnet:?xt=urn:btih:c8f7e803c0bdef87ad6d8e5748c5c0aa91934260&dn=City%20Of%20God-720p%20MP4%20AAC%20x264%20BRRip%202002-CC&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "2.26 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "City Of God 2002 1080p BluRay x264-CiNEFiLE",
+          "magnet": "magnet:?xt=urn:btih:93936a441908d50dce630431b46e9680a068a89e&dn=City%20Of%20God%202002%201080p%20BluRay%20x264-CiNEFiLE&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 81,
+          "size": "8.75 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "City Of God (2002) [Cidade de Deus] 1080p BluRay x265 HEVC EAC3-SARTRE",
+          "magnet": "magnet:?xt=urn:btih:dfeb00253a134a37c63a6615bae68b09a7721107&dn=City%20Of%20God%20(2002)%20%5BCidade%20de%20Deus%5D%201080p%20BluRay%20x265%20HEVC%20EAC3-SARTRE&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 57,
+          "size": "6.03 GB",
+          "provider": "Torrentio/1337x"
+        },
+        {
+          "title": "City.of.God.2002.1080p.BluRay.x264.anoXmous",
+          "magnet": "magnet:?xt=urn:btih:80275c5c97dbb22837dfd51098c56cc2aa11a30d&dn=City.of.God.2002.1080p.BluRay.x264.anoXmous&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 42,
+          "size": "2.23 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "City of God - Cidade de Deus (2002) AC3 5.1 ITA.POR 1080p H265 sub ita.eng MIRCrew",
+          "magnet": "magnet:?xt=urn:btih:022e3905421cf425a1b5d8b32acb094691b1181b&dn=City%20of%20God%20-%20Cidade%20de%20Deus%20(2002)%20AC3%205.1%20ITA.POR%201080p%20H265%20sub%20ita.eng%20MIRCrew&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 31,
+          "size": "3.16 GB",
+          "provider": "Torrentio/1337x"
+        },
+        {
+          "title": "City.of.God.2002.1080p.BluRay.Remux.DTS-HD.MA.5.1-WARHD",
+          "magnet": "magnet:?xt=urn:btih:9dc37dd6d03fbdbed1cfd46459db913e9580c063&dn=City.of.God.2002.1080p.BluRay.Remux.DTS-HD.MA.5.1-WARHD&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 14,
+          "size": "26.6 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "the-chaser-s-war-on-everything-2006-tv",
@@ -11458,9 +11568,20 @@
       "trailer_key": "ez6WQ7IX72U",
       "enrichment_status": "ok",
       "torrent_file": "Back_to_the_Future_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/back-to-the-future-1985-movie/Back.to.the.Future.1985.REMASTERED.720p.BluRay.999MB.HQ.x265.10bit-GalaxyRG.mp4",
+      "s3_keys": [
+        "videos/back-to-the-future-1985-movie/Back.to.the.Future.1985.REMASTERED.720p.BluRay.999MB.HQ.x265.10bit-GalaxyRG.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/back-to-the-future-1985-movie/Back.to.the.Future.1985.REMASTERED.720p.BluRay.999MB.HQ.x265.10bit-GalaxyRG.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -15260,7 +15381,41 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "The Given Word 1962 720p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:35a5d2ddd29194364a12737632bc92d6ad0dd611&dn=The%20Given%20Word%201962%20720p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "846.87 MB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "O Pagador de Promessas 1962 WEB-DL 1080p NACIONAL 2.0",
+          "magnet": "magnet:?xt=urn:btih:eb0788595a429eff9583c6e86f94b0a08d1c59c7&dn=O%20Pagador%20de%20Promessas%201962%20WEB-DL%201080p%20NACIONAL%202.0&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "3.02 GB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "The.Given.Word.1962.PORTUGUESE.1080p.WEBRip.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:3cd98ffee2b7a5c0900b91ec8d5f78fa7e0e8412&dn=The.Given.Word.1962.PORTUGUESE.1080p.WEBRip.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.43 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "The Given Word 1962 1080p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:e0e42f1392692617a86c97a96448eec224b15e99&dn=The%20Given%20Word%201962%201080p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.53 GB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "amelie-2001-movie",
@@ -18241,7 +18396,62 @@
       ],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Central Station 1998 720p BluRay",
+          "magnet": "magnet:?xt=urn:btih:45ed3df339e56852e5396148cf626bf0f5ff3062&dn=Central%20Station%201998%20720p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "989.21 MB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "Central.station.1998.720p.BluRay.x264.[MoviesFD]",
+          "magnet": "magnet:?xt=urn:btih:6eb96fd90c29033e6d56ce072ea327527151a3cf&dn=Central.station.1998.720p.BluRay.x264.%5BMoviesFD%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "877.68 MB",
+          "provider": "Torrentio/1337x"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Central Station 1998 1080p BluRay",
+          "magnet": "magnet:?xt=urn:btih:dddab9f0c90c94a9f36d5a8fe7ba4a28666a3b49&dn=Central%20Station%201998%201080p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 40,
+          "size": "1.74 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "Central.Station.1998.PORTUGUESE.1080p.BluRay.x264-HANDJOB",
+          "magnet": "magnet:?xt=urn:btih:4a2c750fa5ab28dfe8e2caebf299cb5ab6425fd6&dn=Central.Station.1998.PORTUGUESE.1080p.BluRay.x264-HANDJOB&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 13,
+          "size": "6.94 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Central Station (1998) RM4K (1080p BluRay x265 HEVC 10bit AAC 2.0 Portuguese afm72) [QxR]",
+          "magnet": "magnet:?xt=urn:btih:903bbaba631606d14d38cdb96c6ea935150df9c2&dn=Central%20Station%20(1998)%20RM4K%20(1080p%20BluRay%20x265%20HEVC%2010bit%20AAC%202.0%20Portuguese%20afm72)%20%5BQxR%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 7,
+          "size": "4.88 GB",
+          "provider": "Torrentio/TorrentGalaxy"
+        },
+        {
+          "title": "Central.Station.1998.PORTUGUESE.1080p.BluRay.H264.AAC-VXT",
+          "magnet": "magnet:?xt=urn:btih:218f60cda1644cdbfb41d82dd82d5a8bec716f3d&dn=Central.Station.1998.PORTUGUESE.1080p.BluRay.H264.AAC-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "2.1 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Central Station 1998 1080p BluRay x264-OFT",
+          "magnet": "magnet:?xt=urn:btih:26a00e7436ce5ed0cdd3fec336c0a40cd0e17df8&dn=Central%20Station%201998%201080p%20BluRay%20x264-OFT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "4.73 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "um-lugar-ao-sol-2021-tv",
@@ -19002,7 +19212,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] São Paulo Sociedade Anônima (1965) PT-Br",
+          "magnet": "magnet:?xt=urn:btih:5274ae08278036d53e73dd621eca3cd74e95e436&dn=Sa%CC%83o%20Paulo%20Sociedade%20Ano%CC%82nima%20(1965)%20PT-Br&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "999.5 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] SÃ£o Paulo S.A.1965.Luis.SÃ©rgio.Person.avi.Fabiano.oliveira",
+          "magnet": "magnet:?xt=urn:btih:d75a05d749c05d4e90149ae4316d778331197790&dn=S%C3%83%C2%A3o%20Paulo%20S.A.1965.Luis.S%C3%83%C2%A9rgio.Person.avi.Fabiano.oliveira&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "700.43 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "carandiru-outras-historias-2005-tv",
@@ -19145,7 +19372,62 @@
       ],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Elite Squad (2007) Portuguese 720p BluRay x264 -[MoviesFD]",
+          "magnet": "magnet:?xt=urn:btih:d008103aa1280ac476ed9df343a4e0d869be8bd7&dn=Elite%20Squad%20(2007)%20Portuguese%20720p%20BluRay%20x264%20-%5BMoviesFD%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "913.61 MB",
+          "provider": "Torrentio/TorrentGalaxy"
+        },
+        {
+          "title": "Tropa De Elite - Coleção (2007-2010) 5.1 CH Dublado 720p (By-LuanHarper)",
+          "magnet": "magnet:?xt=urn:btih:358fa555d451058ce3a3f3d475b90ea6e5c038bf&dn=Tropa%20De%20Elite%20-%20Cole%C3%A7%C3%A3o%20(2007-2010)%205.1%20CH%20Dublado%20720p%20(By-LuanHarper)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Elite.Squad.2007.1080p.BluRay.x265.HEVC.EAC3-SARTRE",
+          "magnet": "magnet:?xt=urn:btih:1bed1bf1c0cff0462b429e2978b6749c6560755b&dn=Elite.Squad.2007.1080p.BluRay.x265.HEVC.EAC3-SARTRE&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 57,
+          "size": "6.31 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Elite.Squad.2007.PORTUGUESE.1080p.BluRay.H264.AAC-VXT",
+          "magnet": "magnet:?xt=urn:btih:006aea71e7f295cfeea8bc80971d200f2a13a261&dn=Elite.Squad.2007.PORTUGUESE.1080p.BluRay.H264.AAC-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 32,
+          "size": "2.2 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Elite Squad 2007 1080p BluRay x265-YAWNTiC",
+          "magnet": "magnet:?xt=urn:btih:24f83b47a9024de6a6a9061287180297728716e1&dn=Elite%20Squad%202007%201080p%20BluRay%20x265-YAWNTiC&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "6.63 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Tropa De Elite - Coleção (2007-2010) 5.1 CH Dublado 1080p (By-LuanHarper)",
+          "magnet": "magnet:?xt=urn:btih:594f43bae0107df0f93bf85da3d3a63daaa4e54d&dn=Tropa%20De%20Elite%20-%20Cole%C3%A7%C3%A3o%20(2007-2010)%205.1%20CH%20Dublado%201080p%20(By-LuanHarper)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "coleção tropa de elite 2007 2010 1080p bluray 5 1x264 nacional bludv",
+          "magnet": "magnet:?xt=urn:btih:e9396cb419ff6b19d3827b41fca8832fad08e5e4&dn=cole%C3%A7%C3%A3o%20tropa%20de%20elite%202007%202010%201080p%20bluray%205%201x264%20nacional%20bludv&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "weeds-2005-tv",
@@ -21527,7 +21809,62 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] BUS 174",
+          "magnet": "magnet:?xt=urn:btih:8dc7f8411d7fb904c290f0a6ebea0dc7dc593468&dn=BUS%20174&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "1.35 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Star Trek Complete Series in Stardate Watch Order - 1080p x265 - updated 20250608",
+          "magnet": "magnet:?xt=urn:btih:9c820a5037707b3c83ec927aa094f2bcfc2df5e1&dn=Star%20Trek%20Complete%20Series%20in%20Stardate%20Watch%20Order%20-%201080p%20x265%20-%20updated%2020250608&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "Star Trek Complete Series in Stardate Watch Order - 1080p x265 - updated 20250608",
+          "magnet": "magnet:?xt=urn:btih:9c820a5037707b3c83ec927aa094f2bcfc2df5e1&dn=Star%20Trek%20Complete%20Series%20in%20Stardate%20Watch%20Order%20-%201080p%20x265%20-%20updated%2020250608&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "[SD/unlabeled] Bus 174 Onibus[2002].DVDRip.XviD-Survul",
+          "magnet": "magnet:?xt=urn:btih:199fb568bad5524d04e2b90875c34ef99360d245&dn=Bus%20174%20Onibus%5B2002%5D.DVDRip.XviD-Survul&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "699.88 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] DOCUMENTARIO",
+          "magnet": "magnet:?xt=urn:btih:eb225e772a505720f3119915018241ce400e2ca4&dn=DOCUMENTARIO&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "648.17 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Star Trek Complete Series in Stardate Watch Order - 1080p x265 - updated 20250608",
+          "magnet": "magnet:?xt=urn:btih:9c820a5037707b3c83ec927aa094f2bcfc2df5e1&dn=Star%20Trek%20Complete%20Series%20in%20Stardate%20Watch%20Order%20-%201080p%20x265%20-%20updated%2020250608&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "Star Trek Complete Series in Stardate Watch Order - 1080p x265 - updated 20250608",
+          "magnet": "magnet:?xt=urn:btih:9c820a5037707b3c83ec927aa094f2bcfc2df5e1&dn=Star%20Trek%20Complete%20Series%20in%20Stardate%20Watch%20Order%20-%201080p%20x265%20-%20updated%2020250608&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "i-am-a-fugitive-from-a-chain-gang-1932-movie",
@@ -21846,7 +22183,69 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Que Horas Ela Volta 2015 Bluray 720p Dublado - WWW.THEPIRATEFILMES.COM",
+          "magnet": "magnet:?xt=urn:btih:32ef8701d985e6d6f348453f9e6e7d4e0441efb3&dn=Que%20Horas%20Ela%20Volta%202015%20Bluray%20720p%20Dublado%20-%20WWW.THEPIRATEFILMES.COM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "923.02 MB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "The Second Mother 2015 Portuguese 720p BluRay 821 MB iExTV",
+          "magnet": "magnet:?xt=urn:btih:088fbe7470618b8b8c23900585b2e6800cae5340&dn=The%20Second%20Mother%202015%20Portuguese%20720p%20BluRay%20821%20MB%20iExTV&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "821.5 MB",
+          "provider": "Torrentio/1337x"
+        },
+        {
+          "title": "The Second Mother 2015 720p BRRip x264 Portuguese-[MOJR]",
+          "magnet": "magnet:?xt=urn:btih:5935a4b8eeb2bdedc82c5696a38564d02ede7a6d&dn=The%20Second%20Mother%202015%20720p%20BRRip%20x264%20Portuguese-%5BMOJR%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "836 MB",
+          "provider": "Torrentio/1337x"
+        },
+        {
+          "title": "The Second Mother (2015) 720p BluRay-WORLD",
+          "magnet": "magnet:?xt=urn:btih:f8c18ddaf4d90170ce371add96d5fc2a5f7ce93e&dn=The%20Second%20Mother%20(2015)%20720p%20BluRay-WORLD&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "The Second Mother 2015 720p BluRay",
+          "magnet": "magnet:?xt=urn:btih:7a71029c2fd3e8ecd462a01adb3bb3855bd44433&dn=The%20Second%20Mother%202015%20720p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1 GB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "The.Second.Mother.2015.1080p.BRRip.x264.Portuguese.AAC-ETRG",
+          "magnet": "magnet:?xt=urn:btih:073565e8d57d419e6a13c2b7e88a85b85f22946b&dn=The.Second.Mother.2015.1080p.BRRip.x264.Portuguese.AAC-ETRG&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 11,
+          "size": "1.64 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "The Second Mother 2015 1080p BluRay",
+          "magnet": "magnet:?xt=urn:btih:e0a44f74b37c0bd44a8ce55ea2117a821f399d0a&dn=The%20Second%20Mother%202015%201080p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 11,
+          "size": "2.06 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "Que Horas Ela Volta? 2015 1080P",
+          "magnet": "magnet:?xt=urn:btih:a970d7ff71b96d381b3561128daacbf758963443&dn=Que%20Horas%20Ela%20Volta%3F%202015%201080P&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.78 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "nos-tempos-do-imperador-2021-tv",
@@ -23623,7 +24022,17 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Bicho de Sete Cabecas.Mp4.720p",
+          "magnet": "magnet:?xt=urn:btih:1f02bc506cdb169fc53b6d1e87b97fdc5beb1694&dn=Bicho%20de%20Sete%20Cabecas.Mp4.720p&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.26 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "the-man-who-copied-2003-movie",
@@ -25234,7 +25643,41 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Elena.2011.RUSSIAN.720p.BluRay.H264.AAC-VXT",
+          "magnet": "magnet:?xt=urn:btih:f986f08351f25e6a84bf9efbef537608b3b9cb01&dn=Elena.2011.RUSSIAN.720p.BluRay.H264.AAC-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.32 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Elena 2011 1080p BluRay x264-GeneMige",
+          "magnet": "magnet:?xt=urn:btih:75faf14e3ab8fa4d19ea03b4944211653e01f211&dn=Elena%202011%201080p%20BluRay%20x264-GeneMige&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "10.8 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Elena.2011.RUSSIAN.1080p.BluRay.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:d1508c78c9f88e39462cb4c78c565a1dd6cdfc05&dn=Elena.2011.RUSSIAN.1080p.BluRay.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.7 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Elena.2011.RUSSIAN.1080p.BluRay.H264.AAC-VXT",
+          "magnet": "magnet:?xt=urn:btih:d7d7736f88fff65621677856ffba01f82f1adcb2&dn=Elena.2011.RUSSIAN.1080p.BluRay.H264.AAC-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.08 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "carandiru-2003-movie",
@@ -25709,7 +26152,17 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Boca_de_Ouro.avi",
+          "magnet": "magnet:?xt=urn:btih:238720a94f75913e9057cac33529a50cc3fa998e&dn=Boca_de_Ouro.avi&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "699.83 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "jfk-1991-movie",
@@ -27438,7 +27891,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Vidas Secas (Nelson Pereira dos santos - 1963) - Full DVD",
+          "magnet": "magnet:?xt=urn:btih:2b09a1dc736604e74200740222866df1aeeb5589&dn=Vidas%20Secas%20(Nelson%20Pereira%20dos%20santos%20-%201963)%20-%20Full%20DVD&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "7.5 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] [1963] Vidas Secas - Nelson Pereira dos Santos [+EXTRAS]",
+          "magnet": "magnet:?xt=urn:btih:23912c8a9ee849bc2278df35149d52105220e496&dn=%5B1963%5D%20Vidas%20Secas%20-%20Nelson%20Pereira%20dos%20Santos%20%5B%2BEXTRAS%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "garota-do-momento-2024-tv",
@@ -27524,7 +27994,48 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Terra Estrangeira 1995 WEB-DL 1080p NACIONAL 2.0",
+          "magnet": "magnet:?xt=urn:btih:b874dd79316e7fc89a1ad9cbd8aeb893b02cde0b&dn=Terra%20Estrangeira%201995%20WEB-DL%201080p%20NACIONAL%202.0&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "3.36 GB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "[SD/unlabeled] Terra Estrangeira 1995 WEB-DL Sonata Premiere",
+          "magnet": "magnet:?xt=urn:btih:511d3eea8a73c42146490682e8943f50bbe94ed9&dn=Terra%20Estrangeira%201995%20WEB-DL%20Sonata%20Premiere&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.08 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Terra Estrangeira (1996)",
+          "magnet": "magnet:?xt=urn:btih:04fa10d3d08989b5dc006df2f99b9516cb7ef945&dn=Terra%20Estrangeira%20(1996)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "700.54 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Terra Estrangeira - Foreign Land",
+          "magnet": "magnet:?xt=urn:btih:39037c1a8d393c1e2017d2046c511b3c322237b6&dn=Terra%20Estrangeira%20-%20Foreign%20Land&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "700.54 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Terra Estrangeira 1995 WEB-DL 1080p NACIONAL 2.0",
+          "magnet": "magnet:?xt=urn:btih:b874dd79316e7fc89a1ad9cbd8aeb893b02cde0b&dn=Terra%20Estrangeira%201995%20WEB-DL%201080p%20NACIONAL%202.0&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "3.36 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "all-that-jazz-1979-movie",
@@ -29944,7 +30455,41 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Four Days in September 1997 720p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:82c4c40dbae7691295591256c7a20418d72f6b29&dn=Four%20Days%20in%20September%201997%20720p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1 GB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Four.Days.in.September.1997.PORTUGUESE.1080p.WEBRip.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:7298f171f85370766815e9cf36417732ab66cac5&dn=Four.Days.in.September.1997.PORTUGUESE.1080p.WEBRip.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.73 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Four Days in September 1997 1080p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:92e86b442f7151fab3ce3b85f2ea76865ea68888&dn=Four%20Days%20in%20September%201997%201080p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.85 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "Four.Days.in.September.1997.PORTUGUESE.1080p.WEBRip.x264-VXT",
+          "magnet": "magnet:?xt=urn:btih:f6b7c23b66b0d9ad9b1c6fbd03a04de3885fc885&dn=Four.Days.in.September.1997.PORTUGUESE.1080p.WEBRip.x264-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.12 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "romeo-and-juliet-1968-movie",
@@ -30029,7 +30574,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Bye Bye Brasil (1980) DVDRip.x264-Distanasia",
+          "magnet": "magnet:?xt=urn:btih:a5cfd1e0f96d248c20dccc56088059bdfbc084c9&dn=Bye%20Bye%20Brasil%20(1980)%20DVDRip.x264-Distanasia&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.52 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Bye.Bye.Brasil.BR.1979.DVDRiP.XVID-TOSH",
+          "magnet": "magnet:?xt=urn:btih:8c80b94137f30efeca68047dfab67f23cb65973b&dn=Bye.Bye.Brasil.BR.1979.DVDRiP.XVID-TOSH&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "703.92 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "esquenta-2011-tv",
@@ -30278,7 +30840,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Filme A hora da estrela - 1985 - formato mp4",
+          "magnet": "magnet:?xt=urn:btih:23a52d58f37f8b560f328364650a132ce9974a8f&dn=Filme%20A%20hora%20da%20estrela%20-%201985%20-%20formato%20mp4&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "579.25 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] A.hora.da.estrela.avi.700mb.ENG.subtitles",
+          "magnet": "magnet:?xt=urn:btih:1d91eade2bda493d530bd2ba5559f8782620d718&dn=A.hora.da.estrela.avi.700mb.ENG.subtitles&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "703.51 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "the-lion-in-winter-1968-movie",
@@ -32319,7 +32898,31 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Viajo Porque Preciso Volto Porque Te Amo DVDRip 2009",
+          "magnet": "magnet:?xt=urn:btih:f67f019de473586ee40dc9873fe0667eaa4ece99&dn=Viajo%20Porque%20Preciso%20Volto%20Porque%20Te%20Amo%20DVDRip%202009&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "704.96 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Viajo porque preciso volto porque te amo DVD",
+          "magnet": "magnet:?xt=urn:btih:e32b700b7c808018db08a9a25b1dbc1f2d009a08&dn=Viajo%20porque%20preciso%20volto%20porque%20te%20amo%20DVD&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.19 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] viajo_porque_preciso_volto_porque_te_amo_karin_ainouz_marcelo_go",
+          "magnet": "magnet:?xt=urn:btih:2b2f1f52788f193cfe989b73968c4a6e282078b0&dn=viajo_porque_preciso_volto_porque_te_amo_karin_ainouz_marcelo_go&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "766.63 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "how-green-was-my-valley-1941-movie",
@@ -32460,7 +33063,41 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Kiss of the Spider Woman (1985) 720p BrRip x264 - YIFY",
+          "magnet": "magnet:?xt=urn:btih:edde525fd01ead5dab9d89dd93e857f7ac15c783&dn=Kiss%20of%20the%20Spider%20Woman%20(1985)%20720p%20BrRip%20x264%20-%20YIFY&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "870.27 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Kiss of The Spider Woman 1985 Criterion 1080p BluRay HEVC x265 5.1 BONE",
+          "magnet": "magnet:?xt=urn:btih:65f6a1e52c9ec507ae8b9a769e7a991e395c9627&dn=Kiss%20of%20The%20Spider%20Woman%201985%20Criterion%201080p%20BluRay%20HEVC%20x265%205.1%20BONE&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 8,
+          "size": "2.04 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Kiss of the Spider Woman (1985) 1080p BrRip x264 - YIFY",
+          "magnet": "magnet:?xt=urn:btih:e2b34e164ba01ac9ab76f86a34c05a63b7151731&dn=Kiss%20of%20the%20Spider%20Woman%20(1985)%201080p%20BrRip%20x264%20-%20YIFY&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 8,
+          "size": "1.85 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Kiss of the Spider Woman (1985) (1080p BluRay x265 HEVC 10bit AAC 5.1 Tigole) [QxR]",
+          "magnet": "magnet:?xt=urn:btih:319275d5b30a6150ae71cdac217fef52c5a70bd7&dn=Kiss%20of%20the%20Spider%20Woman%20(1985)%20(1080p%20BluRay%20x265%20HEVC%2010bit%20AAC%205.1%20Tigole)%20%5BQxR%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "verao-90-2019-tv",
@@ -32718,7 +33355,17 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "A Coleção Invisível 2013 [WEB-DL] [720p] [NACIONAL]",
+          "magnet": "magnet:?xt=urn:btih:8a81d4c62e0987ea751c95260e16d839c7bdda17&dn=A%20Cole%C3%A7%C3%A3o%20Invis%C3%ADvel%202013%20%5BWEB-DL%5D%20%5B720p%5D%20%5BNACIONAL%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "4.92 GB",
+          "provider": "Torrentio/BluDV"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "programa-silvio-santos-1963-tv",
@@ -32848,7 +33495,41 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Terra Em Transe Glauber Rocha 1967 1080p HD By Cangaceiro",
+          "magnet": "magnet:?xt=urn:btih:ab13791e5a8b7deab0b74ba5d4fe1c2375d1ecb4&dn=Terra%20Em%20Transe%20Glauber%20Rocha%201967%201080p%20HD%20By%20Cangaceiro&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.43 GB",
+          "provider": "Torrentio/MagnetDL"
+        },
+        {
+          "title": "[SD/unlabeled] Glauber Rocha - Terra em Transe AKA Land in Anguish (1967)",
+          "magnet": "magnet:?xt=urn:btih:d9b4416f2b9a32588b2e962ff84f4cbfe98a4448&dn=Glauber%20Rocha%20-%20Terra%20em%20Transe%20AKA%20Land%20in%20Anguish%20(1967)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.04 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Brazillian Movie - Entranced Land (Terra em Transe) Glauber Roch",
+          "magnet": "magnet:?xt=urn:btih:09672f6b319198c5283fc39ee070807ba1cf0128&dn=Brazillian%20Movie%20-%20Entranced%20Land%20(Terra%20em%20Transe)%20Glauber%20Roch&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "700.61 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Terra Em Transe Glauber Rocha 1967 1080p HD By Cangaceiro",
+          "magnet": "magnet:?xt=urn:btih:ab13791e5a8b7deab0b74ba5d4fe1c2375d1ecb4&dn=Terra%20Em%20Transe%20Glauber%20Rocha%201967%201080p%20HD%20By%20Cangaceiro&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.43 GB",
+          "provider": "Torrentio/MagnetDL"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "viver-a-vida-2009-tv",
@@ -33103,7 +33784,38 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Mango Yellow Nacional avi dvdrip",
+          "magnet": "magnet:?xt=urn:btih:0cc0e1efc0313cd128c368c556f967e247454a7d&dn=Mango%20Yellow%20Nacional%20avi%20dvdrip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "701.17 MB",
+          "provider": "Torrentio/MicoLeaoDublado"
+        },
+        {
+          "title": "[SD/unlabeled] Amarelo Manga (2002) DVDRip.x264-Distanasia",
+          "magnet": "magnet:?xt=urn:btih:4010e7103f2a312035945b2f36d4db02b1974979&dn=Amarelo%20Manga%20(2002)%20DVDRip.x264-Distanasia&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.59 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Amarelo Manga",
+          "magnet": "magnet:?xt=urn:btih:11cf3932826f64bc7be915d70c4567953f36653b&dn=Amarelo%20Manga&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "522.21 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Amarelo Manga -",
+          "magnet": "magnet:?xt=urn:btih:5a878b1ff6182aec5977c5af1d08f42fdd1eccfc&dn=Amarelo%20Manga%20-&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "701.17 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "cinema-aspirins-and-vultures-2005-movie",
@@ -33146,7 +33858,55 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Cinema Aspirins and Vultures 2005 720p BluRay",
+          "magnet": "magnet:?xt=urn:btih:d589367fedb424be4f6120da38881dcabe5428ae&dn=Cinema%20Aspirins%20and%20Vultures%202005%20720p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "923.73 MB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "Cinema.Aspirins.And.Vultures.2005.PORTUGUESE.720p.BluRay.H264.AAC-VXT",
+          "magnet": "magnet:?xt=urn:btih:dda72542ba8597ea1402c7575e255be960bc853c&dn=Cinema.Aspirins.And.Vultures.2005.PORTUGUESE.720p.BluRay.H264.AAC-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.22 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Cinema.Aspirins.And.Vultures.2005.PORTUGUESE.1080p.BluRay.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:9280037aed39c9c3e7411c000200764961a43c3e&dn=Cinema.Aspirins.And.Vultures.2005.PORTUGUESE.1080p.BluRay.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.57 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Cinema Aspirins and Vultures 2005 1080p BluRay",
+          "magnet": "magnet:?xt=urn:btih:1d9e28da6f82d40582628037fdfd228bcac4c9e0&dn=Cinema%20Aspirins%20and%20Vultures%202005%201080p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.86 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "Cinema.Aspirins.And.Vultures.2005.PORTUGUESE.1080p.BluRay.H264.AAC-VXT",
+          "magnet": "magnet:?xt=urn:btih:6b4e29f679ad63080f189cf42f9582f22954d1b8&dn=Cinema.Aspirins.And.Vultures.2005.PORTUGUESE.1080p.BluRay.H264.AAC-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.92 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Cinema.Aspirins.And.Vultures.2005.PORTUGUESE.1080p.BluRay.x264.DD5.1-JKP",
+          "magnet": "magnet:?xt=urn:btih:7c11afc55d718cdd1ed7d789e6db0fc0c185118f&dn=Cinema.Aspirins.And.Vultures.2005.PORTUGUESE.1080p.BluRay.x264.DD5.1-JKP&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "9.86 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "the-guns-of-navarone-1961-movie",
@@ -35217,7 +35977,38 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Iracema.1975.DVDRip.x264-BiPOLAR",
+          "magnet": "magnet:?xt=urn:btih:865652e97a68cfece582046d9f5732448990dddf&dn=Iracema.1975.DVDRip.x264-BiPOLAR&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.34 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "[SD/unlabeled] Iracema uma Transa Amazônica",
+          "magnet": "magnet:?xt=urn:btih:b999773f18f25d25302f9568f307c937619b6c17&dn=Iracema%20uma%20Transa%20Amaz%C3%B4nica&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "698.37 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] IRACEMA_UMA_TRANSA_AMAZONICA.m4v",
+          "magnet": "magnet:?xt=urn:btih:588c458bc72dd971aa0d246d87b219ab49c13c9c&dn=IRACEMA_UMA_TRANSA_AMAZONICA.m4v&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "3.24 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Iracema - Uma Transa Amazônica..........FFF",
+          "magnet": "magnet:?xt=urn:btih:6843168fc24f9a49dca1c61e8bc6a11dc8fd965d&dn=Iracema%20-%20Uma%20Transa%20Amaz%C3%B4nica..........FFF&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "698.23 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "the-edge-of-democracy-2019-movie",
@@ -35334,7 +36125,48 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "The Man of the Year 2003 720p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:ae434dc117ac5c600ee3030106deda1abd4c67ed&dn=The%20Man%20of%20the%20Year%202003%20720p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "969.07 MB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "The Man of the Year 2003 1080p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:df10ecbd8483befbec9c2d5b78c6debfd702d984&dn=The%20Man%20of%20the%20Year%202003%201080p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "1.75 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "The.Man.of.the.Year.2003.PORTUGUESE.1080p.WEBRip.AAC2.0.x264-NOGRP",
+          "magnet": "magnet:?xt=urn:btih:bdfda3e190b473f79d87fb5d337342860d3e7e40&dn=The.Man.of.the.Year.2003.PORTUGUESE.1080p.WEBRip.AAC2.0.x264-NOGRP&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "3.51 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "The.Man.of.the.Year.2003.PORTUGUESE.1080p.WEBRip.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:375d31460d4702c0f0488a916346c9d3d2893a30&dn=The.Man.of.the.Year.2003.PORTUGUESE.1080p.WEBRip.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.64 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "The.Man.of.the.Year.2003.PORTUGUESE.1080p.WEBRip.x264-VXT",
+          "magnet": "magnet:?xt=urn:btih:c66efbd30ad0f3987e7cf625f19750b6161d8969&dn=The.Man.of.the.Year.2003.PORTUGUESE.1080p.WEBRip.x264-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.01 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "nashville-1975-movie",
@@ -35465,7 +36297,45 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Deus e o Diabo na Terra do Sol aka Black God White Devil [+ Extr",
+          "magnet": "magnet:?xt=urn:btih:54e489cc44ce16712d5b507d56ea2bf87b0e2f75&dn=Deus%20e%20o%20Diabo%20na%20Terra%20do%20Sol%20aka%20Black%20God%20White%20Devil%20%5B%2B%20Extr&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "[SD/unlabeled] Deus E O Diabo Na Terra Do Sol (Black God White Devil) Glauber",
+          "magnet": "magnet:?xt=urn:btih:3436d5d19792a63414e8abfce17bc25fde82b0c2&dn=Deus%20E%20O%20Diabo%20Na%20Terra%20Do%20Sol%20(Black%20God%20White%20Devil)%20Glauber&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "[SD/unlabeled] Deus E O Diabo Na Terra Do Sol (Black God White Devil) Glauber",
+          "magnet": "magnet:?xt=urn:btih:3436d5d19792a63414e8abfce17bc25fde82b0c2&dn=Deus%20E%20O%20Diabo%20Na%20Terra%20Do%20Sol%20(Black%20God%20White%20Devil)%20Glauber&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "[SD/unlabeled] Deus E O Diabo Na Terra Do Sol (1964)",
+          "magnet": "magnet:?xt=urn:btih:17f3753db97b5ae0e95551898c714692ac121db4&dn=Deus%20E%20O%20Diabo%20Na%20Terra%20Do%20Sol%20(1964)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.37 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Deus e o Diabo na Terra do Sol - Black God White Devil",
+          "magnet": "magnet:?xt=urn:btih:53865e2acdba5e3149a28f9a41dc9d535643d8cf&dn=Deus%20e%20o%20Diabo%20na%20Terra%20do%20Sol%20-%20Black%20God%20White%20Devil&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "700.33 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "masterchef-brasil-2014-tv",
@@ -35859,7 +36729,27 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Loveling 2018 720p AMZN WEB-DL DDP5 1 H 264-KHEZU",
+          "magnet": "magnet:?xt=urn:btih:de9f08710e94f0ee604767f3202ba94334944242&dn=Loveling%202018%20720p%20AMZN%20WEB-DL%20DDP5%201%20H%20264-KHEZU&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "3.8 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Benzinho 2018 [WEB-DL] [1080p] [NACIONAL]",
+          "magnet": "magnet:?xt=urn:btih:d31669b1c2df099fcf00c3daaeffbf98fd7b0fb8&dn=Benzinho%202018%20%5BWEB-DL%5D%20%5B1080p%5D%20%5BNACIONAL%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.82 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "trash-2014-movie",
@@ -35903,7 +36793,69 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Trash 2014 720p BrRip 2CH X265 HEVC-PSA",
+          "magnet": "magnet:?xt=urn:btih:8ff70597d778b5c25e203bdeeb10dfaf7a06d821&dn=Trash%202014%20720p%20BrRip%202CH%20X265%20HEVC-PSA&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "651.91 MB",
+          "provider": "Torrentio/MagnetDL"
+        },
+        {
+          "title": "Trash (2014) Portuguese 720p BluRay x264 -[MoviesFD]",
+          "magnet": "magnet:?xt=urn:btih:05cf5c8c8da6aa9f7de634f6090906e20a6ccbff&dn=Trash%20(2014)%20Portuguese%20720p%20BluRay%20x264%20-%5BMoviesFD%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "905.96 MB",
+          "provider": "Torrentio/TorrentGalaxy"
+        },
+        {
+          "title": "Trash 2015 720P",
+          "magnet": "magnet:?xt=urn:btih:f6b54b9b0fa545117dc37b35775af85d861c377b&dn=Trash%202015%20720P&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.01 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Trash (2014) [BluRay] [1080p] [YTS] [YIFY]",
+          "magnet": "magnet:?xt=urn:btih:308ca125f74bf1e1931a2b110f52a583ab094652&dn=Trash%20(2014)%20%5BBluRay%5D%20%5B1080p%5D%20%5BYTS%5D%20%5BYIFY%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 7,
+          "size": "1.8 GB",
+          "provider": "Torrentio/1337x"
+        },
+        {
+          "title": "Trash 2014 1080p BRRip x264 DTS-JYK",
+          "magnet": "magnet:?xt=urn:btih:364ddf8eaa15a11055188b3fca62385d784dd0b3&dn=Trash%202014%201080p%20BRRip%20x264%20DTS-JYK&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 4,
+          "size": "2.63 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Trash 2014 BDRip 1080p x264 AC3 English Latino URBiN4HD",
+          "magnet": "magnet:?xt=urn:btih:1dee2ff199fb0c1d0190393a08b0e8fc74b523c7&dn=Trash%202014%20BDRip%201080p%20x264%20AC3%20English%20Latino%20URBiN4HD&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 3,
+          "size": "3.87 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Trash.2014.Bluray.1080p.DTS-HD.x264-Grym",
+          "magnet": "magnet:?xt=urn:btih:328328f9c5fb133620bd03f694f806faa00709a9&dn=Trash.2014.Bluray.1080p.DTS-HD.x264-Grym&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "14.47 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Trash - A Esperança Vem Do Lixo (2015) BRrip Blu-Ray 1080p 5.1 Ch Dublado - AndreTPF.mp4",
+          "magnet": "magnet:?xt=urn:btih:3b36b74737543944ecfc71129e2ba3042d8f700f&dn=Trash%20-%20A%20Esperan%C3%A7a%20Vem%20Do%20Lixo%20(2015)%20BRrip%20Blu-Ray%201080p%205.1%20Ch%20Dublado%20-%20AndreTPF.mp4&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "2.25 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "all-this-and-heaven-too-1940-movie",
@@ -35988,7 +36940,48 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "O Filme da Minha Vida 2017 [WEBRip] WWW.BLUDV.COM 720P",
+          "magnet": "magnet:?xt=urn:btih:20f5ed3dfdbd4b710baa3a7221555522de9b1675&dn=O%20Filme%20da%20Minha%20Vida%202017%20%5BWEBRip%5D%20WWW.BLUDV.COM%20720P&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.16 GB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "O Filme da Minha Vida (2017) 720p WEBRip x264 AC3 NACIONAL-COMANDOTORRENTS.COM",
+          "magnet": "magnet:?xt=urn:btih:c9b49ff52e5cac0aa26e3a3c191069886e8d842c&dn=O%20Filme%20da%20Minha%20Vida%20(2017)%20720p%20WEBRip%20x264%20AC3%20NACIONAL-COMANDOTORRENTS.COM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "5 GB",
+          "provider": "Torrentio/BluDV"
+        },
+        {
+          "title": "The Movie of My Life 2017 720p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:21108de0fa9ec5e07726bb28e28f34280b096310&dn=The%20Movie%20of%20My%20Life%202017%20720p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.01 GB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "The Movie of My Life 2017 1080p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:c0cda66b137edc819f0a8ee722a35624c08d205c&dn=The%20Movie%20of%20My%20Life%202017%201080p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 4,
+          "size": "2.07 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "O.Filme.da.Minha.Vida.2017.1080p.WEBRip.DD5.1.H264-KALAZANS",
+          "magnet": "magnet:?xt=urn:btih:4caad6f241d23a6e4cf521eed66848c7d53d62be&dn=O.Filme.da.Minha.Vida.2017.1080p.WEBRip.DD5.1.H264-KALAZANS&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "6.16 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "wuthering-heights-1939-movie",
@@ -37425,7 +38418,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Rat Scratch Fever 2011 DVDRip XviD",
+          "magnet": "magnet:?xt=urn:btih:68ab19c1975e2de23bc3e58c7e504c41b19cf00d&dn=Rat%20Scratch%20Fever%202011%20DVDRip%20XviD&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.05 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Rat Scratch Fever [2011 - USA] science fiction horror",
+          "magnet": "magnet:?xt=urn:btih:eb8dac616e7230a7c06eae9830e572d759e23356&dn=Rat%20Scratch%20Fever%20%5B2011%20-%20USA%5D%20science%20fiction%20horror&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.05 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "girls-from-ipanema-2019-tv",
@@ -37668,7 +38678,69 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Antonio das Mortes 1969 POR MULTISUB DVDRip x264 KJNU",
+          "magnet": "magnet:?xt=urn:btih:0ab5ea92237906ff1d874da0bc41cd58a4a35135&dn=Antonio%20das%20Mortes%201969%20POR%20MULTISUB%20DVDRip%20x264%20KJNU&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.53 GB",
+          "provider": "Torrentio/1337x"
+        },
+        {
+          "title": "[SD/unlabeled] Dragao.da.Maldade.contra.o.Santo.Guerreiro.aka.Antonio.das.morte",
+          "magnet": "magnet:?xt=urn:btih:ff16a1d99c915640b33061e1506b481bfa381c31&dn=Dragao.da.Maldade.contra.o.Santo.Guerreiro.aka.Antonio.das.morte&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.47 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Antonio.Das.Mortes.1969.PORTUGUESE.PROPER.1080p.WEBRip.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:e93dac36de1abde718424b330195a7e6ab374fc4&dn=Antonio.Das.Mortes.1969.PORTUGUESE.PROPER.1080p.WEBRip.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.55 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Antonio.Das.Mortes.1969.PORTUGUESE.PROPER.1080p.WEBRip.x264-VXT",
+          "magnet": "magnet:?xt=urn:btih:c31f2ab9e9964d45f171c91f0fadd20891807cb4&dn=Antonio.Das.Mortes.1969.PORTUGUESE.PROPER.1080p.WEBRip.x264-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.9 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Antonio.Das.Mortes.1969.PORTUGUESE.1080p.AMZN.WEBRip.DDP2.0.x264-DODEN",
+          "magnet": "magnet:?xt=urn:btih:b220b82cbf826353f9021db9e6146b30ecaa227e&dn=Antonio.Das.Mortes.1969.PORTUGUESE.1080p.AMZN.WEBRip.DDP2.0.x264-DODEN&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "6.9 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Antonio.Das.Mortes.1969.PORTUGUESE.PROPER.1080p.WEBRip.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:e93dac36de1abde718424b330195a7e6ab374fc4&dn=Antonio.Das.Mortes.1969.PORTUGUESE.PROPER.1080p.WEBRip.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.55 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Antonio.Das.Mortes.1969.PORTUGUESE.PROPER.1080p.WEBRip.x264-VXT",
+          "magnet": "magnet:?xt=urn:btih:c31f2ab9e9964d45f171c91f0fadd20891807cb4&dn=Antonio.Das.Mortes.1969.PORTUGUESE.PROPER.1080p.WEBRip.x264-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.9 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Antonio.Das.Mortes.1969.PORTUGUESE.1080p.AMZN.WEBRip.DDP2.0.x264-DODEN",
+          "magnet": "magnet:?xt=urn:btih:b220b82cbf826353f9021db9e6146b30ecaa227e&dn=Antonio.Das.Mortes.1969.PORTUGUESE.1080p.AMZN.WEBRip.DDP2.0.x264-DODEN&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "6.9 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "travessia-2022-tv",
@@ -38525,7 +39597,31 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Madame Sata 2002 DVDRip Sonata Premiere",
+          "magnet": "magnet:?xt=urn:btih:f8d49240bb642af66be90d4e7190d91e1dd38872&dn=Madame%20Sata%202002%20DVDRip%20Sonata%20Premiere&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 4,
+          "size": "697.06 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Madame Sata [DVDRip-Spanish] by trap",
+          "magnet": "magnet:?xt=urn:btih:e2a4df4a0cc126bf202c73d6384d87c5bd91b218&dn=Madame%20Sata%20%5BDVDRip-Spanish%5D%20by%20trap&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Madame Satã (Karim Aïnouz 2002)",
+          "magnet": "magnet:?xt=urn:btih:da90763d60683bdc7b11f83f98c38dda3507a66d&dn=Madame%20Sat%C3%A3%20(Karim%20A%C3%AFnouz%202002)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1000.47 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "xuxa-1986-tv",
@@ -40595,7 +41691,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] O Invasor (2002) DVDRip X264 Nacional",
+          "magnet": "magnet:?xt=urn:btih:9d5392a362c03d85caead6863e176a38547426ff&dn=O%20Invasor%20(2002)%20DVDRip%20X264%20Nacional&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.87 GB",
+          "provider": "Torrentio/MagnetDL"
+        },
+        {
+          "title": "[SD/unlabeled] O Invasor AKA The Trespasser (2002) Beto Brant",
+          "magnet": "magnet:?xt=urn:btih:b2271092187572b3e2f2a0a838692e2c63e2fcbc&dn=O%20Invasor%20AKA%20The%20Trespasser%20(2002)%20Beto%20Brant&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.87 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "conversa-com-bial-2017-tv",
@@ -40810,7 +41923,38 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Narradores De Jave 2003 DVDRip Sonata Premiere",
+          "magnet": "magnet:?xt=urn:btih:dd00f1a878240914c5ce128f6e04d1cf675c5578&dn=Narradores%20De%20Jave%202003%20DVDRip%20Sonata%20Premiere&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "978.26 MB",
+          "provider": "Torrentio/MagnetDL"
+        },
+        {
+          "title": "[SD/unlabeled] Narradores de Javé (2003)",
+          "magnet": "magnet:?xt=urn:btih:abff5d163955a52cc4de50fb298936da8efca849&dn=Narradores%20de%20Jav%C3%A9%20(2003)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.61 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Narradores de Javé / The Storyteller (2003) Eliane Caff&e",
+          "magnet": "magnet:?xt=urn:btih:1aa1a7df93a57a2c500af788226dfad0c2a9cbf2&dn=Narradores%20de%20Jav%C3%A9%20%2F%20The%20Storyteller%20(2003)%20Eliane%20Caff%26e&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.1 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] (Brazillian Movie) Narradores de Javé (2003)",
+          "magnet": "magnet:?xt=urn:btih:26bd7d5bc33d92f221d39de3965cabf60076b3a5&dn=(Brazillian%20Movie)%20Narradores%20de%20Jav%C3%A9%20(2003)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "700.26 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "coming-home-1978-movie",
@@ -41443,7 +42587,62 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Gonzaga de Pai para Filho 720p - LAPUMiAFiLMES.COM",
+          "magnet": "magnet:?xt=urn:btih:132b6c0a409a46c4fa19f3051e1d07745382d9a8&dn=Gonzaga%20de%20Pai%20para%20Filho%20720p%20-%20LAPUMiAFiLMES.COM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "Gonzaga de Pai para Filho 720p - LAPUMiAFiLMES.COM",
+          "magnet": "magnet:?xt=urn:btih:132b6c0a409a46c4fa19f3051e1d07745382d9a8&dn=Gonzaga%20de%20Pai%20para%20Filho%20720p%20-%20LAPUMiAFiLMES.COM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "Gonzaga de Pai para Filho 720p - LAPUMiAFiLMES.COM",
+          "magnet": "magnet:?xt=urn:btih:132b6c0a409a46c4fa19f3051e1d07745382d9a8&dn=Gonzaga%20de%20Pai%20para%20Filho%20720p%20-%20LAPUMiAFiLMES.COM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "Gonzaga de Pai para Filho 720p - LAPUMiAFiLMES.COM",
+          "magnet": "magnet:?xt=urn:btih:132b6c0a409a46c4fa19f3051e1d07745382d9a8&dn=Gonzaga%20de%20Pai%20para%20Filho%20720p%20-%20LAPUMiAFiLMES.COM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "Gonzaga.de.Pai.pra.Filho.2013.720p.BluRay.x264-ANGELiC [PublicHD",
+          "magnet": "magnet:?xt=urn:btih:cc474ec417126243238489dec41282522267b2ef&dn=Gonzaga.de.Pai.pra.Filho.2013.720p.BluRay.x264-ANGELiC%20%5BPublicHD&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "6.56 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Gonzaga - De Pai pra Filho 2012 WEB-DL 1080p x264 NACIONAL 5.1",
+          "magnet": "magnet:?xt=urn:btih:7322a467f0581ac3d767d52b91aeac8eafa28aec&dn=Gonzaga%20-%20De%20Pai%20pra%20Filho%202012%20WEB-DL%201080p%20x264%20NACIONAL%205.1&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "4.03 GB",
+          "provider": "Torrentio/BluDV"
+        },
+        {
+          "title": "Gonzaga.de.Pai.pra.Filho.2013.1080p.BluRay.x264-ANGELiC [PublicH",
+          "magnet": "magnet:?xt=urn:btih:ad6e5b0d4f177cdd0e8ba4993d200ecd2c6f89c0&dn=Gonzaga.de.Pai.pra.Filho.2013.1080p.BluRay.x264-ANGELiC%20%5BPublicH&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "10 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "the-little-prince-s-rap-against-the-wicked-souls-2000-movie",
@@ -41484,7 +42683,17 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] O Rap do Pequeno PrÃ­ncipe Contra as Almas Sebosas",
+          "magnet": "magnet:?xt=urn:btih:40832fa90733cd3ba42b8c0240f92deee6a96353&dn=O%20Rap%20do%20Pequeno%20Pr%C3%83%C2%ADncipe%20Contra%20as%20Almas%20Sebosas&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "737.79 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "howards-end-1992-movie",
@@ -43329,7 +44538,45 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] At Play In The Fields of The Lord (1991) DVDRip Oldies",
+          "magnet": "magnet:?xt=urn:btih:d82f4b1eb7ce26465eadad183104dd6315700302&dn=At%20Play%20In%20The%20Fields%20of%20The%20Lord%20(1991)%20DVDRip%20Oldies&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "2.24 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] At Play In The Fields Of The Lord 1991 DVDRip XViD (Russian + En",
+          "magnet": "magnet:?xt=urn:btih:5c0bed6202d64b1bed1c63d8636311d5dec5bfe3&dn=At%20Play%20In%20The%20Fields%20Of%20The%20Lord%201991%20DVDRip%20XViD%20(Russian%20%2B%20En&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.7 GB",
+          "provider": "Torrentio/MagnetDL"
+        },
+        {
+          "title": "[SD/unlabeled] At.Play.In.The.Fields.of.The.Lord.1991.DVDRip.XViD-NoGrp",
+          "magnet": "magnet:?xt=urn:btih:96a7db09f91384c71749ac1327dbb85f1b949faf&dn=At.Play.In.The.Fields.of.The.Lord.1991.DVDRip.XViD-NoGrp&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.37 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Jugando en los Campos del Señor_Hector Babenco",
+          "magnet": "magnet:?xt=urn:btih:5e58a9d61f5b53fc75619148297e494e829f0983&dn=Jugando%20en%20los%20Campos%20del%20Se%C3%B1or_Hector%20Babenco&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.88 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Jugando en los Campos del Señor",
+          "magnet": "magnet:?xt=urn:btih:65603eeccec27902929a58d6ff13e6a374a73c0a&dn=Jugando%20en%20los%20Campos%20del%20Se%C3%B1or&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.89 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "familia-e-tudo-2024-tv",
@@ -43417,7 +44664,41 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Estômago 2 - O Poderoso Chef 2024 WEB-DL 1080p x264 NACIONAL 5.1",
+          "magnet": "magnet:?xt=urn:btih:b57b76d8e8831427a88d2d3c8feaa4fdd6914a43&dn=Est%C3%B4mago%202%20-%20O%20Poderoso%20Chef%202024%20WEB-DL%201080p%20x264%20NACIONAL%205.1&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 18,
+          "size": "2.95 GB",
+          "provider": "Torrentio/BluDV"
+        },
+        {
+          "title": "Estômago.2.O.Poderoso.Chef.2024.1080p.WEB-DL.NACIONAL.5.1",
+          "magnet": "magnet:?xt=urn:btih:af73811479a49df49424fa67ec4217a10aa90bf5&dn=Est%C3%B4mago.2.O.Poderoso.Chef.2024.1080p.WEB-DL.NACIONAL.5.1&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.95 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Estômago 2 - O Poderoso Chef 2024 WEB-DL 1080p x264 NACIONAL 5.1",
+          "magnet": "magnet:?xt=urn:btih:b57b76d8e8831427a88d2d3c8feaa4fdd6914a43&dn=Est%C3%B4mago%202%20-%20O%20Poderoso%20Chef%202024%20WEB-DL%201080p%20x264%20NACIONAL%205.1&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 18,
+          "size": "2.95 GB",
+          "provider": "Torrentio/BluDV"
+        },
+        {
+          "title": "Estômago.2.O.Poderoso.Chef.2024.1080p.WEB-DL.NACIONAL.5.1",
+          "magnet": "magnet:?xt=urn:btih:af73811479a49df49424fa67ec4217a10aa90bf5&dn=Est%C3%B4mago.2.O.Poderoso.Chef.2024.1080p.WEB-DL.NACIONAL.5.1&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.95 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "two-sons-of-francisco-2005-movie",
@@ -43461,7 +44742,17 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "2 Filhos de Francisco (2005) 720p NACIONAL - LAPUMiAFiLMES.COM",
+          "magnet": "magnet:?xt=urn:btih:ed2cc1be46163493abe8be92ab1eebe4f838fc2a&dn=2%20Filhos%20de%20Francisco%20(2005)%20720p%20NACIONAL%20-%20LAPUMiAFiLMES.COM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 5,
+          "size": "1.14 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "room-at-the-top-1959-movie",
@@ -44634,7 +45925,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled]  Como Era Gostoso o Meu Francês (1971) DVDRip Oldies",
+          "magnet": "magnet:?xt=urn:btih:3bed70a36def7389f615894644cdaa22091ba4e6&dn=%20Como%20Era%20Gostoso%20o%20Meu%20Franc%C3%AAs%20(1971)%20DVDRip%20Oldies&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.57 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] How tasty was my little frenchman.1971.",
+          "magnet": "magnet:?xt=urn:btih:cc825bffe0dbc2bfeedcbc1717b66b79071d9e93&dn=How%20tasty%20was%20my%20little%20frenchman.1971.&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "896.19 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "zorra-total-1999-tv",
@@ -45228,7 +46536,62 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Boi Neon 720p (2016) Nacional BluRay 5.1 -- By - Lucas Firmo",
+          "magnet": "magnet:?xt=urn:btih:1353e8d968a4f2c541185754891cc8342575afd5&dn=Boi%20Neon%20720p%20(2016)%20Nacional%20BluRay%205.1%20--%20By%20-%20Lucas%20Firmo&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "810.35 MB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "Neon.Bull.2015.PORTUGUESE.720p.BluRay.H264.AAC-VXT",
+          "magnet": "magnet:?xt=urn:btih:ada272993b38494ac355bbea8d5fb596bb7b18a0&dn=Neon.Bull.2015.PORTUGUESE.720p.BluRay.H264.AAC-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.26 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Neon Bull 2015 720p BluRay",
+          "magnet": "magnet:?xt=urn:btih:dfb4689a39fd2cb89019af79500c156a75b74634&dn=Neon%20Bull%202015%20720p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "955.82 MB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Neon Bull 2015 1080p BluRay",
+          "magnet": "magnet:?xt=urn:btih:f16fad1ae85aa43310fd662a0bf5ce4d7ca144b7&dn=Neon%20Bull%202015%201080p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "1.92 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "Boi_neon.2016.1080p.WEB-DL.5.1.COMANDO.TO",
+          "magnet": "magnet:?xt=urn:btih:bb8200167082592974c2a5deb56187c597c2efba&dn=Boi_neon.2016.1080p.WEB-DL.5.1.COMANDO.TO&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.72 GB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "Neon.Bull.2015.PORTUGUESE.1080p.BluRay.H264.AAC-VXT",
+          "magnet": "magnet:?xt=urn:btih:81e7c9e1947f15459bb6419bd40fb18e08f808f7&dn=Neon.Bull.2015.PORTUGUESE.1080p.BluRay.H264.AAC-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.98 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Neon.Bull.2015.LIMITED.1080p.BluRay.x264-USURY",
+          "magnet": "magnet:?xt=urn:btih:92323acfab2edded115b04363019841340245988&dn=Neon.Bull.2015.LIMITED.1080p.BluRay.x264-USURY&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "7.65 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "a-lei-do-amor-2016-tv",
@@ -45403,7 +46766,48 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "My Mom is a Character 3 Web-dl 720p | mkv | 2.8 gb | português",
+          "magnet": "magnet:?xt=urn:btih:8ae201dd95624ee7bc858022e191224cfd70634d&dn=My%20Mom%20is%20a%20Character%203%20Web-dl%20720p%20%7C%20mkv%20%7C%202.8%20gb%20%7C%20portugu%C3%AAs&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 19,
+          "size": "2.88 GB",
+          "provider": "Torrentio/MicoLeaoDublado"
+        },
+        {
+          "title": "Minha Mãe é uma Peça 3 - O Filme 2020 (720p)",
+          "magnet": "magnet:?xt=urn:btih:5f6764ee29e3faa05e6b842a1af94fea0e5a93d9&dn=Minha%20M%C3%A3e%20%C3%A9%20uma%20Pe%C3%A7a%203%20-%20O%20Filme%202020%20(720p)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.88 GB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "Minha Mãe é Uma Peça 3 2020 (720p-HDCAM)",
+          "magnet": "magnet:?xt=urn:btih:2e2f754761c9180b618274d0829dff34980abd02&dn=Minha%20M%C3%A3e%20%C3%A9%20Uma%20Pe%C3%A7a%203%202020%20(720p-HDCAM)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.02 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "My Mom is a Character 3 Web-dl 1080p | mkv | 6.8 gb | português",
+          "magnet": "magnet:?xt=urn:btih:2c82fc7488427544a434c6ce05487f3de43dc8ad&dn=My%20Mom%20is%20a%20Character%203%20Web-dl%201080p%20%7C%20mkv%20%7C%206.8%20gb%20%7C%20portugu%C3%AAs&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "6.8 GB",
+          "provider": "Torrentio/MicoLeaoDublado"
+        },
+        {
+          "title": "Minha Mãe é uma Peça 3 - O Filme 2020 (1080p)",
+          "magnet": "magnet:?xt=urn:btih:46c2b834c9020c7ac6cbee2a9e02c5eb39fe9e2c&dn=Minha%20M%C3%A3e%20%C3%A9%20uma%20Pe%C3%A7a%203%20-%20O%20Filme%202020%20(1080p)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "6.8 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "the-bells-of-st-mary-s-1945-movie",
@@ -46990,7 +48394,17 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Xica da Silva (1976) [PT-BR]",
+          "magnet": "magnet:?xt=urn:btih:2773a5f78af71586bbc18f75d3f4197afd8eae0a&dn=Xica%20da%20Silva%20(1976)%20%5BPT-BR%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.37 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "vai-na-fe-2023-tv",
@@ -47076,7 +48490,31 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Minha Mãe É Uma Peça - O Filme (2013) BDrip 720p Nacional (By-KleysonLima)",
+          "magnet": "magnet:?xt=urn:btih:2b9aec8735a5ab408f83a2c7d109be9d010c8491&dn=Minha%20M%C3%A3e%20%C3%89%20Uma%20Pe%C3%A7a%20-%20O%20Filme%20(2013)%20BDrip%20720p%20Nacional%20(By-KleysonLima)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 5,
+          "size": "1007.66 MB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "Minha Mãe e uma Peça (2013) 720p Dublado RodolfoTP",
+          "magnet": "magnet:?xt=urn:btih:35fff3243c86c73f01d6498f0c3d19420e7d8fa9&dn=Minha%20M%C3%A3e%20e%20uma%20Pe%C3%A7a%20(2013)%20720p%20Dublado%20RodolfoTP&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "3.15 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[Portuguese-Pt] Minha Mae E Uma Peca - O Filme (2013) BDrip 720p",
+          "magnet": "magnet:?xt=urn:btih:92162dd5011ca4d2ecd613ddef6c12764e736323&dn=%5BPortuguese-Pt%5D%20Minha%20Mae%20E%20Uma%20Peca%20-%20O%20Filme%20(2013)%20BDrip%20720p&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1007.66 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "my-mom-is-a-character-2-2016-movie",
@@ -47118,7 +48556,62 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Minha.Mae.e.uma.Peca.2.2017.720p.WEBRip.x264.AC3.NACIONAL-WWW.TORRENTDOSFILMES.COM.mkv",
+          "magnet": "magnet:?xt=urn:btih:bbe2c8478a5a88f4aa95c678149451ac93cf752f&dn=Minha.Mae.e.uma.Peca.2.2017.720p.WEBRip.x264.AC3.NACIONAL-WWW.TORRENTDOSFILMES.COM.mkv&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "4.61 GB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "Minha.Mãe.é.Uma.Peça.2.2017.720p.BluRay.DD5.1.x264.NACIONAL-WWW.TORRENTDOSFILMES.COM.mkv",
+          "magnet": "magnet:?xt=urn:btih:055bd38178abbd4cc3efcf3fd2be84fdac580aea&dn=Minha.M%C3%A3e.%C3%A9.Uma.Pe%C3%A7a.2.2017.720p.BluRay.DD5.1.x264.NACIONAL-WWW.TORRENTDOSFILMES.COM.mkv&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "940.94 MB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "Minha.Mãe.é.Uma.Peça.2.2017.720p.BluRay.x264.NACIONAL-WWW.TORRENTDOSFILMES.COM.mp4",
+          "magnet": "magnet:?xt=urn:btih:c66208ae2034f7eaf7c2e5caf429e60dbda0ca28&dn=Minha.M%C3%A3e.%C3%A9.Uma.Pe%C3%A7a.2.2017.720p.BluRay.x264.NACIONAL-WWW.TORRENTDOSFILMES.COM.mp4&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "783.87 MB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "Minha Mae E Uma Peca 2 2016 Nacional 1280x720p H264 Makalakato",
+          "magnet": "magnet:?xt=urn:btih:c8ca65dfd21e6a2f176e87a85f59e39868e3e496&dn=Minha%20Mae%20E%20Uma%20Peca%202%202016%20Nacional%201280x720p%20H264%20Makalakato&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.12 GB",
+          "provider": "Torrentio/MagnetDL"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Minha.Mãe.É.Uma.Peça.2.2017.1080p.BluRay.x264.NACIONAL-WWW.TORRENTDOSFILMES.COM.mp4",
+          "magnet": "magnet:?xt=urn:btih:69e9af8512d303e43dd3895e200080878428c053&dn=Minha.M%C3%A3e.%C3%89.Uma.Pe%C3%A7a.2.2017.1080p.BluRay.x264.NACIONAL-WWW.TORRENTDOSFILMES.COM.mp4&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "1.45 GB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "Minha.Mãe.É.Uma.Peça.2.2017.1080p.BluRay.DD5.1.x264.NACIONAL-WWW.TORRENTDOSFILMES.COM.mkv",
+          "magnet": "magnet:?xt=urn:btih:fc0794e9d6aad4016d2252be80095d99f1fcff91&dn=Minha.M%C3%A3e.%C3%89.Uma.Pe%C3%A7a.2.2017.1080p.BluRay.DD5.1.x264.NACIONAL-WWW.TORRENTDOSFILMES.COM.mkv&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.6 GB",
+          "provider": "Torrentio/Comando"
+        },
+        {
+          "title": "Minha Mae e Uma Peca 2016 BluRay 1080p AC3 x264 BR",
+          "magnet": "magnet:?xt=urn:btih:e591618073bfed5b90779d7c823e04fe366976eb&dn=Minha%20Mae%20e%20Uma%20Peca%202016%20BluRay%201080p%20AC3%20x264%20BR&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "7.83 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "friendly-persuasion-1956-movie",
@@ -47946,7 +49439,41 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "O Auto da Compadecida 2 2024 WEB-DL 1080p x264 NACIONAL 5.1",
+          "magnet": "magnet:?xt=urn:btih:03bca2d4f374e55059e94128b2a3b628cb153449&dn=O%20Auto%20da%20Compadecida%202%202024%20WEB-DL%201080p%20x264%20NACIONAL%205.1&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "2.55 GB",
+          "provider": "Torrentio/BluDV"
+        },
+        {
+          "title": "O.Auto.da.Compadecida.2.2024.1080p.WEB-DL.NACIONAL.5.1",
+          "magnet": "magnet:?xt=urn:btih:a417da95c6e828ffa57f1e2674778afd1b92525e&dn=O.Auto.da.Compadecida.2.2024.1080p.WEB-DL.NACIONAL.5.1&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "2.93 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "O Auto da Compadecida 2 2024 WEB-DL 1080p x264 NACIONAL 5.1",
+          "magnet": "magnet:?xt=urn:btih:03bca2d4f374e55059e94128b2a3b628cb153449&dn=O%20Auto%20da%20Compadecida%202%202024%20WEB-DL%201080p%20x264%20NACIONAL%205.1&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "2.55 GB",
+          "provider": "Torrentio/BluDV"
+        },
+        {
+          "title": "O.Auto.da.Compadecida.2.2024.1080p.WEB-DL.NACIONAL.5.1",
+          "magnet": "magnet:?xt=urn:btih:a417da95c6e828ffa57f1e2674778afd1b92525e&dn=O.Auto.da.Compadecida.2.2024.1080p.WEB-DL.NACIONAL.5.1&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "2.93 GB",
+          "provider": "Torrentio/Comando"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "the-prince-of-tides-1991-movie",
@@ -48525,7 +50052,45 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Quilombo (1984) DVDRip Oldies",
+          "magnet": "magnet:?xt=urn:btih:a37de8765e249fd73b6807a1c7702fcb81cd90ba&dn=Quilombo%20(1984)%20DVDRip%20Oldies&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.8 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Quilombo (1984) DVDRip.x264-Distanasia",
+          "magnet": "magnet:?xt=urn:btih:63b61d9beab136353fa99398fcaba061f7f3de03&dn=Quilombo%20(1984)%20DVDRip.x264-Distanasia&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.54 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Quilombo (1984)",
+          "magnet": "magnet:?xt=urn:btih:a78ca577450fff38c491bf7b7934a0d5014a2b64&dn=Quilombo%20(1984)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.91 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Quilombo (1984) - Carlos Diegues",
+          "magnet": "magnet:?xt=urn:btih:a5431f21850073724582cd4a2705ad8d420e2576&dn=Quilombo%20(1984)%20-%20Carlos%20Diegues&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.9 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Quilombo - Carlos Diegues",
+          "magnet": "magnet:?xt=urn:btih:09d1b1d88340170de9959e5205ac8d32d8258b96&dn=Quilombo%20-%20Carlos%20Diegues&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.36 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "hard-paint-2018-movie",
@@ -48567,7 +50132,48 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Hard Paint 2018 720p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:a84b94c97f0bc4449de493a73bdb365b6374a634&dn=Hard%20Paint%202018%20720p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.06 GB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Hard Paint 2018 1080p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:179f9b27e2c574b7c67e13c84e2a33b685f338f8&dn=Hard%20Paint%202018%201080p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.96 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "Hard.Paint.2018.PORTUGUESE.ENSUBBED.1080p.WEBRip.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:2c236feb5c9bcf8b45a324b7b51739c735b22e90&dn=Hard.Paint.2018.PORTUGUESE.ENSUBBED.1080p.WEBRip.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.83 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Hard.Paint.2018.PORTUGUESE.ENSUBBED.1080p.WEBRip.x264-VXT",
+          "magnet": "magnet:?xt=urn:btih:4f4a2840161a9bd19f8b4d72ee683b24c4a92bfb&dn=Hard.Paint.2018.PORTUGUESE.ENSUBBED.1080p.WEBRip.x264-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.24 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Univercine.SiteRip.2025.07.25.WEB.x264",
+          "magnet": "magnet:?xt=urn:btih:b0e19213724ca3a29808d558efc8e60f0744cbb7&dn=Univercine.SiteRip.2025.07.25.WEB.x264&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "san-francisco-1936-movie",
@@ -49528,7 +51134,31 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] É Proibido Fumar (2009) Anna Muylaert - DVDrip",
+          "magnet": "magnet:?xt=urn:btih:a1bc6331a22b3dfc1ff0cb0ac2bc06eec8d7dd18&dn=%C3%89%20Proibido%20Fumar%20(2009)%20Anna%20Muylaert%20-%20DVDrip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.25 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Ã‰ Proibido Fumar.DVDRip by Markito",
+          "magnet": "magnet:?xt=urn:btih:fd279f71ec606276ae66a17c1c730f880149282b&dn=%C3%83%E2%80%B0%20Proibido%20Fumar.DVDRip%20by%20Markito&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "695.39 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] E.Proibido.Fumar",
+          "magnet": "magnet:?xt=urn:btih:349b14dcd22fcd4e7443fd6f70eaee815d1c587d&dn=E.Proibido.Fumar&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "4.2 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "the-front-page-1931-movie",
@@ -49614,7 +51244,31 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Feast.Trilogy.2005-2009.480p.H264",
+          "magnet": "magnet:?xt=urn:btih:2e72af2ab73ded22f7490018e7a185bef1e85a2e&dn=Feast.Trilogy.2005-2009.480p.H264&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "[SD/unlabeled] A Festa da Menina Morta aka The Dead Girl s Feast 2008 DVDRip So",
+          "magnet": "magnet:?xt=urn:btih:ccc4a3c325250afc98ec8468b77d88d29cb873ad&dn=A%20Festa%20da%20Menina%20Morta%20aka%20The%20Dead%20Girl%20s%20Feast%202008%20DVDRip%20So&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "798.99 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] a festa da menina morta",
+          "magnet": "magnet:?xt=urn:btih:8f491898582684caf01b351276450d8031f3020a&dn=a%20festa%20da%20menina%20morta&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "700.33 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "big-jet-2015-movie",
@@ -49656,7 +51310,17 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Big Jato 2015 Nacional 1280x536 h264 AAC 48Khz Makalakato",
+          "magnet": "magnet:?xt=urn:btih:ec25029603ed3f0ff3181e840f24b1e9f961ab37&dn=Big%20Jato%202015%20Nacional%201280x536%20h264%20AAC%2048Khz%20Makalakato&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.82 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "one-hour-with-you-1932-movie",
@@ -49786,7 +51450,48 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Lower City 2005 720p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:c662ab861a34555beb01d24e722714d7d9dfd04a&dn=Lower%20City%202005%20720p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "901.84 MB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Lower.City.2005.PORTUGUESE.1080p.WEBRip.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:b21dc4b4042ca0f4221943b098c6d645234632da&dn=Lower.City.2005.PORTUGUESE.1080p.WEBRip.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.53 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Lower.City.2005.PORTUGUESE.1080p.WEBRip.x264-VXT",
+          "magnet": "magnet:?xt=urn:btih:674a91ab334e10a537f19a49b152c86397c51709&dn=Lower.City.2005.PORTUGUESE.1080p.WEBRip.x264-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.87 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Lower.City.2005.PORTUGUESE.1080p.NF.WEBRip.AAC2.0.x264-SiGLA",
+          "magnet": "magnet:?xt=urn:btih:a14941908186eacac2c0512ee380aaebfe834ba8&dn=Lower.City.2005.PORTUGUESE.1080p.NF.WEBRip.AAC2.0.x264-SiGLA&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "4.84 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Lower City 2005 1080p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:b7db9125c7afb6770b6153cb29f28ec3526d53fd&dn=Lower%20City%202005%201080p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.63 GB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "the-man-of-the-crowd-2012-movie",
@@ -50316,7 +52021,48 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Seashore (Beira-Mar) 2015 720p X264 AAC WEB-DL MP4 GAY: Baexoboo",
+          "magnet": "magnet:?xt=urn:btih:a0440c18314335b7a591a27787d4c1b13e96ccea&dn=Seashore%20(Beira-Mar)%202015%20720p%20X264%20AAC%20WEB-DL%20MP4%20GAY%3A%20Baexoboo&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "838.85 MB",
+          "provider": "Torrentio/MagnetDL"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Seashore.2015.PORTUGUESE.ENSUBBED.1080p.WEBRip.x264-VXT",
+          "magnet": "magnet:?xt=urn:btih:0aa0cced429c8c578a520b64a12f88c5f3206ecb&dn=Seashore.2015.PORTUGUESE.ENSUBBED.1080p.WEBRip.x264-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.6 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Seashore.2015.PORTUGUESE.ENSUBBED.1080p.WEBRip.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:dd80cd46c01adfd061bf29b99be590db724a27cc&dn=Seashore.2015.PORTUGUESE.ENSUBBED.1080p.WEBRip.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.31 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Seashore.2015.PORTUGUESE.ENSUBBED.1080p.AMZN.WEBRip.DDP5.1.x264-TOMMY",
+          "magnet": "magnet:?xt=urn:btih:af2178f04cf6a7718a412f4c805588ff499724dc&dn=Seashore.2015.PORTUGUESE.ENSUBBED.1080p.AMZN.WEBRip.DDP5.1.x264-TOMMY&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.62 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "A Beira Mar 2016 1080p BluRay x264-RK - Dual Audio",
+          "magnet": "magnet:?xt=urn:btih:018d169fc92f452beb3dfd9a3a323b30b5003902&dn=A%20Beira%20Mar%202016%201080p%20BluRay%20x264-RK%20-%20Dual%20Audio&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "8 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "faustao-na-band-2022-tv",
@@ -50620,7 +52366,41 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "De Pernas Pro Ar 2 2012 BRASIL [DVD 720p Audio Port-BR Subtitles",
+          "magnet": "magnet:?xt=urn:btih:660e498e2b1de92fd296220093d9235e6d0fcabf&dn=De%20Pernas%20Pro%20Ar%202%202012%20BRASIL%20%5BDVD%20720p%20Audio%20Port-BR%20Subtitles&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "3.53 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "De Pernas Pro ar 2 (2012) bluray 720p torrent dublado (Ancorafi",
+          "magnet": "magnet:?xt=urn:btih:3974ade63c9411da22c40bba79c4d5ed37d1e3e4&dn=De%20Pernas%20Pro%20ar%202%20(2012)%20bluray%20720p%20torrent%20dublado%20(Ancorafi&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "832.5 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "De Pernas Pro Ar 2 (2012) BDRip Bluray 720p - derew",
+          "magnet": "magnet:?xt=urn:btih:247736b90d6e319755f92fa3414ccc5b4fd54be4&dn=De%20Pernas%20Pro%20Ar%202%20(2012)%20BDRip%20Bluray%20720p%20-%20derew&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "832.5 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "De Pernas Pro Ar 2 2013 1080p BluRay x264-BKZ",
+          "magnet": "magnet:?xt=urn:btih:26c449be29418efb42683ddf97d8f58c7d406efd&dn=De%20Pernas%20Pro%20Ar%202%202013%201080p%20BluRay%20x264-BKZ&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "6.58 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "the-matrix-resurrections-2021-movie",
@@ -50867,7 +52647,17 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Sudoeste.2012.TVRip.XviD.MP3.MKOff",
+          "magnet": "magnet:?xt=urn:btih:605de73b7c4e94d5ebaa9d1a9923413ca0b996ae&dn=Sudoeste.2012.TVRip.XviD.MP3.MKOff&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "945.67 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "popstar-2002-tv",
@@ -51016,7 +52806,17 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Abismo Prateado tv rip",
+          "magnet": "magnet:?xt=urn:btih:279fa13263e49f6ce504f086c5c72b452f9926bb&dn=Abismo%20Prateado%20tv%20rip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "690.51 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "midnight-1998-movie",
@@ -51059,7 +52859,17 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] O Primeiro Dia (The First Day 1998)",
+          "magnet": "magnet:?xt=urn:btih:5a8c17fdae415f1bef3403029eb6b9e7cb073889&dn=O%20Primeiro%20Dia%20(The%20First%20Day%201998)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "700.04 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "the-age-of-the-earth-1980-movie",
@@ -51103,7 +52913,41 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "The Age of the Earth 1980 720p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:75830151f7602cc7fa3bf7023625ed62927643fd&dn=The%20Age%20of%20the%20Earth%201980%20720p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.36 GB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "The.Age.of.the.Earth.1980.PORTUGUESE.1080p.WEBRip.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:585190ac00590a93d1b10a6f42e794177f001618&dn=The.Age.of.the.Earth.1980.PORTUGUESE.1080p.WEBRip.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.37 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "The Age of the Earth 1980 1080p WEBRip",
+          "magnet": "magnet:?xt=urn:btih:fa373c2a1fae5e6c3b43d0774d04208410a95862&dn=The%20Age%20of%20the%20Earth%201980%201080p%20WEBRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.53 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "The.Age.of.the.Earth.1980.PORTUGUESE.1080p.WEBRip.x264-VXT",
+          "magnet": "magnet:?xt=urn:btih:6782b68893e2ee8af571cddbb17c5b671abc8b7a&dn=The.Age.of.the.Earth.1980.PORTUGUESE.1080p.WEBRip.x264-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.9 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "the-great-ziegfeld-1936-movie",
@@ -51785,7 +53629,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Suely In The Sky AKA Love For Sale 2006 .x264 (DVDRip .srt Incl",
+          "magnet": "magnet:?xt=urn:btih:01b183a15933ae95d3f70e276f11d4c4b17461c0&dn=Suely%20In%20The%20Sky%20AKA%20Love%20For%20Sale%202006%20.x264%20(DVDRip%20.srt%20Incl&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "735.36 MB",
+          "provider": "Torrentio/MagnetDL"
+        },
+        {
+          "title": "[SD/unlabeled] Suely in the Sky - O Ceu de Suely [2006 - Brazil] Love for Sale",
+          "magnet": "magnet:?xt=urn:btih:50d1ff32a73ab178eeba61c30c198158b57e6019&dn=Suely%20in%20the%20Sky%20-%20O%20Ceu%20de%20Suely%20%5B2006%20-%20Brazil%5D%20Love%20for%20Sale&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.39 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "encontro-com-fatima-bernardes-2012-tv",
@@ -52626,7 +54487,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "At Que A Sorte Nos Separe 3: A Falncia Final 2016 1080p WEB-DL 5.1 X264 DUAL BLUDV",
+          "magnet": "magnet:?xt=urn:btih:473a354f62e94a7c11647654c35413828622386d&dn=At%20Que%20A%20Sorte%20Nos%20Separe%203%3A%20A%20Falncia%20Final%202016%201080p%20WEB-DL%205.1%20X264%20DUAL%20BLUDV&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.95 GB",
+          "provider": "Torrentio/MagnetDL"
+        },
+        {
+          "title": "[SD/unlabeled] At Que A Sorte Nos Separe 3: A Falncia Final 2016 [WEB-DL] WWW.BLUDV.COM",
+          "magnet": "magnet:?xt=urn:btih:8d565c5397a5aeed16aa75f9d8718cff8beb6ed4&dn=At%20Que%20A%20Sorte%20Nos%20Separe%203%3A%20A%20Falncia%20Final%202016%20%5BWEB-DL%5D%20WWW.BLUDV.COM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.2 GB",
+          "provider": "Torrentio/MagnetDL"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "the-dolphin-1987-movie",
@@ -52668,7 +54546,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Ele o Boto (1987) DVDRip Oldies",
+          "magnet": "magnet:?xt=urn:btih:847258baeb642e5ca12d0ba0f43ae77f00eccda9&dn=Ele%20o%20Boto%20(1987)%20DVDRip%20Oldies&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.65 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Ele O Boto",
+          "magnet": "magnet:?xt=urn:btih:5746a3e9f6b3310aa7d4b2b4a76793e8588916ae&dn=Ele%20O%20Boto&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "697.53 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "once-upon-a-time-veronica-2012-movie",
@@ -52710,7 +54605,45 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] [Portuguese]Once Upon a Time Veronica 2012 DVDrip H264-MKO",
+          "magnet": "magnet:?xt=urn:btih:fe516f2857406f01e127eea672a17bac1fcdae62&dn=%5BPortuguese%5DOnce%20Upon%20a%20Time%20Veronica%202012%20DVDrip%20H264-MKO&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 3,
+          "size": "1.1 GB",
+          "provider": "Torrentio/1337x"
+        },
+        {
+          "title": "[SD/unlabeled] Era Uma Vez Eu Verônica (2012)",
+          "magnet": "magnet:?xt=urn:btih:2661ad700ba51aa53791695a4ea107ee0cd4bcb1&dn=Era%20Uma%20Vez%20Eu%20Ver%C3%B4nica%20(2012)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.07 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Once.Upon.a.Time.Veronica.2012.SUBBED.DVDRip.x264-BiPOLAR",
+          "magnet": "magnet:?xt=urn:btih:83fc95aae94953a6ab7f43ee180144e3e48ce172&dn=Once.Upon.a.Time.Veronica.2012.SUBBED.DVDRip.x264-BiPOLAR&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "773.24 MB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "[SD/unlabeled] Era.Uma.Vez.Eu.Veronica.2012.DVDRip.h264-MKO.lucmor",
+          "magnet": "magnet:?xt=urn:btih:919c3045bfccb5d9bc948f26b64cee2844d9f39b&dn=Era.Uma.Vez.Eu.Veronica.2012.DVDRip.h264-MKO.lucmor&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.07 GB",
+          "provider": "Torrentio/MagnetDL"
+        },
+        {
+          "title": "[SD/unlabeled] Era.Uma.Vez.Eu.Verônica.DVDRip.XviD-Rick.SD",
+          "magnet": "magnet:?xt=urn:btih:636f90ab3818449df50b6182bbb4ff0bfa24a863&dn=Era.Uma.Vez.Eu.Ver%C3%B4nica.DVDRip.XviD-Rick.SD&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "695.24 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "here-comes-the-navy-1934-movie",
@@ -53174,7 +55107,62 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "My Hindu Friend 2015 720p BluRay",
+          "magnet": "magnet:?xt=urn:btih:85ba473b61be10e007946600a43ffeed9ef2290c&dn=My%20Hindu%20Friend%202015%20720p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.03 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "My.Hindu.Friend.2015.720p.BluRay.x264-x0r",
+          "magnet": "magnet:?xt=urn:btih:4997c2ef657d7b79280f0748f442df61575eec31&dn=My.Hindu.Friend.2015.720p.BluRay.x264-x0r&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.42 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "My.Hindu.Friend.2015.720p.BluRay.H264.AAC-RARBG",
+          "magnet": "magnet:?xt=urn:btih:33b7999af0dc7ba121cdbef90ea87cdf35706099&dn=My.Hindu.Friend.2015.720p.BluRay.H264.AAC-RARBG&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.39 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "My.Hindu.Friend.2015.1080p.BluRay.x265-RARBG",
+          "magnet": "magnet:?xt=urn:btih:31871ce1a41662d8ff473c4926eb139010bedfa1&dn=My.Hindu.Friend.2015.1080p.BluRay.x265-RARBG&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 5,
+          "size": "1.8 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "My Hindu Friend 2015 1080p BluRay",
+          "magnet": "magnet:?xt=urn:btih:2debd715c2209e40c536996362f4ee4813e05143&dn=My%20Hindu%20Friend%202015%201080p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "2.12 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "Meu Amigo o Dragão - BluRay 1080p Dublado 5.1 2016",
+          "magnet": "magnet:?xt=urn:btih:e492d18fb82e6137ec32eab00dc0bd85cf708e55&dn=Meu%20Amigo%20o%20Drag%C3%A3o%20-%20BluRay%201080p%20Dublado%205.1%202016&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.82 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "My.Hindu.Friend.2015.1080p.BluRay.H264.AAC-RARBG",
+          "magnet": "magnet:?xt=urn:btih:bc2b6652c10d8fbad808433ab4f4f6d683de4e40&dn=My.Hindu.Friend.2015.1080p.BluRay.H264.AAC-RARBG&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "2.2 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "kill-me-please-2015-movie",
@@ -53534,7 +55522,41 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Medusa 2020 720p BluRay",
+          "magnet": "magnet:?xt=urn:btih:744cc9dfb5ede5c03d3187bda01cc7ff41a74c31&dn=Medusa%202020%20720p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "806.19 MB",
+          "provider": "Torrentio/YTS"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "Medusa 2020 1080p BluRay",
+          "magnet": "magnet:?xt=urn:btih:3115e09aefcc3d1f58c0550306b1dd472323b31b&dn=Medusa%202020%201080p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 9,
+          "size": "1.62 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "Medusa.Queen.of.the.Serpents.2021.1080p.BluRay.1400MB.DD5.1.x264",
+          "magnet": "magnet:?xt=urn:btih:e842f84e7873737a694ce0db438d0e20ad4be45e&dn=Medusa.Queen.of.the.Serpents.2021.1080p.BluRay.1400MB.DD5.1.x264&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 2,
+          "size": "1.4 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Medusa.2021.1080p.WEBRip.x265-RARBG",
+          "magnet": "magnet:?xt=urn:btih:e471e54a9b6e6dd7dc91c429e5cf562e3d40078e&dn=Medusa.2021.1080p.WEBRip.x265-RARBG&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 1,
+          "size": "1.37 GB",
+          "provider": "Torrentio/RARBG"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "the-patriot-1928-movie",
@@ -53780,7 +55802,24 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "Besouro (2009) [720p] [Action-Adventure]",
+          "magnet": "magnet:?xt=urn:btih:f018190c87f241ec831f43ac81b7df9518cfe912&dn=Besouro%20(2009)%20%5B720p%5D%20%5BAction-Adventure%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.01 GB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "Besouro 2009 BRRiP 720p x264 {SiMbA}",
+          "magnet": "magnet:?xt=urn:btih:374e0ea52e2e0fd1644af32d9bf23d100fed454f&dn=Besouro%202009%20BRRiP%20720p%20x264%20%7BSiMbA%7D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "705.79 MB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "anthony-adverse-1936-movie",
@@ -53996,7 +56035,69 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "De.Pernas.pro.Ar.2010.PORTUGUESE.720p.BluRay.H264.AAC-VXT",
+          "magnet": "magnet:?xt=urn:btih:a0d895d9f0766192b99690278c8284e21824f474&dn=De.Pernas.pro.Ar.2010.PORTUGUESE.720p.BluRay.H264.AAC-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.17 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Head Over Heels 2010 720p BluRay",
+          "magnet": "magnet:?xt=urn:btih:30c79377d318e65ad7abf2c04fbd8d1ea25fb6ba&dn=Head%20Over%20Heels%202010%20720p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "889.93 MB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "De.Pernas.Pro.Ar.2010.720p.HDTV.x264.AC3-CM",
+          "magnet": "magnet:?xt=urn:btih:0841d3111f451bf78daf208dc0d746a84b5627b0&dn=De.Pernas.Pro.Ar.2010.720p.HDTV.x264.AC3-CM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "4.2 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0,
+      "torrent_options": [
+        {
+          "title": "De.Pernas.pro.Ar.2010.PORTUGUESE.1080p.BluRay.x265-VXT",
+          "magnet": "magnet:?xt=urn:btih:21c53b7843725fcdc16bc9411475076d791458ef&dn=De.Pernas.pro.Ar.2010.PORTUGUESE.1080p.BluRay.x265-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.51 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "De.Pernas.pro.Ar.2010.PORTUGUESE.1080p.BluRay.H264.AAC-VXT",
+          "magnet": "magnet:?xt=urn:btih:b5c8b85044acd70817511131419f561886a287f4&dn=De.Pernas.pro.Ar.2010.PORTUGUESE.1080p.BluRay.H264.AAC-VXT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.85 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "De.Pernas.pro.Ar.2010.PORTUGUESE.1080p.BluRay.x264.DD5.1-HANDJOB",
+          "magnet": "magnet:?xt=urn:btih:c4e876a94af27fdf705930f2a4b4de4d1b3576be&dn=De.Pernas.pro.Ar.2010.PORTUGUESE.1080p.BluRay.x264.DD5.1-HANDJOB&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "6.41 GB",
+          "provider": "Torrentio/RARBG"
+        },
+        {
+          "title": "Head Over Heels 2010 1080p BluRay",
+          "magnet": "magnet:?xt=urn:btih:99e566d101a82ecc2194788f6633a6dc6c352b59&dn=Head%20Over%20Heels%202010%201080p%20BluRay&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.79 GB",
+          "provider": "Torrentio/YTS"
+        },
+        {
+          "title": "De Pernas Pro Ar BluRay 1080p",
+          "magnet": "magnet:?xt=urn:btih:838f894e78b8db517202d52e97e67cb5282821fc&dn=De%20Pernas%20Pro%20Ar%20BluRay%201080p&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "6.57 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index": 0
     },
     {
       "id": "wilson-1944-movie",
@@ -54305,7 +56406,31 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Lula o Filho do Brasil 2011 (480p - DVDRip) Acesse o ORIGINAL WWW.BLUDV.TV",
+          "magnet": "magnet:?xt=urn:btih:fe12c545d5efbd72df26a4eba742b2221e7c1f19&dn=Lula%20o%20Filho%20do%20Brasil%202011%20(480p%20-%20DVDRip)%20Acesse%20o%20ORIGINAL%20WWW.BLUDV.TV&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": null,
+          "provider": "Torrentio/Torrentio"
+        },
+        {
+          "title": "[SD/unlabeled] Lula.o.Filho.do.Brasil.rmvb",
+          "magnet": "magnet:?xt=urn:btih:82c134f90a3a73f6fa3ec8a93aaed68ddbdbc2ef&dn=Lula.o.Filho.do.Brasil.rmvb&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "568.15 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Lula o Filho do Brasil - www-share.",
+          "magnet": "magnet:?xt=urn:btih:2b71f2f04fc9166b63d9540ef7b63216c1329d0d&dn=Lula%20o%20Filho%20do%20Brasil%20-%20www-share.&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "1.01 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "one-night-of-love-1934-movie",
@@ -54545,7 +56670,45 @@
       "subtitles": [],
       "episodes": [],
       "keywords": [],
-      "award_entries": []
+      "award_entries": [],
+      "torrent_options_720p": [
+        {
+          "title": "[SD/unlabeled] Luz.nas.Trevas.2010.TVRip.XviD.MP3.MKOff.por.NaMoral",
+          "magnet": "magnet:?xt=urn:btih:e23087dde33f01df8c0a2c262f97dc225eac92b0&dn=Luz.nas.Trevas.2010.TVRip.XviD.MP3.MKOff.por.NaMoral&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "653.06 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Luz nas Trevas – A Volta do Bandido da Luz Vermelha DVDRip",
+          "magnet": "magnet:?xt=urn:btih:f3f5e8c3ab987911401e7a4bf02b568c07c846c8&dn=Luz%20nas%20Trevas%20%E2%80%93%20A%20Volta%20do%20Bandido%20da%20Luz%20Vermelha%20DVDRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "372.12 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Luz nas Trevas – A Volta do Bandido da Luz Vermelha DVDRip",
+          "magnet": "magnet:?xt=urn:btih:6b58e596f74de206ebdfe607446c9490ff3133d8&dn=Luz%20nas%20Trevas%20%E2%80%93%20A%20Volta%20do%20Bandido%20da%20Luz%20Vermelha%20DVDRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "663.72 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] [Equilibrium].Luz.Nas.Trevas.DVDRip.XviD-3LT0N",
+          "magnet": "magnet:?xt=urn:btih:5288f92c5cd1172f02ef7196ee12dea1ab9b9544&dn=%5BEquilibrium%5D.Luz.Nas.Trevas.DVDRip.XviD-3LT0N&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "663.72 MB",
+          "provider": "Torrentio/ThePirateBay"
+        },
+        {
+          "title": "[SD/unlabeled] Luz nas Trevas - DVDR - Nacional BR",
+          "magnet": "magnet:?xt=urn:btih:c7f83f0a4bfa55c789b27dfce74dd0aaa6fc712d&dn=Luz%20nas%20Trevas%20-%20DVDR%20-%20Nacional%20BR&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce",
+          "seeders": 0,
+          "size": "4.29 GB",
+          "provider": "Torrentio/ThePirateBay"
+        }
+      ],
+      "current_torrent_index_720p": 0
     },
     {
       "id": "disraeli-1929-movie",
