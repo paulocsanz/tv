@@ -233,16 +233,14 @@ async function main() {
   let completed = 0;
   let nextIndex = 0;
 
-  // Bounded worker pool, not one-item-at-a-time - S3 upload throughput and
-  // yt-dlp/YouTube are two different bottlenecks with two different safe
-  // concurrency levels. This bucket measurably tops out per-TCP-connection
-  // (see uploadToS3's comment in download-picked-torrents.js), so several
-  // items in flight helps there. YouTube's caption endpoint specifically
-  // rate-limits (confirmed: HTTP 429 even sequentially) - kept
-  // conservative (3 workers, 2s stagger per worker, i.e. an item starts
-  // roughly every ~0.7s rather than every ~1.5s under the old sequential
-  // loop) rather than maximizing throughput and risking a harder block.
-  const PARALLELISM = 3;
+  // PARALLELISM=3 (2026-07-11) triggered YouTube's account-level anti-bot
+  // detection ("Sign in to confirm you're not a bot") partway through a
+  // run - not simple rate-limiting, a real lockout that failed ~380
+  // consecutive items until it cleared on its own. Back to strictly
+  // sequential (one item at a time, no worker pool) until there's a safer
+  // way to get real parallelism (e.g. rotating egress IPs) - the S3
+  // upload-throughput win isn't worth risking another lockout for.
+  const PARALLELISM = 1;
 
   async function worker() {
     while (nextIndex < pending.length) {
@@ -263,6 +261,10 @@ async function main() {
   if (!DRY_RUN) saveBackfill(backfill);
 
   console.log(`\nDone. OK: ${ok} | Failed: ${failed}${DRY_RUN ? " | (dry run, nothing uploaded)" : ""}`);
+  // The S3 client keeps its HTTP keep-alive pool open, which otherwise
+  // leaves the process hanging indefinitely after main() resolves (all
+  // work genuinely done, 0% CPU, nothing left to do) instead of exiting.
+  process.exit(0);
 }
 
 main().catch((error) => {
