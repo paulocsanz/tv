@@ -171,9 +171,11 @@ cat .download-picked-torrents.lock 2>/dev/null && echo " (pipeline lock present)
   human decision — count them, don't just note they exist.
 - Any backfill script (`backfill-*.js`) whose corresponding field isn't populated across the
   catalog yet is unfinished work, not a completed one-off.
-- The "197 items with no torrent options" gap (as of 2026-07-09) is a search-coverage problem, not
-  a pipeline failure — don't conflate it with actual `item_failed` pipeline events (see Phase 8
-  Run Log below for why).
+- The no-torrent-options gap (197/~1036 items as of 2026-07-09, 761/1036 as of 2026-07-11 after the
+  catalog grew from ~400 to 1036 items) is a search-coverage problem, not a pipeline failure — don't
+  conflate it with actual `item_failed` pipeline events (see Phase 8 Run Log below for why). Report
+  it as a percentage and note the catalog's current total, not just a raw count — the raw number
+  jumps whenever the catalog itself grows, which isn't a regression.
 
 ---
 
@@ -244,21 +246,11 @@ every run.
 
 ### Run Log
 
-- **2026-07-09** — `item_failed` events in `pipeline-events.jsonl` are frequently transient: of 20
-  distinct failed items checked, 19 later succeeded on retry and 1 was mid-upload at check time.
-  Before flagging a pipeline item as stuck, check for a later `item_done` for the same `id`, and
-  cross-check `current_torrent_index_720p` against `torrent_options_720p.length` in
-  `enriched_400.json` — only exhausted-options items are genuinely stuck.
-- **2026-07-09** — First full run. Phase 3's stub grep only covers `backend/src` and
-  `frontend/{app,components,lib}`; it misses the repo-root one-off pipeline/tooling scripts
-  (`backfill-*.js`, `download-picked-torrents.js`, etc.). That's fine — those are one-off tooling,
-  not request-serving code, so they're legitimately out of scope for hot-path risk — but don't
-  mistake "zero hits" for "scanned everything."
-- **2026-07-09** — Phase 5 should also check for near-duplicate catalog entries (same title/year
-  under two different ids), not just missing-field gaps. Found one today by accident:
-  `once-upon-a-time-was-i-veronica-2012-movie` vs `once-upon-a-time-veronica-2012-movie` — the
-  second already has correct `original_title`/`tmdb_id`, the first is dead weight. A fuzzy
-  title+year match across all items would catch this class of gap on purpose next time.
+- **Earlier lessons (2026-07-09)** — `item_failed` events in `pipeline-events.jsonl` are frequently
+  transient (check for a later `item_done` before flagging stuck); Phase 3's stub grep legitimately
+  doesn't cover repo-root one-off pipeline scripts (not hot-path code); Phase 5 should check for
+  near-duplicate catalog entries (same title/year under two different ids), not just missing-field
+  gaps.
 - **2026-07-10** — Same-`tmdb_id`-under-different-catalog-ids is a stronger duplicate signal than
   title+year fuzzy matching, and catches a different class of bug: two catalog entries pointing at
   the *same* TMDB record (a real mismatch, e.g. two different-year "Fina Estampa" entries sharing
@@ -275,6 +267,19 @@ every run.
   does `.partial_cmp(...).unwrap()` on ratings parsed from external OMDb strings, which panics on
   `NaN` input. Grepping for `.unwrap()`/`.expect()` specifically in sort/comparison closures on
   hot request paths is worth adding as a standing Phase 3 check, not just the stub-marker greps.
+- **2026-07-11** — The 2026-07-10 NaN/`partial_cmp().unwrap()` finding got fixed for real (`main.rs`
+  now uses `total_cmp`); the same pattern still exists in `backend/src/bin/enrich.rs` (an offline
+  batch tool, not the live server) — worth noting as P2 rather than re-flagging at P0 severity,
+  since "hot request path" specifically excludes one-off tooling binaries even when they share the
+  panic pattern. Also: Phase 5's "field not populated" check for backfill scripts isn't the whole
+  story — `backfill-keywords.js`/`backfill-similar.js` produced real side-file data (346/393
+  entries) that's not just unmerged into `enriched_400.json`, but has *no backend code reading it at
+  all* — the feature it was meant to power doesn't exist at any layer. Check both "is the field
+  populated" and "does anything consume this side file" before calling a backfill merely
+  incomplete vs. fully dead-ended. Separately: catalog size itself changed materially (~400 → 1036
+  items) between runs, which mechanically moves every raw-count metric (torrent coverage, S3
+  coverage) — always report gaps as a fraction of current total, not just a raw count, or trend
+  comparisons across runs are meaningless.
 
 ---
 
