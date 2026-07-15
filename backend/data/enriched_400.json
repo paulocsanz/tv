@@ -542,9 +542,119 @@
       "trailer_key": "uDcQbk78CSw",
       "enrichment_status": "ok",
       "torrent_file": "The_Prom_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/the-wire-2002-tv/The Wire S02e03 Hot Shots.mp4",
+      "s3_keys": [
+        "videos/the-wire-2002-tv/The Wire S02e03 Hot Shots.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e11 Bad Dreams.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e07 Backwash.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e02 Collateral Damage.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e01 Ebb Tide.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e04 Hard Cases.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e08 Duck And Cover.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e09 Stray Rounds.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e06 All Prologue.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e10 Storm Warnings.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e05 Undertow.mp4",
+        "videos/the-wire-2002-tv/The Wire S02e12 Port In A Storm.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e03 Hot Shots.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e11 Bad Dreams.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e07 Backwash.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e02 Collateral Damage.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e01 Ebb Tide.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e04 Hard Cases.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e08 Duck And Cover.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e09 Stray Rounds.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e06 All Prologue.eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e10 Storm Warnings.eng.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e05 Undertow.eng.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-wire-2002-tv/The Wire S02e12 Port In A Storm.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -566,7 +676,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Outside the Wire (2021) [1080p] [WEBRip] ",
@@ -692,8 +802,27 @@
       "trailer_key": "0b4g4ZZNC1E",
       "enrichment_status": "ok",
       "torrent_file": "The_World_at_War_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E09.720p.Bluray.x264.anoXmous_.mp4",
+      "s3_keys": [
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E09.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E10.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E11.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E12.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E13.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E14.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E15.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E16.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E17.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E19.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E18.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E20.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E21.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E23.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E22.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E25.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E24.720p.Bluray.x264.anoXmous_.mp4",
+        "videos/the-world-at-war-1973-tv/The.World.At.War.1973.S01E26.720p.Bluray.x264.anoXmous_.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -740,7 +869,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "The World at War 1973 Complete 1080p BluRay x265 HEVC AAC",
@@ -1936,8 +2065,97 @@
       "trailer_key": "G11AhAIf18A",
       "enrichment_status": "ok",
       "torrent_file": "The_Twilight_Zone_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/the-twilight-zone-1959-tv/The Twilight Zone S01E03.mp4",
+      "s3_keys": [
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S01E03.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S01E08.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S01E09.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E08.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E09.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S01E10.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E10.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E11.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E14.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E13.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E12.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E16.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E18.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E15.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E17.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E21.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E19.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E20.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E22.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E24.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E23.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E25.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E26.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E30.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E29.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E28.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E27.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E31.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E34.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E32.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E33.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E35.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E36.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S03E37.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E01.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E02.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E03.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E04.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E05.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E07.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E08.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E06.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E09.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E10.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E11.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E13.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E12.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E14.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E17.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E15.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E16.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S04E18.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E01.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E03.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E02.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E04.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E07.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E05.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E08.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E06.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E12.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E09.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E10.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E11.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E15.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E16.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E13.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E14.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E19.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E17.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E20.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E18.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E21.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E24.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E23.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E25.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E27.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E26.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E22.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E28.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E29.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E31.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E30.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E35.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E33.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E32.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E34.mp4",
+        "videos/the-twilight-zone-1959-tv/The Twilight Zone S05E36.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -1968,7 +2186,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 2,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "The Twilight Zone 1959 Seasons 1 to 5 Complete 1080p AMZN WEB-DL x264 [i_c]",
@@ -2887,9 +3105,20 @@
       "trailer_key": "-C2z-nshFts",
       "enrichment_status": "ok",
       "torrent_file": "The_Office_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/the-office-2005-tv/The.Office.US.S09E12.Customer.Loyalty.720p.HEVC.x265-MeGusta.mp4",
+      "s3_keys": [
+        "videos/the-office-2005-tv/The.Office.US.S09E12.Customer.Loyalty.720p.HEVC.x265-MeGusta.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-office-2005-tv/The.Office.US.S09E12.Customer.Loyalty.720p.HEVC.x265-MeGusta.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -2911,7 +3140,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "The Office (US) (2005) Season 1-9 S01-S09 (1080p BluRay x265 HEV",
@@ -3397,8 +3626,27 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "When_They_See_Us_x",
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/when-they-see-us-2019-tv/When.They.See.Us.S01E01.Part.One.720p.NF.WEB-DL.x264-MkvCage.ws.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/when-they-see-us-2019-tv/When.They.See.Us.S01E01.Part.One.720p.NF.WEB-DL.x264-MkvCage.ws.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/when-they-see-us-2019-tv/When.They.See.Us.S01E01.Part.One.720p.NF.WEB-DL.x264-MkvCage.ws.eng-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -3555,9 +3803,36 @@
       "trailer_key": "VviwUvs3hd0",
       "enrichment_status": "ok",
       "torrent_file": "Gravity_Falls_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/gravity-falls-2012-tv/Gravity Falls S02E16 Roadside Attraction 720p DSNP WEB-DL AAC2 0 H 264-playWEB.mp4",
+      "s3_keys": [
+        "videos/gravity-falls-2012-tv/Gravity Falls S02E16 Roadside Attraction 720p DSNP WEB-DL AAC2 0 H 264-playWEB.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/gravity-falls-2012-tv/Gravity Falls S02E16 Roadside Attraction 720p DSNP WEB-DL AAC2 0 H 264-playWEB.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/gravity-falls-2012-tv/Gravity Falls S02E16 Roadside Attraction 720p DSNP WEB-DL AAC2 0 H 264-playWEB.eng-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/gravity-falls-2012-tv/Gravity Falls S02E16 Roadside Attraction 720p DSNP WEB-DL AAC2 0 H 264-playWEB.spa.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -3603,7 +3878,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 3,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Gravity Falls (2012-2016) PROPER S01-S02 COMPLETE 1080p BluRay AV1 Opus 5 1 + Ex..",
@@ -4980,8 +5255,29 @@
       "trailer_key": "17j-_SEuiXM",
       "enrichment_status": "ok",
       "torrent_file": "Justice_League_Unlimited_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E01 - Happy New Year (720p).mp4",
+      "s3_keys": [
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E01 - Happy New Year (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E02 - Earthlings (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E03 - Alienated (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E04 - Salvage (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E05 - Beneath (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E06 - Bloodlines (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E07 - Depths (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E08 - Satisfaction (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E09 - Darkest (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E10 - Before the Dawn (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E11 - Cornered (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E12 - True Colors (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E13 - The Fix (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E14 - Runaways (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E15 - War (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E16 - Complications (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E17 - The Hunt (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E18 - The Intervention (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E19 - Summit (720p).mp4",
+        "videos/justice-league-unlimited-2004-tv/Young Justice - S02 E20 - Endgame (720p).mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -5685,9 +5981,155 @@
       "trailer_key": "i1eJMig5Ik4",
       "enrichment_status": "ok",
       "torrent_file": "BoJack_Horseman_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E01.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+      "s3_keys": [
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E01.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E03.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E02.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E04.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E05.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E06.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E07.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E08.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E09.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E10.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E11.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E12.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E13.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E14.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E15.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+        "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E16.720p.NF.WEBRip.x264-GalaxyTV.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E01.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E03.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E02.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E04.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E05.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E06.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E07.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E08.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E09.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E10.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E11.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E12.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E13.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 14,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E14.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 15,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E15.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 16,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/bojack-horseman-2014-tv/BoJack.Horseman.S06E16.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -5981,8 +6423,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Justice_League_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/justice-league-2001-tv/Justice.League.Crisis.on.Infinite.Earths.Part.Two.2024.720p.BluRay.800MB.x264-GalaxyRG.mp4",
+      "s3_keys": [
+        "videos/justice-league-2001-tv/Justice.League.Crisis.on.Infinite.Earths.Part.Two.2024.720p.BluRay.800MB.x264-GalaxyRG.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -6013,7 +6457,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Justice.League.Crisis.on.Infinite.Earths.Part.Two.2024.1080p.Blu",
@@ -6094,9 +6538,19 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Coraline_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/frontline-1994-tv/Frontline.S42E14.American.Voices.2024.720p.WEBRip.x264-BAE[EZTVx.to].mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/frontline-1994-tv/Frontline.S42E14.American.Voices.2024.720p.WEBRip.x264-BAE[EZTVx.to].eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -6142,7 +6596,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 2,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Frontline S2026E05 Caught in the Crackdown 1080p AMZN WEB-DL DDP2 0 H 264-K",
@@ -6185,7 +6639,8 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_key": "videos/frontline-1994-tv/Frontline.S42E14.American.Voices.2024.720p.WEBRip.x264-BAE[EZTVx.to].mp4"
     },
     {
       "id": "the-matrix-1999-movie",
@@ -6351,9 +6806,20 @@
       "trailer_key": "uLtkt8BonwM",
       "enrichment_status": "ok",
       "torrent_file": "The_Last_of_Us_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/the-last-of-us-2023-tv/The.Last.of.Us.S02E03.720p.HEVC.x265-MeGusta[EZTVx.to].mp4",
+      "s3_keys": [
+        "videos/the-last-of-us-2023-tv/The.Last.of.Us.S02E03.720p.HEVC.x265-MeGusta[EZTVx.to].mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-last-of-us-2023-tv/The.Last.of.Us.S02E03.720p.HEVC.x265-MeGusta[EZTVx.to].eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -6375,7 +6841,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "The Last of Us S02E01 1080p MAX WEB-DL DDP5 1 x264-NTb EZTV",
@@ -6448,8 +6914,10 @@
       "trailer_key": "_jgYEYERYFQ",
       "enrichment_status": "ok",
       "torrent_file": "The_Simpsons_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/the-simpsons-1989-tv/The.Simpsons.S37E05.720p.HEVC.x265-MeGusta[EZTVx.to].mp4",
+      "s3_keys": [
+        "videos/the-simpsons-1989-tv/The.Simpsons.S37E05.720p.HEVC.x265-MeGusta[EZTVx.to].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -6639,8 +7107,10 @@
       "trailer_key": "K58Z1RORRaI",
       "enrichment_status": "ok",
       "torrent_file": "Crash_Landing_on_You_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/crash-landing-on-you-2019-tv/Project.Hail.Mary.2026.IMAX.1080p.WEBRip.x264.AAC5.1-[YTS.BZ].mp4",
+      "s3_keys": [
+        "videos/crash-landing-on-you-2019-tv/Project.Hail.Mary.2026.IMAX.1080p.WEBRip.x264.AAC5.1-[YTS.BZ].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -6687,7 +7157,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 0
     },
     {
       "id": "upstairs-downstairs-1971-tv",
@@ -6724,9 +7194,60 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Upstairs,_Downstairs_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/upstairs-downstairs-1971-tv/Daredevil S03E08 Upstairs&Downstairs 1080p DSNP WEB-DL DD 5 1 Atmos H 264-playWEB.mp4",
+      "s3_keys": [
+        "videos/upstairs-downstairs-1971-tv/Daredevil S03E08 Upstairs&Downstairs 1080p DSNP WEB-DL DD 5 1 Atmos H 264-playWEB.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/upstairs-downstairs-1971-tv/Daredevil S03E08 Upstairs&Downstairs 1080p DSNP WEB-DL DD 5 1 Atmos H 264-playWEB.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/upstairs-downstairs-1971-tv/Daredevil S03E08 Upstairs&Downstairs 1080p DSNP WEB-DL DD 5 1 Atmos H 264-playWEB.eng-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/upstairs-downstairs-1971-tv/Daredevil S03E08 Upstairs&Downstairs 1080p DSNP WEB-DL DD 5 1 Atmos H 264-playWEB.spa.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/upstairs-downstairs-1971-tv/Daredevil S03E08 Upstairs&Downstairs 1080p DSNP WEB-DL DD 5 1 Atmos H 264-playWEB.spa-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/upstairs-downstairs-1971-tv/Daredevil S03E08 Upstairs&Downstairs 1080p DSNP WEB-DL DD 5 1 Atmos H 264-playWEB.por.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/upstairs-downstairs-1971-tv/Daredevil S03E08 Upstairs&Downstairs 1080p DSNP WEB-DL DD 5 1 Atmos H 264-playWEB.por-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -6772,7 +7293,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 0
     },
     {
       "id": "six-feet-under-2001-tv",
@@ -7002,9 +7523,232 @@
       "trailer_key": "q2x14ZhEc9k",
       "enrichment_status": "ok",
       "torrent_file": "Battlestar_Galactica_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E01 33 (1080p x265 10bit Joy).mp4",
+      "s3_keys": [
+        "videos/battlestar-galactica-2004-tv/BSG S01E01 33 (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E02 Water (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E03 Bastille Day (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E04 Act Of Contrition (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E05 You Can't Go Home Again (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E06 Litmus (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E07 Six Degrees Of Separation (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E08 Flesh And Bone (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E09 Tigh Me Up Tigh Me Down (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E10 The Hand Of God (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E11 Colonial Day (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E12 Kobols Last Gleaming Part 1 (1080p x265 10bit Joy).mp4",
+        "videos/battlestar-galactica-2004-tv/BSG S01E13 Kobols Last Gleaming Part 2 (1080p x265 10bit Joy).mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E01 33 (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E01 33 (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E02 Water (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E02 Water (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E03 Bastille Day (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E03 Bastille Day (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E04 Act Of Contrition (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E04 Act Of Contrition (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E05 You Can't Go Home Again (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E05 You Can't Go Home Again (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E06 Litmus (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E06 Litmus (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E07 Six Degrees Of Separation (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E07 Six Degrees Of Separation (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E08 Flesh And Bone (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E08 Flesh And Bone (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E09 Tigh Me Up Tigh Me Down (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E09 Tigh Me Up Tigh Me Down (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E10 The Hand Of God (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E10 The Hand Of God (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E11 Colonial Day (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E11 Colonial Day (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E12 Kobols Last Gleaming Part 1 (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E12 Kobols Last Gleaming Part 1 (1080p x265 10bit Joy).eng-2.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E13 Kobols Last Gleaming Part 2 (1080p x265 10bit Joy).eng.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/battlestar-galactica-2004-tv/BSG S01E13 Kobols Last Gleaming Part 2 (1080p x265 10bit Joy).eng-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -7050,7 +7794,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 2
+      "current_torrent_index": 0
     },
     {
       "id": "south-park-1997-tv",
@@ -7088,8 +7832,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "South_Park_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/south-park-1997-tv/South Park S28E03 720p HDTV H264-JFF[EZTVx.to].mp4",
+      "s3_keys": [
+        "videos/south-park-1997-tv/South Park S28E03 720p HDTV H264-JFF[EZTVx.to].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -7291,8 +8037,9 @@
       "trailer_key": "rtUQqiIa0oI",
       "enrichment_status": "ok",
       "torrent_file": "Nope_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/rome-2005-tv/Rome S01E03 720p BluRay HEVC H265 BONE.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -7479,8 +8226,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "The_Daily_Show_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/the-daily-show-1996-tv/The.Daily.Show.2026.06.11.Martina.Navratilova.1080p.WEB.h264-EDITH[EZTVx.to].mp4",
+      "s3_keys": [
+        "videos/the-daily-show-1996-tv/The.Daily.Show.2026.06.11.Martina.Navratilova.1080p.WEB.h264-EDITH[EZTVx.to].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -7527,7 +8276,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 0
     },
     {
       "id": "primal-2019-tv",
@@ -7566,9 +8315,181 @@
       "trailer_key": "V4UN616BFDA",
       "enrichment_status": "ok",
       "torrent_file": "Primal_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/primal-2019-tv/Primal.S02E01.720p.HMAX.WEBRip.x264-GalaxyTV.mp4",
+      "s3_keys": [
+        "videos/primal-2019-tv/Primal.S02E01.720p.HMAX.WEBRip.x264-GalaxyTV.mp4",
+        "videos/primal-2019-tv/Primal.S02E03.720p.HMAX.WEBRip.x264-GalaxyTV.mp4",
+        "videos/primal-2019-tv/Primal.S02E02.720p.HMAX.WEBRip.x264-GalaxyTV.mp4",
+        "videos/primal-2019-tv/Primal.S02E05.720p.HMAX.WEBRip.x264-GalaxyTV.mp4",
+        "videos/primal-2019-tv/Primal.S02E04.720p.HMAX.WEBRip.x264-GalaxyTV.mp4",
+        "videos/primal-2019-tv/Primal.S02E06.720p.HMAX.WEBRip.x264-GalaxyTV.mp4",
+        "videos/primal-2019-tv/Primal.S02E07.720p.HMAX.WEBRip.x264-GalaxyTV.mp4",
+        "videos/primal-2019-tv/Primal.S02E08.720p.HMAX.WEBRip.x264-GalaxyTV.mp4",
+        "videos/primal-2019-tv/Primal.S02E09.720p.HMAX.WEBRip.x264-GalaxyTV.mp4",
+        "videos/primal-2019-tv/Primal.S02E10.720p.HMAX.WEBRip.x264-GalaxyTV.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E01.720p.HMAX.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E01.720p.HMAX.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E03.720p.HMAX.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E03.720p.HMAX.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E02.720p.HMAX.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E02.720p.HMAX.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E05.720p.HMAX.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E05.720p.HMAX.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E04.720p.HMAX.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E04.720p.HMAX.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E06.720p.HMAX.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E06.720p.HMAX.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E07.720p.HMAX.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E07.720p.HMAX.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E08.720p.HMAX.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E08.720p.HMAX.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E09.720p.HMAX.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E09.720p.HMAX.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E10.720p.HMAX.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/primal-2019-tv/Primal.S02E10.720p.HMAX.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -7598,7 +8519,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Primal Fear 1996 Remastered 1080p BluRay HEVC x265 5.1 BONE",
@@ -7735,9 +8656,339 @@
       "trailer_key": "-bfAVpuko5o",
       "enrichment_status": "ok",
       "torrent_file": "Invincible_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/invincible-2021-tv/Invincible - S04E03 - I GOTTA GET SOME AIR.mp4",
+      "s3_keys": [
+        "videos/invincible-2021-tv/Invincible - S04E03 - I GOTTA GET SOME AIR.mp4",
+        "videos/invincible-2021-tv/Invincible - S04E07 - DON'T DO ANYTHING RASH.mp4",
+        "videos/invincible-2021-tv/Invincible - S04E05 - GIVE US A MOMENT.mp4",
+        "videos/invincible-2021-tv/Invincible - S04E08 - DON'T LEAVE ME HANGING HERE.mp4",
+        "videos/invincible-2021-tv/Invincible - S04E04 - HURM.mp4",
+        "videos/invincible-2021-tv/Invincible - S04E02 - I'LL GIVE YOU THE GRAND TOUR.mp4",
+        "videos/invincible-2021-tv/Invincible - S04E01 - MAKING THE WORLD A BETTER PLACE.mp4",
+        "videos/invincible-2021-tv/Invincible - S04E06 - YOU LOOK HORRIBLE.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E03 - I GOTTA GET SOME AIR.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E03 - I GOTTA GET SOME AIR.spa.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E03 - I GOTTA GET SOME AIR.spa-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E03 - I GOTTA GET SOME AIR.por.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E03 - I GOTTA GET SOME AIR.por-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E07 - DON'T DO ANYTHING RASH.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E07 - DON'T DO ANYTHING RASH.spa.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E07 - DON'T DO ANYTHING RASH.spa-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E07 - DON'T DO ANYTHING RASH.por.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E07 - DON'T DO ANYTHING RASH.por-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E05 - GIVE US A MOMENT.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E05 - GIVE US A MOMENT.spa.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E05 - GIVE US A MOMENT.spa-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E05 - GIVE US A MOMENT.por.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E05 - GIVE US A MOMENT.por-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E08 - DON'T LEAVE ME HANGING HERE.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E08 - DON'T LEAVE ME HANGING HERE.spa.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E08 - DON'T LEAVE ME HANGING HERE.spa-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E08 - DON'T LEAVE ME HANGING HERE.por.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E08 - DON'T LEAVE ME HANGING HERE.por-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E04 - HURM.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E04 - HURM.spa.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E04 - HURM.spa-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E04 - HURM.por.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E04 - HURM.por-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E02 - I'LL GIVE YOU THE GRAND TOUR.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E02 - I'LL GIVE YOU THE GRAND TOUR.spa.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E02 - I'LL GIVE YOU THE GRAND TOUR.spa-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E02 - I'LL GIVE YOU THE GRAND TOUR.por.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E02 - I'LL GIVE YOU THE GRAND TOUR.por-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E01 - MAKING THE WORLD A BETTER PLACE.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E01 - MAKING THE WORLD A BETTER PLACE.spa.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E01 - MAKING THE WORLD A BETTER PLACE.spa-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E01 - MAKING THE WORLD A BETTER PLACE.por.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E01 - MAKING THE WORLD A BETTER PLACE.por-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E06 - YOU LOOK HORRIBLE.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E06 - YOU LOOK HORRIBLE.spa.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E06 - YOU LOOK HORRIBLE.spa-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E06 - YOU LOOK HORRIBLE.por.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/invincible-2021-tv/Invincible - S04E06 - YOU LOOK HORRIBLE.por-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -7783,7 +9034,7 @@
           "contentScore": 200
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 0
     },
     {
       "id": "spider-man-across-the-spider-verse-2023-movie",
@@ -7868,7 +9119,6 @@
       "trailer_key": "ViBgNO0FpmE",
       "enrichment_status": "ok",
       "torrent_file": "This_Is_Us_x",
-      "s3_key": null,
       "s3_keys": [],
       "subtitles": [],
       "episodes": [],
@@ -7916,7 +9166,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 4,
       "torrent_options": [
         {
           "title": "One Direction This Is Us 2013 1080p BrRip x264 Clear Print",
@@ -8017,9 +9267,204 @@
       "trailer_key": "WBlIUsFEnsw",
       "enrichment_status": "ok",
       "torrent_file": "The_Reader_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.mp4",
+      "s3_keys": [
+        "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "und",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-2",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-3",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-3.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-4",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-4.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-5",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-5.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-6",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-6.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-7",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-7.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-8",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-8.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-9",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-9.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-10",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-10.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-11",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-11.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-12",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-12.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-13",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-13.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-14",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-14.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-15",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-15.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-16",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-16.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-17",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-17.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-18",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-18.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-19",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-19.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-20",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-20.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-21",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-21.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-22",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-22.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-23",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-23.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-24",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/the-bear-2022-tv/The.Bear.S05E07.720p.HEVC.x265-MeGusta.und-24.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -8049,7 +9494,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "The.Bear.S05.Complete.1080p.WEBRip.10Bit.DDP5.1.x265-NeoNoir",
@@ -8129,8 +9574,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Arrested_Development_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/arrested-development-2003-tv/Arrested Development S02E05 Sad Sack 720p WEB-DL AAC2 0 h 264-NTb.mp4",
+      "s3_keys": [
+        "videos/arrested-development-2003-tv/Arrested Development S02E05 Sad Sack 720p WEB-DL AAC2 0 h 264-NTb.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -8153,7 +9600,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Arrested Development (2003) Season 1 S01 REPACK (1080p BluRay x265 HEVC 10bit EA",
@@ -8217,9 +9664,308 @@
       "trailer_key": "MczMB8nU1sY",
       "enrichment_status": "ok",
       "torrent_file": "Amour_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].mp4",
+      "s3_keys": [
+        "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "und",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-2",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-3",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-3.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-4",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-4.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-5",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-5.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-6",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-6.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-7",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-7.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-8",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-8.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-9",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-9.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-10",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-10.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-11",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-11.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-12",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-12.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-13",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-13.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-14",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-14.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-15",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-15.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-16",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-16.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-17",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-17.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-18",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-18.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-19",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-19.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-20",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-20.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-21",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-21.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-22",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-22.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-23",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-23.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-24",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-24.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-25",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-25.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-26",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-26.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-27",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-27.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-28",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-28.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-29",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-29.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-30",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-30.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-31",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-31.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-32",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-32.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-33",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-33.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-34",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-34.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-35",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-35.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-36",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-36.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "und-37",
+          "lang": "und",
+          "label": "Unknown",
+          "forced": false,
+          "s3_key": "videos/house-2004-tv/House.of.the.Dragon.S03E03.720p.HEVC.x265-MeGusta[EZTVx.to].und-37.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -8249,7 +9995,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "House Of The Dragon - Season 2 - Mp4 x264 AC3 1080p",
@@ -8330,9 +10076,83 @@
       "trailer_key": "fOmwkTrW4OQ",
       "enrichment_status": "ok",
       "torrent_file": "The_Marvelous_Mrs._Maisel_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E05.720p.AMZN.WEBRip.x264-GalaxyTV.mp4",
+      "s3_keys": [
+        "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E05.720p.AMZN.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E03.720p.AMZN.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E06.720p.AMZN.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E07.720p.AMZN.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E02.720p.AMZN.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E04.720p.AMZN.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E01.720p.AMZN.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E08.720p.AMZN.WEBRip.x264-GalaxyTV.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E05.720p.AMZN.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E03.720p.AMZN.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E06.720p.AMZN.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E07.720p.AMZN.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E02.720p.AMZN.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E04.720p.AMZN.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E01.720p.AMZN.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-marvelous-mrs-maisel-2017-tv/The.Marvelous.Mrs.Maisel.S01E08.720p.AMZN.WEBRip.x264-GalaxyTV.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -8370,7 +10190,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "The Marvelous Mrs Maisel - Season 5 - Mp4 x264 AC3 1080p",
@@ -8550,7 +10370,6 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Mannix_x",
-      "s3_key": null,
       "s3_keys": [],
       "subtitles": [],
       "episodes": [],
@@ -9344,9 +11163,531 @@
       "trailer_key": "2RVnrBLOBcI",
       "enrichment_status": "ok",
       "torrent_file": "The_Mandalorian_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E04.720p.DSNP.WEBRip.x264-GalaxyTV.mp4",
+      "s3_keys": [
+        "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E04.720p.DSNP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E02.720p.DSNP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E01.720p.DSNP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E07.720p.DSNP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E05.720p.DSNP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E08.720p.DSNP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E03.720p.DSNP.WEBRip.x264-GalaxyTV.mp4",
+        "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E06.720p.DSNP.WEBRip.x264-GalaxyTV.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E04.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E04.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E04.720p.DSNP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E04.720p.DSNP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa-3",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E04.720p.DSNP.WEBRip.x264-GalaxyTV.spa-3.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E04.720p.DSNP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E04.720p.DSNP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por-3",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E04.720p.DSNP.WEBRip.x264-GalaxyTV.por-3.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E02.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E02.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E02.720p.DSNP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E02.720p.DSNP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "spa-3",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E02.720p.DSNP.WEBRip.x264-GalaxyTV.spa-3.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E02.720p.DSNP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E02.720p.DSNP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "por-3",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E02.720p.DSNP.WEBRip.x264-GalaxyTV.por-3.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E01.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E01.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E01.720p.DSNP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E01.720p.DSNP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "spa-3",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E01.720p.DSNP.WEBRip.x264-GalaxyTV.spa-3.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E01.720p.DSNP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E01.720p.DSNP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "por-3",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E01.720p.DSNP.WEBRip.x264-GalaxyTV.por-3.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E07.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E07.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E07.720p.DSNP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E07.720p.DSNP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "spa-3",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E07.720p.DSNP.WEBRip.x264-GalaxyTV.spa-3.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E07.720p.DSNP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E07.720p.DSNP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "por-3",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E07.720p.DSNP.WEBRip.x264-GalaxyTV.por-3.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E05.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E05.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E05.720p.DSNP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E05.720p.DSNP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "spa-3",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E05.720p.DSNP.WEBRip.x264-GalaxyTV.spa-3.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E05.720p.DSNP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E05.720p.DSNP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "por-3",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E05.720p.DSNP.WEBRip.x264-GalaxyTV.por-3.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E08.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E08.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E08.720p.DSNP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E08.720p.DSNP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "spa-3",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E08.720p.DSNP.WEBRip.x264-GalaxyTV.spa-3.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E08.720p.DSNP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E08.720p.DSNP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "por-3",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E08.720p.DSNP.WEBRip.x264-GalaxyTV.por-3.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E03.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E03.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E03.720p.DSNP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E03.720p.DSNP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "spa-3",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E03.720p.DSNP.WEBRip.x264-GalaxyTV.spa-3.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E03.720p.DSNP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E03.720p.DSNP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "por-3",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E03.720p.DSNP.WEBRip.x264-GalaxyTV.por-3.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E06.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E06.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E06.720p.DSNP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E06.720p.DSNP.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "spa-3",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E06.720p.DSNP.WEBRip.x264-GalaxyTV.spa-3.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E06.720p.DSNP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E06.720p.DSNP.WEBRip.x264-GalaxyTV.por-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "por-3",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/the-mandalorian-2019-tv/The.Mandalorian.S03E06.720p.DSNP.WEBRip.x264-GalaxyTV.por-3.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -9528,7 +11869,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 3,
       "torrent_options": [
         {
           "title": "Deadwood la pelicula [MicroHD 1080p][AC3 2 0-Castellano-AC3 5 1-Ingles+Subs][ES-..",
@@ -9610,8 +11951,23 @@
       "trailer_key": "YQeUmSD1c3g",
       "enrichment_status": "ok",
       "torrent_file": "Avatar_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/dexter-2006-tv/Dissecting Dexter - Deb Is Back.mp4",
+      "s3_keys": [
+        "videos/dexter-2006-tv/Dissecting Dexter - Deb Is Back.mp4",
+        "videos/dexter-2006-tv/Dissecting Dexter - The Kill Room.mp4",
+        "videos/dexter-2006-tv/Why Now.mp4",
+        "videos/dexter-2006-tv/All Out on The Table.mp4",
+        "videos/dexter-2006-tv/Dexter New Blood (2021) - S01E08 - Unfair Game (1080p BluRay x265 Silence).mp4",
+        "videos/dexter-2006-tv/Dexter New Blood (2021) - S01E04 - H is for Hero (1080p BluRay x265 Silence).mp4",
+        "videos/dexter-2006-tv/Dexter New Blood (2021) - S01E07 - Skin of Her Teeth (1080p BluRay x265 Silence).mp4",
+        "videos/dexter-2006-tv/Dexter New Blood (2021) - S01E02 - Storm of Fuck (1080p BluRay x265 Silence).mp4",
+        "videos/dexter-2006-tv/Dexter New Blood (2021) - S01E03 - Smoke Signals (1080p BluRay x265 Silence).mp4",
+        "videos/dexter-2006-tv/Dexter New Blood (2021) - S01E10 - Sins of the Father (1080p BluRay x265 Silence).mp4",
+        "videos/dexter-2006-tv/Dexter New Blood (2021) - S01E05 - Runaway (1080p BluRay x265 Silence).mp4",
+        "videos/dexter-2006-tv/Dexter New Blood (2021) - S01E01 - Cold Snap (1080p BluRay x265 Silence).mp4",
+        "videos/dexter-2006-tv/Dexter New Blood (2021) - S01E09 - The Family Business (1080p BluRay x265 Silence).mp4",
+        "videos/dexter-2006-tv/Dexter New Blood (2021) - S01E06 - Too Many Tuna Sandwiches (1080p BluRay x265 Silence).mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -9658,7 +12014,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 0
     },
     {
       "id": "saving-private-ryan-1998-movie",
@@ -9742,9 +12098,185 @@
       "trailer_key": "3_jTVuExbAo",
       "enrichment_status": "ok",
       "torrent_file": "What_We_Do_in_the_Shadows_x",
-      "s3_key": null,
       "s3_keys": [],
-      "subtitles": [],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E07.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E07.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E07.720p.DSNP.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E07.720p.DSNP.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E08.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E08.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E02.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E02.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E10.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E10.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E04.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E04.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E03.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E03.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E05.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E05.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E06.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E06.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E09.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E09.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E11.720p.DSNP.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/what-we-do-in-the-shadows-2019-tv/What.We.Do.in.the.Shadows.S06E11.720p.DSNP.WEBRip.x264-GalaxyTV.eng-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -9886,7 +12418,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 2
     },
     {
       "id": "seven-samurai-1954-movie",
@@ -10014,9 +12546,526 @@
       "trailer_key": "5IZWeAwdJ-s",
       "enrichment_status": "ok",
       "torrent_file": "Parks_and_Recreation_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S04E21.Bus.Tour.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S04E22.Win.Lose.or.Draw.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S04E18.Lucky.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E02.Soda.Tax.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E01.Ms.Knope.Goes.to.Washington.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E03.How.a.Bill.Becomes.a.Law.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E06.Ben's.Parents.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E04.Sex.Education.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E05.Halloween.Surprise.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E07.Leslie.vs.April.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E08.Pawnee.Commons.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E10.Two.Parties.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E09.Ron.and.Diane.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E12.Ann's.Decision.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E13.Emergency.Response.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E11.Women.in.Garbage.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E14.Leslie.and.Ben.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E16.Bailout.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E15.Correspondents'.Lunch.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E17.Partridge.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E18.Animal.Control.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E19.Article.Two.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E21.Swing.Vote.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E22.Are.You.Better.Off.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E20.Jerry's.Retirement.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E05.Gin.It.Up.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E09.The.Cones.of.Dunshire.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E10.Second.Chunce.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E11.New.Beginnings.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E12.Farmers.Market.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E15.The.Wall.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E13.Ann.and.Chris.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E14.Anniversaries.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E16.New.Slogan.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E17.Galentine's.Day.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E18.Prom.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E19.Flu.Season.2.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E20.One.in.8000.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E01.2017.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E02.Ron.and.Jammy.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E03.William.Henry.Harrison.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E04.Leslie.and.Ron.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E21E22.Moving.Up.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E07.Donna.and.Joe.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E05.Gryzzlbox.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E09.Pie-Mary.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E08.Ms.Ludgate-Dwyer.Goes.to.Washington.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E10.The.Johnny.Karate.Super.Awesome.Musical.Explosion.Show.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E12E13.One.Last.Ride.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E06.Save.JJs.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.Special.2020.Pandemic.720p.10bit.WEBRip.x265-budgetbits.mp4",
+        "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E11.Two.Funerals.720p.10bit.WEBRip.x265-budgetbits.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S01E02.Canvassing.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S01E03.The.Reporter.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S01E01.Make.My.Pit.a.Park.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S01E05.The.Banquet.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S02E14.Leslie's.House.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S02E01.Pawnee.Zoo.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S02E20.Summer.Catalog.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S04E05.Meet.n.Greet.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S04E21.Bus.Tour.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S04E22.Win.Lose.or.Draw.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E02.Soda.Tax.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E01.Ms.Knope.Goes.to.Washington.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E03.How.a.Bill.Becomes.a.Law.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E06.Ben's.Parents.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E04.Sex.Education.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E05.Halloween.Surprise.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E07.Leslie.vs.April.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E08.Pawnee.Commons.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E10.Two.Parties.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E09.Ron.and.Diane.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 14,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E12.Ann's.Decision.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 15,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E13.Emergency.Response.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 16,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E11.Women.in.Garbage.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 17,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E14.Leslie.and.Ben.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 18,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E16.Bailout.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 19,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E15.Correspondents'.Lunch.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 20,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E17.Partridge.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 21,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E18.Animal.Control.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 22,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E19.Article.Two.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 23,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E21.Swing.Vote.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 24,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E22.Are.You.Better.Off.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 25,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S05E20.Jerry's.Retirement.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 27,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E09.The.Cones.of.Dunshire.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 28,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E10.Second.Chunce.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 29,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E11.New.Beginnings.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 30,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E12.Farmers.Market.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 31,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E15.The.Wall.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 32,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E13.Ann.and.Chris.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 33,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E14.Anniversaries.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 34,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E16.New.Slogan.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 35,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E17.Galentine's.Day.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 36,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E18.Prom.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 37,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E19.Flu.Season.2.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 38,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E20.One.in.8000.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 39,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E01.2017.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 40,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E02.Ron.and.Jammy.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 41,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E03.William.Henry.Harrison.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 42,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E04.Leslie.and.Ron.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 43,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S06E21E22.Moving.Up.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 44,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E07.Donna.and.Joe.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 45,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E05.Gryzzlbox.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 46,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E09.Pie-Mary.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 47,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E08.Ms.Ludgate-Dwyer.Goes.to.Washington.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 48,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E10.The.Johnny.Karate.Super.Awesome.Musical.Explosion.Show.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 49,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E12E13.One.Last.Ride.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 50,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E06.Save.JJs.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 51,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.Special.2020.Pandemic.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        },
+        {
+          "episode": 52,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/parks-and-recreation-2009-tv/Parks.and.Recreation.S07E11.Two.Funerals.720p.10bit.WEBRip.x265-budgetbits.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -10754,7 +13803,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 3,
       "torrent_options": [
         {
           "title": "The Venture Bros Radiant Is The Blood Of The Baboon Heart 2023 1080p AMZN WEB-DL",
@@ -11657,9 +14706,155 @@
       "trailer_key": null,
       "enrichment_status": "ok",
       "torrent_file": null,
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/psych-2006-tv/Psych S05E01 Romeo and Juliet and Juliet.mp4",
+      "s3_keys": [
+        "videos/psych-2006-tv/Psych S05E01 Romeo and Juliet and Juliet.mp4",
+        "videos/psych-2006-tv/Psych S05E04 Chivalry Is Not Dead... But Someone Is.mp4",
+        "videos/psych-2006-tv/Psych S05E03 Not Even Close... Encounters.mp4",
+        "videos/psych-2006-tv/Psych S05E05 Shawn and Gus in Drag (Racing).mp4",
+        "videos/psych-2006-tv/Psych S05E02 Feet Don't Kill Me Now.mp4",
+        "videos/psych-2006-tv/Psych S05E06 Viagra Falls.mp4",
+        "videos/psych-2006-tv/Psych S05E07 Ferry Tale.mp4",
+        "videos/psych-2006-tv/Psych S05E08 Shawn 2.0.mp4",
+        "videos/psych-2006-tv/Psych S05E10 Extradition II The Actual Extradition Part.mp4",
+        "videos/psych-2006-tv/Psych S05E11 In Plain Fright.mp4",
+        "videos/psych-2006-tv/Psych S05E09 One, Maybe Two, Ways Out.mp4",
+        "videos/psych-2006-tv/Psych S05E13 We'd Like to Thank the Academy.mp4",
+        "videos/psych-2006-tv/Psych S05E14 The Polarizing Express.mp4",
+        "videos/psych-2006-tv/Psych S05E12 Dual Spires.mp4",
+        "videos/psych-2006-tv/Psych S05E16 Yang 3 in 2D.mp4",
+        "videos/psych-2006-tv/Psych S05E15 Dead Bear Walking.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E01 Romeo and Juliet and Juliet.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E04 Chivalry Is Not Dead... But Someone Is.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E03 Not Even Close... Encounters.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E05 Shawn and Gus in Drag (Racing).eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E02 Feet Don't Kill Me Now.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E06 Viagra Falls.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E07 Ferry Tale.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E08 Shawn 2.0.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E10 Extradition II The Actual Extradition Part.eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E11 In Plain Fright.eng.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E09 One, Maybe Two, Ways Out.eng.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E13 We'd Like to Thank the Academy.eng.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E14 The Polarizing Express.eng.vtt"
+        },
+        {
+          "episode": 14,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E12 Dual Spires.eng.vtt"
+        },
+        {
+          "episode": 15,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E16 Yang 3 in 2D.eng.vtt"
+        },
+        {
+          "episode": 16,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/psych-2006-tv/Psych S05E15 Dead Bear Walking.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -11705,7 +14900,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Psych (2006) Season 1-8 S01-S08 (1080p AMZN WEB-DL x265 HEVC 10bit AAC 5 1 MONOL..",
@@ -11763,8 +14958,16 @@
       "trailer_key": "GEtajI8Tmsw",
       "enrichment_status": "ok",
       "torrent_file": "John_Adams_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/john-adams-2008-tv/John Adams.S01E01.720p.HDTV.x264.mp4",
+      "s3_keys": [
+        "videos/john-adams-2008-tv/John Adams.S01E01.720p.HDTV.x264.mp4",
+        "videos/john-adams-2008-tv/John Adams.S01E03.720p.HDTV.x264.mp4",
+        "videos/john-adams-2008-tv/John Adams.S01E02.720p.HDTV.x264.mp4",
+        "videos/john-adams-2008-tv/John Adams.S01E04.720p.HDTV.x264.mp4",
+        "videos/john-adams-2008-tv/John Adams.S01E05.720p.HDTV.x264.mp4",
+        "videos/john-adams-2008-tv/John Adams.S01E06.720p.HDTV.x264.mp4",
+        "videos/john-adams-2008-tv/John Adams.S01E07.720p.HDTV.x264.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -12131,7 +15334,7 @@
           "contentScore": 200
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 3
     },
     {
       "id": "psycho-1960-movie",
@@ -12312,9 +15515,101 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "The_Forsyte_Saga_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E01 720p WEB-DL HEVC x265 BONE.mp4",
+      "s3_keys": [
+        "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E01 720p WEB-DL HEVC x265 BONE.mp4",
+        "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E02 720p WEB-DL HEVC x265 BONE.mp4",
+        "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E03 720p WEB-DL HEVC x265 BONE.mp4",
+        "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E04 720p WEB-DL HEVC x265 BONE.mp4",
+        "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E05 720p WEB-DL HEVC x265 BONE.mp4",
+        "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E06 720p WEB-DL HEVC x265 BONE.mp4",
+        "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S02E01 720p WEB-DL HEVC x265 BONE.mp4",
+        "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S02E02 720p WEB-DL HEVC x265 BONE.mp4",
+        "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S02E03 720p WEB-DL HEVC x265 BONE.mp4",
+        "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S02E04 720p WEB-DL HEVC x265 BONE.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E01 720p WEB-DL HEVC x265 BONE.eng.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E02 720p WEB-DL HEVC x265 BONE.eng.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E03 720p WEB-DL HEVC x265 BONE.eng.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E04 720p WEB-DL HEVC x265 BONE.eng.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E05 720p WEB-DL HEVC x265 BONE.eng.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S01E06 720p WEB-DL HEVC x265 BONE.eng.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S02E01 720p WEB-DL HEVC x265 BONE.eng.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S02E02 720p WEB-DL HEVC x265 BONE.eng.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S02E03 720p WEB-DL HEVC x265 BONE.eng.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-forsyte-saga-1967-tv/The Forsyte Saga 2002 S02E04 720p WEB-DL HEVC x265 BONE.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -12336,7 +15631,7 @@
           "contentScore": 550
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 0
     },
     {
       "id": "city-lights-1931-movie",
@@ -13063,7 +16358,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Star Wars The Clone Wars S07E06 1080p WEB H264-PETRiFiED[rarbg]",
@@ -13738,7 +17033,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Do Outro Lado Da Fronteira 2017 (1080p)",
@@ -13968,7 +17263,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Taxi.Driver.1976.REMASTERED.1080p.BluRay.x264.MkvCage [GoodFilms",
@@ -14098,7 +17393,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Doctor Who 2005 S01 1080p BluRay x265",
@@ -14600,7 +17895,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Verdades Secretas 2015 (1080p) LAPUMiA",
@@ -16355,7 +19650,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Poldark Season 1 S01 (1080p Bluray x265 HEVC 10bit AAC 5.1 Tigol",
@@ -16903,7 +20198,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 2
     },
     {
       "id": "green-book-2018-movie",
@@ -17168,9 +20463,36 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "They_Don't_Wear_Black_Tie_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/they-don-t-wear-black-tie-1981-movie/Eles.Nao.Usam.Black-Tie.1982.1080p.WEB.x264-Distanasia.mp4",
+      "s3_keys": [
+        "videos/they-don-t-wear-black-tie-1981-movie/Eles.Nao.Usam.Black-Tie.1982.1080p.WEB.x264-Distanasia.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/they-don-t-wear-black-tie-1981-movie/Eles.Nao.Usam.Black-Tie.1982.1080p.WEB.x264-Distanasia.eng.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/they-don-t-wear-black-tie-1981-movie/Eles.Nao.Usam.Black-Tie.1982.1080p.WEB.x264-Distanasia.spa.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/they-don-t-wear-black-tie-1981-movie/Eles.Nao.Usam.Black-Tie.1982.1080p.WEB.x264-Distanasia.por.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -17438,7 +20760,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "hacksaw-ridge-2016-movie",
@@ -18620,7 +21942,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Scandal.US.S01.1080p.AMZN.WEBRip.DDP2.0.x265-SiGMA",
@@ -18781,7 +22103,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "The Blacklist Season 1 S01 (1080p Web x265 10bit 5.1 Joy)[UTR]",
@@ -19085,7 +22407,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Billions S02E10 1080p WEBRip X264-DEFLATE[ettv]",
@@ -19229,7 +22551,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "carandiru-outras-historias-2005-tv",
@@ -21804,8 +25126,9 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Bus_174_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/bus-174-2002-movie/Bus 174.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -21864,7 +25187,8 @@
           "provider": "Torrentio/Torrentio"
         }
       ],
-      "current_torrent_index": 0
+      "current_torrent_index": 0,
+      "s3_key": "videos/bus-174-2002-movie/Bus 174.mp4"
     },
     {
       "id": "i-am-a-fugitive-from-a-chain-gang-1932-movie",
@@ -24017,8 +27341,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Brainstorm_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/brainstorm-2000-movie/Bicho de Sete Cabecas.Mp4.720p[Katoeko.com].mp4",
+      "s3_keys": [
+        "videos/brainstorm-2000-movie/Bicho de Sete Cabecas.Mp4.720p[Katoeko.com].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -27510,7 +30836,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Plano em Fam&iacute;lia 2023 The Family Plan 1080p x264 DUAL AlienVolt",
@@ -27908,7 +31234,7 @@
           "provider": "Torrentio/Torrentio"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "garota-do-momento-2024-tv",
@@ -27989,7 +31315,6 @@
       "trailer_key": "mTsyH6Eki8M",
       "enrichment_status": "ok",
       "torrent_file": "Foreign_Land_x",
-      "s3_key": null,
       "s3_keys": [],
       "subtitles": [],
       "episodes": [],
@@ -28025,7 +31350,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Terra Estrangeira 1995 WEB-DL 1080p NACIONAL 2.0",
@@ -30569,8 +33894,10 @@
       "trailer_key": "XuY-guU9NQw",
       "enrichment_status": "ok",
       "torrent_file": "Bye_Bye_Brasil_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/bye-bye-brasil-1979-movie/Bye Bye Brasil (1980) DVDRip.x264-Distanasia.mp4",
+      "s3_keys": [
+        "videos/bye-bye-brasil-1979-movie/Bye Bye Brasil (1980) DVDRip.x264-Distanasia.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -30857,7 +34184,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "the-lion-in-winter-1968-movie",
@@ -32922,7 +36249,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 2
     },
     {
       "id": "how-green-was-my-valley-1941-movie",
@@ -33490,8 +36817,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Entranced_Earth_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/entranced-earth-1967-movie/Terra em Transe.mp4",
+      "s3_keys": [
+        "videos/entranced-earth-1967-movie/Terra em Transe.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -33815,7 +37144,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "cinema-aspirins-and-vultures-2005-movie",
@@ -33875,7 +37204,7 @@
           "provider": "Torrentio/RARBG"
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Cinema.Aspirins.And.Vultures.2005.PORTUGUESE.1080p.BluRay.x265-VXT",
@@ -36008,7 +39337,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "the-edge-of-democracy-2019-movie",
@@ -36335,7 +39664,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "masterchef-brasil-2014-tv",
@@ -36421,7 +39750,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 1
+      "current_torrent_index_720p": 2
     },
     {
       "id": "limite-1931-movie",
@@ -36817,7 +40146,7 @@
           "provider": "Torrentio/Comando"
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Trash (2014) [BluRay] [1080p] [YTS] [YIFY]",
@@ -36964,7 +40293,7 @@
           "provider": "Torrentio/YTS"
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "The Movie of My Life 2017 1080p WEBRip",
@@ -38435,7 +41764,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "girls-from-ipanema-2019-tv",
@@ -38716,7 +42045,7 @@
           "provider": "Torrentio/RARBG"
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Antonio.Das.Mortes.1969.PORTUGUESE.PROPER.1080p.WEBRip.x265-VXT",
@@ -39621,7 +42950,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "xuxa-1986-tv",
@@ -41708,7 +45037,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "conversa-com-bial-2017-tv",
@@ -41954,7 +45283,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "coming-home-1978-movie",
@@ -42625,7 +45954,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Gonzaga - De Pai pra Filho 2012 WEB-DL 1080p x264 NACIONAL 5.1",
@@ -44576,7 +47905,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "familia-e-tudo-2024-tv",
@@ -44681,7 +48010,7 @@
           "provider": "Torrentio/Comando"
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Estômago 2 - O Poderoso Chef 2024 WEB-DL 1080p x264 NACIONAL 5.1",
@@ -45942,7 +49271,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "zorra-total-1999-tv",
@@ -46560,7 +49889,7 @@
           "provider": "Torrentio/YTS"
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Neon Bull 2015 1080p BluRay",
@@ -48514,7 +51843,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "my-mom-is-a-character-2-2016-movie",
@@ -48551,8 +51880,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "My_Mom_Is_a_Character_2_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/my-mom-is-a-character-2-2016-movie/Minha.Mae.e.uma.Peca.2.2017.720p.WEBRip.x264.AC3.NACIONAL-WWW.TORRENTDOSFILMES.COM.mp4",
+      "s3_keys": [
+        "videos/my-mom-is-a-character-2-2016-movie/Minha.Mae.e.uma.Peca.2.2017.720p.WEBRip.x264.AC3.NACIONAL-WWW.TORRENTDOSFILMES.COM.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -49456,7 +52787,7 @@
           "provider": "Torrentio/Comando"
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "O Auto da Compadecida 2 2024 WEB-DL 1080p x264 NACIONAL 5.1",
@@ -50090,7 +53421,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "hard-paint-2018-movie",
@@ -51158,7 +54489,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "the-front-page-1931-movie",
@@ -51268,7 +54599,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 0
+      "current_torrent_index_720p": 1
     },
     {
       "id": "big-jet-2015-movie",
@@ -52854,9 +56185,52 @@
       "trailer_key": null,
       "enrichment_status": "ok",
       "torrent_file": "Moonlight_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/midnight-1998-movie/Midnight.Mass.2021.S01E02.720p.NF.WEBRip.x264-GalaxyTV.mp4",
+      "s3_keys": [
+        "videos/midnight-1998-movie/Midnight.Mass.2021.S01E02.720p.NF.WEBRip.x264-GalaxyTV.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/midnight-1998-movie/Midnight.Mass.2021.S01E02.720p.NF.WEBRip.x264-GalaxyTV.eng.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/midnight-1998-movie/Midnight.Mass.2021.S01E02.720p.NF.WEBRip.x264-GalaxyTV.spa.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/midnight-1998-movie/Midnight.Mass.2021.S01E02.720p.NF.WEBRip.x264-GalaxyTV.spa-2.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/midnight-1998-movie/Midnight.Mass.2021.S01E02.720p.NF.WEBRip.x264-GalaxyTV.por.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/midnight-1998-movie/Midnight.Mass.2021.S01E02.720p.NF.WEBRip.x264-GalaxyTV.por-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -55734,8 +59108,10 @@
       "trailer_key": "X8J64P1Io0c",
       "enrichment_status": "ok",
       "torrent_file": null,
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/psycho-iv-the-beginning-1990-movie/Psycho IV꞉ The Beginning (1990) (1080p BluRay x265 Ghost).mp4",
+      "s3_keys": [
+        "videos/psycho-iv-the-beginning-1990-movie/Psycho IV꞉ The Beginning (1990) (1080p BluRay x265 Ghost).mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -55758,7 +59134,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 1
+      "current_torrent_index": 0
     },
     {
       "id": "the-assailant-2009-movie",
