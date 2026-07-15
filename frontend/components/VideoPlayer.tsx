@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Script from "next/script";
 import type { EpisodeMetadata, ProgressEntry, SubtitleTrack } from "@/lib/types";
 
 // HTML <track srclang> wants a BCP 47 tag; source files report ISO 639-2
@@ -188,6 +189,63 @@ function FullscreenIcon({ isFullscreen, className }: { isFullscreen: boolean; cl
       )}
     </svg>
   );
+}
+
+function AirPlayIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <rect x="2.5" y="3.5" width="19" height="13" rx="2" />
+      <path d="M12 19.5l4.5 4.5h-9l4.5-4.5z" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+function CastIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <rect x="2.5" y="4" width="19" height="13" rx="2" />
+      <path d="M2.5 13.5a8 8 0 0 1 8 8" />
+      <path d="M2.5 9a12.5 12.5 0 0 1 12.5 12.5" />
+      <path d="M2.5 17.5v2.5h2.5a2.5 2.5 0 0 0-2.5-2.5z" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+// The Cast SDK's CastContext/RemotePlayer represent the one browser-tab-wide
+// cast session - kept at module scope (not per-VideoPlayer-instance state) so
+// navigating between titles reuses the same session instead of constructing
+// a fresh RemotePlayerController - and its own internal listeners - on every
+// mount.
+let castRemotePlayer: RemotePlayer | null = null;
+let castRemotePlayerController: RemotePlayerController | null = null;
+
+function getCastController(): { player: RemotePlayer; controller: RemotePlayerController } | null {
+  if (!window.cast?.framework || !window.chrome?.cast) return null;
+  if (!castRemotePlayer || !castRemotePlayerController) {
+    window.cast.framework.CastContext.getInstance().setOptions({
+      receiverApplicationId: window.chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID,
+      autoJoinPolicy: window.chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED,
+    });
+    castRemotePlayer = new window.cast.framework.RemotePlayer();
+    castRemotePlayerController = new window.cast.framework.RemotePlayerController(castRemotePlayer);
+  }
+  return { player: castRemotePlayer, controller: castRemotePlayerController };
 }
 
 type BufferedRange = { start: number; end: number };
@@ -381,6 +439,7 @@ const CONTROLS_HIDE_DELAY_MS = 2800;
 
 export function VideoPlayer({
   id,
+  title = null,
   s3Keys,
   initialProgress,
   subtitles,
@@ -390,6 +449,9 @@ export function VideoPlayer({
   posterUrl = null,
 }: {
   id: string;
+  /** Movie/show title - only used as Cast metadata so the receiver's screen
+   * shows something more useful than the bare content id. */
+  title?: string | null;
   s3Keys: string[];
   initialProgress: ProgressEntry[];
   subtitles: SubtitleTrack[];
@@ -425,6 +487,10 @@ export function VideoPlayer({
   const [buffered, setBuffered] = useState<BufferedRange[]>([]);
   const [subtitleMenuOpen, setSubtitleMenuOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [airplayAvailable, setAirplayAvailable] = useState(false);
+  const [castAvailable, setCastAvailable] = useState(false);
+  const [isCasting, setIsCasting] = useState(false);
+  const [castDeviceName, setCastDeviceName] = useState<string | null>(null);
   const streamUrl = hasEpisodes
     ? `/api/stream/${id}?episode=${selectedIndex + 1}`
     : `/api/stream/${id}`;
@@ -452,6 +518,14 @@ export function VideoPlayer({
   const seekReportTimer = useRef<number | null>(null);
   const [seeked, setSeeked] = useState(false);
 
+  // Cast media is (re)loaded from a CastContext session-state event, which
+  // fires asynchronously - long after whichever render wired up the
+  // listener. Reading these straight from that render's closure would load
+  // whatever episode/poster was current when the cast button was first set
+  // up, not whichever one is actually selected when a session starts.
+  const latestPlaybackRef = useRef({ streamUrl, title, effectivePoster, episodeTitle: currentEpisode?.title });
+  latestPlaybackRef.current = { streamUrl, title, effectivePoster, episodeTitle: currentEpisode?.title };
+
   // Manual resize (drag the corner handle). Not CSS `resize`: this element
   // is a `flex-1` flex item (fills whatever space isn't taken by the
   // episode list/sidebar) - `flex-1`'s flex-basis:0% means the flex
@@ -461,22 +535,23 @@ export function VideoPlayer({
   // none`) so nothing fights the size they chose; height still just follows
   // from `aspect-video` on the <video> itself, so it can't end up stretched.
   const [customWidth, setCustomWidth] = useState<number | null>(null);
-  const resizeStart = useRef<{ pointerX: number; width: number } | null>(null);
-  // The flex-computed width the very first time the user grabs the handle -
-  // the ceiling for all future drags. The sidebar next to this player is a
-  // separate flex item in a *different* (page-level) flex row that has no
-  // way to know this element was forced wider - growing past this player's
-  // own natural allocation doesn't push the sidebar aside, it just draws on
-  // top of it. Capping growth here avoids that rather than trying to thread
-  // resize state through the server-component page layout above it.
-  const naturalWidth = useRef<number | null>(null);
+  const resizeStart = useRef<{ pointerX: number; width: number; maxWidth: number } | null>(null);
+  // The outer row wrapper (see the `outerRef` div below), used to cap growth
+  // at whatever width is actually available - not the player's own natural
+  // flex-computed size. That cap is re-measured on every drag start (not
+  // cached) since a window resize between drags can change it. The row is
+  // `flex-wrap`, so growing the player past its natural allocation doesn't
+  // draw over the episode sidebar - the sidebar just wraps onto its own
+  // line, the same way YouTube's embed-size preview lets you drag a player
+  // out to the full width of its container.
+  const outerRef = useRef<HTMLDivElement | null>(null);
 
   function handleResizePointerDown(e: React.PointerEvent) {
     const el = containerRef.current;
     if (!el) return;
     const currentWidth = el.getBoundingClientRect().width;
-    if (naturalWidth.current === null) naturalWidth.current = currentWidth;
-    resizeStart.current = { pointerX: e.clientX, width: currentWidth };
+    const maxWidth = outerRef.current?.getBoundingClientRect().width ?? currentWidth;
+    resizeStart.current = { pointerX: e.clientX, width: currentWidth, maxWidth };
     e.currentTarget.setPointerCapture(e.pointerId);
     e.preventDefault();
   }
@@ -484,8 +559,7 @@ export function VideoPlayer({
   function handleResizePointerMove(e: React.PointerEvent) {
     const start = resizeStart.current;
     if (!start) return;
-    const max = naturalWidth.current ?? 1600;
-    const next = Math.min(max, Math.max(240, start.width + (e.clientX - start.pointerX)));
+    const next = Math.min(start.maxWidth, Math.max(240, start.width + (e.clientX - start.pointerX)));
     setCustomWidth(next);
   }
 
@@ -515,14 +589,19 @@ export function VideoPlayer({
     setBuffered(ranges);
   }
 
-  function reportProgress(useBeacon: boolean) {
+  // `override` is how cast playback reports progress - the position lives on
+  // the remote player, not the (paused, frozen) local <video> element, while
+  // a session is active.
+  function reportProgress(useBeacon: boolean, override?: { positionSeconds: number; durationSeconds: number }) {
     const video = videoRef.current;
-    if (!video || !video.duration || Number.isNaN(video.duration)) return;
+    const positionSeconds = override?.positionSeconds ?? video?.currentTime;
+    const durationSeconds = override?.durationSeconds ?? video?.duration;
+    if (positionSeconds === undefined || !durationSeconds || Number.isNaN(durationSeconds)) return;
 
     const payload = JSON.stringify({
       episode: episodeNumber,
-      position_seconds: video.currentTime,
-      duration_seconds: video.duration,
+      position_seconds: positionSeconds,
+      duration_seconds: durationSeconds,
     });
 
     if (useBeacon) {
@@ -543,19 +622,35 @@ export function VideoPlayer({
   // rather than reporting on every event: the seek bar's onSeek fires
   // continuously while dragging, and reporting on each of those would spam
   // the backend with a request per pixel of drag movement.
-  function scheduleProgressReport() {
+  function scheduleProgressReport(override?: { positionSeconds: number; durationSeconds: number }) {
     if (seekReportTimer.current) window.clearTimeout(seekReportTimer.current);
-    seekReportTimer.current = window.setTimeout(() => reportProgress(false), 800);
+    seekReportTimer.current = window.setTimeout(() => reportProgress(false, override), 800);
   }
 
   // Throttled reporting while actually playing; torn down on pause/episode
-  // change via the effect cleanup, not left to drift across remounts.
+  // change via the effect cleanup, not left to drift across remounts. Skips
+  // while casting - the cast-progress effect below reports from the remote
+  // player's position instead, since the local <video> is paused and frozen
+  // for the duration of the session.
   useEffect(() => {
-    if (!isPlaying) return;
+    if (!isPlaying || isCasting) return;
     const intervalId = window.setInterval(() => reportProgress(false), REPORT_INTERVAL_MS);
     return () => window.clearInterval(intervalId);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isPlaying, streamUrl]);
+  }, [isPlaying, isCasting, streamUrl]);
+
+  useEffect(() => {
+    if (!isPlaying || !isCasting) return;
+    const intervalId = window.setInterval(() => {
+      if (!castRemotePlayer) return;
+      reportProgress(false, {
+        positionSeconds: castRemotePlayer.currentTime,
+        durationSeconds: castRemotePlayer.duration,
+      });
+    }, REPORT_INTERVAL_MS);
+    return () => window.clearInterval(intervalId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isPlaying, isCasting, streamUrl]);
 
   // Best-effort flush when the tab closes/backgrounds - fetch during unload
   // is unreliable, sendBeacon is the standard fix.
@@ -588,6 +683,116 @@ export function VideoPlayer({
     }
     document.addEventListener("fullscreenchange", handleFullscreenChange);
     return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);
+  }, []);
+
+  // AirPlay only exists on Safari/WebKit - the availability-changed event is
+  // how a page finds out whether to show the button at all, rather than
+  // assuming the API means there's actually a receiver nearby.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || typeof video.webkitShowPlaybackTargetPicker !== "function") return;
+    function handleAvailabilityChanged(e: Event) {
+      setAirplayAvailable((e as unknown as { availability: string }).availability === "available");
+    }
+    video.addEventListener("webkitplaybacktargetavailabilitychanged", handleAvailabilityChanged);
+    return () =>
+      video.removeEventListener("webkitplaybacktargetavailabilitychanged", handleAvailabilityChanged);
+  }, [streamUrl, retry]);
+
+  async function loadCastMedia() {
+    const session = window.cast?.framework.CastContext.getInstance().getCurrentSession();
+    if (!session || !window.chrome?.cast) return;
+    const { streamUrl: latestStreamUrl, title: latestTitle, effectivePoster: latestPoster, episodeTitle } =
+      latestPlaybackRef.current;
+    const res = await fetch(`${latestStreamUrl}${latestStreamUrl.includes("?") ? "&" : "?"}resolve=1`);
+    if (!res.ok) return;
+    const { url } = (await res.json()) as { url: string };
+    const mediaInfo = new window.chrome.cast.media.MediaInfo(url, "video/mp4");
+    mediaInfo.metadata = new window.chrome.cast.media.GenericMediaMetadata();
+    mediaInfo.metadata.title = episodeTitle && latestTitle ? `${latestTitle} — ${episodeTitle}` : (latestTitle ?? episodeTitle);
+    if (latestPoster) mediaInfo.metadata.images = [{ url: latestPoster }];
+    const request = new window.chrome.cast.media.LoadRequest(mediaInfo);
+    request.currentTime = videoRef.current?.currentTime ?? 0;
+    await session.loadMedia(request).catch(() => {});
+  }
+
+  // Sets up the Cast SDK's listeners exactly once per mount (not once per
+  // dependency change) - session-state events fire long after this effect
+  // runs, so freshness for the actual media loaded comes from
+  // latestPlaybackRef, not from re-subscribing whenever streamUrl changes.
+  useEffect(() => {
+    let cancelled = false;
+    let detach: (() => void) | null = null;
+
+    function attach() {
+      if (cancelled) return;
+      const castApi = getCastController();
+      const cast = window.cast;
+      if (!castApi || !cast) return;
+      const { player, controller } = castApi;
+
+      function handleConnectedChanged() {
+        setIsCasting(player.isConnected);
+        if (player.isConnected) {
+          videoRef.current?.pause();
+          const session = cast!.framework.CastContext.getInstance().getCurrentSession();
+          setCastDeviceName(session?.getCastDevice().friendlyName ?? null);
+        } else if (videoRef.current && player.currentTime > 0) {
+          videoRef.current.currentTime = player.currentTime;
+          setCurrentTime(player.currentTime);
+        }
+      }
+      function handlePausedChanged() {
+        setIsPlaying(!player.isPaused);
+      }
+      function handleCurrentTimeChanged() {
+        setCurrentTime(player.currentTime);
+      }
+      function handleDurationChanged() {
+        setDuration(player.duration);
+      }
+      function handleSessionStateChanged(event: { sessionState?: string }) {
+        const started =
+          event.sessionState === cast!.framework.SessionState.SESSION_STARTED ||
+          event.sessionState === cast!.framework.SessionState.SESSION_RESUMED;
+        if (started) loadCastMedia();
+      }
+      function handleCastStateChanged() {
+        setCastAvailable(context.getCastState() !== cast!.framework.CastState.NO_DEVICES_AVAILABLE);
+      }
+
+      const context = cast.framework.CastContext.getInstance();
+      controller.addEventListener(cast.framework.RemotePlayerEventType.IS_CONNECTED_CHANGED, handleConnectedChanged);
+      controller.addEventListener(cast.framework.RemotePlayerEventType.IS_PAUSED_CHANGED, handlePausedChanged);
+      controller.addEventListener(cast.framework.RemotePlayerEventType.CURRENT_TIME_CHANGED, handleCurrentTimeChanged);
+      controller.addEventListener(cast.framework.RemotePlayerEventType.DURATION_CHANGED, handleDurationChanged);
+      context.addEventListener(cast.framework.CastContextEventType.SESSION_STATE_CHANGED, handleSessionStateChanged);
+      context.addEventListener(cast.framework.CastContextEventType.CAST_STATE_CHANGED, handleCastStateChanged);
+      setCastAvailable(context.getCastState() !== cast.framework.CastState.NO_DEVICES_AVAILABLE);
+
+      detach = () => {
+        controller.removeEventListener(cast.framework.RemotePlayerEventType.IS_CONNECTED_CHANGED, handleConnectedChanged);
+        controller.removeEventListener(cast.framework.RemotePlayerEventType.IS_PAUSED_CHANGED, handlePausedChanged);
+        controller.removeEventListener(cast.framework.RemotePlayerEventType.CURRENT_TIME_CHANGED, handleCurrentTimeChanged);
+        controller.removeEventListener(cast.framework.RemotePlayerEventType.DURATION_CHANGED, handleDurationChanged);
+        context.removeEventListener(cast.framework.CastContextEventType.SESSION_STATE_CHANGED, handleSessionStateChanged);
+        context.removeEventListener(cast.framework.CastContextEventType.CAST_STATE_CHANGED, handleCastStateChanged);
+      };
+    }
+
+    if (window.cast?.framework) {
+      attach();
+    } else {
+      window.__onGCastApiAvailable = (isAvailable) => {
+        if (isAvailable) attach();
+      };
+    }
+
+    return () => {
+      cancelled = true;
+      detach?.();
+      delete window.__onGCastApiAvailable;
+    };
   }, []);
 
   // Close the subtitle menu on an outside click rather than only via its own
@@ -629,6 +834,10 @@ export function VideoPlayer({
   }
 
   function skip(deltaSeconds: number) {
+    if (isCasting) {
+      seekTo(Math.min(duration || Infinity, Math.max(0, currentTime + deltaSeconds)));
+      return;
+    }
     const video = videoRef.current;
     if (!video) return;
     const dur = video.duration || Infinity;
@@ -638,6 +847,14 @@ export function VideoPlayer({
   }
 
   function seekTo(seconds: number) {
+    if (isCasting) {
+      if (!castRemotePlayer || !castRemotePlayerController) return;
+      castRemotePlayer.currentTime = seconds;
+      castRemotePlayerController.seek();
+      setCurrentTime(seconds);
+      scheduleProgressReport({ positionSeconds: seconds, durationSeconds: castRemotePlayer.duration });
+      return;
+    }
     const video = videoRef.current;
     if (!video) return;
     video.currentTime = seconds;
@@ -646,6 +863,10 @@ export function VideoPlayer({
   }
 
   function togglePlay() {
+    if (isCasting) {
+      castRemotePlayerController?.playOrPause();
+      return;
+    }
     const video = videoRef.current;
     if (!video) return;
     if (video.paused) video.play();
@@ -674,6 +895,18 @@ export function VideoPlayer({
     if (!el) return;
     if (document.fullscreenElement) document.exitFullscreen();
     else el.requestFullscreen();
+  }
+
+  function requestAirplay() {
+    videoRef.current?.webkitShowPlaybackTargetPicker?.();
+  }
+
+  function requestCast() {
+    if (isCasting) {
+      window.cast?.framework.CastContext.getInstance().getCurrentSession()?.endSession(true);
+      return;
+    }
+    window.cast?.framework.CastContext.getInstance().requestSession().catch(() => {});
   }
 
   // `episodes` is sorted for display, which isn't the same order as
@@ -721,13 +954,14 @@ export function VideoPlayer({
   const controlsVisible = showControls || !isPlaying || subtitleMenuOpen;
 
   return (
-    <div className="flex flex-col gap-4 lg:flex-row lg:flex-wrap">
+    <div ref={outerRef} className="flex flex-col gap-4 lg:flex-row lg:flex-wrap">
+      <Script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1" strategy="afterInteractive" />
       <div
         ref={containerRef}
         onMouseMove={handleActivity}
         style={customWidth ? { width: customWidth, flex: "none" } : undefined}
-        className={`group relative min-w-[240px] max-w-[1600px] overflow-hidden rounded-2xl bg-black shadow-2xl shadow-black/50 ring-1 ring-white/10 ${
-          customWidth ? "" : "lg:min-w-[320px] lg:flex-1"
+        className={`group relative min-w-[240px] overflow-hidden rounded-2xl bg-black shadow-2xl shadow-black/50 ring-1 ring-white/10 ${
+          customWidth ? "" : "max-w-[1600px] lg:min-w-[320px] lg:flex-1"
         }`}
       >
         <video
@@ -802,7 +1036,7 @@ export function VideoPlayer({
           </div>
         )}
 
-        {status === "ready" && !isPlaying && (
+        {status === "ready" && !isPlaying && !isCasting && (
           <button
             type="button"
             onClick={togglePlay}
@@ -813,6 +1047,15 @@ export function VideoPlayer({
               <PlayIcon className="h-8 w-8 translate-x-0.5" />
             </span>
           </button>
+        )}
+
+        {isCasting && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/80 px-6 text-center">
+            <CastIcon className="h-10 w-10 text-[#f5c518]" />
+            <p className="text-sm text-zinc-300">
+              Casting to <span className="font-medium text-white">{castDeviceName ?? "device"}</span>
+            </p>
+          </div>
         )}
 
         {status === "ready" && (
@@ -925,6 +1168,30 @@ export function VideoPlayer({
                 </div>
               )}
 
+              {airplayAvailable && (
+                <button
+                  type="button"
+                  onClick={requestAirplay}
+                  aria-label="AirPlay"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white"
+                >
+                  <AirPlayIcon className="h-5 w-5" />
+                </button>
+              )}
+
+              {castAvailable && (
+                <button
+                  type="button"
+                  onClick={requestCast}
+                  aria-label={isCasting ? "Stop casting" : "Cast"}
+                  className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white ${
+                    isCasting ? "text-[#f5c518]" : ""
+                  }`}
+                >
+                  <CastIcon className="h-5 w-5" />
+                </button>
+              )}
+
               <button
                 type="button"
                 onClick={toggleFullscreen}
@@ -937,10 +1204,10 @@ export function VideoPlayer({
           </div>
         )}
 
-        {/* Top-right (not bottom-right, which the control bar's fullscreen
-            button already occupies) drag handle - always present, not just
-            on hover, so it reads as an affordance rather than something to
-            stumble on. */}
+        {/* Bottom-right drag handle, sitting just above the control bar so
+            it never overlaps the fullscreen button - always present, not
+            just on hover, so it reads as an affordance rather than
+            something to stumble on. */}
         <div
           onPointerDown={handleResizePointerDown}
           onPointerMove={handleResizePointerMove}
@@ -949,7 +1216,7 @@ export function VideoPlayer({
           role="separator"
           aria-label="Resize player"
           aria-orientation="vertical"
-          className="absolute right-1.5 top-1.5 z-10 hidden h-7 w-7 cursor-ew-resize touch-none items-center justify-center rounded-full bg-black/40 text-white/50 backdrop-blur-sm transition-colors hover:bg-black/60 hover:text-white/90 lg:flex"
+          className="absolute bottom-20 right-2 z-20 hidden h-7 w-7 cursor-ew-resize touch-none items-center justify-center rounded-full bg-black/40 text-white/50 backdrop-blur-sm transition-colors hover:bg-black/60 hover:text-white/90 lg:flex"
         >
           <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round">
             <path d="M10 3L3 10M13 6L6 13" />

@@ -15,7 +15,13 @@ export async function GET(
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const episode = new URL(request.url).searchParams.get("episode");
+  const requestUrl = new URL(request.url);
+  const episode = requestUrl.searchParams.get("episode");
+  // Cast receivers play against an absolute URL they fetch themselves rather
+  // than a same-origin <video src> - they can't follow a same-origin redirect
+  // the way a browser's video element does, so they need the resolved S3 URL
+  // handed to them as data instead.
+  const resolve = requestUrl.searchParams.get("resolve") === "1";
   const backendUrl = new URL(`${API_URL}/api/content/${id}/stream`);
   if (episode) backendUrl.searchParams.set("episode", episode);
 
@@ -29,7 +35,7 @@ export async function GET(
 
     const location = backendRes.headers.get("location");
     if (backendRes.status >= 300 && backendRes.status < 400 && location) {
-      return NextResponse.redirect(location);
+      return resolve ? NextResponse.json({ url: location }) : NextResponse.redirect(location);
     }
 
     return NextResponse.json(
