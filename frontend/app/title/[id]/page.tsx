@@ -48,7 +48,7 @@ export default async function TitlePage({
           wider screens instead of everything stacking one block per row. */}
       <div className="flex flex-col gap-6 xl:flex-row xl:flex-wrap xl:items-start">
         <div className="min-w-0 flex-1">
-          {/* The player itself is resizable (drag its top-right handle) -
+          {/* The player itself is resizable (drag its bottom-right handle) -
               flex-wrap above means the info sidebar drops below instead of
               overlapping if it's resized wider than the space they'd
               normally share. */}

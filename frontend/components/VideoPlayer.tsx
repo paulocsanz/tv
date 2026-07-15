@@ -526,9 +526,9 @@ export function VideoPlayer({
   const latestPlaybackRef = useRef({ streamUrl, title, effectivePoster, episodeTitle: currentEpisode?.title });
   latestPlaybackRef.current = { streamUrl, title, effectivePoster, episodeTitle: currentEpisode?.title };
 
-  // Manual resize (drag the corner handle). Not CSS `resize`: this element
-  // is a `flex-1` flex item (fills whatever space isn't taken by the
-  // episode list/sidebar) - `flex-1`'s flex-basis:0% means the flex
+  // Manual resize (drag the handle in the control bar). Not CSS `resize`:
+  // this element is a `flex-1` flex item (fills whatever space isn't taken
+  // by the episode list/sidebar) - `flex-1`'s flex-basis:0% means the flex
   // algorithm recomputes its width on every layout pass from flex-grow,
   // silently overwriting whatever width native `resize` sets. Once the user
   // actually drags, we detach from flex-grow entirely (inline width + `flex:
@@ -536,21 +536,22 @@ export function VideoPlayer({
   // from `aspect-video` on the <video> itself, so it can't end up stretched.
   const [customWidth, setCustomWidth] = useState<number | null>(null);
   const resizeStart = useRef<{ pointerX: number; width: number; maxWidth: number } | null>(null);
-  // The outer row wrapper (see the `outerRef` div below), used to cap growth
-  // at whatever width is actually available - not the player's own natural
-  // flex-computed size. That cap is re-measured on every drag start (not
-  // cached) since a window resize between drags can change it. The row is
-  // `flex-wrap`, so growing the player past its natural allocation doesn't
-  // draw over the episode sidebar - the sidebar just wraps onto its own
-  // line, the same way YouTube's embed-size preview lets you drag a player
-  // out to the full width of its container.
-  const outerRef = useRef<HTMLDivElement | null>(null);
 
   function handleResizePointerDown(e: React.PointerEvent) {
     const el = containerRef.current;
     if (!el) return;
-    const currentWidth = el.getBoundingClientRect().width;
-    const maxWidth = outerRef.current?.getBoundingClientRect().width ?? currentWidth;
+    const rect = el.getBoundingClientRect();
+    const currentWidth = rect.width;
+    // Cap at the viewport, not just this row's own share of the page
+    // column - every row between here and the page root is `flex-wrap`, so
+    // anything this pushes out of the way (episode list, facts sidebar)
+    // simply wraps onto its own line below rather than being squeezed or
+    // covered, the same way YouTube's embed-size preview lets you drag a
+    // player out to the full width of the page. Measured from the
+    // element's own left edge (not a flat viewport width) since the page
+    // centers it with side padding - growing from `rect.left` is what
+    // actually keeps the right edge (and the fullscreen button) on-screen.
+    const maxWidth = window.innerWidth - rect.left - 16;
     resizeStart.current = { pointerX: e.clientX, width: currentWidth, maxWidth };
     e.currentTarget.setPointerCapture(e.pointerId);
     e.preventDefault();
@@ -954,7 +955,7 @@ export function VideoPlayer({
   const controlsVisible = showControls || !isPlaying || subtitleMenuOpen;
 
   return (
-    <div ref={outerRef} className="flex flex-col gap-4 lg:flex-row lg:flex-wrap">
+    <div className="flex flex-col gap-4 lg:flex-row lg:flex-wrap">
       <Script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1" strategy="afterInteractive" />
       <div
         ref={containerRef}
@@ -1192,6 +1193,25 @@ export function VideoPlayer({
                 </button>
               )}
 
+              {/* Drag to resize - docked at the actual bottom-right of the
+                  UI, in the control row itself, rather than floating over
+                  the video. Desktop-only (`lg:`): there's no pointer to
+                  drag with on a touch-only viewport. */}
+              <div
+                onPointerDown={handleResizePointerDown}
+                onPointerMove={handleResizePointerMove}
+                onPointerUp={handleResizePointerUp}
+                onPointerCancel={handleResizePointerUp}
+                role="separator"
+                aria-label="Resize player"
+                aria-orientation="vertical"
+                className="hidden h-9 w-9 shrink-0 cursor-ew-resize touch-none items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white lg:flex"
+              >
+                <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round">
+                  <path d="M10 3L3 10M13 6L6 13" />
+                </svg>
+              </div>
+
               <button
                 type="button"
                 onClick={toggleFullscreen}
@@ -1203,25 +1223,6 @@ export function VideoPlayer({
             </div>
           </div>
         )}
-
-        {/* Bottom-right drag handle, sitting just above the control bar so
-            it never overlaps the fullscreen button - always present, not
-            just on hover, so it reads as an affordance rather than
-            something to stumble on. */}
-        <div
-          onPointerDown={handleResizePointerDown}
-          onPointerMove={handleResizePointerMove}
-          onPointerUp={handleResizePointerUp}
-          onPointerCancel={handleResizePointerUp}
-          role="separator"
-          aria-label="Resize player"
-          aria-orientation="vertical"
-          className="absolute bottom-20 right-2 z-20 hidden h-7 w-7 cursor-ew-resize touch-none items-center justify-center rounded-full bg-black/40 text-white/50 backdrop-blur-sm transition-colors hover:bg-black/60 hover:text-white/90 lg:flex"
-        >
-          <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round">
-            <path d="M10 3L3 10M13 6L6 13" />
-          </svg>
-        </div>
       </div>
 
       {hasEpisodes && (
