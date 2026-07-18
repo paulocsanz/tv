@@ -62282,6 +62282,731 @@
           "s3_key": "videos/cultivo-de-maconha-2026-course/receita-ec-ppm-ajuste2.xlsx"
         }
       ]
+    },
+    {
+      "id": "listening-to-music-lectures",
+      "title": "Listening to Music",
+      "original_title": null,
+      "year": 2008,
+      "content_type": "course",
+      "origin": "International",
+      "director": null,
+      "creator": "Craig Wright",
+      "curated_imdb_rating": 0,
+      "poster_url": null,
+      "backdrop_url": null,
+      "plot": "A Yale Open Course introduction to how to listen to and understand music - rhythm, melody, harmony, and form - taught through classical, jazz, and popular examples, from Mozart and Beethoven to Bach, Bizet, and Elton John.",
+      "genres": [
+        "Education",
+        "Music"
+      ],
+      "runtime": null,
+      "actors": [],
+      "awards": null,
+      "rated": null,
+      "imdb_rating": null,
+      "imdb_votes": null,
+      "rotten_tomatoes": null,
+      "metacritic": null,
+      "imdb_id": null,
+      "tmdb_id": null,
+      "collection_id": null,
+      "collection_name": null,
+      "trailer_key": null,
+      "enrichment_status": "ok",
+      "torrent_file": null,
+      "s3_key": null,
+      "s3_keys": [
+        "videos/listening-to-music-lectures/01 - 1. Introduction.mp4",
+        "videos/listening-to-music-lectures/02 - Lecture 2. Introduction to Instruments and Musical Genres.mp4",
+        "videos/listening-to-music-lectures/03 - Lecture 3. Rhythm： Fundamentals.mp4",
+        "videos/listening-to-music-lectures/04 - Lecture 4. Rhythm： Jazz, Pop and Classical.mp4",
+        "videos/listening-to-music-lectures/05 - Lecture 5. Melody： Notes, Scales, Nuts and Bolts.mp4",
+        "videos/listening-to-music-lectures/06 - Lecture 6. Melody： Mozart and Wagner.mp4",
+        "videos/listening-to-music-lectures/07 - Lecture 7. Harmony： Chords and How to Build Them.mp4",
+        "videos/listening-to-music-lectures/08 - Lecture 8. Bass Patterns： Blues and Rock.mp4",
+        "videos/listening-to-music-lectures/09 - Lecture 9. Sonata-Allegro Form： Mozart and Beethoven.mp4",
+        "videos/listening-to-music-lectures/10 - Lecture 10  Sonata-Allegro and Theme and Variations.mp4",
+        "videos/listening-to-music-lectures/11 - Lecture 11. Form： Rondo, Sonata-Allegro and Theme and Variations (cont.).mp4",
+        "videos/listening-to-music-lectures/12 - Lecture 12. Guest Conductor： Saybrook Orchestra.mp4",
+        "videos/listening-to-music-lectures/13 - Lecture 13. Fugue： Bach, Bizet and Bernstein.mp4",
+        "videos/listening-to-music-lectures/14 - Lecture 14. Ostinato Form in the Music of Purcell, Pachelbel, Elton John and Vitamin C.mp4",
+        "videos/listening-to-music-lectures/15 - Lecture 15. Gregorian Chant and Music in the Sistine Chapel.mp4",
+        "videos/listening-to-music-lectures/16 - Lecture 16. Baroque Music： The Vocal Music of Johann Sebastian Bach.mp4",
+        "videos/listening-to-music-lectures/17 - Lecture 17. Mozart and His Operas.mp4",
+        "videos/listening-to-music-lectures/18 - Lecture 18. Piano Music of Mozart and Beethoven.mp4",
+        "videos/listening-to-music-lectures/19 - Lecture 19. Romantic Opera： Verdi's La Traviata, Bocelli, Pavarotti and Domingo.mp4",
+        "videos/listening-to-music-lectures/20 - Lecture 20. The Colossal Symphony： Beethoven, Berlioz, Mahler and Shostakovich.mp4",
+        "videos/listening-to-music-lectures/21 - Lecture 21. Musical Impressionism and Exoticism： Debussy, Ravel and Monet.mp4",
+        "videos/listening-to-music-lectures/22 - Lecture 22. Modernism and Mahler.mp4",
+        "videos/listening-to-music-lectures/23 - Lecture 23. Review of Musical Style.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/01 - 1. Introduction.en.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/02 - Lecture 2. Introduction to Instruments and Musical Genres.en.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/03 - Lecture 3. Rhythm： Fundamentals.en.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/04 - Lecture 4. Rhythm： Jazz, Pop and Classical.en.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/05 - Lecture 5. Melody： Notes, Scales, Nuts and Bolts.en.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/06 - Lecture 6. Melody： Mozart and Wagner.en.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/07 - Lecture 7. Harmony： Chords and How to Build Them.en.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/08 - Lecture 8. Bass Patterns： Blues and Rock.en.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/09 - Lecture 9. Sonata-Allegro Form： Mozart and Beethoven.en.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/10 - Lecture 10  Sonata-Allegro and Theme and Variations.en.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/11 - Lecture 11. Form： Rondo, Sonata-Allegro and Theme and Variations (cont.).en.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/12 - Lecture 12. Guest Conductor： Saybrook Orchestra.en.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/13 - Lecture 13. Fugue： Bach, Bizet and Bernstein.en.vtt"
+        },
+        {
+          "episode": 14,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/14 - Lecture 14. Ostinato Form in the Music of Purcell, Pachelbel, Elton John and Vitamin C.en.vtt"
+        },
+        {
+          "episode": 15,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/15 - Lecture 15. Gregorian Chant and Music in the Sistine Chapel.en.vtt"
+        },
+        {
+          "episode": 16,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/16 - Lecture 16. Baroque Music： The Vocal Music of Johann Sebastian Bach.en.vtt"
+        },
+        {
+          "episode": 17,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/17 - Lecture 17. Mozart and His Operas.en.vtt"
+        },
+        {
+          "episode": 18,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/18 - Lecture 18. Piano Music of Mozart and Beethoven.en.vtt"
+        },
+        {
+          "episode": 19,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/19 - Lecture 19. Romantic Opera： Verdi's La Traviata, Bocelli, Pavarotti and Domingo.en.vtt"
+        },
+        {
+          "episode": 20,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/20 - Lecture 20. The Colossal Symphony： Beethoven, Berlioz, Mahler and Shostakovich.en.vtt"
+        },
+        {
+          "episode": 21,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/21 - Lecture 21. Musical Impressionism and Exoticism： Debussy, Ravel and Monet.en.vtt"
+        },
+        {
+          "episode": 22,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/22 - Lecture 22. Modernism and Mahler.en.vtt"
+        },
+        {
+          "episode": 23,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/listening-to-music-lectures/23 - Lecture 23. Review of Musical Style.en.vtt"
+        }
+      ],
+      "episodes": [],
+      "keywords": [],
+      "award_entries": [],
+      "trailer_s3_key": null,
+      "trailer_subtitles": [],
+      "attachments": []
+    },
+    {
+      "id": "marx-capital-lectures",
+      "title": "Reading Marx's Capital",
+      "original_title": null,
+      "year": 2008,
+      "content_type": "course",
+      "origin": "International",
+      "director": null,
+      "creator": "David Harvey",
+      "curated_imdb_rating": 0,
+      "poster_url": null,
+      "backdrop_url": null,
+      "plot": "David Harvey's celebrated close reading of Karl Marx's Capital, Volume 1, chapter by chapter - the commodity, money, surplus value, the working day, and the accumulation of capital.",
+      "genres": [
+        "Education"
+      ],
+      "runtime": null,
+      "actors": [],
+      "awards": null,
+      "rated": null,
+      "imdb_rating": null,
+      "imdb_votes": null,
+      "rotten_tomatoes": null,
+      "metacritic": null,
+      "imdb_id": null,
+      "tmdb_id": null,
+      "collection_id": null,
+      "collection_name": null,
+      "trailer_key": null,
+      "enrichment_status": "ok",
+      "torrent_file": null,
+      "s3_key": null,
+      "s3_keys": [
+        "videos/marx-capital-lectures/01 - Class 1 Introduction, Capital Chapter 1： The Commodity.mp4",
+        "videos/marx-capital-lectures/02 - Class 2： Capital Chapter 1： The Commodity, part 2.mp4",
+        "videos/marx-capital-lectures/03 - Class 3： Capital Chapter 1： The Commodity, part 3.mp4",
+        "videos/marx-capital-lectures/04 - Class 4： Capital Chapters 2-4： Exchange, Money, Capital.mp4",
+        "videos/marx-capital-lectures/05 - Class 5： Capital Chapters 2-4： Exchange, Money, Capital, part 2.mp4",
+        "videos/marx-capital-lectures/06 - Class 6： Capital Chapters 5-9： Absolute Surplus-Value, Valorization, the Working Day.mp4",
+        "videos/marx-capital-lectures/07 - Class 7： Capital Chapters 5-9： Absolute Surplus-Value, Valorization, the Working Day, part 2.mp4",
+        "videos/marx-capital-lectures/08 - Class 8： Capital Chapter 8： The Working Day.mp4",
+        "videos/marx-capital-lectures/09 - Class 9： Capital Chapters 10-13： Relative Surplus-Value, Division of Labor, Machinery, part 1.mp4",
+        "videos/marx-capital-lectures/10 - Class 10： Capital Chapters 10-13： Relative Surplus-Value, Division of Labor, Machinery, part 2.mp4",
+        "videos/marx-capital-lectures/11 - Class 11： Capital Chapter 12 & 13： Changes in the Division of Labor, Machinery.mp4",
+        "videos/marx-capital-lectures/12 - Class 12： Capital Chapter 13 Machinery.mp4",
+        "videos/marx-capital-lectures/13 - Class 13： Capital Chapters 14-16： Absolute and Relative Surplus-Value.mp4",
+        "videos/marx-capital-lectures/14 - Class 14 Capital Unpublished Chapter 6： Results of the Immediate Production Process.mp4",
+        "videos/marx-capital-lectures/15 - Class 15： Chapter 15： Increase and Decrease in LP and SV & Chapters 17-20： Wages.mp4",
+        "videos/marx-capital-lectures/16 - Class 16： Capital Chapters 17-20： Wages; Chapters 21-24： Accumulation, Reproduction.mp4",
+        "videos/marx-capital-lectures/17 - Class 17： Capital Chapters 21-24： Accumulation, Reproduction.mp4",
+        "videos/marx-capital-lectures/18 - Class 18： Capital Chapter 23, The General Law of Capital Accumulation.mp4",
+        "videos/marx-capital-lectures/19 - Class 19： Capital Ch. 24, So-Called Original Accumulation.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/01 - Class 1 Introduction, Capital Chapter 1： The Commodity.en.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/02 - Class 2： Capital Chapter 1： The Commodity, part 2.en.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/03 - Class 3： Capital Chapter 1： The Commodity, part 3.en.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/04 - Class 4： Capital Chapters 2-4： Exchange, Money, Capital.en.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/05 - Class 5： Capital Chapters 2-4： Exchange, Money, Capital, part 2.en.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/06 - Class 6： Capital Chapters 5-9： Absolute Surplus-Value, Valorization, the Working Day.en.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/07 - Class 7： Capital Chapters 5-9： Absolute Surplus-Value, Valorization, the Working Day, part 2.en.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/08 - Class 8： Capital Chapter 8： The Working Day.en.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/09 - Class 9： Capital Chapters 10-13： Relative Surplus-Value, Division of Labor, Machinery, part 1.en.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/10 - Class 10： Capital Chapters 10-13： Relative Surplus-Value, Division of Labor, Machinery, part 2.en.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/11 - Class 11： Capital Chapter 12 & 13： Changes in the Division of Labor, Machinery.en.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/12 - Class 12： Capital Chapter 13 Machinery.en.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/13 - Class 13： Capital Chapters 14-16： Absolute and Relative Surplus-Value.en.vtt"
+        },
+        {
+          "episode": 14,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/14 - Class 14 Capital Unpublished Chapter 6： Results of the Immediate Production Process.en.vtt"
+        },
+        {
+          "episode": 15,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/15 - Class 15： Chapter 15： Increase and Decrease in LP and SV & Chapters 17-20： Wages.en.vtt"
+        },
+        {
+          "episode": 16,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/16 - Class 16： Capital Chapters 17-20： Wages; Chapters 21-24： Accumulation, Reproduction.en.vtt"
+        },
+        {
+          "episode": 17,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/17 - Class 17： Capital Chapters 21-24： Accumulation, Reproduction.en.vtt"
+        },
+        {
+          "episode": 18,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/18 - Class 18： Capital Chapter 23, The General Law of Capital Accumulation.en.vtt"
+        },
+        {
+          "episode": 19,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/marx-capital-lectures/19 - Class 19： Capital Ch. 24, So-Called Original Accumulation.en.vtt"
+        }
+      ],
+      "episodes": [],
+      "keywords": [],
+      "award_entries": [],
+      "trailer_s3_key": null,
+      "trailer_subtitles": [],
+      "attachments": []
+    },
+    {
+      "id": "milton-yale-lectures",
+      "title": "Milton",
+      "original_title": null,
+      "year": 2007,
+      "content_type": "course",
+      "origin": "International",
+      "director": null,
+      "creator": "John Rogers",
+      "curated_imdb_rating": 0,
+      "poster_url": null,
+      "backdrop_url": null,
+      "plot": "A Yale Open Course on the poetry of John Milton, with sustained attention to Paradise Lost - its theology, politics, and poetics - alongside Lycidas, Areopagitica, Paradise Regained, and Samson Agonistes.",
+      "genres": [
+        "Education",
+        "Literature"
+      ],
+      "runtime": null,
+      "actors": [],
+      "awards": null,
+      "rated": null,
+      "imdb_rating": null,
+      "imdb_votes": null,
+      "rotten_tomatoes": null,
+      "metacritic": null,
+      "imdb_id": null,
+      "tmdb_id": null,
+      "collection_id": null,
+      "collection_name": null,
+      "trailer_key": null,
+      "enrichment_status": "ok",
+      "torrent_file": null,
+      "s3_key": null,
+      "s3_keys": [
+        "videos/milton-yale-lectures/01 - 1. Introduction： Milton, Power, and the Power of Milton.mp4",
+        "videos/milton-yale-lectures/02 - 2. The Infant Cry of God.mp4",
+        "videos/milton-yale-lectures/03 - 3. Credible Employment.mp4",
+        "videos/milton-yale-lectures/04 - 4. Poetry and Virginity.mp4",
+        "videos/milton-yale-lectures/05 - 5. Poetry and Marriage.mp4",
+        "videos/milton-yale-lectures/06 - 6. Lycidas.mp4",
+        "videos/milton-yale-lectures/07 - 7. Lycidas (cont.).mp4",
+        "videos/milton-yale-lectures/08 - 8. Areopagitica.mp4",
+        "videos/milton-yale-lectures/09 - 9. Paradise Lost, Book I.mp4",
+        "videos/milton-yale-lectures/10 - 10. God and Mammon： The Wealth of Literary Memory.mp4",
+        "videos/milton-yale-lectures/11 - 11. The Miltonic Smile.mp4",
+        "videos/milton-yale-lectures/12 - 12. The Blind Prophet.mp4",
+        "videos/milton-yale-lectures/13 - 13. Paradise Lost, Book III.mp4",
+        "videos/milton-yale-lectures/14 - 14. Paradise Lost, Book IV.mp4",
+        "videos/milton-yale-lectures/15 - 15. Paradise Lost, Books V-VI.mp4",
+        "videos/milton-yale-lectures/16 - 16. Paradise Lost, Books VII-VIII.mp4",
+        "videos/milton-yale-lectures/17 - 17. Paradise Lost, Book IX.mp4",
+        "videos/milton-yale-lectures/18 - 18. Paradise Lost, Books IX-X.mp4",
+        "videos/milton-yale-lectures/19 - 19. Paradise Lost, Books XI-XII.mp4",
+        "videos/milton-yale-lectures/20 - 20. Paradise Lost, Books XI-XII (cont.).mp4",
+        "videos/milton-yale-lectures/21 - 21. Paradise Regained, Books I-II.mp4",
+        "videos/milton-yale-lectures/22 - 22. Paradise Regained, Books III-IV.mp4",
+        "videos/milton-yale-lectures/23 - 23. Samson Agonistes.mp4",
+        "videos/milton-yale-lectures/24 - 24. Samson Agonistes (cont.).mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/01 - 1. Introduction： Milton, Power, and the Power of Milton.en.vtt"
+        },
+        {
+          "episode": 2,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/02 - 2. The Infant Cry of God.en.vtt"
+        },
+        {
+          "episode": 3,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/03 - 3. Credible Employment.en.vtt"
+        },
+        {
+          "episode": 4,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/04 - 4. Poetry and Virginity.en.vtt"
+        },
+        {
+          "episode": 5,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/05 - 5. Poetry and Marriage.en.vtt"
+        },
+        {
+          "episode": 6,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/06 - 6. Lycidas.en.vtt"
+        },
+        {
+          "episode": 7,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/07 - 7. Lycidas (cont.).en.vtt"
+        },
+        {
+          "episode": 8,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/08 - 8. Areopagitica.en.vtt"
+        },
+        {
+          "episode": 9,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/09 - 9. Paradise Lost, Book I.en.vtt"
+        },
+        {
+          "episode": 10,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/10 - 10. God and Mammon： The Wealth of Literary Memory.en.vtt"
+        },
+        {
+          "episode": 11,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/11 - 11. The Miltonic Smile.en.vtt"
+        },
+        {
+          "episode": 12,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/12 - 12. The Blind Prophet.en.vtt"
+        },
+        {
+          "episode": 13,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/13 - 13. Paradise Lost, Book III.en.vtt"
+        },
+        {
+          "episode": 14,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/14 - 14. Paradise Lost, Book IV.en.vtt"
+        },
+        {
+          "episode": 15,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/15 - 15. Paradise Lost, Books V-VI.en.vtt"
+        },
+        {
+          "episode": 16,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/16 - 16. Paradise Lost, Books VII-VIII.en.vtt"
+        },
+        {
+          "episode": 17,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/17 - 17. Paradise Lost, Book IX.en.vtt"
+        },
+        {
+          "episode": 18,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/18 - 18. Paradise Lost, Books IX-X.en.vtt"
+        },
+        {
+          "episode": 19,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/19 - 19. Paradise Lost, Books XI-XII.en.vtt"
+        },
+        {
+          "episode": 20,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/20 - 20. Paradise Lost, Books XI-XII (cont.).en.vtt"
+        },
+        {
+          "episode": 21,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/21 - 21. Paradise Regained, Books I-II.en.vtt"
+        },
+        {
+          "episode": 22,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/22 - 22. Paradise Regained, Books III-IV.en.vtt"
+        },
+        {
+          "episode": 23,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/23 - 23. Samson Agonistes.en.vtt"
+        },
+        {
+          "episode": 24,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/milton-yale-lectures/24 - 24. Samson Agonistes (cont.).en.vtt"
+        }
+      ],
+      "episodes": [],
+      "keywords": [],
+      "award_entries": [],
+      "trailer_s3_key": null,
+      "trailer_subtitles": [],
+      "attachments": []
     }
   ]
 }
