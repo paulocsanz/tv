@@ -25,6 +25,9 @@ export function Header() {
           <Link href="/browse?origin=International" className="hover:text-white">
             International
           </Link>
+          <Link href="/browse?type=course" className="hover:text-white">
+            Courses
+          </Link>
         </nav>
         <div className="ml-auto w-full max-w-xs">
           <Suspense fallback={<div className="h-8 w-full rounded-full bg-white/10" />}>

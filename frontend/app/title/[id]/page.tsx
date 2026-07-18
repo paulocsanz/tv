@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getContentById, getMeOrNull, getProgress, getRelatedContent, getSimilarContent } from "@/lib/api";
+import { posterSrc } from "@/lib/types";
 import { ImdbBadge, RottenTomatoesBadge } from "@/components/RatingBadges";
 import { PosterPlaceholder } from "@/components/ContentCard";
 import { RelatedTitleCard } from "@/components/RelatedTitleCard";
@@ -37,7 +38,7 @@ export default async function TitlePage({
   const similar = await getSimilarContent(id);
   const me = await getMeOrNull();
 
-  const heroImage = item.backdrop_url ?? item.poster_url;
+  const heroImage = item.backdrop_url ?? posterSrc(item);
   const hasStream = Boolean(item.s3_key || item.s3_keys.length > 0);
 
   return (
@@ -63,6 +64,7 @@ export default async function TitlePage({
               preferredSubtitleLang={me?.default_subtitle_lang ?? null}
               autoplayNext={me?.autoplay_next ?? true}
               posterUrl={heroImage}
+              numberedTitles={item.content_type === "course"}
             />
           ) : (
             <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-zinc-900 shadow-2xl shadow-black/50 ring-1 ring-white/10">
@@ -139,7 +141,7 @@ export default async function TitlePage({
               trailerS3Key={item.trailer_s3_key}
               trailerSubtitles={item.trailer_subtitles ?? []}
               title={item.title}
-              posterUrl={item.backdrop_url ?? item.poster_url}
+              posterUrl={item.backdrop_url ?? posterSrc(item)}
               className="w-full"
             />
           )}

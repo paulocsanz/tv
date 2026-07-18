@@ -66,14 +66,26 @@ pub struct ContinueWatchingRow {
 /// Ordered by recency (most recently watched first) - the query does the
 /// ordering rather than exposing updated_at to callers, since nothing on
 /// the frontend needs the raw timestamp, just an already-sorted list.
+///
+/// One row per content_id, not per episode - a title with progress on
+/// several episodes (a course lecture list in particular: easy to scrub
+/// through a few before settling on one) used to surface as that many
+/// separate "Continue Watching" cards for the same title (confirmed live:
+/// two "Cultivo de Maconha" cards, one per in-progress lecture). The inner
+/// DISTINCT ON picks each content_id's single most-recent row; the outer
+/// query re-sorts *those* by recency since DISTINCT ON's own ordering is
+/// grouped by content_id, not true recency across titles.
 pub async fn continue_watching(
     pool: &PgPool,
     user_id: i64,
 ) -> Result<Vec<ContinueWatchingRow>, sqlx::Error> {
     sqlx::query_as(
-        "SELECT content_id, episode, position_seconds, duration_seconds \
-         FROM watch_progress \
-         WHERE user_id = $1 AND finished = false AND position_seconds > 0 \
+        "SELECT content_id, episode, position_seconds, duration_seconds FROM ( \
+           SELECT DISTINCT ON (content_id) content_id, episode, position_seconds, duration_seconds, updated_at \
+           FROM watch_progress \
+           WHERE user_id = $1 AND finished = false AND position_seconds > 0 \
+           ORDER BY content_id, updated_at DESC \
+         ) sub \
          ORDER BY updated_at DESC \
          LIMIT 20",
     )

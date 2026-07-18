@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContentItem } from "@/lib/types";
+import { ContentItem, posterSrc } from "@/lib/types";
 import { RatingRow } from "./RatingBadges";
 
 export function PosterPlaceholder({ title }: { title: string }) {
@@ -19,16 +19,17 @@ export function ContentCard({
   fluid?: boolean;
   progressFraction?: number;
 }) {
+  const poster = posterSrc(item);
   return (
     <Link
       href={`/title/${item.id}`}
       className={`group block ${fluid ? "w-full" : "w-40 shrink-0 sm:w-44"}`}
     >
       <div className="relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-zinc-900 ring-1 ring-white/5 transition-transform duration-200 ease-out group-hover:-translate-y-1 group-hover:ring-white/20">
-        {item.poster_url ? (
+        {poster ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={item.poster_url}
+            src={poster}
             alt={item.title}
             loading="lazy"
             className="h-full w-full object-cover"

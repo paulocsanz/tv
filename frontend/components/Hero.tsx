@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { ContentItem } from "@/lib/types";
+import { ContentItem, posterSrc } from "@/lib/types";
 import { RatingRow } from "./RatingBadges";
 
 export function Hero({ item }: { item: ContentItem }) {
-  const backdrop = item.backdrop_url ?? item.poster_url;
+  const backdrop = item.backdrop_url ?? posterSrc(item);
 
   return (
     <div className="relative h-[40vh] min-h-[300px] w-full overflow-hidden sm:h-[45vh] md:h-[50vh] lg:h-[55vh]">

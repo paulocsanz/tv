@@ -12,6 +12,12 @@ export interface ContentItem {
   creator: string | null;
   curated_imdb_rating: number;
   poster_url: string | null;
+  // Self-hosted poster (currently: a frame extracted from a course's first
+  // lecture, since courses have no TMDB/OMDb entry to source a real poster
+  // from) - null falls back to poster_url's external link. Served through
+  // /api/poster/<id> (presigned redirect), not this key directly - Railway
+  // buckets don't support public objects.
+  poster_s3_key: string | null;
   backdrop_url: string | null;
   plot: string | null;
   genres: string[];
@@ -43,6 +49,16 @@ export interface ContentItem {
   keywords: string[];
   award_entries: AwardEntry[];
   attachments: Attachment[];
+}
+
+// Prefers the self-hosted poster (proxied through /api/poster/<id>, which
+// presigns a fresh S3 URL server-side - Railway buckets don't support
+// public objects, so poster_s3_key alone isn't a usable <img src>) over the
+// external poster_url. Both can be null (poster_s3_key while nothing's been
+// generated yet, poster_url for a handful of items TMDB/OMDb has no art
+// for either) - callers still need their own placeholder for that case.
+export function posterSrc(item: ContentItem): string | null {
+  return item.poster_s3_key ? `/api/poster/${item.id}` : item.poster_url;
 }
 
 // A downloadable extra alongside a course's lessons (PDF workbook, xlsx

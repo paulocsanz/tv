@@ -455,6 +455,7 @@ async fn main() {
         .route("/api/content/:id/attachment/:index", get(get_attachment_url))
         .route("/api/content/:id/subtitles/:track_id", get(get_subtitle_content))
         .route("/api/content/:id/trailer-stream", get(get_trailer_stream_url))
+        .route("/api/content/:id/poster", get(get_poster_url))
         .route(
             "/api/content/:id/trailer-subtitles/:track_id",
             get(get_trailer_subtitle_content),
@@ -1301,6 +1302,52 @@ async fn get_trailer_stream_url(
     }
 }
 
+// Same presigned-redirect shape as get_trailer_stream_url - poster_s3_key
+// is None until a poster's been generated (see extract-course-posters.mjs),
+// so 404 rather than 503 lets the frontend fall back to poster_url's
+// external link, matching the trailer fallback's own reasoning exactly.
+async fn get_poster_url(
+    State(state): State<Arc<AppState>>,
+    Path(id): Path<String>,
+) -> impl IntoResponse {
+    let Some(s3) = &state.s3 else {
+        return (StatusCode::SERVICE_UNAVAILABLE, "image storage not configured").into_response();
+    };
+
+    let Some(item) = state.items.iter().find(|i| i.id == id) else {
+        return (StatusCode::NOT_FOUND, "content not found").into_response();
+    };
+
+    let Some(key) = &item.poster_s3_key else {
+        return (StatusCode::NOT_FOUND, "no self-hosted poster for this content").into_response();
+    };
+
+    let presign_config =
+        match aws_sdk_s3::presigning::PresigningConfig::expires_in(Duration::from_secs(4 * 3600)) {
+            Ok(c) => c,
+            Err(e) => {
+                tracing::error!("failed to build presigning config: {e}");
+                return (StatusCode::INTERNAL_SERVER_ERROR, "failed to build poster url")
+                    .into_response();
+            }
+        };
+
+    match s3
+        .client
+        .get_object()
+        .bucket(&s3.bucket)
+        .key(key)
+        .presigned(presign_config)
+        .await
+    {
+        Ok(presigned) => Redirect::temporary(presigned.uri()).into_response(),
+        Err(e) => {
+            tracing::error!("failed to presign poster url: {e}");
+            (StatusCode::INTERNAL_SERVER_ERROR, "failed to build poster url").into_response()
+        }
+    }
+}
+
 // Same direct-proxy rationale as get_subtitle_content (CORS - the bucket has
 // no config for it, and these are tiny KB-sized files with no benefit to a
 // range-request-capable redirect).
@@ -2047,6 +2094,7 @@ mod backfill_tests {
             trailer_s3_key: None,
             trailer_subtitles: Vec::new(),
             attachments: Vec::new(),
+            poster_s3_key: None,
         }
     }
 

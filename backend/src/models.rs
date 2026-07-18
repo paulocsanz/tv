@@ -125,6 +125,14 @@ pub struct EnrichedItem {
     /// PDFs/spreadsheets). Empty for movies and TV.
     #[serde(default)]
     pub attachments: Vec<Attachment>,
+    /// Self-hosted poster image, when one's been generated (currently: a
+    /// frame extracted from a course's first lecture - courses have no
+    /// TMDB/OMDb entry to source a real poster from). `None` falls back to
+    /// `poster_url`'s external link. Same presigned-redirect shape as
+    /// `trailer_s3_key` rather than a public bucket URL - Railway buckets
+    /// don't support public objects.
+    #[serde(default)]
+    pub poster_s3_key: Option<String>,
 }
 
 /// A downloadable extra alongside a course's lessons (PDF workbook, xlsx

@@ -8,6 +8,7 @@ const LINKS = [
   { href: "/browse?type=tv", label: "TV Series" },
   { href: "/browse?origin=Brazilian", label: "Brazilian" },
   { href: "/browse?origin=International", label: "International" },
+  { href: "/browse?type=course", label: "Courses" },
 ];
 
 export function MobileNav() {

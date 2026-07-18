@@ -36,13 +36,19 @@ function parseEpisode(s3Key: string, originalIndex: number): Episode {
   // Split on " - " (spaced hyphen) rather than any "-" so titles containing
   // a bare hyphen (e.g. "Fifty-One") aren't truncated.
   const parts = withoutExt.split(" - ");
-  const title = numberMatch && parts.length > 1 ? parts[1].trim() : withoutExt;
-  return {
-    key: s3Key,
-    originalIndex,
-    number: numberMatch ? parseInt(numberMatch[1], 10) : originalIndex + 1,
-    title,
-  };
+  if (numberMatch && parts.length > 1) {
+    return { key: s3Key, originalIndex, number: parseInt(numberMatch[1], 10), title: parts[1].trim() };
+  }
+  // Course lecture files are named "<sequence> - <lecture's own title>"
+  // (e.g. "01 - 1. Introduction.mp4") rather than "Ep N - Title" - the
+  // leading sequence index is redundant once split off (the lecture's own
+  // number, if it has one, is already inside its title), so strip it too
+  // instead of leaving a second, uglier number glued onto the front.
+  const seqMatch = withoutExt.match(/^(\d+)\s*-\s*(.+)$/);
+  if (seqMatch) {
+    return { key: s3Key, originalIndex, number: parseInt(seqMatch[1], 10), title: seqMatch[2].trim() };
+  }
+  return { key: s3Key, originalIndex, number: originalIndex + 1, title: withoutExt };
 }
 
 // Prefers real TMDB episode data (title/overview/still) when the backfill
@@ -447,6 +453,7 @@ export function VideoPlayer({
   preferredSubtitleLang = null,
   autoplayNext = true,
   posterUrl = null,
+  numberedTitles = false,
 }: {
   id: string;
   /** Movie/show title - only used as Cast metadata so the receiver's screen
@@ -463,6 +470,11 @@ export function VideoPlayer({
    * playback starts (many films/episodes fade in from black), which reads
    * as broken rather than "not started yet". */
   posterUrl?: string | null;
+  /** Course lecture filenames already carry their own number in the title
+   * ("2.4 Fundamentos...", "Lecture 2. Introduction...") - unlike a TV
+   * show's plain episode titles, so the list must not *also* prefix
+   * ep.number or it doubles up ("5. 2.4 Fundamentos..."). */
+  numberedTitles?: boolean;
 }) {
   const hasEpisodes = s3Keys.length > 1;
   // s3Keys isn't guaranteed to be in episode order; sort a copy for display
@@ -1269,7 +1281,7 @@ export function VideoPlayer({
                         isActive ? "font-medium text-white" : "text-zinc-300"
                       }`}
                     >
-                      {ep.number}. {ep.title}
+                      {numberedTitles ? ep.title : `${ep.number}. ${ep.title}`}
                     </span>
                     {ep.overview && (
                       <span className="mt-0.5 line-clamp-2 block text-xs text-zinc-500">
