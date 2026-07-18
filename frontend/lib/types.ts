@@ -1,4 +1,4 @@
-export type ContentType = "movie" | "tv";
+export type ContentType = "movie" | "tv" | "course";
 export type EnrichmentStatus = "ok" | "partial" | "failed";
 
 export interface ContentItem {
@@ -42,6 +42,15 @@ export interface ContentItem {
   episodes: EpisodeMetadata[];
   keywords: string[];
   award_entries: AwardEntry[];
+  attachments: Attachment[];
+}
+
+// A downloadable extra alongside a course's lessons (PDF workbook, xlsx
+// worksheet, etc.) - not a video, so it isn't part of s3_keys.
+export interface Attachment {
+  label: string;
+  filename: string;
+  s3_key: string;
 }
 
 // A nomination or win at an awards event/festival (e.g. Academy Awards Best
@@ -182,6 +191,7 @@ export interface MetaResponse {
   total: number;
   movies: number;
   tv_series: number;
+  courses: number;
   brazilian: number;
   international: number;
   genres: string[];

@@ -321,6 +321,148 @@ pub async fn redeem_invite(
     Ok(user)
 }
 
+/// Human-typeable alphabet for pairing codes - excludes 0/O and 1/I, which
+/// are easy to mis-type from a TV remote's on-screen keyboard or misread on
+/// a TV-distance display.
+const PAIRING_CODE_ALPHABET: &[u8] = b"ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+const PAIRING_CODE_LEN: usize = 6;
+
+fn generate_pairing_code() -> String {
+    let mut rng = rand::thread_rng();
+    (0..PAIRING_CODE_LEN)
+        .map(|_| PAIRING_CODE_ALPHABET[rng.gen_range(0..PAIRING_CODE_ALPHABET.len())] as char)
+        .collect()
+}
+
+/// Strips any display formatting (e.g. "ABC-234") and case before hashing,
+/// so it doesn't matter how the claim form's input happens to be typed.
+fn normalize_pairing_code(code: &str) -> String {
+    code.chars()
+        .filter(|c| c.is_ascii_alphanumeric())
+        .collect::<String>()
+        .to_uppercase()
+}
+
+pub struct TvPairing {
+    pub code: String,
+    pub poll_token: String,
+    /// Postgres-formatted timestamp text - same not-parsed-further rationale
+    /// as `Invite::expires_at`.
+    pub expires_at: String,
+}
+
+/// Starts a TV device-pairing flow (a code the TV displays + a private poll
+/// token only the TV holds) instead of asking someone to type a password
+/// with a remote control - same shape Netflix/YouTube-style "enter this code
+/// on your phone" flows use. Retries on the astronomically unlikely event of
+/// a code collision (32^6 possible codes) rather than widening the alphabet
+/// or code length for a risk this small.
+pub async fn start_tv_pairing(pool: &PgPool) -> Result<TvPairing, sqlx::Error> {
+    let mut last_err = None;
+    for _ in 0..5 {
+        let code = generate_pairing_code();
+        let poll_token = generate_token();
+        let result: Result<String, sqlx::Error> = sqlx::query_scalar(
+            "INSERT INTO tv_pairings (code_hash, poll_token_hash, expires_at) \
+             VALUES ($1, $2, now() + interval '10 minutes') RETURNING expires_at::text",
+        )
+        .bind(hash_token(&code))
+        .bind(hash_token(&poll_token))
+        .fetch_one(pool)
+        .await;
+
+        match result {
+            Ok(expires_at) => {
+                return Ok(TvPairing {
+                    code,
+                    poll_token,
+                    expires_at,
+                })
+            }
+            Err(sqlx::Error::Database(e)) if e.is_unique_violation() => {
+                last_err = Some(sqlx::Error::Database(e));
+                continue;
+            }
+            Err(e) => return Err(e),
+        }
+    }
+    Err(last_err.expect("loop always sets last_err before exhausting retries"))
+}
+
+pub enum ClaimPairingError {
+    InvalidOrExpired,
+    Database(sqlx::Error),
+}
+
+/// Claims a pairing code on behalf of the signed-in user who typed it in
+/// (on their phone/laptop, not the TV) - the TV never sees or handles a
+/// password. Single-use: `claimed_by IS NULL` in the WHERE clause means a
+/// second claim attempt of the same code fails just like an expired one.
+pub async fn claim_tv_pairing(
+    pool: &PgPool,
+    code: &str,
+    user_id: i64,
+) -> Result<(), ClaimPairingError> {
+    let result = sqlx::query(
+        "UPDATE tv_pairings SET claimed_by = $1 \
+         WHERE code_hash = $2 AND claimed_by IS NULL AND expires_at > now()",
+    )
+    .bind(user_id)
+    .bind(hash_token(&normalize_pairing_code(code)))
+    .execute(pool)
+    .await
+    .map_err(ClaimPairingError::Database)?;
+
+    if result.rows_affected() == 0 {
+        return Err(ClaimPairingError::InvalidOrExpired);
+    }
+    Ok(())
+}
+
+pub enum PairingPollResult {
+    Pending,
+    Claimed { token: String },
+}
+
+#[derive(sqlx::FromRow)]
+struct PairingRow {
+    claimed_by: Option<i64>,
+}
+
+/// Polled by the TV every few seconds with the private poll token from
+/// `start_tv_pairing`. Returns `None` once the row is gone (expired, or
+/// never existed) so the TV knows to restart pairing with a fresh code.
+/// Mints the session and deletes the row in the same call that first
+/// observes `claimed_by` set, so the code can't be "claimed" twice over by
+/// two racing poll requests each minting their own session.
+pub async fn poll_tv_pairing(
+    pool: &PgPool,
+    poll_token: &str,
+) -> Result<Option<PairingPollResult>, sqlx::Error> {
+    let row: Option<PairingRow> = sqlx::query_as(
+        "SELECT claimed_by FROM tv_pairings WHERE poll_token_hash = $1 AND expires_at > now()",
+    )
+    .bind(hash_token(poll_token))
+    .fetch_optional(pool)
+    .await?;
+
+    let Some(row) = row else {
+        return Ok(None);
+    };
+
+    let Some(user_id) = row.claimed_by else {
+        return Ok(Some(PairingPollResult::Pending));
+    };
+
+    let token = create_session(pool, user_id).await?;
+    sqlx::query("DELETE FROM tv_pairings WHERE poll_token_hash = $1")
+        .bind(hash_token(poll_token))
+        .execute(pool)
+        .await?;
+
+    Ok(Some(PairingPollResult::Claimed { token }))
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -588,5 +730,149 @@ mod tests {
             }
         }
         cleanup_user(&pool, &creator_username).await;
+    }
+
+    #[tokio::test]
+    async fn start_claim_then_poll_tv_pairing_succeeds() {
+        let pool = test_pool().await;
+        let username = unique_username("tv_pair_owner");
+        let user = create_user(&pool, &username, "pairer-pass-123", false)
+            .await
+            .ok()
+            .expect("create_user should succeed for a new username");
+
+        let pairing = start_tv_pairing(&pool)
+            .await
+            .expect("start_tv_pairing should succeed");
+
+        claim_tv_pairing(&pool, &pairing.code, user.id)
+            .await
+            .ok()
+            .expect("claiming a fresh pairing code should succeed");
+
+        let result = poll_tv_pairing(&pool, &pairing.poll_token)
+            .await
+            .expect("poll_tv_pairing should succeed");
+
+        match result {
+            Some(PairingPollResult::Claimed { token }) => {
+                let looked_up = session_user(&pool, &token).await;
+                assert!(
+                    looked_up.is_some(),
+                    "poll should mint a valid session for the claiming user"
+                );
+                assert_eq!(looked_up.unwrap().id, user.id);
+            }
+            _ => panic!("expected poll to report Claimed after the code was claimed"),
+        }
+
+        cleanup_user(&pool, &username).await;
+    }
+
+    #[tokio::test]
+    async fn poll_tv_pairing_before_claim_is_pending() {
+        let pool = test_pool().await;
+
+        let pairing = start_tv_pairing(&pool)
+            .await
+            .expect("start_tv_pairing should succeed");
+
+        let result = poll_tv_pairing(&pool, &pairing.poll_token)
+            .await
+            .expect("poll_tv_pairing should succeed");
+
+        assert!(matches!(result, Some(PairingPollResult::Pending)));
+    }
+
+    #[tokio::test]
+    async fn poll_tv_pairing_with_unknown_token_returns_none() {
+        let pool = test_pool().await;
+
+        let result = poll_tv_pairing(&pool, "this-poll-token-was-never-issued")
+            .await
+            .expect("poll_tv_pairing should succeed");
+
+        assert!(result.is_none());
+    }
+
+    #[tokio::test]
+    async fn claiming_an_already_claimed_code_fails() {
+        let pool = test_pool().await;
+        let first_username = unique_username("tv_pair_first");
+        let first_user = create_user(&pool, &first_username, "pairer-pass-123", false)
+            .await
+            .ok()
+            .expect("create_user should succeed for a new username");
+        let second_username = unique_username("tv_pair_second");
+        let second_user = create_user(&pool, &second_username, "pairer-pass-456", false)
+            .await
+            .ok()
+            .expect("create_user should succeed for a new username");
+
+        let pairing = start_tv_pairing(&pool)
+            .await
+            .expect("start_tv_pairing should succeed");
+
+        claim_tv_pairing(&pool, &pairing.code, first_user.id)
+            .await
+            .ok()
+            .expect("the first claim of a fresh pairing code should succeed");
+
+        let second_claim = claim_tv_pairing(&pool, &pairing.code, second_user.id).await;
+        assert!(
+            matches!(second_claim, Err(ClaimPairingError::InvalidOrExpired)),
+            "claiming an already-claimed pairing code should fail as InvalidOrExpired"
+        );
+
+        cleanup_user(&pool, &first_username).await;
+        cleanup_user(&pool, &second_username).await;
+    }
+
+    #[tokio::test]
+    async fn claiming_with_a_code_that_was_never_issued_fails() {
+        let pool = test_pool().await;
+        let username = unique_username("tv_pair_noone");
+        let user = create_user(&pool, &username, "pairer-pass-123", false)
+            .await
+            .ok()
+            .expect("create_user should succeed for a new username");
+
+        let result = claim_tv_pairing(&pool, "ZZZ999", user.id).await;
+        assert!(matches!(result, Err(ClaimPairingError::InvalidOrExpired)));
+
+        cleanup_user(&pool, &username).await;
+    }
+
+    #[tokio::test]
+    async fn poll_after_claim_is_single_use() {
+        let pool = test_pool().await;
+        let username = unique_username("tv_pair_singleuse");
+        let user = create_user(&pool, &username, "pairer-pass-123", false)
+            .await
+            .ok()
+            .expect("create_user should succeed for a new username");
+
+        let pairing = start_tv_pairing(&pool)
+            .await
+            .expect("start_tv_pairing should succeed");
+        claim_tv_pairing(&pool, &pairing.code, user.id)
+            .await
+            .ok()
+            .expect("claim should succeed");
+
+        let first_poll = poll_tv_pairing(&pool, &pairing.poll_token)
+            .await
+            .expect("poll_tv_pairing should succeed");
+        assert!(matches!(first_poll, Some(PairingPollResult::Claimed { .. })));
+
+        let second_poll = poll_tv_pairing(&pool, &pairing.poll_token)
+            .await
+            .expect("poll_tv_pairing should succeed");
+        assert!(
+            second_poll.is_none(),
+            "polling again after the pairing row was consumed should return None"
+        );
+
+        cleanup_user(&pool, &username).await;
     }
 }

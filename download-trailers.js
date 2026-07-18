@@ -42,6 +42,9 @@ import { execSync, execFileSync } from "child_process";
 import os from "os";
 import { S3Client } from "@aws-sdk/client-s3";
 import { Upload } from "@aws-sdk/lib-storage";
+import httpsProxyAgentPkg from "https-proxy-agent";
+const { HttpsProxyAgent } = httpsProxyAgentPkg;
+import { NodeHttpHandler } from "@smithy/node-http-handler";
 
 const S3_PREFIX = (id) => `videos/${id}/`;
 const ENRICHED_FILE = path.join(process.cwd(), "backend/data/enriched_400.json");
@@ -69,16 +72,75 @@ const LANG_TO_ISO_639_2 = { en: "eng", pt: "por", es: "spa" };
 const bucketCreds = JSON.parse(
   execSync("railway bucket credentials --bucket convenient-pannikin --json").toString()
 );
-const s3Client = new S3Client({
-  region: bucketCreds.region,
-  endpoint: bucketCreds.endpoint,
-  forcePathStyle: bucketCreds.urlStyle !== "virtual-host",
-  credentials: {
-    accessKeyId: bucketCreds.accessKeyId,
-    secretAccessKey: bucketCreds.secretAccessKey,
-  },
-});
+// See download-picked-torrents.js's UPLOAD_STALL_TIMEOUT_MS for why every
+// client gets an explicit requestTimeout - a hung proxy/connection can leave
+// a request's socket ESTABLISHED with zero bytes ever moving again, and
+// requestTimeout is Node's own socket-level *idle* timeout (no activity for
+// this long, not "the whole request must finish by X"), so it fires on a
+// genuinely dead connection without punishing a legitimately slow-but-active
+// upload.
+const UPLOAD_STALL_TIMEOUT_MS = 3 * 60 * 1000;
+
+function s3ClientConfig(httpsAgent) {
+  return {
+    region: bucketCreds.region,
+    endpoint: bucketCreds.endpoint,
+    forcePathStyle: bucketCreds.urlStyle !== "virtual-host",
+    credentials: {
+      accessKeyId: bucketCreds.accessKeyId,
+      secretAccessKey: bucketCreds.secretAccessKey,
+    },
+    requestHandler: new NodeHttpHandler({ httpsAgent, requestTimeout: UPLOAD_STALL_TIMEOUT_MS }),
+  };
+}
+const s3Client = new S3Client(s3ClientConfig());
 const BUCKET_NAME = bucketCreds.bucketName;
+
+// See download-picked-torrents.js's loadProxyClients for why this exists -
+// same bucket, same home-ISP route penalty, same ~3.7x-per-connection win
+// from routing through a third-party proxy instead. Kept as an independent
+// copy rather than a shared import since these two scripts already don't
+// share any module and this one is small enough not to be worth factoring
+// out for.
+const PROXY_LIST_FILE = path.join(os.homedir(), ".config/tv-pipeline/webshare-proxies.txt");
+function loadProxyClients() {
+  let lines;
+  try {
+    lines = fs.readFileSync(PROXY_LIST_FILE, "utf-8").trim().split("\n").filter(Boolean);
+  } catch {
+    return [];
+  }
+  return lines.map((line) => {
+    const [ip, port, user, pass] = line.split(":");
+    const agent = new HttpsProxyAgent(`http://${user}:${pass}@${ip}:${port}`);
+    return new S3Client(s3ClientConfig(agent));
+  });
+}
+const proxyClients = loadProxyClients();
+// See download-picked-torrents.js's pickS3Client for why this starts random
+// (a fixed 0 means one bad proxy near the top of the file gets hit first on
+// every restart) and why bad proxies get quarantined for the rest of the run
+// instead of trusted to self-heal via retry alone (requestTimeout isn't
+// reliable against a hung proxy CONNECT tunnel specifically).
+let nextProxyIndex = proxyClients.length > 0 ? Math.floor(Math.random() * proxyClients.length) : 0;
+const badProxyIndices = new Set();
+function pickS3Client() {
+  if (proxyClients.length === 0) return { client: s3Client, index: -1 };
+  for (let tries = 0; tries < proxyClients.length; tries++) {
+    const index = nextProxyIndex % proxyClients.length;
+    nextProxyIndex++;
+    if (!badProxyIndices.has(index)) return { client: proxyClients[index], index };
+  }
+  return { client: s3Client, index: -1 };
+}
+function quarantineProxy(index) {
+  if (index >= 0) badProxyIndices.add(index);
+}
+console.log(
+  proxyClients.length > 0
+    ? `Using ${proxyClients.length} proxies for uploads (round-robin).`
+    : `No proxy list found at ${PROXY_LIST_FILE} - uploading directly.`
+);
 
 const UPLOAD_RETRIES = 3;
 
@@ -90,13 +152,30 @@ async function uploadToS3(filePath, s3Key, label, contentType) {
     try {
       const prefix = attempt === 1 ? "Uploading" : `Retry ${attempt - 1}/${UPLOAD_RETRIES - 1}`;
       process.stdout.write(`    [${label}] ${prefix} ${sizeMB}MB... `);
+      const { client, index: proxyIndex } = pickS3Client();
       const upload = new Upload({
-        client: s3Client,
+        client,
         params: { Bucket: BUCKET_NAME, Key: s3Key, Body: fs.createReadStream(filePath), ContentType: contentType },
         queueSize: 4,
         partSize: 32 * 1024 * 1024,
       });
-      await upload.done();
+      // See download-picked-torrents.js's identical race for why this is a
+      // hard client-side timeout independent of the SDK/socket ever
+      // noticing the hang.
+      let timedOut = false;
+      await Promise.race([
+        upload.done(),
+        new Promise((_, reject) =>
+          setTimeout(() => {
+            timedOut = true;
+            upload.abort().catch(() => {});
+            reject(new Error(`stalled - no completion after ${UPLOAD_STALL_TIMEOUT_MS / 60000}m`));
+          }, UPLOAD_STALL_TIMEOUT_MS)
+        ),
+      ]).catch((error) => {
+        if (timedOut) quarantineProxy(proxyIndex);
+        throw error;
+      });
       console.log("✓");
       return true;
     } catch (error) {

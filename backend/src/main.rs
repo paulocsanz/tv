@@ -6,6 +6,7 @@ use axum::{
     routing::{get, post},
     Router,
 };
+use chrono::Datelike;
 use serde::{Deserialize, Serialize};
 use sqlx::postgres::PgPoolOptions;
 use sqlx::PgPool;
@@ -87,6 +88,37 @@ fn load_s3_config() -> Option<S3Config> {
 
 fn effective_rating(item: &EnrichedItem) -> f64 {
     item.imdb_rating.unwrap_or(item.curated_imdb_rating)
+}
+
+// `year` is the only date-like field the catalog tracks (see models.rs) -
+// no month/day, so this only catches strictly-future years, not "released
+// earlier this year." The s3_key/s3_keys check is a safety net: if a
+// playable file actually exists, it's demonstrably available no matter
+// what the future-dated metadata says.
+fn is_unreleased(item: &EnrichedItem, current_year: i32) -> bool {
+    item.year > current_year && item.s3_key.is_none() && item.s3_keys.is_empty()
+}
+
+// total_cmp, not partial_cmp().unwrap() - see the comment on top_n for why.
+// Unreleased matches (only reachable via search - get_content drops them
+// from unfiltered browsing before this ever runs) always sort after every
+// released match regardless of `sort` - they're the least relevant result
+// by definition, since there's nothing to actually watch yet. Within that
+// group (and within the released group) the chosen `sort` still applies,
+// so a better match by that heuristic still ranks first relative to its
+// own group.
+fn sort_content(items: &mut [&EnrichedItem], sort: Option<&str>, current_year: i32) {
+    items.sort_by(|a, b| {
+        is_unreleased(a, current_year)
+            .cmp(&is_unreleased(b, current_year))
+            .then_with(|| match sort.unwrap_or("rating_desc") {
+                "rating_asc" => effective_rating(a).total_cmp(&effective_rating(b)),
+                "year_desc" => b.year.cmp(&a.year),
+                "year_asc" => a.year.cmp(&b.year),
+                "title_asc" => a.title.cmp(&b.title),
+                _ => effective_rating(b).total_cmp(&effective_rating(a)),
+            })
+    });
 }
 
 #[derive(Debug, Deserialize)]
@@ -407,7 +439,9 @@ async fn main() {
     let public_routes = Router::new()
         .route("/health", get(health))
         .route("/api/login", post(login))
-        .route("/api/signup", post(signup_handler));
+        .route("/api/signup", post(signup_handler))
+        .route("/api/tv/pair/start", post(tv_pair_start_handler))
+        .route("/api/tv/pair/poll", get(tv_pair_poll_handler));
 
     let protected_routes = Router::new()
         .route("/api/meta", get(get_meta))
@@ -418,6 +452,7 @@ async fn main() {
         .route("/api/content/:id/similar", get(get_similar_content))
         .route("/api/content/:id/torrent", get(get_torrent_file))
         .route("/api/content/:id/stream", get(get_stream_url))
+        .route("/api/content/:id/attachment/:index", get(get_attachment_url))
         .route("/api/content/:id/subtitles/:track_id", get(get_subtitle_content))
         .route("/api/content/:id/trailer-stream", get(get_trailer_stream_url))
         .route(
@@ -431,6 +466,7 @@ async fn main() {
         .route("/api/admin/users", get(list_users_handler).post(create_user_handler))
         .route("/api/admin/pipeline", get(get_pipeline_status_handler))
         .route("/api/admin/invites", post(create_invite_handler))
+        .route("/api/tv/pair/claim", post(tv_pair_claim_handler))
         .route("/api/admin/catalog", get(get_catalog_review_handler))
         .route("/api/admin/catalog/:id/research", post(retrigger_torrent_search_handler))
         .route("/api/account/password", post(change_password_handler))
@@ -524,6 +560,7 @@ struct MetaResponse {
     total: usize,
     movies: usize,
     tv_series: usize,
+    courses: usize,
     brazilian: usize,
     international: usize,
     genres: Vec<String>,
@@ -574,6 +611,10 @@ async fn get_meta(State(state): State<Arc<AppState>>) -> Json<MetaResponse> {
             .iter()
             .filter(|i| i.content_type == ContentType::Tv)
             .count(),
+        courses: items
+            .iter()
+            .filter(|i| i.content_type == ContentType::Course)
+            .count(),
         brazilian: items.iter().filter(|i| i.origin == "Brazilian").count(),
         international: items.iter().filter(|i| i.origin == "International").count(),
         genres,
@@ -602,14 +643,24 @@ fn top_n<'a>(mut items: Vec<&'a EnrichedItem>, n: usize) -> Vec<&'a EnrichedItem
 }
 
 async fn get_sections(State(state): State<Arc<AppState>>) -> Json<Vec<Section>> {
-    let items = &state.items;
+    let current_year = chrono::Utc::now().year();
+    // Homepage sections are pure browsing, never a search - unreleased
+    // titles (see is_unreleased) only earn a place once someone actually
+    // looks for them, so they're dropped from the shared pool every
+    // section below is built from.
+    let items: Vec<&EnrichedItem> = state
+        .items
+        .iter()
+        .filter(|i| !is_unreleased(i, current_year))
+        .collect();
     let clone_items = |v: Vec<&EnrichedItem>| v.into_iter().cloned().collect::<Vec<_>>();
 
-    let featured = top_n(items.iter().collect(), 12);
+    let featured = top_n(items.to_vec(), 12);
 
     let brazilian_movies = top_n(
         items
             .iter()
+            .copied()
             .filter(|i| i.origin == "Brazilian" && i.content_type == ContentType::Movie)
             .collect(),
         18,
@@ -617,6 +668,7 @@ async fn get_sections(State(state): State<Arc<AppState>>) -> Json<Vec<Section>> 
     let brazilian_tv = top_n(
         items
             .iter()
+            .copied()
             .filter(|i| i.origin == "Brazilian" && i.content_type == ContentType::Tv)
             .collect(),
         18,
@@ -624,14 +676,16 @@ async fn get_sections(State(state): State<Arc<AppState>>) -> Json<Vec<Section>> 
     let international_classics = top_n(
         items
             .iter()
+            .copied()
             .filter(|i| i.origin == "International" && i.year <= 1980)
             .collect(),
         18,
     );
-    let modern_hits = top_n(items.iter().filter(|i| i.year >= 2015).collect(), 18);
+    let modern_hits = top_n(items.iter().copied().filter(|i| i.year >= 2015).collect(), 18);
     let top_tv = top_n(
         items
             .iter()
+            .copied()
             .filter(|i| i.content_type == ContentType::Tv)
             .collect(),
         18,
@@ -639,6 +693,7 @@ async fn get_sections(State(state): State<Arc<AppState>>) -> Json<Vec<Section>> 
     let top_movies = top_n(
         items
             .iter()
+            .copied()
             .filter(|i| i.content_type == ContentType::Movie)
             .collect(),
         18,
@@ -646,6 +701,7 @@ async fn get_sections(State(state): State<Arc<AppState>>) -> Json<Vec<Section>> 
     let hidden_gems = top_n(
         items
             .iter()
+            .copied()
             .filter(|i| {
                 let r = effective_rating(i);
                 (7.0..8.3).contains(&r)
@@ -656,7 +712,16 @@ async fn get_sections(State(state): State<Arc<AppState>>) -> Json<Vec<Section>> 
     let best_picture = top_n(
         items
             .iter()
+            .copied()
             .filter(|i| i.award_entries.iter().any(|a| a.category == "Best Picture"))
+            .collect(),
+        18,
+    );
+    let courses = top_n(
+        items
+            .iter()
+            .copied()
+            .filter(|i| i.content_type == ContentType::Course)
             .collect(),
         18,
     );
@@ -676,6 +741,11 @@ async fn get_sections(State(state): State<Arc<AppState>>) -> Json<Vec<Section>> 
             key: "top_tv".into(),
             title: "Top Rated TV Series".into(),
             items: clone_items(top_tv),
+        },
+        Section {
+            key: "courses".into(),
+            title: "Courses".into(),
+            items: clone_items(courses),
         },
         Section {
             key: "brazilian_movies".into(),
@@ -752,6 +822,7 @@ async fn get_content(
         let want = match ct.to_lowercase().as_str() {
             "movie" => Some(ContentType::Movie),
             "tv" => Some(ContentType::Tv),
+            "course" => Some(ContentType::Course),
             _ => None,
         };
         if let Some(want) = want {
@@ -808,14 +879,15 @@ async fn get_content(
         filtered.retain(|i| i.year >= decade && i.year < decade + 10);
     }
 
-    // total_cmp, not partial_cmp().unwrap() - see the comment on top_n for why.
-    match q.sort.as_deref().unwrap_or("rating_desc") {
-        "rating_asc" => filtered.sort_by(|a, b| effective_rating(a).total_cmp(&effective_rating(b))),
-        "year_desc" => filtered.sort_by(|a, b| b.year.cmp(&a.year)),
-        "year_asc" => filtered.sort_by(|a, b| a.year.cmp(&b.year)),
-        "title_asc" => filtered.sort_by(|a, b| a.title.cmp(&b.title)),
-        _ => filtered.sort_by(|a, b| effective_rating(b).total_cmp(&effective_rating(a))),
+    let current_year = chrono::Utc::now().year();
+    if q.search.is_none() {
+        // Undirected browsing (no search term) never surfaces unreleased
+        // titles - they only earn a place once someone actually looks for
+        // them by name, via the sort tie-break in sort_content below.
+        filtered.retain(|i| !is_unreleased(i, current_year));
     }
+
+    sort_content(&mut filtered, q.sort.as_deref(), current_year);
 
     let total = filtered.len();
     let page_size = q.page_size.unwrap_or(24).clamp(1, 100);
@@ -1071,6 +1143,51 @@ async fn get_stream_url(
         Err(e) => {
             tracing::error!("failed to presign stream url: {e}");
             (StatusCode::INTERNAL_SERVER_ERROR, "failed to build stream url").into_response()
+        }
+    }
+}
+
+// Same presigned-redirect shape as get_stream_url, indexed into
+// `attachments` instead of `s3_keys` - course extras (PDFs, spreadsheets)
+// aren't video, so they don't go through the episode-numbered stream path.
+async fn get_attachment_url(
+    State(state): State<Arc<AppState>>,
+    Path((id, index)): Path<(String, usize)>,
+) -> impl IntoResponse {
+    let Some(s3) = &state.s3 else {
+        return (StatusCode::SERVICE_UNAVAILABLE, "storage not configured").into_response();
+    };
+
+    let Some(item) = state.items.iter().find(|i| i.id == id) else {
+        return (StatusCode::NOT_FOUND, "content not found").into_response();
+    };
+
+    let Some(attachment) = item.attachments.get(index) else {
+        return (StatusCode::NOT_FOUND, "attachment not found").into_response();
+    };
+
+    let presign_config =
+        match aws_sdk_s3::presigning::PresigningConfig::expires_in(Duration::from_secs(4 * 3600)) {
+            Ok(c) => c,
+            Err(e) => {
+                tracing::error!("failed to build presigning config: {e}");
+                return (StatusCode::INTERNAL_SERVER_ERROR, "failed to build attachment url")
+                    .into_response();
+            }
+        };
+
+    match s3
+        .client
+        .get_object()
+        .bucket(&s3.bucket)
+        .key(&attachment.s3_key)
+        .presigned(presign_config)
+        .await
+    {
+        Ok(presigned) => Redirect::temporary(presigned.uri()).into_response(),
+        Err(e) => {
+            tracing::error!("failed to presign attachment url: {e}");
+            (StatusCode::INTERNAL_SERVER_ERROR, "failed to build attachment url").into_response()
         }
     }
 }
@@ -1387,6 +1504,83 @@ async fn create_invite_handler(
         .into_response(),
         Err(e) => {
             tracing::error!("failed to create invite: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+#[derive(Serialize)]
+struct TvPairStartResponse {
+    code: String,
+    poll_token: String,
+    expires_at: String,
+}
+
+/// Public - the TV hasn't signed in yet at this point, that's the entire
+/// premise of the pairing flow.
+async fn tv_pair_start_handler(State(state): State<Arc<AppState>>) -> impl IntoResponse {
+    match auth::start_tv_pairing(&state.db).await {
+        Ok(pairing) => Json(TvPairStartResponse {
+            code: pairing.code,
+            poll_token: pairing.poll_token,
+            expires_at: pairing.expires_at,
+        })
+        .into_response(),
+        Err(e) => {
+            tracing::error!("failed to start tv pairing: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+#[derive(Deserialize)]
+struct TvPairPollQuery {
+    poll_token: String,
+}
+
+/// Public - authenticated by possession of the poll token itself (mirrors
+/// how a presigned URL or invite token is the credential), not a session,
+/// since the TV has no session until this call succeeds.
+async fn tv_pair_poll_handler(
+    State(state): State<Arc<AppState>>,
+    Query(q): Query<TvPairPollQuery>,
+) -> impl IntoResponse {
+    match auth::poll_tv_pairing(&state.db, &q.poll_token).await {
+        Ok(None) => (
+            StatusCode::GONE,
+            Json(serde_json::json!({ "error": "pairing code expired or invalid" })),
+        )
+            .into_response(),
+        Ok(Some(auth::PairingPollResult::Pending)) => StatusCode::ACCEPTED.into_response(),
+        Ok(Some(auth::PairingPollResult::Claimed { token })) => {
+            Json(LoginResponse { token }).into_response()
+        }
+        Err(e) => {
+            tracing::error!("failed to poll tv pairing: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+#[derive(Deserialize)]
+struct TvPairClaimRequest {
+    code: String,
+}
+
+async fn tv_pair_claim_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+    Json(body): Json<TvPairClaimRequest>,
+) -> impl IntoResponse {
+    match auth::claim_tv_pairing(&state.db, &body.code, user.id).await {
+        Ok(()) => StatusCode::NO_CONTENT.into_response(),
+        Err(auth::ClaimPairingError::InvalidOrExpired) => (
+            StatusCode::GONE,
+            Json(serde_json::json!({ "error": "pairing code is invalid, expired, or already used" })),
+        )
+            .into_response(),
+        Err(auth::ClaimPairingError::Database(e)) => {
+            tracing::error!("failed to claim tv pairing: {e}");
             StatusCode::INTERNAL_SERVER_ERROR.into_response()
         }
     }
@@ -1852,6 +2046,7 @@ mod backfill_tests {
             award_entries: Vec::new(),
             trailer_s3_key: None,
             trailer_subtitles: Vec::new(),
+            attachments: Vec::new(),
         }
     }
 
@@ -1998,6 +2193,86 @@ mod backfill_tests {
         assert!(
             best_picture_count > 600,
             "expected 600+ Best Picture nominees/winners in the catalog, got {best_picture_count}"
+        );
+    }
+
+    #[test]
+    fn is_unreleased_for_future_year_without_a_stream() {
+        let mut item = test_item("future-movie-2027-movie");
+        item.year = 2027;
+        assert!(is_unreleased(&item, 2026));
+    }
+
+    #[test]
+    fn is_unreleased_false_when_a_stream_already_exists() {
+        // Future-dated in the catalog, but a playable file exists (sourced
+        // early) - actually available, so it must not be treated as
+        // unreleased no matter what the year says.
+        let mut item = test_item("early-copy-2027-movie");
+        item.year = 2027;
+        item.s3_keys.push("videos/early-copy-2027-movie/movie.mp4".to_string());
+        assert!(!is_unreleased(&item, 2026));
+    }
+
+    #[test]
+    fn is_unreleased_false_for_current_or_past_year() {
+        let mut current = test_item("this-year-2026-movie");
+        current.year = 2026;
+        assert!(!is_unreleased(&current, 2026));
+
+        let past = test_item("old-movie-2000-movie");
+        assert!(!is_unreleased(&past, 2026));
+    }
+
+    #[test]
+    fn sort_content_always_ranks_unreleased_titles_last() {
+        // Alphabetically "Aaa Unreleased" would sort first under title_asc -
+        // the grouping in sort_content must still put every released title
+        // ahead of it regardless of the chosen `sort`.
+        let mut released = test_item("zzz-released-2020-movie");
+        released.title = "Zzz Released".to_string();
+        released.year = 2020;
+
+        let mut unreleased = test_item("aaa-unreleased-2027-movie");
+        unreleased.title = "Aaa Unreleased".to_string();
+        unreleased.year = 2027;
+
+        let mut items = vec![&unreleased, &released];
+        sort_content(&mut items, Some("title_asc"), 2026);
+
+        assert_eq!(items[0].id, "zzz-released-2020-movie");
+        assert_eq!(items[1].id, "aaa-unreleased-2027-movie");
+    }
+
+    #[test]
+    fn sort_content_preserves_the_chosen_heuristic_within_each_group() {
+        let mut released_low = test_item("released-low-2020-movie");
+        released_low.year = 2020;
+        released_low.curated_imdb_rating = 5.0;
+
+        let mut released_high = test_item("released-high-2020-movie");
+        released_high.year = 2020;
+        released_high.curated_imdb_rating = 9.0;
+
+        let mut unreleased_low = test_item("unreleased-low-2028-movie");
+        unreleased_low.year = 2028;
+        unreleased_low.curated_imdb_rating = 1.0;
+
+        let mut unreleased_high = test_item("unreleased-high-2027-movie");
+        unreleased_high.year = 2027;
+        unreleased_high.curated_imdb_rating = 10.0;
+
+        let mut items = vec![&unreleased_low, &released_low, &unreleased_high, &released_high];
+        sort_content(&mut items, None, 2026); // default rating_desc
+
+        assert_eq!(
+            items.iter().map(|i| i.id.as_str()).collect::<Vec<_>>(),
+            vec![
+                "released-high-2020-movie",
+                "released-low-2020-movie",
+                "unreleased-high-2027-movie",
+                "unreleased-low-2028-movie",
+            ]
         );
     }
 }

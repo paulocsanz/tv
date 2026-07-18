@@ -37,7 +37,7 @@ export function ContentCard({
           <PosterPlaceholder title={item.title} />
         )}
         <div className="absolute left-1.5 top-1.5 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide text-zinc-200 backdrop-blur-sm">
-          {item.content_type === "movie" ? "Movie" : "TV"}
+          {item.content_type === "movie" ? "Movie" : item.content_type === "tv" ? "TV" : "Course"}
         </div>
         {item.origin === "Brazilian" && (
           <div className="absolute right-1.5 top-1.5 rounded bg-emerald-600/90 px-1.5 py-0.5 text-[10px] font-semibold text-white">

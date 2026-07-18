@@ -18,6 +18,9 @@ function TomatoIcon({ fresh }: { fresh: boolean }) {
 }
 
 export function ImdbBadge({ item, size = "sm" }: { item: ContentItem; size?: "sm" | "lg" }) {
+  // Courses have no IMDb entry - curated_imdb_rating is an unused
+  // placeholder for them, not a real score worth badging.
+  if (item.content_type === "course") return null;
   const rating = displayRating(item);
   const big = size === "lg";
   return (

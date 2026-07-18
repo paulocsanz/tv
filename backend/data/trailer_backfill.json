@@ -4384,5 +4384,1643 @@
         "s3_key": "videos/hugo-2011-movie/trailer.eng.vtt"
       }
     ]
+  },
+  "hidden-figures-2016-movie": {
+    "s3_key": "videos/hidden-figures-2016-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "ford-v-ferrari-2019-movie": {
+    "s3_key": "videos/ford-v-ferrari-2019-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "room-2015-movie": {
+    "s3_key": "videos/room-2015-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/room-2015-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "i-m-still-here-2024-movie": {
+    "s3_key": "videos/i-m-still-here-2024-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/i-m-still-here-2024-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "rebecca-1940-movie": {
+    "s3_key": "videos/rebecca-1940-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/rebecca-1940-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "fargo-1996-movie": {
+    "s3_key": "videos/fargo-1996-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/fargo-1996-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/fargo-1996-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "who-s-afraid-of-virginia-woolf-1966-movie": {
+    "s3_key": "videos/who-s-afraid-of-virginia-woolf-1966-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "guess-who-s-coming-to-dinner-1967-movie": {
+    "s3_key": "videos/guess-who-s-coming-to-dinner-1967-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "captain-phillips-2013-movie": {
+    "s3_key": "videos/captain-phillips-2013-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-french-connection-1971-movie": {
+    "s3_key": "videos/the-french-connection-1971-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "boyhood-2014-movie": {
+    "s3_key": "videos/boyhood-2014-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-verdict-1982-movie": {
+    "s3_key": "videos/the-verdict-1982-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-verdict-1982-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "birdman-or-the-unexpected-virtue-of-ignorance-2014-movie": {
+    "s3_key": "videos/birdman-or-the-unexpected-virtue-of-ignorance-2014-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/birdman-or-the-unexpected-virtue-of-ignorance-2014-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/birdman-or-the-unexpected-virtue-of-ignorance-2014-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "as-good-as-it-gets-1997-movie": {
+    "s3_key": "videos/as-good-as-it-gets-1997-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "babel-2006-movie": {
+    "s3_key": "videos/babel-2006-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/babel-2006-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "becket-1964-movie": {
+    "s3_key": "videos/becket-1964-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "places-in-the-heart-1984-movie": {
+    "s3_key": "videos/places-in-the-heart-1984-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/places-in-the-heart-1984-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "nomadland-2020-movie": {
+    "s3_key": "videos/nomadland-2020-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "elizabeth-1998-movie": {
+    "s3_key": "videos/elizabeth-1998-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/elizabeth-1998-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "out-of-africa-1985-movie": {
+    "s3_key": "videos/out-of-africa-1985-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/out-of-africa-1985-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "silver-linings-playbook-2012-movie": {
+    "s3_key": "videos/silver-linings-playbook-2012-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-english-patient-1996-movie": {
+    "s3_key": "videos/the-english-patient-1996-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-english-patient-1996-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-champ-1931-movie": {
+    "s3_key": "videos/the-champ-1931-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-champ-1931-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/the-champ-1931-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "breaking-away-1979-movie": {
+    "s3_key": "videos/breaking-away-1979-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/breaking-away-1979-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "chicago-2002-movie": {
+    "s3_key": "videos/chicago-2002-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/chicago-2002-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "munich-2005-movie": {
+    "s3_key": "videos/munich-2005-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/munich-2005-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-music-man-1962-movie": {
+    "s3_key": "videos/the-music-man-1962-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-music-man-1962-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-substance-2024-movie": {
+    "s3_key": "videos/the-substance-2024-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-substance-2024-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/the-substance-2024-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "the-defiant-ones-1958-movie": {
+    "s3_key": "videos/the-defiant-ones-1958-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "terms-of-endearment-1983-movie": {
+    "s3_key": "videos/terms-of-endearment-1983-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/terms-of-endearment-1983-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "dodsworth-1936-movie": {
+    "s3_key": "videos/dodsworth-1936-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/dodsworth-1936-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/dodsworth-1936-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "field-of-dreams-1989-movie": {
+    "s3_key": "videos/field-of-dreams-1989-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/field-of-dreams-1989-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/field-of-dreams-1989-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "seven-brides-for-seven-brothers-1954-movie": {
+    "s3_key": "videos/seven-brides-for-seven-brothers-1954-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/seven-brides-for-seven-brothers-1954-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-snake-pit-1948-movie": {
+    "s3_key": "videos/the-snake-pit-1948-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-snake-pit-1948-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "quo-vadis-1951-movie": {
+    "s3_key": "videos/quo-vadis-1951-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "rat-fever-2011-movie": {
+    "s3_key": "videos/rat-fever-2011-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/rat-fever-2011-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "girls-from-ipanema-2019-tv": {
+    "s3_key": "videos/girls-from-ipanema-2019-tv/trailer.mp4",
+    "subtitles": []
+  },
+  "julius-caesar-1953-movie": {
+    "s3_key": "videos/julius-caesar-1953-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "anora-2024-movie": {
+    "s3_key": "videos/anora-2024-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/anora-2024-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/anora-2024-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "antonio-das-mortes-1969-movie": {
+    "s3_key": "videos/antonio-das-mortes-1969-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "mister-roberts-1955-movie": {
+    "s3_key": "videos/mister-roberts-1955-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "cleopatra-1963-movie": {
+    "s3_key": "videos/cleopatra-1963-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "separate-tables-1958-movie": {
+    "s3_key": "videos/separate-tables-1958-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/separate-tables-1958-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-bishop-s-wife-1947-movie": {
+    "s3_key": "videos/the-bishop-s-wife-1947-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-bishop-s-wife-1947-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "suspicion-1941-movie": {
+    "s3_key": "videos/suspicion-1941-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-patience-stone-2012-movie": {
+    "s3_key": "videos/the-patience-stone-2012-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "doctor-sleep-2019-movie": {
+    "s3_key": "videos/doctor-sleep-2019-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "lady-for-a-day-1933-movie": {
+    "s3_key": "videos/lady-for-a-day-1933-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/lady-for-a-day-1933-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "mrs-miniver-1942-movie": {
+    "s3_key": "videos/mrs-miniver-1942-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/mrs-miniver-1942-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "neighboring-sounds-2012-movie": {
+    "s3_key": "videos/neighboring-sounds-2012-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-song-of-bernadette-1943-movie": {
+    "s3_key": "videos/the-song-of-bernadette-1943-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "tar-2022-movie": {
+    "s3_key": "videos/tar-2022-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/tar-2022-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/tar-2022-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "traffic-2000-movie": {
+    "s3_key": "videos/traffic-2000-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/traffic-2000-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-cider-house-rules-1999-movie": {
+    "s3_key": "videos/the-cider-house-rules-1999-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-cider-house-rules-1999-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/the-cider-house-rules-1999-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "127-hours-2010-movie": {
+    "s3_key": "videos/127-hours-2010-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-king-and-i-1956-movie": {
+    "s3_key": "videos/the-king-and-i-1956-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-king-and-i-1956-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "anne-of-the-thousand-days-1969-movie": {
+    "s3_key": "videos/anne-of-the-thousand-days-1969-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/anne-of-the-thousand-days-1969-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-alamo-1960-movie": {
+    "s3_key": "videos/the-alamo-1960-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-alamo-1960-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/the-alamo-1960-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "stage-door-1937-movie": {
+    "s3_key": "videos/stage-door-1937-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/stage-door-1937-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/stage-door-1937-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "the-matrix-reloaded-2003-movie": {
+    "s3_key": "videos/the-matrix-reloaded-2003-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "good-night-and-good-luck-2005-movie": {
+    "s3_key": "videos/good-night-and-good-luck-2005-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "five-easy-pieces-1970-movie": {
+    "s3_key": "videos/five-easy-pieces-1970-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/five-easy-pieces-1970-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "tess-1979-movie": {
+    "s3_key": "videos/tess-1979-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/tess-1979-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/tess-1979-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "a-complete-unknown-2024-movie": {
+    "s3_key": "videos/a-complete-unknown-2024-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "mutiny-on-the-bounty-1962-movie": {
+    "s3_key": "videos/mutiny-on-the-bounty-1962-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "don-t-look-up-2021-movie": {
+    "s3_key": "videos/don-t-look-up-2021-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "juno-2007-movie": {
+    "s3_key": "videos/juno-2007-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/juno-2007-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/juno-2007-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "seabiscuit-2003-movie": {
+    "s3_key": "videos/seabiscuit-2003-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "yankee-doodle-dandy-1942-movie": {
+    "s3_key": "videos/yankee-doodle-dandy-1942-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/yankee-doodle-dandy-1942-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/yankee-doodle-dandy-1942-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "dead-end-1937-movie": {
+    "s3_key": "videos/dead-end-1937-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/dead-end-1937-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "red-dragon-2002-movie": {
+    "s3_key": "videos/red-dragon-2002-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/red-dragon-2002-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "american-graffiti-1973-movie": {
+    "s3_key": "videos/american-graffiti-1973-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/american-graffiti-1973-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "oliver-1968-movie": {
+    "s3_key": "videos/oliver-1968-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/oliver-1968-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/oliver-1968-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "imitation-of-life-1934-movie": {
+    "s3_key": "videos/imitation-of-life-1934-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/imitation-of-life-1934-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "an-american-in-paris-1951-movie": {
+    "s3_key": "videos/an-american-in-paris-1951-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/an-american-in-paris-1951-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-towering-inferno-1974-movie": {
+    "s3_key": "videos/the-towering-inferno-1974-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-towering-inferno-1974-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/the-towering-inferno-1974-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "here-comes-mr-jordan-1941-movie": {
+    "s3_key": "videos/here-comes-mr-jordan-1941-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/here-comes-mr-jordan-1941-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "triangle-of-sadness-2022-movie": {
+    "s3_key": "videos/triangle-of-sadness-2022-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/triangle-of-sadness-2022-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/triangle-of-sadness-2022-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "vice-2018-movie": {
+    "s3_key": "videos/vice-2018-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/vice-2018-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-zone-of-interest-2023-movie": {
+    "s3_key": "videos/the-zone-of-interest-2023-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-zone-of-interest-2023-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "father-of-the-bride-1950-movie": {
+    "s3_key": "videos/father-of-the-bride-1950-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/father-of-the-bride-1950-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/father-of-the-bride-1950-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "jezebel-1938-movie": {
+    "s3_key": "videos/jezebel-1938-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-post-2017-movie": {
+    "s3_key": "videos/the-post-2017-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "america-america-1963-movie": {
+    "s3_key": "videos/america-america-1963-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-full-monty-1997-movie": {
+    "s3_key": "videos/the-full-monty-1997-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-trespasser-2001-movie": {
+    "s3_key": "videos/the-trespasser-2001-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-trespasser-2001-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/the-trespasser-2001-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "foreign-correspondent-1940-movie": {
+    "s3_key": "videos/foreign-correspondent-1940-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/foreign-correspondent-1940-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/foreign-correspondent-1940-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "coming-home-1978-movie": {
+    "s3_key": "videos/coming-home-1978-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/coming-home-1978-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "all-the-king-s-men-1949-movie": {
+    "s3_key": "videos/all-the-king-s-men-1949-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/all-the-king-s-men-1949-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "auntie-mame-1958-movie": {
+    "s3_key": "videos/auntie-mame-1958-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/auntie-mame-1958-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "dona-flor-and-her-two-husbands-1976-movie": {
+    "s3_key": "videos/dona-flor-and-her-two-husbands-1976-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/dona-flor-and-her-two-husbands-1976-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "born-on-the-fourth-of-july-1989-movie": {
+    "s3_key": "videos/born-on-the-fourth-of-july-1989-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/born-on-the-fourth-of-july-1989-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-country-girl-1954-movie": {
+    "s3_key": "videos/the-country-girl-1954-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-country-girl-1954-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "gentleman-s-agreement-1947-movie": {
+    "s3_key": "videos/gentleman-s-agreement-1947-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/gentleman-s-agreement-1947-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "49th-parallel-1942-movie": {
+    "s3_key": "videos/49th-parallel-1942-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/49th-parallel-1942-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "howards-end-1992-movie": {
+    "s3_key": "videos/howards-end-1992-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/howards-end-1992-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/howards-end-1992-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "jerry-maguire-1996-movie": {
+    "s3_key": "videos/jerry-maguire-1996-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "zero-dark-thirty-2012-movie": {
+    "s3_key": "videos/zero-dark-thirty-2012-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "how-the-west-was-won-1963-movie": {
+    "s3_key": "videos/how-the-west-was-won-1963-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "shanghai-express-1932-movie": {
+    "s3_key": "videos/shanghai-express-1932-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "hello-dolly-1969-movie": {
+    "s3_key": "videos/hello-dolly-1969-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/hello-dolly-1969-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "capote-2005-movie": {
+    "s3_key": "videos/capote-2005-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/capote-2005-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/capote-2005-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "lost-horizon-1937-movie": {
+    "s3_key": "videos/lost-horizon-1937-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/lost-horizon-1937-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/lost-horizon-1937-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "chocolat-2000-movie": {
+    "s3_key": "videos/chocolat-2000-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/chocolat-2000-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "nicholas-and-alexandra-1971-movie": {
+    "s3_key": "videos/nicholas-and-alexandra-1971-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/nicholas-and-alexandra-1971-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/nicholas-and-alexandra-1971-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "the-brutalist-2024-movie": {
+    "s3_key": "videos/the-brutalist-2024-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-brutalist-2024-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "licorice-pizza-2021-movie": {
+    "s3_key": "videos/licorice-pizza-2021-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/licorice-pizza-2021-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "a-room-with-a-view-1985-movie": {
+    "s3_key": "videos/a-room-with-a-view-1985-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/a-room-with-a-view-1985-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "nightmare-alley-2021-movie": {
+    "s3_key": "videos/nightmare-alley-2021-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-queen-2006-movie": {
+    "s3_key": "videos/the-queen-2006-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "m-a-s-h-1970-movie": {
+    "s3_key": "videos/m-a-s-h-1970-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "in-the-bedroom-2001-movie": {
+    "s3_key": "videos/in-the-bedroom-2001-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/in-the-bedroom-2001-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-goodbye-girl-1977-movie": {
+    "s3_key": "videos/the-goodbye-girl-1977-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-goodbye-girl-1977-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "children-of-a-lesser-god-1986-movie": {
+    "s3_key": "videos/children-of-a-lesser-god-1986-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-lion-king-ii-simba-s-pride-1998-movie": {
+    "s3_key": "videos/the-lion-king-ii-simba-s-pride-1998-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "a-thousand-clowns-1965-movie": {
+    "s3_key": "videos/a-thousand-clowns-1965-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/a-thousand-clowns-1965-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "an-education-2009-movie": {
+    "s3_key": "videos/an-education-2009-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "dark-victory-1939-movie": {
+    "s3_key": "videos/dark-victory-1939-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/dark-victory-1939-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "gravity-2013-movie": {
+    "s3_key": "videos/gravity-2013-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "twelve-o-clock-high-1949-movie": {
+    "s3_key": "videos/twelve-o-clock-high-1949-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "sideways-2004-movie": {
+    "s3_key": "videos/sideways-2004-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "witness-1985-movie": {
+    "s3_key": "videos/witness-1985-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/witness-1985-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/witness-1985-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "belfast-2021-movie": {
+    "s3_key": "videos/belfast-2021-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/belfast-2021-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/belfast-2021-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "love-affair-1939-movie": {
+    "s3_key": "videos/love-affair-1939-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/love-affair-1939-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/love-affair-1939-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "extremely-loud-incredibly-close-2011-movie": {
+    "s3_key": "videos/extremely-loud-incredibly-close-2011-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/extremely-loud-incredibly-close-2011-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/extremely-loud-incredibly-close-2011-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "42nd-street-1933-movie": {
+    "s3_key": "videos/42nd-street-1933-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/42nd-street-1933-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/42nd-street-1933-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "west-side-story-2021-movie": {
+    "s3_key": "videos/west-side-story-2021-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "barbie-2023-movie": {
+    "s3_key": "videos/barbie-2023-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "a-tale-of-two-cities-1935-movie": {
+    "s3_key": "videos/a-tale-of-two-cities-1935-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "wicked-2024-movie": {
+    "s3_key": "videos/wicked-2024-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/wicked-2024-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/wicked-2024-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "hope-and-glory-1987-movie": {
+    "s3_key": "videos/hope-and-glory-1987-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-rose-tattoo-1955-movie": {
+    "s3_key": "videos/the-rose-tattoo-1955-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-rose-tattoo-1955-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "heaven-can-wait-1943-movie": {
+    "s3_key": "videos/heaven-can-wait-1943-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/heaven-can-wait-1943-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/heaven-can-wait-1943-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "bound-for-glory-1976-movie": {
+    "s3_key": "videos/bound-for-glory-1976-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "at-play-in-the-fields-of-the-lord-1991-movie": {
+    "s3_key": "videos/at-play-in-the-fields-of-the-lord-1991-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/at-play-in-the-fields-of-the-lord-1991-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "familia-e-tudo-2024-tv": {
+    "s3_key": "videos/familia-e-tudo-2024-tv/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/familia-e-tudo-2024-tv/trailer.por.vtt"
+      }
+    ]
+  },
+  "two-sons-of-francisco-2005-movie": {
+    "s3_key": "videos/two-sons-of-francisco-2005-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "room-at-the-top-1959-movie": {
+    "s3_key": "videos/room-at-the-top-1959-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/room-at-the-top-1959-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "up-in-the-air-2009-movie": {
+    "s3_key": "videos/up-in-the-air-2009-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/up-in-the-air-2009-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-gay-divorcee-1934-movie": {
+    "s3_key": "videos/the-gay-divorcee-1934-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "fences-2016-movie": {
+    "s3_key": "videos/fences-2016-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "reds-1981-movie": {
+    "s3_key": "videos/reds-1981-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/reds-1981-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "watch-on-the-rhine-1943-movie": {
+    "s3_key": "videos/watch-on-the-rhine-1943-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/watch-on-the-rhine-1943-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/watch-on-the-rhine-1943-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "the-razor-s-edge-1946-movie": {
+    "s3_key": "videos/the-razor-s-edge-1946-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-robe-1953-movie": {
+    "s3_key": "videos/the-robe-1953-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-robe-1953-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/the-robe-1953-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "lincoln-2012-movie": {
+    "s3_key": "videos/lincoln-2012-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "moonstruck-1987-movie": {
+    "s3_key": "videos/moonstruck-1987-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/moonstruck-1987-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "beasts-of-the-southern-wild-2012-movie": {
+    "s3_key": "videos/beasts-of-the-southern-wild-2012-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "fatal-attraction-1987-movie": {
+    "s3_key": "videos/fatal-attraction-1987-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-crying-game-1992-movie": {
+    "s3_key": "videos/the-crying-game-1992-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-crying-game-1992-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/the-crying-game-1992-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "a-passage-to-india-1984-movie": {
+    "s3_key": "videos/a-passage-to-india-1984-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "johnny-belinda-1948-movie": {
+    "s3_key": "videos/johnny-belinda-1948-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/johnny-belinda-1948-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-descendants-2011-movie": {
+    "s3_key": "videos/the-descendants-2011-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "shakespeare-in-love-1998-movie": {
+    "s3_key": "videos/shakespeare-in-love-1998-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "ivanhoe-1952-movie": {
+    "s3_key": "videos/ivanhoe-1952-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/ivanhoe-1952-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "love-story-1970-movie": {
+    "s3_key": "videos/love-story-1970-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "women-talking-2022-movie": {
+    "s3_key": "videos/women-talking-2022-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/women-talking-2022-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/women-talking-2022-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "little-women-1933-movie": {
+    "s3_key": "videos/little-women-1933-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/little-women-1933-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "gosford-park-2001-movie": {
+    "s3_key": "videos/gosford-park-2001-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/gosford-park-2001-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "good-manners-2017-movie": {
+    "s3_key": "videos/good-manners-2017-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-big-chill-1983-movie": {
+    "s3_key": "videos/the-big-chill-1983-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-big-chill-1983-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-bells-of-st-mary-s-1945-movie": {
+    "s3_key": "videos/the-bells-of-st-mary-s-1945-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-bells-of-st-mary-s-1945-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/the-bells-of-st-mary-s-1945-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "a-soldier-s-story-1984-movie": {
+    "s3_key": "videos/a-soldier-s-story-1984-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "boys-town-1938-movie": {
+    "s3_key": "videos/boys-town-1938-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/boys-town-1938-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "atlantic-city-1980-movie": {
+    "s3_key": "videos/atlantic-city-1980-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/atlantic-city-1980-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/atlantic-city-1980-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "michael-clayton-2007-movie": {
+    "s3_key": "videos/michael-clayton-2007-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "chariots-of-fire-1981-movie": {
+    "s3_key": "videos/chariots-of-fire-1981-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "winter-s-bone-2010-movie": {
+    "s3_key": "videos/winter-s-bone-2010-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "decision-before-dawn-1951-movie": {
+    "s3_key": "videos/decision-before-dawn-1951-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/decision-before-dawn-1951-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/decision-before-dawn-1951-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "four-weddings-and-a-funeral-1994-movie": {
+    "s3_key": "videos/four-weddings-and-a-funeral-1994-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/four-weddings-and-a-funeral-1994-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/four-weddings-and-a-funeral-1994-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "hannibal-2001-movie": {
+    "s3_key": "videos/hannibal-2001-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/hannibal-2001-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "tender-mercies-1983-movie": {
+    "s3_key": "videos/tender-mercies-1983-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/tender-mercies-1983-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-sundowners-1960-movie": {
+    "s3_key": "videos/the-sundowners-1960-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "alexander-s-ragtime-band-1938-movie": {
+    "s3_key": "videos/alexander-s-ragtime-band-1938-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "peyton-place-1957-movie": {
+    "s3_key": "videos/peyton-place-1957-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/peyton-place-1957-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-matrix-revolutions-2003-movie": {
+    "s3_key": "videos/the-matrix-revolutions-2003-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-matrix-revolutions-2003-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "going-my-way-1944-movie": {
+    "s3_key": "videos/going-my-way-1944-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/going-my-way-1944-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "crossfire-1947-movie": {
+    "s3_key": "videos/crossfire-1947-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-kids-are-all-right-2010-movie": {
+    "s3_key": "videos/the-kids-are-all-right-2010-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-kids-are-all-right-2010-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "san-francisco-1936-movie": {
+    "s3_key": "videos/san-francisco-1936-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "julia-1977-movie": {
+    "s3_key": "videos/julia-1977-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/julia-1977-movie/trailer.eng.vtt"
+      },
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/julia-1977-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "the-good-earth-1937-movie": {
+    "s3_key": "videos/the-good-earth-1937-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-house-of-rothschild-1934-movie": {
+    "s3_key": "videos/the-house-of-rothschild-1934-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-house-of-rothschild-1934-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "terminator-salvation-2009-movie": {
+    "s3_key": "videos/terminator-salvation-2009-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "a-touch-of-class-1973-movie": {
+    "s3_key": "videos/a-touch-of-class-1973-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/a-touch-of-class-1973-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "the-dolphin-1987-movie": {
+    "s3_key": "videos/the-dolphin-1987-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "por",
+        "label": "Portuguese",
+        "s3_key": "videos/the-dolphin-1987-movie/trailer.por.vtt"
+      }
+    ]
+  },
+  "guns-of-the-magnificent-seven-1969-movie": {
+    "s3_key": "videos/guns-of-the-magnificent-seven-1969-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "the-broadway-melody-1929-movie": {
+    "s3_key": "videos/the-broadway-melody-1929-movie/trailer.mp4",
+    "subtitles": [
+      {
+        "lang": "eng",
+        "label": "English",
+        "s3_key": "videos/the-broadway-melody-1929-movie/trailer.eng.vtt"
+      }
+    ]
+  },
+  "dune-part-three-2026-movie": {
+    "s3_key": "videos/dune-part-three-2026-movie/trailer.mp4",
+    "subtitles": []
+  },
+  "lion-2016-movie": {
+    "s3_key": "videos/lion-2016-movie/trailer.mp4",
+    "subtitles": []
   }
 }

@@ -30,6 +30,11 @@ pub struct CuratedList {
 pub enum ContentType {
     Movie,
     Tv,
+    /// A self-hosted course: manually cataloged (no TMDB/OMDb match - see
+    /// enrichment.rs), lessons live in `s3_keys` like a TV series' episodes,
+    /// with `attachments` for downloadable extras (PDFs, spreadsheets) that
+    /// don't belong in the video stream itself.
+    Course,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -116,6 +121,19 @@ pub struct EnrichedItem {
     /// parallel struct for one unused field.
     #[serde(default)]
     pub trailer_subtitles: Vec<SubtitleTrack>,
+    /// Downloadable extras that aren't part of the video stream (course
+    /// PDFs/spreadsheets). Empty for movies and TV.
+    #[serde(default)]
+    pub attachments: Vec<Attachment>,
+}
+
+/// A downloadable extra alongside a course's lessons (PDF workbook, xlsx
+/// worksheet, etc.) - not a video, so it doesn't belong in `s3_keys`.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Attachment {
+    pub label: String,
+    pub filename: String,
+    pub s3_key: String,
 }
 
 /// One nomination or win at an awards event/festival.

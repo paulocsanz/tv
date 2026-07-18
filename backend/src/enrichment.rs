@@ -96,6 +96,7 @@ async fn fetch_omdb(
     let omdb_type = match content_type {
         ContentType::Movie => "movie",
         ContentType::Tv => "series",
+        ContentType::Course => unreachable!("courses are cataloged manually, never enriched via OMDb"),
     };
 
     let key = pool.next_key();
@@ -205,6 +206,7 @@ async fn fetch_tmdb(
     let (search_path, year_param, video_path) = match content_type {
         ContentType::Movie => ("search/movie", "year", "movie"),
         ContentType::Tv => ("search/tv", "first_air_date_year", "tv"),
+        ContentType::Course => unreachable!("courses are cataloged manually, never enriched via TMDB"),
     };
 
     let search_url = format!("https://api.themoviedb.org/3/{search_path}");
@@ -298,6 +300,7 @@ async fn fetch_tmdb(
             }
         }
         ContentType::Tv => (None, None),
+        ContentType::Course => unreachable!("courses are cataloged manually, never enriched via TMDB"),
     };
 
     Some(TmdbData {
@@ -476,5 +479,6 @@ pub async fn enrich_one(
         award_entries: Vec::new(),
         trailer_s3_key: None,
         trailer_subtitles: Vec::new(),
+        attachments: Vec::new(),
     }
 }

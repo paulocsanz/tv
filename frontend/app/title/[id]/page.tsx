@@ -95,7 +95,7 @@ export default async function TitlePage({
         <div className="flex flex-col gap-3 xl:w-80 xl:shrink-0">
           <div className="flex flex-wrap items-center gap-2">
             <span className="rounded bg-white/10 px-2 py-0.5 text-xs font-medium uppercase tracking-wide text-zinc-300">
-              {item.content_type === "movie" ? "Movie" : "TV Series"}
+              {item.content_type === "movie" ? "Movie" : item.content_type === "tv" ? "TV Series" : "Course"}
             </span>
             <span className="rounded bg-white/10 px-2 py-0.5 text-xs font-medium text-zinc-300">
               {item.origin}
@@ -148,6 +148,23 @@ export default async function TitlePage({
               (usually taller) player, so this uses it instead of adding
               more vertical scroll under the fold. */}
           <AwardsCard awards={item.awards} awardEntries={item.award_entries ?? []} />
+          {item.attachments.length > 0 && (
+            <div className="flex flex-col gap-1.5 rounded-lg bg-white/5 p-3 ring-1 ring-inset ring-white/10">
+              <span className="text-xs font-medium uppercase tracking-wide text-zinc-500">
+                Course Materials
+              </span>
+              {item.attachments.map((attachment, index) => (
+                <a
+                  key={attachment.s3_key}
+                  href={`/api/attachment/${item.id}/${index}`}
+                  className="truncate text-sm text-zinc-300 hover:text-white hover:underline"
+                  title={attachment.filename}
+                >
+                  📄 {attachment.label}
+                </a>
+              ))}
+            </div>
+          )}
           {item.keywords.length > 0 && (
             <div className="flex flex-wrap gap-1.5">
               {item.keywords.slice(0, 8).map((keyword) => (

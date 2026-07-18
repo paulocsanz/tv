@@ -33,6 +33,7 @@ export function FilterBar({ meta }: { meta: MetaResponse }) {
         <option value="">All Types</option>
         <option value="movie">Movies</option>
         <option value="tv">TV Series</option>
+        <option value="course">Courses</option>
       </select>
 
       <select

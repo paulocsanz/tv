@@ -12,6 +12,7 @@ fn slugify(title: &str, year: i32, content_type: &ContentType) -> String {
     let type_str = match content_type {
         ContentType::Movie => "movie",
         ContentType::Tv => "tv",
+        ContentType::Course => "course",
     };
     format!("{}-{}-{}", slug::slugify(title), year, type_str)
 }

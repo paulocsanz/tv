@@ -33,6 +33,7 @@ slug = "0.1"
 rand = "0.8"
 argon2 = "0.5"
 aws-sdk-s3 = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
 sqlx = { version = "0.8", default-features = false, features = ["runtime-tokio", "tls-rustls-aws-lc-rs", "postgres", "macros", "migrate", "time"] }
 sha2 = "0.10"
 
