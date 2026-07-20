@@ -9,8 +9,11 @@
  * without a season tag, and a show's downloaded files aren't guaranteed to
  * start at season 1 (e.g. only Breaking Bad's final season is in the library
  * today, numbered Ep 01-16 for what is actually S05E01-E16) - so position
- * can't be trusted to infer the season. Instead this matches each local
- * file to a TMDB episode by its parsed title, which is season-agnostic.
+ * can't be trusted to infer the season. Instead this matches each local file
+ * to a TMDB episode by season/episode number when the filename carries a
+ * scene-release "SxxEyy" tag (e.g. "Ted.Lasso.S03E01.720p...-GROUP.mkv"),
+ * falling back to matching by parsed title (season-agnostic) for the
+ * pipeline's own "Ep NN - Title" naming, which has no season tag at all.
  *
  * Read-only against enriched_400.json (see backfill-collections.js for why:
  * a live download pipeline writes to that file continuously). Output goes to
@@ -68,6 +71,15 @@ function parseLocalEpisodeTitle(s3Key) {
   return title;
 }
 
+// Scene-release rips carry an explicit season/episode tag - mirrors the
+// same regex in parseEpisode() in frontend/components/VideoPlayer.tsx.
+function parseLocalSeasonEpisode(s3Key) {
+  const filename = s3Key.split("/").pop() ?? s3Key;
+  const match = filename.match(/[Ss](\d{1,2})[Ee](\d{1,3})/);
+  if (!match) return null;
+  return { season_number: parseInt(match[1], 10), episode_number: parseInt(match[2], 10) };
+}
+
 async function fetchAllEpisodes(tmdbId) {
   const show = await tmdbFetch(`/tv/${tmdbId}`);
   const seasonNumbers = (show.seasons ?? [])
@@ -113,8 +125,13 @@ async function main() {
     const matched = [];
     let matchCount = 0;
     item.s3_keys.forEach((s3Key, index) => {
-      const localTitle = normalizeTitle(parseLocalEpisodeTitle(s3Key));
-      const hit = allEpisodes.find((e) => e.normalized_name === localTitle);
+      const sxe = parseLocalSeasonEpisode(s3Key);
+      const hit =
+        (sxe &&
+          allEpisodes.find(
+            (e) => e.season_number === sxe.season_number && e.episode_number === sxe.episode_number
+          )) ||
+        allEpisodes.find((e) => e.normalized_name === normalizeTitle(parseLocalEpisodeTitle(s3Key)));
       if (hit) {
         matchCount++;
         matched.push({
