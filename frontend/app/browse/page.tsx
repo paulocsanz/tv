@@ -3,6 +3,8 @@ import { getContent, getMeta } from "@/lib/api";
 import { ContentCard } from "@/components/ContentCard";
 import { FilterBar } from "@/components/FilterBar";
 import { Pagination } from "@/components/Pagination";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 
 type SearchParams = { [key: string]: string | string[] | undefined };
 
@@ -29,15 +31,15 @@ export default async function BrowsePage({
     page_size: "30",
   };
 
-  const [meta, content] = await Promise.all([getMeta(), getContent(query)]);
+  const [meta, content, t] = await Promise.all([getMeta(), getContent(query), getDictionary(await getLocale())]);
 
   return (
     <div className="mx-auto max-w-7xl">
       <div className="px-4 pt-8 sm:px-8">
-        <h1 className="text-2xl font-bold text-white">Browse</h1>
+        <h1 className="text-2xl font-bold text-white">{t.browse.heading}</h1>
         <p className="mt-1 text-sm text-zinc-400">
-          {content.total} title{content.total === 1 ? "" : "s"}
-          {query.search && <> matching &ldquo;{query.search}&rdquo;</>}
+          {content.total} {content.total === 1 ? t.browse.titleCountOne : t.browse.titleCountMany}
+          {query.search && <> {t.browse.matching} &ldquo;{query.search}&rdquo;</>}
         </p>
       </div>
 
@@ -46,9 +48,7 @@ export default async function BrowsePage({
       </Suspense>
 
       {content.items.length === 0 ? (
-        <p className="px-4 py-16 text-center text-zinc-500 sm:px-8">
-          Nothing matches these filters. Try loosening them up.
-        </p>
+        <p className="px-4 py-16 text-center text-zinc-500 sm:px-8">{t.browse.noResults}</p>
       ) : (
         <div className="grid grid-cols-2 gap-x-3 gap-y-6 px-4 sm:grid-cols-3 sm:px-8 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
           {content.items.map((item) => (

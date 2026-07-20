@@ -2,6 +2,8 @@ import { getCatalogReviewOrNull, getMeOrNull } from "@/lib/api";
 import { ResearchButton } from "@/components/ResearchButton";
 import { AdminNav } from "@/components/AdminNav";
 import { NotAuthorized } from "@/components/NotAuthorized";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 
 // Replaces reading *-flagged.json/bloated-uploads.json off disk (RFC 0003 P1)
 // - deliberately not linked from the global Header/nav, same as the other
@@ -11,29 +13,27 @@ export default async function AdminCatalogPage() {
 
   if (!me || !me.is_admin) return <NotAuthorized />;
 
+  const t = getDictionary(await getLocale());
   const review = await getCatalogReviewOrNull();
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-12 sm:px-8">
       <div className="mb-6 flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-white">Catalog</h1>
+        <h1 className="text-2xl font-bold text-white">{t.admin.catalogHeading}</h1>
         <AdminNav current="/admin/catalog" />
       </div>
 
       {!review ? (
-        <p className="text-sm text-zinc-400">Couldn&apos;t reach the backend for catalog review.</p>
+        <p className="text-sm text-zinc-400">{t.admin.catalogUnreachable}</p>
       ) : (
         <>
           <section className="mb-10">
             <h2 className="mb-1 text-lg font-semibold text-zinc-100">
-              No torrent options ({review.no_torrent_options.length})
+              {t.admin.noTorrentOptions.replace("{count}", String(review.no_torrent_options.length))}
             </h2>
-            <p className="mb-3 text-xs text-zinc-500">
-              Items with nothing streamable and no torrent options found yet. Re-searching only
-              works if the download pipeline isn&apos;t currently running.
-            </p>
+            <p className="mb-3 text-xs text-zinc-500">{t.admin.noTorrentOptionsDesc}</p>
             {review.no_torrent_options.length === 0 ? (
-              <p className="text-sm text-zinc-500">Nothing outstanding.</p>
+              <p className="text-sm text-zinc-500">{t.admin.nothingOutstanding}</p>
             ) : (
               <ul className="divide-y divide-white/10 rounded-lg border border-white/10">
                 {review.no_torrent_options.map((item) => (
@@ -50,9 +50,9 @@ export default async function AdminCatalogPage() {
           </section>
 
           <section>
-            <h2 className="mb-3 text-lg font-semibold text-zinc-100">Recent catalog edits</h2>
+            <h2 className="mb-3 text-lg font-semibold text-zinc-100">{t.admin.recentEdits}</h2>
             {review.recent_edits.length === 0 ? (
-              <p className="text-sm text-zinc-500">No edits logged yet.</p>
+              <p className="text-sm text-zinc-500">{t.admin.noEditsYet}</p>
             ) : (
               <ul className="divide-y divide-white/10 rounded-lg border border-white/10">
                 {review.recent_edits.map((edit, i) => (

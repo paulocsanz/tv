@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Script from "next/script";
 import type { EpisodeMetadata, ProgressEntry, SubtitleTrack } from "@/lib/types";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 // HTML <track srclang> wants a BCP 47 tag; source files report ISO 639-2
 // (3-letter) codes via ffprobe, which some browsers render captions-menu
@@ -48,7 +49,23 @@ function parseEpisode(s3Key: string, originalIndex: number): Episode {
   if (seqMatch) {
     return { key: s3Key, originalIndex, number: parseInt(seqMatch[1], 10), title: seqMatch[2].trim() };
   }
-  return { key: s3Key, originalIndex, number: originalIndex + 1, title: withoutExt };
+  // Scene-release rips are named like "Show.Name.S03E01.720p...-GROUP.mkv" -
+  // no separately splittable title, just a season/episode tag buried in a
+  // dot-delimited mess. Surface a clean "Episode N" rather than dumping the
+  // whole filename (release group, resolution, codec and all) as the title;
+  // buildEpisode() below still prefers real TMDB metadata when it matches.
+  const sxeMatch = withoutExt.match(/[Ss](\d{1,2})[Ee](\d{1,3})/);
+  if (sxeMatch) {
+    const episodeNumber = parseInt(sxeMatch[2], 10);
+    return {
+      key: s3Key,
+      originalIndex,
+      number: episodeNumber,
+      seasonNumber: parseInt(sxeMatch[1], 10),
+      title: `Episode ${episodeNumber}`,
+    };
+  }
+  return { key: s3Key, originalIndex, number: originalIndex + 1, title: `Episode ${originalIndex + 1}` };
 }
 
 // Prefers real TMDB episode data (title/overview/still) when the backfill
@@ -109,11 +126,12 @@ function PauseIcon({ className }: { className?: string }) {
 }
 
 function SkipButton({ direction, onClick }: { direction: "back" | "forward"; onClick: () => void }) {
+  const t = useT();
   return (
     <button
       type="button"
       onClick={onClick}
-      aria-label={direction === "back" ? "Skip back 10 seconds" : "Skip forward 10 seconds"}
+      aria-label={direction === "back" ? t.player.skipBack10 : t.player.skipForward10}
       className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-zinc-200 transition-colors hover:bg-white/10 hover:text-white"
     >
       <svg
@@ -476,6 +494,7 @@ export function VideoPlayer({
    * ep.number or it doubles up ("5. 2.4 Fundamentos..."). */
   numberedTitles?: boolean;
 }) {
+  const t = useT();
   const hasEpisodes = s3Keys.length > 1;
   // s3Keys isn't guaranteed to be in episode order; sort a copy for display
   // while keeping each episode's original index for the stream request,
@@ -539,13 +558,13 @@ export function VideoPlayer({
   latestPlaybackRef.current = { streamUrl, title, effectivePoster, episodeTitle: currentEpisode?.title };
 
   // Manual resize (drag the handle in the control bar). Not CSS `resize`:
-  // this element is a `flex-1` flex item (fills whatever space isn't taken
-  // by the episode list/sidebar) - `flex-1`'s flex-basis:0% means the flex
-  // algorithm recomputes its width on every layout pass from flex-grow,
-  // silently overwriting whatever width native `resize` sets. Once the user
-  // actually drags, we detach from flex-grow entirely (inline width + `flex:
-  // none`) so nothing fights the size they chose; height still just follows
-  // from `aspect-video` on the <video> itself, so it can't end up stretched.
+  // this element is a flex-col child stretched to the column's full width by
+  // default - the flex algorithm recomputes that stretched width on every
+  // layout pass, silently overwriting whatever width native `resize` sets.
+  // Once the user actually drags, we detach from stretch entirely (inline
+  // width + `flex: none`) so nothing fights the size they chose; height
+  // still just follows from `aspect-video` on the <video> itself, so it
+  // can't end up stretched.
   const [customWidth, setCustomWidth] = useState<number | null>(null);
   const resizeStart = useRef<{ pointerX: number; width: number; maxWidth: number } | null>(null);
 
@@ -556,10 +575,10 @@ export function VideoPlayer({
     const currentWidth = rect.width;
     // Cap at the viewport, not just this row's own share of the page
     // column - every row between here and the page root is `flex-wrap`, so
-    // anything this pushes out of the way (episode list, facts sidebar)
-    // simply wraps onto its own line below rather than being squeezed or
-    // covered, the same way YouTube's embed-size preview lets you drag a
-    // player out to the full width of the page. Measured from the
+    // anything this pushes out of the way (the facts sidebar) simply wraps
+    // onto its own line below rather than being squeezed or covered, the
+    // same way YouTube's embed-size preview lets you drag a player out to
+    // the full width of the page. Measured from the
     // element's own left edge (not a flat viewport width) since the page
     // centers it with side padding - growing from `rect.left` is what
     // actually keeps the right edge (and the fullscreen button) on-screen.
@@ -967,14 +986,14 @@ export function VideoPlayer({
   const controlsVisible = showControls || !isPlaying || subtitleMenuOpen;
 
   return (
-    <div className="flex flex-col gap-4 lg:flex-row lg:flex-wrap">
+    <div className="flex flex-col gap-4">
       <Script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1" strategy="afterInteractive" />
       <div
         ref={containerRef}
         onMouseMove={handleActivity}
         style={customWidth ? { width: customWidth, flex: "none" } : undefined}
         className={`group relative min-w-[240px] overflow-hidden rounded-2xl bg-black shadow-2xl shadow-black/50 ring-1 ring-white/10 ${
-          customWidth ? "" : "max-w-[1600px] lg:min-w-[320px] lg:flex-1"
+          customWidth ? "" : "max-w-[1600px]"
         }`}
       >
         <video
@@ -1025,7 +1044,7 @@ export function VideoPlayer({
             className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/30"
           >
             <div className="h-9 w-9 animate-spin rounded-full border-[3px] border-white/15 border-t-[#f5c518]" />
-            <span className="animate-pulse text-xs font-medium text-zinc-400">Loading…</span>
+            <span className="animate-pulse text-xs font-medium text-zinc-400">{t.common.loading}</span>
           </div>
         )}
 
@@ -1034,9 +1053,7 @@ export function VideoPlayer({
             <span aria-hidden className="text-2xl">
               😕
             </span>
-            <p className="text-sm text-zinc-300">
-              This video isn&apos;t available right now — it may still be processing.
-            </p>
+            <p className="text-sm text-zinc-300">{t.player.videoUnavailable}</p>
             <button
               onClick={() => {
                 setStatus("loading");
@@ -1044,7 +1061,7 @@ export function VideoPlayer({
               }}
               className="rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-zinc-200 transition-colors hover:bg-white/20"
             >
-              Try again
+              {t.common.tryAgain}
             </button>
           </div>
         )}
@@ -1053,7 +1070,7 @@ export function VideoPlayer({
           <button
             type="button"
             onClick={togglePlay}
-            aria-label="Play"
+            aria-label={t.player.play}
             className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors hover:bg-black/20"
           >
             <span className="flex h-16 w-16 items-center justify-center rounded-full bg-black/50 text-white ring-1 ring-white/20 backdrop-blur-sm">
@@ -1066,7 +1083,8 @@ export function VideoPlayer({
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/80 px-6 text-center">
             <CastIcon className="h-10 w-10 text-[#f5c518]" />
             <p className="text-sm text-zinc-300">
-              Casting to <span className="font-medium text-white">{castDeviceName ?? "device"}</span>
+              {t.player.castingTo}{" "}
+              <span className="font-medium text-white">{castDeviceName ?? t.player.device}</span>
             </p>
           </div>
         )}
@@ -1089,7 +1107,7 @@ export function VideoPlayer({
               <button
                 type="button"
                 onClick={togglePlay}
-                aria-label={isPlaying ? "Pause" : "Play"}
+                aria-label={isPlaying ? t.player.pause : t.player.play}
                 className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white"
               >
                 {isPlaying ? <PauseIcon className="h-5 w-5" /> : <PlayIcon className="h-5 w-5" />}
@@ -1102,7 +1120,7 @@ export function VideoPlayer({
                 <button
                   type="button"
                   onClick={toggleMute}
-                  aria-label={muted ? "Unmute" : "Mute"}
+                  aria-label={muted ? t.player.unmute : t.player.mute}
                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white"
                 >
                   <VolumeIcon muted={muted} className="h-5 w-5" />
@@ -1114,7 +1132,7 @@ export function VideoPlayer({
                   step={0.05}
                   value={muted ? 0 : volume}
                   onChange={(e) => handleVolumeChange(Number(e.target.value))}
-                  aria-label="Volume"
+                  aria-label={t.player.volume}
                   className="w-0 cursor-pointer opacity-0 transition-all duration-150 group-hover/volume:w-16 group-hover/volume:opacity-100 group-focus-within/volume:w-16 group-focus-within/volume:opacity-100"
                 />
               </div>
@@ -1133,7 +1151,7 @@ export function VideoPlayer({
                       e.stopPropagation();
                       setSubtitleMenuOpen((v) => !v);
                     }}
-                    aria-label="Subtitles"
+                    aria-label={t.player.subtitles}
                     className={`flex h-9 w-9 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white ${
                       selectedSubtitleId ? "text-[#f5c518]" : ""
                     }`}
@@ -1157,7 +1175,7 @@ export function VideoPlayer({
                             : "text-zinc-300 hover:bg-white/5"
                         }`}
                       >
-                        Off
+                        {t.player.subtitlesOff}
                       </button>
                       {episodeSubtitles.map((t) => (
                         <button
@@ -1196,7 +1214,7 @@ export function VideoPlayer({
                 <button
                   type="button"
                   onClick={requestCast}
-                  aria-label={isCasting ? "Stop casting" : "Cast"}
+                  aria-label={isCasting ? t.player.stopCasting : t.player.cast}
                   className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white ${
                     isCasting ? "text-[#f5c518]" : ""
                   }`}
@@ -1215,7 +1233,7 @@ export function VideoPlayer({
                 onPointerUp={handleResizePointerUp}
                 onPointerCancel={handleResizePointerUp}
                 role="separator"
-                aria-label="Resize player"
+                aria-label={t.player.resizePlayer}
                 aria-orientation="vertical"
                 className="hidden h-9 w-9 shrink-0 cursor-ew-resize touch-none items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white lg:flex"
               >
@@ -1227,7 +1245,7 @@ export function VideoPlayer({
               <button
                 type="button"
                 onClick={toggleFullscreen}
-                aria-label={isFullscreen ? "Exit fullscreen" : "Fullscreen"}
+                aria-label={isFullscreen ? t.player.exitFullscreen : t.player.fullscreen}
                 className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/10 hover:text-white"
               >
                 <FullscreenIcon isFullscreen={isFullscreen} className="h-5 w-5" />
@@ -1238,9 +1256,9 @@ export function VideoPlayer({
       </div>
 
       {hasEpisodes && (
-        <div className="flex max-h-80 flex-col overflow-hidden rounded-2xl bg-zinc-950/60 shadow-xl shadow-black/30 ring-1 ring-white/10 lg:max-h-[28rem] lg:w-72 lg:shrink-0">
+        <div className="flex max-h-80 flex-col overflow-hidden rounded-2xl bg-zinc-950/60 shadow-xl shadow-black/30 ring-1 ring-white/10 lg:max-h-[32rem]">
           <div className="shrink-0 border-b border-white/10 px-4 py-2.5 text-xs font-semibold uppercase tracking-wide text-zinc-400">
-            Episodes · {episodes.length}
+            {t.player.episodesCount.replace("{count}", String(episodes.length))}
           </div>
           <div className="overflow-y-auto">
             {episodes.map((ep) => {

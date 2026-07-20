@@ -2,9 +2,11 @@
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 export function CreateUserForm() {
   const router = useRouter();
+  const t = useT();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -24,11 +26,11 @@ export function CreateUserForm() {
     setPending(false);
 
     if (res.status === 409) {
-      setError("That username is already taken.");
+      setError(t.auth.usernameTaken);
       return;
     }
     if (!res.ok) {
-      setError("Failed to create account.");
+      setError(t.admin.createAccountFailed);
       return;
     }
 
@@ -41,7 +43,7 @@ export function CreateUserForm() {
     <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-4">
       <div>
         <label htmlFor="new-username" className="mb-1 block text-sm text-zinc-400">
-          Username
+          {t.auth.usernameLabel}
         </label>
         <input
           id="new-username"
@@ -54,7 +56,7 @@ export function CreateUserForm() {
       </div>
       <div>
         <label htmlFor="new-password" className="mb-1 block text-sm text-zinc-400">
-          Password
+          {t.auth.passwordLabel}
         </label>
         <input
           id="new-password"
@@ -72,7 +74,7 @@ export function CreateUserForm() {
         disabled={pending}
         className="w-full rounded-md bg-[#f5c518] px-3 py-2 font-semibold text-black transition hover:bg-[#e0b613] disabled:opacity-60"
       >
-        {pending ? "Creating…" : "Create account"}
+        {pending ? t.auth.creating : t.auth.createAccount}
       </button>
     </form>
   );

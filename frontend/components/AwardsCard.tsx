@@ -1,4 +1,6 @@
 import type { AwardEntry } from "@/lib/types";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 
 // OMDb's awards blurb is one dense run-on sentence (e.g. "Won 1 Oscar. 44
 // wins & 38 nominations total."). Splitting it into separate clauses reads
@@ -11,20 +13,21 @@ function splitAwardsText(awards: string): string[] {
     .filter(Boolean);
 }
 
-export function AwardsCard({
+export async function AwardsCard({
   awards,
   awardEntries,
 }: {
   awards: string | null;
   awardEntries: AwardEntry[];
 }) {
+  const t = getDictionary(await getLocale());
   const awardsClauses = awards ? splitAwardsText(awards) : [];
   if (awardsClauses.length === 0 && awardEntries.length === 0) return null;
 
   return (
     <div className="rounded-lg bg-white/5 px-4 py-3 ring-1 ring-inset ring-white/10">
       <div className="flex items-center gap-1.5 text-sm font-semibold text-zinc-200">
-        <span aria-hidden>🏆</span> Awards
+        <span aria-hidden>🏆</span> {t.awards.heading}
       </div>
       {awardsClauses.length > 0 && (
         <p className="mt-1.5 text-sm text-zinc-400">{awardsClauses.join(" · ")}</p>
@@ -44,7 +47,7 @@ export function AwardsCard({
               }`}
             >
               <div className={`font-semibold ${award.won ? "text-amber-300" : "text-zinc-300"}`}>
-                {award.won ? "🏆 Won" : "🎗️ Nominated"} · {award.category}
+                {award.won ? `🏆 ${t.awards.won}` : `🎗️ ${t.awards.nominated}`} · {award.category}
               </div>
               <div className={award.won ? "text-amber-300/70" : "text-zinc-500"}>
                 {award.event} {award.year}

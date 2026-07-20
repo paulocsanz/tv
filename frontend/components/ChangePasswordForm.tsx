@@ -1,8 +1,10 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 export function ChangePasswordForm() {
+  const t = useT();
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -24,11 +26,11 @@ export function ChangePasswordForm() {
     setPending(false);
 
     if (res.status === 401) {
-      setError("Current password is incorrect.");
+      setError(t.account.wrongCurrentPassword);
       return;
     }
     if (!res.ok) {
-      setError("Failed to change password.");
+      setError(t.account.updateFailed);
       return;
     }
 
@@ -41,7 +43,7 @@ export function ChangePasswordForm() {
     <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-4">
       <div>
         <label htmlFor="current-password" className="mb-1 block text-sm text-zinc-400">
-          Current password
+          {t.account.currentPasswordLabel}
         </label>
         <input
           id="current-password"
@@ -55,7 +57,7 @@ export function ChangePasswordForm() {
       </div>
       <div>
         <label htmlFor="new-password" className="mb-1 block text-sm text-zinc-400">
-          New password
+          {t.account.newPasswordLabel}
         </label>
         <input
           id="new-password"
@@ -69,13 +71,13 @@ export function ChangePasswordForm() {
         />
       </div>
       {error && <p className="text-sm text-red-400">{error}</p>}
-      {success && <p className="text-sm text-green-400">Password changed.</p>}
+      {success && <p className="text-sm text-green-400">{t.account.passwordUpdated}</p>}
       <button
         type="submit"
         disabled={pending}
         className="w-full rounded-md bg-[#f5c518] px-3 py-2 font-semibold text-black transition hover:bg-[#e0b613] disabled:opacity-60"
       >
-        {pending ? "Saving…" : "Change password"}
+        {pending ? t.account.updating : t.account.changePassword}
       </button>
     </form>
   );

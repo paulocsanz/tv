@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
+import { LocaleProvider } from "@/lib/i18n/LocaleProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,28 +16,35 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Sessão — Movies & TV Series",
-  description:
-    "A curated catalog of the best movies and TV series, Brazilian and international, classics and modern hits — with ratings, posters and trailers.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = getDictionary(await getLocale());
+  return {
+    title: t.meta.title,
+    description: t.meta.description,
+  };
+}
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const t = getDictionary(locale);
+
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
       <body className="flex min-h-screen flex-col bg-black text-zinc-100">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <footer className="border-t border-white/5 px-4 py-6 text-center text-xs text-zinc-600 sm:px-8">
-          Ratings from IMDb &amp; Rotten Tomatoes (via OMDb). Artwork &amp; trailers via TMDB.
-        </footer>
+        <LocaleProvider locale={locale}>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <footer className="border-t border-white/5 px-4 py-6 text-center text-xs text-zinc-600 sm:px-8">
+            {t.footer.ratingsCredit}
+          </footer>
+        </LocaleProvider>
       </body>
     </html>
   );

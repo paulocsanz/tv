@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { ContentItem, posterSrc } from "@/lib/types";
 import { RatingRow } from "./RatingBadges";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
+import { localizeItem } from "@/lib/i18n/content";
 
 export function PosterPlaceholder({ title }: { title: string }) {
   return (
@@ -10,8 +13,8 @@ export function PosterPlaceholder({ title }: { title: string }) {
   );
 }
 
-export function ContentCard({
-  item,
+export async function ContentCard({
+  item: rawItem,
   fluid = false,
   progressFraction,
 }: {
@@ -19,6 +22,9 @@ export function ContentCard({
   fluid?: boolean;
   progressFraction?: number;
 }) {
+  const locale = await getLocale();
+  const t = getDictionary(locale);
+  const item = localizeItem(rawItem, locale);
   const poster = posterSrc(item);
   return (
     <Link
@@ -38,7 +44,11 @@ export function ContentCard({
           <PosterPlaceholder title={item.title} />
         )}
         <div className="absolute left-1.5 top-1.5 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide text-zinc-200 backdrop-blur-sm">
-          {item.content_type === "movie" ? "Movie" : item.content_type === "tv" ? "TV" : "Course"}
+          {item.content_type === "movie"
+            ? t.contentType.movie
+            : item.content_type === "tv"
+              ? t.contentType.tv
+              : t.contentType.course}
         </div>
         {item.origin === "Brazilian" && (
           <div className="absolute right-1.5 top-1.5 rounded bg-emerald-600/90 px-1.5 py-0.5 text-[10px] font-semibold text-white">

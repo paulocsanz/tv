@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { ContentItem, posterSrc } from "@/lib/types";
 import { RatingRow } from "./RatingBadges";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
+import { localizeItem } from "@/lib/i18n/content";
 
-export function Hero({ item }: { item: ContentItem }) {
+export async function Hero({ item: rawItem }: { item: ContentItem }) {
+  const locale = await getLocale();
+  const t = getDictionary(locale);
+  const item = localizeItem(rawItem, locale);
   const backdrop = item.backdrop_url ?? posterSrc(item);
 
   return (
@@ -36,14 +42,14 @@ export function Hero({ item }: { item: ContentItem }) {
             href={`/title/${item.id}`}
             className="rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-zinc-200"
           >
-            View Details
+            {t.hero.viewDetails}
           </Link>
           {item.trailer_key && (
             <Link
               href={`/title/${item.id}#trailer`}
               className="rounded-md bg-white/10 px-5 py-2.5 text-sm font-semibold text-white ring-1 ring-inset ring-white/20 transition hover:bg-white/20"
             >
-              ▶ Watch Trailer
+              ▶ {t.hero.watchTrailer}
             </Link>
           )}
         </div>

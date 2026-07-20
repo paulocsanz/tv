@@ -2,10 +2,12 @@
 
 import { FormEvent, Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 function SignupForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const t = useT();
   const token = searchParams.get("token") ?? "";
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -27,11 +29,11 @@ function SignupForm() {
     if (!res.ok) {
       setPending(false);
       if (res.status === 410) {
-        setError("This invite link has expired or already been used.");
+        setError(t.auth.inviteExpired);
       } else if (res.status === 409) {
-        setError("That username is already taken.");
+        setError(t.auth.usernameTaken);
       } else {
-        setError("Couldn't create your account.");
+        setError(t.auth.signupFailed);
       }
       return;
     }
@@ -42,9 +44,7 @@ function SignupForm() {
 
   if (!token) {
     return (
-      <p className="max-w-sm text-center text-sm text-zinc-400">
-        This page needs an invite link from someone already on the site.
-      </p>
+      <p className="max-w-sm text-center text-sm text-zinc-400">{t.auth.needsInvite}</p>
     );
   }
 
@@ -52,7 +52,7 @@ function SignupForm() {
     <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-4">
       <div>
         <label htmlFor="username" className="mb-1 block text-sm text-zinc-400">
-          Username
+          {t.auth.usernameLabel}
         </label>
         <input
           id="username"
@@ -65,7 +65,7 @@ function SignupForm() {
       </div>
       <div>
         <label htmlFor="password" className="mb-1 block text-sm text-zinc-400">
-          Password
+          {t.auth.passwordLabel}
         </label>
         <input
           id="password"
@@ -80,14 +80,14 @@ function SignupForm() {
       </div>
       <div>
         <label htmlFor="display-name" className="mb-1 block text-sm text-zinc-400">
-          Display name <span className="text-zinc-600">(optional)</span>
+          {t.auth.displayNameLabel} <span className="text-zinc-600">{t.common.optional}</span>
         </label>
         <input
           id="display-name"
           autoComplete="nickname"
           value={displayName}
           onChange={(e) => setDisplayName(e.target.value)}
-          placeholder={username || "How others see you"}
+          placeholder={username || t.auth.displayNamePlaceholder}
           className="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-white outline-none focus:border-[#f5c518]"
         />
       </div>
@@ -97,7 +97,7 @@ function SignupForm() {
         disabled={pending}
         className="w-full rounded-md bg-[#f5c518] px-3 py-2 font-semibold text-black transition hover:bg-[#e0b613] disabled:opacity-60"
       >
-        {pending ? "Creating…" : "Create account"}
+        {pending ? t.auth.creating : t.auth.createAccount}
       </button>
     </form>
   );

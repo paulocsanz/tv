@@ -1,0 +1,1 @@
+ALTER TABLE users ADD COLUMN ui_locale TEXT NOT NULL DEFAULT 'pt-BR';

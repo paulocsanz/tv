@@ -1403,6 +1403,7 @@ struct MeResponse {
     display_name: Option<String>,
     default_subtitle_lang: Option<String>,
     autoplay_next: bool,
+    ui_locale: String,
 }
 
 async fn get_me(Extension(user): Extension<UserRecord>) -> Json<MeResponse> {
@@ -1412,6 +1413,7 @@ async fn get_me(Extension(user): Extension<UserRecord>) -> Json<MeResponse> {
         display_name: user.display_name,
         default_subtitle_lang: user.default_subtitle_lang,
         autoplay_next: user.autoplay_next,
+        ui_locale: user.ui_locale,
     })
 }
 
@@ -1492,6 +1494,8 @@ struct UpdatePreferencesRequest {
     display_name: Option<String>,
     default_subtitle_lang: Option<String>,
     autoplay_next: bool,
+    #[serde(default)]
+    ui_locale: Option<String>,
 }
 
 async fn update_preferences_handler(
@@ -1499,12 +1503,17 @@ async fn update_preferences_handler(
     Extension(user): Extension<UserRecord>,
     Json(body): Json<UpdatePreferencesRequest>,
 ) -> impl IntoResponse {
+    let ui_locale = match body.ui_locale.as_deref() {
+        Some("en") => "en",
+        _ => "pt-BR",
+    };
     match auth::update_preferences(
         &state.db,
         user.id,
         body.display_name.as_deref().filter(|s| !s.is_empty()),
         body.default_subtitle_lang.as_deref().filter(|s| !s.is_empty()),
         body.autoplay_next,
+        ui_locale,
     )
     .await
     {
@@ -2074,6 +2083,10 @@ mod backfill_tests {
             actors: Vec::new(),
             awards: None,
             rated: None,
+            title_pt: None,
+            plot_pt: None,
+            genres_pt: Vec::new(),
+            rated_pt: None,
             imdb_rating: None,
             imdb_votes: None,
             rotten_tomatoes: None,

@@ -2,11 +2,13 @@
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useRef, useState } from "react";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 export function SearchBox() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const t = useT();
   const [value, setValue] = useState(searchParams.get("search") ?? "");
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -46,7 +48,7 @@ export function SearchBox() {
           navigate(value);
         }
       }}
-      placeholder="Search titles, directors, actors…"
+      placeholder={t.nav.searchPlaceholder}
       className="w-full rounded-md bg-white/10 px-4 py-1.5 text-sm text-white placeholder-zinc-500 outline-none ring-1 ring-inset ring-white/10 focus:ring-white/30"
     />
   );

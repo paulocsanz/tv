@@ -2,18 +2,25 @@ import Link from "next/link";
 import { RelatedTitle } from "@/lib/types";
 import { PosterPlaceholder } from "./ContentCard";
 import { StarIcon } from "./RatingBadges";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 
 // Used by the "Sequels & Prequels" and "More Like This" rows, which - unlike
 // every other poster grid in the app - can include titles TMDB knows about
 // that aren't in the library. Those have no `id` and nothing to stream, so
 // they render dimmed and link out to TMDB instead of a local title page.
-export function RelatedTitleCard({
+// Note: `title.title` itself isn't localized here (this comes from TMDB's
+// collection/recommendation endpoints as plain English, not the enriched
+// catalog's title_pt) - a smaller, secondary display where that's an
+// acceptable gap for now.
+export async function RelatedTitleCard({
   title,
   current = false,
 }: {
   title: RelatedTitle;
   current?: boolean;
 }) {
+  const t = getDictionary(await getLocale());
   const inLibrary = title.id !== null;
   const poster = (
     <div
@@ -37,11 +44,11 @@ export function RelatedTitleCard({
         <PosterPlaceholder title={title.title} />
       )}
       <div className="absolute left-1.5 top-1.5 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide text-zinc-200 backdrop-blur-sm">
-        {title.content_type === "movie" ? "Movie" : "TV"}
+        {title.content_type === "movie" ? t.contentType.movie : t.contentType.tv}
       </div>
       {!inLibrary && (
         <div className="absolute bottom-1.5 left-1.5 right-1.5 rounded bg-black/70 px-1.5 py-0.5 text-center text-[10px] font-medium text-zinc-300 backdrop-blur-sm">
-          Not in library
+          {t.related.notInLibrary}
         </div>
       )}
     </div>

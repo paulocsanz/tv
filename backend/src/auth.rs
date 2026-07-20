@@ -14,6 +14,7 @@ pub struct UserRecord {
     pub display_name: Option<String>,
     pub default_subtitle_lang: Option<String>,
     pub autoplay_next: bool,
+    pub ui_locale: String,
 }
 
 #[derive(sqlx::FromRow)]
@@ -25,10 +26,11 @@ struct UserRow {
     display_name: Option<String>,
     default_subtitle_lang: Option<String>,
     autoplay_next: bool,
+    ui_locale: String,
 }
 
-const USER_COLUMNS: &str =
-    "id, username, password_hash, is_admin, display_name, default_subtitle_lang, autoplay_next";
+const USER_COLUMNS: &str = "id, username, password_hash, is_admin, display_name, \
+     default_subtitle_lang, autoplay_next, ui_locale";
 
 impl From<UserRow> for UserRecord {
     fn from(row: UserRow) -> Self {
@@ -39,6 +41,7 @@ impl From<UserRow> for UserRecord {
             display_name: row.display_name,
             default_subtitle_lang: row.default_subtitle_lang,
             autoplay_next: row.autoplay_next,
+            ui_locale: row.ui_locale,
         }
     }
 }
@@ -100,7 +103,7 @@ pub async fn create_session(pool: &PgPool, user_id: i64) -> Result<String, sqlx:
 pub async fn session_user(pool: &PgPool, token: &str) -> Option<UserRecord> {
     let row: UserRow = sqlx::query_as(
         "SELECT u.id, u.username, u.password_hash, u.is_admin, u.display_name, \
-                u.default_subtitle_lang, u.autoplay_next \
+                u.default_subtitle_lang, u.autoplay_next, u.ui_locale \
          FROM sessions s JOIN users u ON u.id = s.user_id \
          WHERE s.token_hash = $1",
     )
@@ -218,14 +221,16 @@ pub async fn update_preferences(
     display_name: Option<&str>,
     default_subtitle_lang: Option<&str>,
     autoplay_next: bool,
+    ui_locale: &str,
 ) -> Result<(), sqlx::Error> {
     sqlx::query(
-        "UPDATE users SET display_name = $1, default_subtitle_lang = $2, autoplay_next = $3 \
-         WHERE id = $4",
+        "UPDATE users SET display_name = $1, default_subtitle_lang = $2, autoplay_next = $3, \
+         ui_locale = $4 WHERE id = $5",
     )
     .bind(display_name)
     .bind(default_subtitle_lang)
     .bind(autoplay_next)
+    .bind(ui_locale)
     .bind(user_id)
     .execute(pool)
     .await?;

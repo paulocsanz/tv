@@ -10,6 +10,9 @@ import { VideoPlayer } from "@/components/VideoPlayer";
 import { TrailerPreview } from "@/components/TrailerPreview";
 import { Synopsis } from "@/components/Synopsis";
 import { AwardsCard } from "@/components/AwardsCard";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
+import { localizeItem } from "@/lib/i18n/content";
 
 export async function generateMetadata({
   params,
@@ -17,8 +20,10 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  const item = await getContentById(id);
-  if (!item) return { title: "Not found" };
+  const rawItem = await getContentById(id);
+  const locale = await getLocale();
+  if (!rawItem) return { title: getDictionary(locale).meta.notFound };
+  const item = localizeItem(rawItem, locale);
   return {
     title: `${item.title} (${item.year})`,
     description: item.plot ?? undefined,
@@ -31,8 +36,12 @@ export default async function TitlePage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const item = await getContentById(id);
-  if (!item) notFound();
+  const rawItem = await getContentById(id);
+  if (!rawItem) notFound();
+
+  const locale = await getLocale();
+  const t = getDictionary(locale);
+  const item = localizeItem(rawItem, locale);
 
   const related = item.collection_id ? await getRelatedContent(id) : [];
   const similar = await getSimilarContent(id);
@@ -77,12 +86,10 @@ export default async function TitlePage({
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/70 px-6 text-center">
                 {item.torrent_file ? (
                   <p className="rounded-lg bg-amber-600/20 px-3 py-1.5 text-sm text-amber-300">
-                    📥 Available locally: <code className="text-xs font-mono">{item.torrent_file}</code>
+                    📥 {t.titlePage.availableLocally} <code className="text-xs font-mono">{item.torrent_file}</code>
                   </p>
                 ) : (
-                  <p className="text-sm text-zinc-300">
-                    Not available to stream yet — it&apos;s still in the acquisition queue.
-                  </p>
+                  <p className="text-sm text-zinc-300">{t.titlePage.notAvailableYet}</p>
                 )}
               </div>
             </div>
@@ -97,10 +104,14 @@ export default async function TitlePage({
         <div className="flex flex-col gap-3 xl:w-80 xl:shrink-0">
           <div className="flex flex-wrap items-center gap-2">
             <span className="rounded bg-white/10 px-2 py-0.5 text-xs font-medium uppercase tracking-wide text-zinc-300">
-              {item.content_type === "movie" ? "Movie" : item.content_type === "tv" ? "TV Series" : "Course"}
+              {item.content_type === "movie"
+                ? t.contentType.movie
+                : item.content_type === "tv"
+                  ? t.contentType.tvSeries
+                  : t.contentType.course}
             </span>
             <span className="rounded bg-white/10 px-2 py-0.5 text-xs font-medium text-zinc-300">
-              {item.origin}
+              {item.origin === "Brazilian" ? t.filterBar.brazilian : item.origin === "International" ? t.filterBar.international : item.origin}
             </span>
             {item.rated && (
               <span className="rounded bg-white/10 px-2 py-0.5 text-xs font-medium text-zinc-300">
@@ -129,7 +140,7 @@ export default async function TitlePage({
           {(item.director || item.creator) && (
             <p className="text-sm text-zinc-400">
               <span className="text-zinc-500">
-                {item.content_type === "movie" ? "Director: " : "Creator: "}
+                {item.content_type === "movie" ? t.titlePage.director : t.titlePage.creator}
               </span>
               {item.director ?? item.creator}
             </p>
@@ -153,7 +164,7 @@ export default async function TitlePage({
           {item.attachments.length > 0 && (
             <div className="flex flex-col gap-1.5 rounded-lg bg-white/5 p-3 ring-1 ring-inset ring-white/10">
               <span className="text-xs font-medium uppercase tracking-wide text-zinc-500">
-                Course Materials
+                {t.titlePage.courseMaterials}
               </span>
               {item.attachments.map((attachment, index) => (
                 <a
@@ -186,7 +197,7 @@ export default async function TitlePage({
       {related.length > 0 && (
         <div className="mt-10">
           <h2 className="mb-3 text-lg font-semibold text-white">
-            {item.collection_name ?? "Related Titles"}
+            {item.collection_name ?? t.related.relatedTitles}
           </h2>
           <div className="flex gap-3 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {related.map((title) => (
@@ -198,7 +209,7 @@ export default async function TitlePage({
 
       {similar.length > 0 && (
         <div className="mt-10">
-          <h2 className="mb-3 text-lg font-semibold text-white">More Like This</h2>
+          <h2 className="mb-3 text-lg font-semibold text-white">{t.related.moreLikeThis}</h2>
           <div className="flex gap-3 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {similar.map((title) => (
               <RelatedTitleCard key={title.tmdb_id} title={title} />
@@ -215,7 +226,7 @@ export default async function TitlePage({
             rel="noopener noreferrer"
             className="hover:text-zinc-400"
           >
-            View on IMDb ↗
+            {t.titlePage.viewOnImdb}
           </a>
         )}
       </div>

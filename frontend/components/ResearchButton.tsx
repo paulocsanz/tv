@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 export function ResearchButton({ id }: { id: string }) {
   const router = useRouter();
+  const t = useT();
   const [pending, setPending] = useState(false);
   const [result, setResult] = useState<string | null>(null);
 
@@ -16,15 +18,15 @@ export function ResearchButton({ id }: { id: string }) {
     setPending(false);
 
     if (res.status === 409) {
-      setResult("Pipeline is running — stop it first.");
+      setResult(t.admin.pipelineRunningStopFirst);
       return;
     }
     if (!res.ok) {
-      setResult("Search failed.");
+      setResult(t.admin.searchFailed);
       return;
     }
     const body = (await res.json()) as { found: boolean };
-    setResult(body.found ? "Found options!" : "Still nothing found.");
+    setResult(body.found ? t.admin.foundOptions : t.admin.stillNothingFound);
     router.refresh();
   }
 
@@ -37,7 +39,7 @@ export function ResearchButton({ id }: { id: string }) {
         disabled={pending}
         className="shrink-0 rounded-md border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300 hover:bg-white/10 disabled:opacity-60"
       >
-        {pending ? "Searching…" : "Re-search"}
+        {pending ? t.admin.searching : t.admin.reSearch}
       </button>
     </div>
   );

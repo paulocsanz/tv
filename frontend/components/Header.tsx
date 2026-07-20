@@ -1,10 +1,15 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { LogoutButton } from "./LogoutButton";
+import { LocaleSwitcher } from "./LocaleSwitcher";
 import { MobileNav } from "./MobileNav";
 import { SearchBox } from "./SearchBox";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 
-export function Header() {
+export async function Header() {
+  const t = getDictionary(await getLocale());
+
   return (
     <header className="sticky top-0 z-30 border-b border-white/5 bg-black/80 backdrop-blur">
       <div className="relative mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-8">
@@ -14,19 +19,19 @@ export function Header() {
         </Link>
         <nav className="hidden gap-4 text-sm text-zinc-300 sm:flex">
           <Link href="/browse?type=movie" className="hover:text-white">
-            Movies
+            {t.nav.movies}
           </Link>
           <Link href="/browse?type=tv" className="hover:text-white">
-            TV Series
+            {t.nav.tvSeries}
           </Link>
           <Link href="/browse?origin=Brazilian" className="hover:text-white">
-            Brazilian
+            {t.nav.brazilian}
           </Link>
           <Link href="/browse?origin=International" className="hover:text-white">
-            International
+            {t.nav.international}
           </Link>
           <Link href="/browse?type=course" className="hover:text-white">
-            Courses
+            {t.nav.courses}
           </Link>
         </nav>
         <div className="ml-auto w-full max-w-xs">
@@ -34,8 +39,9 @@ export function Header() {
             <SearchBox />
           </Suspense>
         </div>
+        <LocaleSwitcher />
         <Link href="/account" className="shrink-0 text-sm text-zinc-400 hover:text-white">
-          Account
+          {t.nav.account}
         </Link>
         <LogoutButton />
       </div>

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import WebTorrent from "webtorrent";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 const MEMORY_WARNING_THRESHOLD = 512 * 1024 * 1024; // 512MB
 
@@ -18,6 +19,7 @@ interface TorrentStats {
 }
 
 export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
+  const t = useT();
   const videoRef = useRef<HTMLVideoElement>(null);
   const clientRef = useRef<WebTorrent.Instance | null>(null);
   const [loading, setLoading] = useState(true);
@@ -50,7 +52,7 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
         const torrentResponse = await fetch(`/api/torrent/${itemId}`);
 
         if (!torrentResponse.ok) {
-          throw new Error("Failed to fetch torrent file");
+          throw new Error(t.webtorrent.fetchFailed);
         }
 
         const torrentBlob = await torrentResponse.blob();
@@ -66,7 +68,7 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
           );
 
           if (!videoFile) {
-            setError("No playable video file found in torrent");
+            setError(t.webtorrent.noPlayableFile);
             setLoading(false);
             return;
           }
@@ -90,7 +92,7 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
           });
 
           stream.on("error", (err: Error) => {
-            setError(`Streaming error: ${err.message}`);
+            setError(t.webtorrent.streamingError.replace("{message}", err.message));
             setLoading(false);
           });
 
@@ -121,7 +123,7 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
           return () => clearInterval(statsInterval);
         });
       } catch (err) {
-        setError(err instanceof Error ? err.message : "Failed to load torrent");
+        setError(err instanceof Error ? err.message : t.webtorrent.loadFailed);
         setLoading(false);
       }
     };
@@ -135,12 +137,13 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
         clientRef.current = null;
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [itemId]);
 
   if (error) {
     return (
       <div className="rounded-lg bg-red-500/10 border border-red-500/30 p-4 text-sm text-red-300">
-        <p className="font-semibold">Error loading torrent</p>
+        <p className="font-semibold">{t.webtorrent.errorHeading}</p>
         <p>{error}</p>
       </div>
     );
@@ -150,7 +153,7 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
     <div className="space-y-4">
       {memoryWarning && (
         <div className="rounded-lg bg-yellow-500/10 border border-yellow-500/30 p-3 text-sm text-yellow-300">
-          ⚠️ Memory usage is high. Large files may cause performance issues on this device.
+          {t.webtorrent.memoryWarning}
         </div>
       )}
 
@@ -159,7 +162,7 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
           <div className="absolute inset-0 flex items-center justify-center bg-black/50">
             <div className="text-center">
               <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
-              <p className="mt-2 text-sm text-white">Loading torrent...</p>
+              <p className="mt-2 text-sm text-white">{t.webtorrent.loading}</p>
             </div>
           </div>
         )}
@@ -175,31 +178,28 @@ export function WebTorrentPlayer({ itemId }: WebTorrentPlayerProps) {
       {/* Stats Display */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
         <div className="bg-zinc-900/50 rounded p-2">
-          <p className="text-zinc-500">Progress</p>
+          <p className="text-zinc-500">{t.webtorrent.progress}</p>
           <p className="text-white font-semibold">{stats.progress.toFixed(1)}%</p>
         </div>
         <div className="bg-zinc-900/50 rounded p-2">
-          <p className="text-zinc-500">Download Speed</p>
+          <p className="text-zinc-500">{t.webtorrent.downloadSpeed}</p>
           <p className="text-white font-semibold">
             {(stats.downloadSpeed / 1024 / 1024).toFixed(1)} MB/s
           </p>
         </div>
         <div className="bg-zinc-900/50 rounded p-2">
-          <p className="text-zinc-500">Peers</p>
+          <p className="text-zinc-500">{t.webtorrent.peers}</p>
           <p className="text-white font-semibold">{stats.peers}</p>
         </div>
         <div className="bg-zinc-900/50 rounded p-2">
-          <p className="text-zinc-500">Memory</p>
+          <p className="text-zinc-500">{t.webtorrent.memory}</p>
           <p className="text-white font-semibold">
             {(stats.memoryUsage / 1024 / 1024).toFixed(0)} MB
           </p>
         </div>
       </div>
 
-      <p className="text-xs text-zinc-500">
-        💡 WebTorrent streams video while downloading from peers. Download speeds depend on
-        available seeders.
-      </p>
+      <p className="text-xs text-zinc-500">{t.webtorrent.hint}</p>
     </div>
   );
 }

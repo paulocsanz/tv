@@ -61,6 +61,30 @@ pub struct EnrichedItem {
     pub actors: Vec<String>,
     pub awards: Option<String>,
     pub rated: Option<String>,
+    /// TMDB `language=pt-BR` title, when TMDB has a Portuguese translation
+    /// for this item - unlike `title` (fixed at curation time) and
+    /// `original_title` (the source-language title), this is specifically
+    /// the localized-for-Brazil variant. `None` when TMDB has no pt-BR
+    /// translation; the frontend falls back to `title` in that case. See
+    /// backfill-pt-translations.js and enrichment.rs's `fetch_tmdb`.
+    #[serde(default)]
+    pub title_pt: Option<String>,
+    /// TMDB `language=pt-BR` overview, filling the same role `plot` plays
+    /// for English (OMDb has no localization at all, so this is TMDB-only).
+    /// `None` when untranslated on TMDB.
+    #[serde(default)]
+    pub plot_pt: Option<String>,
+    /// TMDB genre names in pt-BR, keyed by the same genre the item already
+    /// has in `genres` - not a translation of the OMDb genre strings, but
+    /// TMDB's own localized genre list for this title. Empty when unknown;
+    /// the frontend falls back to `genres`.
+    #[serde(default)]
+    pub genres_pt: Vec<String>,
+    /// Brazilian classificação indicativa (TMDB release_dates/content_ratings
+    /// filtered to `BR`), distinct from `rated`'s US MPAA/TV rating. `None`
+    /// when TMDB has no BR certification for this title.
+    #[serde(default)]
+    pub rated_pt: Option<String>,
     pub imdb_rating: Option<f64>,
     pub imdb_votes: Option<String>,
     pub rotten_tomatoes: Option<String>,

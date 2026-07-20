@@ -186,6 +186,126 @@ struct TmdbVideosResponse {
     results: Vec<TmdbVideo>,
 }
 
+#[derive(Debug, Deserialize)]
+struct TmdbGenre {
+    name: String,
+}
+
+// `language=pt-BR` on the same details endpoint `fetch_tmdb` already calls
+// for `belongs_to_collection` - title/overview/genres come back localized
+// when TMDB has a pt-BR translation for this title, empty string/list
+// otherwise (never an error, so a missing translation can't fail enrichment).
+#[derive(Debug, Deserialize, Default)]
+struct TmdbDetailsPt {
+    #[serde(alias = "name")]
+    title: Option<String>,
+    overview: Option<String>,
+    #[serde(default)]
+    genres: Vec<TmdbGenre>,
+}
+
+#[derive(Debug, Deserialize)]
+struct TmdbReleaseDateEntry {
+    certification: String,
+}
+
+#[derive(Debug, Deserialize)]
+struct TmdbReleaseDatesCountry {
+    iso_3166_1: String,
+    release_dates: Vec<TmdbReleaseDateEntry>,
+}
+
+#[derive(Debug, Deserialize)]
+struct TmdbReleaseDatesResponse {
+    results: Vec<TmdbReleaseDatesCountry>,
+}
+
+#[derive(Debug, Deserialize)]
+struct TmdbContentRatingEntry {
+    iso_3166_1: String,
+    rating: String,
+}
+
+#[derive(Debug, Deserialize)]
+struct TmdbContentRatingsResponse {
+    results: Vec<TmdbContentRatingEntry>,
+}
+
+#[derive(Default)]
+struct TmdbPtData {
+    title_pt: Option<String>,
+    plot_pt: Option<String>,
+    genres_pt: Vec<String>,
+    rated_pt: Option<String>,
+}
+
+/// Best-effort Brazilian localization for one title: pt-BR title/overview/
+/// genre names from the details endpoint, plus the BR classificação
+/// indicativa from the release-dates (movie) or content-ratings (TV)
+/// endpoint. Every step swallows its own errors - a rate limit or missing
+/// translation here must never fail the (otherwise successful) enrichment
+/// of the item's English fields.
+async fn fetch_tmdb_pt(
+    client: &reqwest::Client,
+    token: &str,
+    video_path: &str,
+    tmdb_id: i64,
+) -> TmdbPtData {
+    let details_url = format!("https://api.themoviedb.org/3/{video_path}/{tmdb_id}");
+    let details_resp = client
+        .get(&details_url)
+        .bearer_auth(token)
+        .query(&[("language", "pt-BR")])
+        .send()
+        .await
+        .ok();
+    let details: TmdbDetailsPt = match details_resp {
+        Some(r) => r.json::<TmdbDetailsPt>().await.unwrap_or_default(),
+        None => TmdbDetailsPt::default(),
+    };
+
+    let rated_pt = if video_path == "movie" {
+        let url = format!("https://api.themoviedb.org/3/movie/{tmdb_id}/release_dates");
+        let resp = client.get(&url).bearer_auth(token).send().await.ok();
+        let parsed: Option<TmdbReleaseDatesResponse> = match resp {
+            Some(r) => r.json().await.ok(),
+            None => None,
+        };
+        parsed.and_then(|resp| {
+            resp.results
+                .into_iter()
+                .find(|c| c.iso_3166_1 == "BR")
+                .and_then(|c| {
+                    c.release_dates
+                        .into_iter()
+                        .map(|d| d.certification)
+                        .find(|cert| !cert.is_empty())
+                })
+        })
+    } else {
+        let url = format!("https://api.themoviedb.org/3/tv/{tmdb_id}/content_ratings");
+        let resp = client.get(&url).bearer_auth(token).send().await.ok();
+        let parsed: Option<TmdbContentRatingsResponse> = match resp {
+            Some(r) => r.json().await.ok(),
+            None => None,
+        };
+        parsed.and_then(|resp| {
+            resp.results
+                .into_iter()
+                .find(|c| c.iso_3166_1 == "BR")
+                .map(|c| c.rating)
+                .filter(|r| !r.is_empty())
+        })
+    };
+
+    TmdbPtData {
+        title_pt: details.title.filter(|t| !t.is_empty()),
+        plot_pt: details.overview.filter(|o| !o.is_empty()),
+        genres_pt: details.genres.into_iter().map(|g| g.name).collect(),
+        rated_pt,
+    }
+}
+
 struct TmdbData {
     backdrop_url: Option<String>,
     trailer_key: Option<String>,
@@ -194,6 +314,10 @@ struct TmdbData {
     original_title: Option<String>,
     collection_id: Option<i64>,
     collection_name: Option<String>,
+    title_pt: Option<String>,
+    plot_pt: Option<String>,
+    genres_pt: Vec<String>,
+    rated_pt: Option<String>,
 }
 
 async fn fetch_tmdb(
@@ -303,6 +427,8 @@ async fn fetch_tmdb(
         ContentType::Course => unreachable!("courses are cataloged manually, never enriched via TMDB"),
     };
 
+    let pt = fetch_tmdb_pt(client, token, video_path, first.id).await;
+
     Some(TmdbData {
         backdrop_url,
         trailer_key,
@@ -311,6 +437,10 @@ async fn fetch_tmdb(
         original_title,
         collection_id,
         collection_name,
+        title_pt: pt.title_pt,
+        plot_pt: pt.plot_pt,
+        genres_pt: pt.genres_pt,
+        rated_pt: pt.rated_pt,
     })
 }
 
@@ -420,23 +550,50 @@ pub async fn enrich_one(
         )
     };
 
-    let (backdrop_url, trailer_key, tmdb_id, original_title, tmdb_imdb_id, collection_id, collection_name) =
-        if let Some(t) = tmdb {
-            if status == EnrichmentStatus::Failed {
-                status = EnrichmentStatus::Partial;
-            }
-            (
-                t.backdrop_url,
-                t.trailer_key,
-                t.tmdb_id,
-                t.original_title,
-                t.imdb_id,
-                t.collection_id,
-                t.collection_name,
-            )
-        } else {
-            (None, None, None, None, None, None, None)
-        };
+    let (
+        backdrop_url,
+        trailer_key,
+        tmdb_id,
+        original_title,
+        tmdb_imdb_id,
+        collection_id,
+        collection_name,
+        title_pt,
+        plot_pt,
+        genres_pt,
+        rated_pt,
+    ) = if let Some(t) = tmdb {
+        if status == EnrichmentStatus::Failed {
+            status = EnrichmentStatus::Partial;
+        }
+        (
+            t.backdrop_url,
+            t.trailer_key,
+            t.tmdb_id,
+            t.original_title,
+            t.imdb_id,
+            t.collection_id,
+            t.collection_name,
+            t.title_pt,
+            t.plot_pt,
+            t.genres_pt,
+            t.rated_pt,
+        )
+    } else {
+        (
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            Vec::new(),
+            None,
+        )
+    };
 
     if status == EnrichmentStatus::Ok && (poster_url.is_none() || trailer_key.is_none()) {
         status = EnrichmentStatus::Partial;
@@ -460,6 +617,10 @@ pub async fn enrich_one(
         actors,
         awards,
         rated,
+        title_pt,
+        plot_pt,
+        genres_pt,
+        rated_pt,
         imdb_rating,
         imdb_votes,
         rotten_tomatoes,

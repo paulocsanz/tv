@@ -1,14 +1,18 @@
 import { getContinueWatching, getMeOrNull, getUsageSummary } from "@/lib/api";
 import { ChangePasswordForm } from "@/components/ChangePasswordForm";
 import { PreferencesForm } from "@/components/PreferencesForm";
+import { getLocale, parseLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 
 export default async function AccountPage() {
   const me = await getMeOrNull();
+  const locale = await getLocale();
+  const t = getDictionary(locale);
 
   if (!me) {
     return (
       <div className="mx-auto max-w-md px-4 py-24 text-center text-zinc-400">
-        Not signed in.
+        {t.account.notSignedIn}
       </div>
     );
   }
@@ -18,13 +22,15 @@ export default async function AccountPage() {
 
   return (
     <div className="mx-auto max-w-xl px-4 py-12 sm:px-8">
-      <h1 className="mb-1 text-2xl font-bold text-white">Account</h1>
-      <p className="mb-8 text-sm text-zinc-500">Signed in as {me.display_name ?? me.username}</p>
+      <h1 className="mb-1 text-2xl font-bold text-white">{t.account.heading}</h1>
+      <p className="mb-8 text-sm text-zinc-500">
+        {t.account.signedInAs} {me.display_name ?? me.username}
+      </p>
 
       <section className="mb-10">
-        <h2 className="mb-3 text-lg font-semibold text-zinc-100">Watch history</h2>
+        <h2 className="mb-3 text-lg font-semibold text-zinc-100">{t.account.watchHistory}</h2>
         {watching.length === 0 ? (
-          <p className="text-sm text-zinc-500">Nothing in progress yet.</p>
+          <p className="text-sm text-zinc-500">{t.account.nothingInProgress}</p>
         ) : (
           <ul className="divide-y divide-white/10 rounded-lg border border-white/10">
             {watching.map((item) => (
@@ -44,11 +50,8 @@ export default async function AccountPage() {
 
       {totalMinutes > 0 && (
         <section className="mb-10">
-          <h2 className="mb-1 text-lg font-semibold text-zinc-100">Group usage</h2>
-          <p className="mb-3 text-xs text-zinc-500">
-            A rough usage split, not a bill — worth a look if the group ever wants to talk about
-            splitting hosting costs.
-          </p>
+          <h2 className="mb-1 text-lg font-semibold text-zinc-100">{t.account.groupUsage}</h2>
+          <p className="mb-3 text-xs text-zinc-500">{t.account.usageDisclaimer}</p>
           <ul className="divide-y divide-white/10 rounded-lg border border-white/10">
             {usage
               .filter((u) => u.watch_minutes > 0)
@@ -76,16 +79,17 @@ export default async function AccountPage() {
       )}
 
       <section className="mb-10">
-        <h2 className="mb-3 text-lg font-semibold text-zinc-100">Preferences</h2>
+        <h2 className="mb-3 text-lg font-semibold text-zinc-100">{t.preferences.heading}</h2>
         <PreferencesForm
           initialDisplayName={me.display_name ?? ""}
           initialSubtitleLang={me.default_subtitle_lang ?? ""}
           initialAutoplayNext={me.autoplay_next}
+          initialUiLocale={parseLocale(me.ui_locale)}
         />
       </section>
 
       <section>
-        <h2 className="mb-3 text-lg font-semibold text-zinc-100">Password</h2>
+        <h2 className="mb-3 text-lg font-semibold text-zinc-100">{t.account.passwordHeading}</h2>
         <ChangePasswordForm />
       </section>
     </div>

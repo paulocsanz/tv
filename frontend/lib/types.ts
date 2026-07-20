@@ -25,6 +25,15 @@ export interface ContentItem {
   actors: string[];
   awards: string | null;
   rated: string | null;
+  // TMDB `language=pt-BR` variants of the fields above, sourced from the
+  // real TMDB translation (never machine-translated) - null/empty when
+  // TMDB has no Portuguese data for this title. See lib/i18n/content.ts's
+  // localizeItem, which is what every display component should read
+  // title/plot/genres/rated through instead of these directly.
+  title_pt: string | null;
+  plot_pt: string | null;
+  genres_pt: string[];
+  rated_pt: string | null;
   imdb_rating: number | null;
   imdb_votes: string | null;
   rotten_tomatoes: string | null;
@@ -140,6 +149,7 @@ export interface MeResponse {
   display_name: string | null;
   default_subtitle_lang: string | null;
   autoplay_next: boolean;
+  ui_locale: string;
 }
 
 export interface UserSummary {

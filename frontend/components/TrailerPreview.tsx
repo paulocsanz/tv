@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { SubtitleTrack } from "@/lib/types";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 // Same 3-letter -> 2-letter mapping VideoPlayer.tsx uses for <track srcLang>
 // - trimmed to just what download-trailers.js ever actually requests
@@ -29,6 +30,7 @@ export function TrailerPreview({
   posterUrl?: string | null;
   className?: string;
 }) {
+  const t = useT();
   const [open, setOpen] = useState(false);
 
   // The homepage Hero's "▶ Watch Trailer" button links to /title/[id]#trailer
@@ -56,7 +58,7 @@ export function TrailerPreview({
         type="button"
         onClick={() => setOpen(true)}
         className={`group relative shrink-0 scroll-mt-24 overflow-hidden rounded-lg bg-zinc-900 ring-1 ring-white/10 transition hover:ring-white/25 ${className || "w-28 sm:w-36"}`}
-        aria-label={`Play trailer for ${title}`}
+        aria-label={t.trailer.playFor.replace("{title}", title)}
       >
         <span className="relative block aspect-video w-full">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -72,7 +74,7 @@ export function TrailerPreview({
           </span>
         </span>
         <span className="block truncate px-1.5 py-1 text-left text-[11px] font-medium text-zinc-400 group-hover:text-zinc-200">
-          Trailer
+          {t.trailer.label}
         </span>
       </button>
 
@@ -91,11 +93,13 @@ export function TrailerPreview({
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between px-4 py-2.5">
-              <span className="truncate text-sm font-medium text-zinc-300">{title} — Trailer</span>
+              <span className="truncate text-sm font-medium text-zinc-300">
+                {title} — {t.trailer.label}
+              </span>
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                aria-label="Close trailer"
+                aria-label={t.trailer.close}
                 className="shrink-0 rounded-full p-1 text-zinc-400 hover:bg-white/10 hover:text-white"
               >
                 ✕
@@ -122,7 +126,7 @@ export function TrailerPreview({
                 <iframe
                   className="h-full w-full"
                   src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1`}
-                  title={`${title} trailer`}
+                  title={t.trailer.iframeTitle.replace("{title}", title)}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />

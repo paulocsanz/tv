@@ -1,19 +1,24 @@
 import Link from "next/link";
 import { Section } from "@/lib/types";
 import { ContentCard } from "./ContentCard";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
+import type { Dictionary } from "@/lib/i18n/dictionaries";
 
-export function ContentRow({ section }: { section: Section }) {
+export async function ContentRow({ section }: { section: Section }) {
   if (section.items.length === 0) return null;
 
+  const t = getDictionary(await getLocale());
   const browseHref = sectionToBrowseHref(section.key);
+  const title = sectionTitle(section, t);
 
   return (
     <section className="py-2">
       <div className="mb-2 flex items-center justify-between px-4 sm:px-8">
-        <h2 className="text-base font-semibold text-zinc-100 sm:text-lg">{section.title}</h2>
+        <h2 className="text-base font-semibold text-zinc-100 sm:text-lg">{title}</h2>
         {browseHref && (
           <Link href={browseHref} className="text-xs text-zinc-400 hover:text-white">
-            See all →
+            {t.sections.seeAll}
           </Link>
         )}
       </div>
@@ -24,6 +29,16 @@ export function ContentRow({ section }: { section: Section }) {
       </div>
     </section>
   );
+}
+
+// Section titles are generated server-side (Rust, English-only - see
+// main.rs's /api/sections) - these are the known fixed keys, translated
+// here instead. An unrecognized key (a new section added backend-side but
+// not yet given a translation) falls back to that English title rather
+// than showing nothing.
+function sectionTitle(section: Section, t: Dictionary): string {
+  const known = t.sections as Record<string, string>;
+  return known[section.key] ?? section.title;
 }
 
 function sectionToBrowseHref(key: string): string | null {

@@ -2,10 +2,12 @@
 
 import { FormEvent, Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const t = useT();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -24,7 +26,7 @@ function LoginForm() {
 
     if (!res.ok) {
       setPending(false);
-      setError("Invalid username or password.");
+      setError(t.auth.invalidCredentials);
       return;
     }
 
@@ -36,7 +38,7 @@ function LoginForm() {
     <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-4">
       <div>
         <label htmlFor="username" className="mb-1 block text-sm text-zinc-400">
-          Username
+          {t.auth.usernameLabel}
         </label>
         <input
           id="username"
@@ -50,7 +52,7 @@ function LoginForm() {
       </div>
       <div>
         <label htmlFor="password" className="mb-1 block text-sm text-zinc-400">
-          Password
+          {t.auth.passwordLabel}
         </label>
         <input
           id="password"
@@ -69,7 +71,7 @@ function LoginForm() {
         disabled={pending}
         className="w-full rounded-md bg-[#f5c518] px-3 py-2 font-semibold text-black transition hover:bg-[#e0b613] disabled:opacity-60"
       >
-        {pending ? "Signing in…" : "Sign in"}
+        {pending ? t.auth.signingIn : t.auth.signIn}
       </button>
     </form>
   );

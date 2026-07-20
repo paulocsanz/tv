@@ -1,4 +1,6 @@
 import { ContentItem, displayRating } from "@/lib/types";
+import { getLocale } from "@/lib/i18n/locale";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 
 export function StarIcon() {
   return (
@@ -17,10 +19,11 @@ function TomatoIcon({ fresh }: { fresh: boolean }) {
   );
 }
 
-export function ImdbBadge({ item, size = "sm" }: { item: ContentItem; size?: "sm" | "lg" }) {
+export async function ImdbBadge({ item, size = "sm" }: { item: ContentItem; size?: "sm" | "lg" }) {
   // Courses have no IMDb entry - curated_imdb_rating is an unused
   // placeholder for them, not a real score worth badging.
   if (item.content_type === "course") return null;
+  const t = getDictionary(await getLocale());
   const rating = displayRating(item);
   const big = size === "lg";
   return (
@@ -28,7 +31,7 @@ export function ImdbBadge({ item, size = "sm" }: { item: ContentItem; size?: "sm
       className={`inline-flex items-center gap-1 rounded-md bg-[#f5c518] font-semibold text-black ${
         big ? "px-2.5 py-1 text-sm" : "px-1.5 py-0.5 text-xs"
       }`}
-      title="IMDb rating"
+      title={t.ratings.imdbRating}
     >
       <StarIcon />
       {rating.toFixed(1)}
@@ -36,8 +39,9 @@ export function ImdbBadge({ item, size = "sm" }: { item: ContentItem; size?: "sm
   );
 }
 
-export function RottenTomatoesBadge({ item, size = "sm" }: { item: ContentItem; size?: "sm" | "lg" }) {
+export async function RottenTomatoesBadge({ item, size = "sm" }: { item: ContentItem; size?: "sm" | "lg" }) {
   if (!item.rotten_tomatoes) return null;
+  const t = getDictionary(await getLocale());
   const pct = parseInt(item.rotten_tomatoes, 10);
   const fresh = pct >= 60;
   const big = size === "lg";
@@ -46,7 +50,7 @@ export function RottenTomatoesBadge({ item, size = "sm" }: { item: ContentItem; 
       className={`inline-flex items-center gap-1 rounded-md bg-white/10 font-semibold text-zinc-100 ring-1 ring-inset ring-white/10 ${
         big ? "px-2.5 py-1 text-sm" : "px-1.5 py-0.5 text-xs"
       }`}
-      title="Rotten Tomatoes score"
+      title={t.ratings.rottenTomatoesScore}
     >
       <TomatoIcon fresh={fresh} />
       {item.rotten_tomatoes}

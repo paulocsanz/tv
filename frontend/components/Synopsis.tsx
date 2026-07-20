@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 // Plot summaries vary wildly in length - clamped to a few lines by default
 // so a long one doesn't push the actual video player far down the page,
@@ -8,6 +9,7 @@ import { useEffect, useRef, useState } from "react";
 const COLLAPSED_LINE_CLAMP = "line-clamp-3";
 
 export function Synopsis({ plot, actors }: { plot: string | null; actors: string[] }) {
+  const t = useT();
   const [expanded, setExpanded] = useState(false);
   const plotRef = useRef<HTMLParagraphElement>(null);
   // Only true once we've measured that the clamped paragraph actually clips
@@ -38,7 +40,7 @@ export function Synopsis({ plot, actors }: { plot: string | null; actors: string
               onClick={() => setExpanded((v) => !v)}
               className="mt-1.5 text-sm font-medium text-zinc-400 hover:text-white"
             >
-              {expanded ? "Show less" : "Show more"}
+              {expanded ? t.synopsis.showLess : t.synopsis.showMore}
             </button>
           )}
         </div>
@@ -46,7 +48,7 @@ export function Synopsis({ plot, actors }: { plot: string | null; actors: string
 
       {actors.length > 0 && (
         <p className="mt-4 text-sm text-zinc-400">
-          <span className="text-zinc-500">Starring: </span>
+          <span className="text-zinc-500">{t.synopsis.starring}</span>
           {actors.join(", ")}
         </p>
       )}

@@ -2,24 +2,26 @@
 
 import Link from "next/link";
 import { useState } from "react";
-
-const LINKS = [
-  { href: "/browse?type=movie", label: "Movies" },
-  { href: "/browse?type=tv", label: "TV Series" },
-  { href: "/browse?origin=Brazilian", label: "Brazilian" },
-  { href: "/browse?origin=International", label: "International" },
-  { href: "/browse?type=course", label: "Courses" },
-];
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
+  const t = useT();
+
+  const links = [
+    { href: "/browse?type=movie", label: t.nav.movies },
+    { href: "/browse?type=tv", label: t.nav.tvSeries },
+    { href: "/browse?origin=Brazilian", label: t.nav.brazilian },
+    { href: "/browse?origin=International", label: t.nav.international },
+    { href: "/browse?type=course", label: t.nav.courses },
+  ];
 
   return (
     <div className="sm:hidden">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        aria-label={open ? "Close menu" : "Open menu"}
+        aria-label={open ? t.nav.closeMenu : t.nav.openMenu}
         aria-expanded={open}
         className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-zinc-300 hover:bg-white/10 hover:text-white"
       >
@@ -36,7 +38,7 @@ export function MobileNav() {
 
       {open && (
         <nav className="absolute inset-x-0 top-full z-30 flex flex-col gap-1 border-b border-white/5 bg-black/95 px-4 py-3 backdrop-blur">
-          {LINKS.map((link) => (
+          {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}

@@ -1,10 +1,12 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 type Status = "idle" | "pending" | "success" | "expired" | "unauthorized" | "error";
 
 export default function PairDevicePage() {
+  const t = useT();
   const [code, setCode] = useState("");
   const [status, setStatus] = useState<Status>("idle");
 
@@ -35,22 +37,22 @@ export default function PairDevicePage() {
 
   return (
     <div className="flex min-h-[70vh] flex-col items-center justify-center px-4">
-      <h1 className="mb-6 text-2xl font-bold text-white">Pair a device</h1>
+      <h1 className="mb-6 text-2xl font-bold text-white">{t.tv.pairDeviceHeading}</h1>
 
       {status === "success" ? (
-        <p className="text-lg text-[#f5c518]">Paired! You can go back to your TV now.</p>
+        <p className="text-lg text-[#f5c518]">{t.tv.pairedSuccess}</p>
       ) : status === "unauthorized" ? (
         <p className="text-zinc-300">
-          You need to sign in first.{" "}
+          {t.tv.needSignInFirst}{" "}
           <a href="/login?next=/pair" className="text-[#f5c518] hover:underline">
-            Sign in
+            {t.auth.signIn}
           </a>
         </p>
       ) : (
         <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-4">
           <div>
             <label htmlFor="code" className="mb-1 block text-sm text-zinc-400">
-              Code shown on your TV
+              {t.tv.codeLabel}
             </label>
             <input
               id="code"
@@ -64,19 +66,17 @@ export default function PairDevicePage() {
             />
           </div>
           {status === "expired" && (
-            <p className="text-sm text-red-400">
-              That code is invalid or has expired. Generate a new one on your TV.
-            </p>
+            <p className="text-sm text-red-400">{t.tv.codeExpired}</p>
           )}
           {status === "error" && (
-            <p className="text-sm text-red-400">Something went wrong. Try again.</p>
+            <p className="text-sm text-red-400">{t.tv.genericError}</p>
           )}
           <button
             type="submit"
             disabled={status === "pending"}
             className="w-full rounded-md bg-[#f5c518] px-3 py-2 font-semibold text-black transition hover:bg-[#e0b613] disabled:opacity-60"
           >
-            {status === "pending" ? "Pairing…" : "Pair device"}
+            {status === "pending" ? t.tv.pairing : t.tv.pairDeviceButton}
           </button>
         </form>
       )}

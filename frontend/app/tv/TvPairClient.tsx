@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useT } from "@/lib/i18n/LocaleProvider";
 
 const POLL_INTERVAL_MS = 3000;
 
@@ -11,6 +12,7 @@ function formatCode(code: string): string {
 
 export function TvPairClient({ origin }: { origin: string }) {
   const router = useRouter();
+  const t = useT();
   const [code, setCode] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const startingRef = useRef(false);
@@ -39,7 +41,7 @@ export function TvPairClient({ origin }: { origin: string }) {
         return;
       }
 
-      setError("Something went wrong. Retrying…");
+      setError(t.tv.retryingError);
       pollTimer = setTimeout(poll, POLL_INTERVAL_MS);
     }
 
@@ -53,7 +55,7 @@ export function TvPairClient({ origin }: { origin: string }) {
       if (cancelled) return;
 
       if (!res.ok) {
-        setError("Couldn't generate a pairing code. Retrying…");
+        setError(t.tv.pairingCodeFailed);
         pollTimer = setTimeout(start, POLL_INTERVAL_MS);
         return;
       }
@@ -69,6 +71,7 @@ export function TvPairClient({ origin }: { origin: string }) {
       cancelled = true;
       if (pollTimer) clearTimeout(pollTimer);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router]);
 
   return (
@@ -77,14 +80,14 @@ export function TvPairClient({ origin }: { origin: string }) {
         Sess<span className="text-[#f5c518]">ão</span>
       </h1>
       <p className="mb-6 text-lg text-zinc-300">
-        On your phone or computer, go to{" "}
-        <span className="text-white">{origin ? `${origin}/pair` : "/pair"}</span> and enter this
-        code:
+        {t.tv.pairInstructionsPrefix}{" "}
+        <span className="text-white">{origin ? `${origin}/pair` : "/pair"}</span>{" "}
+        {t.tv.pairInstructionsSuffix}
       </p>
       {code ? (
         <p className="text-6xl font-bold tracking-[0.3em] text-[#f5c518]">{formatCode(code)}</p>
       ) : (
-        <p className="text-lg text-zinc-500">Generating code…</p>
+        <p className="text-lg text-zinc-500">{t.tv.generatingCode}</p>
       )}
       {error && <p className="mt-6 text-sm text-red-400">{error}</p>}
     </div>
