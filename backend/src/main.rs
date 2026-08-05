@@ -473,6 +473,11 @@ async fn main() {
         .route("/api/account/password", post(change_password_handler))
         .route("/api/account/preferences", post(update_preferences_handler))
         .route("/api/usage-summary", get(usage_summary_handler))
+        .route("/api/crypto/status", get(crypto_status_handler))
+        .route(
+            "/api/crypto/catalog-key",
+            get(get_catalog_key_handler).put(put_catalog_key_handler),
+        )
         .route_layer(middleware::from_fn_with_state(state.clone(), require_auth));
 
     let app = Router::new()
@@ -1417,6 +1422,130 @@ async fn get_me(Extension(user): Extension<UserRecord>) -> Json<MeResponse> {
     })
 }
 
+#[derive(Serialize)]
+struct CryptoStatusResponse {
+    /// This user has a wrap stored and can unlock the catalog key on login.
+    has_wrap: bool,
+    /// Someone in the org already bootstrapped encryption (catalog key exists
+    /// as wraps). New users need a handoff rather than generating a new key.
+    org_has_encryption: bool,
+    /// Caller may mint a fresh catalog key (admin + no org wrap yet).
+    can_bootstrap: bool,
+}
+
+async fn crypto_status_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+) -> impl IntoResponse {
+    let has_wrap = match auth::get_catalog_key_wrap(&state.db, user.id).await {
+        Ok(w) => w.is_some(),
+        Err(e) => {
+            tracing::error!("crypto status wrap lookup failed: {e}");
+            return StatusCode::INTERNAL_SERVER_ERROR.into_response();
+        }
+    };
+    let org_has = match auth::any_catalog_key_wrap_exists(&state.db).await {
+        Ok(v) => v,
+        Err(e) => {
+            tracing::error!("crypto status org lookup failed: {e}");
+            return StatusCode::INTERNAL_SERVER_ERROR.into_response();
+        }
+    };
+    Json(CryptoStatusResponse {
+        has_wrap,
+        org_has_encryption: org_has,
+        can_bootstrap: user.is_admin && !org_has,
+    })
+    .into_response()
+}
+
+async fn get_catalog_key_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+) -> impl IntoResponse {
+    match auth::get_catalog_key_wrap(&state.db, user.id).await {
+        Ok(Some(wrap)) => Json(wrap).into_response(),
+        Ok(None) => StatusCode::NOT_FOUND.into_response(),
+        Err(e) => {
+            tracing::error!("get catalog key wrap failed: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
+#[derive(Deserialize)]
+struct PutCatalogKeyRequest {
+    wrapped_hex: String,
+    salt_hex: String,
+    /// When true, only succeeds if no org wrap exists yet (first-time
+    /// bootstrap). Prevents a second admin from quietly minting a different
+    /// catalog key that can't decrypt content encrypted under the first.
+    #[serde(default)]
+    bootstrap: bool,
+}
+
+async fn put_catalog_key_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+    Json(body): Json<PutCatalogKeyRequest>,
+) -> impl IntoResponse {
+    let Some(wrapped) = auth::hex_to_bytes(&body.wrapped_hex) else {
+        return (
+            StatusCode::BAD_REQUEST,
+            Json(serde_json::json!({ "error": "wrapped_hex must be even-length hex" })),
+        )
+            .into_response();
+    };
+    let Some(salt) = auth::hex_to_bytes(&body.salt_hex) else {
+        return (
+            StatusCode::BAD_REQUEST,
+            Json(serde_json::json!({ "error": "salt_hex must be even-length hex" })),
+        )
+            .into_response();
+    };
+    if wrapped.len() < 28 || salt.len() < 16 {
+        return (
+            StatusCode::BAD_REQUEST,
+            Json(serde_json::json!({ "error": "wrap or salt too short" })),
+        )
+            .into_response();
+    }
+
+    if body.bootstrap {
+        if !user.is_admin {
+            return StatusCode::FORBIDDEN.into_response();
+        }
+        match auth::any_catalog_key_wrap_exists(&state.db).await {
+            Ok(true) => {
+                return (
+                    StatusCode::CONFLICT,
+                    Json(serde_json::json!({
+                        "error": "encryption already bootstrapped for this org"
+                    })),
+                )
+                    .into_response();
+            }
+            Ok(false) => {}
+            Err(e) => {
+                tracing::error!("bootstrap org check failed: {e}");
+                return StatusCode::INTERNAL_SERVER_ERROR.into_response();
+            }
+        }
+    } else {
+        // Non-bootstrap: user is storing a wrap of an existing key they
+        // already hold (password change re-wrap, or invite redemption).
+        // Anyone authenticated may upsert their own wrap.
+    }
+
+    match auth::set_catalog_key_wrap(&state.db, user.id, &wrapped, &salt).await {
+        Ok(()) => StatusCode::NO_CONTENT.into_response(),
+        Err(e) => {
+            tracing::error!("set catalog key wrap failed: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
 async fn list_users_handler(
     State(state): State<Arc<AppState>>,
     Extension(user): Extension<UserRecord>,
@@ -2108,6 +2237,7 @@ mod backfill_tests {
             trailer_subtitles: Vec::new(),
             attachments: Vec::new(),
             poster_s3_key: None,
+            encrypted: false,
         }
     }
 

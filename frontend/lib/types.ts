@@ -58,6 +58,8 @@ export interface ContentItem {
   keywords: string[];
   award_entries: AwardEntry[];
   attachments: Attachment[];
+  /** SSESENC1 at rest — player decrypts client-side (RFC 0006). */
+  encrypted?: boolean;
 }
 
 // Prefers the self-hosted poster (proxied through /api/poster/<id>, which

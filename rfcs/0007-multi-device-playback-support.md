@@ -1,60 +1,50 @@
 # Multi-Device Playback Support (Casting & Smart TVs)
 
-**Status:** Draft
+**Status:** In Progress  
+**Updated:** 2026-08-05
 
 ## Background
 
-- The app is browser-only today: `frontend/components/VideoPlayer.tsx` plays video via a plain
-  `<video>` element sourced from `/api/stream/[id]` (`frontend/app/api/stream/[id]/route.ts`), which
-  redirects to a presigned S3 URL served as progressive MP4 over HTTP range requests. No HLS/DASH, no
-  adaptive bitrate, no casting.
+- The app plays progressive MP4 from S3 via a presigned URL (`/api/stream/[id]` → backend stream
+  endpoint). No HLS/DASH, no adaptive bitrate.
 - `frontend/components/WebTorrentPlayer.tsx` covers in-progress downloads via client-side WebTorrent -
-  a browser-only mechanism (WebRTC-based) with no path onto TV hardware or native TV apps.
-- A multi-agent research pass (23 primary sources, adversarially verified) looked at how to reach
-  smart TVs and casting devices with the least engineering effort. Findings below are effort-ranked,
-  not exhaustive - see Open Questions for what the verification pass could **not** confirm.
+  browser-only (WebRTC), not useful on TV hardware.
+- A multi-agent research pass (23 primary sources, adversarially verified) ranked paths onto smart
+  TVs / casting by effort - see Open Questions for what verification could **not** confirm.
 
 ## Problems This Solves
 
-- **No way to get content onto a TV at all** - every viewing session today is stuck on whatever
-  screen the browser tab is on (laptop, phone, tablet).
-- **No casting support** - neither Google Cast nor AirPlay is wired up, despite both being reachable
-  as sender-side-only additions to the existing `<video>` element with no server changes for basic
-  playback.
-- **No smart TV app** - Samsung Tizen, LG webOS, Roku, Fire TV/Android TV, and Apple TV are all
-  unreachable natively.
-- **Stream URL model doesn't extend to casting** - `/api/stream/[id]` only ever hands back an HTTP
-  redirect; a Cast receiver needs the actual resolved absolute S3 URL to fetch the media directly,
-  which nothing today exposes as data.
+- **Getting content onto a living-room screen** - laptop/phone browser alone is not the goal.
+- **Smart TV native apps still missing** - Samsung Tizen, LG webOS, Roku, Fire TV, Apple TV are not
+  packaged as installable apps yet (casting covers many living-room cases without them).
 
 ## Proposed Solution
 
-- [ ] **P1 - Casting (Google Cast + AirPlay)**
-  - Add AirPlay via `video.webkitShowPlaybackTargetPicker()` on the existing `<video>` element - no
-    SDK, no server change, works with the current progressive MP4 as-is.
-  - Add Google Cast via the Cast Web Sender SDK - sender-side JS only; the receiver is Google's own
-    hosted CAF app, so no custom receiver to build or host.
-  - Expose the resolved absolute presigned S3 URL from `/api/stream/[id]` (today only reachable via
-    HTTP redirect) so the Cast receiver can fetch the media directly.
-  - Note: AirPlay reaches Roku devices/TVs too (Roku OS has shipped AirPlay 2 + HomeKit support since
-    Roku OS 9.4, 2020) - Google Cast does not, Roku has no native Cast protocol support at all.
+- [x] **P1 - Casting (Google Cast + AirPlay)** — Implemented (commit `3cb262b` + follow-ups).
+  - AirPlay via `video.webkitShowPlaybackTargetPicker()` on the existing `<video>` element.
+  - Google Cast via Cast Web Sender SDK (default CAF receiver; no custom receiver).
+  - `/api/stream/[id]` returns the resolved absolute presigned S3 URL as JSON for Cast receivers
+    (see comment in `frontend/app/api/stream/[id]/route.ts`).
+  - TV device pairing (`/pair` + `POST /api/tv/pair/*`) lets a phone claim a session code shown on
+    a TV browser — separate from Cast/AirPlay, same "watch on the big screen" goal.
+- [x] **P1b - In-browser TV shell** — 2026-08-05
+  - `/tv` pairing → `/tv/home` 10-foot UI (rows, D-pad focus, overscan padding)
+  - `/tv/title/[id]` full-screen player without desktop chrome
+  - Root layout hides header/footer when `x-sessao-shell: tv` (middleware)
 - [ ] **P2 - LG webOS wrapper**
-  - webOS is a standards-based, Chromium-powered web-app platform. Jellyfin's `jellyfin-webos` client
-    shows the minimum viable investment is a thin native wrapper/login-shim around the existing hosted
-    web app, not a rewrite - same approach applies to this app's existing Next.js frontend.
+  - webOS is Chromium-based. Jellyfin's `jellyfin-webos` shows the MVP is a thin native
+    wrapper/login-shim around the hosted web app, not a rewrite.
+  - **Start here:** package `/tv` as the webOS start URL; pairing remains cold-start.
 - [ ] **P3 - HLS packaging**
-  - Only needed for AirPlay-2-direct-to-smart-TV and native tvOS playback, not basic Safari AirPlay or
-    Cast (both already work against plain progressive MP4).
-  - Apple's HLS spec requires fMP4/MPEG-TS containers - the current progressive MP4 doesn't conform,
-    so this is a real transcode/segment pipeline addition, not a config change.
-  - The current presigned-URL-per-request model (`/api/stream/[id]` redirect) doesn't cleanly extend
-    to a manifest referencing many segment URLs - needs its own design.
+  - Only needed for AirPlay-2-direct-to-smart-TV and native tvOS playback, not basic Safari AirPlay
+    or Cast (both work against progressive MP4).
+  - Requires fMP4/MPEG-TS segment pipeline + a stream model that can mint many segment URLs from
+    one auth session — not a config change.
+  - **Start here:** only pick this up if P2/webOS or a real tvOS need forces it; otherwise leave.
 - [ ] **P4 - Native Roku channel / native tvOS app**
-  - Roku: BrightScript/SceneGraph is a genuinely separate codebase, language, and UI paradigm from the
-    web frontend - no code or component reuse.
-  - tvOS: Apple deprecated the TVMLKit hybrid (web-ish) model at WWDC 2024 in favor of SwiftUI/UIKit -
-    there is no web-hosted path onto tvOS anymore, only a fully native Swift app.
-  - Both are the most expensive tier; defer until P1-P3 are shipped and real usage justifies it.
+  - Roku (BrightScript/SceneGraph) and tvOS (SwiftUI only post-WWDC 2024) are full rewrites.
+  - Defer until P1–P2 are used in practice and living-room demand is clear.
+  - **Start here:** do nothing until usage justifies it.
 
 ## Open Questions
 

@@ -157,6 +157,12 @@ pub struct EnrichedItem {
     /// don't support public objects.
     #[serde(default)]
     pub poster_s3_key: Option<String>,
+    /// When true, every object under `s3_key`/`s3_keys` is stored as SSESENC1
+    /// (chunked AES-256-GCM). The player must decrypt client-side with the
+    /// shared catalog key. Plaintext library rows stay `false` forever unless
+    /// re-uploaded encrypted. See rfcs/0006.
+    #[serde(default)]
+    pub encrypted: bool,
 }
 
 /// A downloadable extra alongside a course's lessons (PDF workbook, xlsx

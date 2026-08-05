@@ -280,6 +280,19 @@ every run.
   items) between runs, which mechanically moves every raw-count metric (torrent coverage, S3
   coverage) — always report gaps as a fraction of current total, not just a raw count, or trend
   comparisons across runs are meaningless.
+- **2026-08-05** — Phase 5 node snippet in the skill body is wrong on this catalog: use
+  `content_type` (not `media_type`/`type`), playable = `s3_key || s3_keys.length`, torrent-ready =
+  `torrent_file || torrent_options_720p.length` (counting only `torrent_options_720p` undercounts
+  badly — 193 vs 408). Keywords/similar *are* consumed now (`apply_keywords_backfill` +
+  `similar_backfill.json` → `/api/content/:id/similar`); the 2026-07-11 "dead-ended" note is
+  stale — fields stay empty *inside* `enriched_400.json` because merge is at boot from side
+  files (same pattern as awards). `award_entries` in the JSON is always `[]` for the same reason —
+  don't report "0 Oscars in catalog". RFC 0007 P1 (Cast/AirPlay + stream absolute URL + TV
+  pairing) shipped in code while Status stayed Draft — always grep `VideoPlayer`/`pair` before
+  treating multi-device as not-started. Stale `.download-picked-torrents.lock` with a dead PID is
+  common; check `ps -p` before calling the pipeline active. `original-titles-flagged.json` can be
+  100% dead ids — cross-check or drop. Uncommitted `caixote.config.ts` + `Dockerfile.pipeline` is
+  the real "in-progress infra" signal for acquisition scale.
 
 ---
 

@@ -472,6 +472,7 @@ export function VideoPlayer({
   autoplayNext = true,
   posterUrl = null,
   numberedTitles = false,
+  encrypted = false,
 }: {
   id: string;
   /** Movie/show title - only used as Cast metadata so the receiver's screen
@@ -493,6 +494,8 @@ export function VideoPlayer({
    * show's plain episode titles, so the list must not *also* prefix
    * ep.number or it doubles up ("5. 2.4 Fundamentos..."). */
   numberedTitles?: boolean;
+  /** SSESENC1 at rest — decrypt client-side before feeding <video> (RFC 0006). */
+  encrypted?: boolean;
 }) {
   const t = useT();
   const hasEpisodes = s3Keys.length > 1;
@@ -525,6 +528,69 @@ export function VideoPlayer({
   const streamUrl = hasEpisodes
     ? `/api/stream/${id}?episode=${selectedIndex + 1}`
     : `/api/stream/${id}`;
+  // When encrypted, we download + decrypt to a blob URL before the <video>
+  // can play. Plaintext keeps the presigned redirect URL as-is.
+  const [playableUrl, setPlayableUrl] = useState<string | null>(encrypted ? null : streamUrl);
+  const [decryptProgress, setDecryptProgress] = useState<number | null>(null);
+  const [decryptError, setDecryptError] = useState<string | null>(null);
+  const revokePlayableRef = useRef<(() => void) | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    revokePlayableRef.current?.();
+    revokePlayableRef.current = null;
+    setDecryptError(null);
+
+    if (!encrypted) {
+      setPlayableUrl(streamUrl);
+      setDecryptProgress(null);
+      return;
+    }
+
+    setPlayableUrl(null);
+    setDecryptProgress(0);
+    (async () => {
+      try {
+        const { loadCatalogKeyLocal } = await import("@/lib/crypto/catalog-key");
+        const { resolvePlayableUrl } = await import("@/lib/crypto/media");
+        // Stream route redirects by default; ?resolve=1 returns JSON { url }
+        // (same path Cast uses) so we can fetch ciphertext cross-origin.
+        const sep = streamUrl.includes("?") ? "&" : "?";
+        const streamRes = await fetch(`${streamUrl}${sep}resolve=1`);
+        if (!streamRes.ok) throw new Error(`stream ${streamRes.status}`);
+        const { url: absoluteUrl } = (await streamRes.json()) as { url: string };
+        const key = await loadCatalogKeyLocal();
+        const resolved = await resolvePlayableUrl(
+          absoluteUrl,
+          true,
+          key,
+          (loaded, total) => {
+            if (cancelled) return;
+            if (total && total > 0) setDecryptProgress(Math.round((loaded / total) * 100));
+          },
+        );
+        if (cancelled) {
+          resolved.revoke();
+          return;
+        }
+        revokePlayableRef.current = resolved.revoke;
+        setPlayableUrl(resolved.url);
+        setDecryptProgress(null);
+      } catch (e) {
+        if (!cancelled) {
+          setDecryptError(e instanceof Error ? e.message : "decrypt failed");
+          setDecryptProgress(null);
+        }
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+      revokePlayableRef.current?.();
+      revokePlayableRef.current = null;
+    };
+  }, [streamUrl, encrypted, retry]);
+
   const progressUrl = `/api/progress/${id}`;
   // 0 is the movie/no-episode sentinel, matching the backend schema.
   const episodeNumber = hasEpisodes ? selectedIndex + 1 : 0;
@@ -996,9 +1062,40 @@ export function VideoPlayer({
           customWidth ? "" : "max-w-[1600px]"
         }`}
       >
+        {(encrypted && !playableUrl) && (
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-black/80 text-sm text-zinc-200">
+            {decryptError ? (
+              <>
+                <p className="px-6 text-center text-red-300">{decryptError}</p>
+                <p className="px-6 text-center text-zinc-500">
+                  Unlock encryption from Account after login (catalog key), then retry.
+                </p>
+                <button
+                  type="button"
+                  className="rounded-full bg-white/10 px-4 py-2 hover:bg-white/20"
+                  onClick={() => setRetry((n) => n + 1)}
+                >
+                  Retry
+                </button>
+              </>
+            ) : (
+              <>
+                <p>Decrypting…</p>
+                {decryptProgress != null && (
+                  <div className="h-1.5 w-48 overflow-hidden rounded-full bg-white/10">
+                    <div
+                      className="h-full bg-[#f5c518] transition-all"
+                      style={{ width: `${decryptProgress}%` }}
+                    />
+                  </div>
+                )}
+              </>
+            )}
+          </div>
+        )}
         <video
           ref={videoRef}
-          key={`${streamUrl}-${retry}`}
+          key={`${playableUrl ?? streamUrl}-${retry}`}
           className="aspect-video w-full"
           poster={effectivePoster}
           onClick={togglePlay}
@@ -1026,7 +1123,7 @@ export function VideoPlayer({
           onCanPlay={() => setStatus("ready")}
           onError={() => setStatus("error")}
         >
-          <source src={streamUrl} type="video/mp4" />
+          {playableUrl && <source src={playableUrl} type="video/mp4" />}
           {episodeSubtitles.map((t) => (
             <track
               key={t.id}

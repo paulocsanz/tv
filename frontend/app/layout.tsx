@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -31,6 +32,8 @@ export default async function RootLayout({
 }>) {
   const locale = await getLocale();
   const t = getDictionary(locale);
+  const shell = (await headers()).get("x-sessao-shell");
+  const isTv = shell === "tv";
 
   return (
     <html
@@ -39,11 +42,13 @@ export default async function RootLayout({
     >
       <body className="flex min-h-screen flex-col bg-black text-zinc-100">
         <LocaleProvider locale={locale}>
-          <Header />
+          {!isTv && <Header />}
           <main className="flex-1">{children}</main>
-          <footer className="border-t border-white/5 px-4 py-6 text-center text-xs text-zinc-600 sm:px-8">
-            {t.footer.ratingsCredit}
-          </footer>
+          {!isTv && (
+            <footer className="border-t border-white/5 px-4 py-6 text-center text-xs text-zinc-600 sm:px-8">
+              {t.footer.ratingsCredit}
+            </footer>
+          )}
         </LocaleProvider>
       </body>
     </html>

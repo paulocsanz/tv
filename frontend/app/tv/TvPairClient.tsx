@@ -36,7 +36,8 @@ export function TvPairClient({ origin }: { origin: string }) {
       }
 
       if (res.ok) {
-        router.push("/");
+        // Land on the TV-optimized shell, not the desktop home page.
+        router.push("/tv/home");
         router.refresh();
         return;
       }

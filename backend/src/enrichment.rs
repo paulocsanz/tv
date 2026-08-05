@@ -642,5 +642,6 @@ pub async fn enrich_one(
         trailer_subtitles: Vec::new(),
         attachments: Vec::new(),
         poster_s3_key: None,
+        encrypted: false,
     }
 }

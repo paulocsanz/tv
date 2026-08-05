@@ -30,6 +30,15 @@ function LoginForm() {
       return;
     }
 
+    // Best-effort unlock of the catalog media key (RFC 0006). Failure here
+    // must not block login — plaintext titles still play without it.
+    try {
+      const { unlockCatalogKeyFromLogin } = await import("@/lib/crypto/catalog-key");
+      await unlockCatalogKeyFromLogin(password);
+    } catch {
+      // no wrap yet, or wrong-side stale wrap — ignore
+    }
+
     router.push(searchParams.get("next") ?? "/");
     router.refresh();
   }

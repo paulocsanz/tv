@@ -180,6 +180,84 @@ pub enum ChangePasswordError {
     Database(sqlx::Error),
 }
 
+/// Opaque AES-GCM wrap of the shared catalog media key, plus the salt used
+/// to derive the wrap key from the user's password (client-side only).
+/// Server never sees the plaintext catalog key — see RFC 0006.
+#[derive(Debug, Clone, Serialize)]
+pub struct CatalogKeyWrap {
+    /// Hex of: 12-byte IV || ciphertext || 16-byte GCM tag
+    pub wrapped_hex: String,
+    /// Hex of the wrap-key salt (16+ bytes)
+    pub salt_hex: String,
+}
+
+fn bytes_to_hex(bytes: &[u8]) -> String {
+    bytes.iter().map(|b| format!("{b:02x}")).collect()
+}
+
+/// Returns this user's stored wrap, if they have been bootstrapped for
+/// encrypted playback.
+pub async fn get_catalog_key_wrap(
+    pool: &PgPool,
+    user_id: i64,
+) -> Result<Option<CatalogKeyWrap>, sqlx::Error> {
+    let row: Option<(Option<Vec<u8>>, Option<Vec<u8>>)> = sqlx::query_as(
+        "SELECT catalog_key_wrap, catalog_key_wrap_salt FROM users WHERE id = $1",
+    )
+    .bind(user_id)
+    .fetch_optional(pool)
+    .await?;
+
+    let Some((Some(wrap), Some(salt))) = row else {
+        return Ok(None);
+    };
+    Ok(Some(CatalogKeyWrap {
+        wrapped_hex: bytes_to_hex(&wrap),
+        salt_hex: bytes_to_hex(&salt),
+    }))
+}
+
+/// Stores (or replaces) the caller's own catalog-key wrap. The bytes are
+/// opaque to the server — we only validate non-empty length.
+pub async fn set_catalog_key_wrap(
+    pool: &PgPool,
+    user_id: i64,
+    wrapped: &[u8],
+    salt: &[u8],
+) -> Result<(), sqlx::Error> {
+    sqlx::query(
+        "UPDATE users SET catalog_key_wrap = $1, catalog_key_wrap_salt = $2 WHERE id = $3",
+    )
+    .bind(wrapped)
+    .bind(salt)
+    .bind(user_id)
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// True if at least one user already has a wrap — used so only the first
+/// admin bootstrap generates a fresh catalog key; later users must receive
+/// a handoff (invite fragment, RFC 0006 P1) or have an admin re-wrap offline.
+pub async fn any_catalog_key_wrap_exists(pool: &PgPool) -> Result<bool, sqlx::Error> {
+    let exists: bool = sqlx::query_scalar(
+        "SELECT EXISTS(SELECT 1 FROM users WHERE catalog_key_wrap IS NOT NULL)",
+    )
+    .fetch_one(pool)
+    .await?;
+    Ok(exists)
+}
+
+pub fn hex_to_bytes(hex: &str) -> Option<Vec<u8>> {
+    if hex.len() % 2 != 0 {
+        return None;
+    }
+    (0..hex.len())
+        .step_by(2)
+        .map(|i| u8::from_str_radix(&hex[i..i + 2], 16).ok())
+        .collect()
+}
+
 pub async fn change_password(
     pool: &PgPool,
     user_id: i64,

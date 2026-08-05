@@ -1,6 +1,7 @@
 import { getContinueWatching, getMeOrNull, getUsageSummary } from "@/lib/api";
 import { ChangePasswordForm } from "@/components/ChangePasswordForm";
 import { PreferencesForm } from "@/components/PreferencesForm";
+import { EncryptionBootstrap } from "@/components/EncryptionBootstrap";
 import { getLocale, parseLocale } from "@/lib/i18n/locale";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 
@@ -87,6 +88,8 @@ export default async function AccountPage() {
           initialUiLocale={parseLocale(me.ui_locale)}
         />
       </section>
+
+      <EncryptionBootstrap isAdmin={me.is_admin} />
 
       <section>
         <h2 className="mb-3 text-lg font-semibold text-zinc-100">{t.account.passwordHeading}</h2>
