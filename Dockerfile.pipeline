@@ -1,0 +1,36 @@
+# Torrent → transcode → S3 pipeline worker for caixote.
+FROM node:22-bookworm-slim
+
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends aria2 ffmpeg ca-certificates \
+  && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev
+
+COPY download-picked-torrents.js transcode.js ./
+COPY lib/media-encryption.cjs /app/lib/media-encryption.cjs
+RUN mkdir -p /app/backend/data /data/downloads /data/backend/data
+COPY backend/data/enriched_400.json /app/backend/data/enriched_400.json
+
+# Seed catalog onto /data at first start inside the node process itself
+# (avoids a shell entrypoint that some microVM boots mishandle).
+COPY docker/pipeline-bootstrap.mjs /app/pipeline-bootstrap.mjs
+COPY docker/network-diag.mjs /app/network-diag.mjs
+
+ENV DOWNLOADS_DIR=/data/downloads \
+    PIPELINE_DATA_DIR=/data/backend/data \
+    ENRICHED_FILE=/data/backend/data/enriched_400.json \
+    PIPELINE_EVENTS_FILE=/data/pipeline-events.jsonl \
+    PIPELINE_LOCK_FILE=/data/.download-picked-torrents.lock \
+    FFMPEG_H264_ENCODER=libx264 \
+    FFMPEG_X264_PRESET=veryfast \
+    NODE_ENV=production \
+    # Force line-buffered-ish logging for microVM serial capture
+    NODE_OPTIONS=--trace-uncaught
+
+# No Docker VOLUME directive — caixote manages disks separately; anonymous
+# VOLUME metadata has caused empty mounts in some microVM boots.
+CMD ["node", "pipeline-bootstrap.mjs"]

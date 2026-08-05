@@ -1,0 +1,14 @@
+node_modules
+frontend/node_modules
+backend/target
+downloads
+downloaded_content
+.git
+*.log
+pipeline-console.log
+pipeline-events.jsonl
+.transcoded
+temp
+listening_to_music_lectures
+marx_capital_lectures
+yale_lectures

@@ -101,9 +101,60 @@
       "trailer_key": "czgc56Vfz4w",
       "enrichment_status": "ok",
       "torrent_file": "Life_on_Earth_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/life-on-earth-1979-tv/Life.on.Our.Planet.S01E07.Chapter.7.Inheriting.the.Earth.1080p.NF.WEB-DL.DDP5.1.Atmos.HDR.DV.HEVC-CMRG[eztv.re].mp4",
+      "s3_keys": [
+        "videos/life-on-earth-1979-tv/Life.on.Our.Planet.S01E07.Chapter.7.Inheriting.the.Earth.1080p.NF.WEB-DL.DDP5.1.Atmos.HDR.DV.HEVC-CMRG[eztv.re].mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/life-on-earth-1979-tv/Life.on.Our.Planet.S01E07.Chapter.7.Inheriting.the.Earth.1080p.NF.WEB-DL.DDP5.1.Atmos.HDR.DV.HEVC-CMRG[eztv.re].eng.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "eng-2",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/life-on-earth-1979-tv/Life.on.Our.Planet.S01E07.Chapter.7.Inheriting.the.Earth.1080p.NF.WEB-DL.DDP5.1.Atmos.HDR.DV.HEVC-CMRG[eztv.re].eng-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/life-on-earth-1979-tv/Life.on.Our.Planet.S01E07.Chapter.7.Inheriting.the.Earth.1080p.NF.WEB-DL.DDP5.1.Atmos.HDR.DV.HEVC-CMRG[eztv.re].spa.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "spa-2",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/life-on-earth-1979-tv/Life.on.Our.Planet.S01E07.Chapter.7.Inheriting.the.Earth.1080p.NF.WEB-DL.DDP5.1.Atmos.HDR.DV.HEVC-CMRG[eztv.re].spa-2.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/life-on-earth-1979-tv/Life.on.Our.Planet.S01E07.Chapter.7.Inheriting.the.Earth.1080p.NF.WEB-DL.DDP5.1.Atmos.HDR.DV.HEVC-CMRG[eztv.re].por.vtt"
+        },
+        {
+          "episode": 1,
+          "id": "por-2",
+          "lang": "por",
+          "label": "Portuguese",
+          "forced": false,
+          "s3_key": "videos/life-on-earth-1979-tv/Life.on.Our.Planet.S01E07.Chapter.7.Inheriting.the.Earth.1080p.NF.WEB-DL.DDP5.1.Atmos.HDR.DV.HEVC-CMRG[eztv.re].por-2.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -5935,6 +5986,14 @@
           "size": "38.4 GB",
           "provider": "ThePirateBay",
           "contentScore": 800
+        },
+        {
+          "title": "Justice League Unlimited (Season 2) 720p iTunes",
+          "magnet": "magnet:?xt=urn:btih:FF3550406B9F1BD632796AEC70CD2DE6D70337DA&dn=Justice%20League%20Unlimited%20(Season%202)%20720p%20iTunes&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce",
+          "seeders": 5,
+          "size": "3.6 GB",
+          "provider": "ThePirateBay",
+          "contentScore": 800
         }
       ],
       "current_torrent_index_720p": 0,
@@ -8148,7 +8207,28 @@
         "videos/six-feet-under-2001-tv/Six Feet Under - S05E09 - Ecotone.mp4",
         "videos/six-feet-under-2001-tv/Six Feet Under - S05E11 - Static.mp4",
         "videos/six-feet-under-2001-tv/Six Feet Under - S05E10 - All Alone.mp4",
-        "videos/six-feet-under-2001-tv/Six Feet Under - S05E12 - Everyone's Waiting.mp4"
+        "videos/six-feet-under-2001-tv/Six Feet Under - S05E12 - Everyone's Waiting.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S01E05 - An Open Book.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S01E07 - Brotherhood.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S01E08 - Crossroads.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S01E11 - The Trip.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S01E13 - Knock, Knock.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S02E01 - In the Game.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S04E04 - Can I Come Up Now.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S04E05 - That's My Dog.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S04E06 - Terror Starts at Home.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S04E07 - The Dare.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S04E11 - Bomb Shelter.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S04E12 - Untitled.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S05E01 - A Coat of White Primer.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S05E02 - Dancing for Me.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S01E01 - Pilot.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S01E02 - The Will.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S01E03 - The Foot.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S02E02 - Out, Out, Brief Candle.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S04E08 - Coming and Going.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S04E09 - Grinding the Corn.mp4",
+        "videos/six-feet-under-2001-tv/Six Feet Under - S04E10 - The Black Forest.mp4"
       ],
       "subtitles": [
         {
@@ -8262,6 +8342,174 @@
           "label": "English",
           "forced": false,
           "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S05E12 - Everyone's Waiting.eng.vtt"
+        },
+        {
+          "episode": 16,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S01E05 - An Open Book.eng.vtt"
+        },
+        {
+          "episode": 17,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S01E07 - Brotherhood.eng.vtt"
+        },
+        {
+          "episode": 18,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S01E08 - Crossroads.eng.vtt"
+        },
+        {
+          "episode": 19,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S01E11 - The Trip.eng.vtt"
+        },
+        {
+          "episode": 20,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S01E13 - Knock, Knock.eng.vtt"
+        },
+        {
+          "episode": 21,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S02E01 - In the Game.eng.vtt"
+        },
+        {
+          "episode": 22,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S04E04 - Can I Come Up Now.eng.vtt"
+        },
+        {
+          "episode": 23,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S04E05 - That's My Dog.eng.vtt"
+        },
+        {
+          "episode": 24,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S04E06 - Terror Starts at Home.eng.vtt"
+        },
+        {
+          "episode": 25,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S04E07 - The Dare.eng.vtt"
+        },
+        {
+          "episode": 26,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S04E11 - Bomb Shelter.eng.vtt"
+        },
+        {
+          "episode": 27,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S04E12 - Untitled.eng.vtt"
+        },
+        {
+          "episode": 28,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S05E01 - A Coat of White Primer.eng.vtt"
+        },
+        {
+          "episode": 29,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S05E02 - Dancing for Me.eng.vtt"
+        },
+        {
+          "episode": 30,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S01E01 - Pilot.eng.vtt"
+        },
+        {
+          "episode": 31,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S01E02 - The Will.eng.vtt"
+        },
+        {
+          "episode": 32,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S01E03 - The Foot.eng.vtt"
+        },
+        {
+          "episode": 33,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S02E02 - Out, Out, Brief Candle.eng.vtt"
+        },
+        {
+          "episode": 34,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S04E08 - Coming and Going.eng.vtt"
+        },
+        {
+          "episode": 35,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S04E09 - Grinding the Corn.eng.vtt"
+        },
+        {
+          "episode": 36,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S04E10 - The Black Forest.eng.vtt"
         }
       ],
       "episodes": [],
@@ -8334,7 +8582,8 @@
       "genres_pt": [
         "Drama"
       ],
-      "rated_pt": "18"
+      "rated_pt": "18",
+      "s3_key": "videos/six-feet-under-2001-tv/Six Feet Under - S01E04 - Familia.mp4"
     },
     {
       "id": "one-flew-over-the-cuckoo-s-nest-1975-movie",
@@ -15921,7 +16170,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 3,
+      "current_torrent_index_720p": 4,
       "torrent_options": [
         {
           "title": "The Venture Bros Radiant Is The Blood Of The Baboon Heart 2023 1080p AMZN WEB-DL",
@@ -19432,8 +19681,19 @@
       "trailer_key": "ZQWqIA1-kvA",
       "enrichment_status": "ok",
       "torrent_file": "Sunset_Boulevard_x",
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/sunset-boulevard-1950-movie/Sunset.Blvd.1950.PROPER.720p.BluRay.X264-AMIABLE.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/sunset-boulevard-1950-movie/Sunset.Blvd.1950.PROPER.720p.BluRay.X264-AMIABLE.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -19496,7 +19756,8 @@
       "genres_pt": [
         "Drama"
       ],
-      "rated_pt": "L"
+      "rated_pt": "L",
+      "s3_key": "videos/sunset-boulevard-1950-movie/Sunset.Blvd.1950.PROPER.720p.BluRay.X264-AMIABLE.mp4"
     },
     {
       "id": "the-cove-2009-movie",
@@ -19837,8 +20098,19 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Thor_x",
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/taxi-1978-tv/A.Taxi.Driver.2017.720p.HDRip.x264.AAC.HORiZON-ArtSubs.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 1,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/taxi-1978-tv/A.Taxi.Driver.2017.720p.HDRip.x264.AAC.HORiZON-ArtSubs.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -19916,7 +20188,8 @@
       "genres_pt": [
         "Comédia",
         "Drama"
-      ]
+      ],
+      "s3_key": "videos/taxi-1978-tv/A.Taxi.Driver.2017.720p.HDRip.x264.AAC.HORiZON-ArtSubs.mp4"
     },
     {
       "id": "doctor-who-1963-tv",
@@ -20283,7 +20556,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 3,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Spider-man into the spider-verse 2018 1080p-dual-lat-cinecalidad is mp4",
@@ -20681,7 +20954,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 3,
+      "current_torrent_index_720p": 4,
       "torrent_options": [
         {
           "title": "Verdades Secretas 2015 (1080p) LAPUMiA",
@@ -22121,7 +22394,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 2,
+      "current_torrent_index_720p": 3,
       "title_pt": "Chapolin Colorado",
       "plot_pt": "Um atrapalhado super-herói enfrenta vilões e resolve problemas com muita astúcia, coragem e confusão, sempre ajudando os outros com seu coração puro e suas soluções improvisadas.",
       "genres_pt": [
@@ -22651,8 +22924,19 @@
       "trailer_key": "fSertCreSBg",
       "enrichment_status": "ok",
       "torrent_file": "Poldark_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/poldark-1975-tv/Poldark S02E02 Episode 2.mp4",
+      "s3_keys": [
+        "videos/poldark-1975-tv/Poldark S02E02 Episode 2.mp4",
+        "videos/poldark-1975-tv/Poldark S02E01 Episode 1.mp4",
+        "videos/poldark-1975-tv/Poldark S02E03 Episode 3.mp4",
+        "videos/poldark-1975-tv/Poldark S02E04 Episode 4.mp4",
+        "videos/poldark-1975-tv/Poldark S02E05 Episode 5.mp4",
+        "videos/poldark-1975-tv/Poldark S02E06 Episode 6.mp4",
+        "videos/poldark-1975-tv/Poldark S02E07 Episode 7.mp4",
+        "videos/poldark-1975-tv/Poldark S02E08 Episode 8.mp4",
+        "videos/poldark-1975-tv/Poldark S02E09 Episode 9.mp4",
+        "videos/poldark-1975-tv/Poldark S02E10 Episode 10.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -22699,7 +22983,7 @@
           "contentScore": 1000
         }
       ],
-      "current_torrent_index_720p": 3,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Poldark Season 1 S01 (1080p Bluray x265 HEVC 10bit AAC 5.1 Tigol",
@@ -23944,7 +24228,7 @@
           "contentScore": 10
         }
       ],
-      "current_torrent_index_720p": 3,
+      "current_torrent_index_720p": 4,
       "title_pt": "O Mecanismo",
       "plot_pt": "Uma investigação sobre suspeitas de corrupção envolvendo estatais e empreiteiras se torna um dos maiores escândalos políticos do Brasil. Inspirada em fatos reais.",
       "genres_pt": [
@@ -31468,9 +31752,19 @@
       "trailer_key": "NRF-Pba3QrE",
       "enrichment_status": "ok",
       "torrent_file": "The_Invisible_Life_of_Eurídice_Gusmão_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/the-invisible-life-of-euridice-gusmao-2019-movie/A.Vida.Invisivel.2019.1080p.x264.DDP-5.1.Eng-sub.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-invisible-life-of-euridice-gusmao-2019-movie/A.Vida.Invisivel.2019.1080p.x264.DDP-5.1.Eng-sub.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -31490,7 +31784,8 @@
       "genres_pt": [
         "Drama"
       ],
-      "rated_pt": "16"
+      "rated_pt": "16",
+      "s3_key": "videos/the-invisible-life-of-euridice-gusmao-2019-movie/A.Vida.Invisivel.2019.1080p.x264.DDP-5.1.Eng-sub.mp4"
     },
     {
       "id": "beauty-and-the-beast-1991-movie",
@@ -31943,22 +32238,12 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Caminho_das_Índias_x",
-      "s3_key": null,
       "s3_keys": [],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
-      "torrent_options_720p": [
-        {
-          "title": "Caminho das Indias 2009 - Novela Completa (720p)",
-          "magnet": "magnet:?xt=urn:btih:D8AB46389001633C7E78B8DA2B5A12E069183BBB&dn=Caminho+das+Indias+2009+-+Novela+Completa+%28720p%29&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.ololosh.space%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dump.cl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker-udp.gbitt.info%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker01-msk-virt.corbina.net%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.free-tracker.ga%3A6969%2Fannounce&tr=udp%3A%2F%2Fns-1.x-fins.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fleet-tracker.moe%3A1337%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.open-internet.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Fdenis.stalker.upeer.me%3A6969%2Fannounce",
-          "seeders": 6,
-          "size": "146.98 GB",
-          "provider": "Limetorrents",
-          "contentScore": 800
-        }
-      ],
+      "torrent_options_720p": [],
       "current_torrent_index_720p": 0,
       "title_pt": "Caminho das Índias",
       "plot_pt": "Ambientada na Índia e no Brasil, a trama conta a saga de Maya e Raj, que têm um casamento arranjado. Primeira novela brasileira a vencer o Prêmio Emmy Internacional.",
@@ -34151,7 +34436,9 @@
       "trailer_key": "1oRTFqfy-gc",
       "enrichment_status": "ok",
       "torrent_file": "Behind_the_Sun_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/behind-the-sun-2001-movie/[DBD-Raws][Men Behind the Sun][1080P][BDRip][HEVC-10bit][FLAC].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -34174,7 +34461,8 @@
         "Thriller",
         "Romance"
       ],
-      "rated_pt": "12"
+      "rated_pt": "12",
+      "s3_key": "videos/behind-the-sun-2001-movie/[DBD-Raws][Men Behind the Sun][1080P][BDRip][HEVC-10bit][FLAC].mp4"
     },
     {
       "id": "secrets-lies-1996-movie",
@@ -35833,7 +36121,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 2,
+      "current_torrent_index_720p": 4,
       "torrent_options": [
         {
           "title": "Plano em Fam&iacute;lia 2023 The Family Plan 1080p x264 DUAL AlienVolt",
@@ -36259,8 +36547,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Barren_Lives_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/barren-lives-1963-movie/[1963] Vidas Secas - Nelson Pereira dos Santos.mp4",
+      "s3_keys": [
+        "videos/barren-lives-1963-movie/[1963] Vidas Secas - Nelson Pereira dos Santos.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -36281,7 +36571,7 @@
           "provider": "Torrentio/Torrentio"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "title_pt": "Vidas Secas",
       "plot_pt": "Uma família miserável tenta escapar da seca no sertão nordestino. Fabiano (Átila Iório), Sinhá Vitória (Maria Ribeiro), seus dois filhos e a cachorra Baleia vagam sem destino e já quase sem esperanças pelos confins do interior, sobrevivendo às forças da natureza e à crueldade dos homens. Adaptação da obra de Graciliano Ramos.",
       "genres_pt": [
@@ -42164,9 +42454,20 @@
       "trailer_key": "dNjCY2xGn7w",
       "enrichment_status": "ok",
       "torrent_file": "The_Town_x",
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/the-clown-2011-movie/The.Clown.2011.m720p.BluRay.x264-BiRD.mp4",
+      "s3_keys": [
+        "videos/the-clown-2011-movie/The.Clown.2011.m720p.BluRay.x264-BiRD.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/the-clown-2011-movie/The.Clown.2011.m720p.BluRay.x264-BiRD.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -42407,8 +42708,9 @@
       "trailer_key": "R2Iz7u9dQQw",
       "enrichment_status": "ok",
       "torrent_file": "Bacurau_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/bacurau-2019-movie/Bacurau.2019.720p.WEB-DL.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -42455,7 +42757,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 3,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Bacurau 2019 PORUTUGESE 1080p BluRay H264",
@@ -42506,7 +42808,8 @@
         "Faroeste",
         "Thriller"
       ],
-      "rated_pt": "16"
+      "rated_pt": "16",
+      "s3_key": "videos/bacurau-2019-movie/Bacurau.2019.720p.WEB-DL.mp4"
     },
     {
       "id": "the-invisible-collection-2012-movie",
@@ -43788,7 +44091,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 2,
+      "current_torrent_index_720p": 1,
       "torrent_options": [
         {
           "title": "Avengers: Age of Ultron (2015) 1080p BrRip x264 - YIFY",
@@ -45484,8 +45787,27 @@
       "trailer_key": "hitjyeros2s",
       "enrichment_status": "ok",
       "torrent_file": "My_Name_Ain't_Johnny_x",
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_keys": [
+        "videos/my-name-ain-t-johnny-2008-movie/Meu.Nome.Nao.E.Johnny.2008.PORTUGUESE.1080p.AMZN.WEB-DL.DDP2.0.H.264-alfaHD.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/my-name-ain-t-johnny-2008-movie/Meu.Nome.Nao.E.Johnny.2008.PORTUGUESE.1080p.AMZN.WEB-DL.DDP2.0.H.264-alfaHD.eng.vtt"
+        },
+        {
+          "episode": 0,
+          "id": "spa",
+          "lang": "spa",
+          "label": "Spanish",
+          "forced": false,
+          "s3_key": "videos/my-name-ain-t-johnny-2008-movie/Meu.Nome.Nao.E.Johnny.2008.PORTUGUESE.1080p.AMZN.WEB-DL.DDP2.0.H.264-alfaHD.spa.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -45506,7 +45828,8 @@
         "Crime",
         "Drama"
       ],
-      "rated_pt": "14"
+      "rated_pt": "14",
+      "s3_key": "videos/my-name-ain-t-johnny-2008-movie/Meu.Nome.Nao.E.Johnny.2008.PORTUGUESE.1080p.AMZN.WEB-DL.DDP2.0.H.264-alfaHD.mp4"
     },
     {
       "id": "iracema-uma-transa-amazonica-1975-movie",
@@ -45579,7 +45902,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 2,
+      "current_torrent_index_720p": 3,
       "title_pt": "Iracema: Uma Transa Amazônica",
       "plot_pt": "A narrativa acompanha a jovem Iracema (Edna de Cassia) e sua jornada pela Rodovia Transamazônica, uma estrada que, em 1974, simbolizava o otimismo da propaganda militar. Ao lado de Tião Brasil Grande (Paulo Cesar Pereio), ela embarca em uma jornada que a tira das ruas de Belém e a leva para o interior da floresta amazônica. Pelo caminho, o filme expõe as complexas dinâmicas de poder, a exploração, e a violência que permeiam a região.",
       "genres_pt": [
@@ -45895,7 +46218,9 @@
       "trailer_key": "06lr4b9vA60",
       "enrichment_status": "ok",
       "torrent_file": "Black_God,_White_Devil_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/black-god-white-devil-1964-movie/Deus.e.o.Diabo.na.Terra.do.Sol_Glauber.Rocha.1964.DVDRip.Xvid.AC3.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -45945,7 +46270,8 @@
         "Faroeste",
         "Drama"
       ],
-      "rated_pt": "18"
+      "rated_pt": "18",
+      "s3_key": "videos/black-god-white-devil-1964-movie/Deus.e.o.Diabo.na.Terra.do.Sol_Glauber.Rocha.1964.DVDRip.Xvid.AC3.mp4"
     },
     {
       "id": "limite-1931-movie",
@@ -46543,7 +46869,7 @@
           "provider": "Torrentio/YTS"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "The Movie of My Life 2017 1080p WEBRip",
@@ -48563,7 +48889,7 @@
           "provider": "Torrentio/RARBG"
         }
       ],
-      "current_torrent_index_720p": 0,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Antonio.Das.Mortes.1969.PORTUGUESE.PROPER.1080p.WEBRip.x265-VXT",
@@ -49070,7 +49396,9 @@
       "trailer_key": "6u8ggerDcwg",
       "enrichment_status": "ok",
       "torrent_file": null,
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/doctor-sleep-2019-movie/Doctor.Sleep.2019.720p.BluRay.x264.AAC-[YTS.LT].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -49117,7 +49445,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 2,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Doctor.Sleep.2019.1080p.WEBRip.x264.AAC5.1-MP4",
@@ -49167,7 +49495,8 @@
         "Terror",
         "Fantasia"
       ],
-      "rated_pt": "16"
+      "rated_pt": "16",
+      "s3_key": "videos/doctor-sleep-2019-movie/Doctor.Sleep.2019.720p.BluRay.x264.AAC-[YTS.LT].mp4"
     },
     {
       "id": "a-praca-e-nossa-1987-tv",
@@ -49533,7 +49862,9 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Madame_Satã_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/madame-sata-2002-movie/masa.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -49569,7 +49900,8 @@
         "Drama",
         "Romance",
         "História"
-      ]
+      ],
+      "s3_key": "videos/madame-sata-2002-movie/masa.mp4"
     },
     {
       "id": "xuxa-1986-tv",
@@ -51344,7 +51676,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 2,
+      "current_torrent_index_720p": 0,
       "title_pt": "De Pernas pro Ar 3",
       "plot_pt": "Alice Segretto está mais agitada do que nunca. O sucesso de sua rede de lojas Sexy Delícia leva a empresária a um tour pelo mundo. Trabalhando sem parar, Alice percebe que não tem conseguido acompanhar sua família, que também cresceu. O conflito se instala: como conciliar essa vida insana com a sua família? Impetuosa, Alice toma uma decisão inusitada. Decide se aposentar e entregar o comando dos negócios para sua mãe. Mas quando surge uma competidora com potencial para roubar a cena, a vida de Alice fica mais uma vez de pernas pro ar.",
       "genres_pt": [
@@ -52197,7 +52529,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 3,
       "title_pt": "Narradores de Javé",
       "plot_pt": "Somente uma ameaça à própria existência pode mudar a rotina dos habitantes do pequeno vilarejo de Javé. É aí que eles se deparam com o anúncio de que a cidade pode desaparecer sob as águas de uma enorme usina hidrelétrica. Em resposta à notícia devastadora, a comunidade adota uma ousada estratégia: decide preparar um documento contando todos os grandes acontecimentos heróicos de sua história, para que Javé possa escapar da destruição. Como a maioria dos moradores são analfabetos, a primeira tarefa é encontrar alguém que possa escrever as histórias.",
       "genres_pt": [
@@ -52962,7 +53294,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 4,
       "torrent_options": [
         {
           "title": "Gonzaga - De Pai pra Filho 2012 WEB-DL 1080p x264 NACIONAL 5.1",
@@ -55168,7 +55500,9 @@
       "trailer_key": "xcJF-5MPHX4",
       "enrichment_status": "ok",
       "torrent_file": "At_Play_in_the_Fields_of_the_Lord_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/at-play-in-the-fields-of-the-lord-1991-movie/At Play In The Fields of The Lord (1991) DVDRip Oldies.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -55216,7 +55550,8 @@
       "genres_pt": [
         "Drama",
         "Romance"
-      ]
+      ],
+      "s3_key": "videos/at-play-in-the-fields-of-the-lord-1991-movie/At Play In The Fields of The Lord (1991) DVDRip Oldies.mp4"
     },
     {
       "id": "familia-e-tudo-2024-tv",
@@ -57360,7 +57695,7 @@
           "provider": "Torrentio/YTS"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "Neon Bull 2015 1080p BluRay",
@@ -58685,9 +59020,20 @@
       "trailer_key": "Q0CbN8sfihY",
       "enrichment_status": "ok",
       "torrent_file": null,
-      "s3_key": null,
-      "s3_keys": [],
-      "subtitles": [],
+      "s3_key": "videos/star-wars-the-last-jedi-2017-movie/Star Wars Episode VIII The Last Jedi 2017 720p ITV WEB-DL AAC 2 0 H 264-PiRaTeS.mp4",
+      "s3_keys": [
+        "videos/star-wars-the-last-jedi-2017-movie/Star Wars Episode VIII The Last Jedi 2017 720p ITV WEB-DL AAC 2 0 H 264-PiRaTeS.mp4"
+      ],
+      "subtitles": [
+        {
+          "episode": 0,
+          "id": "eng",
+          "lang": "eng",
+          "label": "English",
+          "forced": false,
+          "s3_key": "videos/star-wars-the-last-jedi-2017-movie/Star Wars Episode VIII The Last Jedi 2017 720p ITV WEB-DL AAC 2 0 H 264-PiRaTeS.eng.vtt"
+        }
+      ],
       "episodes": [],
       "keywords": [],
       "award_entries": [],
@@ -59586,7 +59932,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "title_pt": "Minha Mãe é uma Peça: O Filme",
       "plot_pt": "Dona Hermínia, uma mulher de meia idade, aposentada e sozinha, tem como preocupação maior cuidar dos filhos. Mas agora que eles cresceram e não param de confrontá-la, a solução será dar um gelo e sair de casa. Sem um trabalho ou um companheiro, a dona de casa resolve desabafar com a tia idosa.",
       "genres_pt": [
@@ -61189,7 +61535,9 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": null,
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/s-o-s-women-to-the-sea-2-2015-movie/S.O.S..Women.To.The.Sea.2014.720p.WEBRip.x264.AAC-[YTS.MX].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -61222,7 +61570,8 @@
         "Comédia",
         "Romance"
       ],
-      "rated_pt": "14"
+      "rated_pt": "14",
+      "s3_key": "videos/s-o-s-women-to-the-sea-2-2015-movie/S.O.S..Women.To.The.Sea.2014.720p.WEBRip.x264.AAC-[YTS.MX].mp4"
     },
     {
       "id": "since-you-went-away-1944-movie",
@@ -61355,8 +61704,10 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Columbo_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/quilombo-1984-movie/Quilombo (1984) DVDRip.x264-Distanasia.mp4",
+      "s3_keys": [
+        "videos/quilombo-1984-movie/Quilombo (1984) DVDRip.x264-Distanasia.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -61398,7 +61749,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "title_pt": "Quilombo",
       "plot_pt": "Em torno de 1650, um grupo de escravos se rebela num engenho de Pernambuco e ruma ao Quilombo dos Palmares, onde uma nação de ex-escravos fugidos resiste ao cerco colonial. Entre eles, está Ganga Zumba, príncipe africano e futuro líder de Palmares, durante muitos anos. Mais tarde, seu herdeiro e afilhado, Zumbi, contestará as idéias conciliatórias de Ganga Zumba, enfrentando o maior exército jamais visto na história colonial brasileira.",
       "genres_pt": [
@@ -62612,7 +62963,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "title_pt": "É Proibido Fumar",
       "plot_pt": "Baby vive sozinha no apartamento que herdou da mãe e dá aulas de violão para alguns alunos. Quando Max se muda para o apartamento vizinho, Baby se apaixona por ele e está disposta a enfrentar seu vício compulsivo por cigarro.",
       "genres_pt": [
@@ -62737,7 +63088,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "title_pt": "A Festa da Menina Morta",
       "plot_pt": "Há 20 anos uma pequena população ribeirinha do alto Amazonas comemora a Festa da Menina Morta. O evento celebra o milagre realizado por Santinho, que após o suicídio da mãe recebeu em suas mãos, da boca de um cachorro, os trapos do vestido de uma menina desaparecida. A menina jamais foi encontrada, mas o tecido rasgado e manchado de sangue passa a ser adorado e considerado sagrado. A festa cresceu indiferente à dor do irmão da menina morta, Tadeu. A cada ano as pessoas visitam o local para rezar, pedir e aguardar as “revelações” da menina, que através de Santinho se manifestam no ápice da cerimônia.",
       "genres_pt": [
@@ -63273,8 +63624,10 @@
       "trailer_key": "UqxnFHoKwzE",
       "enrichment_status": "ok",
       "torrent_file": null,
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/terminator-dark-fate-2019-movie/Terminator.Dark.Fate.2019.720p.WEBRip.x264-[YTS.LT].mp4",
+      "s3_keys": [
+        "videos/terminator-dark-fate-2019-movie/Terminator.Dark.Fate.2019.720p.WEBRip.x264-[YTS.LT].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -63999,7 +64352,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "De Pernas Pro Ar 2 2013 1080p BluRay x264-BKZ",
@@ -64203,8 +64556,10 @@
       "trailer_key": "GGkYG6yp7KE",
       "enrichment_status": "ok",
       "torrent_file": "Futuro_Beach_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_key": "videos/futuro-beach-2014-movie/Praia.Do.Futuro.2014.720p.WEBRip.x264.AAC-[YTS.MX].mp4",
+      "s3_keys": [
+        "videos/futuro-beach-2014-movie/Praia.Do.Futuro.2014.720p.WEBRip.x264.AAC-[YTS.MX].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -64227,7 +64582,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "torrent_options": [
         {
           "title": "Praia Do Futuro (2014) (1080p) [WEBRip] [5 1] [YTS MX]",
@@ -64978,7 +65333,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index_720p": 3,
+      "current_torrent_index_720p": 4,
       "torrent_options": [
         {
           "title": "Star.Wars.Episode.IX.The.Rise.Of.Skywalker.2019.PROPER.1080p.BluRay.x265-RBG",
@@ -65418,8 +65773,9 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Love_for_Sale_x",
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/love-for-sale-2006-movie/O Céu de Suely (Karim Aïnouz, 2006).mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -65440,13 +65796,14 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 0,
       "title_pt": "O Céu de Suely",
       "plot_pt": "Hermila (Hermila Guedes) é uma jovem de 21 anos que está de volta à sua cidade-natal, a pequena Iguatu, localizada no interior do Ceará. Ela volta juntamente com seu filho, Mateuzinho, e aguarda para daqui a algumas semanas a chegada de Mateus, pai da criança, que ficou em São Paulo para acertar assuntos pendentes. Porém o tempo passa e Mateus simplesmente desaparece. Querendo deixar o lugar de qualquer forma, Hermila tem uma idéia inusitada: rifar seu próprio corpo para conseguir dinheiro suficiente para comprar passagens de ônibus para longe e iniciar nova vida.",
       "genres_pt": [
         "Drama"
       ],
-      "rated_pt": "16"
+      "rated_pt": "16",
+      "s3_key": "videos/love-for-sale-2006-movie/O Céu de Suely (Karim Aïnouz, 2006).mp4"
     },
     {
       "id": "encontro-com-fatima-bernardes-2012-tv",
@@ -65535,7 +65892,9 @@
       "trailer_key": null,
       "enrichment_status": "partial",
       "torrent_file": "Reality_Z_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/reality-z-2020-tv/07.05.2026_Yurievij_Family Fun 2_Reality Junkies_720p.mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -65583,7 +65942,8 @@
       "genres_pt": [
         "Sci-Fi & Fantasy"
       ],
-      "rated_pt": "18"
+      "rated_pt": "18",
+      "s3_key": "videos/reality-z-2020-tv/07.05.2026_Yurievij_Family Fun 2_Reality Junkies_720p.mp4"
     },
     {
       "id": "me-you-them-2000-movie",
@@ -66511,7 +66871,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 3,
       "title_pt": "Era Uma Vez Eu, Verônica",
       "plot_pt": "Verônica, uma estudante de medicina recém-formada, passa por um momento de reflexão e incertezas. Ela questiona não só suas escolhas profissionais, mas também suas relações mais í­ntimas e até mesmo sua capacidade de lidar com a vida.",
       "genres_pt": [
@@ -67063,7 +67423,7 @@
           "provider": "Torrentio/RARBG"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "My.Hindu.Friend.2015.1080p.BluRay.x265-RARBG",
@@ -67138,7 +67498,9 @@
       "trailer_key": "bi5cpMeC4G0",
       "enrichment_status": "ok",
       "torrent_file": "Kill_Me_Please_x",
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/kill-me-please-2015-movie/Kill.Me.Please.2015.720p.WEBRip.x264.AAC-[YTS.MX].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -67160,7 +67522,8 @@
         "Thriller",
         "Drama",
         "Terror"
-      ]
+      ],
+      "s3_key": "videos/kill-me-please-2015-movie/Kill.Me.Please.2015.720p.WEBRip.x264.AAC-[YTS.MX].mp4"
     },
     {
       "id": "she-done-him-wrong-1933-movie",
@@ -68042,7 +68405,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "torrent_options": [
         {
           "title": "De.Pernas.pro.Ar.2010.PORTUGUESE.1080p.BluRay.x265-VXT",
@@ -68221,7 +68584,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 2,
+      "current_torrent_index": 4,
       "title_pt": "A Fúria dos Sete Homens",
       "plot_pt": "Os sete pistoleiros magníficos cavalgam novamente! Lee Van Cleef é o xerife de uma cidade do Arizona que tem a mulher sequestrada e morta por um assassino chamado Donavan. Para achar o criminoso, o xerife liberta alguns prisioneiros da cadeia com a promessa do perdão se eles o ajudarem a capturar Donavan. A trilha leva os sete homens a uma pequena cidade que foi massacrada. Num final tenso e cheio de tiroteios os sete homens encontram o seu destino!",
       "genres_pt": [
@@ -68446,7 +68809,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 2,
       "title_pt": "Lula, o Filho do Brasil",
       "plot_pt": "O filme conta a trajetória pessoal de Lula, o seu nascimento em 1945, quando no sertão pernambucano, Dona Lindu, uma mulher simples e de fortes valores morais, dá à luz o seu sétimo filho, Luiz Inácio da Silva, e enfrenta o abandono do marido e as dificuldades de criar seus filhos sozinha na cidade grande. Em 1980, Lula se torna o maior líder sindical do país e emerge como uma força política renovadora. Uma vida marcada por dificuldades, perdas e uma notável capacidade de superação.",
       "genres_pt": [
@@ -68604,8 +68967,9 @@
       "trailer_key": "-M34TbyG8Pc",
       "enrichment_status": "ok",
       "torrent_file": null,
-      "s3_key": null,
-      "s3_keys": [],
+      "s3_keys": [
+        "videos/guns-of-the-magnificent-seven-1969-movie/Guns.Of.The.Magnificent.Seven.1969.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4"
+      ],
       "subtitles": [],
       "episodes": [],
       "keywords": [],
@@ -68625,7 +68989,8 @@
       "plot_pt": "Os Sete Homens cavalgam novamente nesta sequência de uma das mais brilhantes sagas de faroeste da história do cinema. George Kennedy (Rebeldia Indomável) e James Whitmore (Um Sonho de Liberdade) assumem as rédeas de uma aventura corajosa e arrebatadora que não desaponta o espectador! Quando o famoso fora-da-lei Chris Adams (Kennedy) Recebe a oferta de uma enorme recompensa para libertar um jovem revolucionário mexicano da prisão, ele precisa começar reunindo um time da pesada de destemidos guerreiros. Juntos, esses ousados pistoleiros embarcam na aventura de suas vidas - e descobrem uma causa que vale mais do que uma fortuna em ouro.",
       "genres_pt": [
         "Faroeste"
-      ]
+      ],
+      "s3_key": "videos/guns-of-the-magnificent-seven-1969-movie/Guns.Of.The.Magnificent.Seven.1969.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4"
     },
     {
       "id": "trader-horn-1931-movie",
@@ -68755,7 +69120,7 @@
           "provider": "Torrentio/ThePirateBay"
         }
       ],
-      "current_torrent_index_720p": 1,
+      "current_torrent_index_720p": 3,
       "title_pt": "Luz nas Trevas: A Volta do Bandido da Luz Vermelha",
       "plot_pt": "O filme retrata a trajetória de Jorge Bronze, conhecido pelo codinome Tudo-ou-Nada (André Guerreiro). Ele é filho do famoso Bandido de Luz Vermelha (Ney Matogrosso), que assaltava casas de ricos paulistanos e foi transformado em ícone pelo jornal Notícias Populares. Por outro lado, aborda a vida de Luz Vermelha em um presídio de segurança máxima, mostrando como ele lida com a fama de ser um dos criminosos mais famosos do Brasil.",
       "genres_pt": [
@@ -68998,7 +69363,7 @@
           "contentScore": 800
         }
       ],
-      "current_torrent_index": 2,
+      "current_torrent_index": 3,
       "title_pt": "Golpe De Mestre 2",
       "genres_pt": [
         "Comédia",
