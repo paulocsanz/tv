@@ -1,0 +1,187 @@
+{
+  "generated_at": "2026-08-06T04:59:04.349Z",
+  "add": [
+    {
+      "title": "The Fresh Prince of Bel-Air",
+      "year": 1990,
+      "creator": "Andy Borowitz",
+      "imdb_rating": 7.9,
+      "origin": "International"
+    },
+    {
+      "title": "Bel-Air",
+      "year": 2022,
+      "creator": "Peacock",
+      "imdb_rating": 6.5,
+      "origin": "International"
+    },
+    {
+      "title": "Seinfeld",
+      "year": 1989,
+      "creator": "Larry David",
+      "imdb_rating": 8.9,
+      "origin": "International"
+    },
+    {
+      "title": "How I Met Your Mother",
+      "year": 2005,
+      "creator": "Carter Bays",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "creator": "Chuck Lorre",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Two and a Half Men",
+      "year": 2003,
+      "creator": "Chuck Lorre",
+      "imdb_rating": 7,
+      "origin": "International"
+    },
+    {
+      "title": "Everybody Loves Raymond",
+      "year": 1996,
+      "creator": "Philip Rosenthal",
+      "imdb_rating": 7.3,
+      "origin": "International"
+    },
+    {
+      "title": "That '70s Show",
+      "year": 1998,
+      "creator": "Mark Brazill",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Full House",
+      "year": 1987,
+      "creator": "Jeff Franklin",
+      "imdb_rating": 6.8,
+      "origin": "International"
+    },
+    {
+      "title": "Family Matters",
+      "year": 1989,
+      "creator": "William Bickley",
+      "imdb_rating": 6.6,
+      "origin": "International"
+    },
+    {
+      "title": "Married... with Children",
+      "year": 1987,
+      "creator": "Ron Leavitt",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Cheers",
+      "year": 1982,
+      "creator": "James Burrows",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Frasier",
+      "year": 1993,
+      "creator": "David Angell",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Scrubs",
+      "year": 2001,
+      "creator": "Bill Lawrence",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Brooklyn Nine-Nine",
+      "year": 2013,
+      "creator": "Dan Goor",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Modern Family",
+      "year": 2009,
+      "creator": "Steven Levitan",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The King of Queens",
+      "year": 1998,
+      "creator": "Michael J. Weithorn",
+      "imdb_rating": 7.3,
+      "origin": "International"
+    },
+    {
+      "title": "Will & Grace",
+      "year": 1998,
+      "creator": "David Kohan",
+      "imdb_rating": 7.4,
+      "origin": "International"
+    },
+    {
+      "title": "Malcolm in the Middle",
+      "year": 2000,
+      "creator": "Linwood Boomer",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Sai de Baixo",
+      "year": 1996,
+      "creator": "Miguel Falabella",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Os Trapalhões",
+      "year": 1966,
+      "creator": "Wilton Franco",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Tapas & Beijos",
+      "year": 2011,
+      "creator": "Cláudio Paiva",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Toma Lá, Dá Cá",
+      "year": 2007,
+      "creator": "Miguel Falabella",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Pé na Cova",
+      "year": 2013,
+      "creator": "Miguel Falabella",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Vai Que Cola",
+      "year": 2013,
+      "creator": "Multishow",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Escolinha do Professor Raimundo",
+      "year": 1990,
+      "creator": "Chico Anysio",
+      "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    }
+  ]
+}
