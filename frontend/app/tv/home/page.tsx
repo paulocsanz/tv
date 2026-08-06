@@ -23,10 +23,10 @@ export default async function TvHomePage() {
   const rows = sections.filter((s) => s.key !== "featured");
   const hero = featured?.items[0] ? localizeItem(featured.items[0], locale) : null;
 
-  let firstFocus = true;
+  const firstFocus = { current: true };
   const takeFocus = () => {
-    if (!firstFocus) return false;
-    firstFocus = false;
+    if (!firstFocus.current) return false;
+    firstFocus.current = false;
     return true;
   };
 

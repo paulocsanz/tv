@@ -1,7 +1,7 @@
 # Storage Encryption & Key Bootstrap
 
 **Status:** In Progress  
-**Updated:** 2026-08-05
+**Updated:** 2026-08-06
 
 ## Background
 
@@ -15,7 +15,7 @@
 
 - **Bucket content has no protection beyond URL expiry**
 - **No per-account decrypt capability without server custody of the key**
-- **New accounts need a path to shared decrypt access** (invite handoff still P1)
+- **New accounts need a path to shared decrypt access** (invite handoff — done P1.1)
 
 ## Proposed Solution
 
@@ -35,12 +35,21 @@
 - [x] **P0.4** Login unlock into IndexedDB + VideoPlayer decrypt path — status: `done`
 
 ### P1 — next
-- [ ] **P1.1** Invite-link key handoff (URL fragment, non-custodial) — status: `todo`
+- [x] **P1.1** Invite-link key handoff (URL fragment, non-custodial) — status: `done`
+  - Admin generates invite link with catalog key embedded as `#mk=base64` (URL fragment never sent to server)
+  - Signup page detects `#mk=`, wraps key under new user's password after account creation, PUTs wrap to server
+  - `EncryptionBootstrap` supports importing an existing key (for migrating from hardcoded env to per-account wraps)
+  - `CreateInviteButton` (admin users page) auto-embeds key if unlocked locally
+  - Hardcoded `NEXT_PUBLIC_ENCRYPTION_CATALOG_KEY` fallback removed — access is now invite-gated
 - [ ] **P1.2** Logout policy for IndexedDB key (wipe vs keep) — status: `todo`
-- [ ] **P1.3** Streaming decrypt (MSE / range) instead of full download — status: `todo`
+- [x] **P1.3** Streaming decrypt (MSE / range) instead of full download — status: `done`
+  - SSESENC1 header `compression` byte (0=none, 1=gzip of payload before chunking)
+  - Browser: stream-decrypt chunks as they arrive → optional `DecompressionStream('gzip')` → MSE (fMP4) or blob fallback
+  - Tooling: `reencrypt-from-s3.js` (download → fMP4 remux → gzip-if-helps → encrypt → reupload → catalog `encrypted` + `media_codecs`)
+  - Pipeline-only secret: `ENCRYPTION_CATALOG_KEY` (never on the web backend / never `NEXT_PUBLIC_*`)
 
 ### P2 — later
-- [ ] **P2.1** Batch re-encrypt existing plaintext library — status: `todo`
+- [ ] **P2.1** Batch re-encrypt existing plaintext library — status: `todo` (single-title path via `reencrypt-from-s3.js` works)
 - [ ] **P2.2** Cast/AirPlay path for encrypted titles (custom receiver or pre-decrypt) — status: `todo`
 
 ## Status (living)
@@ -51,10 +60,10 @@
 | P0.2 | p0 | Pipeline optional encrypt | done | 2026-08-05 |
 | P0.3 | p0 | Wrap storage + bootstrap UI | done | 2026-08-05 |
 | P0.4 | p0 | Login unlock + player | done | 2026-08-05 |
-| P1.1 | p1 | Invite handoff | todo | 2026-08-05 |
+| P1.1 | p1 | Invite handoff | done | 2026-08-06 |
 | P1.2 | p1 | Logout key policy | todo | 2026-08-05 |
-| P1.3 | p1 | Streaming decrypt | todo | 2026-08-05 |
-| P2.1 | p2 | Re-encrypt library | todo | 2026-08-05 |
+| P1.3 | p1 | Streaming decrypt | done | 2026-08-06 |
+| P2.1 | p2 | Re-encrypt library | in progress (City Lights done; batch running) | 2026-08-06 |
 | P2.2 | p2 | Encrypted cast | todo | 2026-08-05 |
 
 ## Acceptance Criteria

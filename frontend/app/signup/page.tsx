@@ -9,6 +9,14 @@ function SignupForm() {
   const searchParams = useSearchParams();
   const t = useT();
   const token = searchParams.get("token") ?? "";
+  // Invite key handoff (RFC 0006 P1.1): catalog key arrives in the URL
+  // fragment (#mk=base64) so it never reaches the server. After signup,
+  // we wrap it under the new user's password and store the wrap server-side.
+  const [inviteKey] = useState(() => {
+    if (typeof window === "undefined") return null;
+    const match = window.location.hash.match(/[#&]mk=([A-Za-z0-9+/=]+)/);
+    return match?.[1] ?? null;
+  });
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [displayName, setDisplayName] = useState("");
@@ -36,6 +44,26 @@ function SignupForm() {
         setError(t.auth.signupFailed);
       }
       return;
+    }
+
+    // Signup succeeded and we're now logged in. If the invite carried a
+    // catalog key, wrap it under this user's password and store it —
+    // future logins will unlock via the normal password unwrap path.
+    if (inviteKey) {
+      try {
+        const { acceptInviteKey } = await import("@/lib/crypto/catalog-key");
+        await acceptInviteKey(inviteKey, password);
+      } catch (e) {
+        // Account was created successfully; the key wrap failed. Don't block
+        // signup — the user can request a new invite or re-enter the key
+        // from Account → Storage encryption later.
+        console.warn("invite key handoff failed:", e);
+      }
+    }
+
+    // Clear the fragment so the key doesn't linger in browser history.
+    if (inviteKey && typeof window !== "undefined") {
+      window.history.replaceState(null, "", window.location.pathname);
     }
 
     router.push("/");
@@ -91,6 +119,11 @@ function SignupForm() {
           className="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-white outline-none focus:border-[#f5c518]"
         />
       </div>
+      {inviteKey && (
+        <p className="text-xs text-emerald-400/80">
+          This invite includes media access. Your password will protect the decryption key.
+        </p>
+      )}
       {error && <p className="text-sm text-red-400">{error}</p>}
       <button
         type="submit"

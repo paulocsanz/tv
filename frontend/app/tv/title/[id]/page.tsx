@@ -59,6 +59,7 @@ export default async function TvTitlePage({
           posterUrl={heroImage}
           numberedTitles={item.content_type === "course"}
           encrypted={Boolean(item.encrypted)}
+          mediaCodecs={item.media_codecs ?? null}
         />
       ) : (
         <div className="flex aspect-video max-h-[70vh] items-center justify-center rounded-2xl bg-zinc-900 text-zinc-400">

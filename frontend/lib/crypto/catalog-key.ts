@@ -69,13 +69,21 @@ export async function exportCatalogKeyRaw(key: CryptoKey): Promise<Uint8Array> {
   return new Uint8Array(await crypto.subtle.exportKey("raw", key));
 }
 
-export async function importCatalogKeyRaw(raw: ArrayBuffer | Uint8Array): Promise<CryptoKey> {
+/**
+ * Import raw catalog key bytes.
+ * @param extractable - must be true when the caller will wrap/export the key
+ *   (bootstrap, invite accept). Use false for decrypt-only (player).
+ */
+export async function importCatalogKeyRaw(
+  raw: ArrayBuffer | Uint8Array,
+  extractable = false,
+): Promise<CryptoKey> {
   const bytes = raw instanceof Uint8Array ? raw : new Uint8Array(raw);
   return crypto.subtle.importKey(
     "raw",
     toArrayBuffer(bytes),
     { name: "AES-GCM", length: 256 },
-    false,
+    extractable,
     ["encrypt", "decrypt"],
   );
 }
@@ -219,4 +227,77 @@ export async function bootstrapCatalogKey(password: string): Promise<{
   for (let i = 0; i < raw.length; i++) binary += String.fromCharCode(raw[i]!);
   const pipelineKeyB64 = btoa(binary);
   return { key, pipelineKeyB64 };
+}
+
+/** Export catalog key as base64 for invite links (#mk=). Client-side only. */
+export async function exportCatalogKeyBase64(key: CryptoKey): Promise<string> {
+  const raw = await exportCatalogKeyRaw(key);
+  let binary = "";
+  for (let i = 0; i < raw.length; i++) binary += String.fromCharCode(raw[i]!);
+  return btoa(binary);
+}
+
+/**
+ * Admin bootstrap with an EXISTING key (content already encrypted on S3
+ * under it). Imports the raw key, wraps under password, PUTs bootstrap=true.
+ * Use when migrating from a hardcoded env key to per-account wraps.
+ */
+export async function bootstrapWithExistingKey(
+  rawKeyB64: string,
+  password: string,
+): Promise<CryptoKey> {
+  const binary = atob(rawKeyB64.trim());
+  const raw = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) raw[i] = binary.charCodeAt(i);
+  if (raw.length !== 32) throw new Error(`catalog key must be 32 bytes (got ${raw.length})`);
+  // extractable: wrapCatalogKey needs exportKey
+  const key = await importCatalogKeyRaw(raw, true);
+  const wrap = await wrapCatalogKey(key, password);
+  const res = await fetch("/api/crypto/catalog-key", {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ...wrap, bootstrap: true }),
+  });
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    throw new Error(
+      (body as { error?: string }).error ?? `bootstrap failed (${res.status})`,
+    );
+  }
+  await storeCatalogKeyLocal(key);
+  return key;
+}
+
+/**
+ * Invite handoff (RFC 0006 P1.1): new member receives the catalog key via
+ * invite URL fragment (#mk=base64). After signup (which also logs them in),
+ * wrap the key under their password and PUT to the server — so future logins
+ * unlock via the normal password unwrap path. Key never touches the server
+ * in plaintext; the URL fragment stays client-side.
+ */
+export async function acceptInviteKey(
+  rawKeyB64: string,
+  password: string,
+): Promise<CryptoKey> {
+  const binary = atob(rawKeyB64.trim());
+  const raw = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) raw[i] = binary.charCodeAt(i);
+  if (raw.length !== 32) throw new Error(`invite key must be 32 bytes (got ${raw.length})`);
+  // extractable: wrapCatalogKey needs exportKey
+  const key = await importCatalogKeyRaw(raw, true);
+  const wrap = await wrapCatalogKey(key, password);
+  // Non-bootstrap PUT: any authenticated user can upsert their own wrap.
+  const res = await fetch("/api/crypto/catalog-key", {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ...wrap, bootstrap: false }),
+  });
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    throw new Error(
+      (body as { error?: string }).error ?? `invite key store failed (${res.status})`,
+    );
+  }
+  await storeCatalogKeyLocal(key);
+  return key;
 }

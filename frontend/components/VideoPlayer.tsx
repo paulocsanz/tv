@@ -473,6 +473,7 @@ export function VideoPlayer({
   posterUrl = null,
   numberedTitles = false,
   encrypted = false,
+  mediaCodecs = null,
 }: {
   id: string;
   /** Movie/show title - only used as Cast metadata so the receiver's screen
@@ -496,6 +497,8 @@ export function VideoPlayer({
   numberedTitles?: boolean;
   /** SSESENC1 at rest — decrypt client-side before feeding <video> (RFC 0006). */
   encrypted?: boolean;
+  /** MSE codecs for live fMP4 decrypt (e.g. "avc1.64001F, mp4a.40.2"). */
+  mediaCodecs?: string | null;
 }) {
   const t = useT();
   const hasEpisodes = s3Keys.length > 1;
@@ -528,28 +531,35 @@ export function VideoPlayer({
   const streamUrl = hasEpisodes
     ? `/api/stream/${id}?episode=${selectedIndex + 1}`
     : `/api/stream/${id}`;
-  // When encrypted, we download + decrypt to a blob URL before the <video>
-  // can play. Plaintext keeps the presigned redirect URL as-is.
+  // When encrypted, stream-decrypt (+ optional gunzip) from S3. Prefer MSE
+  // live append when mediaCodecs is set (fMP4); otherwise full blob after
+  // progressive decrypt. Plaintext keeps the presigned redirect URL as-is.
   const [playableUrl, setPlayableUrl] = useState<string | null>(encrypted ? null : streamUrl);
   const [decryptProgress, setDecryptProgress] = useState<number | null>(null);
   const [decryptError, setDecryptError] = useState<string | null>(null);
+  const [decryptMode, setDecryptMode] = useState<string | null>(null);
   const revokePlayableRef = useRef<(() => void) | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     revokePlayableRef.current?.();
     revokePlayableRef.current = null;
-    setDecryptError(null);
 
-    if (!encrypted) {
-      setPlayableUrl(streamUrl);
-      setDecryptProgress(null);
-      return;
-    }
-
-    setPlayableUrl(null);
-    setDecryptProgress(0);
     (async () => {
+      if (!encrypted) {
+        setPlayableUrl(streamUrl);
+        setDecryptProgress(null);
+        setDecryptError(null);
+        setDecryptMode(null);
+        return;
+      }
+
+      setPlayableUrl(null);
+      setDecryptProgress(0);
+      setDecryptError(null);
+      setDecryptMode(null);
       try {
         const { loadCatalogKeyLocal } = await import("@/lib/crypto/catalog-key");
         const { resolvePlayableUrl } = await import("@/lib/crypto/media");
@@ -560,6 +570,10 @@ export function VideoPlayer({
         if (!streamRes.ok) throw new Error(`stream ${streamRes.status}`);
         const { url: absoluteUrl } = (await streamRes.json()) as { url: string };
         const key = await loadCatalogKeyLocal();
+        // Wait a tick so the <video> ref is mounted (we render it even while
+        // decrypting — MSE attaches to that element for live playback).
+        await new Promise((r) => requestAnimationFrame(() => r(undefined)));
+        if (cancelled) return;
         const resolved = await resolvePlayableUrl(
           absoluteUrl,
           true,
@@ -568,13 +582,19 @@ export function VideoPlayer({
             if (cancelled) return;
             if (total && total > 0) setDecryptProgress(Math.round((loaded / total) * 100));
           },
+          { codecs: mediaCodecs, video: videoRef.current },
         );
         if (cancelled) {
           resolved.revoke();
           return;
         }
         revokePlayableRef.current = resolved.revoke;
+        // MSE already assigned video.src; blob mode returns a URL we assign here.
+        if (resolved.mode !== "mse" && videoRef.current) {
+          videoRef.current.src = resolved.url;
+        }
         setPlayableUrl(resolved.url);
+        setDecryptMode(resolved.mode ?? null);
         setDecryptProgress(null);
       } catch (e) {
         if (!cancelled) {
@@ -589,7 +609,7 @@ export function VideoPlayer({
       revokePlayableRef.current?.();
       revokePlayableRef.current = null;
     };
-  }, [streamUrl, encrypted, retry]);
+  }, [streamUrl, encrypted, mediaCodecs, retry]);
 
   const progressUrl = `/api/progress/${id}`;
   // 0 is the movie/no-episode sentinel, matching the backend schema.
@@ -609,8 +629,6 @@ export function VideoPlayer({
       episodeSubtitles.find((t) => !t.forced))?.id ?? null;
   const [selectedSubtitleId, setSelectedSubtitleId] = useState(defaultSubtitleId);
 
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-  const containerRef = useRef<HTMLDivElement | null>(null);
   const hideControlsTimer = useRef<number | null>(null);
   const seekReportTimer = useRef<number | null>(null);
   const [seeked, setSeeked] = useState(false);
@@ -1080,7 +1098,13 @@ export function VideoPlayer({
               </>
             ) : (
               <>
-                <p>Decrypting…</p>
+                <p>
+                  {decryptMode === "mse"
+                    ? "Decrypting live…"
+                    : decryptProgress != null && decryptProgress < 100
+                      ? "Decrypting stream…"
+                      : "Decrypting…"}
+                </p>
                 {decryptProgress != null && (
                   <div className="h-1.5 w-48 overflow-hidden rounded-full bg-white/10">
                     <div
@@ -1095,9 +1119,13 @@ export function VideoPlayer({
         )}
         <video
           ref={videoRef}
-          key={`${playableUrl ?? streamUrl}-${retry}`}
+          // Don't key on playableUrl: MSE sets video.src in place and a remount
+          // would tear down the MediaSource mid-stream. streamUrl+retry is enough.
+          key={`${streamUrl}-${retry}`}
           className="aspect-video w-full"
           poster={effectivePoster}
+          // Plaintext: use <source>. Encrypted MSE/blob: media.ts sets video.src.
+          src={!encrypted && playableUrl ? playableUrl : undefined}
           onClick={togglePlay}
           onLoadedMetadata={handleLoadedMetadata}
           onDurationChange={(e) => setDuration(e.currentTarget.duration)}
@@ -1123,7 +1151,6 @@ export function VideoPlayer({
           onCanPlay={() => setStatus("ready")}
           onError={() => setStatus("error")}
         >
-          {playableUrl && <source src={playableUrl} type="video/mp4" />}
           {episodeSubtitles.map((t) => (
             <track
               key={t.id}

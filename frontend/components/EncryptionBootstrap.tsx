@@ -3,6 +3,8 @@
 import { FormEvent, useEffect, useState } from "react";
 import {
   bootstrapCatalogKey,
+  bootstrapWithExistingKey,
+  exportCatalogKeyBase64,
   loadCatalogKeyLocal,
   unlockCatalogKeyFromLogin,
 } from "@/lib/crypto/catalog-key";
@@ -15,13 +17,18 @@ type Status = {
 
 /**
  * Account-page panel for RFC 0006:
- * - admin first-run: mint catalog key + show pipeline env value
+ * - admin first-run: mint catalog key OR import an existing one (e.g. migrating
+ *   from a hardcoded env key when S3 content is already encrypted under it)
  * - any user with a wrap: re-unlock into IndexedDB after browser clear
+ * - any user with key unlocked: generate invite links to hand off the key
  */
 export function EncryptionBootstrap({ isAdmin }: { isAdmin: boolean }) {
   const [status, setStatus] = useState<Status | null>(null);
   const [password, setPassword] = useState("");
+  const [existingKeyB64, setExistingKeyB64] = useState("");
+  const [showImport, setShowImport] = useState(false);
   const [pipelineKey, setPipelineKey] = useState<string | null>(null);
+  const [inviteUrl, setInviteUrl] = useState<string | null>(null);
   const [localUnlocked, setLocalUnlocked] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -67,6 +74,33 @@ export function EncryptionBootstrap({ isAdmin }: { isAdmin: boolean }) {
     }
   }
 
+  async function handleImportExisting(e: FormEvent) {
+    e.preventDefault();
+    setPending(true);
+    setError(null);
+    setMessage(null);
+    try {
+      await bootstrapWithExistingKey(existingKeyB64, password);
+      setLocalUnlocked(true);
+      setMessage(
+        "Existing catalog key imported and wrapped under your password. " +
+          "Encrypted titles will now play on this device. " +
+          "Generate an invite link below to grant access to other members.",
+      );
+      setStatus((s) =>
+        s
+          ? { ...s, has_wrap: true, org_has_encryption: true, can_bootstrap: false }
+          : s,
+      );
+      setShowImport(false);
+      setExistingKeyB64("");
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "import failed");
+    } finally {
+      setPending(false);
+    }
+  }
+
   async function handleUnlock(e: FormEvent) {
     e.preventDefault();
     setPending(true);
@@ -87,6 +121,27 @@ export function EncryptionBootstrap({ isAdmin }: { isAdmin: boolean }) {
     }
   }
 
+  async function handleGenerateInvite() {
+    setPending(true);
+    setError(null);
+    setMessage(null);
+    try {
+      const key = await loadCatalogKeyLocal();
+      if (!key) throw new Error("No catalog key unlocked on this device.");
+      const keyB64 = await exportCatalogKeyBase64(key);
+      const res = await fetch("/api/admin/invites", { method: "POST" });
+      if (!res.ok) throw new Error("failed to create invite");
+      const invite = (await res.json()) as { token: string };
+      setInviteUrl(
+        `${window.location.origin}/signup?token=${invite.token}#mk=${keyB64}`,
+      );
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "invite generation failed");
+    } finally {
+      setPending(false);
+    }
+  }
+
   if (!status) {
     return (
       <section className="mb-10">
@@ -100,8 +155,10 @@ export function EncryptionBootstrap({ isAdmin }: { isAdmin: boolean }) {
     <section className="mb-10">
       <h2 className="mb-1 text-lg font-semibold text-zinc-100">Storage encryption</h2>
       <p className="mb-3 text-xs text-zinc-500">
-        Optional AES-256-GCM (SSESENC1) for new uploads. Existing library stays plaintext until
-        re-uploaded. Key never leaves your browser unwrapped.
+        AES-256-GCM (SSESENC1) media encryption. The shared catalog key is wrapped
+        under each member&apos;s password — the server never sees it unwrapped.
+        Members gain access through an invite link that carries the key in the URL
+        fragment (never sent to the server).
       </p>
       <ul className="mb-4 space-y-1 text-sm text-zinc-400">
         <li>
@@ -120,11 +177,60 @@ export function EncryptionBootstrap({ isAdmin }: { isAdmin: boolean }) {
         </li>
       </ul>
 
-      {status.can_bootstrap && isAdmin && (
-        <form onSubmit={handleBootstrap} className="space-y-3 rounded-lg border border-white/10 p-4">
+      {/* Bootstrap: generate new OR import existing */}
+      {status.can_bootstrap && isAdmin && !showImport && (
+        <div className="space-y-3 rounded-lg border border-white/10 p-4">
           <p className="text-sm text-zinc-300">
-            First-time setup: generate the shared catalog key and wrap it with your password.
+            First-time setup. Choose how to provision the catalog key:
           </p>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => setShowImport(true)}
+              className="rounded-md bg-white/10 px-3 py-2 text-sm text-white hover:bg-white/20"
+            >
+              Import existing key
+            </button>
+            <span className="self-center text-xs text-zinc-600">or</span>
+          </div>
+          <form onSubmit={handleBootstrap} className="space-y-3">
+            <input
+              type="password"
+              autoComplete="current-password"
+              placeholder="Your password (to wrap the new key)"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              className="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-white outline-none focus:border-[#f5c518]"
+            />
+            <button
+              type="submit"
+              disabled={pending}
+              className="rounded-md bg-[#f5c518] px-3 py-2 text-sm font-semibold text-black disabled:opacity-60"
+            >
+              {pending ? "Working…" : "Generate new catalog key"}
+            </button>
+          </form>
+        </div>
+      )}
+
+      {/* Import existing key */}
+      {status.can_bootstrap && isAdmin && showImport && (
+        <form onSubmit={handleImportExisting} className="space-y-3 rounded-lg border border-white/10 p-4">
+          <p className="text-sm text-zinc-300">
+            Import an existing catalog key (e.g. when S3 content is already
+            encrypted under a key from the pipeline env). Paste the 32-byte base64
+            key and your password.
+          </p>
+          <input
+            type="text"
+            autoComplete="off"
+            placeholder="ENCRYPTION_CATALOG_KEY (base64)"
+            value={existingKeyB64}
+            onChange={(e) => setExistingKeyB64(e.target.value)}
+            required
+            className="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 font-mono text-xs text-white outline-none focus:border-[#f5c518]"
+          />
           <input
             type="password"
             autoComplete="current-password"
@@ -134,16 +240,26 @@ export function EncryptionBootstrap({ isAdmin }: { isAdmin: boolean }) {
             required
             className="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-white outline-none focus:border-[#f5c518]"
           />
-          <button
-            type="submit"
-            disabled={pending}
-            className="rounded-md bg-[#f5c518] px-3 py-2 text-sm font-semibold text-black disabled:opacity-60"
-          >
-            {pending ? "Working…" : "Bootstrap encryption"}
-          </button>
+          <div className="flex gap-2">
+            <button
+              type="submit"
+              disabled={pending}
+              className="rounded-md bg-[#f5c518] px-3 py-2 text-sm font-semibold text-black disabled:opacity-60"
+            >
+              {pending ? "Working…" : "Import & wrap key"}
+            </button>
+            <button
+              type="button"
+              onClick={() => setShowImport(false)}
+              className="rounded-md bg-white/5 px-3 py-2 text-sm text-zinc-400 hover:bg-white/10"
+            >
+              Cancel
+            </button>
+          </div>
         </form>
       )}
 
+      {/* Re-unlock after browser clear */}
       {status.has_wrap && !localUnlocked && (
         <form onSubmit={handleUnlock} className="space-y-3 rounded-lg border border-white/10 p-4">
           <p className="text-sm text-zinc-300">
@@ -166,6 +282,49 @@ export function EncryptionBootstrap({ isAdmin }: { isAdmin: boolean }) {
             {pending ? "Working…" : "Unlock on this device"}
           </button>
         </form>
+      )}
+
+      {/* Invite generation */}
+      {localUnlocked && (
+        <div className="space-y-3 rounded-lg border border-white/10 p-4">
+          <p className="text-sm text-zinc-300">
+            Invite a new member. The invite link carries the catalog key in the URL
+            fragment — copy and send it privately. The recipient wraps the key under
+            their own password on signup.
+          </p>
+          <button
+            type="button"
+            onClick={handleGenerateInvite}
+            disabled={pending}
+            className="rounded-md bg-white/10 px-3 py-2 text-sm text-white hover:bg-white/20 disabled:opacity-60"
+          >
+            {pending ? "Working…" : "Generate invite link with key"}
+          </button>
+          {inviteUrl && (
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-2">
+                <code className="flex-1 overflow-x-auto text-xs text-zinc-300">
+                  {inviteUrl.length > 80
+                    ? `${inviteUrl.slice(0, 40)}…${inviteUrl.slice(-20)}`
+                    : inviteUrl}
+                </code>
+                <button
+                  type="button"
+                  onClick={() => {
+                    navigator.clipboard.writeText(inviteUrl);
+                    setMessage("Invite link copied to clipboard.");
+                  }}
+                  className="shrink-0 text-xs text-[#f5c518] hover:underline"
+                >
+                  Copy
+                </button>
+              </div>
+              <p className="text-xs text-amber-400/80">
+                This link grants full media decrypt access. Send it only to trusted members.
+              </p>
+            </div>
+          )}
+        </div>
       )}
 
       {pipelineKey && (

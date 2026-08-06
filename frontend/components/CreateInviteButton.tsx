@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { InviteResponse } from "@/lib/types";
 import { useT } from "@/lib/i18n/LocaleProvider";
+import { exportCatalogKeyBase64, loadCatalogKeyLocal } from "@/lib/crypto/catalog-key";
 
 export function CreateInviteButton() {
   const t = useT();
@@ -25,7 +26,24 @@ export function CreateInviteButton() {
     }
 
     const invite = (await res.json()) as InviteResponse;
-    setLink(`${window.location.origin}/signup?token=${invite.token}`);
+    let url = `${window.location.origin}/signup?token=${invite.token}`;
+
+    // Embed the catalog key in the URL fragment if the admin has it unlocked
+    // locally (RFC 0006 P1.1 — invite key handoff). Fragment never reaches
+    // the server. If no key is unlocked, the invite still works for account
+    // creation — the new member just can't decrypt media until they receive
+    // a key separately.
+    try {
+      const key = await loadCatalogKeyLocal();
+      if (key) {
+        const keyB64 = await exportCatalogKeyBase64(key);
+        url += `#mk=${keyB64}`;
+      }
+    } catch {
+      // no key unlocked — invite without decrypt access
+    }
+
+    setLink(url);
   }
 
   async function handleCopy() {
@@ -47,7 +65,9 @@ export function CreateInviteButton() {
       {error && <p className="text-sm text-red-400">{error}</p>}
       {link && (
         <div className="flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-2">
-          <code className="flex-1 overflow-x-auto text-xs text-zinc-300">{link}</code>
+          <code className="flex-1 overflow-x-auto text-xs text-zinc-300">
+            {link.length > 80 ? `${link.slice(0, 40)}…${link.slice(-20)}` : link}
+          </code>
           <button
             type="button"
             onClick={handleCopy}
@@ -57,7 +77,11 @@ export function CreateInviteButton() {
           </button>
         </div>
       )}
-      <p className="text-xs text-zinc-500">{t.admin.inviteExpiryNote}</p>
+      <p className="text-xs text-zinc-500">
+        {t.admin.inviteExpiryNote}
+        {link?.includes("#mk=") &&
+          " Includes media decrypt key — send only to trusted members."}
+      </p>
     </div>
   );
 }
