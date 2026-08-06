@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "totalItems": 1242,
+    "totalItems": 1244,
     "createdAt": "2026-07-03T16:32:28.412Z",
     "categories": {
       "movies": {
@@ -6588,6 +6588,20 @@
       "title": "Se Eu Fosse Você 2",
       "year": 2009,
       "director": "Daniel Filho",
+      "imdb_rating": 5.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Os Normais: O Filme",
+      "year": 2003,
+      "director": "José Alvarenga Jr.",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Os Normais 2: A Noite Mais Maluca de Todas",
+      "year": 2009,
+      "director": "José Alvarenga Jr.",
       "imdb_rating": 5.8,
       "origin": "Brazilian"
     }
