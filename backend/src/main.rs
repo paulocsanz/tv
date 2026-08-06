@@ -2027,7 +2027,11 @@ async fn get_catalog_review_handler(
         .items
         .iter()
         .filter(|i| i.s3_key.is_none() && i.s3_keys.is_empty())
-        .filter(|i| i.torrent_file.is_none())
+        .filter(|i| {
+            i.torrent_file.is_none()
+                && i.torrent_options_720p.is_empty()
+                && i.torrent_options.is_empty()
+        })
         .map(|i| CatalogGapItem {
             id: i.id.clone(),
             title: i.title.clone(),
@@ -2227,6 +2231,10 @@ mod backfill_tests {
             trailer_key: None,
             enrichment_status: tv_backend::models::EnrichmentStatus::Ok,
             torrent_file: None,
+            torrent_options_720p: Vec::new(),
+            current_torrent_index_720p: 0,
+            torrent_options: Vec::new(),
+            current_torrent_index: 0,
             s3_key: None,
             s3_keys: Vec::new(),
             subtitles: Vec::new(),
@@ -2238,6 +2246,7 @@ mod backfill_tests {
             attachments: Vec::new(),
             poster_s3_key: None,
             encrypted: false,
+            media_codecs: None,
         }
     }
 

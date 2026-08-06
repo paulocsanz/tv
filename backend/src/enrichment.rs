@@ -632,6 +632,10 @@ pub async fn enrich_one(
         trailer_key,
         enrichment_status: status,
         torrent_file: None,
+        torrent_options_720p: Vec::new(),
+        current_torrent_index_720p: 0,
+        torrent_options: Vec::new(),
+        current_torrent_index: 0,
         s3_key: None,
         s3_keys: Vec::new(),
         subtitles: Vec::new(),
@@ -643,5 +647,6 @@ pub async fn enrich_one(
         attachments: Vec::new(),
         poster_s3_key: None,
         encrypted: false,
+        media_codecs: None,
     }
 }

@@ -101,6 +101,18 @@ pub struct EnrichedItem {
     pub enrichment_status: EnrichmentStatus,
     #[serde(default)]
     pub torrent_file: Option<String>,
+    /// Ranked 720p magnet options written by pick-best-torrents.js. Must be
+    /// preserved across enrich rewrites — omitting this field caused serde to
+    /// strip every option on every `cargo run --bin enrich` run.
+    #[serde(default)]
+    pub torrent_options_720p: Vec<TorrentOption>,
+    #[serde(default)]
+    pub current_torrent_index_720p: i64,
+    /// 1080p / primary-tier options (legacy field name from the picker).
+    #[serde(default)]
+    pub torrent_options: Vec<TorrentOption>,
+    #[serde(default)]
+    pub current_torrent_index: i64,
     #[serde(default)]
     pub s3_key: Option<String>,
     /// Per-episode object keys for TV series with more than one file uploaded;
@@ -163,6 +175,25 @@ pub struct EnrichedItem {
     /// re-uploaded encrypted. See rfcs/0006.
     #[serde(default)]
     pub encrypted: bool,
+    /// MSE codec string for encrypted fMP4 streaming playback
+    /// (e.g. "avc1.64001F, mp4a.40.2"). Empty/None falls back to full-blob decrypt.
+    #[serde(default)]
+    pub media_codecs: Option<String>,
+}
+
+/// One magnet candidate from the torrent picker (pick-best-torrents.js).
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct TorrentOption {
+    pub title: String,
+    pub magnet: String,
+    #[serde(default)]
+    pub seeders: i64,
+    #[serde(default)]
+    pub size: Option<String>,
+    #[serde(default)]
+    pub provider: Option<String>,
+    #[serde(default, rename = "contentScore")]
+    pub content_score: Option<i64>,
 }
 
 /// A downloadable extra alongside a course's lessons (PDF workbook, xlsx
