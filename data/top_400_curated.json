@@ -1,20 +1,21 @@
 {
   "metadata": {
-    "totalItems": 1101,
+    "totalItems": 1214,
     "createdAt": "2026-07-03T16:32:28.412Z",
     "categories": {
       "movies": {
-        "total": 870,
-        "brazilian": 111,
-        "international": 759
+        "total": 939,
+        "brazilian": 117,
+        "international": 822
       },
       "tvSeries": {
-        "total": 231,
-        "brazilian": 109,
-        "international": 122
+        "total": 275,
+        "brazilian": 124,
+        "international": 151
       }
     },
-    "lastRelevancePack": "2026-08-06T04:32:15.465Z"
+    "lastRelevancePack": "2026-08-06T04:32:15.465Z",
+    "lastRelevancePack2": "2026-08-06T04:39:45.732Z"
   },
   "movies": [
     {
@@ -6106,6 +6107,489 @@
       "director": null,
       "imdb_rating": 7,
       "origin": "Brazilian"
+    },
+    {
+      "title": "Akira",
+      "year": 1988,
+      "director": "Katsuhiro Otomo",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Ghost in the Shell",
+      "year": 1995,
+      "director": "Mamoru Oshii",
+      "imdb_rating": 7.9,
+      "origin": "International"
+    },
+    {
+      "title": "Perfect Blue",
+      "year": 1997,
+      "director": "Satoshi Kon",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Paprika",
+      "year": 2006,
+      "director": "Satoshi Kon",
+      "imdb_rating": 7.7,
+      "origin": "International"
+    },
+    {
+      "title": "Millennium Actress",
+      "year": 2001,
+      "director": "Satoshi Kon",
+      "imdb_rating": 7.8,
+      "origin": "International"
+    },
+    {
+      "title": "Tokyo Godfathers",
+      "year": 2003,
+      "director": "Satoshi Kon",
+      "imdb_rating": 7.8,
+      "origin": "International"
+    },
+    {
+      "title": "Nausicaä of the Valley of the Wind",
+      "year": 1984,
+      "director": "Hayao Miyazaki",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Castle in the Sky",
+      "year": 1986,
+      "director": "Hayao Miyazaki",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Kiki's Delivery Service",
+      "year": 1989,
+      "director": "Hayao Miyazaki",
+      "imdb_rating": 7.8,
+      "origin": "International"
+    },
+    {
+      "title": "Porco Rosso",
+      "year": 1992,
+      "director": "Hayao Miyazaki",
+      "imdb_rating": 7.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Wind Rises",
+      "year": 2013,
+      "director": "Hayao Miyazaki",
+      "imdb_rating": 7.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Boy and the Heron",
+      "year": 2023,
+      "director": "Hayao Miyazaki",
+      "imdb_rating": 7.4,
+      "origin": "International"
+    },
+    {
+      "title": "Weathering with You",
+      "year": 2019,
+      "director": "Makoto Shinkai",
+      "imdb_rating": 7.5,
+      "origin": "International"
+    },
+    {
+      "title": "Suzume",
+      "year": 2022,
+      "director": "Makoto Shinkai",
+      "imdb_rating": 7.6,
+      "origin": "International"
+    },
+    {
+      "title": "A Silent Voice",
+      "year": 2016,
+      "director": "Naoko Yamada",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Wolf Children",
+      "year": 2012,
+      "director": "Mamoru Hosoda",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Summer Wars",
+      "year": 2009,
+      "director": "Mamoru Hosoda",
+      "imdb_rating": 7.4,
+      "origin": "International"
+    },
+    {
+      "title": "Mirai",
+      "year": 2018,
+      "director": "Mamoru Hosoda",
+      "imdb_rating": 7,
+      "origin": "International"
+    },
+    {
+      "title": "Belle",
+      "year": 2021,
+      "director": "Mamoru Hosoda",
+      "imdb_rating": 7.1,
+      "origin": "International"
+    },
+    {
+      "title": "Demon Slayer: Mugen Train",
+      "year": 2020,
+      "director": "Haruo Sotozaki",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Jujutsu Kaisen 0",
+      "year": 2021,
+      "director": "Sunghoo Park",
+      "imdb_rating": 7.8,
+      "origin": "International"
+    },
+    {
+      "title": "One Piece Film: Red",
+      "year": 2022,
+      "director": "Gorō Taniguchi",
+      "imdb_rating": 6.8,
+      "origin": "International"
+    },
+    {
+      "title": "The Super Mario Bros. Movie",
+      "year": 2023,
+      "director": "Aaron Horvath",
+      "imdb_rating": 7,
+      "origin": "International"
+    },
+    {
+      "title": "Soul",
+      "year": 2020,
+      "director": "Pete Docter",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Encanto",
+      "year": 2021,
+      "director": "Jared Bush",
+      "imdb_rating": 7.2,
+      "origin": "International"
+    },
+    {
+      "title": "Moana",
+      "year": 2016,
+      "director": "Ron Clements",
+      "imdb_rating": 7.6,
+      "origin": "International"
+    },
+    {
+      "title": "Frozen",
+      "year": 2013,
+      "director": "Chris Buck",
+      "imdb_rating": 7.4,
+      "origin": "International"
+    },
+    {
+      "title": "Zootopia",
+      "year": 2016,
+      "director": "Byron Howard",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Halloween",
+      "year": 1978,
+      "director": "John Carpenter",
+      "imdb_rating": 7.7,
+      "origin": "International"
+    },
+    {
+      "title": "A Nightmare on Elm Street",
+      "year": 1984,
+      "director": "Wes Craven",
+      "imdb_rating": 7.4,
+      "origin": "International"
+    },
+    {
+      "title": "Scream",
+      "year": 1996,
+      "director": "Wes Craven",
+      "imdb_rating": 7.4,
+      "origin": "International"
+    },
+    {
+      "title": "The Texas Chain Saw Massacre",
+      "year": 1974,
+      "director": "Tobe Hooper",
+      "imdb_rating": 7.4,
+      "origin": "International"
+    },
+    {
+      "title": "Rosemary's Baby",
+      "year": 1968,
+      "director": "Roman Polanski",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "The Thing",
+      "year": 1982,
+      "director": "John Carpenter",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Zodiac",
+      "year": 2007,
+      "director": "David Fincher",
+      "imdb_rating": 7.7,
+      "origin": "International"
+    },
+    {
+      "title": "Gone Girl",
+      "year": 2014,
+      "director": "David Fincher",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "The Conjuring",
+      "year": 2013,
+      "director": "James Wan",
+      "imdb_rating": 7.5,
+      "origin": "International"
+    },
+    {
+      "title": "Insidious",
+      "year": 2010,
+      "director": "James Wan",
+      "imdb_rating": 6.8,
+      "origin": "International"
+    },
+    {
+      "title": "Sinister",
+      "year": 2012,
+      "director": "Scott Derrickson",
+      "imdb_rating": 6.8,
+      "origin": "International"
+    },
+    {
+      "title": "Ringu",
+      "year": 1998,
+      "director": "Hideo Nakata",
+      "imdb_rating": 7.2,
+      "origin": "International"
+    },
+    {
+      "title": "Ju-On: The Grudge",
+      "year": 2002,
+      "director": "Takashi Shimizu",
+      "imdb_rating": 6.7,
+      "origin": "International"
+    },
+    {
+      "title": "28 Days Later",
+      "year": 2002,
+      "director": "Danny Boyle",
+      "imdb_rating": 7.5,
+      "origin": "International"
+    },
+    {
+      "title": "Shaun of the Dead",
+      "year": 2004,
+      "director": "Edgar Wright",
+      "imdb_rating": 7.9,
+      "origin": "International"
+    },
+    {
+      "title": "Us",
+      "year": 2019,
+      "director": "Jordan Peele",
+      "imdb_rating": 6.8,
+      "origin": "International"
+    },
+    {
+      "title": "Nope",
+      "year": 2022,
+      "director": "Jordan Peele",
+      "imdb_rating": 6.8,
+      "origin": "International"
+    },
+    {
+      "title": "Talk to Me",
+      "year": 2022,
+      "director": "Danny Philippou",
+      "imdb_rating": 7.1,
+      "origin": "International"
+    },
+    {
+      "title": "Barbarian",
+      "year": 2022,
+      "director": "Zach Cregger",
+      "imdb_rating": 7,
+      "origin": "International"
+    },
+    {
+      "title": "X",
+      "year": 2022,
+      "director": "Ti West",
+      "imdb_rating": 6.5,
+      "origin": "International"
+    },
+    {
+      "title": "Pearl",
+      "year": 2022,
+      "director": "Ti West",
+      "imdb_rating": 7,
+      "origin": "International"
+    },
+    {
+      "title": "Free Solo",
+      "year": 2018,
+      "director": "Elizabeth Chai Vasarhelyi",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Man on Wire",
+      "year": 2008,
+      "director": "James Marsh",
+      "imdb_rating": 7.7,
+      "origin": "International"
+    },
+    {
+      "title": "Searching for Sugar Man",
+      "year": 2012,
+      "director": "Malik Bendjelloul",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Amy",
+      "year": 2015,
+      "director": "Asif Kapadia",
+      "imdb_rating": 7.8,
+      "origin": "International"
+    },
+    {
+      "title": "Senna",
+      "year": 2010,
+      "director": "Asif Kapadia",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Apollo 11",
+      "year": 2019,
+      "director": "Todd Douglas Miller",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Won't You Be My Neighbor?",
+      "year": 2018,
+      "director": "Morgan Neville",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "13th",
+      "year": 2016,
+      "director": "Ava DuVernay",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "The Social Dilemma",
+      "year": 2020,
+      "director": "Jeff Orlowski",
+      "imdb_rating": 7.6,
+      "origin": "International"
+    },
+    {
+      "title": "My Octopus Teacher",
+      "year": 2020,
+      "director": "Pippa Ehrlich",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Icarus",
+      "year": 2017,
+      "director": "Bryan Fogel",
+      "imdb_rating": 7.9,
+      "origin": "International"
+    },
+    {
+      "title": "Three Identical Strangers",
+      "year": 2018,
+      "director": "Tim Wardle",
+      "imdb_rating": 7.6,
+      "origin": "International"
+    },
+    {
+      "title": "The Act of Killing",
+      "year": 2012,
+      "director": "Joshua Oppenheimer",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Citizenfour",
+      "year": 2014,
+      "director": "Laura Poitras",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Lisbela e o Prisioneiro",
+      "year": 2003,
+      "director": "Guel Arraes",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Saneamento Básico",
+      "year": 2007,
+      "director": "Jorge Furtado",
+      "imdb_rating": 6.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Ilha das Flores",
+      "year": 1989,
+      "director": "Jorge Furtado",
+      "imdb_rating": 8.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Cidade dos Homens",
+      "year": 2007,
+      "director": "Paulo Morelli",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Se Eu Fosse Você",
+      "year": 2006,
+      "director": "Daniel Filho",
+      "imdb_rating": 6.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Se Eu Fosse Você 2",
+      "year": 2009,
+      "director": "Daniel Filho",
+      "imdb_rating": 5.8,
+      "origin": "Brazilian"
     }
   ],
   "tvSeries": [
@@ -7724,6 +8208,314 @@
       "year": 2017,
       "creator": "Luiz Noronha",
       "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Attack on Titan",
+      "year": 2013,
+      "creator": "Hajime Isayama",
+      "imdb_rating": 9.1,
+      "origin": "International"
+    },
+    {
+      "title": "Death Note",
+      "year": 2006,
+      "creator": "Tsugumi Ohba",
+      "imdb_rating": 8.9,
+      "origin": "International"
+    },
+    {
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "year": 2009,
+      "creator": "Hiromu Arakawa",
+      "imdb_rating": 9.1,
+      "origin": "International"
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "year": 2019,
+      "creator": "Koyoharu Gotouge",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Jujutsu Kaisen",
+      "year": 2020,
+      "creator": "Gege Akutami",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "One Piece",
+      "year": 1999,
+      "creator": "Eiichiro Oda",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "Naruto",
+      "year": 2002,
+      "creator": "Masashi Kishimoto",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Naruto: Shippuden",
+      "year": 2007,
+      "creator": "Masashi Kishimoto",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Hunter x Hunter",
+      "year": 2011,
+      "creator": "Yoshihiro Togashi",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "Neon Genesis Evangelion",
+      "year": 1995,
+      "creator": "Hideaki Anno",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Cowboy Bebop",
+      "year": 1998,
+      "creator": "Shinichirō Watanabe",
+      "imdb_rating": 8.9,
+      "origin": "International"
+    },
+    {
+      "title": "Samurai Champloo",
+      "year": 2004,
+      "creator": "Shinichirō Watanabe",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Steins;Gate",
+      "year": 2011,
+      "creator": "Jukki Hanada",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Mob Psycho 100",
+      "year": 2016,
+      "creator": "ONE",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "One Punch Man",
+      "year": 2015,
+      "creator": "ONE",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Vinland Saga",
+      "year": 2019,
+      "creator": "Makoto Yukimura",
+      "imdb_rating": 8.8,
+      "origin": "International"
+    },
+    {
+      "title": "Frieren: Beyond Journey's End",
+      "year": 2023,
+      "creator": "Kanehito Yamada",
+      "imdb_rating": 8.9,
+      "origin": "International"
+    },
+    {
+      "title": "Chainsaw Man",
+      "year": 2022,
+      "creator": "Tatsuki Fujimoto",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Spy × Family",
+      "year": 2022,
+      "creator": "Tatsuya Endo",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Legend of Korra",
+      "year": 2012,
+      "creator": "Michael Dante DiMartino",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Last Dance",
+      "year": 2020,
+      "creator": "Jason Hehir",
+      "imdb_rating": 9,
+      "origin": "International"
+    },
+    {
+      "title": "Our Planet",
+      "year": 2019,
+      "creator": "Alastair Fothergill",
+      "imdb_rating": 9.2,
+      "origin": "International"
+    },
+    {
+      "title": "Planet Earth II",
+      "year": 2016,
+      "creator": "David Attenborough",
+      "imdb_rating": 9.4,
+      "origin": "International"
+    },
+    {
+      "title": "Blue Planet II",
+      "year": 2017,
+      "creator": "David Attenborough",
+      "imdb_rating": 9.3,
+      "origin": "International"
+    },
+    {
+      "title": "Cosmos: A Spacetime Odyssey",
+      "year": 2014,
+      "creator": "Neil deGrasse Tyson",
+      "imdb_rating": 9.2,
+      "origin": "International"
+    },
+    {
+      "title": "Making a Murderer",
+      "year": 2015,
+      "creator": "Laura Ricciardi",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The Jinx: The Life and Deaths of Robert Durst",
+      "year": 2015,
+      "creator": "Andrew Jarecki",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Tiger King",
+      "year": 2020,
+      "creator": "Eric Goode",
+      "imdb_rating": 7.5,
+      "origin": "International"
+    },
+    {
+      "title": "Cheer",
+      "year": 2020,
+      "creator": "Greg Whiteley",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Vale Tudo",
+      "year": 1988,
+      "creator": "Gilberto Braga",
+      "imdb_rating": 8.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Vale Tudo",
+      "year": 2025,
+      "creator": "Manuela Dias",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Roque Santeiro",
+      "year": 1985,
+      "creator": "Dias Gomes",
+      "imdb_rating": 8.7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Tieta",
+      "year": 1989,
+      "creator": "Aguinaldo Silva",
+      "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "O Clone",
+      "year": 2001,
+      "creator": "Glória Perez",
+      "imdb_rating": 8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Mulheres Apaixonadas",
+      "year": 2003,
+      "creator": "Manoel Carlos",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Laços de Família",
+      "year": 2000,
+      "creator": "Manoel Carlos",
+      "imdb_rating": 7.9,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Por Amor",
+      "year": 1997,
+      "creator": "Manoel Carlos",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Explode Coração",
+      "year": 1995,
+      "creator": "Glória Perez",
+      "imdb_rating": 7.2,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "O Rei do Gado",
+      "year": 1996,
+      "creator": "Benedito Ruy Barbosa",
+      "imdb_rating": 7.8,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Terra Nostra",
+      "year": 1999,
+      "creator": "Benedito Ruy Barbosa",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Cordel Encantado",
+      "year": 2011,
+      "creator": "Thelma Guedes",
+      "imdb_rating": 7.6,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Cangaço Novo",
+      "year": 2023,
+      "creator": "Aly Muritiba",
+      "imdb_rating": 7.5,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Os Outros",
+      "year": 2023,
+      "creator": "Lucas Paraizo",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Todas as Flores",
+      "year": 2022,
+      "creator": "João Emanuel Carneiro",
+      "imdb_rating": 7.5,
       "origin": "Brazilian"
     }
   ]
