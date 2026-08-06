@@ -1,0 +1,799 @@
+{
+  "generated_at": "2026-08-06T04:32:15.465Z",
+  "policy": "Relevance pack: fill genre holes (animation/horror/scifi), streaming TV hits, Brazilian cultural weight, franchise staples",
+  "add_movies": [
+    {
+      "title": "Kill Bill: Vol. 1",
+      "year": 2003,
+      "director": "Quentin Tarantino",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Kill Bill: Vol. 2",
+      "year": 2004,
+      "director": "Quentin Tarantino",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Iron Man",
+      "year": 2008,
+      "director": "Jon Favreau",
+      "imdb_rating": 7.9,
+      "origin": "International"
+    },
+    {
+      "title": "The Batman",
+      "year": 2022,
+      "director": "Matt Reeves",
+      "imdb_rating": 7.8,
+      "origin": "International"
+    },
+    {
+      "title": "John Wick",
+      "year": 2014,
+      "director": "Chad Stahelski",
+      "imdb_rating": 7.4,
+      "origin": "International"
+    },
+    {
+      "title": "John Wick: Chapter 2",
+      "year": 2017,
+      "director": "Chad Stahelski",
+      "imdb_rating": 7.4,
+      "origin": "International"
+    },
+    {
+      "title": "John Wick: Chapter 3 - Parabellum",
+      "year": 2019,
+      "director": "Chad Stahelski",
+      "imdb_rating": 7.4,
+      "origin": "International"
+    },
+    {
+      "title": "John Wick: Chapter 4",
+      "year": 2023,
+      "director": "Chad Stahelski",
+      "imdb_rating": 7.7,
+      "origin": "International"
+    },
+    {
+      "title": "Jurassic Park",
+      "year": 1993,
+      "director": "Steven Spielberg",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "The Lost World: Jurassic Park",
+      "year": 1997,
+      "director": "Steven Spielberg",
+      "imdb_rating": 6.5,
+      "origin": "International"
+    },
+    {
+      "title": "Blade Runner",
+      "year": 1982,
+      "director": "Ridley Scott",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Blade Runner 2049",
+      "year": 2017,
+      "director": "Denis Villeneuve",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Guardians of the Galaxy",
+      "year": 2014,
+      "director": "James Gunn",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Spirited Away",
+      "year": 2001,
+      "director": "Hayao Miyazaki",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Princess Mononoke",
+      "year": 1997,
+      "director": "Hayao Miyazaki",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "My Neighbor Totoro",
+      "year": 1988,
+      "director": "Hayao Miyazaki",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Howl's Moving Castle",
+      "year": 2004,
+      "director": "Hayao Miyazaki",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Your Name.",
+      "year": 2016,
+      "director": "Makoto Shinkai",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Coco",
+      "year": 2017,
+      "director": "Lee Unkrich",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Finding Nemo",
+      "year": 2003,
+      "director": "Andrew Stanton",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Inside Out",
+      "year": 2015,
+      "director": "Pete Docter",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "The Incredibles",
+      "year": 2004,
+      "director": "Brad Bird",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Ratatouille",
+      "year": 2007,
+      "director": "Brad Bird",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Hereditary",
+      "year": 2018,
+      "director": "Ari Aster",
+      "imdb_rating": 7.3,
+      "origin": "International"
+    },
+    {
+      "title": "Midsommar",
+      "year": 2019,
+      "director": "Ari Aster",
+      "imdb_rating": 7.1,
+      "origin": "International"
+    },
+    {
+      "title": "The Witch",
+      "year": 2015,
+      "director": "Robert Eggers",
+      "imdb_rating": 7,
+      "origin": "International"
+    },
+    {
+      "title": "A Quiet Place",
+      "year": 2018,
+      "director": "John Krasinski",
+      "imdb_rating": 7.5,
+      "origin": "International"
+    },
+    {
+      "title": "It",
+      "year": 2017,
+      "director": "Andy Muschietti",
+      "imdb_rating": 7.3,
+      "origin": "International"
+    },
+    {
+      "title": "The Babadook",
+      "year": 2014,
+      "director": "Jennifer Kent",
+      "imdb_rating": 6.8,
+      "origin": "International"
+    },
+    {
+      "title": "Oldboy",
+      "year": 2003,
+      "director": "Park Chan-wook",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Memories of Murder",
+      "year": 2003,
+      "director": "Bong Joon Ho",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Train to Busan",
+      "year": 2016,
+      "director": "Yeon Sang-ho",
+      "imdb_rating": 7.6,
+      "origin": "International"
+    },
+    {
+      "title": "Portrait of a Lady on Fire",
+      "year": 2019,
+      "director": "Céline Sciamma",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "The Handmaiden",
+      "year": 2016,
+      "director": "Park Chan-wook",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Pan's Labyrinth",
+      "year": 2006,
+      "director": "Guillermo del Toro",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Y Tu Mamá También",
+      "year": 2001,
+      "director": "Alfonso Cuarón",
+      "imdb_rating": 7.7,
+      "origin": "International"
+    },
+    {
+      "title": "Bye Bye Brazil",
+      "year": 1979,
+      "director": "Carlos Diegues",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "The Motorcycle Diaries",
+      "year": 2004,
+      "director": "Walter Salles",
+      "imdb_rating": 7.7,
+      "origin": "International"
+    },
+    {
+      "title": "Marighella",
+      "year": 2019,
+      "director": "Wagner Moura",
+      "imdb_rating": 7.1,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Seven Years in May",
+      "year": 2019,
+      "director": "Affonso Uchoa",
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Bingo: The King of the Mornings",
+      "year": 2017,
+      "director": "Daniel Rezende",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Mother of Thousands",
+      "year": 2024,
+      "director": null,
+      "imdb_rating": 7,
+      "origin": "Brazilian"
+    }
+  ],
+  "add_tv": [
+    {
+      "title": "Stranger Things",
+      "year": 2016,
+      "creator": "The Duffer Brothers",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "The Boys",
+      "year": 2019,
+      "creator": "Eric Kripke",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Squid Game",
+      "year": 2021,
+      "creator": "Hwang Dong-hyuk",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Money Heist",
+      "year": 2017,
+      "creator": "Álex Pina",
+      "imdb_rating": 8.2,
+      "origin": "International"
+    },
+    {
+      "title": "Wednesday",
+      "year": 2022,
+      "creator": "Alfred Gough",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "House of the Dragon",
+      "year": 2022,
+      "creator": "Ryan Condal",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "Shōgun",
+      "year": 2024,
+      "creator": "Rachel Kondo",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Fallout",
+      "year": 2024,
+      "creator": "Geneva Robertson-Dworet",
+      "imdb_rating": 8.3,
+      "origin": "International"
+    },
+    {
+      "title": "The White Lotus",
+      "year": 2021,
+      "creator": "Mike White",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "The Crown",
+      "year": 2016,
+      "creator": "Peter Morgan",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Fleabag",
+      "year": 2016,
+      "creator": "Phoebe Waller-Bridge",
+      "imdb_rating": 8.7,
+      "origin": "International"
+    },
+    {
+      "title": "Atlanta",
+      "year": 2016,
+      "creator": "Donald Glover",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Mindhunter",
+      "year": 2017,
+      "creator": "Joe Penhall",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Ozark",
+      "year": 2017,
+      "creator": "Bill Dubuque",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Westworld",
+      "year": 2016,
+      "creator": "Jonathan Nolan",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "The Umbrella Academy",
+      "year": 2019,
+      "creator": "Steve Blackman",
+      "imdb_rating": 7.9,
+      "origin": "International"
+    },
+    {
+      "title": "Cobra Kai",
+      "year": 2018,
+      "creator": "Josh Heald",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Only Murders in the Building",
+      "year": 2021,
+      "creator": "Steve Martin",
+      "imdb_rating": 8.1,
+      "origin": "International"
+    },
+    {
+      "title": "Andor",
+      "year": 2022,
+      "creator": "Tony Gilroy",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Ripley",
+      "year": 2024,
+      "creator": "Steven Zaillian",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "Baby Reindeer",
+      "year": 2024,
+      "creator": "Richard Gadd",
+      "imdb_rating": 7.7,
+      "origin": "International"
+    },
+    {
+      "title": "Beef",
+      "year": 2023,
+      "creator": "Lee Sung Jin",
+      "imdb_rating": 8,
+      "origin": "International"
+    },
+    {
+      "title": "The Night Of",
+      "year": 2016,
+      "creator": "Richard Price",
+      "imdb_rating": 8.5,
+      "origin": "International"
+    },
+    {
+      "title": "Mare of Easttown",
+      "year": 2021,
+      "creator": "Brad Ingelsby",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "Station Eleven",
+      "year": 2021,
+      "creator": "Patrick Somerville",
+      "imdb_rating": 7.6,
+      "origin": "International"
+    },
+    {
+      "title": "Pachinko",
+      "year": 2022,
+      "creator": "Soo Hugh",
+      "imdb_rating": 8.4,
+      "origin": "International"
+    },
+    {
+      "title": "The Sympathizer",
+      "year": 2024,
+      "creator": "Park Chan-wook",
+      "imdb_rating": 7,
+      "origin": "International"
+    },
+    {
+      "title": "Irmandade",
+      "year": 2019,
+      "creator": "Pedro Morelli",
+      "imdb_rating": 7.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Under Pressure",
+      "year": 2017,
+      "creator": "Luiz Noronha",
+      "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    },
+    {
+      "title": "Sob Pressão",
+      "year": 2017,
+      "creator": "Luiz Noronha",
+      "imdb_rating": 8.3,
+      "origin": "Brazilian"
+    }
+  ],
+  "skipped_already_present": [
+    [
+      "movie",
+      "Dune",
+      2021
+    ],
+    [
+      "movie",
+      "Dune: Part Two",
+      2024
+    ],
+    [
+      "movie",
+      "Alien",
+      1979
+    ],
+    [
+      "movie",
+      "Aliens",
+      1986
+    ],
+    [
+      "movie",
+      "The Terminator",
+      1984
+    ],
+    [
+      "movie",
+      "Terminator 2: Judgment Day",
+      1991
+    ],
+    [
+      "movie",
+      "Back to the Future",
+      1985
+    ],
+    [
+      "movie",
+      "Back to the Future Part II",
+      1989
+    ],
+    [
+      "movie",
+      "Spider-Man: Across the Spider-Verse",
+      2023
+    ],
+    [
+      "movie",
+      "Everything Everywhere All at Once",
+      2022
+    ],
+    [
+      "movie",
+      "WALL·E",
+      2008
+    ],
+    [
+      "movie",
+      "Up",
+      2009
+    ],
+    [
+      "movie",
+      "Toy Story",
+      1995
+    ],
+    [
+      "movie",
+      "Toy Story 3",
+      2010
+    ],
+    [
+      "movie",
+      "The Lion King",
+      1994
+    ],
+    [
+      "movie",
+      "Spider-Man: Into the Spider-Verse",
+      2018
+    ],
+    [
+      "movie",
+      "The Shining",
+      1980
+    ],
+    [
+      "movie",
+      "Psycho",
+      1960
+    ],
+    [
+      "movie",
+      "Roma",
+      2018
+    ],
+    [
+      "movie",
+      "The Shape of Water",
+      2017
+    ],
+    [
+      "movie",
+      "No Country for Old Men",
+      2007
+    ],
+    [
+      "movie",
+      "Bacurau",
+      2019
+    ],
+    [
+      "movie",
+      "Aquarius",
+      2016
+    ],
+    [
+      "movie",
+      "Neighboring Sounds",
+      2012
+    ],
+    [
+      "movie",
+      "The Second Mother",
+      2015
+    ],
+    [
+      "movie",
+      "Que Horas Ela Volta?",
+      2015
+    ],
+    [
+      "movie",
+      "Elite Squad: The Enemy Within",
+      2010
+    ],
+    [
+      "movie",
+      "Carandiru",
+      2003
+    ],
+    [
+      "movie",
+      "Pixote",
+      1980
+    ],
+    [
+      "movie",
+      "Entranced Earth",
+      1967
+    ],
+    [
+      "movie",
+      "Black God, White Devil",
+      1964
+    ],
+    [
+      "movie",
+      "Central Station",
+      1998
+    ],
+    [
+      "movie",
+      "I'm Still Here",
+      2024
+    ],
+    [
+      "movie",
+      "The Invisible Life of Eurídice Gusmão",
+      2019
+    ],
+    [
+      "movie",
+      "Hard Labor",
+      2011
+    ],
+    [
+      "movie",
+      "Good Manners",
+      2017
+    ],
+    [
+      "movie",
+      "The Way He Looks",
+      2014
+    ],
+    [
+      "movie",
+      "Hoje Eu Quero Voltar Sozinho",
+      2014
+    ],
+    [
+      "tv",
+      "The Mandalorian",
+      2019
+    ],
+    [
+      "tv",
+      "The Bear",
+      2022
+    ],
+    [
+      "tv",
+      "Severance",
+      2022
+    ],
+    [
+      "tv",
+      "The Last of Us",
+      2023
+    ],
+    [
+      "tv",
+      "When They See Us",
+      2019
+    ],
+    [
+      "tv",
+      "3%",
+      2016
+    ],
+    [
+      "tv",
+      "Sintonia",
+      2019
+    ],
+    [
+      "tv",
+      "Good Morning, Verônica",
+      2020
+    ],
+    [
+      "tv",
+      "Bom Dia, Verônica",
+      2020
+    ],
+    [
+      "tv",
+      "The Mechanism",
+      2018
+    ],
+    [
+      "tv",
+      "O Mecanismo",
+      2018
+    ],
+    [
+      "tv",
+      "Coisa Mais Linda",
+      2019
+    ],
+    [
+      "tv",
+      "Pantanal",
+      2022
+    ],
+    [
+      "tv",
+      "Avenida Brasil",
+      2012
+    ],
+    [
+      "tv",
+      "City of Men",
+      2002
+    ],
+    [
+      "tv",
+      "Cidade dos Homens",
+      2002
+    ],
+    [
+      "tv",
+      "Renascer",
+      2024
+    ],
+    [
+      "tv",
+      "Mania de Você",
+      2024
+    ],
+    [
+      "tv",
+      "Terra e Paixão",
+      2023
+    ]
+  ]
+}
