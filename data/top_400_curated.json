@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "totalItems": 1214,
+    "totalItems": 1216,
     "createdAt": "2026-07-03T16:32:28.412Z",
     "categories": {
       "movies": {
@@ -8517,6 +8517,20 @@
       "creator": "João Emanuel Carneiro",
       "imdb_rating": 7.5,
       "origin": "Brazilian"
+    },
+    {
+      "title": "Solo Leveling",
+      "year": 2024,
+      "creator": "Chugong",
+      "imdb_rating": 8.6,
+      "origin": "International"
+    },
+    {
+      "title": "Solo Leveling: Arise from the Shadow",
+      "year": 2025,
+      "creator": "Chugong",
+      "imdb_rating": 8.8,
+      "origin": "International"
     }
   ]
 }
