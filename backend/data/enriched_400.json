@@ -20284,8 +20284,8 @@
       "trailer_subtitles": [],
       "attachments": [],
       "poster_s3_key": null,
-      "encrypted": false,
-      "media_codecs": null
+      "encrypted": true,
+      "media_codecs": "avc1.64001f, mp4a.40.2"
     },
     {
       "id": "m-a-s-h-1972-tv",
