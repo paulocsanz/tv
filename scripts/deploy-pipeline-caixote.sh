@@ -25,6 +25,13 @@ export S3_ENDPOINT="$(node -e "const c=JSON.parse(process.argv[1]); process.stdo
 export S3_REGION="$(node -e "const c=JSON.parse(process.argv[1]); process.stdout.write(c.region||'auto')" "$CREDS")"
 export S3_URL_STYLE="$(node -e "const c=JSON.parse(process.argv[1]); process.stdout.write(c.urlStyle||'virtual-host')" "$CREDS")"
 
+echo "==> Loading encryption key from .env.caixote"
+if [ -f .env.caixote ]; then
+  set -a; source .env.caixote; set +a
+fi
+export ENCRYPTION_CATALOG_KEY="${ENCRYPTION_CATALOG_KEY:-}"
+export ENCRYPT_UPLOADS="${ENCRYPT_UPLOADS:-true}"
+
 echo "==> ghcr.io login + build/push $IMAGE"
 if [ -z "${GH_TOKEN:-}" ]; then GH_TOKEN="$(gh auth token)"; fi
 echo "$GH_TOKEN" | docker login ghcr.io -u paulocsanz --password-stdin

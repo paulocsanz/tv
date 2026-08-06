@@ -14,7 +14,7 @@ export default defineProject("vete-pipeline", () => {
   const pipeline = service("torrent-pipeline", {
     type: "container",
     role: "worker",
-    image: "ghcr.io/paulocsanz/tv-torrent-pipeline:20260730-2",
+    image: "ghcr.io/paulocsanz/tv-torrent-pipeline:20260806-1",
     region: "brasil",
     cpus: 4,
     memory_mb: 8 * 1024,
@@ -29,6 +29,8 @@ export default defineProject("vete-pipeline", () => {
       FFMPEG_H264_ENCODER: "libx264",
       FFMPEG_X264_PRESET: "veryfast",
       MIN_FREE_GB: "1",
+      ENCRYPTION_CATALOG_KEY: process.env.ENCRYPTION_CATALOG_KEY || "",
+      ENCRYPT_UPLOADS: process.env.ENCRYPT_UPLOADS || "true",
     },
   });
 
