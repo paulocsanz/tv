@@ -13007,8 +13007,8 @@
       "trailer_subtitles": [],
       "attachments": [],
       "poster_s3_key": null,
-      "encrypted": false,
-      "media_codecs": null
+      "encrypted": true,
+      "media_codecs": "avc1.640028, mp4a.40.2"
     },
     {
       "id": "city-of-god-2002-movie",
