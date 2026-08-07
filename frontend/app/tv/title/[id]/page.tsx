@@ -57,6 +57,7 @@ export default async function TvTitlePage({
           subtitles={item.subtitles}
           episodeMetadata={item.episodes}
           preferredSubtitleLang={me.default_subtitle_lang ?? null}
+          origin={item.origin}
           autoplayNext={me.autoplay_next ?? true}
           posterUrl={heroImage}
           numberedTitles={item.content_type === "course"}

@@ -511,6 +511,9 @@ export function VideoPlayer({
   subtitles,
   episodeMetadata = [],
   preferredSubtitleLang = null,
+  /** Catalog `origin` — "Brazilian" means Portuguese original audio, so we
+   * don't auto-enable Portuguese captions (they'd just echo the dialogue). */
+  origin = null,
   autoplayNext = true,
   posterUrl = null,
   numberedTitles = false,
@@ -530,6 +533,7 @@ export function VideoPlayer({
   subtitles: SubtitleTrack[];
   episodeMetadata?: EpisodeMetadata[];
   preferredSubtitleLang?: string | null;
+  origin?: string | null;
   autoplayNext?: boolean;
   /** Falls back to the title's backdrop when the current episode has no
    * still image of its own - a plain <video> just shows black before
@@ -790,16 +794,32 @@ export function VideoPlayer({
     }
     return [...best.values()].sort((a, b) => a.lang.localeCompare(b.lang) || a.id.localeCompare(b.id));
   })();
-  // The user's preferred language wins if this episode has it; otherwise
-  // fall back to non-forced English, then any non-forced track. Forced
-  // tracks (foreign-dialogue-only) are opt-in, never a default.
-  const defaultSubtitleId =
-    ((preferredSubtitleLang
-      ? episodeSubtitles.find((t) => t.lang === preferredSubtitleLang && !t.forced)
-      : undefined) ??
-      episodeSubtitles.find((t) => t.lang === "eng" && !t.forced) ??
-      episodeSubtitles.find((t) => !t.forced))?.id ?? null;
+  // Default captions: explicit account preference wins; otherwise Portuguese
+  // when the original audio is *not* Portuguese (International titles), so
+  // Brazilian viewers get PT on by default. When the audio already is PT
+  // (catalog origin "Brazilian"), leave captions off rather than doubling
+  // the dialogue. Forced tracks stay opt-in either way.
+  const originalAudioIsPortuguese =
+    typeof origin === "string" && origin.toLowerCase() === "brazilian";
+  const defaultSubtitleId = (() => {
+    if (preferredSubtitleLang) {
+      return (
+        episodeSubtitles.find((t) => t.lang === preferredSubtitleLang && !t.forced)?.id ?? null
+      );
+    }
+    if (originalAudioIsPortuguese) return null;
+    return (
+      episodeSubtitles.find((t) => t.lang === "por" && !t.forced)?.id ??
+      episodeSubtitles.find((t) => t.lang === "eng" && !t.forced)?.id ??
+      episodeSubtitles.find((t) => !t.forced)?.id ??
+      null
+    );
+  })();
   const [selectedSubtitleId, setSelectedSubtitleId] = useState(defaultSubtitleId);
+  // Custom cue paint (not the browser's native ::cue) so we can sit the
+  // text *above* the control chrome instead of under/over the seek bar —
+  // native WebVTT always anchors to the bottom of the <video> box.
+  const [cueText, setCueText] = useState("");
 
   const hideControlsTimer = useRef<number | null>(null);
   const seekReportTimer = useRef<number | null>(null);
@@ -965,19 +985,67 @@ export function VideoPlayer({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [streamUrl]);
 
-  // Native <track> cues still render through the browser - we just drive
-  // which one is active ourselves instead of relying on the browser's own
-  // (now-removed, since `controls` is gone) captions menu.
+  // Drive TextTracks ourselves: keep the active one in `hidden` mode (cues
+  // fire cuechange but the browser doesn't paint them), and mirror active
+  // cue text into `cueText` for the overlay above the control bar.
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
+
+    function stripVttTags(raw: string): string {
+      // VTT allows simple markup (<i>, <b>, <c.classname>, timestamps) —
+      // drop tags for the plain overlay; keep line breaks as newlines.
+      return raw
+        .replace(/<[^>]+>/g, "")
+        .replace(/&nbsp;/g, " ")
+        .replace(/&amp;/g, "&")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+        .trim();
+    }
+
+    function readActiveCues(track: TextTrack): string {
+      const cues = track.activeCues;
+      if (!cues || cues.length === 0) return "";
+      const parts: string[] = [];
+      for (let i = 0; i < cues.length; i++) {
+        const c = cues[i] as VTTCue;
+        if (c?.text) parts.push(stripVttTags(c.text));
+      }
+      return parts.filter(Boolean).join("\n");
+    }
+
+    let active: TextTrack | null = null;
+    function onCueChange() {
+      if (!active) {
+        setCueText("");
+        return;
+      }
+      setCueText(readActiveCues(active));
+    }
+
     for (let i = 0; i < video.textTracks.length; i++) {
       const track = video.textTracks[i];
       const trackId = episodeSubtitles[i]?.id;
-      track.mode = trackId && trackId === selectedSubtitleId ? "showing" : "hidden";
+      // `hidden` = cues load + cuechange fires, no native paint.
+      // `disabled` = no cues at all.
+      const want = Boolean(trackId && trackId === selectedSubtitleId);
+      track.mode = want ? "hidden" : "disabled";
+      if (want) active = track;
     }
+
+    if (active) {
+      active.addEventListener("cuechange", onCueChange);
+      onCueChange();
+    } else {
+      setCueText("");
+    }
+
+    return () => {
+      active?.removeEventListener("cuechange", onCueChange);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedSubtitleId, episodeNumber, episodeSubtitles.length]);
+  }, [selectedSubtitleId, episodeNumber, episodeSubtitles.length, streamUrl, retry]);
 
   useEffect(() => {
     function handleFullscreenChange() {
@@ -1393,6 +1461,22 @@ export function VideoPlayer({
             />
           ))}
         </video>
+
+        {/* Caption overlay sits above the control bar (and clear of it when
+            controls are hidden too). Native ::cue can't do that — it always
+            paints inside the <video> bottom edge, under our chrome. */}
+        {cueText && !isCasting && (
+          <div
+            aria-live="polite"
+            className={`pointer-events-none absolute inset-x-0 z-20 flex justify-center px-6 transition-[bottom] duration-200 ${
+              controlsVisible ? "bottom-[4.75rem]" : "bottom-6"
+            }`}
+          >
+            <span className="max-w-[90%] whitespace-pre-line rounded-md bg-black/75 px-3 py-1.5 text-center text-base font-medium leading-snug text-white shadow-lg sm:text-lg">
+              {cueText}
+            </span>
+          </div>
+        )}
 
         {status === "loading" && (
           <div

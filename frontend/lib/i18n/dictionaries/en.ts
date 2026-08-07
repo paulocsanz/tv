@@ -77,7 +77,7 @@ const dictionary: Dictionary = {
     heading: "Preferences",
     displayNameLabel: "Display name",
     subtitleLangLabel: "Default subtitle language",
-    subtitleNoPreference: "No preference (English if available)",
+    subtitleNoPreference: "No preference (Portuguese unless audio is PT)",
     autoplayNext: "Autoplay next episode",
     uiLanguageLabel: "Interface language",
     uiLanguagePt: "Portuguese (Brazil)",

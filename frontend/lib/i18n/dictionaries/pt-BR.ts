@@ -76,7 +76,7 @@ const dictionary = {
     heading: "Preferências",
     displayNameLabel: "Nome de exibição",
     subtitleLangLabel: "Idioma padrão da legenda",
-    subtitleNoPreference: "Sem preferência (inglês, se disponível)",
+    subtitleNoPreference: "Sem preferência (português se o áudio não for PT)",
     autoplayNext: "Reproduzir o próximo episódio automaticamente",
     uiLanguageLabel: "Idioma da interface",
     uiLanguagePt: "Português (Brasil)",

@@ -14,6 +14,8 @@ export function SalaTitlePlay(props: {
   subtitles: SubtitleTrack[];
   episodeMetadata: EpisodeMetadata[];
   preferredSubtitleLang: string | null;
+  /** Catalog origin ("Brazilian" | "International") — PT audio detection. */
+  origin?: string | null;
   autoplayNext: boolean;
   posterUrl: string | null;
   numberedTitles: boolean;
