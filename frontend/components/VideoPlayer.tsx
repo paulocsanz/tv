@@ -735,11 +735,22 @@ export function VideoPlayer({
   // `override` is how cast playback reports progress - the position lives on
   // the remote player, not the (paused, frozen) local <video> element, while
   // a session is active.
-  function reportProgress(useBeacon: boolean, override?: { positionSeconds: number; durationSeconds: number }) {
+  function reportProgress(
+    useBeacon: boolean,
+    override?: { positionSeconds: number; durationSeconds?: number },
+  ) {
     const video = videoRef.current;
     const positionSeconds = override?.positionSeconds ?? video?.currentTime;
     const durationSeconds = override?.durationSeconds ?? video?.duration;
-    if (positionSeconds === undefined || !durationSeconds || Number.isNaN(durationSeconds)) return;
+    if (
+      positionSeconds === undefined ||
+      !Number.isFinite(positionSeconds) ||
+      durationSeconds === undefined ||
+      !Number.isFinite(durationSeconds) ||
+      durationSeconds <= 0
+    ) {
+      return;
+    }
 
     const payload = JSON.stringify({
       episode: episodeNumber,
@@ -765,7 +776,10 @@ export function VideoPlayer({
   // rather than reporting on every event: the seek bar's onSeek fires
   // continuously while dragging, and reporting on each of those would spam
   // the backend with a request per pixel of drag movement.
-  function scheduleProgressReport(override?: { positionSeconds: number; durationSeconds: number }) {
+  function scheduleProgressReport(override?: {
+    positionSeconds: number;
+    durationSeconds?: number;
+  }) {
     if (seekReportTimer.current) window.clearTimeout(seekReportTimer.current);
     seekReportTimer.current = window.setTimeout(() => reportProgress(false, override), 800);
   }
