@@ -17,6 +17,30 @@ const BCP47: Record<string, string> = {
   pol: "pl", tur: "tr", heb: "he", hin: "hi", gre: "el", ell: "el",
 };
 
+/**
+ * Safe currentTime assignment. MSE encrypted playback often reports
+ * duration=NaN until enough media is appended; hover-preview and skip
+ * math then produce NaN/Infinity and the HTMLMediaElement setter throws
+ * "Value being assigned is not a finite floating-point value".
+ */
+function safeSetCurrentTime(video: HTMLMediaElement, seconds: number): boolean {
+  if (!Number.isFinite(seconds) || seconds < 0) return false;
+  const dur = video.duration;
+  const t =
+    Number.isFinite(dur) && dur > 0 ? Math.min(seconds, dur) : seconds;
+  if (!Number.isFinite(t)) return false;
+  try {
+    video.currentTime = t;
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function finiteOrZero(n: number | null | undefined): number {
+  return typeof n === "number" && Number.isFinite(n) ? n : 0;
+}
+
 type Episode = {
   key: string;
   /** 1-based index into the original s3Keys array — what the backend expects. */
@@ -306,8 +330,9 @@ function ScrubPreview({
       pendingTime.current = previewTime;
       return;
     }
+    if (!Number.isFinite(previewTime)) return;
     if (Math.abs(video.currentTime - previewTime) > 0.5) {
-      video.currentTime = previewTime;
+      safeSetCurrentTime(video, previewTime);
     }
   }, [previewTime, visible]);
 
@@ -331,7 +356,9 @@ function ScrubPreview({
     if (video && pendingTime.current !== null) {
       const next = pendingTime.current;
       pendingTime.current = null;
-      if (Math.abs(video.currentTime - next) > 0.5) video.currentTime = next;
+      if (Number.isFinite(next) && Math.abs(video.currentTime - next) > 0.5) {
+        safeSetCurrentTime(video, next);
+      }
     }
   }
 
@@ -853,8 +880,8 @@ export function VideoPlayer({
           videoRef.current?.pause();
           const session = cast!.framework.CastContext.getInstance().getCurrentSession();
           setCastDeviceName(session?.getCastDevice().friendlyName ?? null);
-        } else if (videoRef.current && player.currentTime > 0) {
-          videoRef.current.currentTime = player.currentTime;
+        } else if (videoRef.current && Number.isFinite(player.currentTime) && player.currentTime > 0) {
+          safeSetCurrentTime(videoRef.current, player.currentTime);
           setCurrentTime(player.currentTime);
         }
       }
@@ -862,10 +889,10 @@ export function VideoPlayer({
         setIsPlaying(!player.isPaused);
       }
       function handleCurrentTimeChanged() {
-        setCurrentTime(player.currentTime);
+        if (Number.isFinite(player.currentTime)) setCurrentTime(player.currentTime);
       }
       function handleDurationChanged() {
-        setDuration(player.duration);
+        if (Number.isFinite(player.duration)) setDuration(player.duration);
       }
       function handleSessionStateChanged(event: { sessionState?: string }) {
         const started =
@@ -941,41 +968,58 @@ export function VideoPlayer({
     const video = videoRef.current;
     // Seeding currentTime only works once metadata has loaded - setting it
     // right after the initial fetch resolves is commonly ignored by the
-    // browser.
+    // browser. MSE often reports duration=NaN at this point; only set when
+    // position is a finite number.
     if (video && savedProgress && !savedProgress.finished && !seeked) {
-      video.currentTime = savedProgress.position_seconds;
+      const pos = savedProgress.position_seconds;
+      if (Number.isFinite(pos) && pos > 0) safeSetCurrentTime(video, pos);
     }
-    if (video) setDuration(video.duration);
+    if (video && Number.isFinite(video.duration) && video.duration > 0) {
+      setDuration(video.duration);
+    }
     setSeeked(true);
   }
 
   function skip(deltaSeconds: number) {
     if (isCasting) {
-      seekTo(Math.min(duration || Infinity, Math.max(0, currentTime + deltaSeconds)));
+      const base = finiteOrZero(currentTime);
+      const cap = Number.isFinite(duration) && duration > 0 ? duration : base + deltaSeconds;
+      seekTo(Math.min(cap, Math.max(0, base + deltaSeconds)));
       return;
     }
     const video = videoRef.current;
     if (!video) return;
-    const dur = video.duration || Infinity;
-    video.currentTime = Math.min(dur, Math.max(0, video.currentTime + deltaSeconds));
-    setCurrentTime(video.currentTime);
-    scheduleProgressReport();
+    const base = finiteOrZero(video.currentTime);
+    const next = Math.max(0, base + deltaSeconds);
+    const dur = video.duration;
+    const clamped =
+      Number.isFinite(dur) && dur > 0 ? Math.min(dur, next) : next;
+    if (safeSetCurrentTime(video, clamped)) {
+      setCurrentTime(video.currentTime);
+      scheduleProgressReport();
+    }
   }
 
   function seekTo(seconds: number) {
+    if (!Number.isFinite(seconds) || seconds < 0) return;
     if (isCasting) {
       if (!castRemotePlayer || !castRemotePlayerController) return;
       castRemotePlayer.currentTime = seconds;
       castRemotePlayerController.seek();
       setCurrentTime(seconds);
-      scheduleProgressReport({ positionSeconds: seconds, durationSeconds: castRemotePlayer.duration });
+      const castDur = castRemotePlayer.duration;
+      scheduleProgressReport({
+        positionSeconds: seconds,
+        durationSeconds: Number.isFinite(castDur) ? castDur : undefined,
+      });
       return;
     }
     const video = videoRef.current;
     if (!video) return;
-    video.currentTime = seconds;
-    setCurrentTime(seconds);
-    scheduleProgressReport();
+    if (safeSetCurrentTime(video, seconds)) {
+      setCurrentTime(video.currentTime);
+      scheduleProgressReport();
+    }
   }
 
   function togglePlay() {
@@ -1128,8 +1172,14 @@ export function VideoPlayer({
           src={!encrypted && playableUrl ? playableUrl : undefined}
           onClick={togglePlay}
           onLoadedMetadata={handleLoadedMetadata}
-          onDurationChange={(e) => setDuration(e.currentTarget.duration)}
-          onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
+          onDurationChange={(e) => {
+            const d = e.currentTarget.duration;
+            if (Number.isFinite(d) && d > 0) setDuration(d);
+          }}
+          onTimeUpdate={(e) => {
+            const t = e.currentTarget.currentTime;
+            if (Number.isFinite(t)) setCurrentTime(t);
+          }}
           onProgress={(e) => updateBuffered(e.currentTarget)}
           onPlay={() => {
             setIsPlaying(true);
