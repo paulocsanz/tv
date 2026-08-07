@@ -34,7 +34,7 @@ export function CreateInviteButton() {
     // creation — the new member just can't decrypt media until they receive
     // a key separately.
     try {
-      const key = await loadCatalogKeyLocal();
+      const key = await loadCatalogKeyLocal(true);
       if (key) {
         const keyB64 = await exportCatalogKeyBase64(key);
         url += `#mk=${keyB64}`;

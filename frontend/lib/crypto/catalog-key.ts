@@ -107,23 +107,41 @@ export async function wrapCatalogKey(
   return { wrapped_hex: toHex(combined), salt_hex: toHex(salt) };
 }
 
-export async function unwrapCatalogKey(
+/** Decrypt wrap → raw 32-byte catalog key (before CryptoKey import). */
+export async function unwrapCatalogKeyRaw(
   wrappedHex: string,
   saltHex: string,
   password: string,
-): Promise<CryptoKey> {
+): Promise<Uint8Array> {
   const salt = fromHex(saltHex);
   const combined = fromHex(wrappedHex);
   if (combined.length < IV_LEN + 16) throw new Error("wrap too short");
   const iv = toArrayBuffer(combined.subarray(0, IV_LEN));
   const ct = combined.subarray(IV_LEN);
   const wrapKey = await deriveWrapKey(password, salt);
-  const raw = await crypto.subtle.decrypt(
-    { name: "AES-GCM", iv },
-    wrapKey,
-    toArrayBuffer(ct),
+  const raw = new Uint8Array(
+    await crypto.subtle.decrypt(
+      { name: "AES-GCM", iv },
+      wrapKey,
+      toArrayBuffer(ct),
+    ),
   );
-  return importCatalogKeyRaw(raw);
+  if (raw.length !== 32) throw new Error(`unwrapped key must be 32 bytes (got ${raw.length})`);
+  return raw;
+}
+
+/**
+ * Decrypt wrap → CryptoKey.
+ * @param extractable - true when caller will store/export/wrap (login, invite)
+ */
+export async function unwrapCatalogKey(
+  wrappedHex: string,
+  saltHex: string,
+  password: string,
+  extractable = true,
+): Promise<CryptoKey> {
+  const raw = await unwrapCatalogKeyRaw(wrappedHex, saltHex, password);
+  return importCatalogKeyRaw(raw, extractable);
 }
 
 function openDb(): Promise<IDBDatabase> {
@@ -140,37 +158,59 @@ function openDb(): Promise<IDBDatabase> {
   });
 }
 
-/** Persist a non-extractable CryptoKey in IndexedDB (survives reloads). */
-export async function storeCatalogKeyLocal(key: CryptoKey): Promise<void> {
-  // Re-import as non-extractable for storage discipline.
-  const raw = await exportCatalogKeyRaw(key);
-  const nonExtractable = await crypto.subtle.importKey(
-    "raw",
-    toArrayBuffer(raw),
-    { name: "AES-GCM", length: 256 },
-    false,
-    ["encrypt", "decrypt"],
-  );
+/**
+ * Persist catalog key material in IndexedDB as raw bytes (ArrayBuffer).
+ *
+ * Storing a CryptoKey object is flaky across browsers (Safari throws
+ * "A parameter or an operation is not supported by the underlying object"
+ * on export of non-extractable keys, and structured-clone of CryptoKey
+ * fails in some TV WebViews). Raw 32 bytes are portable; we re-import
+ * on load with the extractable flag the caller needs.
+ */
+export async function storeCatalogKeyLocal(key: CryptoKey | Uint8Array): Promise<void> {
+  const raw =
+    key instanceof Uint8Array ? key : await exportCatalogKeyRaw(key);
+  if (raw.length !== 32) throw new Error(`catalog key must be 32 bytes (got ${raw.length})`);
+  const payload = toArrayBuffer(raw);
   const db = await openDb();
   await new Promise<void>((resolve, reject) => {
     const tx = db.transaction(IDB_STORE, "readwrite");
-    tx.objectStore(IDB_STORE).put(nonExtractable, IDB_KEY);
+    tx.objectStore(IDB_STORE).put(payload, IDB_KEY);
     tx.oncomplete = () => resolve();
     tx.onerror = () => reject(tx.error ?? new Error("idb put failed"));
   });
   db.close();
 }
 
-export async function loadCatalogKeyLocal(): Promise<CryptoKey | null> {
+/**
+ * Load catalog key from IndexedDB.
+ * @param extractable - true for wrap/export (invite); false for player decrypt
+ */
+export async function loadCatalogKeyLocal(extractable = false): Promise<CryptoKey | null> {
   const db = await openDb();
-  const key = await new Promise<CryptoKey | null>((resolve, reject) => {
+  const stored = await new Promise<unknown>((resolve, reject) => {
     const tx = db.transaction(IDB_STORE, "readonly");
     const req = tx.objectStore(IDB_STORE).get(IDB_KEY);
-    req.onsuccess = () => resolve((req.result as CryptoKey | undefined) ?? null);
+    req.onsuccess = () => resolve(req.result);
     req.onerror = () => reject(req.error ?? new Error("idb get failed"));
   });
   db.close();
-  return key;
+  if (stored == null) return null;
+
+  // Legacy: CryptoKey was stored directly (pre-raw-bytes storage).
+  if (typeof CryptoKey !== "undefined" && stored instanceof CryptoKey) {
+    if (extractable && !stored.extractable) {
+      // Can't re-export; caller should re-unlock via password.
+      return null;
+    }
+    return stored;
+  }
+
+  let bytes: Uint8Array | null = null;
+  if (stored instanceof ArrayBuffer) bytes = new Uint8Array(stored);
+  else if (stored instanceof Uint8Array) bytes = stored;
+  if (!bytes || bytes.length !== 32) return null;
+  return importCatalogKeyRaw(bytes, extractable);
 }
 
 export async function clearCatalogKeyLocal(): Promise<void> {
@@ -196,9 +236,10 @@ export async function unlockCatalogKeyFromLogin(password: string): Promise<Crypt
     wrapped_hex: string;
     salt_hex: string;
   };
-  const key = await unwrapCatalogKey(wrapped_hex, salt_hex, password);
-  await storeCatalogKeyLocal(key);
-  return key;
+  // Store raw bytes (not CryptoKey) — avoids Safari export/IDB failures.
+  const raw = await unwrapCatalogKeyRaw(wrapped_hex, salt_hex, password);
+  await storeCatalogKeyLocal(raw);
+  return importCatalogKeyRaw(raw, true);
 }
 
 /** First-admin bootstrap: mint catalog key, wrap under password, PUT to server. */
@@ -231,7 +272,15 @@ export async function bootstrapCatalogKey(password: string): Promise<{
 
 /** Export catalog key as base64 for invite links (#mk=). Client-side only. */
 export async function exportCatalogKeyBase64(key: CryptoKey): Promise<string> {
-  const raw = await exportCatalogKeyRaw(key);
+  // Prefer raw path if key isn't extractable (shouldn't happen after raw IDB storage).
+  let raw: Uint8Array;
+  try {
+    raw = await exportCatalogKeyRaw(key);
+  } catch {
+    const reloaded = await loadCatalogKeyLocal(true);
+    if (!reloaded) throw new Error("catalog key not exportable — unlock again from Account");
+    raw = await exportCatalogKeyRaw(reloaded);
+  }
   let binary = "";
   for (let i = 0; i < raw.length; i++) binary += String.fromCharCode(raw[i]!);
   return btoa(binary);

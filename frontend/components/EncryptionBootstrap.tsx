@@ -126,7 +126,7 @@ export function EncryptionBootstrap({ isAdmin }: { isAdmin: boolean }) {
     setError(null);
     setMessage(null);
     try {
-      const key = await loadCatalogKeyLocal();
+      const key = await loadCatalogKeyLocal(true);
       if (!key) throw new Error("No catalog key unlocked on this device.");
       const keyB64 = await exportCatalogKeyBase64(key);
       const res = await fetch("/api/admin/invites", { method: "POST" });
