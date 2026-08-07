@@ -515,6 +515,7 @@ export function VideoPlayer({
   posterUrl = null,
   numberedTitles = false,
   encrypted = false,
+  mediaCodecs = null,
   runtime = null,
   hlsPlaylistS3Key = null,
 }: {
@@ -538,13 +539,13 @@ export function VideoPlayer({
    * show's plain episode titles, so the list must not *also* prefix
    * ep.number or it doubles up ("5. 2.4 Fundamentos..."). */
   numberedTitles?: boolean;
-  /** Needs catalog key (HLS AES-128 delivery). */
+  /** Needs catalog key (HLS AES-128 and/or legacy SSESENC1). */
   encrypted?: boolean;
-  /** @deprecated Unused — progressive SSESENC1 delivery removed. */
+  /** MSE codecs for legacy SSESENC1 progressive fallback. */
   mediaCodecs?: string | null;
   /** Catalog runtime e.g. "136 min" — seeds seek-bar duration. */
   runtime?: string | null;
-  /** HLS VOD playlist (RFC 0009). Required for encrypted playback. */
+  /** HLS VOD playlist (RFC 0009). Preferred when set. */
   hlsPlaylistS3Key?: string | null;
 }) {
   const t = useT();
@@ -588,13 +589,15 @@ export function VideoPlayer({
   const streamUrl = hasEpisodes
     ? `/api/stream/${id}?episode=${selectedIndex + 1}`
     : `/api/stream/${id}`;
-  // Delivery: HLS AES-128 (RFC 0009) when hlsPlaylistS3Key is set; else
-  // progressive plaintext. SSESENC1 progressive path was removed.
+  // Delivery: HLS AES-128 when hlsPlaylistS3Key is set; else SSESENC1
+  // progressive if encrypted; else plaintext. Prefer HLS when available.
   const useHls = Boolean(hlsPlaylistS3Key);
   const [playableUrl, setPlayableUrl] = useState<string | null>(
     useHls || encrypted ? null : streamUrl,
   );
+  const [decryptProgress, setDecryptProgress] = useState<number | null>(null);
   const [decryptError, setDecryptError] = useState<string | null>(null);
+  const [decryptMode, setDecryptMode] = useState<string | null>(null);
   const revokePlayableRef = useRef<(() => void) | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -605,21 +608,18 @@ export function VideoPlayer({
     revokePlayableRef.current = null;
 
     (async () => {
-      // Encrypted without HLS playlist → not playable (needs packaging).
-      if (encrypted && !useHls) {
-        setPlayableUrl(null);
-        setDecryptError("hls_required");
-        return;
-      }
-
-      if (!useHls) {
+      if (!encrypted && !useHls) {
         setPlayableUrl(streamUrl);
+        setDecryptProgress(null);
         setDecryptError(null);
+        setDecryptMode(null);
         return;
       }
 
       setPlayableUrl(null);
+      setDecryptProgress(useHls ? null : 0);
       setDecryptError(null);
+      setDecryptMode(null);
       try {
         const { loadCatalogKeyLocal } = await import("@/lib/crypto/catalog-key");
         const key = await loadCatalogKeyLocal(true);
@@ -628,20 +628,61 @@ export function VideoPlayer({
         if (!key) throw new Error("this title is encrypted but no catalog key is unlocked");
         const video = videoRef.current;
         if (!video) throw new Error("video element not ready");
-        const { attachHlsPlayback } = await import("@/lib/crypto/hls-playback");
-        const hlsUrl = hasEpisodes
-          ? `/api/hls/${id}?episode=${selectedIndex + 1}`
-          : `/api/hls/${id}`;
-        const attached = await attachHlsPlayback(video, hlsUrl, key);
-        if (cancelled) {
-          attached.revoke();
+
+        // Prefer HLS when packaged (RFC 0009).
+        if (useHls) {
+          const { attachHlsPlayback } = await import("@/lib/crypto/hls-playback");
+          const hlsUrl = hasEpisodes
+            ? `/api/hls/${id}?episode=${selectedIndex + 1}`
+            : `/api/hls/${id}`;
+          const attached = await attachHlsPlayback(video, hlsUrl, key);
+          if (cancelled) {
+            attached.revoke();
+            return;
+          }
+          revokePlayableRef.current = attached.revoke;
+          setPlayableUrl(hlsUrl);
+          setDecryptMode("hls");
+          setDecryptProgress(null);
           return;
         }
-        revokePlayableRef.current = attached.revoke;
-        setPlayableUrl(hlsUrl);
+
+        // Fallback: progressive SSESENC1 until the title is HLS-packaged.
+        const { resolvePlayableUrl } = await import("@/lib/crypto/media");
+        const sep = streamUrl.includes("?") ? "&" : "?";
+        const streamRes = await fetch(`${streamUrl}${sep}resolve=1`);
+        if (!streamRes.ok) throw new Error(`stream ${streamRes.status}`);
+        const { url: absoluteUrl } = (await streamRes.json()) as { url: string };
+        if (cancelled) return;
+        const resolved = await resolvePlayableUrl(
+          absoluteUrl,
+          true,
+          key,
+          (loaded, total) => {
+            if (cancelled) return;
+            if (total && total > 0) setDecryptProgress(Math.round((loaded / total) * 100));
+          },
+          {
+            codecs: mediaCodecs,
+            video,
+            durationSeconds: knownDurationSeconds,
+          },
+        );
+        if (cancelled) {
+          resolved.revoke();
+          return;
+        }
+        revokePlayableRef.current = resolved.revoke;
+        if (resolved.mode !== "mse") {
+          video.src = resolved.url;
+        }
+        setPlayableUrl(resolved.url);
+        setDecryptMode(resolved.mode ?? "blob");
+        setDecryptProgress(null);
       } catch (e) {
         if (!cancelled) {
           setDecryptError(e instanceof Error ? e.message : "decrypt failed");
+          setDecryptProgress(null);
         }
       }
     })();
@@ -651,7 +692,17 @@ export function VideoPlayer({
       revokePlayableRef.current?.();
       revokePlayableRef.current = null;
     };
-  }, [streamUrl, encrypted, retry, useHls, id, hasEpisodes, selectedIndex]);
+  }, [
+    streamUrl,
+    encrypted,
+    mediaCodecs,
+    retry,
+    knownDurationSeconds,
+    useHls,
+    id,
+    hasEpisodes,
+    selectedIndex,
+  ]);
 
   const progressUrl = `/api/progress/${id}`;
   // 0 is the movie/no-episode sentinel, matching the backend schema.
@@ -1192,7 +1243,25 @@ export function VideoPlayer({
                 )}
               </>
             ) : (
-              <p>{t.player.loadingStream}</p>
+              <>
+                <p>
+                  {useHls
+                    ? t.player.loadingStream
+                    : decryptMode === "mse"
+                      ? t.player.decryptingLive
+                      : decryptProgress != null && decryptProgress < 100
+                        ? t.player.decryptingStream
+                        : t.player.decrypting}
+                </p>
+                {decryptProgress != null && (
+                  <div className="h-1.5 w-48 overflow-hidden rounded-full bg-white/10">
+                    <div
+                      className="h-full bg-[#f5c518] transition-all"
+                      style={{ width: `${decryptProgress}%` }}
+                    />
+                  </div>
+                )}
+              </>
             )}
           </div>
         )}
