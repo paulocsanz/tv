@@ -200,6 +200,230 @@
         "label": "English",
         "forced": false,
         "s3_key": "videos/12-angry-men-1957-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/12-angry-men-1957-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "2001-a-space-odyssey-1968-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/2001-a-space-odyssey-1968-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "a-clockwork-orange-1971-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/a-clockwork-orange-1971-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "a-separation-2011-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/a-separation-2011-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "alien-1979-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/alien-1979-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "alien-resurrection-1997-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/alien-resurrection-1997-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "aliens-1986-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/aliens-1986-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "all-about-eve-1950-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/all-about-eve-1950-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "amadeus-1984-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/amadeus-1984-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "amelie-2001-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/amelie-2001-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "american-beauty-1999-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/american-beauty-1999-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "american-history-x-1998-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/american-history-x-1998-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "apocalypse-now-1979-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/apocalypse-now-1979-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "at-play-in-the-fields-of-the-lord-1991-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/at-play-in-the-fields-of-the-lord-1991-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "avengers-endgame-2019-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/avengers-endgame-2019-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "avengers-infinity-war-2018-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/avengers-infinity-war-2018-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "back-to-the-future-1985-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/back-to-the-future-1985-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "back-to-the-future-part-ii-1989-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/back-to-the-future-part-ii-1989-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "back-to-the-future-part-iii-1990-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/back-to-the-future-part-iii-1990-movie/external.0.por.vtt"
       }
     ]
   }
