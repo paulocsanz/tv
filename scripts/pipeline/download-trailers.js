@@ -33,7 +33,7 @@
  * Resumable: already-populated ids in the output file are skipped, so a
  * killed/interrupted run can just be restarted.
  *
- * Usage: node download-trailers.js [--limit N] [--dry-run]
+ * Usage: node scripts/pipeline/download-trailers.js [--limit N] [--dry-run]
  */
 
 import fs from "fs";

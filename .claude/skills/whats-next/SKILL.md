@@ -79,13 +79,13 @@ git status --short
 git diff --stat
 git log --oneline -10
 cat .download-picked-torrents.lock 2>/dev/null; echo
-ps aux | grep -E "[n]ode download-picked|[a]ria2c|[f]fmpeg"
+ps aux | grep -E "[n]ode.*download-picked|[a]ria2c|[f]fmpeg"
 ```
 
 - Uncommitted/staged changes: what area are they in, do they look finished or mid-flight?
 - Any `*.bak-pre-*` snapshot files lying around — these mark an in-flight or abandoned cleanup pass.
 - Last commit message like "wip" or a partial description → flag it.
-- If the pipeline lock file exists or a `download-picked-torrents.js` process is running, note it's
+- If the pipeline lock file exists or a `scripts/pipeline/download-picked-torrents.js` process is running, note it's
   active and point at `pipeline-status` for a real health check rather than duplicating it here.
 
 ---

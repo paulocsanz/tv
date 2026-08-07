@@ -1,12 +1,12 @@
 ---
 name: pipeline-status
-description: Check on, diagnose, and (if needed) restart the torrent-to-S3 acquisition pipeline (download-picked-torrents.js). Use whenever the user asks "check progress", "is it stuck", "status", "are we uploading", or anything about the download/transcode/upload pipeline's health.
+description: Check on, diagnose, and (if needed) restart the torrent-to-S3 acquisition pipeline (scripts/pipeline/download-picked-torrents.js). Use whenever the user asks "check progress", "is it stuck", "status", "are we uploading", or anything about the download/transcode/upload pipeline's health.
 argument-hint: "[--restart] [--watch]"
 ---
 
 # Pipeline Status Skill
 
-Diagnoses the state of `download-picked-torrents.js`, the background process that downloads
+Diagnoses the state of `scripts/pipeline/download-picked-torrents.js`, the background process that downloads
 picked torrents, transcodes them to browser-playable MP4, and uploads them to the Railway S3
 bucket. This process is meant to run unattended for hours, so its most common failure modes are
 silent: it looks alive in `ps` but has actually stalled, or two copies end up running at once and
@@ -14,19 +14,19 @@ collide.
 
 ## What "healthy" looks like
 
-- Exactly one `node download-picked-torrents.js` process, PID matching `.download-picked-torrents.lock`.
+- Exactly one `node scripts/pipeline/download-picked-torrents.js` process, PID matching `.download-picked-torrents.lock`.
 - `pipeline-events.jsonl` has gotten a new line within the last ~10 minutes.
 - At least one `aria2c` or `ffmpeg` child is burning real CPU (not stuck at ~0%).
 
 ## Step 1: Process check
 
 ```bash
-ps aux | grep -E "[n]ode download-picked|[a]ria2c|[f]fmpeg"
+ps aux | grep -E "[n]ode scripts/pipeline/download-picked|[n]ode.*download-picked|[a]ria2c|[f]fmpeg"
 cat /Users/paulo/software/tv/.download-picked-torrents.lock 2>/dev/null; echo
 ```
 
 - **No node process, but lockfile exists with a dead PID** → stale lock, safe to delete and restart.
-- **More than one `node download-picked-torrents.js`** → this has happened before (an orphaned
+- **More than one `node scripts/pipeline/download-picked-torrents.js`** → this has happened before (an orphaned
   instance from a prior session survived past the lockfile check, or two terminals raced before
   the lock existed) and causes real damage: both instances download the same items into the same
   `downloads/<id>/` directory and transcode into the same deterministic temp filename
@@ -116,10 +116,10 @@ Then restart detached so it survives the terminal closing:
 
 ```bash
 cd /Users/paulo/software/tv
-nohup node download-picked-torrents.js > pipeline-console.log 2>&1 &
+nohup node scripts/pipeline/download-picked-torrents.js > pipeline-console.log 2>&1 &
 disown
 sleep 5
-ps aux | grep "[n]ode download-picked"
+ps aux | grep "[n]ode.*download-picked"
 tail -20 pipeline-console.log
 ```
 

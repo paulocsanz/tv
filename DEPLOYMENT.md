@@ -1,57 +1,37 @@
-# Deployment Guide
+# Deployment
 
-## Git Setup
+## App (Railway)
 
-Repository initialized at `/Users/paulo/software/tv`. To push to a remote:
+Infrastructure lives in `.railway/railway.ts` (frontend + backend).
+
+- Backend: `backend/` (Rust/Axum), catalog at `backend/data/enriched_400.json`
+- Frontend: `frontend/` (Next.js)
+
+Link and deploy via the Railway CLI / dashboard as usual.
+
+## Acquisition pipeline (caixote)
+
+The torrent → transcode → S3 worker is a separate caixote service:
 
 ```bash
-# Add remote (choose one):
-git remote add origin https://github.com/YOUR_USERNAME/tv.git          # GitHub
-git remote add origin https://gitlab.com/YOUR_USERNAME/tv.git          # GitLab
-git remote add origin git@github.com:YOUR_USERNAME/tv.git              # GitHub SSH
+# Build/push image + apply IaC
+./scripts/ops/deploy-pipeline-caixote.sh
 
-# Push to remote
-git branch -M main
-git push -u origin main
+# Tail progress
+node scripts/ops/monitor-pipeline-caixote.mjs
+# or: caixote logs torrent-pipeline
 ```
 
-## Railway Deployment
+Config: `caixote.config.ts`, image: `Dockerfile.pipeline`.
 
-The `.railway/railway.ts` (Infrastructure as Code) automatically defines two services:
+## Local pipeline
 
-### Backend (Rust + Axum)
-- Reads from `backend/Dockerfile` (multi-stage build)
-- Serves API on port 8080
-- Uses enriched_400.json (generated locally via `backend/target/release/enrich`)
-- Health check: `/health`
+From the **repo root**:
 
-### Frontend (Next.js 14)
-- Runs `npm run build` and `npm start`
-- Connects to backend via `NEXT_PUBLIC_API_URL` environment variable
-- Serves on port 3000
+```bash
+npm run pipeline:pick    # pick magnets
+npm run pipeline         # download → transcode → upload
+npm run pipeline:monitor # TUI
+```
 
-### Local Data (Torrents)
-- **Not in git** — torrents stay local in `/downloads`
-- `backend/data/` is gitignored
-- Before deploying backend, generate enriched data locally:
-  ```bash
-  cd backend
-  ./target/release/enrich  # generates backend/data/enriched_400.json
-  ```
-
-### To Deploy via Railway
-1. Push code to git (see Git Setup above)
-2. Link project to Railway IaC:
-   ```bash
-   railway link  # or use GUI
-   ```
-3. Railway will read `.railway/railway.ts` and create/update services
-4. Services build and deploy automatically on git push
-
-### Environment Variables
-
-Set these in Railway:
-- **Backend**: `ENRICHED_DATA_PATH` (optional, defaults to `data/enriched_400.json`)
-- **Frontend**: `NEXT_PUBLIC_API_URL` (points to deployed backend URL)
-
-Both are typically auto-configured by Railway when services are linked.
+See `README.md` for the full layout and script map.

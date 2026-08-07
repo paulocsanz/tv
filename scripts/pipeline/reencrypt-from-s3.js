@@ -6,10 +6,10 @@
  * Usage:
  *   set -a && source .env.caixote && set +a
  *   export ENCRYPTION_CATALOG_KEY='…'   # 32-byte base64
- *   node reencrypt-from-s3.js --id city-lights-1931-movie
- *   node reencrypt-from-s3.js --id city-lights-1931-movie --no-compress
- *   node reencrypt-from-s3.js --id city-lights-1931-movie --no-fmp4
- *   node reencrypt-from-s3.js --s3-key videos/…/file.mp4 --catalog-id city-lights-1931-movie
+ *   node scripts/pipeline/reencrypt-from-s3.js --id city-lights-1931-movie
+ *   node scripts/pipeline/reencrypt-from-s3.js --id city-lights-1931-movie --no-compress
+ *   node scripts/pipeline/reencrypt-from-s3.js --id city-lights-1931-movie --no-fmp4
+ *   node scripts/pipeline/reencrypt-from-s3.js --s3-key videos/…/file.mp4 --catalog-id city-lights-1931-movie
  *
  * Env (same as the pipeline):
  *   S3_ACCESS_KEY_ID S3_SECRET_ACCESS_KEY S3_BUCKET_NAME S3_ENDPOINT
@@ -39,7 +39,7 @@ const {
   encryptFile,
   COMPRESSION_GZIP,
   mseCodecsFromFfprobe,
-} = require("./lib/media-encryption.cjs");
+} = require("../../lib/media-encryption.cjs");
 
 const CATALOG_PATH =
   process.env.ENRICHED_DATA_PATH ||
@@ -404,9 +404,9 @@ async function main() {
   const opts = parseArgs(process.argv.slice(2));
   if (opts.help) {
     console.log(`Usage:
-  node reencrypt-from-s3.js --id <catalog-id> [--no-compress] [--no-fmp4]
-  node reencrypt-from-s3.js --ids id1,id2,id3
-  node reencrypt-from-s3.js --id a --id b --id c`);
+  node scripts/pipeline/reencrypt-from-s3.js --id <catalog-id> [--no-compress] [--no-fmp4]
+  node scripts/pipeline/reencrypt-from-s3.js --ids id1,id2,id3
+  node scripts/pipeline/reencrypt-from-s3.js --id a --id b --id c`);
     process.exit(0);
   }
 

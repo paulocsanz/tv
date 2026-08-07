@@ -1,5 +1,5 @@
 /**
- * Tiny pre-flight before download-picked-torrents.js:
+ * Tiny pre-flight before scripts/pipeline/download-picked-torrents.js:
  * - seed enriched catalog onto the data path on first boot
  * - fail fast with a clear message if S3 env is missing
  * - force stdout/stderr unbuffered-ish writes for microVM serial logs
@@ -56,4 +56,6 @@ await runNetworkDiagnostics().catch((err) =>
 );
 
 // Hand off to the real pipeline (same process so signals stay correct).
-await import(pathToFileURL(path.resolve("/app/download-picked-torrents.js")).href);
+await import(
+  pathToFileURL(path.resolve("/app/scripts/pipeline/download-picked-torrents.js")).href,
+);

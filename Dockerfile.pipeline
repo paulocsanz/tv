@@ -6,13 +6,14 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
+RUN mkdir -p /app/scripts/pipeline /app/lib
 
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev
 
-COPY download-picked-torrents.js transcode.js ./
-COPY lib/media-encryption.cjs /app/lib/media-encryption.cjs
-COPY lib/hls-package.cjs /app/lib/hls-package.cjs
+# Keep scripts/pipeline + lib/ layout so relative requires (../../lib/…) work.
+COPY scripts/pipeline/download-picked-torrents.js scripts/pipeline/transcode.js /app/scripts/pipeline/
+COPY lib/media-encryption.cjs lib/hls-package.cjs /app/lib/
 RUN mkdir -p /app/backend/data /data/downloads /data/backend/data
 COPY backend/data/enriched_400.json /app/backend/data/enriched_400.json
 

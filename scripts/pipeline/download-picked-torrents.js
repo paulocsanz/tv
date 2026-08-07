@@ -18,6 +18,11 @@ import {
   ListPartsCommand,
 } from "@aws-sdk/client-s3";
 import { NodeHttpHandler } from "@smithy/node-http-handler";
+import { createRequire } from "module";
+import { fileURLToPath } from "url";
+
+const require = createRequire(import.meta.url);
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
 import {
   transcodeForBrowser,
   browserMp4Name,
@@ -49,7 +54,7 @@ const ENCRYPT_UPLOADS =
 let encryptionCatalogKey = null;
 if (ENCRYPT_UPLOADS) {
   try {
-    const { parseCatalogKey } = require("./lib/media-encryption.cjs");
+    const { parseCatalogKey } = require("../../lib/media-encryption.cjs");
     encryptionCatalogKey = parseCatalogKey(process.env.ENCRYPTION_CATALOG_KEY);
     if (!encryptionCatalogKey) {
       console.warn(
@@ -1854,7 +1859,7 @@ async function processPickedTorrents() {
       // browser MP4 and upload segments — no "upload plain → re-download →
       // re-encrypt" loop. Progressive SSESENC1 is skipped for new titles.
       if (shouldEncryptItem(item)) {
-        const { packageHlsAes128 } = require("./lib/hls-package.cjs");
+        const { packageHlsAes128 } = require("../../lib/hls-package.cjs");
         const hlsDir = `${tmpPath}.hls`;
         fs.mkdirSync(hlsDir, { recursive: true });
         process.stdout.write(`  [${label}] Package HLS AES-128… `);

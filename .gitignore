@@ -2,29 +2,45 @@
 node_modules/
 /backend/target/
 
-# Environment
+# Environment / secrets
 .env
 .env.local
 .env.*.local
+.env.caixote
 
 # Build outputs
 /frontend/.next/
 /frontend/out/
 dist/
 
-# Local data (torrents stay local only)
+# Local media working dirs (large, machine-local)
 downloads/
+downloaded_content/
 temp/
 *.torrent
-torrent-*.ts
-*torrent*.js
-*torrent*.sh
-transcode.js
-monitor.js
-pipeline-events.jsonl
-*.log
 
-# Cache
+# Pipeline runtime state
+.download-picked-torrents.lock
+.batch_download_progress.json
+.download_progress.json
+.torrent_finder_progress.json
+.watchdog_state/
+pipeline-events.jsonl
+pipeline-console.log
+
+# Logs & one-off artifacts
+*.log
+nohup.out
+*-log.txt
+*-log-*.txt
+*.bak-pre-*
+pick-*-results.json
+*-dry-run*.json
+bloated-uploads.json
+original-titles-flagged.json
+torrentio-dry-run-results.json
+
+# Cache / OS
 .cache/
 .DS_Store
 
@@ -32,24 +48,9 @@ pipeline-events.jsonl
 .vscode/
 .idea/
 
-# Logs
-*.log
-nohup.out
-
-# Railway
+# Railway pull leftovers
 .railway-config-pull-*
-
-# Pipeline runtime state / one-off tooling output
-.download-picked-torrents.lock
-*-log.txt
-*-log-*.txt
-*.bak-pre-*
-pick-*-results.json
-*-dry-run*.json
 
 # Claude Code local-only state (keep .claude/skills/ tracked)
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
-
-# Local caixote/S3 secrets
-.env.caixote

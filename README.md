@@ -1,101 +1,78 @@
-# Torrent Finder with Persistent Resume
+# tv (vete)
 
-A comprehensive torrent finder that processes cached JSON lists with persistence support.
+Private streaming catalog: **Next.js** frontend, **Rust** backend, and a
+**torrent → transcode → S3** acquisition pipeline.
 
-## Features
+## Layout
 
-- **JSON List Processing**: Process cached lists of movies or TV shows from `data/` directory
-- **Progress Persistence**: Automatically resumes from where it left off if interrupted
-- **Sequential & Parallel Modes**: Both processing approaches supported
-- **Quality Ranking**: Select torrents based on seeders/leechers ratio
-- **Local Saving**: Save torrent files locally during processing
+```
+backend/                 Rust API + catalog JSON (backend/data/)
+frontend/                Next.js app
+lib/                     Shared Node helpers (encryption, HLS packaging)
+scripts/
+  pipeline/              Acquisition: pick, download, transcode, HLS, reencrypt
+  catalog/               One-shot TMDB/metadata backfills & data fixes
+  ops/                   Deploy / monitor the caixote pipeline worker
+docker/                  Pipeline image entrypoint helpers
+rfcs/                    Design docs
+data/                    Curated seed lists (not the live catalog)
+caixote.config.ts        Pipeline worker IaC
+Dockerfile.pipeline      Pipeline container image
+```
 
-## Usage
+Run all Node scripts **from the repo root** (`process.cwd()` resolves
+`backend/data/` and `downloads/`).
 
-### 1. Find individual torrents
+## App
+
 ```bash
-node torrent-finder-persistent.ts "Breaking Bad" 5 10
+# Frontend
+cd frontend && npm install && npm run dev
+
+# Backend
+cd backend && cargo run
 ```
 
-### 2. Process cached movie list sequentially (resumes automatically)
+## Acquisition pipeline
+
 ```bash
-node torrent-finder-persistent.ts process-list movies
+# 1. Pick magnets for catalog titles
+npm run pipeline:pick
+# or: node scripts/pipeline/pick-best-torrents.js
+
+# 2. Download → transcode → upload (long-running)
+npm run pipeline
+# or: node scripts/pipeline/download-picked-torrents.js
+
+# Live TUI against pipeline-events.jsonl
+npm run pipeline:monitor
 ```
 
-### 3. Process cached TV series list in parallel
+Remote worker (caixote):
+
 ```bash
-node torrent-finder-persistent.ts process-list tv parallel
+./scripts/ops/deploy-pipeline-caixote.sh
+node scripts/ops/monitor-pipeline-caixote.mjs
 ```
 
-### 4. Analyze local torrents
-```bash
-node torrent-finder-persistent.ts analyze ./downloads
-```
+Other pipeline tools (from repo root):
 
-## How Persistence Works
+| Script | Purpose |
+|--------|---------|
+| `scripts/pipeline/pick-torrentio.js` | Brazilian titles via Torrentio |
+| `scripts/pipeline/package-hls-from-s3.js` | HLS AES-128 packaging |
+| `scripts/pipeline/reencrypt-from-s3.js` | At-rest re-encryption |
+| `scripts/pipeline/fetch-external-subtitles.js` | OpenSubtitles backfill |
+| `scripts/pipeline/download-trailers.js` | Self-host trailers on S3 |
 
-The script automatically:
-1. **Saves progress** every 10 items processed (in `.torrent_finder_progress.json`)
-2. **Resumes from last checkpoint** when restarted
-3. **Clears progress file** when processing completes successfully
+## Catalog maintenance
 
-Progress tracking prevents loss of work if the process is interrupted.
-
-## Data Sources
-
-The script uses cached JSON files in the `data/` directory:
-- `data/movies/best_1000_movies.json` - List of top movies (example)
-- `data/tv/best_1000_tv_series.json` - List of top TV series (example)
-
-## Quality Selection
-
-Torrents are ranked by a quality score based on the formula:
-```
-quality_score = (seeders * 2.0) + (leechers * -1.0)
-```
-
-This prioritizes torrents with more seeders and fewer leechers.
-
-## Output 
-
-- Torrents saved in `./downloads/` directory
-- Progress information displayed during processing
-- Each torrent filename includes the title, season, and episode
+One-shot backfills live under `scripts/catalog/` (TMDB collections, keywords,
+translations, Oscars, poster fixes, etc.). Run only when you know you need
+them — they touch `backend/data/*.json`.
 
 ## Requirements
 
-Node.js 14+
-
-### Installing aria2c (Required)
-
-To download torrents, you must install `aria2c`:
-
-**On macOS with Homebrew:**
-```bash
-brew install aria2
-```
-
-**On Ubuntu/Debian:**
-```bash
-sudo apt install aria2
-```
-
-## How to Download All 400 Torrents
-
-For downloading all torrents from the curated 400-item list:
-1. Install `aria2c` (see above)
-2. Run:
-```bash
-node download-all-torrents.js
-```
-This script will:
-- Convert the curated `data/top_400_curated.json` to the required format
-- Process each movie using the existing torrent finder infrastructure  
-- Save progress automatically to resume if interrupted
-- Download all torrents to the `downloads/` directory
-
-## Important Notes
-
-- The process may take several hours to complete for 400 items
-- Progress is saved every 10 items to prevent data loss
-- Make sure you have sufficient disk space in the downloads directory
+- Node 20+
+- `aria2c` and `ffmpeg` for the pipeline
+- S3 credentials (`S3_*` env) and, for encrypted uploads, `ENCRYPTION_CATALOG_KEY`

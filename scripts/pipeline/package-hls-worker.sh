@@ -3,14 +3,15 @@
 # One title at a time until every single-file s3 title has hls_playlist_s3_key.
 #
 #   set -a && source .env.caixote && set +a
-#   nohup ./package-hls-worker.sh >> /tmp/package-hls-worker.log 2>&1 &
+#   nohup ./scripts/pipeline/package-hls-worker.sh >> /tmp/package-hls-worker.log 2>&1 &
 #
 # Env:
 #   MAX_TITLES  stop after N successes this run (default 0 = unlimited)
 #   SLEEP_SEC   pause between titles (default 2)
 
 set -euo pipefail
-cd "$(dirname "$0")"
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+cd "$ROOT"
 
 MAX_TITLES="${MAX_TITLES:-0}"
 SLEEP_SEC="${SLEEP_SEC:-2}"
@@ -61,7 +62,7 @@ while true; do
   fi
 
   echo "$LOG_PREFIX packaging $id …"
-  if node package-hls-from-s3.js --id "$id"; then
+  if node scripts/pipeline/package-hls-from-s3.js --id "$id"; then
     done_count=$((done_count + 1))
     echo "$LOG_PREFIX ok $id (run total $done_count)"
   else

@@ -5,8 +5,8 @@
  *
  * Usage:
  *   set -a && source .env.caixote && set +a
- *   node package-hls-from-s3.js --id the-matrix-1999-movie
- *   node package-hls-from-s3.js --ids a,b,c
+ *   node scripts/pipeline/package-hls-from-s3.js --id the-matrix-1999-movie
+ *   node scripts/pipeline/package-hls-from-s3.js --ids a,b,c
  *
  * Env: S3_* + ENCRYPTION_CATALOG_KEY (32-byte base64)
  */
@@ -26,10 +26,8 @@ import {
 import { NodeHttpHandler } from "@smithy/node-http-handler";
 
 const require = createRequire(import.meta.url);
-const { parseCatalogKey, decryptBuffer, isEncryptedBuffer } = require(
-  "./lib/media-encryption.cjs",
-);
-const { packageHlsAes128 } = require("./lib/hls-package.cjs");
+const { parseCatalogKey, decryptBuffer, isEncryptedBuffer } = require("../../lib/media-encryption.cjs");
+const { packageHlsAes128 } = require("../../lib/hls-package.cjs");
 
 const CATALOG_PATH =
   process.env.ENRICHED_DATA_PATH ||
@@ -246,9 +244,9 @@ async function main() {
   const opts = parseArgs(process.argv.slice(2));
   if (opts.help || (!opts.all && opts.ids.length === 0)) {
     console.log(`Usage:
-  node package-hls-from-s3.js --id <catalog-id>
-  node package-hls-from-s3.js --ids id1,id2
-  node package-hls-from-s3.js --all [--limit N] [--include-series] [--force]
+  node scripts/pipeline/package-hls-from-s3.js --id <catalog-id>
+  node scripts/pipeline/package-hls-from-s3.js --ids id1,id2
+  node scripts/pipeline/package-hls-from-s3.js --all [--limit N] [--include-series] [--force]
 Env: S3_* ENCRYPTION_CATALOG_KEY`);
     process.exit(opts.help ? 0 : 1);
   }

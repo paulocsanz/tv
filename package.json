@@ -1,23 +1,25 @@
 {
-  "name": "tv-torrent-analyzer",
+  "name": "tv",
   "version": "1.0.0",
-  "description": "A tool to analyze torrent files and find the best torrents for TV shows",
-  "main": "index.js",
+  "description": "Private streaming catalog: Next.js frontend, Rust backend, torrent→S3 acquisition pipeline",
   "type": "module",
   "scripts": {
-    "find-torrent": "node find-torrent.js",
-    "torrent-finder": "node torrent-finder.ts",
-    "test": "node test-torrent-finder.js",
+    "pipeline": "node scripts/pipeline/download-picked-torrents.js",
+    "pipeline:pick": "node scripts/pipeline/pick-best-torrents.js",
+    "pipeline:monitor": "node scripts/pipeline/monitor.js",
+    "pipeline:hls": "node scripts/pipeline/package-hls-from-s3.js",
+    "pipeline:reencrypt": "node scripts/pipeline/reencrypt-from-s3.js",
+    "ops:deploy-pipeline": "./scripts/ops/deploy-pipeline-caixote.sh",
+    "ops:monitor-caixote": "node scripts/ops/monitor-pipeline-caixote.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "tsc --noEmit"
   },
   "keywords": [
-    "torrent",
-    "tv",
-    "finder",
-    "analysis"
+    "streaming",
+    "catalog",
+    "hls",
+    "pipeline"
   ],
-  "author": "TV Torrent Analyzer Team",
   "license": "MIT",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.500.0",

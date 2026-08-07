@@ -1,0 +1,30 @@
+{
+  "the-matrix-1999-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-matrix-1999-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-matrix-1999-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-matrix-1999-movie/external.0.spa.vtt"
+      }
+    ]
+  }
+}

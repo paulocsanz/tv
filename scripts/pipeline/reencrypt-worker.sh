@@ -3,7 +3,7 @@
 # one at a time until none remain (or MAX is hit).
 #
 #   set -a && source .env.caixote && set +a
-#   nohup ./reencrypt-worker.sh >> /tmp/reencrypt-worker.log 2>&1 &
+#   nohup ./scripts/pipeline/reencrypt-worker.sh >> /tmp/reencrypt-worker.log 2>&1 &
 #
 # Env:
 #   MAX_MB     skip objects larger than this (default 1200)
@@ -11,7 +11,8 @@
 #   SLEEP_SEC  pause between titles (default 2)
 
 set -euo pipefail
-cd "$(dirname "$0")"
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+cd "$ROOT"
 
 MAX_MB="${MAX_MB:-1200}"
 MAX_TITLES="${MAX_TITLES:-0}"
@@ -29,7 +30,7 @@ fi
 
 # Wait for any other reencrypt-from-s3.js (not this worker's children after we start them)
 wait_for_peer() {
-  while pgrep -f "node reencrypt-from-s3.js" >/dev/null 2>&1; do
+  while pgrep -f "node scripts/pipeline/reencrypt-from-s3.js" >/dev/null 2>&1; do
     # If the only match is about to be ours, break — we check before spawn
     echo "$LOG_PREFIX waiting for existing reencrypt-from-s3.js …"
     sleep 30
@@ -122,7 +123,7 @@ while true; do
 
   fail_streak=0
   echo "$LOG_PREFIX encrypting $id …"
-  if node reencrypt-from-s3.js --id "$id"; then
+  if node scripts/pipeline/reencrypt-from-s3.js --id "$id"; then
     done_count=$((done_count + 1))
     echo "$LOG_PREFIX ok $id (run total $done_count)"
   else

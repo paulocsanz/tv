@@ -4,9 +4,9 @@ import { defineProject, service } from "@caixote/iac";
  * Torrent acquisition pipeline: download picked magnets → transcode to
  * browser MP4 → upload to the Railway S3 bucket used by the vete app.
  *
- * Deploy:  ./scripts/deploy-pipeline-caixote.sh
+ * Deploy:  ./scripts/ops/deploy-pipeline-caixote.sh
  * Logs:    caixote logs torrent-pipeline
- * Monitor: node scripts/monitor-pipeline-caixote.mjs
+ * Monitor: node scripts/ops/monitor-pipeline-caixote.mjs
  *
  * S3 credentials: export from `railway bucket credentials` before apply.
  */

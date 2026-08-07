@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Poll caixote serial logs for torrent-pipeline and print a progress table.
- * Usage: node scripts/monitor-pipeline-caixote.mjs [--once] [--interval=15]
+ * Usage: node scripts/ops/monitor-pipeline-caixote.mjs [--once] [--interval=15]
  */
 import fs from "fs";
 import path from "path";

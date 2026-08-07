@@ -29,8 +29,8 @@
  *   S3 credentials via `railway bucket credentials` (same as download-trailers.js)
  *
  * Usage:
- *   node fetch-external-subtitles.js [--limit N] [--dry-run] [--id the-matrix-1999-movie]
- *   node fetch-external-subtitles.js --langs eng,por
+ *   node scripts/pipeline/fetch-external-subtitles.js [--limit N] [--dry-run] [--id the-matrix-1999-movie]
+ *   node scripts/pipeline/fetch-external-subtitles.js --langs eng,por
  */
 
 import fs from "fs";

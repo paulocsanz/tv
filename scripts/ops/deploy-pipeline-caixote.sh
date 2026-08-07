@@ -5,10 +5,10 @@
 # No manual env injection needed (caixote env-sync bug fixed in fec491a1).
 #
 # Usage (from repo root):
-#   ./scripts/deploy-pipeline-caixote.sh
+#   ./scripts/ops/deploy-pipeline-caixote.sh
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT"
 
 IMAGE="${IMAGE:-ghcr.io/paulocsanz/tv-torrent-pipeline:latest}"
@@ -38,7 +38,7 @@ echo "$GH_TOKEN" | docker login ghcr.io -u paulocsanz --password-stdin
 docker buildx build --platform "$PLATFORM" -f Dockerfile.pipeline -t "$IMAGE" --push .
 
 echo "==> Stop local pipeline leftovers"
-pkill -f "node download-picked-torrents.js" 2>/dev/null || true
+pkill -f "node scripts/pipeline/download-picked-torrents.js" 2>/dev/null || true
 pkill -x aria2c 2>/dev/null || true
 rm -f .download-picked-torrents.lock
 
