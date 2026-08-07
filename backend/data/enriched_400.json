@@ -21151,8 +21151,8 @@
       "trailer_subtitles": [],
       "attachments": [],
       "poster_s3_key": null,
-      "encrypted": false,
-      "media_codecs": null
+      "encrypted": true,
+      "media_codecs": "avc1.64001f, mp4a.40.2"
     },
     {
       "id": "house-of-the-dragon-2022-tv",
