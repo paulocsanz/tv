@@ -194,11 +194,17 @@ async function packageOne(client, creds, catalog, catalogKey, id, opts) {
     );
     console.log(`  ↑ ${playlistKey}`);
 
+    // Re-read catalog before save so a concurrent reencrypt worker doesn't
+    // wipe our field with a stale in-memory copy.
+    const fresh = loadCatalog();
+    const freshItem = fresh.items.find((x) => x && x.id === id);
+    if (!freshItem) throw new Error(`catalog id vanished before save: ${id}`);
+    freshItem.hls_playlist_s3_key = playlistKey;
+    freshItem.encrypted = true;
+    saveCatalog(fresh);
+    // keep caller's catalog in sync
     item.hls_playlist_s3_key = playlistKey;
     item.encrypted = true;
-    // Clear progressive-only codecs hint; HLS uses TS segments.
-    // Keep media_codecs if present for SSESENC1 fallback titles.
-    saveCatalog(catalog);
     console.log(`\n✓ catalog: ${id} hls_playlist_s3_key=${playlistKey}`);
     return { id, playlistKey, segments: segmentFiles.length };
   } finally {

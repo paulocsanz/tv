@@ -37,7 +37,7 @@
 - [x] **P0.1** RFC + catalog field `hls_playlist_s3_key` + backend playlist rewrite — status: `done`
 - [x] **P0.2** Packaging tool (ffmpeg HLS AES-128) + S3 upload — status: `done`
 - [x] **P0.3** VideoPlayer hls.js path + `sessao-key:catalog` loader — status: `done`
-- [x] **P0.4** Package Matrix (or one classic) and verify seek past buffer + reconnect — status: `doing`
+- [x] **P0.4** Package Matrix (or one classic) and verify seek past buffer + reconnect — status: `done`
 
 ### P1 — next
 - [ ] **P1.1** Batch `package-hls-from-s3.js` worker for all encrypted single-file movies — status: `todo`
@@ -56,7 +56,7 @@
 | P0.1 | p0 | Catalog + playlist API | done | 2026-08-07 |
 | P0.2 | p0 | Packaging tool | done | 2026-08-07 |
 | P0.3 | p0 | hls.js player | done | 2026-08-07 |
-| P0.4 | p0 | One title packaged in prod | doing | 2026-08-07 |
+| P0.4 | p0 | One title packaged in prod | done | 2026-08-07 |
 | P1.1 | p1 | Batch packager worker | todo | 2026-08-07 |
 | P1.2 | p1 | Series episodes | todo | 2026-08-07 |
 | P1.3 | p1 | Pipeline greenfield HLS | todo | 2026-08-07 |
