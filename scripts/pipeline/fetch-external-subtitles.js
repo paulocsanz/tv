@@ -373,6 +373,21 @@ async function main() {
     return true;
   });
 
+  // Movies first (one episode = fewer quota hits), then single-file, then
+  // multi-ep series. Within each band prefer titles still missing Portuguese.
+  const rank = (item) => {
+    const entry = backfill[item.id]?.subtitles || [];
+    const have = existingLangsForEpisode(item, item.content_type === "movie" ? 0 : 0, entry);
+    for (const t of item.subtitles || []) {
+      if ((t.episode ?? 0) === 0 && t.lang) have.add(t.lang);
+    }
+    const missPor = WANT_LANGS.has("por") && !have.has("por") ? 0 : 1;
+    const typeRank =
+      item.content_type === "movie" ? 0 : (item.s3_keys?.length || 0) <= 1 ? 1 : 2;
+    return typeRank * 10 + missPor;
+  };
+  candidates.sort((a, b) => rank(a) - rank(b) || a.title.localeCompare(b.title));
+
   console.log(
     `Scanning ${candidates.length} playable items with imdb_id` +
       (ONLY_ID ? ` (filter id=${ONLY_ID})` : "") +
@@ -382,9 +397,16 @@ async function main() {
   let processed = 0;
   let uploaded = 0;
   let skipped = 0;
+  let quotaExhausted = false;
+
+  // Free OpenSubtitles accounts are ~20 downloads / 24h — stop immediately
+  // on 406 quota so we don't thrash every remaining title with doomed POSTs.
+  function isQuotaError(message) {
+    return /allowed \d+ subtitles|quota will be renewed|download limit/i.test(message);
+  }
 
   for (const item of candidates) {
-    if (processed >= LIMIT) break;
+    if (processed >= LIMIT || quotaExhausted) break;
 
     const imdb = imdbNumeric(item.imdb_id);
     const eps = episodesToCover(item);
@@ -397,7 +419,7 @@ async function main() {
     let itemDidWork = false;
 
     for (const { episode, season, ep } of eps) {
-      if (processed >= LIMIT) break;
+      if (processed >= LIMIT || quotaExhausted) break;
       const have = existingLangsForEpisode(item, episode, entry.subtitles);
       const missing = new Set([...WANT_LANGS].filter((l) => !have.has(l)));
       if (missing.size === 0) continue;
@@ -420,6 +442,10 @@ async function main() {
       }
 
       const picks = pickBestPerLang(results, missing);
+      // Prefer Portuguese first so a mid-item quota cut still leaves the
+      // language this audience actually wants on by default.
+      const langOrder = { por: 0, eng: 1, spa: 2 };
+      picks.sort((a, b) => (langOrder[a.lang] ?? 9) - (langOrder[b.lang] ?? 9));
       if (picks.length === 0) {
         console.log(`no results (${results.length} rows)`);
         continue;
@@ -434,6 +460,7 @@ async function main() {
       ]);
 
       for (const pick of picks) {
+        if (quotaExhausted) break;
         const trackId = uniqueTrackId(pick.lang, usedIds);
         usedIds.add(trackId);
         const rawPath = path.join(TMP_DIR, `${item.id}.${episode}.${trackId}.src`);
@@ -473,6 +500,12 @@ async function main() {
           await sleep(SLEEP_BETWEEN_DOWNLOADS_MS);
         } catch (e) {
           console.log(`    ⚠ ${pick.lang} failed: ${e.message}`);
+          if (isQuotaError(e.message)) {
+            quotaExhausted = true;
+            console.log(
+              "  ⛔ OpenSubtitles daily quota exhausted — stopping. Re-run after it renews.",
+            );
+          }
         } finally {
           fs.rmSync(rawPath, { force: true });
           fs.rmSync(vttPath, { force: true });
@@ -493,6 +526,7 @@ async function main() {
   if (!DRY_RUN) saveBackfill(backfill);
   console.log(
     `\nDone. items_updated=${processed} tracks_uploaded=${uploaded} skipped=${skipped}` +
+      (quotaExhausted ? " quota_exhausted=true" : "") +
       (DRY_RUN ? " (dry-run)" : ` → ${OUTPUT_FILE}`),
   );
   console.log(

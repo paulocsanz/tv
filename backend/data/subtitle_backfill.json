@@ -26,5 +26,181 @@
         "s3_key": "videos/the-matrix-1999-movie/external.0.spa.vtt"
       }
     ]
+  },
+  "life-on-earth-1979-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/life-on-earth-1979-tv/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/life-on-earth-1979-tv/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-shawshank-redemption-1994-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-shawshank-redemption-1994-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-shawshank-redemption-1994-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "avatar-the-last-airbender-2005-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/avatar-the-last-airbender-2005-tv/external.0.eng.vtt"
+      }
+    ]
+  },
+  "the-godfather-1972-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-godfather-1972-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-godfather-1972-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "rick-and-morty-2013-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rick-and-morty-2013-tv/external.0.eng.vtt"
+      }
+    ]
+  },
+  "schindler-s-list-1993-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/schindler-s-list-1993-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/schindler-s-list-1993-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-dark-knight-2008-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-dark-knight-2008-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-dark-knight-2008-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-godfather-part-ii-1974-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-godfather-part-ii-1974-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-godfather-part-ii-1974-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-lord-of-the-rings-the-return-of-the-king-2003-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-lord-of-the-rings-the-return-of-the-king-2003-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-lord-of-the-rings-the-return-of-the-king-2003-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "12-angry-men-1957-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/12-angry-men-1957-movie/external.0.eng.vtt"
+      }
+    ]
   }
 }
