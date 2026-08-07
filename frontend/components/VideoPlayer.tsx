@@ -41,6 +41,29 @@ function finiteOrZero(n: number | null | undefined): number {
   return typeof n === "number" && Number.isFinite(n) ? n : 0;
 }
 
+/** Parse catalog runtime like "136 min" / "1h 30min" into seconds. */
+function parseRuntimeSeconds(runtime: string | null | undefined): number | null {
+  if (!runtime) return null;
+  const s = runtime.trim().toLowerCase();
+  const h = s.match(/(\d+)\s*h/);
+  const m = s.match(/(\d+)\s*m/);
+  const hours = h ? parseInt(h[1]!, 10) : 0;
+  const mins = m ? parseInt(m[1]!, 10) : /^\d+$/.test(s) ? parseInt(s, 10) : 0;
+  if (!h && !m && !/^\d+$/.test(s)) return null;
+  const total = hours * 3600 + mins * 60;
+  return total > 0 ? total : null;
+}
+
+/** Highest end of TimeRanges, or null. */
+function bufferedEnd(video: HTMLMediaElement): number | null {
+  try {
+    if (video.buffered.length === 0) return null;
+    return video.buffered.end(video.buffered.length - 1);
+  } catch {
+    return null;
+  }
+}
+
 type Episode = {
   key: string;
   /** 1-based index into the original s3Keys array — what the backend expects. */
@@ -501,6 +524,7 @@ export function VideoPlayer({
   numberedTitles = false,
   encrypted = false,
   mediaCodecs = null,
+  runtime = null,
 }: {
   id: string;
   /** Movie/show title - only used as Cast metadata so the receiver's screen
@@ -526,9 +550,21 @@ export function VideoPlayer({
   encrypted?: boolean;
   /** MSE codecs for live fMP4 decrypt (e.g. "avc1.64001F, mp4a.40.2"). */
   mediaCodecs?: string | null;
+  /** Catalog runtime e.g. "136 min" — seeds seek-bar duration for MSE decrypt. */
+  runtime?: string | null;
 }) {
   const t = useT();
   const hasEpisodes = s3Keys.length > 1;
+  const knownDurationSeconds =
+    (() => {
+      // Prefer last watched duration, then catalog runtime.
+      let best = 0;
+      for (const p of initialProgress) {
+        if (p.duration_seconds && p.duration_seconds > best) best = p.duration_seconds;
+      }
+      if (best > 0) return best;
+      return parseRuntimeSeconds(runtime);
+    })();
   // s3Keys isn't guaranteed to be in episode order; sort a copy for display
   // while keeping each episode's original index for the stream request,
   // since the backend indexes into s3Keys as stored.
@@ -544,7 +580,7 @@ export function VideoPlayer({
   const [retry, setRetry] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(0);
+  const [duration, setDuration] = useState(() => knownDurationSeconds ?? 0);
   const [volume, setVolume] = useState(1);
   const [muted, setMuted] = useState(false);
   const [showControls, setShowControls] = useState(true);
@@ -609,7 +645,11 @@ export function VideoPlayer({
             if (cancelled) return;
             if (total && total > 0) setDecryptProgress(Math.round((loaded / total) * 100));
           },
-          { codecs: mediaCodecs, video: videoRef.current },
+          {
+            codecs: mediaCodecs,
+            video: videoRef.current,
+            durationSeconds: knownDurationSeconds,
+          },
         );
         if (cancelled) {
           resolved.revoke();
@@ -636,7 +676,7 @@ export function VideoPlayer({
       revokePlayableRef.current?.();
       revokePlayableRef.current = null;
     };
-  }, [streamUrl, encrypted, mediaCodecs, retry]);
+  }, [streamUrl, encrypted, mediaCodecs, retry, knownDurationSeconds]);
 
   const progressUrl = `/api/progress/${id}`;
   // 0 is the movie/no-episode sentinel, matching the backend schema.
@@ -719,7 +759,7 @@ export function VideoPlayer({
     setStatus("loading");
     setSeeked(false);
     setCurrentTime(0);
-    setDuration(0);
+    setDuration(knownDurationSeconds ?? 0);
     setSelectedSubtitleId(defaultSubtitleId);
     setBuffered([]);
   }
@@ -994,6 +1034,29 @@ export function VideoPlayer({
     setSeeked(true);
   }
 
+  function clampSeekSeconds(video: HTMLMediaElement, seconds: number): number {
+    let t = Math.max(0, seconds);
+    const dur = Number.isFinite(video.duration) && video.duration > 0
+      ? video.duration
+      : duration > 0
+        ? duration
+        : null;
+    if (dur != null) t = Math.min(t, dur);
+
+    // Progressive MSE decrypt only appends from the start. Seeking past the
+    // buffered end stalls forever until (if ever) that byte arrives.
+    // While still decrypting, clamp to what we already have.
+    if (decryptMode === "mse") {
+      const end = bufferedEnd(video);
+      if (end != null && end > 1) {
+        // Small slack so we don't sit on the very tip of the buffer.
+        const maxSeek = Math.max(0, end - 0.35);
+        if (t > maxSeek) t = maxSeek;
+      }
+    }
+    return t;
+  }
+
   function skip(deltaSeconds: number) {
     if (isCasting) {
       const base = finiteOrZero(currentTime);
@@ -1004,11 +1067,8 @@ export function VideoPlayer({
     const video = videoRef.current;
     if (!video) return;
     const base = finiteOrZero(video.currentTime);
-    const next = Math.max(0, base + deltaSeconds);
-    const dur = video.duration;
-    const clamped =
-      Number.isFinite(dur) && dur > 0 ? Math.min(dur, next) : next;
-    if (safeSetCurrentTime(video, clamped)) {
+    const next = clampSeekSeconds(video, base + deltaSeconds);
+    if (safeSetCurrentTime(video, next)) {
       setCurrentTime(video.currentTime);
       scheduleProgressReport();
     }
@@ -1030,7 +1090,8 @@ export function VideoPlayer({
     }
     const video = videoRef.current;
     if (!video) return;
-    if (safeSetCurrentTime(video, seconds)) {
+    const t = clampSeekSeconds(video, seconds);
+    if (safeSetCurrentTime(video, t)) {
       setCurrentTime(video.currentTime);
       scheduleProgressReport();
     }

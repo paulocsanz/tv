@@ -76,6 +76,7 @@ export default async function TitlePage({
               numberedTitles={item.content_type === "course"}
               encrypted={Boolean(item.encrypted)}
               mediaCodecs={item.media_codecs ?? null}
+              runtime={item.runtime}
             />
           ) : (
             <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-zinc-900 shadow-2xl shadow-black/50 ring-1 ring-white/10">

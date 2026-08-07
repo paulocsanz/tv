@@ -332,6 +332,12 @@ export async function attachStreamingPlayback(
     onProgress?: (p: DecryptProgress) => void;
     /** Prefer MSE when possible; default true. */
     preferMse?: boolean;
+    /**
+     * Known media duration in seconds (from catalog runtime / prior progress).
+     * Sets MediaSource.duration so the seek bar works before the full file is
+     * appended. Without this, video.duration stays NaN during progressive MSE.
+     */
+    durationSeconds?: number | null;
   } = {},
 ): Promise<{ url: string; revoke: () => void; mode: "mse" | "blob" }> {
   const preferMse = opts.preferMse !== false;
@@ -389,8 +395,9 @@ export async function attachStreamingPlayback(
   let sourceBuffer: SourceBuffer;
   try {
     sourceBuffer = mediaSource.addSourceBuffer(mime);
-    // Segments arrive in decode order from a single fMP4 stream.
-    sourceBuffer.mode = "sequence";
+    // "segments" keeps fMP4 timestamps so the user can seek within whatever
+    // is already buffered. "sequence" rewrote timestamps and broke scrubbing.
+    sourceBuffer.mode = "segments";
   } catch {
     revoke();
     const retry = await openDecryptedMediaStream(streamUrl, catalogKey, opts.onProgress);
@@ -434,6 +441,22 @@ export async function attachStreamingPlayback(
     return appendChain;
   }
 
+  // Known duration unlocks the seek bar immediately (otherwise duration is
+  // NaN until endOfStream and scrubbing is a no-op).
+  const knownDur = opts.durationSeconds;
+  if (
+    typeof knownDur === "number" &&
+    Number.isFinite(knownDur) &&
+    knownDur > 0 &&
+    mediaSource.readyState === "open"
+  ) {
+    try {
+      mediaSource.duration = knownDur;
+    } catch {
+      /* some browsers reject until after first append */
+    }
+  }
+
   // Open the decrypt stream only after MSE is ready so we don't buffer
   // decrypted media with nowhere to put it.
   const { mediaStream } = await openDecryptedMediaStream(
@@ -466,12 +489,40 @@ export async function attachStreamingPlayback(
           await append(value);
           if (!firstAppendDone) {
             firstAppendDone = true;
+            // Retry duration after first segment if pre-set failed.
+            if (
+              typeof knownDur === "number" &&
+              Number.isFinite(knownDur) &&
+              knownDur > 0 &&
+              mediaSource.readyState === "open" &&
+              !Number.isFinite(mediaSource.duration)
+            ) {
+              try {
+                mediaSource.duration = knownDur;
+              } catch {
+                /* ignore */
+              }
+            }
             resolveFirst();
           }
         }
       }
       await appendChain;
       if (!cancelled && mediaSource.readyState === "open") {
+        // If we never got a catalog duration, use the buffered end so scrub
+        // still works after the full stream is in.
+        try {
+          if (
+            (!Number.isFinite(mediaSource.duration) || mediaSource.duration === Infinity) &&
+            sourceBuffer.buffered.length > 0
+          ) {
+            mediaSource.duration = sourceBuffer.buffered.end(
+              sourceBuffer.buffered.length - 1,
+            );
+          }
+        } catch {
+          /* ignore */
+        }
         try {
           mediaSource.endOfStream();
         } catch {
@@ -512,7 +563,11 @@ export async function resolvePlayableUrl(
   encrypted: boolean,
   catalogKey: CryptoKey | null,
   onProgress?: (loaded: number, total: number | null) => void,
-  opts?: { codecs?: string | null; video?: HTMLVideoElement | null },
+  opts?: {
+    codecs?: string | null;
+    video?: HTMLVideoElement | null;
+    durationSeconds?: number | null;
+  },
 ): Promise<{ url: string; revoke: () => void; mode?: "mse" | "blob" | "direct" }> {
   if (!encrypted) {
     return { url: streamUrl, revoke: () => undefined, mode: "direct" };
@@ -530,6 +585,7 @@ export async function resolvePlayableUrl(
     return attachStreamingPlayback(opts.video, streamUrl, catalogKey, {
       codecs: opts.codecs,
       onProgress: progress,
+      durationSeconds: opts.durationSeconds,
     });
   }
 
