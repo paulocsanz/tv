@@ -25,36 +25,65 @@ async function login(page: Page) {
 
 async function ensureCatalogKey(page: Page) {
   await page.goto("/account");
-  await expect(page.getByRole("heading", { name: /storage encryption/i })).toBeVisible({
+  // EN + pt-BR headings
+  await expect(
+    page.getByRole("heading", {
+      name: /storage encryption|criptografia de armazenamento/i,
+    }),
+  ).toBeVisible({
     timeout: 20_000,
   });
   // Wait for /api/crypto/status to finish
-  await expect(page.getByText(/^Loading…$/)).toHaveCount(0, { timeout: 30_000 });
-  await expect(page.getByText(/Org encryption:/i)).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByText(/^(Loading…|Carregando…)$/)).toHaveCount(0, {
+    timeout: 30_000,
+  });
+  await expect(
+    page.getByText(/Org encryption:|Criptografia da org:/i),
+  ).toBeVisible({ timeout: 15_000 });
 
-  const section = page.locator("section").filter({ hasText: /storage encryption/i });
+  const section = page
+    .locator("section")
+    .filter({ hasText: /storage encryption|criptografia de armazenamento/i });
   const statusText = await section.innerText();
-  if (/Unlocked on this device:\s*yes/i.test(statusText)) {
+  if (
+    /Unlocked on this device:\s*yes|Desbloqueada neste dispositivo:\s*sim/i.test(
+      statusText,
+    )
+  ) {
     return;
   }
 
-  const importBtn = page.getByRole("button", { name: /import existing key/i });
+  const importBtn = page.getByRole("button", {
+    name: /import existing key|importar chave existente/i,
+  });
   if (await importBtn.isVisible().catch(() => false)) {
     await importBtn.click();
     await page.getByPlaceholder(/ENCRYPTION_CATALOG_KEY/i).fill(CATALOG_KEY);
     await page.locator('form input[type="password"]').first().fill(PASS);
-    await page.getByRole("button", { name: /import & wrap key/i }).click();
-    await expect(page.getByText(/Unlocked on this device:\s*yes/i)).toBeVisible({
+    await page
+      .getByRole("button", { name: /import & wrap key|importar e proteger/i })
+      .click();
+    await expect(
+      page.getByText(
+        /Unlocked on this device:\s*yes|Desbloqueada neste dispositivo:\s*sim/i,
+      ),
+    ).toBeVisible({
       timeout: 90_000,
     });
     return;
   }
 
-  const unlockBtn = page.getByRole("button", { name: /unlock on this device/i });
+  const unlockBtn = page.getByRole("button", {
+    name: /unlock on this device|desbloquear neste dispositivo/i,
+  });
   if (await unlockBtn.isVisible().catch(() => false)) {
     await page.locator('form input[type="password"]').first().fill(PASS);
     await unlockBtn.click();
-    await expect(page.getByText(/Unlocked on this device:\s*yes/i)).toBeVisible({
+    await expect(
+      page.getByText(
+        /Unlocked on this device:\s*yes|Desbloqueada neste dispositivo:\s*sim/i,
+      ),
+    ).toBeVisible({
       timeout: 90_000,
     });
     return;
@@ -76,7 +105,11 @@ test("encrypted title: import key and stream-decrypt playback", async ({ page })
 
   // Confirm unlocked
   await page.goto("/account");
-  await expect(page.getByText(/Unlocked on this device:\s*yes/i)).toBeVisible({ timeout: 15_000 });
+  await expect(
+    page.getByText(
+      /Unlocked on this device:\s*yes|Desbloqueada neste dispositivo:\s*sim/i,
+    ),
+  ).toBeVisible({ timeout: 15_000 });
 
   await page.goto(`/title/${TITLE_ID}`);
   const video = page.locator("video");
@@ -87,7 +120,9 @@ test("encrypted title: import key and stream-decrypt playback", async ({ page })
     .poll(
       async () => {
         const decryptErr = await page
-          .getByText(/decrypt failed|no catalog key|this title is encrypted but/i)
+          .getByText(
+            /decrypt failed|no catalog key|this title is encrypted but|falha ao descriptografar|chave do catálogo não está desbloqueada/i,
+          )
           .first()
           .isVisible()
           .catch(() => false);

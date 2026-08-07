@@ -99,6 +99,48 @@ const dictionary = {
     passwordUpdated: "Senha atualizada.",
     wrongCurrentPassword: "A senha atual está incorreta.",
     updateFailed: "Não foi possível atualizar a senha.",
+    encryption: {
+      heading: "Criptografia de armazenamento",
+      loading: "Carregando…",
+      description:
+        "Criptografia de mídia AES-256-GCM (SSESENC1). A chave compartilhada do catálogo fica envolvida com a senha de cada membro — o servidor nunca a vê aberta. Novos membros recebem acesso por um link de convite com a chave no fragmento da URL (nunca enviado ao servidor).",
+      orgEncryption: "Criptografia da org:",
+      enabled: "ativada",
+      notBootstrapped: "ainda não configurada",
+      yourWrap: "Sua chave no servidor:",
+      yes: "sim",
+      no: "não",
+      unlockedDevice: "Desbloqueada neste dispositivo:",
+      firstTimeSetup: "Configuração inicial. Escolha como provisionar a chave do catálogo:",
+      importExisting: "Importar chave existente",
+      or: "ou",
+      passwordToWrap: "Sua senha (para proteger a nova chave)",
+      working: "Trabalhando…",
+      generateNewKey: "Gerar nova chave do catálogo",
+      importExistingDesc:
+        "Importe uma chave de catálogo existente (ex.: conteúdo no S3 já criptografado com a chave do pipeline). Cole a chave base64 de 32 bytes e sua senha.",
+      keyPlaceholder: "ENCRYPTION_CATALOG_KEY (base64)",
+      yourPassword: "Sua senha",
+      importAndWrap: "Importar e proteger a chave",
+      unlockDesc: "Digite de novo sua senha para desbloquear a chave do catálogo neste dispositivo.",
+      unlockButton: "Desbloquear neste dispositivo",
+      inviteDesc:
+        "Convide um novo membro. O link de convite leva a chave do catálogo no fragmento da URL — copie e envie em privado. No cadastro, a pessoa protege a chave com a própria senha.",
+      generateInviteWithKey: "Gerar link de convite com chave",
+      inviteCopied: "Link de convite copiado.",
+      inviteDecryptWarning:
+        "Este link dá acesso completo para descriptografar a mídia. Envie só para pessoas de confiança.",
+      pipelineKeyTitle: "ENCRYPTION_CATALOG_KEY (só no pipeline — guarde como segredo)",
+      pipelineKeyHint:
+        "Também defina ENCRYPT_UPLOADS=true no torrent-pipeline. Não coloque isso no backend web.",
+      bootstrapSuccess:
+        "Criptografia configurada. Copie a chave do pipeline para ENCRYPTION_CATALOG_KEY no torrent-pipeline, ative ENCRYPT_UPLOADS=true, e os novos uploads serão criptografados.",
+      importSuccess:
+        "Chave de catálogo existente importada e protegida com sua senha. Em outros dispositivos, entre com a mesma senha para desbloquear.",
+      noKeyForAccount: "Ainda não há chave de criptografia nesta conta.",
+      unlockSuccess: "Chave do catálogo desbloqueada neste dispositivo.",
+      noKeyUnlocked: "Nenhuma chave do catálogo desbloqueada neste dispositivo.",
+    },
   },
   contentType: {
     movie: "Filme",
@@ -189,6 +231,8 @@ const dictionary = {
     copied: "Copiado",
     copy: "Copiar",
     inviteExpiryNote: "Expira em 7 dias, uso único.",
+    inviteIncludesDecryptKey:
+      " Inclui a chave de descriptografia — envie só para pessoas de confiança.",
     createAccountFailed: "Falha ao criar a conta.",
     pipelineRunningStopFirst: "O pipeline está em execução — pare-o primeiro.",
     searchFailed: "A busca falhou.",
@@ -238,6 +282,15 @@ const dictionary = {
     exitFullscreen: "Sair da tela cheia",
     fullscreen: "Tela cheia",
     episodesCount: "Episódios · {count}",
+    decrypting: "Descriptografando…",
+    decryptingStream: "Descriptografando o stream…",
+    decryptingLive: "Descriptografando ao vivo…",
+    decryptFailed: "Falha ao descriptografar",
+    noCatalogKey:
+      "Este título está criptografado, mas a chave do catálogo não está desbloqueada",
+    unlockHint:
+      "Desbloqueie a criptografia em Conta depois do login (chave do catálogo) e tente de novo.",
+    retry: "Tentar de novo",
   },
   webtorrent: {
     fetchFailed: "Falha ao buscar o arquivo torrent",

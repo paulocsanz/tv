@@ -1142,26 +1142,32 @@ export function VideoPlayer({
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-black/80 text-sm text-zinc-200">
             {decryptError ? (
               <>
-                <p className="px-6 text-center text-red-300">{decryptError}</p>
+                <p className="px-6 text-center text-red-300">
+                  {/no catalog key|catalog key is unlocked/i.test(decryptError)
+                    ? t.player.noCatalogKey
+                    : /decrypt failed/i.test(decryptError)
+                      ? t.player.decryptFailed
+                      : decryptError}
+                </p>
                 <p className="px-6 text-center text-zinc-500">
-                  Unlock encryption from Account after login (catalog key), then retry.
+                  {t.player.unlockHint}
                 </p>
                 <button
                   type="button"
                   className="rounded-full bg-white/10 px-4 py-2 hover:bg-white/20"
                   onClick={() => setRetry((n) => n + 1)}
                 >
-                  Retry
+                  {t.player.retry}
                 </button>
               </>
             ) : (
               <>
                 <p>
                   {decryptMode === "mse"
-                    ? "Decrypting live…"
+                    ? t.player.decryptingLive
                     : decryptProgress != null && decryptProgress < 100
-                      ? "Decrypting stream…"
-                      : "Decrypting…"}
+                      ? t.player.decryptingStream
+                      : t.player.decrypting}
                 </p>
                 {decryptProgress != null && (
                   <div className="h-1.5 w-48 overflow-hidden rounded-full bg-white/10">

@@ -79,8 +79,7 @@ export function CreateInviteButton() {
       )}
       <p className="text-xs text-zinc-500">
         {t.admin.inviteExpiryNote}
-        {link?.includes("#mk=") &&
-          " Includes media decrypt key — send only to trusted members."}
+        {link?.includes("#mk=") && t.admin.inviteIncludesDecryptKey}
       </p>
     </div>
   );

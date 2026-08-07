@@ -100,6 +100,48 @@ const dictionary: Dictionary = {
     passwordUpdated: "Password updated.",
     wrongCurrentPassword: "The current password is incorrect.",
     updateFailed: "Couldn't update the password.",
+    encryption: {
+      heading: "Storage encryption",
+      loading: "Loading…",
+      description:
+        "AES-256-GCM (SSESENC1) media encryption. The shared catalog key is wrapped under each member's password — the server never sees it unwrapped. Members gain access through an invite link that carries the key in the URL fragment (never sent to the server).",
+      orgEncryption: "Org encryption:",
+      enabled: "enabled",
+      notBootstrapped: "not bootstrapped",
+      yourWrap: "Your wrap on server:",
+      yes: "yes",
+      no: "no",
+      unlockedDevice: "Unlocked on this device:",
+      firstTimeSetup: "First-time setup. Choose how to provision the catalog key:",
+      importExisting: "Import existing key",
+      or: "or",
+      passwordToWrap: "Your password (to wrap the new key)",
+      working: "Working…",
+      generateNewKey: "Generate new catalog key",
+      importExistingDesc:
+        "Import an existing catalog key (e.g. when S3 content is already encrypted under a key from the pipeline env). Paste the 32-byte base64 key and your password.",
+      keyPlaceholder: "ENCRYPTION_CATALOG_KEY (base64)",
+      yourPassword: "Your password",
+      importAndWrap: "Import & wrap key",
+      unlockDesc: "Re-enter your password to unlock the catalog key on this device.",
+      unlockButton: "Unlock on this device",
+      inviteDesc:
+        "Invite a new member. The invite link carries the catalog key in the URL fragment — copy and send it privately. The recipient wraps the key under their own password on signup.",
+      generateInviteWithKey: "Generate invite link with key",
+      inviteCopied: "Invite link copied to clipboard.",
+      inviteDecryptWarning:
+        "This link grants full media decrypt access. Send it only to trusted members.",
+      pipelineKeyTitle: "ENCRYPTION_CATALOG_KEY (pipeline only — store as a secret)",
+      pipelineKeyHint:
+        "Also set ENCRYPT_UPLOADS=true on torrent-pipeline. Do not put this on the web backend.",
+      bootstrapSuccess:
+        "Encryption bootstrapped. Copy the pipeline key into ENCRYPTION_CATALOG_KEY on torrent-pipeline, set ENCRYPT_UPLOADS=true, then new greenfield uploads will be encrypted.",
+      importSuccess:
+        "Existing catalog key imported and wrapped under your password. Log in on other devices with the same password to unlock.",
+      noKeyForAccount: "No encryption key stored for this account yet.",
+      unlockSuccess: "Catalog key unlocked on this device.",
+      noKeyUnlocked: "No catalog key unlocked on this device.",
+    },
   },
   contentType: {
     movie: "Movie",
@@ -190,6 +232,7 @@ const dictionary: Dictionary = {
     copied: "Copied",
     copy: "Copy",
     inviteExpiryNote: "Expires in 7 days, single use.",
+    inviteIncludesDecryptKey: " Includes media decrypt key — send only to trusted members.",
     createAccountFailed: "Failed to create account.",
     pipelineRunningStopFirst: "Pipeline is running — stop it first.",
     searchFailed: "Search failed.",
@@ -239,6 +282,15 @@ const dictionary: Dictionary = {
     exitFullscreen: "Exit fullscreen",
     fullscreen: "Fullscreen",
     episodesCount: "Episodes · {count}",
+    decrypting: "Decrypting…",
+    decryptingStream: "Decrypting stream…",
+    decryptingLive: "Decrypting live…",
+    decryptFailed: "Decrypt failed",
+    noCatalogKey:
+      "This title is encrypted but no catalog key is unlocked",
+    unlockHint:
+      "Unlock encryption from Account after login (catalog key), then try again.",
+    retry: "Retry",
   },
   webtorrent: {
     fetchFailed: "Failed to fetch torrent file",
