@@ -157,7 +157,7 @@ It does **not** decrypt media in P0/P1 of this RFC.
   is insufficient) — status: `todo`
 - [ ] **P2.4** Tizen / webOS store packaging of the web shell — status: `todo`
 
-## Status (living)
+## Status
 
 | ID | Band | Title | Status | Task / PR | Updated |
 |----|------|-------|--------|-----------|---------|
