@@ -174,9 +174,8 @@
       "trailer_subtitles": [],
       "attachments": [],
       "poster_s3_key": null,
-      "encrypted": true,
-      "media_codecs": null,
-      "hls_playlist_s3_key": "videos/life-on-earth-1979-tv/hls/index.m3u8"
+      "encrypted": false,
+      "media_codecs": null
     },
     {
       "id": "chernobyl-2019-tv",
@@ -10921,8 +10920,7 @@
       "attachments": [],
       "poster_s3_key": null,
       "encrypted": true,
-      "media_codecs": "avc1.64001f, mp4a.40.2",
-      "hls_playlist_s3_key": "videos/the-matrix-1999-movie/hls/index.m3u8"
+      "media_codecs": "avc1.64001f, mp4a.40.2"
     },
     {
       "id": "the-colbert-report-2005-tv",
@@ -21804,8 +21802,8 @@
       "trailer_subtitles": [],
       "attachments": [],
       "poster_s3_key": null,
-      "encrypted": false,
-      "media_codecs": null
+      "encrypted": true,
+      "media_codecs": "avc1.640028, mp4a.40.2"
     },
     {
       "id": "poldark-1975-tv",
