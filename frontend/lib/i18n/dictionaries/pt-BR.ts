@@ -69,6 +69,8 @@ const dictionary = {
     usernameTaken: "Esse nome de usuário já está em uso.",
     signupFailed: "Não foi possível criar sua conta.",
     needsInvite: "Esta página precisa de um link de convite de alguém que já está no site.",
+    inviteMediaAccessNote:
+      "Se este convite incluir acesso à mídia, ele fica lacrado no convite (sem chave na URL). Sua senha protege a chave de descriptografia depois do cadastro.",
   },
   preferences: {
     heading: "Preferências",
@@ -130,6 +132,10 @@ const dictionary = {
       inviteCopied: "Link de convite copiado.",
       inviteDecryptWarning:
         "Este link dá acesso completo para descriptografar a mídia. Envie só para pessoas de confiança.",
+      inviteLinkSafeNote:
+        "O link não contém a chave do catálogo — o acesso à mídia fica lacrado neste convite de uso único. Ainda assim envie só para pessoas de confiança.",
+      inviteEnvelopeAttached:
+        "Convite criado. Chave de mídia lacrada no servidor (link seguro para colar).",
       pipelineKeyTitle: "ENCRYPTION_CATALOG_KEY (só no pipeline — guarde como segredo)",
       pipelineKeyHint:
         "Também defina ENCRYPT_UPLOADS=true no torrent-pipeline. Não coloque isso no backend web.",
@@ -231,8 +237,10 @@ const dictionary = {
     copied: "Copiado",
     copy: "Copiar",
     inviteExpiryNote: "Expira em 7 dias, uso único.",
+    inviteMediaKeyAttached:
+      " Acesso à mídia vai lacrado no convite (sem chave crua no link). Envie só para pessoas de confiança.",
     inviteIncludesDecryptKey:
-      " Inclui a chave de descriptografia — envie só para pessoas de confiança.",
+      " Acesso à mídia vai lacrado no convite (sem chave crua no link). Envie só para pessoas de confiança.",
     createAccountFailed: "Falha ao criar a conta.",
     pipelineRunningStopFirst: "O pipeline está em execução — pare-o primeiro.",
     searchFailed: "A busca falhou.",

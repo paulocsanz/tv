@@ -174,8 +174,9 @@
       "trailer_subtitles": [],
       "attachments": [],
       "poster_s3_key": null,
-      "encrypted": false,
-      "media_codecs": null
+      "encrypted": true,
+      "media_codecs": null,
+      "hls_playlist_s3_key": "videos/life-on-earth-1979-tv/hls/index.m3u8"
     },
     {
       "id": "chernobyl-2019-tv",

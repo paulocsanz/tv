@@ -270,7 +270,7 @@ export async function bootstrapCatalogKey(password: string): Promise<{
   return { key, pipelineKeyB64 };
 }
 
-/** Export catalog key as base64 for invite links (#mk=). Client-side only. */
+/** Export catalog key as base64 (admin tooling only — never put this in URLs). */
 export async function exportCatalogKeyBase64(key: CryptoKey): Promise<string> {
   // Prefer raw path if key isn't extractable (shouldn't happen after raw IDB storage).
   let raw: Uint8Array;
@@ -284,6 +284,104 @@ export async function exportCatalogKeyBase64(key: CryptoKey): Promise<string> {
   let binary = "";
   for (let i = 0; i < raw.length; i++) binary += String.fromCharCode(raw[i]!);
   return btoa(binary);
+}
+
+/**
+ * Seal catalog key under the invite token (high-entropy). Server stores the
+ * opaque envelope; invite URL only carries `?token=` — never the raw key.
+ * Wire: iv(12) || ciphertext+tag. Hex for the JSON API.
+ */
+export async function sealCatalogKeyForInvite(
+  catalogKey: CryptoKey,
+  inviteToken: string,
+): Promise<string> {
+  const raw = await exportCatalogKeyRaw(catalogKey);
+  return sealRawCatalogKeyForInvite(raw, inviteToken);
+}
+
+export async function sealRawCatalogKeyForInvite(
+  rawKey: Uint8Array,
+  inviteToken: string,
+): Promise<string> {
+  if (rawKey.length !== 32) throw new Error("catalog key must be 32 bytes");
+  // Token is already 32 random bytes as hex — use as password material with a
+  // fixed domain salt (not user-password grade iterations).
+  const salt = new TextEncoder().encode("sessao-invite-envelope-v1");
+  const wrapKey = await deriveInviteEnvelopeKey(inviteToken, salt);
+  const iv = crypto.getRandomValues(new Uint8Array(IV_LEN));
+  const ct = new Uint8Array(
+    await crypto.subtle.encrypt(
+      { name: "AES-GCM", iv },
+      wrapKey,
+      toArrayBuffer(rawKey),
+    ),
+  );
+  const combined = new Uint8Array(IV_LEN + ct.length);
+  combined.set(iv, 0);
+  combined.set(ct, IV_LEN);
+  return toHex(combined);
+}
+
+/** Open invite envelope with the invite token; returns raw 32-byte catalog key. */
+export async function openCatalogKeyFromInviteEnvelope(
+  envelopeHex: string,
+  inviteToken: string,
+): Promise<Uint8Array> {
+  const salt = new TextEncoder().encode("sessao-invite-envelope-v1");
+  const wrapKey = await deriveInviteEnvelopeKey(inviteToken, salt);
+  const combined = fromHex(envelopeHex);
+  if (combined.length < IV_LEN + 16) throw new Error("invite envelope too short");
+  const iv = toArrayBuffer(combined.subarray(0, IV_LEN));
+  const ct = combined.subarray(IV_LEN);
+  const raw = new Uint8Array(
+    await crypto.subtle.decrypt({ name: "AES-GCM", iv }, wrapKey, toArrayBuffer(ct)),
+  );
+  if (raw.length !== 32) throw new Error(`unsealed key must be 32 bytes (got ${raw.length})`);
+  return raw;
+}
+
+async function deriveInviteEnvelopeKey(
+  inviteToken: string,
+  salt: Uint8Array,
+): Promise<CryptoKey> {
+  const base = await crypto.subtle.importKey(
+    "raw",
+    new TextEncoder().encode(inviteToken),
+    "PBKDF2",
+    false,
+    ["deriveKey"],
+  );
+  // Token entropy is ~256 bits; low iteration count is fine (not a password).
+  return crypto.subtle.deriveKey(
+    {
+      name: "PBKDF2",
+      salt: toArrayBuffer(salt),
+      iterations: 10_000,
+      hash: "SHA-256",
+    },
+    base,
+    { name: "AES-GCM", length: 256 },
+    false,
+    ["encrypt", "decrypt"],
+  );
+}
+
+/** Attach sealed envelope to an invite (admin session). */
+export async function attachInviteMediaKeyEnvelope(
+  inviteToken: string,
+  envelopeHex: string,
+): Promise<void> {
+  const res = await fetch("/api/admin/invites/media-key", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ token: inviteToken, envelope_hex: envelopeHex }),
+  });
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    throw new Error(
+      (body as { error?: string }).error ?? `attach envelope failed (${res.status})`,
+    );
+  }
 }
 
 /**
@@ -318,24 +416,16 @@ export async function bootstrapWithExistingKey(
 }
 
 /**
- * Invite handoff (RFC 0006 P1.1): new member receives the catalog key via
- * invite URL fragment (#mk=base64). After signup (which also logs them in),
- * wrap the key under their password and PUT to the server — so future logins
- * unlock via the normal password unwrap path. Key never touches the server
- * in plaintext; the URL fragment stays client-side.
+ * After signup: install catalog key from raw bytes (opened invite envelope
+ * or legacy paths). Wraps under password and stores server + local.
  */
-export async function acceptInviteKey(
-  rawKeyB64: string,
+export async function acceptInviteKeyRaw(
+  raw: Uint8Array,
   password: string,
 ): Promise<CryptoKey> {
-  const binary = atob(rawKeyB64.trim());
-  const raw = new Uint8Array(binary.length);
-  for (let i = 0; i < binary.length; i++) raw[i] = binary.charCodeAt(i);
   if (raw.length !== 32) throw new Error(`invite key must be 32 bytes (got ${raw.length})`);
-  // extractable: wrapCatalogKey needs exportKey
   const key = await importCatalogKeyRaw(raw, true);
   const wrap = await wrapCatalogKey(key, password);
-  // Non-bootstrap PUT: any authenticated user can upsert their own wrap.
   const res = await fetch("/api/crypto/catalog-key", {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
@@ -347,6 +437,20 @@ export async function acceptInviteKey(
       (body as { error?: string }).error ?? `invite key store failed (${res.status})`,
     );
   }
-  await storeCatalogKeyLocal(key);
+  await storeCatalogKeyLocal(raw);
   return key;
+}
+
+/**
+ * @deprecated Prefer openCatalogKeyFromInviteEnvelope + acceptInviteKeyRaw.
+ * Kept for any stale #mk= links still in the wild.
+ */
+export async function acceptInviteKey(
+  rawKeyB64: string,
+  password: string,
+): Promise<CryptoKey> {
+  const binary = atob(rawKeyB64.trim());
+  const raw = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) raw[i] = binary.charCodeAt(i);
+  return acceptInviteKeyRaw(raw, password);
 }

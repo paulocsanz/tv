@@ -33,10 +33,17 @@ export async function POST(request: Request) {
     });
   }
 
-  const { token: sessionToken } = (await backendRes.json()) as { token: string };
+  const data = (await backendRes.json()) as {
+    token: string;
+    media_key_envelope_hex?: string | null;
+  };
 
-  const response = NextResponse.json({ ok: true });
-  response.cookies.set(SESSION_COOKIE, sessionToken, {
+  const response = NextResponse.json({
+    ok: true,
+    // One-shot sealed catalog key for client unwrap (not the raw key).
+    media_key_envelope_hex: data.media_key_envelope_hex ?? null,
+  });
+  response.cookies.set(SESSION_COOKIE, data.token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",

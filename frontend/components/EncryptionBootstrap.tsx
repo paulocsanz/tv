@@ -2,10 +2,11 @@
 
 import { FormEvent, useEffect, useState } from "react";
 import {
+  attachInviteMediaKeyEnvelope,
   bootstrapCatalogKey,
   bootstrapWithExistingKey,
-  exportCatalogKeyBase64,
   loadCatalogKeyLocal,
+  sealCatalogKeyForInvite,
   unlockCatalogKeyFromLogin,
 } from "@/lib/crypto/catalog-key";
 import { useT } from "@/lib/i18n/LocaleProvider";
@@ -125,13 +126,15 @@ export function EncryptionBootstrap({ isAdmin }: { isAdmin: boolean }) {
     try {
       const key = await loadCatalogKeyLocal(true);
       if (!key) throw new Error(e.noKeyUnlocked);
-      const keyB64 = await exportCatalogKeyBase64(key);
       const res = await fetch("/api/admin/invites", { method: "POST" });
       if (!res.ok) throw new Error(t.admin.inviteCreateFailed);
       const invite = (await res.json()) as { token: string };
-      setInviteUrl(
-        `${window.location.origin}/signup?token=${invite.token}#mk=${keyB64}`,
-      );
+      // Seal catalog key under invite token; store envelope server-side.
+      // URL has only ?token= — never the raw key.
+      const envelopeHex = await sealCatalogKeyForInvite(key, invite.token);
+      await attachInviteMediaKeyEnvelope(invite.token, envelopeHex);
+      setInviteUrl(`${window.location.origin}/signup?token=${invite.token}`);
+      setMessage(e.inviteEnvelopeAttached);
     } catch (err) {
       setError(err instanceof Error ? err.message : "invite generation failed");
     } finally {
@@ -295,7 +298,7 @@ export function EncryptionBootstrap({ isAdmin }: { isAdmin: boolean }) {
                   {t.admin.copy}
                 </button>
               </div>
-              <p className="text-xs text-amber-400/80">{e.inviteDecryptWarning}</p>
+              <p className="text-xs text-amber-400/80">{e.inviteLinkSafeNote}</p>
             </div>
           )}
         </div>

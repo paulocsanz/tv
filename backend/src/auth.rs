@@ -191,7 +191,7 @@ pub struct CatalogKeyWrap {
     pub salt_hex: String,
 }
 
-fn bytes_to_hex(bytes: &[u8]) -> String {
+pub fn bytes_to_hex(bytes: &[u8]) -> String {
     bytes.iter().map(|b| format!("{b:02x}")).collect()
 }
 
@@ -339,10 +339,53 @@ pub async fn create_invite(pool: &PgPool, created_by: i64) -> Result<Invite, sql
     Ok(Invite { token, expires_at })
 }
 
+/// Attach a client-sealed catalog-key envelope to an unused invite created by
+/// this admin. Opaque bytes only — server never decrypts them.
+pub async fn set_invite_media_key_envelope(
+    pool: &PgPool,
+    created_by: i64,
+    token: &str,
+    envelope: &[u8],
+) -> Result<(), SetInviteEnvelopeError> {
+    if envelope.len() < 28 || envelope.len() > 512 {
+        return Err(SetInviteEnvelopeError::BadEnvelope);
+    }
+    let result = sqlx::query(
+        "UPDATE invites SET media_key_envelope = $1 \
+         WHERE token_hash = $2 AND created_by = $3 \
+           AND used_at IS NULL AND expires_at > now()",
+    )
+    .bind(envelope)
+    .bind(hash_token(token))
+    .bind(created_by)
+    .execute(pool)
+    .await
+    .map_err(SetInviteEnvelopeError::Database)?;
+
+    if result.rows_affected() == 0 {
+        return Err(SetInviteEnvelopeError::NotFound);
+    }
+    Ok(())
+}
+
+pub enum SetInviteEnvelopeError {
+    NotFound,
+    BadEnvelope,
+    Database(sqlx::Error),
+}
+
 pub enum RedeemInviteError {
     InvalidOrExpired,
     UsernameTaken,
     Database(sqlx::Error),
+}
+
+/// Result of a successful invite redemption. `media_key_envelope` is the
+/// one-shot sealed catalog key (if the inviter attached one); it is cleared
+/// on the invite row in the same transaction so it cannot be fetched again.
+pub struct RedeemInviteResult {
+    pub user: UserRecord,
+    pub media_key_envelope: Option<Vec<u8>>,
 }
 
 /// Redeems a single-use invite and creates the invitee's account in one
@@ -355,12 +398,12 @@ pub async fn redeem_invite(
     username: &str,
     password: &str,
     display_name: Option<&str>,
-) -> Result<UserRecord, RedeemInviteError> {
+) -> Result<RedeemInviteResult, RedeemInviteError> {
     let token_hash = hash_token(token);
     let mut tx = pool.begin().await.map_err(RedeemInviteError::Database)?;
 
-    let valid: Option<i64> = sqlx::query_scalar(
-        "SELECT created_by FROM invites \
+    let row: Option<(i64, Option<Vec<u8>>)> = sqlx::query_as(
+        "SELECT created_by, media_key_envelope FROM invites \
          WHERE token_hash = $1 AND used_at IS NULL AND expires_at > now() \
          FOR UPDATE",
     )
@@ -369,9 +412,9 @@ pub async fn redeem_invite(
     .await
     .map_err(RedeemInviteError::Database)?;
 
-    if valid.is_none() {
+    let Some((_created_by, media_key_envelope)) = row else {
         return Err(RedeemInviteError::InvalidOrExpired);
-    }
+    };
 
     let password_hash = hash_password(password);
     let result: Result<UserRow, sqlx::Error> = sqlx::query_as(&format!(
@@ -392,16 +435,23 @@ pub async fn redeem_invite(
         Err(e) => return Err(RedeemInviteError::Database(e)),
     };
 
-    sqlx::query("UPDATE invites SET used_at = now(), used_by = $1 WHERE token_hash = $2")
-        .bind(user.id)
-        .bind(&token_hash)
-        .execute(&mut *tx)
-        .await
-        .map_err(RedeemInviteError::Database)?;
+    // Mark used and wipe envelope in one update (one-shot handoff).
+    sqlx::query(
+        "UPDATE invites SET used_at = now(), used_by = $1, media_key_envelope = NULL \
+         WHERE token_hash = $2",
+    )
+    .bind(user.id)
+    .bind(&token_hash)
+    .execute(&mut *tx)
+    .await
+    .map_err(RedeemInviteError::Database)?;
 
     tx.commit().await.map_err(RedeemInviteError::Database)?;
 
-    Ok(user)
+    Ok(RedeemInviteResult {
+        user,
+        media_key_envelope,
+    })
 }
 
 /// Human-typeable alphabet for pairing codes - excludes 0/O and 1/I, which
@@ -711,7 +761,7 @@ mod tests {
             .expect("create_invite should succeed for an existing user");
 
         let invitee_username = unique_username("invitee");
-        let user = redeem_invite(
+        let redeemed = redeem_invite(
             &pool,
             &invite.token,
             &invitee_username,
@@ -722,9 +772,19 @@ mod tests {
         .ok()
         .expect("redeem_invite should succeed for a fresh, unused invite");
 
-        assert_eq!(user.username, invitee_username);
-        assert_eq!(user.display_name.as_deref(), Some("Invitee Display"));
-        assert!(!user.is_admin, "invited users should never be created as admins");
+        assert_eq!(redeemed.user.username, invitee_username);
+        assert_eq!(
+            redeemed.user.display_name.as_deref(),
+            Some("Invitee Display")
+        );
+        assert!(
+            !redeemed.user.is_admin,
+            "invited users should never be created as admins"
+        );
+        assert!(
+            redeemed.media_key_envelope.is_none(),
+            "invite without envelope should return none"
+        );
 
         cleanup_user(&pool, &invitee_username).await;
         cleanup_user(&pool, &creator_username).await;

@@ -70,6 +70,8 @@ const dictionary: Dictionary = {
     usernameTaken: "That username is already taken.",
     signupFailed: "Couldn't create your account.",
     needsInvite: "This page needs an invite link from someone already on the site.",
+    inviteMediaAccessNote:
+      "If this invite includes media access, it is sealed to the invite (no key in the URL). Your password will protect the decryption key after signup.",
   },
   preferences: {
     heading: "Preferences",
@@ -131,6 +133,10 @@ const dictionary: Dictionary = {
       inviteCopied: "Invite link copied to clipboard.",
       inviteDecryptWarning:
         "This link grants full media decrypt access. Send it only to trusted members.",
+      inviteLinkSafeNote:
+        "The link has no raw catalog key — media access is sealed to this one-time invite. Still send only to trusted members.",
+      inviteEnvelopeAttached:
+        "Invite created. Media key sealed server-side (link is safe to paste).",
       pipelineKeyTitle: "ENCRYPTION_CATALOG_KEY (pipeline only — store as a secret)",
       pipelineKeyHint:
         "Also set ENCRYPT_UPLOADS=true on torrent-pipeline. Do not put this on the web backend.",
@@ -232,7 +238,11 @@ const dictionary: Dictionary = {
     copied: "Copied",
     copy: "Copy",
     inviteExpiryNote: "Expires in 7 days, single use.",
-    inviteIncludesDecryptKey: " Includes media decrypt key — send only to trusted members.",
+    inviteMediaKeyAttached:
+      " Media access is sealed on the invite (no raw key in the link). Send only to trusted members.",
+    /** @deprecated */
+    inviteIncludesDecryptKey:
+      " Media access is sealed on the invite (no raw key in the link). Send only to trusted members.",
     createAccountFailed: "Failed to create account.",
     pipelineRunningStopFirst: "Pipeline is running — stop it first.",
     searchFailed: "Search failed.",

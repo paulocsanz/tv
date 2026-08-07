@@ -9,10 +9,9 @@ function SignupForm() {
   const searchParams = useSearchParams();
   const t = useT();
   const token = searchParams.get("token") ?? "";
-  // Invite key handoff (RFC 0006 P1.1): catalog key arrives in the URL
-  // fragment (#mk=base64) so it never reaches the server. After signup,
-  // we wrap it under the new user's password and store the wrap server-side.
-  const [inviteKey] = useState(() => {
+  // Legacy only: old invites used #mk=base64 in the fragment. New invites use
+  // a server-stored envelope sealed under the invite token (no raw key in URL).
+  const [legacyMk] = useState(() => {
     if (typeof window === "undefined") return null;
     const match = window.location.hash.match(/[#&]mk=([A-Za-z0-9+/=]+)/);
     return match?.[1] ?? null;
@@ -46,24 +45,30 @@ function SignupForm() {
       return;
     }
 
-    // Signup succeeded and we're now logged in. If the invite carried a
-    // catalog key, wrap it under this user's password and store it —
-    // future logins will unlock via the normal password unwrap path.
-    if (inviteKey) {
-      try {
-        const { acceptInviteKey } = await import("@/lib/crypto/catalog-key");
-        await acceptInviteKey(inviteKey, password);
-      } catch (e) {
-        // Account was created successfully; the key wrap failed. Don't block
-        // signup — the user can request a new invite or re-enter the key
-        // from Account → Storage encryption later.
-        console.warn("invite key handoff failed:", e);
+    const data = (await res.json().catch(() => ({}))) as {
+      media_key_envelope_hex?: string | null;
+    };
+
+    // Preferred path: one-shot envelope from signup response, opened with
+    // invite token, then wrapped under the new password.
+    try {
+      const crypto = await import("@/lib/crypto/catalog-key");
+      if (data.media_key_envelope_hex) {
+        const raw = await crypto.openCatalogKeyFromInviteEnvelope(
+          data.media_key_envelope_hex,
+          token,
+        );
+        await crypto.acceptInviteKeyRaw(raw, password);
+      } else if (legacyMk) {
+        await crypto.acceptInviteKey(legacyMk, password);
       }
+    } catch (e) {
+      // Account exists; key handoff failed — unlock later from Account.
+      console.warn("invite key handoff failed:", e);
     }
 
-    // Clear the fragment so the key doesn't linger in browser history.
-    if (inviteKey && typeof window !== "undefined") {
-      window.history.replaceState(null, "", window.location.pathname);
+    if (legacyMk && typeof window !== "undefined") {
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
     }
 
     router.push("/");
@@ -119,11 +124,9 @@ function SignupForm() {
           className="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-white outline-none focus:border-[#f5c518]"
         />
       </div>
-      {inviteKey && (
-        <p className="text-xs text-emerald-400/80">
-          This invite includes media access. Your password will protect the decryption key.
-        </p>
-      )}
+      <p className="text-xs text-zinc-500">
+        {t.auth.inviteMediaAccessNote}
+      </p>
       {error && <p className="text-sm text-red-400">{error}</p>}
       <button
         type="submit"

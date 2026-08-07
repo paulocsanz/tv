@@ -10,7 +10,7 @@ use chrono::Datelike;
 use serde::{Deserialize, Serialize};
 use sqlx::postgres::PgPoolOptions;
 use sqlx::PgPool;
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::sync::Arc;
 use std::path::PathBuf;
 use std::time::Duration;
@@ -291,6 +291,68 @@ struct TrailerBackfillEntry {
     subtitles: Vec<TrailerSubtitleEntry>,
 }
 
+/// Shape of one entry in subtitle_backfill.json (fetch-external-subtitles.js).
+/// Reuses SubtitleTrack wholesale - external tracks are the same thing as
+/// pipeline-extracted ones once they land on S3.
+#[derive(Debug, Deserialize)]
+struct SubtitleBackfillEntry {
+    #[serde(default)]
+    subtitles: Vec<SubtitleTrack>,
+}
+
+/// Merges externally-fetched subtitle tracks (see fetch-external-subtitles.js)
+/// into items that already have video but were missing softsubs (typical for
+/// YIFY rips with no embedded/sidecar captions). Side-file so a live
+/// download pipeline rewriting enriched_400.json can't clobber the
+/// backfill. Additive only: tracks whose `s3_key` is already present on the
+/// item are skipped so re-runs and pipeline-extracted tracks stay unique.
+fn apply_subtitle_backfill(items: &mut [EnrichedItem], enriched_data_path: &str) {
+    let Some(backfill_path) = std::path::Path::new(enriched_data_path)
+        .parent()
+        .map(|p| p.join("subtitle_backfill.json"))
+    else {
+        return;
+    };
+    let Ok(raw) = std::fs::read_to_string(&backfill_path) else {
+        return;
+    };
+    let map: HashMap<String, SubtitleBackfillEntry> = match serde_json::from_str(&raw) {
+        Ok(m) => m,
+        Err(e) => {
+            tracing::warn!("failed to parse {}: {e}", backfill_path.display());
+            return;
+        }
+    };
+
+    let mut applied_items = 0;
+    let mut applied_tracks = 0;
+    for item in items.iter_mut() {
+        let Some(entry) = map.get(&item.id) else {
+            continue;
+        };
+        if entry.subtitles.is_empty() {
+            continue;
+        }
+        let existing_keys: HashSet<String> = item.subtitles.iter().map(|t| t.s3_key.clone()).collect();
+        let mut added = 0;
+        for track in &entry.subtitles {
+            if existing_keys.contains(&track.s3_key) {
+                continue;
+            }
+            item.subtitles.push(track.clone());
+            added += 1;
+        }
+        if added > 0 {
+            applied_items += 1;
+            applied_tracks += added;
+        }
+    }
+    tracing::info!(
+        "Applied subtitle backfill: {applied_tracks} track(s) on {applied_items} item(s) from {}",
+        backfill_path.display()
+    );
+}
+
 /// Merges in self-hosted trailer video/captions (see download-trailers.js).
 /// Same separate-file rationale as `apply_collections_backfill`. The
 /// backfill file's subtitle entries are a slimmer shape than the shared
@@ -388,6 +450,7 @@ async fn main() {
     apply_episode_metadata_backfill(&mut cache.items, &data_path);
     apply_keywords_backfill(&mut cache.items, &data_path);
     apply_awards_backfill(&mut cache.items, &data_path);
+    apply_subtitle_backfill(&mut cache.items, &data_path);
     apply_trailer_backfill(&mut cache.items, &data_path);
     let similar: HashMap<String, Vec<SimilarEntry>> =
         load_side_file(&data_path, "similar_backfill.json");
@@ -468,6 +531,10 @@ async fn main() {
         .route("/api/admin/users", get(list_users_handler).post(create_user_handler))
         .route("/api/admin/pipeline", get(get_pipeline_status_handler))
         .route("/api/admin/invites", post(create_invite_handler))
+        .route(
+            "/api/admin/invites/media-key",
+            post(set_invite_media_key_envelope_handler),
+        )
         .route("/api/tv/pair/claim", post(tv_pair_claim_handler))
         .route("/api/admin/catalog", get(get_catalog_review_handler))
         .route("/api/admin/catalog/:id/research", post(retrigger_torrent_search_handler))
@@ -1813,6 +1880,54 @@ async fn create_invite_handler(
     }
 }
 
+#[derive(Deserialize)]
+struct InviteMediaKeyEnvelopeRequest {
+    /// Raw invite token (same value returned by create_invite).
+    token: String,
+    /// Hex of AES-GCM envelope (iv || ciphertext || tag) sealed under a
+    /// key derived from the invite token client-side. Server never decrypts.
+    envelope_hex: String,
+}
+
+/// Admin attaches a sealed catalog-key envelope to an invite so the invitee
+/// can unwrap media access after signup without the raw key ever appearing
+/// in the invite URL (replaces #mk= fragment handoff).
+async fn set_invite_media_key_envelope_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+    Json(body): Json<InviteMediaKeyEnvelopeRequest>,
+) -> impl IntoResponse {
+    if !user.is_admin {
+        return StatusCode::FORBIDDEN.into_response();
+    }
+    let Some(envelope) = auth::hex_to_bytes(&body.envelope_hex) else {
+        return (
+            StatusCode::BAD_REQUEST,
+            Json(serde_json::json!({ "error": "envelope_hex must be even-length hex" })),
+        )
+            .into_response();
+    };
+    match auth::set_invite_media_key_envelope(&state.db, user.id, &body.token, &envelope).await {
+        Ok(()) => StatusCode::NO_CONTENT.into_response(),
+        Err(auth::SetInviteEnvelopeError::NotFound) => (
+            StatusCode::NOT_FOUND,
+            Json(serde_json::json!({
+                "error": "invite not found, already used, or not created by you"
+            })),
+        )
+            .into_response(),
+        Err(auth::SetInviteEnvelopeError::BadEnvelope) => (
+            StatusCode::BAD_REQUEST,
+            Json(serde_json::json!({ "error": "envelope too short or too long" })),
+        )
+            .into_response(),
+        Err(auth::SetInviteEnvelopeError::Database(e)) => {
+            tracing::error!("set invite media envelope failed: {e}");
+            StatusCode::INTERNAL_SERVER_ERROR.into_response()
+        }
+    }
+}
+
 #[derive(Serialize)]
 struct TvPairStartResponse {
     code: String,
@@ -1898,11 +2013,20 @@ struct SignupRequest {
     display_name: Option<String>,
 }
 
+#[derive(Serialize)]
+struct SignupResponse {
+    token: String,
+    /// One-shot sealed catalog key (hex). Client opens with invite token,
+    /// then wraps under the new password. Absent when inviter had no key.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    media_key_envelope_hex: Option<String>,
+}
+
 async fn signup_handler(
     State(state): State<Arc<AppState>>,
     Json(body): Json<SignupRequest>,
 ) -> impl IntoResponse {
-    let user = match auth::redeem_invite(
+    let redeemed = match auth::redeem_invite(
         &state.db,
         &body.token,
         &body.username,
@@ -1911,7 +2035,7 @@ async fn signup_handler(
     )
     .await
     {
-        Ok(user) => user,
+        Ok(r) => r,
         Err(auth::RedeemInviteError::InvalidOrExpired) => {
             return (
                 StatusCode::GONE,
@@ -1932,8 +2056,18 @@ async fn signup_handler(
         }
     };
 
-    match auth::create_session(&state.db, user.id).await {
-        Ok(token) => Json(LoginResponse { token }).into_response(),
+    match auth::create_session(&state.db, redeemed.user.id).await {
+        Ok(token) => {
+            let media_key_envelope_hex = redeemed
+                .media_key_envelope
+                .as_ref()
+                .map(|b| auth::bytes_to_hex(b));
+            Json(SignupResponse {
+                token,
+                media_key_envelope_hex,
+            })
+            .into_response()
+        }
         Err(e) => {
             tracing::error!("failed to create session after signup: {e}");
             StatusCode::INTERNAL_SERVER_ERROR.into_response()

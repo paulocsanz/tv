@@ -3,7 +3,11 @@
 import { useState } from "react";
 import { InviteResponse } from "@/lib/types";
 import { useT } from "@/lib/i18n/LocaleProvider";
-import { exportCatalogKeyBase64, loadCatalogKeyLocal } from "@/lib/crypto/catalog-key";
+import {
+  attachInviteMediaKeyEnvelope,
+  loadCatalogKeyLocal,
+  sealCatalogKeyForInvite,
+} from "@/lib/crypto/catalog-key";
 
 export function CreateInviteButton() {
   const t = useT();
@@ -11,39 +15,43 @@ export function CreateInviteButton() {
   const [copied, setCopied] = useState(false);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [mediaAttached, setMediaAttached] = useState(false);
 
   async function handleClick() {
     setPending(true);
     setError(null);
     setCopied(false);
+    setMediaAttached(false);
 
-    const res = await fetch("/api/admin/invites", { method: "POST" });
-    setPending(false);
-
-    if (!res.ok) {
-      setError(t.admin.inviteCreateFailed);
-      return;
-    }
-
-    const invite = (await res.json()) as InviteResponse;
-    let url = `${window.location.origin}/signup?token=${invite.token}`;
-
-    // Embed the catalog key in the URL fragment if the admin has it unlocked
-    // locally (RFC 0006 P1.1 — invite key handoff). Fragment never reaches
-    // the server. If no key is unlocked, the invite still works for account
-    // creation — the new member just can't decrypt media until they receive
-    // a key separately.
     try {
-      const key = await loadCatalogKeyLocal(true);
-      if (key) {
-        const keyB64 = await exportCatalogKeyBase64(key);
-        url += `#mk=${keyB64}`;
+      const res = await fetch("/api/admin/invites", { method: "POST" });
+      if (!res.ok) {
+        setError(t.admin.inviteCreateFailed);
+        return;
       }
-    } catch {
-      // no key unlocked — invite without decrypt access
-    }
 
-    setLink(url);
+      const invite = (await res.json()) as InviteResponse;
+      // URL carries only the invite token — never the catalog key.
+      const url = `${window.location.origin}/signup?token=${invite.token}`;
+
+      // If the admin has the catalog key unlocked, seal it under the invite
+      // token and store the envelope server-side (one-shot on signup).
+      try {
+        const key = await loadCatalogKeyLocal(true);
+        if (key) {
+          const envelopeHex = await sealCatalogKeyForInvite(key, invite.token);
+          await attachInviteMediaKeyEnvelope(invite.token, envelopeHex);
+          setMediaAttached(true);
+        }
+      } catch (e) {
+        console.warn("invite media envelope attach failed:", e);
+        // Invite still works for account creation without media access.
+      }
+
+      setLink(url);
+    } finally {
+      setPending(false);
+    }
   }
 
   async function handleCopy() {
@@ -79,7 +87,7 @@ export function CreateInviteButton() {
       )}
       <p className="text-xs text-zinc-500">
         {t.admin.inviteExpiryNote}
-        {link?.includes("#mk=") && t.admin.inviteIncludesDecryptKey}
+        {mediaAttached && t.admin.inviteMediaKeyAttached}
       </p>
     </div>
   );

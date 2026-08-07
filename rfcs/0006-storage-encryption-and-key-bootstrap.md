@@ -35,12 +35,12 @@
 - [x] **P0.4** Login unlock into IndexedDB + VideoPlayer decrypt path — status: `done`
 
 ### P1 — next
-- [x] **P1.1** Invite-link key handoff (URL fragment, non-custodial) — status: `done`
-  - Admin generates invite link with catalog key embedded as `#mk=base64` (URL fragment never sent to server)
-  - Signup page detects `#mk=`, wraps key under new user's password after account creation, PUTs wrap to server
+- [x] **P1.1** Invite-link key handoff (non-custodial envelope) — status: `done`
+  - **2026-08-07:** raw `#mk=` removed. Admin seals catalog key under invite token (AES-GCM);
+    server stores opaque `invites.media_key_envelope`; signup returns envelope once and clears it;
+    client opens with token and re-wraps under the new password. Invite URL is only `?token=`.
+  - Legacy `#mk=` still accepted on signup for old links
   - `EncryptionBootstrap` supports importing an existing key (for migrating from hardcoded env to per-account wraps)
-  - `CreateInviteButton` (admin users page) auto-embeds key if unlocked locally
-  - Hardcoded `NEXT_PUBLIC_ENCRYPTION_CATALOG_KEY` fallback removed — access is now invite-gated
 - [ ] **P1.2** Logout policy for IndexedDB key (wipe vs keep) — status: `todo`
 - [x] **P1.3** Streaming decrypt (MSE / range) instead of full download — status: `done`
   - SSESENC1 header `compression` byte (0=none, 1=gzip of payload before chunking)

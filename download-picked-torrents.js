@@ -18,7 +18,13 @@ import {
   ListPartsCommand,
 } from "@aws-sdk/client-s3";
 import { NodeHttpHandler } from "@smithy/node-http-handler";
-import { transcodeForBrowser, browserMp4Name, extractSubtitles, probeDurationSeconds } from "./transcode.js";
+import {
+  transcodeForBrowser,
+  browserMp4Name,
+  extractSubtitles,
+  extractSidecarSubtitles,
+  probeDurationSeconds,
+} from "./transcode.js";
 
 // Single browser-playable MP4 tier per file, capped at 720p. Raw torrent
 // rips are frequently MKV containers with HEVC video or EAC3/DTS audio, none
@@ -199,7 +205,16 @@ function clearFooterLine(key) {
 // watchdog) and a pileup of 19+ established connections to the bucket -
 // the same signature as an earlier 40-minute stall incident. Dropped to 2
 // to give each upload a bigger share of this connection.
-const UPLOAD_CONCURRENCY = 2;
+//
+// 2026-08-07: raised default back to 4 — Seinfeld-style ~200MB episode
+// drains benefit a lot more from file-level parallelism than from one fat
+// TCP stream, and PART_SIZE is now 8MB so individual PUTs finish faster.
+// Override with UPLOAD_CONCURRENCY=2 if EPIPE storms return on multi-GB
+// feature uploads.
+const UPLOAD_CONCURRENCY = Math.max(
+  1,
+  parseInt(process.env.UPLOAD_CONCURRENCY || "4", 10) || 4,
+);
 
 // Transcoding is CPU/hardware-encoder bound (h264_videotoolbox is one
 // physical encode engine), unlike uploads which are network-bound and
@@ -208,7 +223,10 @@ const UPLOAD_CONCURRENCY = 2;
 // same encoder and CPU, since every worker used to transcode *and* upload
 // in one uninterrupted sequence. Capped at 4 to match download
 // concurrency instead of the encoder silently thrashing.
-const TRANSCODE_CONCURRENCY = 4;
+const TRANSCODE_CONCURRENCY = Math.max(
+  1,
+  parseInt(process.env.TRANSCODE_CONCURRENCY || "4", 10) || 4,
+);
 let activeTranscodes = 0;
 
 async function acquireTranscodeSlot() {
@@ -811,7 +829,13 @@ let activeUploads = 0;
 // timeout on an individual part PUT before it finishes. 8MB parts land
 // fast enough to mostly stay under whatever that untunable limit is.
 const PART_SIZE = 8 * 1024 * 1024;
-const PART_CONCURRENCY = 2;
+// Parts per file (× UPLOAD_CONCURRENCY = open PUTs to the bucket). Default
+// 3 keeps more of the path busy without the 200-connection storm that
+// produced "body is not seekable" failures.
+const PART_CONCURRENCY = Math.max(
+  1,
+  parseInt(process.env.PART_CONCURRENCY || "3", 10) || 3,
+);
 
 async function uploadSmallFile(filePath, s3Key, label, contentType, sizeMB) {
   for (let attempt = 1; attempt <= UPLOAD_RETRIES; attempt++) {
@@ -1661,10 +1685,11 @@ async function processPickedTorrents() {
       uploaded++;
       // Everything for this item lives under its own itemDir (see
       // downloadPhase), so once every file is uploaded the whole thing -
-      // including any .nfo/.jpg/.srt cruft the torrent bundled - can go.
-      // Same ENOTEMPTY race as bumpOption's cleanup below, and this one
-      // runs on every single successful item, not just failures - equally
-      // must not crash the whole pipeline over one item's tidy-up.
+      // including .nfo/.jpg and any sidecar .srt already harvested into
+      // WebVTT + S3 above - can go. Same ENOTEMPTY race as bumpOption's
+      // cleanup below, and this one runs on every single successful item,
+      // not just failures - equally must not crash the whole pipeline over
+      // one item's tidy-up.
       try {
         fs.rmSync(itemDir, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
       } catch (cleanupError) {
@@ -1735,23 +1760,89 @@ async function processPickedTorrents() {
       // deleted below, not `tmpPath` - transcodeForBrowser already stripped
       // every subtitle track out of tmpPath. Best-effort: a source with no
       // text-based subtitle tracks, or a corrupt one, must not block the
-      // video itself from uploading.
+      // video itself from uploading. Also harvests sidecar .srt/.ass next to
+      // the video (or under Subs/) - YIFY/scene packs often ship softsubs
+      // that way rather than muxed into the container, and without this
+      // pass finalizeItem would delete them as "cruft".
       let subtitleTracks = [];
       if (fs.existsSync(videoPath)) {
+        const mp4Base = path.basename(mp4Name, ".mp4");
+        const extractBase = `${item.id}__${mp4Base}`;
         try {
-          const mp4Base = path.basename(mp4Name, ".mp4");
-          const extracted = await extractSubtitles(videoPath, TRANSCODE_TMP_DIR, `${item.id}__${mp4Base}`, { trackChild: activeChildren });
+          const extracted = await extractSubtitles(videoPath, TRANSCODE_TMP_DIR, extractBase, {
+            trackChild: activeChildren,
+          });
           for (const sub of extracted) {
             const subKey = `${S3_PREFIX(item.id)}${mp4Base}.${sub.id}.vtt`;
-            const subOk = await uploadToS3(sub.filePath, subKey, `${label} [${sub.id}]`, "text/vtt; charset=utf-8");
+            const subOk = await uploadToS3(
+              sub.filePath,
+              subKey,
+              `${label} [${sub.id}]`,
+              "text/vtt; charset=utf-8",
+            );
             fs.rmSync(sub.filePath, { force: true });
-            if (subOk) subtitleTracks.push({ id: sub.id, lang: sub.lang, label: sub.label, forced: sub.forced, s3_key: subKey });
+            if (subOk) {
+              subtitleTracks.push({
+                id: sub.id,
+                lang: sub.lang,
+                label: sub.label,
+                forced: sub.forced,
+                s3_key: subKey,
+              });
+            }
           }
           if (extracted.length > 0) {
-            emit("subtitles_extracted", { item: item.title, id: item.id, file: mp4Name, found: extracted.length, uploaded: subtitleTracks.length });
+            emit("subtitles_extracted", {
+              item: item.title,
+              id: item.id,
+              file: mp4Name,
+              found: extracted.length,
+              uploaded: subtitleTracks.length,
+              source: "embedded",
+            });
           }
         } catch (error) {
           console.log(`  ⚠ [${label}] subtitle extraction failed: ${error.message}`);
+        }
+        try {
+          const usedIds = new Set(subtitleTracks.map((t) => t.id));
+          const sidecars = await extractSidecarSubtitles(
+            videoPath,
+            TRANSCODE_TMP_DIR,
+            extractBase,
+            { trackChild: activeChildren, usedIds },
+          );
+          for (const sub of sidecars) {
+            const subKey = `${S3_PREFIX(item.id)}${mp4Base}.${sub.id}.vtt`;
+            const subOk = await uploadToS3(
+              sub.filePath,
+              subKey,
+              `${label} [sidecar ${sub.id}]`,
+              "text/vtt; charset=utf-8",
+            );
+            fs.rmSync(sub.filePath, { force: true });
+            if (subOk) {
+              subtitleTracks.push({
+                id: sub.id,
+                lang: sub.lang,
+                label: sub.label,
+                forced: sub.forced,
+                s3_key: subKey,
+              });
+            }
+          }
+          if (sidecars.length > 0) {
+            emit("subtitles_extracted", {
+              item: item.title,
+              id: item.id,
+              file: mp4Name,
+              found: sidecars.length,
+              uploaded: sidecars.length,
+              source: "sidecar",
+            });
+          }
+        } catch (error) {
+          console.log(`  ⚠ [${label}] sidecar subtitle harvest failed: ${error.message}`);
         }
       }
 
