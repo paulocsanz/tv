@@ -29,6 +29,17 @@ struct S3Config {
     bucket: String,
 }
 
+/// Living-room decrypt relay registration (RFC 0011). In-memory only:
+/// process restart clears relays; clients re-register via heartbeat.
+#[derive(Clone)]
+struct SalaRelayEntry {
+    user_id: i64,
+    base_url: String,
+    /// Unix ms of last heartbeat / register.
+    last_seen_ms: u128,
+    title_id: Option<String>,
+}
+
 struct AppState {
     items: Vec<EnrichedItem>,
     db: PgPool,
@@ -39,6 +50,8 @@ struct AppState {
     /// TMDB collection id (as a string key) -> that franchise's full movie
     /// list, in or out of the catalog. See backfill-collection-parts.js.
     collection_parts: HashMap<String, CollectionParts>,
+    /// user_id -> active sala relay (PC decryptor on the LAN).
+    sala_relays: std::sync::Mutex<HashMap<i64, SalaRelayEntry>>,
 }
 
 async fn connect_db(database_url: &str) -> PgPool {
@@ -492,11 +505,12 @@ async fn main() {
         s3,
         similar,
         collection_parts,
+        sala_relays: std::sync::Mutex::new(HashMap::new()),
     });
 
     let cors = CorsLayer::new()
         .allow_origin(Any)
-        .allow_methods([Method::GET, Method::POST])
+        .allow_methods([Method::GET, Method::POST, Method::DELETE])
         .allow_headers(Any);
 
     let public_routes = Router::new()
@@ -536,6 +550,13 @@ async fn main() {
             post(set_invite_media_key_envelope_handler),
         )
         .route("/api/tv/pair/claim", post(tv_pair_claim_handler))
+        .route(
+            "/api/sala/relay",
+            get(sala_relay_get_handler)
+                .post(sala_relay_register_handler)
+                .delete(sala_relay_delete_handler),
+        )
+        .route("/api/sala/relay/heartbeat", post(sala_relay_heartbeat_handler))
         .route("/api/admin/catalog", get(get_catalog_review_handler))
         .route("/api/admin/catalog/:id/research", post(retrigger_torrent_search_handler))
         .route("/api/account/password", post(change_password_handler))
@@ -2002,6 +2023,165 @@ async fn tv_pair_claim_handler(
             tracing::error!("failed to claim tv pairing: {e}");
             StatusCode::INTERNAL_SERVER_ERROR.into_response()
         }
+    }
+}
+
+// ─── Sala decrypt relay registry (RFC 0011) ─────────────────────────────
+
+const SALA_RELAY_TTL_MS: u128 = 45_000;
+
+fn sala_now_ms() -> u128 {
+    std::time::SystemTime::now()
+        .duration_since(std::time::UNIX_EPOCH)
+        .map(|d| d.as_millis())
+        .unwrap_or(0)
+}
+
+fn is_plausible_lan_base_url(url: &str) -> bool {
+    // Lightweight parse — avoid adding a URL crate dependency for this check.
+    let url = url.trim();
+    if url.len() < 10 || url.len() >= 256 {
+        return false;
+    }
+    if url.contains('@') {
+        return false;
+    }
+    let rest = if let Some(r) = url.strip_prefix("http://") {
+        r
+    } else if let Some(r) = url.strip_prefix("https://") {
+        r
+    } else {
+        return false;
+    };
+    let hostport = rest.split('/').next().unwrap_or("");
+    if hostport.is_empty() {
+        return false;
+    }
+    hostport.starts_with("localhost")
+        || hostport.contains('.')
+        || hostport.chars().all(|c| c.is_ascii_digit() || c == '.' || c == ':')
+}
+
+#[derive(Deserialize)]
+struct SalaRelayRegisterRequest {
+    /// e.g. http://192.168.0.12:8787 — LAN base of the PC relay process.
+    base_url: String,
+    /// Optional "now playing" title for TV UI.
+    title_id: Option<String>,
+}
+
+#[derive(Serialize)]
+struct SalaRelayResponse {
+    base_url: String,
+    title_id: Option<String>,
+    /// Milliseconds since last heartbeat (0 = just now).
+    age_ms: u128,
+    /// Absolute play URL helper when title_id is known.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    play_url: Option<String>,
+}
+
+fn sala_entry_to_response(e: &SalaRelayEntry) -> SalaRelayResponse {
+    let age = sala_now_ms().saturating_sub(e.last_seen_ms);
+    let play_url = e.title_id.as_ref().map(|tid| {
+        format!(
+            "{}/play/{}/index.m3u8",
+            e.base_url.trim_end_matches('/'),
+            tid
+        )
+    });
+    SalaRelayResponse {
+        base_url: e.base_url.clone(),
+        title_id: e.title_id.clone(),
+        age_ms: age,
+        play_url,
+    }
+}
+
+/// POST: PC relay registers/refreshes its LAN base URL for this user.
+async fn sala_relay_register_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+    Json(body): Json<SalaRelayRegisterRequest>,
+) -> impl IntoResponse {
+    let base = body.base_url.trim().trim_end_matches('/').to_string();
+    if !is_plausible_lan_base_url(&base) {
+        return (
+            StatusCode::BAD_REQUEST,
+            Json(serde_json::json!({ "error": "base_url must be http(s)://host[:port]" })),
+        )
+            .into_response();
+    }
+    let entry = SalaRelayEntry {
+        user_id: user.id,
+        base_url: base,
+        last_seen_ms: sala_now_ms(),
+        title_id: body.title_id.filter(|s| !s.is_empty()),
+    };
+    match state.sala_relays.lock() {
+        Ok(mut map) => {
+            map.insert(user.id, entry.clone());
+            Json(sala_entry_to_response(&entry)).into_response()
+        }
+        Err(_) => StatusCode::INTERNAL_SERVER_ERROR.into_response(),
+    }
+}
+
+/// POST: lightweight heartbeat (keeps TTL alive).
+async fn sala_relay_heartbeat_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+) -> impl IntoResponse {
+    match state.sala_relays.lock() {
+        Ok(mut map) => {
+            if let Some(e) = map.get_mut(&user.id) {
+                e.last_seen_ms = sala_now_ms();
+                StatusCode::NO_CONTENT.into_response()
+            } else {
+                (
+                    StatusCode::NOT_FOUND,
+                    Json(serde_json::json!({ "error": "no active relay — POST /api/sala/relay first" })),
+                )
+                    .into_response()
+            }
+        }
+        Err(_) => StatusCode::INTERNAL_SERVER_ERROR.into_response(),
+    }
+}
+
+/// GET: TV (or phone) discovers the user's sala relay if still fresh.
+async fn sala_relay_get_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+) -> impl IntoResponse {
+    match state.sala_relays.lock() {
+        Ok(mut map) => {
+            let now = sala_now_ms();
+            // Drop expired
+            map.retain(|_, e| now.saturating_sub(e.last_seen_ms) < SALA_RELAY_TTL_MS);
+            match map.get(&user.id) {
+                Some(e) => Json(sala_entry_to_response(e)).into_response(),
+                None => (
+                    StatusCode::NOT_FOUND,
+                    Json(serde_json::json!({ "error": "no active sala relay" })),
+                )
+                    .into_response(),
+            }
+        }
+        Err(_) => StatusCode::INTERNAL_SERVER_ERROR.into_response(),
+    }
+}
+
+async fn sala_relay_delete_handler(
+    State(state): State<Arc<AppState>>,
+    Extension(user): Extension<UserRecord>,
+) -> impl IntoResponse {
+    match state.sala_relays.lock() {
+        Ok(mut map) => {
+            map.remove(&user.id);
+            StatusCode::NO_CONTENT.into_response()
+        }
+        Err(_) => StatusCode::INTERNAL_SERVER_ERROR.into_response(),
     }
 }
 

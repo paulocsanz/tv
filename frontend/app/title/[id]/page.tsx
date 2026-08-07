@@ -6,7 +6,7 @@ import { posterSrc } from "@/lib/types";
 import { ImdbBadge, RottenTomatoesBadge } from "@/components/RatingBadges";
 import { PosterPlaceholder } from "@/components/ContentCard";
 import { RelatedTitleCard } from "@/components/RelatedTitleCard";
-import { VideoPlayer } from "@/components/VideoPlayer";
+import { SalaTitlePlay } from "@/components/SalaTitlePlay";
 import { TrailerPreview } from "@/components/TrailerPreview";
 import { Synopsis } from "@/components/Synopsis";
 import { AwardsCard } from "@/components/AwardsCard";
@@ -65,7 +65,7 @@ export default async function TitlePage({
               overlapping if it's resized wider than the space they'd
               normally share. */}
           {hasStream ? (
-            <VideoPlayer
+            <SalaTitlePlay
               id={item.id}
               title={item.title}
               s3Keys={item.s3_keys.length > 0 ? item.s3_keys : [item.s3_key!]}

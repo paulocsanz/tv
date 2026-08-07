@@ -518,6 +518,8 @@ export function VideoPlayer({
   mediaCodecs = null,
   runtime = null,
   hlsPlaylistS3Key = null,
+  plainHlsUrl = null,
+  onPlainHlsError,
 }: {
   id: string;
   /** Movie/show title - only used as Cast metadata so the receiver's screen
@@ -547,6 +549,12 @@ export function VideoPlayer({
   runtime?: string | null;
   /** HLS VOD playlist (RFC 0009). Preferred when set. */
   hlsPlaylistS3Key?: string | null;
+  /**
+   * Plain (already decrypted) HLS URL on the LAN — sala relay (RFC 0011).
+   * When set, skips catalog-key path and loads with stock hls.js.
+   */
+  plainHlsUrl?: string | null;
+  onPlainHlsError?: () => void;
 }) {
   const t = useT();
   const hasEpisodes = s3Keys.length > 1;
@@ -589,11 +597,11 @@ export function VideoPlayer({
   const streamUrl = hasEpisodes
     ? `/api/stream/${id}?episode=${selectedIndex + 1}`
     : `/api/stream/${id}`;
-  // Delivery: HLS AES-128 when hlsPlaylistS3Key is set; else SSESENC1
-  // progressive if encrypted; else plaintext. Prefer HLS when available.
+  // Delivery: plain LAN HLS (sala) > encrypted HLS > SSESENC1 > progressive.
   const useHls = Boolean(hlsPlaylistS3Key);
+  const usePlainRelay = Boolean(plainHlsUrl);
   const [playableUrl, setPlayableUrl] = useState<string | null>(
-    useHls || encrypted ? null : streamUrl,
+    usePlainRelay || useHls || encrypted ? null : streamUrl,
   );
   const [decryptProgress, setDecryptProgress] = useState<number | null>(null);
   const [decryptError, setDecryptError] = useState<string | null>(null);
@@ -608,6 +616,56 @@ export function VideoPlayer({
     revokePlayableRef.current = null;
 
     (async () => {
+      // RFC 0011: plain HLS from PC sala relay (already decrypted on LAN).
+      if (plainHlsUrl) {
+        setPlayableUrl(null);
+        setDecryptError(null);
+        setDecryptProgress(null);
+        setDecryptMode(null);
+        try {
+          const video = videoRef.current;
+          if (!video) throw new Error("video element not ready");
+          await new Promise((r) => requestAnimationFrame(() => r(undefined)));
+          if (cancelled) return;
+          const Hls = (await import("hls.js")).default;
+          if (Hls.isSupported()) {
+            const hls = new Hls({
+              fragLoadingMaxRetry: 4,
+              manifestLoadingMaxRetry: 3,
+            });
+            hls.loadSource(plainHlsUrl);
+            hls.attachMedia(video);
+            hls.on(Hls.Events.ERROR, (_e, data) => {
+              if (data.fatal) {
+                onPlainHlsError?.();
+                setDecryptError(t.sala.relayDead);
+              }
+            });
+            revokePlayableRef.current = () => {
+              try {
+                hls.destroy();
+              } catch {
+                /* ignore */
+              }
+            };
+            setPlayableUrl(plainHlsUrl);
+            setDecryptMode("sala");
+          } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+            video.src = plainHlsUrl;
+            setPlayableUrl(plainHlsUrl);
+            setDecryptMode("sala");
+          } else {
+            throw new Error("HLS not supported");
+          }
+        } catch (e) {
+          if (!cancelled) {
+            setDecryptError(e instanceof Error ? e.message : "relay failed");
+            onPlainHlsError?.();
+          }
+        }
+        return;
+      }
+
       if (!encrypted && !useHls) {
         setPlayableUrl(streamUrl);
         setDecryptProgress(null);
@@ -702,6 +760,9 @@ export function VideoPlayer({
     id,
     hasEpisodes,
     selectedIndex,
+    plainHlsUrl,
+    onPlainHlsError,
+    t.sala.relayDead,
   ]);
 
   const progressUrl = `/api/progress/${id}`;

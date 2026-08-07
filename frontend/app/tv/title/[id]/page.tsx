@@ -6,7 +6,7 @@ import {
   getProgress,
 } from "@/lib/api";
 import { posterSrc } from "@/lib/types";
-import { VideoPlayer } from "@/components/VideoPlayer";
+import { SalaTitlePlay } from "@/components/SalaTitlePlay";
 import { getLocale } from "@/lib/i18n/locale";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizeItem } from "@/lib/i18n/content";
@@ -49,7 +49,7 @@ export default async function TvTitlePage({
       </div>
 
       {hasStream ? (
-        <VideoPlayer
+        <SalaTitlePlay
           id={item.id}
           title={item.title}
           s3Keys={item.s3_keys.length > 0 ? item.s3_keys : [item.s3_key!]}

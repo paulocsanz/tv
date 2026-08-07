@@ -273,6 +273,22 @@ const dictionary: Dictionary = {
     close: "Close trailer",
     iframeTitle: "{title} trailer",
   },
+  sala: {
+    noRelayTitle: "No living-room decryptor online",
+    noRelayHint:
+      "On a PC with the catalog key, run: npm run sala:relay — then open this page again. The TV never holds the key.",
+    relayOnline: "Sala relay online",
+    playViaSala: "Play via sala (PC)",
+    relayDead: "Sala relay stopped — start it again on the PC",
+    pageTitle: "Sala — living-room decryptor",
+    pageIntro:
+      "The PC decrypts HLS with the catalog key and serves a clear stream on your LAN. The TV only plays that stream — no key on the TV.",
+    statusHeading: "Registry status",
+    howToHeading: "How to start the PC relay",
+    howTo1: "On this machine, load S3 + ENCRYPTION_CATALOG_KEY from .env.caixote.",
+    howTo3: "Optionally set SESSAO_API_URL + SESSAO_TOKEN so the TV can discover the relay.",
+    howTo4: "On the TV, open the title and tap “Play via sala (PC)”.",
+  },
   player: {
     skipBack10: "Skip back 10 seconds",
     skipForward10: "Skip forward 10 seconds",

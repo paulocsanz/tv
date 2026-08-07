@@ -9,6 +9,7 @@
     "pipeline:monitor": "node scripts/pipeline/monitor.js",
     "pipeline:hls": "node scripts/pipeline/package-hls-from-s3.js",
     "pipeline:reencrypt": "node scripts/pipeline/reencrypt-from-s3.js",
+    "sala:relay": "node scripts/relay/sala-relay.js",
     "ops:deploy-pipeline": "./scripts/ops/deploy-pipeline-caixote.sh",
     "ops:monitor-caixote": "node scripts/ops/monitor-pipeline-caixote.mjs",
     "typecheck": "tsc --noEmit",

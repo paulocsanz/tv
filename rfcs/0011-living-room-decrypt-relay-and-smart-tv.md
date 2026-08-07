@@ -1,6 +1,6 @@
 # Living-room playback: decrypt relay + Smart TV without store hell
 
-**Status:** draft  
+**Status:** in-progress  
 **Updated:** 2026-08-07
 
 ## Background
@@ -95,13 +95,13 @@ It does **not** decrypt media in P0/P1 of this RFC.
 
 ### P0 — must ship first (useful in one house tonight)
 
-- [ ] **P0.1** Spec + this RFC agreed — status: `done`
-- [ ] **P0.2** User can start a **PC LAN decrypt relay** for one HLS title
-  (clear HLS on LAN; catalog key only on PC) — status: `todo`
-- [ ] **P0.3** TV shell (or phone) shows **pair / “play via sala”** and opens
-  the relay URL after registration — status: `todo`
-- [ ] **P0.4** Relay dies cleanly when PC stops; TV shows a recoverable error
-  — status: `todo`
+- [x] **P0.1** Spec + this RFC agreed — status: `done`
+- [x] **P0.2** User can start a **PC LAN decrypt relay** for one HLS title
+  (clear HLS on LAN; catalog key only on PC) — status: `done`
+- [x] **P0.3** TV shell (or phone) shows **pair / “play via sala”** and opens
+  the relay URL after registration — status: `done`
+- [x] **P0.4** Relay dies cleanly when PC stops; TV shows a recoverable error
+  — status: `done`
 
 ### P1 — next
 
@@ -127,9 +127,9 @@ It does **not** decrypt media in P0/P1 of this RFC.
 | ID | Band | Title | Status | Task / PR | Updated |
 |----|------|-------|--------|-----------|---------|
 | P0.1 | p0 | RFC drafted | done | this doc | 2026-08-07 |
-| P0.2 | p0 | PC LAN decrypt relay | todo | — | 2026-08-07 |
-| P0.3 | p0 | TV pair → open relay feed | todo | — | 2026-08-07 |
-| P0.4 | p0 | Relay stop = clear TV error | todo | — | 2026-08-07 |
+| P0.2 | p0 | PC LAN decrypt relay | done | scripts/relay/sala-relay.js | 2026-08-07 |
+| P0.3 | p0 | TV play via sala | done | SalaRelayBanner + /api/sala/relay | 2026-08-07 |
+| P0.4 | p0 | Relay stop = clear TV error | done | plainHls fatal → onPlainHlsError | 2026-08-07 |
 | P1.1 | p1 | Phone WebRTC to TV | todo | — | 2026-08-07 |
 | P1.2 | p1 | Multi-ep relay | todo | — | 2026-08-07 |
 | P1.3 | p1 | Session-license API (optional) | todo | — | 2026-08-07 |

@@ -271,6 +271,22 @@ const dictionary = {
     close: "Fechar trailer",
     iframeTitle: "trailer de {title}",
   },
+  sala: {
+    noRelayTitle: "Nenhum decryptor da sala online",
+    noRelayHint:
+      "No PC com a chave do catálogo, rode: npm run sala:relay — e abra de novo. A TV nunca guarda a chave.",
+    relayOnline: "Relay da sala online",
+    playViaSala: "Assistir via sala (PC)",
+    relayDead: "O relay da sala parou — inicie de novo no PC",
+    pageTitle: "Sala — decryptor da sala",
+    pageIntro:
+      "O PC descriptografa o HLS com a chave do catálogo e serve um stream em claro na LAN. A TV só assiste a esse stream — sem chave na TV.",
+    statusHeading: "Status no registro",
+    howToHeading: "Como iniciar o relay no PC",
+    howTo1: "Nesta máquina, carregue S3 + ENCRYPTION_CATALOG_KEY do .env.caixote.",
+    howTo3: "Opcional: SESSAO_API_URL + SESSAO_TOKEN para a TV descobrir o relay.",
+    howTo4: "Na TV, abra o título e toque em “Assistir via sala (PC)”.",
+  },
   player: {
     skipBack10: "Voltar 10 segundos",
     skipForward10: "Avançar 10 segundos",
