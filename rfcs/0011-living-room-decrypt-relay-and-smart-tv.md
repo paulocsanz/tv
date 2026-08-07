@@ -4,24 +4,20 @@
 **Updated:** 2026-08-07
 
 <!-- OFICINA_RFC_SLICES
-{
-  "rfc": "0011",
-  "file": "rfcs/0011-living-room-decrypt-relay-and-smart-tv.md",
-  "slices": [
-    {"id": "P0.1", "band": "p0", "title": "RFC drafted + harness AC/Status/slices", "status": "done"},
-    {"id": "P0.2", "band": "p0", "title": "PC LAN decrypt relay for one HLS title", "status": "todo"},
-    {"id": "P0.3", "band": "p0", "title": "TV pair / play-via-sala opens relay feed", "status": "todo"},
-    {"id": "P0.4", "band": "p0", "title": "Relay stop → clear recoverable TV error", "status": "todo"},
-    {"id": "P1.1", "band": "p1", "title": "Phone WebRTC decrypt feed into TV", "status": "todo"},
-    {"id": "P1.2", "band": "p1", "title": "Multi-ep relay (hls/e{n}/)", "status": "todo"},
-    {"id": "P1.3", "band": "p1", "title": "Optional session-license API for Cast/third-party", "status": "todo"},
-    {"id": "P1.4", "band": "p1", "title": "Jellyfin-beside vs pure Sessão decision", "status": "todo"},
-    {"id": "P2.1", "band": "p2", "title": "Native phone LAN HTTP relay", "status": "todo"},
-    {"id": "P2.2", "band": "p2", "title": "Custom Cast receiver", "status": "todo"},
-    {"id": "P2.3", "band": "p2", "title": "Android TV store client", "status": "todo"},
-    {"id": "P2.4", "band": "p2", "title": "Tizen/webOS store packaging", "status": "todo"}
-  ]
-}
+[
+  {"id":"P0.1","band":"p0","title":"RFC drafted and harness-approvable","status":"done"},
+  {"id":"P0.2","band":"p0","title":"PC LAN decrypt relay for one HLS title","status":"todo"},
+  {"id":"P0.3","band":"p0","title":"TV pair / play-via-sala opens relay feed","status":"todo"},
+  {"id":"P0.4","band":"p0","title":"Relay stop shows recoverable TV error","status":"todo"},
+  {"id":"P1.1","band":"p1","title":"Phone WebRTC decrypt feed into TV","status":"todo"},
+  {"id":"P1.2","band":"p1","title":"Multi-ep relay (hls/e{n}/)","status":"todo"},
+  {"id":"P1.3","band":"p1","title":"Optional session-license API for Cast/third-party","status":"todo"},
+  {"id":"P1.4","band":"p1","title":"Jellyfin-beside vs pure Sessão decision","status":"todo"},
+  {"id":"P2.1","band":"p2","title":"Native phone LAN HTTP relay","status":"todo"},
+  {"id":"P2.2","band":"p2","title":"Custom Cast receiver","status":"todo"},
+  {"id":"P2.3","band":"p2","title":"Android TV store client","status":"todo"},
+  {"id":"P2.4","band":"p2","title":"Tizen/webOS store packaging","status":"todo"}
+]
 -->
 
 ## Background
@@ -45,6 +41,9 @@
 This RFC captures the plan discussed for “TV burra + phone/PC holds the key,”
 including optional integration with already-approved clients—**not** the
 incident of missing `hls_playlist_s3_key` flags or packager races.
+
+Not docs-only: implementation will touch `scripts/`, `lib/`, `frontend/`, and
+`backend/` (this repo has no `packages/**` monorepo root).
 
 ## Problems This Solves
 
@@ -112,11 +111,24 @@ It does **not** decrypt media in P0/P1 of this RFC.
 - **0007** — multi-device / Cast / TV shell (this RFC extends living-room)
 - **0009** — HLS AES-128 at rest (ciphertext source for the relay)
 
+### Planned code surfaces (P0)
+
+| Area | Paths |
+|------|--------|
+| LAN decrypt relay CLI | `scripts/relay/lan-decrypt-relay.js` |
+| AES-128 segment decrypt helper | `lib/hls-aes-decrypt.cjs` (reuses first 16 bytes of catalog key, same as `frontend/lib/crypto/hls-playback.ts`) |
+| Relay unit tests | `scripts/relay/lan-decrypt-relay.test.js` |
+| Relay registry API | `backend/src/main.rs` + `backend/src/auth.rs` (`/api/tv/relay/*` next to existing `/api/tv/pair/*`) |
+| Next proxies | `frontend/app/api/tv/relay/**` |
+| TV shell UX | `frontend/app/tv/title/[id]/page.tsx`, `frontend/app/tv/TvPairClient.tsx` |
+| Phone “be the decryptor” | `frontend/app/pair/page.tsx` or new sala UI |
+| E2E | `frontend/e2e/sala-relay.spec.ts` |
+
 ## Delivery slices
 
 ### P0 — must ship first (useful in one house tonight)
 
-- [x] **P0.1** Spec + this RFC agreed (AC, Status, embedded slices) — status: `done`
+- [x] **P0.1** Spec + this RFC agreed — status: `done`
 - [ ] **P0.2** User can start a **PC LAN decrypt relay** for one HLS title
   (clear HLS on LAN; catalog key only on PC) — status: `todo`
 - [ ] **P0.3** TV shell (or phone) shows **pair / “play via sala”** and opens
@@ -147,7 +159,7 @@ It does **not** decrypt media in P0/P1 of this RFC.
 
 | ID | Band | Title | Status | Task / PR | Updated |
 |----|------|-------|--------|-----------|---------|
-| P0.1 | p0 | RFC drafted + harness AC/Status/slices | done | this doc | 2026-08-07 |
+| P0.1 | p0 | RFC drafted | done | this doc | 2026-08-07 |
 | P0.2 | p0 | PC LAN decrypt relay | todo | — | 2026-08-07 |
 | P0.3 | p0 | TV pair → open relay feed | todo | — | 2026-08-07 |
 | P0.4 | p0 | Relay stop = clear TV error | todo | — | 2026-08-07 |
@@ -164,52 +176,50 @@ It does **not** decrypt media in P0/P1 of this RFC.
 
 ### Tests
 
-Concrete commands and files (created/extended when implementing P0; not
-docs-only — implementation touches `lib/`, `scripts/`, `frontend/`, `backend/`):
+Concrete commands/files (to exist as each slice lands; run from repo root unless noted):
 
-1. **Plain-playlist rewrite unit (P0.2)**  
-   `node --test lib/decrypt-relay.test.cjs`  
-   Asserts: given an AES-128 HLS `index.m3u8` with `#EXT-X-KEY` and segment
-   lines, the relay helper emits a **plain** playlist (no key tag; segment
-   URLs point at local clear segments). Fixture: small synthetic m3u8 under
-   `lib/fixtures/relay/` (or inline in the test file). Reuses decrypt helpers
-   from `lib/media-encryption.cjs` / `lib/hls-package.cjs`.
+1. **P0.2 — LAN relay unit (segment decrypt + plain playlist rewrite)**  
+   - Files: `lib/hls-aes-decrypt.cjs`, `scripts/relay/lan-decrypt-relay.js`, `scripts/relay/lan-decrypt-relay.test.js`  
+   - Command:  
+     `node --test scripts/relay/lan-decrypt-relay.test.js`  
+   - Fixture: tiny AES-128 MPEG-TS sample under `scripts/relay/fixtures/` (or generate in-test with `crypto`). Assert: decrypted segment bytes match fixture plaintext; rewritten `index.m3u8` has **no** `#EXT-X-KEY` and segment URLs point at the relay host.
 
-2. **Segment decrypt unit (P0.2)**  
-   Same suite `node --test lib/decrypt-relay.test.cjs`: one known AES-128
-   segment + 16-byte key → plaintext bytes match fixture digest.
+2. **P0.2 — Manual LAN smoke (optional local)**  
+   - Command (example):  
+     `ENCRYPTION_CATALOG_KEY=… node scripts/relay/lan-decrypt-relay.js --title-id matrix-1999-movie --port 8787`  
+   - Then open `http://<lan-ip>:8787/index.m3u8` in VLC or a TV browser. TV must play without holding the catalog key.
 
-3. **Relay registry API (P0.3)**  
-   `cd backend && cargo test relay_registry`  
-   Covers register / poll / expire routes for sala relay binding (pair code →
-   LAN base URL or WebRTC offer). Source: `backend/src/` relay module added
-   in P0.3 (alongside existing `auth` / TV pair paths).
+3. **P0.3 — Relay registry + pair binding**  
+   - Files: `backend/src/main.rs` (handlers next to `tv_pair_*`), `backend/src/auth.rs`, `frontend/app/api/tv/relay/**`  
+   - Commands:  
+     `cd backend && cargo test tv_relay`  
+     `cd frontend && npx tsc --noEmit`  
+   - Behavior: after pair claim, phone/PC `POST`s relay base URL; TV `GET` receives that URL for the bound session.
 
-4. **TV shell e2e (P0.3 + P0.4)**  
-   `cd frontend && npx playwright test e2e/relay-sala.spec.ts`  
-   Flow: TV pair → phone/PC registers mock relay URL → TV leaves
-   “Aguardando o decryptor da sala…” and loads player; kill/unregister relay
-   → recoverable offline/retry UI within a few seconds. Builds on patterns in
-   `frontend/e2e/encrypted-playback.spec.ts` and TV pair APIs under
-   `frontend/app/api/tv/pair/`.
+4. **P0.3 / P0.4 — E2E (Playwright)**  
+   - File: `frontend/e2e/sala-relay.spec.ts` (patterned on `frontend/e2e/encrypted-playback.spec.ts`)  
+   - Command:  
+     `cd frontend && npx playwright test e2e/sala-relay.spec.ts`  
+   - Cases:  
+     - From TV shell after pair, reach playing state **without** typing catalog key on TV.  
+     - Kill/stop relay mid-session → UI leaves loading and shows offline/retry within a few seconds (P0.4).
 
-5. **Typecheck / lint gates**  
-   `npm run typecheck` (repo root) and `cd frontend && npm run lint` must stay
-   green for files touched by the relay work.
+5. **P1.x (when landed)**  
+   - WebRTC path: unit tests under `frontend/lib/` + same Playwright suite extended.  
+   - Multi-ep: `node --test scripts/relay/lan-decrypt-relay.test.js` covers `--episode N` / `hls/e{n}/`.  
+   - Session-license: `cd backend && cargo test session_license`.
 
 ### Telemetry / Analytics
 
-None — personal app; optional local relay logs only (stdout / file on the
-decryptor host).
+None — personal app; optional local relay logs only (`scripts/relay`).
 
 ### Documentation
 
-This RFC; short “Sala / relay” section in `README.md` or `DEPLOYMENT.md` when
-P0.2 ships (how to start the PC relay, open firewall on LAN, pair TV).
+This RFC; short “Sala / relay” section in `README.md` or `DEPLOYMENT.md` when P0.2 ships (how to run the PC relay, env vars, LAN firewall note).
 
 ### Screenshots
 
-TV shell “aguardando decryptor” + playing frame (when P0.3 ships).
+TV shell “Aguardando o decryptor da sala…” + playing frame (when P0.3 ships).
 
 ## Threat model (honest)
 
@@ -231,6 +241,7 @@ a session; call that out before implementing.
   custom receiver + client crypto; P2.2)
 - Replacing HLS packaging (RFC 0009) or invite envelope design (RFC 0006)
 - Hosting a public multi-tenant “Sessão cloud” for strangers
+- Docs-only work (this RFC expects code under `scripts/`, `lib/`, `frontend/`, `backend/`)
 
 ## Open questions
 
