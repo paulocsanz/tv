@@ -301,6 +301,9 @@ const dictionary: Dictionary = {
       "This title is encrypted but no catalog key is unlocked",
     unlockHint:
       "Unlock encryption from Account after login (catalog key), then try again.",
+    hlsRequired: "This title is not packaged for streaming yet",
+    hlsRequiredHint:
+      "It's still on the old progressive format. Wait for HLS packaging (or re-run the packager).",
     retry: "Retry",
   },
   webtorrent: {

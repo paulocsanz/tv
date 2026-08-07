@@ -41,13 +41,13 @@
 
 ### P1 — next
 - [x] **P1.1** Batch `package-hls-from-s3.js` worker for all single-file titles — status: `done`
-- [x] **P1.2** Per-episode HLS for series (`…/hls/e{n}/`) — status: `done` (pipeline + playlist API; batch series still optional)
+- [x] **P1.2** Per-episode HLS for series (`…/hls/e{n}/`) — status: `done` (packager + worker + playlist API)
 - [x] **P1.3** Pipeline greenfield: new uploads emit HLS-AES (no plain→reencrypt loop) — status: `done`
 
 ### P2 — later
 - [ ] **P2.1** Multi-bitrate ladders + master playlist — status: `todo`
-- [ ] **P2.2** Cast/AirPlay for HLS encrypted (custom receiver or clear key path) — status: `todo`
-- [ ] **P2.3** Retire SSESENC1 progressive for fully migrated titles — status: `todo`
+- [ ] **P2.2** Cast/AirPlay for HLS encrypted (custom CAF receiver) — status: `todo`
+- [x] **P2.3** Retire SSESENC1 progressive player path — status: `done` (player HLS-only; packager still decrypts legacy SSESENC1 sources)
 
 ## Status (living)
 
@@ -62,7 +62,7 @@
 | P1.3 | p1 | Pipeline greenfield HLS | done | 2026-08-07 |
 | P2.1 | p2 | ABR ladders | todo | 2026-08-07 |
 | P2.2 | p2 | Cast/AirPlay HLS | todo | 2026-08-07 |
-| P2.3 | p2 | Retire SSESENC1 | todo | 2026-08-07 |
+| P2.3 | p2 | Retire SSESENC1 player | done | 2026-08-07 |
 
 ## Acceptance Criteria
 

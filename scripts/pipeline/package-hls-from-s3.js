@@ -64,18 +64,46 @@ function parseArgs(argv) {
   return out;
 }
 
+/** Source object keys for a title (episodes in order, or single movie). */
+function sourceKeys(item) {
+  if (item.s3_keys && item.s3_keys.length > 0) return [...item.s3_keys];
+  if (item.s3_key) return [item.s3_key];
+  return [];
+}
+
 /** Titles that still need HLS packaging. */
 function pickPendingIds(catalog, { singleOnly, skipExisting, limit }) {
   const ids = [];
   for (const x of catalog.items) {
-    if (!x || !x.s3_key) continue;
+    if (!x) continue;
+    const keys = sourceKeys(x);
+    if (keys.length === 0) continue;
     if (skipExisting && x.hls_playlist_s3_key) continue;
-    const multi = x.s3_keys && x.s3_keys.length > 1;
+    const multi = keys.length > 1;
     if (singleOnly && multi) continue;
     ids.push(x.id);
     if (limit && ids.length >= limit) break;
   }
   return ids;
+}
+
+/**
+ * Download one S3 object, decrypt SSESENC1 if needed, return local media path.
+ */
+async function materializePlain(client, bucket, s3Key, workDir, catalogKey, label) {
+  const localIn = path.join(workDir, `${label}-source.bin`);
+  await downloadToFile(client, bucket, s3Key, localIn);
+  const raw = fs.readFileSync(localIn);
+  if (isEncryptedBuffer(raw)) {
+    console.log(`  🔓 ${label}: SSESENC1 → plaintext for packaging…`);
+    const plain = decryptBuffer(raw, catalogKey);
+    const mediaPath = path.join(workDir, `${label}-plain.mp4`);
+    fs.writeFileSync(mediaPath, plain);
+    raw.fill(0);
+    fs.rmSync(localIn, { force: true });
+    return mediaPath;
+  }
+  return localIn;
 }
 
 function loadBucketCreds() {
@@ -162,75 +190,92 @@ async function uploadMany(client, bucket, jobs, concurrency = 12) {
   );
 }
 
+/**
+ * Package one catalog title.
+ * - Movie / single file → videos/{id}/hls/index.m3u8
+ * - Series (s3_keys) → videos/{id}/hls/e{1..N}/index.m3u8 + catalog
+ *   hls_playlist_s3_key = videos/{id}/hls (prefix for playlist API)
+ */
 async function packageOne(client, creds, catalog, catalogKey, id, opts) {
   const item = catalog.items.find((x) => x && x.id === id);
   if (!item) throw new Error(`catalog id not found: ${id}`);
-  const srcKey = item.s3_key || (item.s3_keys && item.s3_keys[0]);
-  if (!srcKey) throw new Error(`${id}: no s3_key`);
+  const keys = sourceKeys(item);
+  if (keys.length === 0) throw new Error(`${id}: no s3_key/s3_keys`);
 
   const workDir = fs.mkdtempSync(path.join(os.tmpdir(), "hls-"));
-  const localIn = path.join(workDir, "source.mp4");
-  const hlsDir = path.join(workDir, "hls");
+  const multi = keys.length > 1;
+  console.log(
+    `\n▶ HLS-AES package ${item.title || id} (${id}) — ${keys.length} source(s)`,
+  );
 
-  console.log(`\n▶ HLS-AES package ${item.title || id} (${id})`);
+  let totalSegs = 0;
   try {
-    // If already SSESENC1, we need plaintext — for P0 assume source is
-    // progressive MP4 or use the original progressive object. For already-
-    // encrypted progressive SSESENC1 titles, download is ciphertext; detect
-    // magic and refuse with a clear error (re-package from plaintext backup
-    // or decrypt offline first — P1).
-    await downloadToFile(client, creds.bucketName, srcKey, localIn);
-    let mediaPath = localIn;
-    const raw = fs.readFileSync(localIn);
-    if (isEncryptedBuffer(raw)) {
-      console.log("  🔓 SSESENC1 → plaintext for packaging…");
-      const plain = decryptBuffer(raw, catalogKey);
-      mediaPath = path.join(workDir, "plain.mp4");
-      fs.writeFileSync(mediaPath, plain);
-      // free memory ASAP
-      raw.fill(0);
+    for (let i = 0; i < keys.length; i++) {
+      const ep = i + 1; // 1-based episode index for API
+      const label = multi ? `e${ep}` : "movie";
+      const mediaPath = await materializePlain(
+        client,
+        creds.bucketName,
+        keys[i],
+        workDir,
+        catalogKey,
+        label,
+      );
+      const hlsDir = path.join(workDir, `hls-${label}`);
+      console.log(`  ⚙ ffmpeg HLS AES-128 (${label})…`);
+      const { playlistPath, segmentFiles } = packageHlsAes128({
+        inputPath: mediaPath,
+        outDir: hlsDir,
+        catalogKey32: catalogKey,
+        segmentSeconds: 4,
+      });
+      console.log(`  ✓ ${label}: ${segmentFiles.length} segments`);
+      totalSegs += segmentFiles.length;
+
+      const prefix = multi
+        ? `videos/${id}/hls/e${ep}`
+        : `videos/${id}/hls`;
+      const jobs = segmentFiles.map((seg) => ({
+        key: `${prefix}/${path.basename(seg)}`,
+        filePath: seg,
+        contentType: "video/mp2t",
+      }));
+      console.log(`  ↑ uploading ${jobs.length} segments (${label})…`);
+      await uploadMany(client, creds.bucketName, jobs, 16);
+      const playlistKey = `${prefix}/index.m3u8`;
+      await uploadFile(
+        client,
+        creds.bucketName,
+        playlistKey,
+        playlistPath,
+        "application/vnd.apple.mpegurl",
+      );
+      console.log(`  ↑ ${playlistKey}`);
+      // free disk between episodes
+      fs.rmSync(hlsDir, { recursive: true, force: true });
+      try {
+        fs.rmSync(mediaPath, { force: true });
+      } catch {
+        /* ignore */
+      }
     }
 
-    console.log("  ⚙ ffmpeg HLS AES-128…");
-    const { playlistPath, segmentFiles } = packageHlsAes128({
-      inputPath: mediaPath,
-      outDir: hlsDir,
-      catalogKey32: catalogKey,
-      segmentSeconds: 4,
-    });
-    console.log(`  ✓ ${segmentFiles.length} segments`);
+    // Catalog: full playlist key for movies; prefix for multi-ep series.
+    const catalogHlsRef = multi
+      ? `videos/${id}/hls`
+      : `videos/${id}/hls/index.m3u8`;
 
-    const prefix = `videos/${id}/hls`;
-    const playlistKey = `${prefix}/index.m3u8`;
-    const jobs = segmentFiles.map((seg) => ({
-      key: `${prefix}/${path.basename(seg)}`,
-      filePath: seg,
-      contentType: "video/mp2t",
-    }));
-    console.log(`  ↑ uploading ${jobs.length} segments (parallel)…`);
-    await uploadMany(client, creds.bucketName, jobs, 16);
-    await uploadFile(
-      client,
-      creds.bucketName,
-      playlistKey,
-      playlistPath,
-      "application/vnd.apple.mpegurl",
-    );
-    console.log(`  ↑ ${playlistKey}`);
-
-    // Re-read catalog before save so a concurrent reencrypt worker doesn't
-    // wipe our field with a stale in-memory copy.
     const fresh = loadCatalog();
     const freshItem = fresh.items.find((x) => x && x.id === id);
     if (!freshItem) throw new Error(`catalog id vanished before save: ${id}`);
-    freshItem.hls_playlist_s3_key = playlistKey;
+    freshItem.hls_playlist_s3_key = catalogHlsRef;
     freshItem.encrypted = true;
+    // Delivery is HLS-only going forward (no SSESENC1 progressive flag needed).
     saveCatalog(fresh);
-    // keep caller's catalog in sync
-    item.hls_playlist_s3_key = playlistKey;
+    item.hls_playlist_s3_key = catalogHlsRef;
     item.encrypted = true;
-    console.log(`\n✓ catalog: ${id} hls_playlist_s3_key=${playlistKey}`);
-    return { id, playlistKey, segments: segmentFiles.length };
+    console.log(`\n✓ catalog: ${id} hls_playlist_s3_key=${catalogHlsRef}`);
+    return { id, playlistKey: catalogHlsRef, segments: totalSegs, episodes: keys.length };
   } finally {
     if (!opts.keepLocal) {
       fs.rmSync(workDir, { recursive: true, force: true });
@@ -247,6 +292,7 @@ async function main() {
   node scripts/pipeline/package-hls-from-s3.js --id <catalog-id>
   node scripts/pipeline/package-hls-from-s3.js --ids id1,id2
   node scripts/pipeline/package-hls-from-s3.js --all [--limit N] [--include-series] [--force]
+  (default --all = single-file only; --include-series packages multi-ep as e1..eN)
 Env: S3_* ENCRYPTION_CATALOG_KEY`);
     process.exit(opts.help ? 0 : 1);
   }

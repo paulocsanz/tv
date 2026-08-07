@@ -58,16 +58,13 @@ export interface ContentItem {
   keywords: string[];
   award_entries: AwardEntry[];
   attachments: Attachment[];
-  /** Needs catalog key client-side (SSESENC1 and/or HLS AES-128). */
+  /** Needs catalog key client-side (HLS AES-128). */
   encrypted?: boolean;
-  /**
-   * MSE codec string for encrypted fMP4 / SSESENC1 progressive playback
-   * (e.g. "avc1.64001F, mp4a.40.2"). Set by reencrypt-from-s3 / pipeline.
-   */
+  /** @deprecated Legacy SSESENC1 MSE hint — delivery is HLS-only now. */
   media_codecs?: string | null;
   /**
-   * When set, preferred delivery is HLS VOD AES-128 (RFC 0009).
-   * Player loads `/api/hls/{id}` and injects catalog key via hls.js.
+   * HLS VOD AES-128 (RFC 0009). Movies: full `…/hls/index.m3u8`.
+   * Series: prefix `…/hls` with episodes at `…/hls/e{n}/index.m3u8`.
    */
   hls_playlist_s3_key?: string | null;
 }

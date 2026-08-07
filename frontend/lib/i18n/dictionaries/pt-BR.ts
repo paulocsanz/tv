@@ -299,6 +299,9 @@ const dictionary = {
       "Este título está criptografado, mas a chave do catálogo não está desbloqueada",
     unlockHint:
       "Desbloqueie a criptografia em Conta depois do login (chave do catálogo) e tente de novo.",
+    hlsRequired: "Este título ainda não está empacotado para streaming",
+    hlsRequiredHint:
+      "Ainda está no formato progressivo antigo. Espere o empacotamento HLS (ou rode o packager de novo).",
     retry: "Tentar de novo",
   },
   webtorrent: {

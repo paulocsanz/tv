@@ -54,15 +54,7 @@ function parseRuntimeSeconds(runtime: string | null | undefined): number | null 
   return total > 0 ? total : null;
 }
 
-/** Highest end of TimeRanges, or null. */
-function bufferedEnd(video: HTMLMediaElement): number | null {
-  try {
-    if (video.buffered.length === 0) return null;
-    return video.buffered.end(video.buffered.length - 1);
-  } catch {
-    return null;
-  }
-}
+
 
 type Episode = {
   key: string;
@@ -523,7 +515,6 @@ export function VideoPlayer({
   posterUrl = null,
   numberedTitles = false,
   encrypted = false,
-  mediaCodecs = null,
   runtime = null,
   hlsPlaylistS3Key = null,
 }: {
@@ -547,13 +538,13 @@ export function VideoPlayer({
    * show's plain episode titles, so the list must not *also* prefix
    * ep.number or it doubles up ("5. 2.4 Fundamentos..."). */
   numberedTitles?: boolean;
-  /** SSESENC1 at rest — decrypt client-side before feeding <video> (RFC 0006). */
+  /** Needs catalog key (HLS AES-128 delivery). */
   encrypted?: boolean;
-  /** MSE codecs for live fMP4 decrypt (e.g. "avc1.64001F, mp4a.40.2"). */
+  /** @deprecated Unused — progressive SSESENC1 delivery removed. */
   mediaCodecs?: string | null;
-  /** Catalog runtime e.g. "136 min" — seeds seek-bar duration for MSE decrypt. */
+  /** Catalog runtime e.g. "136 min" — seeds seek-bar duration. */
   runtime?: string | null;
-  /** When set, prefer HLS AES-128 (RFC 0009) over SSESENC1 progressive. */
+  /** HLS VOD playlist (RFC 0009). Required for encrypted playback. */
   hlsPlaylistS3Key?: string | null;
 }) {
   const t = useT();
@@ -597,17 +588,13 @@ export function VideoPlayer({
   const streamUrl = hasEpisodes
     ? `/api/stream/${id}?episode=${selectedIndex + 1}`
     : `/api/stream/${id}`;
-  // Delivery:
-  // - HLS AES-128 (RFC 0009) when hlsPlaylistS3Key is set — seekable segments
-  // - else SSESENC1 progressive MSE/blob when encrypted
-  // - else plaintext presigned stream URL
+  // Delivery: HLS AES-128 (RFC 0009) when hlsPlaylistS3Key is set; else
+  // progressive plaintext. SSESENC1 progressive path was removed.
   const useHls = Boolean(hlsPlaylistS3Key);
   const [playableUrl, setPlayableUrl] = useState<string | null>(
-    encrypted || useHls ? null : streamUrl,
+    useHls || encrypted ? null : streamUrl,
   );
-  const [decryptProgress, setDecryptProgress] = useState<number | null>(null);
   const [decryptError, setDecryptError] = useState<string | null>(null);
-  const [decryptMode, setDecryptMode] = useState<string | null>(null);
   const revokePlayableRef = useRef<(() => void) | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -618,81 +605,43 @@ export function VideoPlayer({
     revokePlayableRef.current = null;
 
     (async () => {
-      if (!encrypted && !useHls) {
+      // Encrypted without HLS playlist → not playable (needs packaging).
+      if (encrypted && !useHls) {
+        setPlayableUrl(null);
+        setDecryptError("hls_required");
+        return;
+      }
+
+      if (!useHls) {
         setPlayableUrl(streamUrl);
-        setDecryptProgress(null);
         setDecryptError(null);
-        setDecryptMode(null);
         return;
       }
 
       setPlayableUrl(null);
-      setDecryptProgress(useHls ? null : 0);
       setDecryptError(null);
-      setDecryptMode(null);
       try {
         const { loadCatalogKeyLocal } = await import("@/lib/crypto/catalog-key");
-        // extractable: HLS needs exportKey for AES-128 key bytes
         const key = await loadCatalogKeyLocal(true);
         await new Promise((r) => requestAnimationFrame(() => r(undefined)));
         if (cancelled) return;
-
-        if (useHls) {
-          if (!key) throw new Error("this title is encrypted but no catalog key is unlocked");
-          const video = videoRef.current;
-          if (!video) throw new Error("video element not ready");
-          const { attachHlsPlayback } = await import("@/lib/crypto/hls-playback");
-          const hlsUrl = hasEpisodes
-            ? `/api/hls/${id}?episode=${selectedIndex + 1}`
-            : `/api/hls/${id}`;
-          const attached = await attachHlsPlayback(video, hlsUrl, key);
-          if (cancelled) {
-            attached.revoke();
-            return;
-          }
-          revokePlayableRef.current = attached.revoke;
-          setPlayableUrl(hlsUrl);
-          setDecryptMode("hls");
-          setDecryptProgress(null);
-          return;
-        }
-
-        // SSESENC1 progressive (RFC 0006)
-        const { resolvePlayableUrl } = await import("@/lib/crypto/media");
-        const sep = streamUrl.includes("?") ? "&" : "?";
-        const streamRes = await fetch(`${streamUrl}${sep}resolve=1`);
-        if (!streamRes.ok) throw new Error(`stream ${streamRes.status}`);
-        const { url: absoluteUrl } = (await streamRes.json()) as { url: string };
-        if (cancelled) return;
-        const resolved = await resolvePlayableUrl(
-          absoluteUrl,
-          true,
-          key,
-          (loaded, total) => {
-            if (cancelled) return;
-            if (total && total > 0) setDecryptProgress(Math.round((loaded / total) * 100));
-          },
-          {
-            codecs: mediaCodecs,
-            video: videoRef.current,
-            durationSeconds: knownDurationSeconds,
-          },
-        );
+        if (!key) throw new Error("this title is encrypted but no catalog key is unlocked");
+        const video = videoRef.current;
+        if (!video) throw new Error("video element not ready");
+        const { attachHlsPlayback } = await import("@/lib/crypto/hls-playback");
+        const hlsUrl = hasEpisodes
+          ? `/api/hls/${id}?episode=${selectedIndex + 1}`
+          : `/api/hls/${id}`;
+        const attached = await attachHlsPlayback(video, hlsUrl, key);
         if (cancelled) {
-          resolved.revoke();
+          attached.revoke();
           return;
         }
-        revokePlayableRef.current = resolved.revoke;
-        if (resolved.mode !== "mse" && videoRef.current) {
-          videoRef.current.src = resolved.url;
-        }
-        setPlayableUrl(resolved.url);
-        setDecryptMode(resolved.mode ?? null);
-        setDecryptProgress(null);
+        revokePlayableRef.current = attached.revoke;
+        setPlayableUrl(hlsUrl);
       } catch (e) {
         if (!cancelled) {
           setDecryptError(e instanceof Error ? e.message : "decrypt failed");
-          setDecryptProgress(null);
         }
       }
     })();
@@ -702,17 +651,7 @@ export function VideoPlayer({
       revokePlayableRef.current?.();
       revokePlayableRef.current = null;
     };
-  }, [
-    streamUrl,
-    encrypted,
-    mediaCodecs,
-    retry,
-    knownDurationSeconds,
-    useHls,
-    id,
-    hasEpisodes,
-    selectedIndex,
-  ]);
+  }, [streamUrl, encrypted, retry, useHls, id, hasEpisodes, selectedIndex]);
 
   const progressUrl = `/api/progress/${id}`;
   // 0 is the movie/no-episode sentinel, matching the backend schema.
@@ -1079,15 +1018,6 @@ export function VideoPlayer({
         : null;
     if (dur != null) t = Math.min(t, dur);
 
-    // SSESENC1 progressive MSE only appends from the start — clamp to buffer.
-    // HLS (RFC 0009) loads segments on demand; do not clamp.
-    if (decryptMode === "mse") {
-      const end = bufferedEnd(video);
-      if (end != null && end > 1) {
-        const maxSeek = Math.max(0, end - 0.35);
-        if (t > maxSeek) t = maxSeek;
-      }
-    }
     return t;
   }
 
@@ -1238,43 +1168,31 @@ export function VideoPlayer({
             {decryptError ? (
               <>
                 <p className="px-6 text-center text-red-300">
-                  {/no catalog key|catalog key is unlocked/i.test(decryptError)
-                    ? t.player.noCatalogKey
-                    : /decrypt failed/i.test(decryptError)
-                      ? t.player.decryptFailed
-                      : decryptError}
+                  {decryptError === "hls_required"
+                    ? t.player.hlsRequired
+                    : /no catalog key|catalog key is unlocked/i.test(decryptError)
+                      ? t.player.noCatalogKey
+                      : /decrypt failed/i.test(decryptError)
+                        ? t.player.decryptFailed
+                        : decryptError}
                 </p>
                 <p className="px-6 text-center text-zinc-500">
-                  {t.player.unlockHint}
+                  {decryptError === "hls_required"
+                    ? t.player.hlsRequiredHint
+                    : t.player.unlockHint}
                 </p>
-                <button
-                  type="button"
-                  className="rounded-full bg-white/10 px-4 py-2 hover:bg-white/20"
-                  onClick={() => setRetry((n) => n + 1)}
-                >
-                  {t.player.retry}
-                </button>
-              </>
-            ) : (
-              <>
-                <p>
-                  {useHls
-                    ? t.player.loadingStream
-                    : decryptMode === "mse"
-                      ? t.player.decryptingLive
-                      : decryptProgress != null && decryptProgress < 100
-                        ? t.player.decryptingStream
-                        : t.player.decrypting}
-                </p>
-                {decryptProgress != null && (
-                  <div className="h-1.5 w-48 overflow-hidden rounded-full bg-white/10">
-                    <div
-                      className="h-full bg-[#f5c518] transition-all"
-                      style={{ width: `${decryptProgress}%` }}
-                    />
-                  </div>
+                {decryptError !== "hls_required" && (
+                  <button
+                    type="button"
+                    className="rounded-full bg-white/10 px-4 py-2 hover:bg-white/20"
+                    onClick={() => setRetry((n) => n + 1)}
+                  >
+                    {t.player.retry}
+                  </button>
                 )}
               </>
+            ) : (
+              <p>{t.player.loadingStream}</p>
             )}
           </div>
         )}
