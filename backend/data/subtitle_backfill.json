@@ -426,5 +426,221 @@
         "s3_key": "videos/back-to-the-future-part-iii-1990-movie/external.0.por.vtt"
       }
     ]
+  },
+  "bacurau-2019-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/bacurau-2019-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "batman-begins-2005-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/batman-begins-2005-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "black-god-white-devil-1964-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/black-god-white-devil-1964-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "brainstorm-2000-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/brainstorm-2000-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "braveheart-1995-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/braveheart-1995-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "carandiru-2003-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/carandiru-2003-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "casablanca-1942-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/casablanca-1942-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "central-station-1998-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/central-station-1998-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "citizen-kane-1941-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/citizen-kane-1941-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "city-lights-1931-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/city-lights-1931-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "city-of-god-2002-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/city-of-god-2002-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "dead-poets-society-1989-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/dead-poets-society-1989-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "django-unchained-2012-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/django-unchained-2012-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "doctor-sleep-2019-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/doctor-sleep-2019-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "dona-flor-and-her-two-husbands-1976-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/dona-flor-and-her-two-husbands-1976-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "double-indemnity-1944-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/double-indemnity-1944-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "dr-strangelove-1964-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/dr-strangelove-1964-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "dune-2021-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/dune-2021-movie/external.0.por.vtt"
+      }
+    ]
   }
 }
