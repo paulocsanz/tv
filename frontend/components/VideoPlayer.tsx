@@ -525,6 +525,7 @@ export function VideoPlayer({
   encrypted = false,
   mediaCodecs = null,
   runtime = null,
+  hlsPlaylistS3Key = null,
 }: {
   id: string;
   /** Movie/show title - only used as Cast metadata so the receiver's screen
@@ -552,6 +553,8 @@ export function VideoPlayer({
   mediaCodecs?: string | null;
   /** Catalog runtime e.g. "136 min" — seeds seek-bar duration for MSE decrypt. */
   runtime?: string | null;
+  /** When set, prefer HLS AES-128 (RFC 0009) over SSESENC1 progressive. */
+  hlsPlaylistS3Key?: string | null;
 }) {
   const t = useT();
   const hasEpisodes = s3Keys.length > 1;
@@ -594,10 +597,14 @@ export function VideoPlayer({
   const streamUrl = hasEpisodes
     ? `/api/stream/${id}?episode=${selectedIndex + 1}`
     : `/api/stream/${id}`;
-  // When encrypted, stream-decrypt (+ optional gunzip) from S3. Prefer MSE
-  // live append when mediaCodecs is set (fMP4); otherwise full blob after
-  // progressive decrypt. Plaintext keeps the presigned redirect URL as-is.
-  const [playableUrl, setPlayableUrl] = useState<string | null>(encrypted ? null : streamUrl);
+  // Delivery:
+  // - HLS AES-128 (RFC 0009) when hlsPlaylistS3Key is set — seekable segments
+  // - else SSESENC1 progressive MSE/blob when encrypted
+  // - else plaintext presigned stream URL
+  const useHls = Boolean(hlsPlaylistS3Key);
+  const [playableUrl, setPlayableUrl] = useState<string | null>(
+    encrypted || useHls ? null : streamUrl,
+  );
   const [decryptProgress, setDecryptProgress] = useState<number | null>(null);
   const [decryptError, setDecryptError] = useState<string | null>(null);
   const [decryptMode, setDecryptMode] = useState<string | null>(null);
@@ -611,7 +618,7 @@ export function VideoPlayer({
     revokePlayableRef.current = null;
 
     (async () => {
-      if (!encrypted) {
+      if (!encrypted && !useHls) {
         setPlayableUrl(streamUrl);
         setDecryptProgress(null);
         setDecryptError(null);
@@ -620,22 +627,42 @@ export function VideoPlayer({
       }
 
       setPlayableUrl(null);
-      setDecryptProgress(0);
+      setDecryptProgress(useHls ? null : 0);
       setDecryptError(null);
       setDecryptMode(null);
       try {
         const { loadCatalogKeyLocal } = await import("@/lib/crypto/catalog-key");
+        // extractable: HLS needs exportKey for AES-128 key bytes
+        const key = await loadCatalogKeyLocal(true);
+        await new Promise((r) => requestAnimationFrame(() => r(undefined)));
+        if (cancelled) return;
+
+        if (useHls) {
+          if (!key) throw new Error("this title is encrypted but no catalog key is unlocked");
+          const video = videoRef.current;
+          if (!video) throw new Error("video element not ready");
+          const { attachHlsPlayback } = await import("@/lib/crypto/hls-playback");
+          const hlsUrl = hasEpisodes
+            ? `/api/hls/${id}?episode=${selectedIndex + 1}`
+            : `/api/hls/${id}`;
+          const attached = await attachHlsPlayback(video, hlsUrl, key);
+          if (cancelled) {
+            attached.revoke();
+            return;
+          }
+          revokePlayableRef.current = attached.revoke;
+          setPlayableUrl(hlsUrl);
+          setDecryptMode("hls");
+          setDecryptProgress(null);
+          return;
+        }
+
+        // SSESENC1 progressive (RFC 0006)
         const { resolvePlayableUrl } = await import("@/lib/crypto/media");
-        // Stream route redirects by default; ?resolve=1 returns JSON { url }
-        // (same path Cast uses) so we can fetch ciphertext cross-origin.
         const sep = streamUrl.includes("?") ? "&" : "?";
         const streamRes = await fetch(`${streamUrl}${sep}resolve=1`);
         if (!streamRes.ok) throw new Error(`stream ${streamRes.status}`);
         const { url: absoluteUrl } = (await streamRes.json()) as { url: string };
-        const key = await loadCatalogKeyLocal();
-        // Wait a tick so the <video> ref is mounted (we render it even while
-        // decrypting — MSE attaches to that element for live playback).
-        await new Promise((r) => requestAnimationFrame(() => r(undefined)));
         if (cancelled) return;
         const resolved = await resolvePlayableUrl(
           absoluteUrl,
@@ -656,7 +683,6 @@ export function VideoPlayer({
           return;
         }
         revokePlayableRef.current = resolved.revoke;
-        // MSE already assigned video.src; blob mode returns a URL we assign here.
         if (resolved.mode !== "mse" && videoRef.current) {
           videoRef.current.src = resolved.url;
         }
@@ -676,7 +702,17 @@ export function VideoPlayer({
       revokePlayableRef.current?.();
       revokePlayableRef.current = null;
     };
-  }, [streamUrl, encrypted, mediaCodecs, retry, knownDurationSeconds]);
+  }, [
+    streamUrl,
+    encrypted,
+    mediaCodecs,
+    retry,
+    knownDurationSeconds,
+    useHls,
+    id,
+    hasEpisodes,
+    selectedIndex,
+  ]);
 
   const progressUrl = `/api/progress/${id}`;
   // 0 is the movie/no-episode sentinel, matching the backend schema.
@@ -1043,13 +1079,11 @@ export function VideoPlayer({
         : null;
     if (dur != null) t = Math.min(t, dur);
 
-    // Progressive MSE decrypt only appends from the start. Seeking past the
-    // buffered end stalls forever until (if ever) that byte arrives.
-    // While still decrypting, clamp to what we already have.
+    // SSESENC1 progressive MSE only appends from the start — clamp to buffer.
+    // HLS (RFC 0009) loads segments on demand; do not clamp.
     if (decryptMode === "mse") {
       const end = bufferedEnd(video);
       if (end != null && end > 1) {
-        // Small slack so we don't sit on the very tip of the buffer.
         const maxSeek = Math.max(0, end - 0.35);
         if (t > maxSeek) t = maxSeek;
       }
@@ -1199,7 +1233,7 @@ export function VideoPlayer({
           customWidth ? "" : "max-w-[1600px]"
         }`}
       >
-        {(encrypted && !playableUrl) && (
+        {((encrypted || useHls) && !playableUrl) && (
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-black/80 text-sm text-zinc-200">
             {decryptError ? (
               <>
@@ -1224,11 +1258,13 @@ export function VideoPlayer({
             ) : (
               <>
                 <p>
-                  {decryptMode === "mse"
-                    ? t.player.decryptingLive
-                    : decryptProgress != null && decryptProgress < 100
-                      ? t.player.decryptingStream
-                      : t.player.decrypting}
+                  {useHls
+                    ? t.player.loadingStream
+                    : decryptMode === "mse"
+                      ? t.player.decryptingLive
+                      : decryptProgress != null && decryptProgress < 100
+                        ? t.player.decryptingStream
+                        : t.player.decrypting}
                 </p>
                 {decryptProgress != null && (
                   <div className="h-1.5 w-48 overflow-hidden rounded-full bg-white/10">
@@ -1244,13 +1280,12 @@ export function VideoPlayer({
         )}
         <video
           ref={videoRef}
-          // Don't key on playableUrl: MSE sets video.src in place and a remount
-          // would tear down the MediaSource mid-stream. streamUrl+retry is enough.
-          key={`${streamUrl}-${retry}`}
+          // Don't key on playableUrl: MSE/HLS attach in place; remount would tear them down.
+          key={`${streamUrl}-${retry}-${useHls ? "hls" : "prog"}`}
           className="aspect-video w-full"
           poster={effectivePoster}
-          // Plaintext: use <source>. Encrypted MSE/blob: media.ts sets video.src.
-          src={!encrypted && playableUrl ? playableUrl : undefined}
+          // Plaintext only: encrypted/HLS set video.src via media.ts / hls.js.
+          src={!encrypted && !useHls && playableUrl ? playableUrl : undefined}
           onClick={togglePlay}
           onLoadedMetadata={handleLoadedMetadata}
           onDurationChange={(e) => {

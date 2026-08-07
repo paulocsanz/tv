@@ -285,6 +285,7 @@ const dictionary = {
     decrypting: "Descriptografando…",
     decryptingStream: "Descriptografando o stream…",
     decryptingLive: "Descriptografando ao vivo…",
+    loadingStream: "Carregando o stream…",
     decryptFailed: "Falha ao descriptografar",
     noCatalogKey:
       "Este título está criptografado, mas a chave do catálogo não está desbloqueada",

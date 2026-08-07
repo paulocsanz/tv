@@ -77,6 +77,7 @@ export default async function TitlePage({
               encrypted={Boolean(item.encrypted)}
               mediaCodecs={item.media_codecs ?? null}
               runtime={item.runtime}
+              hlsPlaylistS3Key={item.hls_playlist_s3_key ?? null}
             />
           ) : (
             <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-zinc-900 shadow-2xl shadow-black/50 ring-1 ring-white/10">

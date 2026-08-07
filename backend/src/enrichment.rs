@@ -648,5 +648,6 @@ pub async fn enrich_one(
         poster_s3_key: None,
         encrypted: false,
         media_codecs: None,
+        hls_playlist_s3_key: None,
     }
 }

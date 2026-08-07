@@ -452,6 +452,7 @@ async fn main() {
         .route("/api/content/:id/similar", get(get_similar_content))
         .route("/api/content/:id/torrent", get(get_torrent_file))
         .route("/api/content/:id/stream", get(get_stream_url))
+        .route("/api/content/:id/hls/playlist", get(get_hls_playlist))
         .route("/api/content/:id/attachment/:index", get(get_attachment_url))
         .route("/api/content/:id/subtitles/:track_id", get(get_subtitle_content))
         .route("/api/content/:id/trailer-stream", get(get_trailer_stream_url))
@@ -1151,6 +1152,118 @@ async fn get_stream_url(
             (StatusCode::INTERNAL_SERVER_ERROR, "failed to build stream url").into_response()
         }
     }
+}
+
+/// HLS VOD playlist (RFC 0009): fetch index.m3u8 from S3, rewrite relative
+/// segment lines to short-lived presigned URLs so the browser can fetch
+/// ciphertext segments without a public bucket. EXT-X-KEY stays
+/// `sessao-key:catalog` — hls.js injects the catalog key client-side.
+async fn get_hls_playlist(
+    State(state): State<Arc<AppState>>,
+    Path(id): Path<String>,
+    Query(q): Query<StreamQuery>,
+) -> impl IntoResponse {
+    let Some(s3) = &state.s3 else {
+        return (StatusCode::SERVICE_UNAVAILABLE, "video storage not configured").into_response();
+    };
+
+    let Some(item) = state.items.iter().find(|i| i.id == id) else {
+        return (StatusCode::NOT_FOUND, "content not found").into_response();
+    };
+
+    // P0: single playlist per title. Episode-scoped HLS is P1.2.
+    let _episode = q.episode;
+    let Some(playlist_key) = item.hls_playlist_s3_key.as_ref() else {
+        return (StatusCode::NOT_FOUND, "no HLS playlist for this content").into_response();
+    };
+
+    let object = match s3
+        .client
+        .get_object()
+        .bucket(&s3.bucket)
+        .key(playlist_key)
+        .send()
+        .await
+    {
+        Ok(object) => object,
+        Err(e) => {
+            tracing::error!("failed to fetch hls playlist object: {e}");
+            return (StatusCode::INTERNAL_SERVER_ERROR, "failed to fetch playlist").into_response();
+        }
+    };
+
+    let bytes = match object.body.collect().await {
+        Ok(b) => b.into_bytes(),
+        Err(e) => {
+            tracing::error!("failed to read hls playlist body: {e}");
+            return (StatusCode::INTERNAL_SERVER_ERROR, "failed to read playlist").into_response();
+        }
+    };
+
+    let text = match String::from_utf8(bytes.to_vec()) {
+        Ok(t) => t,
+        Err(_) => {
+            return (StatusCode::INTERNAL_SERVER_ERROR, "playlist is not utf-8").into_response();
+        }
+    };
+
+    // Prefix for relative segment keys: same directory as the playlist.
+    let prefix = match playlist_key.rsplit_once('/') {
+        Some((dir, _)) => format!("{dir}/"),
+        None => String::new(),
+    };
+
+    let presign_config =
+        match aws_sdk_s3::presigning::PresigningConfig::expires_in(Duration::from_secs(4 * 3600)) {
+            Ok(c) => c,
+            Err(e) => {
+                tracing::error!("failed to build presigning config: {e}");
+                return (StatusCode::INTERNAL_SERVER_ERROR, "failed to build playlist").into_response();
+            }
+        };
+
+    let mut out_lines: Vec<String> = Vec::new();
+    for line in text.lines() {
+        let trimmed = line.trim();
+        if trimmed.is_empty() || trimmed.starts_with('#') || trimmed.starts_with("http://") || trimmed.starts_with("https://")
+        {
+            out_lines.push(line.to_string());
+            continue;
+        }
+        // Relative segment filename → presigned S3 GET.
+        let file_name = trimmed.rsplit('/').next().unwrap_or(trimmed);
+        let seg_key = format!("{prefix}{file_name}");
+        match s3
+            .client
+            .get_object()
+            .bucket(&s3.bucket)
+            .key(&seg_key)
+            .presigned(presign_config.clone())
+            .await
+        {
+            Ok(presigned) => out_lines.push(presigned.uri().to_string()),
+            Err(e) => {
+                tracing::error!("failed to presign hls segment {seg_key}: {e}");
+                return (
+                    StatusCode::INTERNAL_SERVER_ERROR,
+                    "failed to presign HLS segment",
+                )
+                    .into_response();
+            }
+        }
+    }
+    // Preserve trailing newline for picky clients.
+    let mut body = out_lines.join("\n");
+    if !body.ends_with('\n') {
+        body.push('\n');
+    }
+
+    (
+        StatusCode::OK,
+        [(header::CONTENT_TYPE, "application/vnd.apple.mpegurl")],
+        body,
+    )
+        .into_response()
 }
 
 // Same presigned-redirect shape as get_stream_url, indexed into
@@ -2247,6 +2360,7 @@ mod backfill_tests {
             poster_s3_key: None,
             encrypted: false,
             media_codecs: None,
+            hls_playlist_s3_key: None,
         }
     }
 

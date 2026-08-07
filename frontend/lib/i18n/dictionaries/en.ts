@@ -285,6 +285,7 @@ const dictionary: Dictionary = {
     decrypting: "Decrypting…",
     decryptingStream: "Decrypting stream…",
     decryptingLive: "Decrypting live…",
+    loadingStream: "Loading stream…",
     decryptFailed: "Decrypt failed",
     noCatalogKey:
       "This title is encrypted but no catalog key is unlocked",

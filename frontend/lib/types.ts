@@ -58,13 +58,18 @@ export interface ContentItem {
   keywords: string[];
   award_entries: AwardEntry[];
   attachments: Attachment[];
-  /** SSESENC1 at rest — player decrypts client-side (RFC 0006). */
+  /** Needs catalog key client-side (SSESENC1 and/or HLS AES-128). */
   encrypted?: boolean;
   /**
-   * MSE codec string for encrypted fMP4 playback
+   * MSE codec string for encrypted fMP4 / SSESENC1 progressive playback
    * (e.g. "avc1.64001F, mp4a.40.2"). Set by reencrypt-from-s3 / pipeline.
    */
   media_codecs?: string | null;
+  /**
+   * When set, preferred delivery is HLS VOD AES-128 (RFC 0009).
+   * Player loads `/api/hls/{id}` and injects catalog key via hls.js.
+   */
+  hls_playlist_s3_key?: string | null;
 }
 
 // Prefers the self-hosted poster (proxied through /api/poster/<id>, which

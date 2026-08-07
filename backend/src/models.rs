@@ -169,16 +169,20 @@ pub struct EnrichedItem {
     /// don't support public objects.
     #[serde(default)]
     pub poster_s3_key: Option<String>,
-    /// When true, every object under `s3_key`/`s3_keys` is stored as SSESENC1
-    /// (chunked AES-256-GCM). The player must decrypt client-side with the
-    /// shared catalog key. Plaintext library rows stay `false` forever unless
-    /// re-uploaded encrypted. See rfcs/0006.
+    /// When true, media requires the shared catalog key client-side (SSESENC1
+    /// progressive and/or HLS AES-128). Plaintext rows stay `false`. See
+    /// rfcs/0006 and rfcs/0009.
     #[serde(default)]
     pub encrypted: bool,
-    /// MSE codec string for encrypted fMP4 streaming playback
+    /// MSE codec string for encrypted fMP4 / SSESENC1 progressive playback
     /// (e.g. "avc1.64001F, mp4a.40.2"). Empty/None falls back to full-blob decrypt.
     #[serde(default)]
     pub media_codecs: Option<String>,
+    /// When set, preferred delivery is HLS VOD AES-128 (RFC 0009). Key is
+    /// `videos/{id}/hls/index.m3u8`. Player uses hls.js + catalog key; progressive
+    /// `s3_key` may still exist as SSESENC1 fallback.
+    #[serde(default)]
+    pub hls_playlist_s3_key: Option<String>,
 }
 
 /// One magnet candidate from the torrent picker (pick-best-torrents.js).
