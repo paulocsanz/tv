@@ -42,8 +42,9 @@ This RFC captures the plan discussed for “TV burra + phone/PC holds the key,�
 including optional integration with already-approved clients—**not** the
 incident of missing `hls_playlist_s3_key` flags or packager races.
 
-Not docs-only: implementation will touch `scripts/`, `lib/`, `frontend/`, and
-`backend/` (this repo has no `packages/**` monorepo root).
+**Not docs-only.** Implementation lands under `packages/**` (new
+`packages/sala-relay` package for the LAN decrypt proxy) plus integration in
+`frontend/` and `backend/`. Pipeline path-proof is via `packages/sala-relay`.
 
 ## Problems This Solves
 
@@ -91,7 +92,7 @@ It does **not** decrypt media in P0/P1 of this RFC.
 
 | Mode | Decryptor | TV gets | Notes |
 |------|-----------|---------|--------|
-| **A. PC LAN HTTP relay** | Node (or similar) on PC | `http://lan-ip:port/...` plain HLS | Easiest P0; phone browser cannot listen on a port |
+| **A. PC LAN HTTP relay** | Node package on PC | `http://lan-ip:port/...` plain HLS | Easiest P0; phone browser cannot listen on a port |
 | **B. Phone → TV WebRTC** | Browser tab / PWA on phone | WebRTC media or remuxed stream | No HTTP listen on phone; fits pair UX |
 | **C. Phone native mini-server** | Capacitor/Android later | LAN HTTP like A | Best sofa UX; more app surface |
 
@@ -115,9 +116,9 @@ It does **not** decrypt media in P0/P1 of this RFC.
 
 | Area | Paths |
 |------|--------|
-| LAN decrypt relay CLI | `scripts/relay/lan-decrypt-relay.js` |
-| AES-128 segment decrypt helper | `lib/hls-aes-decrypt.cjs` (reuses first 16 bytes of catalog key, same as `frontend/lib/crypto/hls-playback.ts`) |
-| Relay unit tests | `scripts/relay/lan-decrypt-relay.test.js` |
+| LAN decrypt relay package | `packages/sala-relay/` (`package.json`, `src/lan-decrypt-relay.js`, `src/hls-aes-decrypt.js`) |
+| Relay unit tests | `packages/sala-relay/src/lan-decrypt-relay.test.js` |
+| Fixtures | `packages/sala-relay/fixtures/` |
 | Relay registry API | `backend/src/main.rs` + `backend/src/auth.rs` (`/api/tv/relay/*` next to existing `/api/tv/pair/*`) |
 | Next proxies | `frontend/app/api/tv/relay/**` |
 | TV shell UX | `frontend/app/tv/title/[id]/page.tsx`, `frontend/app/tv/TvPairClient.tsx` |
@@ -130,7 +131,7 @@ It does **not** decrypt media in P0/P1 of this RFC.
 
 - [x] **P0.1** Spec + this RFC agreed — status: `done`
 - [ ] **P0.2** User can start a **PC LAN decrypt relay** for one HLS title
-  (clear HLS on LAN; catalog key only on PC) — status: `todo`
+  (clear HLS on LAN; catalog key only on PC; package under `packages/sala-relay`) — status: `todo`
 - [ ] **P0.3** TV shell (or phone) shows **pair / “play via sala”** and opens
   the relay URL after registration — status: `todo`
 - [ ] **P0.4** Relay dies cleanly when PC stops; TV shows a recoverable error
@@ -160,7 +161,7 @@ It does **not** decrypt media in P0/P1 of this RFC.
 | ID | Band | Title | Status | Task / PR | Updated |
 |----|------|-------|--------|-----------|---------|
 | P0.1 | p0 | RFC drafted | done | this doc | 2026-08-07 |
-| P0.2 | p0 | PC LAN decrypt relay | todo | — | 2026-08-07 |
+| P0.2 | p0 | PC LAN decrypt relay (`packages/sala-relay`) | todo | — | 2026-08-07 |
 | P0.3 | p0 | TV pair → open relay feed | todo | — | 2026-08-07 |
 | P0.4 | p0 | Relay stop = clear TV error | todo | — | 2026-08-07 |
 | P1.1 | p1 | Phone WebRTC to TV | todo | — | 2026-08-07 |
@@ -176,17 +177,21 @@ It does **not** decrypt media in P0/P1 of this RFC.
 
 ### Tests
 
-Concrete commands/files (to exist as each slice lands; run from repo root unless noted):
+Concrete commands/files (to exist as each slice lands; run from repo root unless noted).
+**Not docs-only** — primary code under `packages/sala-relay/**`.
 
 1. **P0.2 — LAN relay unit (segment decrypt + plain playlist rewrite)**  
-   - Files: `lib/hls-aes-decrypt.cjs`, `scripts/relay/lan-decrypt-relay.js`, `scripts/relay/lan-decrypt-relay.test.js`  
+   - Files:  
+     - `packages/sala-relay/src/hls-aes-decrypt.js`  
+     - `packages/sala-relay/src/lan-decrypt-relay.js`  
+     - `packages/sala-relay/src/lan-decrypt-relay.test.js`  
    - Command:  
-     `node --test scripts/relay/lan-decrypt-relay.test.js`  
-   - Fixture: tiny AES-128 MPEG-TS sample under `scripts/relay/fixtures/` (or generate in-test with `crypto`). Assert: decrypted segment bytes match fixture plaintext; rewritten `index.m3u8` has **no** `#EXT-X-KEY` and segment URLs point at the relay host.
+     `node --test packages/sala-relay/src/lan-decrypt-relay.test.js`  
+   - Fixture: tiny AES-128 MPEG-TS sample under `packages/sala-relay/fixtures/` (or generate in-test with `crypto`). Assert: decrypted segment bytes match fixture plaintext; rewritten `index.m3u8` has **no** `#EXT-X-KEY` and segment URLs point at the relay host.
 
 2. **P0.2 — Manual LAN smoke (optional local)**  
    - Command (example):  
-     `ENCRYPTION_CATALOG_KEY=… node scripts/relay/lan-decrypt-relay.js --title-id matrix-1999-movie --port 8787`  
+     `ENCRYPTION_CATALOG_KEY=… node packages/sala-relay/src/lan-decrypt-relay.js --title-id matrix-1999-movie --port 8787`  
    - Then open `http://<lan-ip>:8787/index.m3u8` in VLC or a TV browser. TV must play without holding the catalog key.
 
 3. **P0.3 — Relay registry + pair binding**  
@@ -206,16 +211,16 @@ Concrete commands/files (to exist as each slice lands; run from repo root unless
 
 5. **P1.x (when landed)**  
    - WebRTC path: unit tests under `frontend/lib/` + same Playwright suite extended.  
-   - Multi-ep: `node --test scripts/relay/lan-decrypt-relay.test.js` covers `--episode N` / `hls/e{n}/`.  
+   - Multi-ep: `node --test packages/sala-relay/src/lan-decrypt-relay.test.js` covers `--episode N` / `hls/e{n}/`.  
    - Session-license: `cd backend && cargo test session_license`.
 
 ### Telemetry / Analytics
 
-None — personal app; optional local relay logs only (`scripts/relay`).
+None — personal app; optional local relay logs only (`packages/sala-relay`).
 
 ### Documentation
 
-This RFC; short “Sala / relay” section in `README.md` or `DEPLOYMENT.md` when P0.2 ships (how to run the PC relay, env vars, LAN firewall note).
+This RFC; short “Sala / relay” section in `README.md` or `DEPLOYMENT.md` when P0.2 ships (how to run the PC relay from `packages/sala-relay`, env vars, LAN firewall note).
 
 ### Screenshots
 
@@ -241,7 +246,8 @@ a session; call that out before implementing.
   custom receiver + client crypto; P2.2)
 - Replacing HLS packaging (RFC 0009) or invite envelope design (RFC 0006)
 - Hosting a public multi-tenant “Sessão cloud” for strangers
-- Docs-only work (this RFC expects code under `scripts/`, `lib/`, `frontend/`, `backend/`)
+- Docs-only work (this RFC expects code under `packages/sala-relay/**`,
+  `frontend/`, `backend/`)
 
 ## Open questions
 
