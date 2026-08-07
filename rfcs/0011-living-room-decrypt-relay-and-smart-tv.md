@@ -5,8 +5,6 @@
 
 <!-- OFICINA_RFC_SLICES [{"id":"P0.1","band":"p0","title":"RFC drafted and harness-approvable","status":"done"},{"id":"P0.2","band":"p0","title":"PC LAN decrypt relay for one HLS title","status":"todo"},{"id":"P0.3","band":"p0","title":"TV pair / play-via-sala opens relay feed","status":"todo"},{"id":"P0.4","band":"p0","title":"Relay stop shows recoverable TV error","status":"todo"},{"id":"P1.1","band":"p1","title":"Phone WebRTC decrypt feed into TV","status":"todo"},{"id":"P1.2","band":"p1","title":"Multi-ep relay (hls/e{n}/)","status":"todo"},{"id":"P1.3","band":"p1","title":"Optional session-license API for Cast/third-party","status":"todo"},{"id":"P1.4","band":"p1","title":"Jellyfin-beside vs pure Sessao decision","status":"todo"},{"id":"P2.1","band":"p2","title":"Native phone LAN HTTP relay","status":"todo"},{"id":"P2.2","band":"p2","title":"Custom Cast receiver","status":"todo"},{"id":"P2.3","band":"p2","title":"Android TV store client","status":"todo"},{"id":"P2.4","band":"p2","title":"Tizen/webOS store packaging","status":"todo"}] -->
 
-OFICINA_RFC_SLICES: [{"id":"P0.1","band":"p0","title":"RFC drafted and harness-approvable","status":"done"},{"id":"P0.2","band":"p0","title":"PC LAN decrypt relay for one HLS title","status":"todo"},{"id":"P0.3","band":"p0","title":"TV pair / play-via-sala opens relay feed","status":"todo"},{"id":"P0.4","band":"p0","title":"Relay stop shows recoverable TV error","status":"todo"},{"id":"P1.1","band":"p1","title":"Phone WebRTC decrypt feed into TV","status":"todo"},{"id":"P1.2","band":"p1","title":"Multi-ep relay (hls/e{n}/)","status":"todo"},{"id":"P1.3","band":"p1","title":"Optional session-license API for Cast/third-party","status":"todo"},{"id":"P1.4","band":"p1","title":"Jellyfin-beside vs pure Sessao decision","status":"todo"},{"id":"P2.1","band":"p2","title":"Native phone LAN HTTP relay","status":"todo"},{"id":"P2.2","band":"p2","title":"Custom Cast receiver","status":"todo"},{"id":"P2.3","band":"p2","title":"Android TV store client","status":"todo"},{"id":"P2.4","band":"p2","title":"Tizen/webOS store packaging","status":"todo"}]
-
 ## Background
 
 - Sessão already plays in the **browser**: HLS AES-128 (RFC 0009) with the
@@ -113,7 +111,7 @@ It does **not** decrypt media in P0/P1 of this RFC.
 | Phone “be the decryptor” | `frontend/app/pair/page.tsx` or new sala UI |
 | E2E | `frontend/e2e/sala-relay.spec.ts` |
 
-## Delivery slices
+## Delivery slices (mandatory)
 
 ### P0 — must ship first (useful in one house tonight)
 
@@ -145,6 +143,10 @@ It does **not** decrypt media in P0/P1 of this RFC.
 - [ ] **P2.4** Tizen / webOS store packaging of the web shell — status: `todo`
 
 ## Status
+
+
+<!-- OFICINA_RFC_SLICES [{"id":"P0.1","band":"p0","title":"RFC drafted and harness-approvable","status":"done"},{"id":"P0.2","band":"p0","title":"PC LAN decrypt relay for one HLS title","status":"todo"},{"id":"P0.3","band":"p0","title":"TV pair / play-via-sala opens relay feed","status":"todo"},{"id":"P0.4","band":"p0","title":"Relay stop shows recoverable TV error","status":"todo"},{"id":"P1.1","band":"p1","title":"Phone WebRTC decrypt feed into TV","status":"todo"},{"id":"P1.2","band":"p1","title":"Multi-ep relay (hls/e{n}/)","status":"todo"},{"id":"P1.3","band":"p1","title":"Optional session-license API for Cast/third-party","status":"todo"},{"id":"P1.4","band":"p1","title":"Jellyfin-beside vs pure Sessao decision","status":"todo"},{"id":"P2.1","band":"p2","title":"Native phone LAN HTTP relay","status":"todo"},{"id":"P2.2","band":"p2","title":"Custom Cast receiver","status":"todo"},{"id":"P2.3","band":"p2","title":"Android TV store client","status":"todo"},{"id":"P2.4","band":"p2","title":"Tizen/webOS store packaging","status":"todo"}] -->
+OFICINA_RFC_SLICES: [{"id":"P0.1","band":"p0","title":"RFC drafted and harness-approvable","status":"done"},{"id":"P0.2","band":"p0","title":"PC LAN decrypt relay for one HLS title","status":"todo"},{"id":"P0.3","band":"p0","title":"TV pair / play-via-sala opens relay feed","status":"todo"},{"id":"P0.4","band":"p0","title":"Relay stop shows recoverable TV error","status":"todo"},{"id":"P1.1","band":"p1","title":"Phone WebRTC decrypt feed into TV","status":"todo"},{"id":"P1.2","band":"p1","title":"Multi-ep relay (hls/e{n}/)","status":"todo"},{"id":"P1.3","band":"p1","title":"Optional session-license API for Cast/third-party","status":"todo"},{"id":"P1.4","band":"p1","title":"Jellyfin-beside vs pure Sessao decision","status":"todo"},{"id":"P2.1","band":"p2","title":"Native phone LAN HTTP relay","status":"todo"},{"id":"P2.2","band":"p2","title":"Custom Cast receiver","status":"todo"},{"id":"P2.3","band":"p2","title":"Android TV store client","status":"todo"},{"id":"P2.4","band":"p2","title":"Tizen/webOS store packaging","status":"todo"}]
 
 | ID | Band | Title | Status | Task / PR | Updated |
 |----|------|-------|--------|-----------|---------|
