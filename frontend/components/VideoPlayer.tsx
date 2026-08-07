@@ -771,7 +771,25 @@ export function VideoPlayer({
   const currentEpisode = hasEpisodes ? episodes.find((ep) => ep.originalIndex === selectedIndex) : null;
   const effectivePoster = currentEpisode?.stillUrl ?? posterUrl ?? undefined;
   const savedProgress = initialProgress.find((p) => p.episode === episodeNumber) ?? null;
-  const episodeSubtitles = subtitles.filter((t) => t.episode === episodeNumber);
+  // One track per language for this episode — pipeline rips often ship
+  // eng + eng-2 + forced; the captions menu should offer a single choice.
+  const episodeSubtitles = (() => {
+    const forEp = subtitles.filter((t) => t.episode === episodeNumber);
+    const best = new Map<string, (typeof forEp)[number]>();
+    for (const t of forEp) {
+      const key = t.lang.toLowerCase();
+      const cur = best.get(key);
+      if (!cur) {
+        best.set(key, t);
+        continue;
+      }
+      // Prefer non-forced, then shorter id (`eng` over `eng-2`).
+      if ((cur.forced && !t.forced) || (cur.forced === t.forced && t.id.length < cur.id.length)) {
+        best.set(key, t);
+      }
+    }
+    return [...best.values()].sort((a, b) => a.lang.localeCompare(b.lang) || a.id.localeCompare(b.id));
+  })();
   // The user's preferred language wins if this episode has it; otherwise
   // fall back to non-forced English, then any non-forced track. Forced
   // tracks (foreign-dialogue-only) are opt-in, never a default.

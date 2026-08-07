@@ -366,6 +366,57 @@ fn apply_subtitle_backfill(items: &mut [EnrichedItem], enriched_data_path: &str)
     );
 }
 
+/// Keep a single softsub track per (episode, language). Pipeline-extracted
+/// rips often ship eng + eng-2 + forced; the product rule is one alternative
+/// per language so the captions menu stays usable. Preference order:
+/// non-forced first, then shorter id (`eng` over `eng-2`), then first seen.
+fn dedupe_subtitles_one_per_lang(items: &mut [EnrichedItem]) {
+    let mut items_touched = 0;
+    let mut tracks_removed = 0;
+    for item in items.iter_mut() {
+        if item.subtitles.len() < 2 {
+            continue;
+        }
+        let before = item.subtitles.len();
+        // Key: (episode, normalized lang). Value: winning track.
+        let mut best: HashMap<(i32, String), SubtitleTrack> = HashMap::new();
+        for track in item.subtitles.drain(..) {
+            let key = (track.episode, track.lang.to_lowercase());
+            match best.get(&key) {
+                None => {
+                    best.insert(key, track);
+                }
+                Some(cur) => {
+                    let prefer_new = (!track.forced && cur.forced)
+                        || (track.forced == cur.forced && track.id.len() < cur.id.len());
+                    if prefer_new {
+                        best.insert(key, track);
+                    }
+                }
+            }
+        }
+        let mut kept: Vec<SubtitleTrack> = best.into_values().collect();
+        // Stable-ish order: episode, then lang, then id.
+        kept.sort_by(|a, b| {
+            a.episode
+                .cmp(&b.episode)
+                .then_with(|| a.lang.cmp(&b.lang))
+                .then_with(|| a.id.cmp(&b.id))
+        });
+        let after = kept.len();
+        if after < before {
+            items_touched += 1;
+            tracks_removed += before - after;
+        }
+        item.subtitles = kept;
+    }
+    if tracks_removed > 0 {
+        tracing::info!(
+            "Deduped subtitles to one per language: removed {tracks_removed} track(s) across {items_touched} item(s)"
+        );
+    }
+}
+
 /// Merges in self-hosted trailer video/captions (see download-trailers.js).
 /// Same separate-file rationale as `apply_collections_backfill`. The
 /// backfill file's subtitle entries are a slimmer shape than the shared
@@ -464,6 +515,9 @@ async fn main() {
     apply_keywords_backfill(&mut cache.items, &data_path);
     apply_awards_backfill(&mut cache.items, &data_path);
     apply_subtitle_backfill(&mut cache.items, &data_path);
+    // After backfill merge: collapse eng/eng-2/forced piles to one track
+    // per language (product rule: a single alternative per lang).
+    dedupe_subtitles_one_per_lang(&mut cache.items);
     apply_trailer_backfill(&mut cache.items, &data_path);
     let similar: HashMap<String, Vec<SimilarEntry>> =
         load_side_file(&data_path, "similar_backfill.json");

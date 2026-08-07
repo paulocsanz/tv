@@ -182,46 +182,40 @@ async function loginIfConfigured() {
   return data?.token || null;
 }
 
-// Pick the highest-download, non-hearing-impaired-first result per language.
+// Exactly one file per language: highest download_count, non-HI preferred.
+// Sync quality is not measured (OpenSubtitles has no reliable auto-check
+// without moviehash); popularity is the practical proxy.
 function pickBestPerLang(results, missingLangs) {
-  const byLang = new Map();
+  const candidates = [];
   for (const row of results || []) {
     const attrs = row.attributes || row;
     const langTag = (attrs.language || attrs.language_code || "").toLowerCase();
     const lang = OS_TO_LANG[langTag];
     if (!lang || !missingLangs.has(lang)) continue;
-    if (byLang.has(lang)) continue;
     const files = attrs.files || [];
     const fileId = files[0]?.file_id ?? attrs.file_id;
     if (!fileId) continue;
-    byLang.set(lang, {
+    candidates.push({
       lang,
       fileId,
       fileName: files[0]?.file_name || attrs.release || `${lang}.srt`,
       downloads: attrs.download_count || 0,
       hi: Boolean(attrs.hearing_impaired),
+      // fps/from_trusted are soft signals when present
+      fps: attrs.fps || 0,
+      fromTrusted: Boolean(attrs.from_trusted || attrs.ai_translated === false),
     });
   }
-  // Prefer non-HI when we somehow got HI first - re-scan if needed.
-  for (const row of results || []) {
-    const attrs = row.attributes || row;
-    const langTag = (attrs.language || "").toLowerCase();
-    const lang = OS_TO_LANG[langTag];
-    if (!lang || !byLang.has(lang)) continue;
-    const cur = byLang.get(lang);
-    if (cur.hi && !attrs.hearing_impaired) {
-      const files = attrs.files || [];
-      const fileId = files[0]?.file_id;
-      if (fileId) {
-        byLang.set(lang, {
-          lang,
-          fileId,
-          fileName: files[0]?.file_name || cur.fileName,
-          downloads: attrs.download_count || 0,
-          hi: false,
-        });
-      }
-    }
+  // Sort: non-HI first, then downloads desc, then trusted.
+  candidates.sort((a, b) => {
+    if (a.hi !== b.hi) return a.hi ? 1 : -1;
+    if (b.downloads !== a.downloads) return b.downloads - a.downloads;
+    if (a.fromTrusted !== b.fromTrusted) return a.fromTrusted ? -1 : 1;
+    return 0;
+  });
+  const byLang = new Map();
+  for (const c of candidates) {
+    if (!byLang.has(c.lang)) byLang.set(c.lang, c);
   }
   return [...byLang.values()];
 }
