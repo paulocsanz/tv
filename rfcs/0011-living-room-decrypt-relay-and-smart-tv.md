@@ -3,6 +3,27 @@
 **Status:** draft  
 **Updated:** 2026-08-07
 
+<!-- OFICINA_RFC_SLICES
+{
+  "rfc": "0011",
+  "file": "rfcs/0011-living-room-decrypt-relay-and-smart-tv.md",
+  "slices": [
+    {"id": "P0.1", "band": "p0", "title": "RFC drafted + harness AC/Status/slices", "status": "done"},
+    {"id": "P0.2", "band": "p0", "title": "PC LAN decrypt relay for one HLS title", "status": "todo"},
+    {"id": "P0.3", "band": "p0", "title": "TV pair / play-via-sala opens relay feed", "status": "todo"},
+    {"id": "P0.4", "band": "p0", "title": "Relay stop → clear recoverable TV error", "status": "todo"},
+    {"id": "P1.1", "band": "p1", "title": "Phone WebRTC decrypt feed into TV", "status": "todo"},
+    {"id": "P1.2", "band": "p1", "title": "Multi-ep relay (hls/e{n}/)", "status": "todo"},
+    {"id": "P1.3", "band": "p1", "title": "Optional session-license API for Cast/third-party", "status": "todo"},
+    {"id": "P1.4", "band": "p1", "title": "Jellyfin-beside vs pure Sessão decision", "status": "todo"},
+    {"id": "P2.1", "band": "p2", "title": "Native phone LAN HTTP relay", "status": "todo"},
+    {"id": "P2.2", "band": "p2", "title": "Custom Cast receiver", "status": "todo"},
+    {"id": "P2.3", "band": "p2", "title": "Android TV store client", "status": "todo"},
+    {"id": "P2.4", "band": "p2", "title": "Tizen/webOS store packaging", "status": "todo"}
+  ]
+}
+-->
+
 ## Background
 
 - Sessão already plays in the **browser**: HLS AES-128 (RFC 0009) with the
@@ -91,11 +112,11 @@ It does **not** decrypt media in P0/P1 of this RFC.
 - **0007** — multi-device / Cast / TV shell (this RFC extends living-room)
 - **0009** — HLS AES-128 at rest (ciphertext source for the relay)
 
-## Delivery slices (mandatory)
+## Delivery slices
 
 ### P0 — must ship first (useful in one house tonight)
 
-- [ ] **P0.1** Spec + this RFC agreed — status: `done`
+- [x] **P0.1** Spec + this RFC agreed (AC, Status, embedded slices) — status: `done`
 - [ ] **P0.2** User can start a **PC LAN decrypt relay** for one HLS title
   (clear HLS on LAN; catalog key only on PC) — status: `todo`
 - [ ] **P0.3** TV shell (or phone) shows **pair / “play via sala”** and opens
@@ -122,11 +143,11 @@ It does **not** decrypt media in P0/P1 of this RFC.
   is insufficient) — status: `todo`
 - [ ] **P2.4** Tizen / webOS store packaging of the web shell — status: `todo`
 
-## Status (living)
+## Status
 
 | ID | Band | Title | Status | Task / PR | Updated |
 |----|------|-------|--------|-----------|---------|
-| P0.1 | p0 | RFC drafted | done | this doc | 2026-08-07 |
+| P0.1 | p0 | RFC drafted + harness AC/Status/slices | done | this doc | 2026-08-07 |
 | P0.2 | p0 | PC LAN decrypt relay | todo | — | 2026-08-07 |
 | P0.3 | p0 | TV pair → open relay feed | todo | — | 2026-08-07 |
 | P0.4 | p0 | Relay stop = clear TV error | todo | — | 2026-08-07 |
@@ -141,18 +162,54 @@ It does **not** decrypt media in P0/P1 of this RFC.
 
 ## Acceptance Criteria
 
-- **Tests**
-  - P0.2: package Matrix (or any HLS title); PC relay serves plain playlist;
-    VLC or TV browser on LAN plays end-to-end without catalog key on the TV
-  - P0.3: from TV shell after pair, user reaches playing state without typing
-    the catalog key on the TV
-  - P0.4: kill relay → TV UI leaves “loading” and shows a clear offline/retry
-    state within a few seconds
-- **Telemetry / Analytics:** none — personal app; optional local relay logs only
-- **Documentation:** this RFC; short “Sala / relay” note in README or
-  `DEPLOYMENT.md` when P0.2 ships
-- **Screenshots:** TV shell “aguardando decryptor” + playing frame (when P0.3
-  ships)
+### Tests
+
+Concrete commands and files (created/extended when implementing P0; not
+docs-only — implementation touches `lib/`, `scripts/`, `frontend/`, `backend/`):
+
+1. **Plain-playlist rewrite unit (P0.2)**  
+   `node --test lib/decrypt-relay.test.cjs`  
+   Asserts: given an AES-128 HLS `index.m3u8` with `#EXT-X-KEY` and segment
+   lines, the relay helper emits a **plain** playlist (no key tag; segment
+   URLs point at local clear segments). Fixture: small synthetic m3u8 under
+   `lib/fixtures/relay/` (or inline in the test file). Reuses decrypt helpers
+   from `lib/media-encryption.cjs` / `lib/hls-package.cjs`.
+
+2. **Segment decrypt unit (P0.2)**  
+   Same suite `node --test lib/decrypt-relay.test.cjs`: one known AES-128
+   segment + 16-byte key → plaintext bytes match fixture digest.
+
+3. **Relay registry API (P0.3)**  
+   `cd backend && cargo test relay_registry`  
+   Covers register / poll / expire routes for sala relay binding (pair code →
+   LAN base URL or WebRTC offer). Source: `backend/src/` relay module added
+   in P0.3 (alongside existing `auth` / TV pair paths).
+
+4. **TV shell e2e (P0.3 + P0.4)**  
+   `cd frontend && npx playwright test e2e/relay-sala.spec.ts`  
+   Flow: TV pair → phone/PC registers mock relay URL → TV leaves
+   “Aguardando o decryptor da sala…” and loads player; kill/unregister relay
+   → recoverable offline/retry UI within a few seconds. Builds on patterns in
+   `frontend/e2e/encrypted-playback.spec.ts` and TV pair APIs under
+   `frontend/app/api/tv/pair/`.
+
+5. **Typecheck / lint gates**  
+   `npm run typecheck` (repo root) and `cd frontend && npm run lint` must stay
+   green for files touched by the relay work.
+
+### Telemetry / Analytics
+
+None — personal app; optional local relay logs only (stdout / file on the
+decryptor host).
+
+### Documentation
+
+This RFC; short “Sala / relay” section in `README.md` or `DEPLOYMENT.md` when
+P0.2 ships (how to start the PC relay, open firewall on LAN, pair TV).
+
+### Screenshots
+
+TV shell “aguardando decryptor” + playing frame (when P0.3 ships).
 
 ## Threat model (honest)
 
