@@ -115,7 +115,27 @@ async function uploadFile(client, bucket, key, filePath, contentType) {
       ContentType: contentType,
     }),
   );
-  console.log(`  ↑ ${key} (${(body.length / 1e6).toFixed(2)} MB)`);
+  return body.length;
+}
+
+/** Upload many objects with bounded concurrency. */
+async function uploadMany(client, bucket, jobs, concurrency = 12) {
+  let done = 0;
+  let i = 0;
+  async function worker() {
+    while (i < jobs.length) {
+      const idx = i++;
+      const job = jobs[idx];
+      await uploadFile(client, bucket, job.key, job.filePath, job.contentType);
+      done++;
+      if (done % 25 === 0 || done === jobs.length) {
+        console.log(`  ↑ ${done}/${jobs.length}`);
+      }
+    }
+  }
+  await Promise.all(
+    Array.from({ length: Math.min(concurrency, jobs.length) }, () => worker()),
+  );
 }
 
 async function packageOne(client, creds, catalog, catalogKey, id, opts) {
@@ -158,16 +178,13 @@ async function packageOne(client, creds, catalog, catalogKey, id, opts) {
 
     const prefix = `videos/${id}/hls`;
     const playlistKey = `${prefix}/index.m3u8`;
-    for (const seg of segmentFiles) {
-      const name = path.basename(seg);
-      await uploadFile(
-        client,
-        creds.bucketName,
-        `${prefix}/${name}`,
-        seg,
-        "video/mp2t",
-      );
-    }
+    const jobs = segmentFiles.map((seg) => ({
+      key: `${prefix}/${path.basename(seg)}`,
+      filePath: seg,
+      contentType: "video/mp2t",
+    }));
+    console.log(`  ↑ uploading ${jobs.length} segments (parallel)…`);
+    await uploadMany(client, creds.bucketName, jobs, 16);
     await uploadFile(
       client,
       creds.bucketName,
@@ -175,6 +192,7 @@ async function packageOne(client, creds, catalog, catalogKey, id, opts) {
       playlistPath,
       "application/vnd.apple.mpegurl",
     );
+    console.log(`  ↑ ${playlistKey}`);
 
     item.hls_playlist_s3_key = playlistKey;
     item.encrypted = true;
