@@ -1171,23 +1171,29 @@ async fn get_hls_playlist(
         return (StatusCode::NOT_FOUND, "content not found").into_response();
     };
 
-    // P0: single playlist per title. Episode-scoped HLS is P1.2.
-    let _episode = q.episode;
-    let Some(playlist_key) = item.hls_playlist_s3_key.as_ref() else {
+    let Some(hls_ref) = item.hls_playlist_s3_key.as_ref() else {
         return (StatusCode::NOT_FOUND, "no HLS playlist for this content").into_response();
+    };
+    // Movies store full `…/hls/index.m3u8`. Series store prefix `…/hls` and
+    // per-episode playlists live at `…/hls/e{n}/index.m3u8`.
+    let playlist_key = if hls_ref.ends_with(".m3u8") {
+        hls_ref.clone()
+    } else {
+        let ep = q.episode.unwrap_or(1).max(1);
+        format!("{}/e{}/index.m3u8", hls_ref.trim_end_matches('/'), ep)
     };
 
     let object = match s3
         .client
         .get_object()
         .bucket(&s3.bucket)
-        .key(playlist_key)
+        .key(&playlist_key)
         .send()
         .await
     {
         Ok(object) => object,
         Err(e) => {
-            tracing::error!("failed to fetch hls playlist object: {e}");
+            tracing::error!("failed to fetch hls playlist object {playlist_key}: {e}");
             return (StatusCode::INTERNAL_SERVER_ERROR, "failed to fetch playlist").into_response();
         }
     };

@@ -14,7 +14,7 @@ export default defineProject("vete-pipeline", () => {
   const pipeline = service("torrent-pipeline", {
     type: "container",
     role: "worker",
-    image: "ghcr.io/paulocsanz/tv-torrent-pipeline:20260806-1",
+    image: "ghcr.io/paulocsanz/tv-torrent-pipeline:20260807-hls1",
     region: "brasil",
     cpus: 4,
     memory_mb: 8 * 1024,

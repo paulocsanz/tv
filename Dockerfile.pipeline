@@ -12,6 +12,7 @@ RUN npm ci --omit=dev
 
 COPY download-picked-torrents.js transcode.js ./
 COPY lib/media-encryption.cjs /app/lib/media-encryption.cjs
+COPY lib/hls-package.cjs /app/lib/hls-package.cjs
 RUN mkdir -p /app/backend/data /data/downloads /data/backend/data
 COPY backend/data/enriched_400.json /app/backend/data/enriched_400.json
 

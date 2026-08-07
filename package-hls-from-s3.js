@@ -36,7 +36,15 @@ const CATALOG_PATH =
   path.join("backend", "data", "enriched_400.json");
 
 function parseArgs(argv) {
-  const out = { ids: [], keepLocal: false };
+  const out = {
+    ids: [],
+    keepLocal: false,
+    all: false,
+    /** only single-file titles (default for --all) */
+    singleOnly: true,
+    limit: null,
+    skipExisting: true,
+  };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--id") out.ids.push(argv[++i]);
@@ -47,11 +55,29 @@ function parseArgs(argv) {
           .map((s) => s.trim())
           .filter(Boolean),
       );
+    else if (a === "--all") out.all = true;
+    else if (a === "--include-series") out.singleOnly = false;
+    else if (a === "--limit") out.limit = parseInt(argv[++i], 10);
+    else if (a === "--force") out.skipExisting = false;
     else if (a === "--keep-local") out.keepLocal = true;
     else if (a === "--help" || a === "-h") out.help = true;
     else throw new Error(`unknown arg: ${a}`);
   }
   return out;
+}
+
+/** Titles that still need HLS packaging. */
+function pickPendingIds(catalog, { singleOnly, skipExisting, limit }) {
+  const ids = [];
+  for (const x of catalog.items) {
+    if (!x || !x.s3_key) continue;
+    if (skipExisting && x.hls_playlist_s3_key) continue;
+    const multi = x.s3_keys && x.s3_keys.length > 1;
+    if (singleOnly && multi) continue;
+    ids.push(x.id);
+    if (limit && ids.length >= limit) break;
+  }
+  return ids;
 }
 
 function loadBucketCreds() {
@@ -218,21 +244,41 @@ async function packageOne(client, creds, catalog, catalogKey, id, opts) {
 
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
-  if (opts.help || opts.ids.length === 0) {
+  if (opts.help || (!opts.all && opts.ids.length === 0)) {
     console.log(`Usage:
   node package-hls-from-s3.js --id <catalog-id>
-  node package-hls-from-s3.js --ids id1,id2`);
+  node package-hls-from-s3.js --ids id1,id2
+  node package-hls-from-s3.js --all [--limit N] [--include-series] [--force]
+Env: S3_* ENCRYPTION_CATALOG_KEY`);
     process.exit(opts.help ? 0 : 1);
   }
 
   const catalogKey = parseCatalogKey(process.env.ENCRYPTION_CATALOG_KEY);
+  if (!catalogKey) throw new Error("ENCRYPTION_CATALOG_KEY missing/invalid");
   const creds = loadBucketCreds();
   const client = makeS3(creds);
-  const catalog = loadCatalog();
+  let catalog = loadCatalog();
+
+  if (opts.all) {
+    opts.ids = pickPendingIds(catalog, opts);
+    console.log(
+      `── --all: ${opts.ids.length} title(s) pending HLS` +
+        (opts.limit ? ` (limit ${opts.limit})` : ""),
+    );
+  }
 
   const results = [];
   for (const id of opts.ids) {
+    catalog = loadCatalog(); // refresh between titles
     try {
+      if (opts.skipExisting) {
+        const cur = catalog.items.find((x) => x && x.id === id);
+        if (cur?.hls_playlist_s3_key) {
+          console.log(`skip ${id} (already has HLS)`);
+          results.push({ id, skipped: true });
+          continue;
+        }
+      }
       results.push(await packageOne(client, creds, catalog, catalogKey, id, opts));
     } catch (e) {
       console.error(`FAIL ${id}:`, e.message || e);
@@ -240,11 +286,22 @@ async function main() {
     }
   }
   console.log("\n── summary ──");
+  let ok = 0,
+    fail = 0,
+    skip = 0;
   for (const r of results) {
-    if (r.error) console.log(`  fail ${r.id}: ${r.error}`);
-    else console.log(`  ok   ${r.id} → ${r.playlistKey} (${r.segments} segs)`);
+    if (r.error) {
+      fail++;
+      console.log(`  fail ${r.id}: ${r.error}`);
+    } else if (r.skipped) {
+      skip++;
+    } else {
+      ok++;
+      console.log(`  ok   ${r.id} → ${r.playlistKey} (${r.segments} segs)`);
+    }
   }
-  if (results.some((r) => r.error)) process.exit(1);
+  console.log(`  totals: ok=${ok} fail=${fail} skip=${skip}`);
+  if (fail > 0) process.exit(1);
 }
 
 main().catch((e) => {

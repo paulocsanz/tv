@@ -48,7 +48,9 @@ export default async function TitlePage({
   const me = await getMeOrNull();
 
   const heroImage = item.backdrop_url ?? posterSrc(item);
-  const hasStream = Boolean(item.s3_key || item.s3_keys.length > 0);
+  const hasStream = Boolean(
+    item.s3_key || item.s3_keys.length > 0 || item.hls_playlist_s3_key,
+  );
 
   return (
     <div className="mx-auto max-w-7xl px-4 pb-16 pt-6 sm:px-8">

@@ -40,9 +40,9 @@
 - [x] **P0.4** Package Matrix (or one classic) and verify seek past buffer + reconnect — status: `done`
 
 ### P1 — next
-- [ ] **P1.1** Batch `package-hls-from-s3.js` worker for all encrypted single-file movies — status: `todo`
-- [ ] **P1.2** Per-episode HLS for series (`…/hls/e{n}/`) — status: `todo`
-- [ ] **P1.3** Pipeline greenfield: new uploads emit HLS-AES instead of SSESENC1 — status: `todo`
+- [x] **P1.1** Batch `package-hls-from-s3.js` worker for all single-file titles — status: `done`
+- [x] **P1.2** Per-episode HLS for series (`…/hls/e{n}/`) — status: `done` (pipeline + playlist API; batch series still optional)
+- [x] **P1.3** Pipeline greenfield: new uploads emit HLS-AES (no plain→reencrypt loop) — status: `done`
 
 ### P2 — later
 - [ ] **P2.1** Multi-bitrate ladders + master playlist — status: `todo`
@@ -57,9 +57,9 @@
 | P0.2 | p0 | Packaging tool | done | 2026-08-07 |
 | P0.3 | p0 | hls.js player | done | 2026-08-07 |
 | P0.4 | p0 | One title packaged in prod | done | 2026-08-07 |
-| P1.1 | p1 | Batch packager worker | todo | 2026-08-07 |
-| P1.2 | p1 | Series episodes | todo | 2026-08-07 |
-| P1.3 | p1 | Pipeline greenfield HLS | todo | 2026-08-07 |
+| P1.1 | p1 | Batch packager worker | done | 2026-08-07 |
+| P1.2 | p1 | Series episodes | done | 2026-08-07 |
+| P1.3 | p1 | Pipeline greenfield HLS | done | 2026-08-07 |
 | P2.1 | p2 | ABR ladders | todo | 2026-08-07 |
 | P2.2 | p2 | Cast/AirPlay HLS | todo | 2026-08-07 |
 | P2.3 | p2 | Retire SSESENC1 | todo | 2026-08-07 |
