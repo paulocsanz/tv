@@ -37,9 +37,15 @@ export function SalaTitlePlay(props: {
         }}
       />
       {relayGone && (
-        <p className="mb-3 text-sm text-amber-400/90">
-          O decryptor da sala parou. Rode o relay no PC de novo ou volte ao player normal.
-        </p>
+        <div
+          className="mb-3 rounded-xl border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-100/90"
+          role="status"
+        >
+          <p className="font-medium text-amber-200">Conexão com o PC da sala caiu</p>
+          <p className="mt-1 text-xs leading-relaxed text-amber-100/70">
+            Inicie o app da sala no computador de novo, ou continue no player normal desta tela.
+          </p>
+        </div>
       )}
       <VideoPlayer
         {...props}
