@@ -12,15 +12,18 @@
  *
  * For each eligible item (has s3_key/s3_keys, has imdb_id, missing at least
  * one of eng/por/spa for a given episode):
- *   - Search OpenSubtitles by IMDB id (+ season/episode for TV)
- *   - Download one best file per missing language
- *   - Convert SRT/ASS → WebVTT via ffmpeg (same path as pipeline sidecars)
- *   - Upload under videos/<id>/….<lang>.vtt
+ *   - Hash the S3 video (OpenSubtitles moviehash: first+last 64KiB) so we
+ *     can prefer subtitles indexed against *this exact rip*, not just IMDB id
+ *   - Search OpenSubtitles by moviehash + IMDB id (+ season/episode for TV)
+ *   - Download one best file per missing language (hash-match first)
+ *   - Convert SRT/ASS → WebVTT; optional duration sanity check vs catalog runtime
+ *   - Upload under videos/<id>/external.<episode>.<lang>.vtt
  *   - Record into backend/data/subtitle_backfill.json (side file - same
  *     rationale as trailer_backfill.json: a live pipeline rewrites
  *     enriched_400.json continuously and would clobber direct edits)
  *
- * The backend merges that side file on boot (apply_subtitle_backfill).
+ * The backend merges that side file on boot (apply_subtitle_backfill) and
+ * collapses to one track per language.
  *
  * Requires:
  *   OPENSUBTITLES_API_KEY   - free key from https://www.opensubtitles.com/en/consumers
@@ -31,13 +34,19 @@
  * Usage:
  *   node scripts/pipeline/fetch-external-subtitles.js [--limit N] [--dry-run] [--id the-matrix-1999-movie]
  *   node scripts/pipeline/fetch-external-subtitles.js --langs eng,por
+ *   node scripts/pipeline/fetch-external-subtitles.js --require-hash   # skip IMDB-only fallback
+ *   node scripts/pipeline/fetch-external-subtitles.js --skip-duration-check
  */
 
 import fs from "fs";
 import path from "path";
 import os from "os";
 import { execSync } from "child_process";
-import { S3Client } from "@aws-sdk/client-s3";
+import {
+  S3Client,
+  HeadObjectCommand,
+  GetObjectCommand,
+} from "@aws-sdk/client-s3";
 import { Upload } from "@aws-sdk/lib-storage";
 import { NodeHttpHandler } from "@smithy/node-http-handler";
 import { convertSubtitleFileToVtt } from "./transcode.js";
@@ -49,6 +58,11 @@ const TMP_DIR = path.join(os.tmpdir(), "tv-subtitle-backfill");
 fs.mkdirSync(TMP_DIR, { recursive: true });
 
 const DRY_RUN = process.argv.includes("--dry-run");
+// Only accept OpenSubtitles rows that match our file's moviehash (rip-level
+// sync). Without a hash we still fall back to IMDB unless this is set.
+const REQUIRE_HASH = process.argv.includes("--require-hash");
+// Reject VTT whose last cue is wildly off the catalog runtime (±25%).
+const CHECK_DURATION = !process.argv.includes("--skip-duration-check");
 const limitArg = process.argv.findIndex((a) => a === "--limit");
 const LIMIT = limitArg !== -1 ? parseInt(process.argv[limitArg + 1], 10) : Infinity;
 const idArg = process.argv.findIndex((a) => a === "--id");
@@ -182,10 +196,115 @@ async function loginIfConfigured() {
   return data?.token || null;
 }
 
-// Exactly one file per language: highest download_count, non-HI preferred.
-// Sync quality is not measured (OpenSubtitles has no reliable auto-check
-// without moviehash); popularity is the practical proxy.
-function pickBestPerLang(results, missingLangs) {
+// OpenSubtitles movie hash: filesize + sum of first/last 64KiB as little-endian
+// uint64 words (classic OSDB algorithm). Matching this to a result means the
+// subtitle was indexed against the *same bytes* as our S3 object — the only
+// practical way to get rip-level sync without guessing.
+const OS_HASH_CHUNK = 64 * 1024;
+
+function sumUInt64LE(buf) {
+  let sum = 0n;
+  const view = Buffer.isBuffer(buf) ? buf : Buffer.from(buf);
+  const len = view.length - (view.length % 8);
+  for (let i = 0; i < len; i += 8) {
+    sum += view.readBigUInt64LE(i);
+  }
+  return sum & 0xffffffffffffffffn;
+}
+
+/** @param {Buffer} head first 64KiB @param {Buffer} tail last 64KiB @param {number} fileSize */
+function openSubtitlesMovieHash(head, tail, fileSize) {
+  let hash = BigInt(fileSize);
+  hash = (hash + sumUInt64LE(head)) & 0xffffffffffffffffn;
+  hash = (hash + sumUInt64LE(tail)) & 0xffffffffffffffffn;
+  return hash.toString(16).padStart(16, "0");
+}
+
+async function streamToBuffer(body) {
+  if (!body) return Buffer.alloc(0);
+  if (Buffer.isBuffer(body)) return body;
+  if (body instanceof Uint8Array) return Buffer.from(body);
+  const chunks = [];
+  for await (const chunk of body) {
+    chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
+  }
+  return Buffer.concat(chunks);
+}
+
+/** Hash an S3 object without downloading the whole file (two Range GETs). */
+async function movieHashFromS3(s3Client, bucket, key) {
+  const head = await s3Client.send(new HeadObjectCommand({ Bucket: bucket, Key: key }));
+  const fileSize = Number(head.ContentLength || 0);
+  if (fileSize < OS_HASH_CHUNK * 2) {
+    throw new Error(`object too small for moviehash (${fileSize} bytes)`);
+  }
+  const first = await s3Client.send(
+    new GetObjectCommand({
+      Bucket: bucket,
+      Key: key,
+      Range: `bytes=0-${OS_HASH_CHUNK - 1}`,
+    }),
+  );
+  const last = await s3Client.send(
+    new GetObjectCommand({
+      Bucket: bucket,
+      Key: key,
+      Range: `bytes=${fileSize - OS_HASH_CHUNK}-${fileSize - 1}`,
+    }),
+  );
+  const headBuf = await streamToBuffer(first.Body);
+  const tailBuf = await streamToBuffer(last.Body);
+  return {
+    hash: openSubtitlesMovieHash(headBuf, tailBuf, fileSize),
+    fileSize,
+  };
+}
+
+/** s3_key for this catalog episode index (0 = movie / single file). */
+function s3KeyForEpisode(item, episode) {
+  if (episode > 0 && item.s3_keys?.length) {
+    return item.s3_keys[episode - 1] || item.s3_key || null;
+  }
+  return item.s3_key || item.s3_keys?.[0] || null;
+}
+
+/** Catalog runtime string ("136 min") → seconds, or null. */
+function runtimeSeconds(item) {
+  const r = item.runtime;
+  if (!r) return null;
+  const m = String(r).match(/(\d+)\s*min/i);
+  if (m) return parseInt(m[1], 10) * 60;
+  const h = String(r).match(/(\d+)\s*h(?:\s*(\d+)\s*m)?/i);
+  if (h) return parseInt(h[1], 10) * 3600 + (h[2] ? parseInt(h[2], 10) * 60 : 0);
+  return null;
+}
+
+/** Last cue end time in a WebVTT file (seconds), or null. */
+function vttLastCueSeconds(vttPath) {
+  const text = fs.readFileSync(vttPath, "utf8");
+  // 00:01:02.000 --> 00:01:05.500  or  01:02.000 --> 01:05.500
+  const re = /(\d{2}:)?\d{2}:\d{2}[.,]\d{3}\s*-->\s*((\d{2}:)?\d{2}:\d{2}[.,]\d{3})/g;
+  let last = null;
+  let m;
+  while ((m = re.exec(text)) !== null) {
+    last = m[2];
+  }
+  if (!last) return null;
+  const parts = last.replace(",", ".").split(":");
+  let sec = 0;
+  if (parts.length === 3) {
+    sec = parseInt(parts[0], 10) * 3600 + parseInt(parts[1], 10) * 60 + parseFloat(parts[2]);
+  } else if (parts.length === 2) {
+    sec = parseInt(parts[0], 10) * 60 + parseFloat(parts[1]);
+  }
+  return sec;
+}
+
+/**
+ * One file per language. Prefer moviehash matches (same rip as our S3
+ * object), then non-HI, then download_count.
+ */
+function pickBestPerLang(results, missingLangs, { preferHashMatch = true } = {}) {
   const candidates = [];
   for (const row of results || []) {
     const attrs = row.attributes || row;
@@ -195,19 +314,24 @@ function pickBestPerLang(results, missingLangs) {
     const files = attrs.files || [];
     const fileId = files[0]?.file_id ?? attrs.file_id;
     if (!fileId) continue;
+    // API may flag hash match on the row or nested feature details.
+    const hashMatch = Boolean(
+      attrs.moviehash_match === true ||
+        attrs.moviehash_match === "true" ||
+        attrs.feature_details?.moviehash_match,
+    );
     candidates.push({
       lang,
       fileId,
       fileName: files[0]?.file_name || attrs.release || `${lang}.srt`,
       downloads: attrs.download_count || 0,
       hi: Boolean(attrs.hearing_impaired),
-      // fps/from_trusted are soft signals when present
-      fps: attrs.fps || 0,
-      fromTrusted: Boolean(attrs.from_trusted || attrs.ai_translated === false),
+      hashMatch,
+      fromTrusted: Boolean(attrs.from_trusted),
     });
   }
-  // Sort: non-HI first, then downloads desc, then trusted.
   candidates.sort((a, b) => {
+    if (preferHashMatch && a.hashMatch !== b.hashMatch) return a.hashMatch ? -1 : 1;
     if (a.hi !== b.hi) return a.hi ? 1 : -1;
     if (b.downloads !== a.downloads) return b.downloads - a.downloads;
     if (a.fromTrusted !== b.fromTrusted) return a.fromTrusted ? -1 : 1;
@@ -220,16 +344,20 @@ function pickBestPerLang(results, missingLangs) {
   return [...byLang.values()];
 }
 
-async function searchSubtitles({ imdb, languages, season, episode }) {
+async function searchSubtitles({ imdb, languages, season, episode, moviehash }) {
   const params = new URLSearchParams();
-  params.set("imdb_id", imdb);
+  if (imdb) params.set("imdb_id", imdb);
   params.set("languages", languages.join(","));
-  // Prefer moviehash-unrelated but well-downloaded releases; order is a
-  // soft signal, we re-rank client-side anyway.
   params.set("order_by", "download_count");
   params.set("order_direction", "desc");
   if (season != null) params.set("season_number", String(season));
   if (episode != null) params.set("episode_number", String(episode));
+  // When we have a hash, ask for matches against that exact file first.
+  if (moviehash) {
+    params.set("moviehash", moviehash);
+    // "include" returns hash hits ranked high; still includes non-hash rows.
+    params.set("moviehash_match", "include");
+  }
   const data = await osFetch(`/subtitles?${params.toString()}`);
   return data?.data || [];
 }
@@ -426,22 +554,49 @@ async function main() {
 
       const osLangs = [...missing].map((l) => LANG_TO_OS[l]).filter(Boolean);
       const label = ep != null ? `${item.title} S${season}E${ep}` : item.title;
-      process.stdout.write(`  [${label}] search missing=${[...missing].join(",")}… `);
+      const videoKey = s3KeyForEpisode(item, episode);
 
-      let results;
+      // Hash *our* S3 bytes so search can prefer subtitles for this rip.
+      let moviehash = null;
+      if (s3Client && bucketName && videoKey && !DRY_RUN) {
+        try {
+          const hashed = await movieHashFromS3(s3Client, bucketName, videoKey);
+          moviehash = hashed.hash;
+        } catch (e) {
+          console.log(`  [${label}] moviehash failed (${e.message}) — IMDB-only search`);
+        }
+      } else if (DRY_RUN && videoKey) {
+        moviehash = "(dry-run-no-hash)";
+      }
+
+      process.stdout.write(
+        `  [${label}] search missing=${[...missing].join(",")}` +
+          (moviehash && moviehash !== "(dry-run-no-hash)" ? ` hash=${moviehash}` : "") +
+          `… `,
+      );
+
+      let results = [];
       try {
         results = await searchSubtitles({
           imdb,
           languages: osLangs,
           season,
           episode: ep,
+          moviehash: moviehash && moviehash !== "(dry-run-no-hash)" ? moviehash : null,
         });
       } catch (e) {
         console.log(`search failed: ${e.message}`);
         continue;
       }
 
-      const picks = pickBestPerLang(results, missing);
+      let picks = pickBestPerLang(results, missing, { preferHashMatch: true });
+      if (REQUIRE_HASH) {
+        const before = picks.length;
+        picks = picks.filter((p) => p.hashMatch);
+        if (picks.length < before) {
+          console.log(`(dropped ${before - picks.length} non-hash match(es) — --require-hash)`);
+        }
+      }
       // Prefer Portuguese first so a mid-item quota cut still leaves the
       // language this audience actually wants on by default.
       const langOrder = { por: 0, eng: 1, spa: 2 };
@@ -450,7 +605,11 @@ async function main() {
         console.log(`no results (${results.length} rows)`);
         continue;
       }
-      console.log(`found ${picks.map((p) => p.lang).join(",")}`);
+      const hashHits = picks.filter((p) => p.hashMatch).length;
+      console.log(
+        `found ${picks.map((p) => p.lang + (p.hashMatch ? "*" : "")).join(",")}` +
+          (hashHits ? ` (${hashHits} hash-match)` : " (IMDB popularity only — sync not guaranteed)"),
+      );
 
       const usedIds = new Set([
         ...(item.subtitles || [])
@@ -458,6 +617,8 @@ async function main() {
           .map((t) => t.id),
         ...entry.subtitles.filter((t) => (t.episode ?? 0) === episode).map((t) => t.id),
       ]);
+
+      const expectedDuration = runtimeSeconds(item);
 
       for (const pick of picks) {
         if (quotaExhausted) break;
@@ -470,7 +631,11 @@ async function main() {
         const s3Key = `${S3_PREFIX(item.id)}external.${episode}.${trackId}.vtt`;
 
         if (DRY_RUN) {
-          console.log(`    (dry run) would download file_id=${pick.fileId} → ${s3Key}`);
+          console.log(
+            `    (dry run) would download file_id=${pick.fileId}` +
+              (pick.hashMatch ? " [hash-match]" : " [imdb-only]") +
+              ` → ${s3Key}`,
+          );
           itemDidWork = true;
           continue;
         }
@@ -478,6 +643,23 @@ async function main() {
         try {
           await downloadSubtitleFile(pick.fileId, token, rawPath);
           await convertSubtitleFileToVtt(rawPath, vttPath);
+
+          // Soft check: last cue should be near catalog runtime (movies).
+          // Series episodes often lack per-ep runtime — skip when unknown.
+          if (CHECK_DURATION && expectedDuration && episode === 0) {
+            const lastCue = vttLastCueSeconds(vttPath);
+            if (lastCue != null) {
+              const ratio = lastCue / expectedDuration;
+              if (ratio < 0.75 || ratio > 1.15) {
+                console.log(
+                  `    ⚠ ${pick.lang} duration mismatch ` +
+                    `(vtt~${Math.round(lastCue)}s vs runtime~${expectedDuration}s, ratio=${ratio.toFixed(2)}) — skip`,
+                );
+                continue;
+              }
+            }
+          }
+
           const ok = await uploadToS3(
             s3Client,
             bucketName,
@@ -491,7 +673,9 @@ async function main() {
             episode,
             id: trackId,
             lang: pick.lang,
-            label: LANG_LABELS[pick.lang] || pick.lang.toUpperCase(),
+            label:
+              (LANG_LABELS[pick.lang] || pick.lang.toUpperCase()) +
+              (pick.hashMatch ? "" : ""),
             forced: false,
             s3_key: s3Key,
           });
