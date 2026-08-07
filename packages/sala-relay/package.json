@@ -1,0 +1,14 @@
+{
+  "name": "@sessao/sala-relay",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "LAN decrypt relay: phone/PC decrypts HLS AES-128 and serves clear feed to Smart TV (RFC 0011). Implementation lands with P0.2.",
+  "scripts": {
+    "test": "node --test src/lan-decrypt-relay.test.js",
+    "start": "node src/lan-decrypt-relay.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

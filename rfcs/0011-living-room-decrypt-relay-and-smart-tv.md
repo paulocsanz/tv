@@ -42,9 +42,10 @@ This RFC captures the plan discussed for “TV burra + phone/PC holds the key,�
 including optional integration with already-approved clients—**not** the
 incident of missing `hls_playlist_s3_key` flags or packager races.
 
-**Not docs-only.** Implementation lands under `packages/**` (new
-`packages/sala-relay` package for the LAN decrypt proxy) plus integration in
-`frontend/` and `backend/`. Pipeline path-proof is via `packages/sala-relay`.
+**Not docs-only.** Implementation lands under `packages/**` (package
+`packages/sala-relay` for the LAN decrypt proxy — scaffold already on this
+branch) plus integration in `frontend/` and `backend/`. Pipeline path-proof
+is via `packages/sala-relay/**` (not docs-only prove).
 
 ## Problems This Solves
 
@@ -125,7 +126,7 @@ It does **not** decrypt media in P0/P1 of this RFC.
 | Phone “be the decryptor” | `frontend/app/pair/page.tsx` or new sala UI |
 | E2E | `frontend/e2e/sala-relay.spec.ts` |
 
-## Delivery slices
+## Delivery slices (mandatory)
 
 ### P0 — must ship first (useful in one house tonight)
 
@@ -156,11 +157,11 @@ It does **not** decrypt media in P0/P1 of this RFC.
   is insufficient) — status: `todo`
 - [ ] **P2.4** Tizen / webOS store packaging of the web shell — status: `todo`
 
-## Status
+## Status (living)
 
 | ID | Band | Title | Status | Task / PR | Updated |
 |----|------|-------|--------|-----------|---------|
-| P0.1 | p0 | RFC drafted | done | this doc | 2026-08-07 |
+| P0.1 | p0 | RFC drafted | done | this doc + packages/sala-relay scaffold | 2026-08-07 |
 | P0.2 | p0 | PC LAN decrypt relay (`packages/sala-relay`) | todo | — | 2026-08-07 |
 | P0.3 | p0 | TV pair → open relay feed | todo | — | 2026-08-07 |
 | P0.4 | p0 | Relay stop = clear TV error | todo | — | 2026-08-07 |
@@ -178,7 +179,7 @@ It does **not** decrypt media in P0/P1 of this RFC.
 ### Tests
 
 Concrete commands/files (to exist as each slice lands; run from repo root unless noted).
-**Not docs-only** — primary code under `packages/sala-relay/**`.
+**Not docs-only** — primary code under `packages/sala-relay/**` (pipeline path-proof via `packages/**`).
 
 1. **P0.2 — LAN relay unit (segment decrypt + plain playlist rewrite)**  
    - Files:  
