@@ -1066,7 +1066,29 @@ async function processPickedTorrents() {
   // story for any interruption.
   function saveEnrichedData() {
     try {
-      fs.writeFileSync(ENRICHED_FILE, JSON.stringify(data, null, 2));
+      // Preserve HLS packaging flags written by package-hls-from-s3.js (and
+      // other concurrent catalog tools). This process holds a long-lived
+      // in-memory snapshot; a naive rewrite was clobbering hls_playlist_s3_key.
+      try {
+        const {
+          applyHlsIndex,
+          seedHlsIndexFromCatalog,
+        } = require("../../lib/hls-catalog-index.cjs");
+        // Absorb any flags already on disk into the durable index, then apply.
+        try {
+          const onDisk = JSON.parse(fs.readFileSync(ENRICHED_FILE, "utf-8"));
+          seedHlsIndexFromCatalog(onDisk);
+        } catch {
+          /* ignore */
+        }
+        seedHlsIndexFromCatalog(data);
+        applyHlsIndex(data);
+      } catch (mergeErr) {
+        console.log(`  ⚠ HLS index merge skipped: ${mergeErr.message}`);
+      }
+      const tmp = `${ENRICHED_FILE}.tmp`;
+      fs.writeFileSync(tmp, JSON.stringify(data, null, 2));
+      fs.renameSync(tmp, ENRICHED_FILE);
     } catch (error) {
       console.log(`  ⚠ Failed to save ${ENRICHED_FILE}: ${error.message}`);
     }

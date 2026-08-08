@@ -31,6 +31,11 @@ const {
   decryptFile,
   isEncryptedFile,
 } = require("../../lib/media-encryption.cjs");
+const {
+  recordHlsPackaged,
+  applyHlsIndex,
+  seedHlsIndexFromCatalog,
+} = require("../../lib/hls-catalog-index.cjs");
 const { packageHlsAes128 } = require("../../lib/hls-package.cjs");
 
 const CATALOG_PATH =
@@ -130,7 +135,12 @@ function loadCatalog() {
 }
 
 function saveCatalog(catalog) {
-  fs.writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2) + "\n");
+  // Re-apply durable HLS index so concurrent pipeline saves can't drop flags
+  // we already recorded (and so a partial write still heals siblings).
+  applyHlsIndex(catalog);
+  const tmp = `${CATALOG_PATH}.tmp`;
+  fs.writeFileSync(tmp, JSON.stringify(catalog, null, 2) + "\n");
+  fs.renameSync(tmp, CATALOG_PATH);
 }
 
 function makeS3(creds) {
@@ -269,6 +279,8 @@ async function packageOne(client, creds, catalog, catalogKey, id, opts) {
       ? `videos/${id}/hls`
       : `videos/${id}/hls/index.m3u8`;
 
+    // Durable sidecar first — survives download-picked full-catalog rewrites.
+    recordHlsPackaged(id, catalogHlsRef);
     const fresh = loadCatalog();
     const freshItem = fresh.items.find((x) => x && x.id === id);
     if (!freshItem) throw new Error(`catalog id vanished before save: ${id}`);
@@ -306,6 +318,11 @@ Env: S3_* ENCRYPTION_CATALOG_KEY`);
   const creds = loadBucketCreds();
   const client = makeS3(creds);
   let catalog = loadCatalog();
+  // Bootstrap durable index from any HLS flags already on disk / in git checkout.
+  const seeded = seedHlsIndexFromCatalog(catalog);
+  if (seeded.added > 0) {
+    console.log(`── hls index: seeded ${seeded.added} title(s) from catalog`);
+  }
 
   if (opts.all) {
     opts.ids = pickPendingIds(catalog, opts);
