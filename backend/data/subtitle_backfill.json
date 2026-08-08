@@ -124,6 +124,14 @@
         "label": "English",
         "forced": false,
         "s3_key": "videos/rick-and-morty-2013-tv/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por-0",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/rick-and-morty-2013-tv/subdl.0.por-0.vtt"
       }
     ]
   },
@@ -1280,6 +1288,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/entranced-earth-1967-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/entranced-earth-1967-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/entranced-earth-1967-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -1404,6 +1428,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/futuro-beach-2014-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/futuro-beach-2014-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/futuro-beach-2014-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -1528,6 +1568,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/grave-of-the-fireflies-1988-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/grave-of-the-fireflies-1988-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/grave-of-the-fireflies-1988-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -1680,6 +1736,14 @@
         "label": "English",
         "forced": false,
         "s3_key": "videos/incendies-2010-movie/yify.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/incendies-2010-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -1920,6 +1984,14 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/kill-me-please-2015-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/kill-me-please-2015-movie/external.0.eng.vtt"
       }
     ]
   },
@@ -1988,6 +2060,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/life-is-beautiful-1997-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/life-is-beautiful-1997-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/life-is-beautiful-1997-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2000,6 +2088,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/madame-sata-2002-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/madame-sata-2002-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/madame-sata-2002-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2020,6 +2124,14 @@
         "label": "English",
         "forced": false,
         "s3_key": "videos/memento-2000-movie/yify.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/memento-2000-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2072,6 +2184,14 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/neighboring-sounds-2012-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/neighboring-sounds-2012-movie/external.0.eng.vtt"
       }
     ]
   },
@@ -2132,6 +2252,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/parasite-2019-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/parasite-2019-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/parasite-2019-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2320,6 +2456,14 @@
         "label": "English",
         "forced": false,
         "s3_key": "videos/red-dragon-2002-movie/yify.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/red-dragon-2002-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2340,6 +2484,14 @@
         "label": "English",
         "forced": false,
         "s3_key": "videos/requiem-for-a-dream-2000-movie/yify.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/requiem-for-a-dream-2000-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2408,6 +2560,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/s-o-s-women-to-the-sea-2014-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/s-o-s-women-to-the-sea-2014-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/s-o-s-women-to-the-sea-2014-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2476,6 +2644,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/seven-samurai-1954-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/seven-samurai-1954-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/seven-samurai-1954-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2536,6 +2720,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/spirited-away-2001-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/spirited-away-2001-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/spirited-away-2001-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2548,6 +2748,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/star-wars-1977-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/star-wars-1977-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/star-wars-1977-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2588,6 +2804,14 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/star-wars-episode-ii-attack-of-the-clones-2002-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/star-wars-episode-ii-attack-of-the-clones-2002-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2884,6 +3108,14 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/the-clown-2011-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-clown-2011-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -2904,6 +3136,14 @@
         "label": "English",
         "forced": false,
         "s3_key": "videos/the-dark-knight-rises-2012-movie/yify.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-dark-knight-rises-2012-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -3028,6 +3268,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/the-good-the-bad-and-the-ugly-1966-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-good-the-bad-and-the-ugly-1966-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-good-the-bad-and-the-ugly-1966-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -3096,6 +3352,14 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/the-hunt-2012-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-hunt-2012-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -3136,6 +3400,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/the-lion-king-11-2-2004-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-lion-king-11-2-2004-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-lion-king-11-2-2004-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -3148,6 +3428,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/the-lion-king-ii-simba-s-pride-1998-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-lion-king-ii-simba-s-pride-1998-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-lion-king-ii-simba-s-pride-1998-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -3280,6 +3576,14 @@
         "label": "English",
         "forced": false,
         "s3_key": "videos/the-prestige-2006-movie/yify.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-prestige-2006-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -3292,6 +3596,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/the-second-mother-2015-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-second-mother-2015-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-second-mother-2015-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -3444,6 +3764,14 @@
         "label": "English",
         "forced": false,
         "s3_key": "videos/to-kill-a-mockingbird-1962-movie/yify.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/to-kill-a-mockingbird-1962-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -3548,6 +3876,14 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/two-sons-of-francisco-2005-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/two-sons-of-francisco-2005-movie/external.0.eng.vtt"
       }
     ]
   },
@@ -3596,6 +3932,14 @@
         "label": "Spanish",
         "forced": false,
         "s3_key": "videos/vertigo-1958-movie/yify.spa.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/vertigo-1958-movie/external.0.eng.vtt"
       }
     ]
   },
@@ -3664,6 +4008,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/your-name-2016-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/your-name-2016-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/your-name-2016-movie/external.0.spa.vtt"
       }
     ]
   },
@@ -3700,6 +4060,22 @@
         "label": "Portuguese",
         "forced": false,
         "s3_key": "videos/the-last-of-us-2023-tv/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-last-of-us-2023-tv/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-last-of-us-2023-tv/external.0.spa.vtt"
       }
     ]
   },
@@ -4084,6 +4460,2166 @@
         "label": "Spanish",
         "forced": false,
         "s3_key": "videos/the-lord-of-the-rings-the-two-towers-2002-movie/yify.spa.vtt"
+      }
+    ]
+  },
+  "breaking-bad-2008-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "por-1",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.1.por-1.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "por-3",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.3.por-3.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "por-4",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.4.por-4.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "por-5",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.5.por-5.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "eng-5",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.5.eng-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "por-6",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.6.por-6.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "eng-6",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.6.eng-6.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "por-7",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.7.por-7.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "eng-7",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.7.eng-7.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "eng-8",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.8.eng-8.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "por-9",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.9.por-9.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "eng-9",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.9.eng-9.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.1.spa-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "spa-2",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.2.spa-2.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "por-10",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.10.por-10.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "eng-10",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.10.eng-10.vtt"
+      },
+      {
+        "episode": 11,
+        "id": "eng-11",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.11.eng-11.vtt"
+      },
+      {
+        "episode": 12,
+        "id": "eng-12",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.12.eng-12.vtt"
+      },
+      {
+        "episode": 13,
+        "id": "eng-13",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.13.eng-13.vtt"
+      },
+      {
+        "episode": 14,
+        "id": "eng-14",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.14.eng-14.vtt"
+      },
+      {
+        "episode": 15,
+        "id": "eng-15",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.15.eng-15.vtt"
+      },
+      {
+        "episode": 16,
+        "id": "eng-16",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/breaking-bad-2008-tv/subdl.16.eng-16.vtt"
+      }
+    ]
+  },
+  "arrested-development-2003-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng-0",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/arrested-development-2003-tv/subdl.0.eng-0.vtt"
+      }
+    ]
+  },
+  "band-of-brothers-2001-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "por-1",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.1.por-1.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.1.spa-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "por-2",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.2.por-2.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "spa-2",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.2.spa-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "spa-3",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.3.spa-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "spa-4",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.4.spa-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "spa-5",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.5.spa-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "spa-6",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.6.spa-6.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "spa-7",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.7.spa-7.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "spa-8",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.8.spa-8.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "spa-9",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/band-of-brothers-2001-tv/subdl.9.spa-9.vtt"
+      }
+    ]
+  },
+  "battlestar-galactica-2004-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/battlestar-galactica-2004-tv/subdl.1.spa-1.vtt"
+      }
+    ]
+  },
+  "better-call-saul-2015-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.1.spa-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "eng-5",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.5.eng-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "eng-6",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.6.eng-6.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "eng-7",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.7.eng-7.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "eng-8",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.8.eng-8.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "eng-9",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.9.eng-9.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "eng-10",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/better-call-saul-2015-tv/subdl.10.eng-10.vtt"
+      }
+    ]
+  },
+  "black-mirror-2011-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/black-mirror-2011-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/black-mirror-2011-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/black-mirror-2011-tv/subdl.3.eng-3.vtt"
+      }
+    ]
+  },
+  "chernobyl-2019-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/chernobyl-2019-tv/subdl.1.spa-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "spa-2",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/chernobyl-2019-tv/subdl.2.spa-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "spa-3",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/chernobyl-2019-tv/subdl.3.spa-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "spa-4",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/chernobyl-2019-tv/subdl.4.spa-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "spa-5",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/chernobyl-2019-tv/subdl.5.spa-5.vtt"
+      }
+    ]
+  },
+  "cinema-paradiso-1988-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "spa-0",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/cinema-paradiso-1988-movie/subdl.0.spa-0.vtt"
+      }
+    ]
+  },
+  "civilisation-1969-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "eng-5",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.5.eng-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "eng-6",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.6.eng-6.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "eng-7",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.7.eng-7.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "eng-8",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.8.eng-8.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "eng-9",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.9.eng-9.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "eng-10",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.10.eng-10.vtt"
+      },
+      {
+        "episode": 11,
+        "id": "eng-11",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.11.eng-11.vtt"
+      },
+      {
+        "episode": 12,
+        "id": "eng-12",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.12.eng-12.vtt"
+      },
+      {
+        "episode": 13,
+        "id": "eng-13",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/civilisation-1969-tv/subdl.13.eng-13.vtt"
+      }
+    ]
+  },
+  "coco-2017-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por-0",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/coco-2017-movie/subdl.0.por-0.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng-0",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/coco-2017-movie/subdl.0.eng-0.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa-0",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/coco-2017-movie/subdl.0.spa-0.vtt"
+      }
+    ]
+  },
+  "community-2009-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.1.spa-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "eng-5",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.5.eng-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "eng-6",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.6.eng-6.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "eng-7",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.7.eng-7.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "eng-8",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.8.eng-8.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "eng-9",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.9.eng-9.vtt"
+      },
+      {
+        "episode": 11,
+        "id": "eng-11",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.11.eng-11.vtt"
+      },
+      {
+        "episode": 12,
+        "id": "eng-12",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.12.eng-12.vtt"
+      },
+      {
+        "episode": 13,
+        "id": "eng-13",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.13.eng-13.vtt"
+      },
+      {
+        "episode": 14,
+        "id": "eng-14",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.14.eng-14.vtt"
+      },
+      {
+        "episode": 15,
+        "id": "eng-15",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.15.eng-15.vtt"
+      },
+      {
+        "episode": 16,
+        "id": "eng-16",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.16.eng-16.vtt"
+      },
+      {
+        "episode": 17,
+        "id": "eng-17",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.17.eng-17.vtt"
+      },
+      {
+        "episode": 17,
+        "id": "spa-17",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.17.spa-17.vtt"
+      },
+      {
+        "episode": 18,
+        "id": "eng-18",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.18.eng-18.vtt"
+      },
+      {
+        "episode": 19,
+        "id": "eng-19",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.19.eng-19.vtt"
+      },
+      {
+        "episode": 20,
+        "id": "eng-20",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.20.eng-20.vtt"
+      },
+      {
+        "episode": 21,
+        "id": "eng-21",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.21.eng-21.vtt"
+      },
+      {
+        "episode": 22,
+        "id": "eng-22",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.22.eng-22.vtt"
+      },
+      {
+        "episode": 23,
+        "id": "eng-23",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.23.eng-23.vtt"
+      },
+      {
+        "episode": 24,
+        "id": "eng-24",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.24.eng-24.vtt"
+      },
+      {
+        "episode": 25,
+        "id": "eng-25",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.25.eng-25.vtt"
+      },
+      {
+        "episode": 26,
+        "id": "eng-26",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.26.eng-26.vtt"
+      },
+      {
+        "episode": 27,
+        "id": "eng-27",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.27.eng-27.vtt"
+      },
+      {
+        "episode": 28,
+        "id": "eng-28",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.28.eng-28.vtt"
+      },
+      {
+        "episode": 29,
+        "id": "eng-29",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.29.eng-29.vtt"
+      },
+      {
+        "episode": 30,
+        "id": "eng-30",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.30.eng-30.vtt"
+      },
+      {
+        "episode": 31,
+        "id": "eng-31",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.31.eng-31.vtt"
+      },
+      {
+        "episode": 32,
+        "id": "eng-32",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.32.eng-32.vtt"
+      },
+      {
+        "episode": 33,
+        "id": "eng-33",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/community-2009-tv/subdl.33.eng-33.vtt"
+      }
+    ]
+  },
+  "curb-your-enthusiasm-2000-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng-0",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/curb-your-enthusiasm-2000-tv/subdl.0.eng-0.vtt"
+      }
+    ]
+  },
+  "dark-2017-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng-0",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dark-2017-tv/subdl.0.eng-0.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa-0",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/dark-2017-tv/subdl.0.spa-0.vtt"
+      }
+    ]
+  },
+  "dexter-2006-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "eng-5",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.5.eng-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "eng-6",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.6.eng-6.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "eng-7",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.7.eng-7.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "eng-8",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.8.eng-8.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "eng-9",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.9.eng-9.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "eng-10",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.10.eng-10.vtt"
+      },
+      {
+        "episode": 11,
+        "id": "eng-11",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.11.eng-11.vtt"
+      },
+      {
+        "episode": 12,
+        "id": "eng-12",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.12.eng-12.vtt"
+      },
+      {
+        "episode": 14,
+        "id": "eng-14",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/dexter-2006-tv/subdl.14.eng-14.vtt"
+      }
+    ]
+  },
+  "doctor-who-1963-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/doctor-who-1963-tv/subdl.1.spa-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "spa-2",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/doctor-who-1963-tv/subdl.2.spa-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "spa-3",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/doctor-who-1963-tv/subdl.3.spa-3.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "spa-6",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/doctor-who-1963-tv/subdl.6.spa-6.vtt"
+      }
+    ]
+  },
+  "entourage-2004-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por-0",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/entourage-2004-tv/subdl.0.por-0.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng-0",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/entourage-2004-tv/subdl.0.eng-0.vtt"
+      }
+    ]
+  },
+  "fargo-2014-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "eng-5",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.5.eng-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "eng-6",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.6.eng-6.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "eng-7",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.7.eng-7.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "eng-8",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.8.eng-8.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "eng-9",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.9.eng-9.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "eng-10",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.10.eng-10.vtt"
+      },
+      {
+        "episode": 11,
+        "id": "eng-11",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.11.eng-11.vtt"
+      },
+      {
+        "episode": 12,
+        "id": "eng-12",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.12.eng-12.vtt"
+      },
+      {
+        "episode": 13,
+        "id": "eng-13",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.13.eng-13.vtt"
+      },
+      {
+        "episode": 14,
+        "id": "eng-14",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/fargo-2014-tv/subdl.14.eng-14.vtt"
+      }
+    ]
+  },
+  "firefly-2002-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "por-1",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.1.por-1.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.1.spa-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "por-2",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.2.por-2.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "spa-2",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.2.spa-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "por-3",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.3.por-3.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "spa-3",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.3.spa-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "por-4",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.4.por-4.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "spa-4",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.4.spa-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "por-5",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.5.por-5.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "spa-5",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.5.spa-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "por-6",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.6.por-6.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "spa-6",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.6.spa-6.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "por-7",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.7.por-7.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "spa-7",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.7.spa-7.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "por-8",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.8.por-8.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "spa-8",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.8.spa-8.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "por-9",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.9.por-9.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "spa-9",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.9.spa-9.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "por-10",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.10.por-10.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "spa-10",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.10.spa-10.vtt"
+      },
+      {
+        "episode": 11,
+        "id": "por-11",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.11.por-11.vtt"
+      },
+      {
+        "episode": 11,
+        "id": "spa-11",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.11.spa-11.vtt"
+      },
+      {
+        "episode": 12,
+        "id": "por-12",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.12.por-12.vtt"
+      },
+      {
+        "episode": 12,
+        "id": "spa-12",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.12.spa-12.vtt"
+      },
+      {
+        "episode": 13,
+        "id": "por-13",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.13.por-13.vtt"
+      },
+      {
+        "episode": 13,
+        "id": "spa-13",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.13.spa-13.vtt"
+      },
+      {
+        "episode": 14,
+        "id": "por-14",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.14.por-14.vtt"
+      },
+      {
+        "episode": 14,
+        "id": "spa-14",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/firefly-2002-tv/subdl.14.spa-14.vtt"
+      }
+    ]
+  },
+  "friends-1994-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "por-1",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/friends-1994-tv/subdl.1.por-1.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/friends-1994-tv/subdl.1.spa-1.vtt"
+      }
+    ]
+  },
+  "frontline-1994-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng-0",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/frontline-1994-tv/subdl.0.eng-0.vtt"
+      }
+    ]
+  },
+  "game-of-thrones-2011-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "por-1",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/game-of-thrones-2011-tv/subdl.1.por-1.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/game-of-thrones-2011-tv/subdl.1.spa-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "por-2",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/game-of-thrones-2011-tv/subdl.2.por-2.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "spa-2",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/game-of-thrones-2011-tv/subdl.2.spa-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "por-3",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/game-of-thrones-2011-tv/subdl.3.por-3.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "spa-3",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/game-of-thrones-2011-tv/subdl.3.spa-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "spa-4",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/game-of-thrones-2011-tv/subdl.4.spa-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "spa-5",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/game-of-thrones-2011-tv/subdl.5.spa-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "spa-6",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/game-of-thrones-2011-tv/subdl.6.spa-6.vtt"
+      }
+    ]
+  },
+  "gravity-falls-2012-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng-0",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/gravity-falls-2012-tv/subdl.0.eng-0.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa-0",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/gravity-falls-2012-tv/subdl.0.spa-0.vtt"
+      }
+    ]
+  },
+  "i-love-lucy-1951-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng-0",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/i-love-lucy-1951-tv/subdl.0.eng-0.vtt"
+      }
+    ]
+  },
+  "john-adams-2008-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/john-adams-2008-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/john-adams-2008-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/john-adams-2008-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/john-adams-2008-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "eng-6",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/john-adams-2008-tv/subdl.6.eng-6.vtt"
+      }
+    ]
+  },
+  "justice-league-2001-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng-0",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/justice-league-2001-tv/subdl.0.eng-0.vtt"
+      }
+    ]
+  },
+  "mad-men-2007-tv": {
+    "subtitles": [
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "eng-5",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.5.eng-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "eng-6",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.6.eng-6.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "eng-8",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.8.eng-8.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "eng-9",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.9.eng-9.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "eng-10",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.10.eng-10.vtt"
+      },
+      {
+        "episode": 11,
+        "id": "eng-11",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.11.eng-11.vtt"
+      },
+      {
+        "episode": 12,
+        "id": "eng-12",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.12.eng-12.vtt"
+      },
+      {
+        "episode": 13,
+        "id": "eng-13",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/mad-men-2007-tv/subdl.13.eng-13.vtt"
+      }
+    ]
+  },
+  "over-the-garden-wall-2014-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/over-the-garden-wall-2014-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/over-the-garden-wall-2014-tv/subdl.1.spa-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/over-the-garden-wall-2014-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/over-the-garden-wall-2014-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/over-the-garden-wall-2014-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "eng-5",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/over-the-garden-wall-2014-tv/subdl.5.eng-5.vtt"
+      }
+    ]
+  },
+  "parks-and-recreation-2009-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "por-1",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/parks-and-recreation-2009-tv/subdl.1.por-1.vtt"
+      },
+      {
+        "episode": 1,
+        "id": "spa-1",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/parks-and-recreation-2009-tv/subdl.1.spa-1.vtt"
+      }
+    ]
+  },
+  "poldark-1975-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/poldark-1975-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 2,
+        "id": "eng-2",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/poldark-1975-tv/subdl.2.eng-2.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/poldark-1975-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/poldark-1975-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "eng-5",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/poldark-1975-tv/subdl.5.eng-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "eng-6",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/poldark-1975-tv/subdl.6.eng-6.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "eng-7",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/poldark-1975-tv/subdl.7.eng-7.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "eng-8",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/poldark-1975-tv/subdl.8.eng-8.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "eng-10",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/poldark-1975-tv/subdl.10.eng-10.vtt"
+      }
+    ]
+  },
+  "princess-mononoke-1997-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "spa-0",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/princess-mononoke-1997-movie/subdl.0.spa-0.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/princess-mononoke-1997-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "reality-z-2020-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng-0",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/reality-z-2020-tv/subdl.0.eng-0.vtt"
+      }
+    ]
+  },
+  "rome-2005-tv": {
+    "subtitles": [
+      {
+        "episode": 1,
+        "id": "eng-1",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.1.eng-1.vtt"
+      },
+      {
+        "episode": 3,
+        "id": "eng-3",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.3.eng-3.vtt"
+      },
+      {
+        "episode": 4,
+        "id": "eng-4",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.4.eng-4.vtt"
+      },
+      {
+        "episode": 5,
+        "id": "eng-5",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.5.eng-5.vtt"
+      },
+      {
+        "episode": 6,
+        "id": "eng-6",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.6.eng-6.vtt"
+      },
+      {
+        "episode": 7,
+        "id": "eng-7",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.7.eng-7.vtt"
+      },
+      {
+        "episode": 8,
+        "id": "eng-8",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.8.eng-8.vtt"
+      },
+      {
+        "episode": 9,
+        "id": "eng-9",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.9.eng-9.vtt"
+      },
+      {
+        "episode": 10,
+        "id": "eng-10",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.10.eng-10.vtt"
+      },
+      {
+        "episode": 11,
+        "id": "eng-11",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.11.eng-11.vtt"
+      },
+      {
+        "episode": 12,
+        "id": "eng-12",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.12.eng-12.vtt"
+      },
+      {
+        "episode": 13,
+        "id": "eng-13",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.13.eng-13.vtt"
+      },
+      {
+        "episode": 16,
+        "id": "eng-16",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/rome-2005-tv/subdl.16.eng-16.vtt"
+      }
+    ]
+  },
+  "spider-man-into-the-spider-verse-2018-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/spider-man-into-the-spider-verse-2018-movie/external.0.por.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/spider-man-into-the-spider-verse-2018-movie/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/spider-man-into-the-spider-verse-2018-movie/external.0.spa.vtt"
+      }
+    ]
+  },
+  "south-park-1997-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/south-park-1997-tv/external.0.eng.vtt"
+      }
+    ]
+  },
+  "the-avengers-1961-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-avengers-1961-tv/external.0.eng.vtt"
+      },
+      {
+        "episode": 0,
+        "id": "spa",
+        "lang": "spa",
+        "label": "Spanish",
+        "forced": false,
+        "s3_key": "videos/the-avengers-1961-tv/external.0.spa.vtt"
+      }
+    ]
+  },
+  "the-bear-2022-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-bear-2022-tv/external.0.eng.vtt"
+      }
+    ]
+  },
+  "the-daily-show-1996-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-daily-show-1996-tv/external.0.eng.vtt"
+      }
+    ]
+  },
+  "the-office-2005-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-office-2005-tv/external.0.eng.vtt"
+      }
+    ]
+  },
+  "the-simpsons-1989-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/the-simpsons-1989-tv/external.0.eng.vtt"
+      }
+    ]
+  },
+  "upstairs-downstairs-1971-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "eng",
+        "lang": "eng",
+        "label": "English",
+        "forced": false,
+        "s3_key": "videos/upstairs-downstairs-1971-tv/external.0.eng.vtt"
       }
     ]
   }
