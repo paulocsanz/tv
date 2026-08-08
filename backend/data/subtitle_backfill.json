@@ -642,5 +642,221 @@
         "s3_key": "videos/dune-2021-movie/external.0.por.vtt"
       }
     ]
+  },
+  "dune-part-two-2024-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/dune-part-two-2024-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "elite-squad-2007-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/elite-squad-2007-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "elite-squad-the-enemy-within-2010-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/elite-squad-the-enemy-within-2010-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "entranced-earth-1967-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/entranced-earth-1967-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "eternal-sunshine-of-the-spotless-mind-2004-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/eternal-sunshine-of-the-spotless-mind-2004-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "fight-club-1999-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/fight-club-1999-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "forrest-gump-1994-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/forrest-gump-1994-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "full-metal-jacket-1987-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/full-metal-jacket-1987-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "futuro-beach-2014-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/futuro-beach-2014-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "gladiator-2000-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/gladiator-2000-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "gladiator-ii-2024-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/gladiator-ii-2024-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "good-will-hunting-1997-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/good-will-hunting-1997-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "goodfellas-1990-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/goodfellas-1990-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "grave-of-the-fireflies-1988-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/grave-of-the-fireflies-1988-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "green-book-2018-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/green-book-2018-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "guns-of-the-magnificent-seven-1969-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/guns-of-the-magnificent-seven-1969-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "hannibal-2001-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/hannibal-2001-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "heat-1995-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/heat-1995-movie/external.0.por.vtt"
+      }
+    ]
   }
 }
