@@ -24,5 +24,6 @@
   "dark-2017-tv": "videos/dark-2017-tv/hls/index.m3u8",
   "curb-your-enthusiasm-2000-tv": "videos/curb-your-enthusiasm-2000-tv/hls/index.m3u8",
   "this-is-us-2016-tv": "videos/this-is-us-2016-tv/hls/index.m3u8",
-  "the-last-of-us-2023-tv": "videos/the-last-of-us-2023-tv/hls/index.m3u8"
+  "the-last-of-us-2023-tv": "videos/the-last-of-us-2023-tv/hls/index.m3u8",
+  "frontline-1994-tv": "videos/frontline-1994-tv/hls/index.m3u8"
 }
