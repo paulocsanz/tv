@@ -5,6 +5,7 @@ import { TvCard } from "@/components/tv/TvCard";
 import { getLocale } from "@/lib/i18n/locale";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizeItem } from "@/lib/i18n/content";
+import { isStreamable } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
@@ -21,7 +22,9 @@ export default async function TvHomePage() {
 
   const featured = sections.find((s) => s.key === "featured");
   const rows = sections.filter((s) => s.key !== "featured");
-  const hero = featured?.items[0] ? localizeItem(featured.items[0], locale) : null;
+  const heroRaw =
+    featured?.items.find((item) => isStreamable(item)) ?? featured?.items[0];
+  const hero = heroRaw ? localizeItem(heroRaw, locale) : null;
 
   const firstFocus = { current: true };
   const takeFocus = () => {
@@ -61,9 +64,13 @@ export default async function TvHomePage() {
                 data-tv-focus
                 tabIndex={0}
                 autoFocus={takeFocus()}
-                className="inline-block rounded-full bg-[#f5c518] px-8 py-3 text-lg font-semibold text-black outline-none focus-visible:ring-4 focus-visible:ring-white"
+                className={`inline-block rounded-full px-8 py-3 text-lg font-semibold outline-none focus-visible:ring-4 focus-visible:ring-white ${
+                  isStreamable(hero)
+                    ? "bg-[#f5c518] text-black"
+                    : "bg-zinc-700 text-zinc-300"
+                }`}
               >
-                {t.player.play}
+                {isStreamable(hero) ? t.player.play : t.contentCard.unavailable}
               </a>
             </div>
           </div>
@@ -79,6 +86,7 @@ export default async function TvHomePage() {
               href={`/tv/title/${item.id}`}
               progress={item.progress_fraction}
               autoFocus={takeFocus()}
+              unavailableLabel={t.contentCard.unavailable}
             />
           ))}
         </FocusRow>
@@ -94,6 +102,7 @@ export default async function TvHomePage() {
                 item={item}
                 href={`/tv/title/${item.id}`}
                 autoFocus={takeFocus()}
+                unavailableLabel={t.contentCard.unavailable}
               />
             );
           })}

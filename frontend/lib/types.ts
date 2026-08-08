@@ -238,3 +238,14 @@ export interface MetaResponse {
 export function displayRating(item: ContentItem): number {
   return item.imdb_rating ?? item.curated_imdb_rating;
 }
+
+/** True when the title has something the player can open (S3 progressive or HLS). */
+export function isStreamable(
+  item: Pick<ContentItem, "s3_key" | "s3_keys" | "hls_playlist_s3_key">,
+): boolean {
+  return Boolean(
+    item.s3_key ||
+      (item.s3_keys && item.s3_keys.length > 0) ||
+      item.hls_playlist_s3_key,
+  );
+}

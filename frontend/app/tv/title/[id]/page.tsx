@@ -5,7 +5,7 @@ import {
   getMeOrNull,
   getProgress,
 } from "@/lib/api";
-import { posterSrc } from "@/lib/types";
+import { isStreamable, posterSrc } from "@/lib/types";
 import { SalaTitlePlay } from "@/components/SalaTitlePlay";
 import { getLocale } from "@/lib/i18n/locale";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -29,9 +29,7 @@ export default async function TvTitlePage({
   const t = getDictionary(locale);
   const item = localizeItem(raw, locale);
   const heroImage = item.backdrop_url ?? posterSrc(item);
-  const hasStream = Boolean(
-    item.s3_key || item.s3_keys.length > 0 || item.hls_playlist_s3_key,
-  );
+  const hasStream = isStreamable(item);
 
   return (
     <div className="px-8 pb-16">

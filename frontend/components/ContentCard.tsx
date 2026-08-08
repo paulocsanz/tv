@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContentItem, posterSrc } from "@/lib/types";
+import { ContentItem, isStreamable, posterSrc } from "@/lib/types";
 import { RatingRow } from "./RatingBadges";
 import { getLocale } from "@/lib/i18n/locale";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -26,22 +26,39 @@ export async function ContentCard({
   const t = getDictionary(locale);
   const item = localizeItem(rawItem, locale);
   const poster = posterSrc(item);
+  const streamable = isStreamable(item);
   return (
     <Link
       href={`/title/${item.id}`}
-      className={`group block ${fluid ? "w-full" : "w-40 shrink-0 sm:w-44"}`}
+      aria-label={
+        streamable
+          ? item.title
+          : `${item.title} — ${t.contentCard.unavailable}`
+      }
+      className={`group block ${fluid ? "w-full" : "w-40 shrink-0 sm:w-44"} ${
+        streamable ? "" : "opacity-70"
+      }`}
     >
-      <div className="relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-zinc-900 ring-1 ring-white/5 transition-transform duration-200 ease-out group-hover:-translate-y-1 group-hover:ring-white/20">
+      <div
+        className={`relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-zinc-900 ring-1 ring-white/5 ${
+          streamable
+            ? "transition-transform duration-200 ease-out group-hover:-translate-y-1 group-hover:ring-white/20"
+            : "ring-white/5"
+        }`}
+      >
         {poster ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={poster}
             alt={item.title}
             loading="lazy"
-            className="h-full w-full object-cover"
+            className={`h-full w-full object-cover ${streamable ? "" : "grayscale-[40%]"}`}
           />
         ) : (
           <PosterPlaceholder title={item.title} />
+        )}
+        {!streamable && (
+          <div className="absolute inset-0 bg-black/45" aria-hidden />
         )}
         <div className="absolute left-1.5 top-1.5 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide text-zinc-200 backdrop-blur-sm">
           {item.content_type === "movie"
@@ -55,12 +72,16 @@ export async function ContentCard({
             BR
           </div>
         )}
-        {item.torrent_file && (
+        {!streamable ? (
+          <div className="absolute bottom-1.5 left-1.5 right-1.5 rounded bg-zinc-950/90 px-1.5 py-1 text-center text-[10px] font-semibold uppercase tracking-wide text-zinc-200 ring-1 ring-white/10 backdrop-blur-sm">
+            {t.contentCard.unavailable}
+          </div>
+        ) : item.torrent_file ? (
           <div className="absolute bottom-1.5 right-1.5 rounded bg-amber-600/90 px-1.5 py-0.5 text-[10px] font-semibold text-white">
             📥
           </div>
-        )}
-        {typeof progressFraction === "number" && (
+        ) : null}
+        {typeof progressFraction === "number" && streamable && (
           <div className="absolute inset-x-0 bottom-0 h-1 bg-black/60">
             <div
               className="h-full bg-[#f5c518]"
@@ -70,12 +91,24 @@ export async function ContentCard({
         )}
       </div>
       <div className="mt-2 space-y-1">
-        <h3 className="line-clamp-1 text-sm font-medium text-zinc-100 group-hover:text-white">
+        <h3
+          className={`line-clamp-1 text-sm font-medium ${
+            streamable
+              ? "text-zinc-100 group-hover:text-white"
+              : "text-zinc-400"
+          }`}
+        >
           {item.title}
         </h3>
         <div className="flex items-center justify-between">
           <span className="text-xs text-zinc-500">{item.year}</span>
-          <RatingRow item={item} />
+          {streamable ? (
+            <RatingRow item={item} />
+          ) : (
+            <span className="text-[10px] font-medium uppercase tracking-wide text-zinc-500">
+              {t.contentCard.unavailable}
+            </span>
+          )}
         </div>
       </div>
     </Link>

@@ -2,6 +2,7 @@ import { getContinueWatching, getSections } from "@/lib/api";
 import { Hero } from "@/components/Hero";
 import { ContentRow } from "@/components/ContentRow";
 import { ContinueWatchingRow } from "@/components/ContinueWatchingRow";
+import { isStreamable } from "@/lib/types";
 
 // Avoid build-time prerendering: this fetches from the Rust backend, which
 // isn't reachable during the frontend's own build step.
@@ -13,7 +14,9 @@ export default async function Home() {
     getContinueWatching(),
   ]);
   const featured = sections.find((s) => s.key === "featured");
-  const heroItem = featured?.items[0];
+  // Prefer a playable title so the homepage hero never teases an unavailable film.
+  const heroItem =
+    featured?.items.find((item) => isStreamable(item)) ?? featured?.items[0];
   const rows = sections.filter((s) => s.key !== "featured");
 
   return (
