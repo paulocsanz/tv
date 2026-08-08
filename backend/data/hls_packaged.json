@@ -16,5 +16,6 @@
   "pulp-fiction-1994-movie": "videos/pulp-fiction-1994-movie/hls/index.m3u8",
   "gravity-falls-2012-tv": "videos/gravity-falls-2012-tv/hls/index.m3u8",
   "the-good-the-bad-and-the-ugly-1966-movie": "videos/the-good-the-bad-and-the-ugly-1966-movie/hls/index.m3u8",
-  "the-six-wives-of-henry-viii-1970-tv": "videos/the-six-wives-of-henry-viii-1970-tv/hls/index.m3u8"
+  "the-six-wives-of-henry-viii-1970-tv": "videos/the-six-wives-of-henry-viii-1970-tv/hls/index.m3u8",
+  "inception-2010-movie": "videos/inception-2010-movie/hls/index.m3u8"
 }
