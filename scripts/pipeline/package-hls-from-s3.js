@@ -26,7 +26,11 @@ import {
 import { NodeHttpHandler } from "@smithy/node-http-handler";
 
 const require = createRequire(import.meta.url);
-const { parseCatalogKey, decryptBuffer, isEncryptedBuffer } = require("../../lib/media-encryption.cjs");
+const {
+  parseCatalogKey,
+  decryptFile,
+  isEncryptedFile,
+} = require("../../lib/media-encryption.cjs");
 const { packageHlsAes128 } = require("../../lib/hls-package.cjs");
 
 const CATALOG_PATH =
@@ -89,17 +93,17 @@ function pickPendingIds(catalog, { singleOnly, skipExisting, limit }) {
 
 /**
  * Download one S3 object, decrypt SSESENC1 if needed, return local media path.
+ * Never loads the whole object into RAM (titles routinely exceed Node's 2 GiB
+ * `fs.readFileSync` limit).
  */
 async function materializePlain(client, bucket, s3Key, workDir, catalogKey, label) {
   const localIn = path.join(workDir, `${label}-source.bin`);
   await downloadToFile(client, bucket, s3Key, localIn);
-  const raw = fs.readFileSync(localIn);
-  if (isEncryptedBuffer(raw)) {
+  if (isEncryptedFile(localIn)) {
     console.log(`  🔓 ${label}: SSESENC1 → plaintext for packaging…`);
-    const plain = decryptBuffer(raw, catalogKey);
     const mediaPath = path.join(workDir, `${label}-plain.mp4`);
-    fs.writeFileSync(mediaPath, plain);
-    raw.fill(0);
+    const { plainBytes } = await decryptFile(localIn, mediaPath, catalogKey);
+    console.log(`  🔓 ${label}: ${(plainBytes / 1e6).toFixed(1)} MB plain`);
     fs.rmSync(localIn, { force: true });
     return mediaPath;
   }
