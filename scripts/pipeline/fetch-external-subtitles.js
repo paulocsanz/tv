@@ -41,6 +41,7 @@
 import fs from "fs";
 import path from "path";
 import os from "os";
+import zlib from "zlib";
 import { execSync } from "child_process";
 import {
   S3Client,
@@ -323,6 +324,7 @@ function pickBestPerLang(results, missingLangs, { preferHashMatch = true } = {})
     candidates.push({
       lang,
       fileId,
+      legacySubId: attrs.legacy_subtitle_id || null,
       fileName: files[0]?.file_name || attrs.release || `${lang}.srt`,
       downloads: attrs.download_count || 0,
       hi: Boolean(attrs.hearing_impaired),
@@ -362,19 +364,87 @@ async function searchSubtitles({ imdb, languages, season, episode, moviehash }) 
   return data?.data || [];
 }
 
-async function downloadSubtitleFile(fileId, token, destPath) {
-  const data = await osFetch("/download", {
-    method: "POST",
-    body: { file_id: fileId },
-    token,
-  });
-  const link = data?.link;
-  if (!link) throw new Error("download response missing link");
-  const res = await fetch(link, { headers: { "User-Agent": USER_AGENT } });
-  if (!res.ok) throw new Error(`subtitle file GET ${res.status}`);
-  const buf = Buffer.from(await res.arrayBuffer());
-  fs.writeFileSync(destPath, buf);
-  return destPath;
+const SUB_EXTS = [".srt", ".ass", ".ssa", ".vtt", ".sub"];
+
+/** Extract the first subtitle file from a ZIP buffer to destPath. */
+function extractSubFromZip(zipBuf, destPath) {
+  // Minimal central-directory ZIP parse: find .srt/.ass/.vtt entry.
+  const buf = Buffer.isBuffer(zipBuf) ? zipBuf : Buffer.from(zipBuf);
+  // Find End of Central Directory record
+  let eocd = -1;
+  for (let i = buf.length - 22; i >= 0; i--) {
+    if (buf.readUInt32LE(i) === 0x06054b50) {
+      eocd = i;
+      break;
+    }
+  }
+  if (eocd < 0) throw new Error("ZIP: EOCD not found");
+  const cdOffset = buf.readUInt32LE(eocd + 16);
+  const cdEntries = buf.readUInt16LE(eocd + 10);
+  let off = cdOffset;
+  for (let i = 0; i < cdEntries; i++) {
+    if (buf.readUInt32LE(off) !== 0x02014b50) break;
+    const compSize = buf.readUInt32LE(off + 20);
+    const uncompSize = buf.readUInt32LE(off + 24);
+    const nameLen = buf.readUInt16LE(off + 28);
+    const extraLen = buf.readUInt16LE(off + 30);
+    const commentLen = buf.readUInt16LE(off + 32);
+    const localOff = buf.readUInt32LE(off + 42);
+    const name = buf.slice(off + 46, off + 46 + nameLen).toString("latin1");
+    // Advance to next CD entry
+    off += 46 + nameLen + extraLen + commentLen;
+    if (!SUB_EXTS.some((ext) => name.toLowerCase().endsWith(ext))) continue;
+    // Read local file header to find data offset
+    if (buf.readUInt32LE(localOff) !== 0x04034b50) continue;
+    const lNameLen = buf.readUInt16LE(localOff + 26);
+    const lExtraLen = buf.readUInt16LE(localOff + 28);
+    const dataOff = localOff + 30 + lNameLen + lExtraLen;
+    const compMethod = buf.readUInt16LE(localOff + 8);
+    const rawData = buf.slice(dataOff, dataOff + compSize);
+    let fileData;
+    if (compMethod === 0) {
+      fileData = rawData;
+    } else if (compMethod === 8) {
+      fileData = zlib.inflateRawSync(rawData);
+    } else {
+      throw new Error(`ZIP: unsupported compression method ${compMethod}`);
+    }
+    fs.writeFileSync(destPath, fileData);
+    return destPath;
+  }
+  throw new Error("ZIP: no subtitle file (.srt/.ass/.vtt) found inside");
+}
+
+async function downloadSubtitleFile(fileId, token, destPath, legacySubId) {
+  // Primary: REST API /download endpoint (has daily quota for anon API key).
+  try {
+    const data = await osFetch("/download", {
+      method: "POST",
+      body: { file_id: fileId },
+      token,
+    });
+    const link = data?.link;
+    if (!link) throw new Error("download response missing link");
+    const res = await fetch(link, { headers: { "User-Agent": USER_AGENT } });
+    if (!res.ok) throw new Error(`subtitle file GET ${res.status}`);
+    const buf = Buffer.from(await res.arrayBuffer());
+    fs.writeFileSync(destPath, buf);
+    return destPath;
+  } catch (e) {
+    // Fallback: legacy direct download URL (dl.opensubtitles.org) which
+    // returns a ZIP and has separate/looser limits. Used when the REST
+    // API /download quota is exhausted (401 "missing token").
+    if (!legacySubId || !/401|missing token|quota/i.test(e.message)) throw e;
+    const legacyUrl = `https://dl.opensubtitles.org/en/download/sub/${legacySubId}`;
+    const res = await fetch(legacyUrl, {
+      headers: { "User-Agent": USER_AGENT },
+      redirect: "follow",
+    });
+    if (!res.ok) throw new Error(`legacy download GET ${res.status}: ${e.message}`);
+    const zipBuf = Buffer.from(await res.arrayBuffer());
+    extractSubFromZip(zipBuf, destPath);
+    return destPath;
+  }
 }
 
 async function uploadToS3(s3Client, bucketName, filePath, s3Key, label, contentType) {
@@ -641,7 +711,7 @@ async function main() {
         }
 
         try {
-          await downloadSubtitleFile(pick.fileId, token, rawPath);
+          await downloadSubtitleFile(pick.fileId, token, rawPath, pick.legacySubId);
           await convertSubtitleFileToVtt(rawPath, vttPath);
 
           // Soft check: last cue should be near catalog runtime (movies).
