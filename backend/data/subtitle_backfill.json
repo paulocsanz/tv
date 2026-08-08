@@ -1266,5 +1266,713 @@
         "s3_key": "videos/s-o-s-women-to-the-sea-2014-movie/external.0.por.vtt"
       }
     ]
+  },
+  "saving-private-ryan-1998-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/saving-private-ryan-1998-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "scarface-1983-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/scarface-1983-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "seven-samurai-1954-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/seven-samurai-1954-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "singin-in-the-rain-1952-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/singin-in-the-rain-1952-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "spider-man-across-the-spider-verse-2023-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/spider-man-across-the-spider-verse-2023-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "spirited-away-2001-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/spirited-away-2001-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "star-wars-1977-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/star-wars-1977-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "star-wars-episode-i-the-phantom-menace-1999-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/star-wars-episode-i-the-phantom-menace-1999-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "star-wars-episode-ii-attack-of-the-clones-2002-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/star-wars-episode-ii-attack-of-the-clones-2002-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "star-wars-episode-iii-revenge-of-the-sith-2005-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/star-wars-episode-iii-revenge-of-the-sith-2005-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "star-wars-the-force-awakens-2015-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/star-wars-the-force-awakens-2015-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "star-wars-the-last-jedi-2017-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/star-wars-the-last-jedi-2017-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "sunset-boulevard-1950-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/sunset-boulevard-1950-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "terminator-2-judgment-day-1991-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/terminator-2-judgment-day-1991-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "terminator-3-rise-of-the-machines-2003-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/terminator-3-rise-of-the-machines-2003-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "terminator-genisys-2015-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/terminator-genisys-2015-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "terminator-salvation-2009-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/terminator-salvation-2009-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "terminator-dark-fate-2019-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/terminator-dark-fate-2019-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-apartment-1960-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-apartment-1960-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-avengers-2012-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-avengers-2012-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-clown-2011-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-clown-2011-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-dark-knight-rises-2012-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-dark-knight-rises-2012-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-departed-2006-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-departed-2006-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-elephant-man-1980-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-elephant-man-1980-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-empire-strikes-back-1980-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-empire-strikes-back-1980-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-godfather-part-iii-1990-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-godfather-part-iii-1990-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-good-the-bad-and-the-ugly-1966-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-good-the-bad-and-the-ugly-1966-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-great-dictator-1940-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-great-dictator-1940-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-green-mile-1999-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-green-mile-1999-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-hunt-2012-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-hunt-2012-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-lion-king-1994-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-lion-king-1994-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-lion-king-11-2-2004-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-lion-king-11-2-2004-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-lion-king-ii-simba-s-pride-1998-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-lion-king-ii-simba-s-pride-1998-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-matrix-reloaded-2003-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-matrix-reloaded-2003-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-matrix-resurrections-2021-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-matrix-resurrections-2021-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-matrix-revolutions-2003-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-matrix-revolutions-2003-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-pianist-2002-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-pianist-2002-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-prestige-2006-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-prestige-2006-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-second-mother-2015-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-second-mother-2015-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-shining-1980-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-shining-1980-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-silence-of-the-lambs-1991-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-silence-of-the-lambs-1991-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-sting-1973-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-sting-1973-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-terminator-1984-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-terminator-1984-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-usual-suspects-1995-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-usual-suspects-1995-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "to-kill-a-mockingbird-1962-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/to-kill-a-mockingbird-1962-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "toy-story-1995-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/toy-story-1995-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "toy-story-2-1999-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/toy-story-2-1999-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "toy-story-3-2010-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/toy-story-3-2010-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "toy-story-4-2019-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/toy-story-4-2019-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "toy-story-5-2026-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/toy-story-5-2026-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "two-sons-of-francisco-2005-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/two-sons-of-francisco-2005-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "up-2009-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/up-2009-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "vertigo-1958-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/vertigo-1958-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "whiplash-2014-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/whiplash-2014-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "witness-for-the-prosecution-1957-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/witness-for-the-prosecution-1957-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "your-name-2016-movie": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/your-name-2016-movie/external.0.por.vtt"
+      }
+    ]
+  },
+  "house-2004-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/house-2004-tv/external.0.por.vtt"
+      }
+    ]
+  },
+  "star-trek-1966-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/star-trek-1966-tv/external.0.por.vtt"
+      }
+    ]
+  },
+  "the-last-of-us-2023-tv": {
+    "subtitles": [
+      {
+        "episode": 0,
+        "id": "por",
+        "lang": "por",
+        "label": "Portuguese",
+        "forced": false,
+        "s3_key": "videos/the-last-of-us-2023-tv/external.0.por.vtt"
+      }
+    ]
   }
 }
